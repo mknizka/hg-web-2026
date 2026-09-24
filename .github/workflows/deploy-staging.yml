@@ -1,12 +1,6 @@
 name: Deploy staging preview
 
 on:
-  push:
-    branches:
-      - qa/mobile-performance-v1
-    paths:
-      - 'template/**'
-      - '.github/workflows/deploy-staging.yml'
   workflow_dispatch:
 
 concurrency:
