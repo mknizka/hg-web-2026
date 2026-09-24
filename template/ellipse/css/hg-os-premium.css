@@ -2142,8 +2142,8 @@ html{scroll-behavior:smooth}
 .os-home .os-hero{
   width:min(1540px,100%);
   grid-template-columns:minmax(410px,.83fr) minmax(610px,1.17fr);
-  padding-left:max(var(--os-pad),calc((100vw - 1480px)/2));
-  padding-right:max(var(--os-pad),calc((100vw - 1480px)/2));
+  padding-left:var(--os-pad);
+  padding-right:var(--os-pad);
 }
 .os-home .os-hero-copy{
   padding-bottom:10px;
