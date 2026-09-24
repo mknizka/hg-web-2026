@@ -1,3 +1,4 @@
+<?php if ((int)($content['id'] ?? 0) === 44) { require __DIR__.'/hg-product-page.php'; return; } ?>
   <?php if ($content['id'] == 44):  //PMS ?>
 
       <main class="solution-detail">
