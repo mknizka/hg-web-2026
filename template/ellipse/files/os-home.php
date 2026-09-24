@@ -223,16 +223,6 @@ $fragment = function ($file, $sw, $sh, $x, $y, $w, $h, $alt, $eager = false) {
           <p class="os-inbox-reply"><small><?php echo hg_lang('AI návrh odpovede', 'AI reply draft'); ?></small><?php echo hg_lang('Dobrý deň, skorší príchod radi preveríme. Hneď ako bude izba pripravená, dáme vám vedieť v tejto konverzácii.', 'Hello, we will gladly check the earlier arrival. As soon as the room is ready, we will tell you in this conversation.'); ?></p>
         </div>
       </article>
-      <?php if (isset($teamPhones[2])): ?>
-      <figure class="os-phone">
-        <img src="<?php echo hg_esc($teamPhones[2]['img']); ?>" alt="<?php echo hg_lang('CRM v Ellipse Team', 'CRM in Ellipse Team'); ?>" loading="lazy" decoding="async">
-        <figcaption><?php echo hg_lang('Prehľad o hosťoch aj v Ellipse Team', 'Guest overview in Ellipse Team too'); ?></figcaption>
-      </figure>
-      <?php elseif (isset($teamPhones[0])): ?>
-      <figure class="os-phone">
-        <img src="<?php echo hg_esc($teamPhones[0]['img']); ?>" alt="<?php echo hg_lang('Ellipse Team na mobile', 'Ellipse Team on mobile'); ?>" loading="lazy" decoding="async">
-      </figure>
-      <?php endif; ?>
     </div>
   </section>
 
@@ -262,9 +252,6 @@ $fragment = function ($file, $sw, $sh, $x, $y, $w, $h, $alt, $eager = false) {
         <span class="ep-device-label">Ellipse POS <span>× SUNMI</span></span>
         <img src="<?php echo hg_esc(hg_asset('sunmi-v3-ellipse-pos.webp')); ?>" alt="<?php echo hg_lang('Terminál SUNMI V3 v ruke s aplikáciou Ellipse POS', 'Handheld SUNMI V3 terminal running Ellipse POS'); ?>" width="1185" height="349" loading="lazy" decoding="async">
         <p><?php echo hg_lang('Vaša POS aplikácia. Priamo v termináli.', 'Your POS application. Right on the terminal.'); ?></p>
-      </div>
-      <div class="ep-connection" aria-label="<?php echo hg_lang('Prepojenie platieb s Ellipse', 'Payments connected to Ellipse'); ?>">
-        <span><?php echo hg_lang('Online platba', 'Online payment'); ?></span><span>POS</span><strong>Ellipse</strong><span><?php echo hg_lang('Prehľad transakcií', 'Transaction overview'); ?></span>
       </div>
     </div>
     <article class="ep-tap">
@@ -327,18 +314,6 @@ $fragment = function ($file, $sw, $sh, $x, $y, $w, $h, $alt, $eager = false) {
     <p class="os-kicker"><?php echo hg_lang('Ellipse Intelligence', 'Ellipse Intelligence'); ?></p>
     <h2><?php echo hg_lang('Dáta, ktoré už iba neležia v systéme. Pracujú pre vás.', 'Data that no longer just sits in the system. It works for you.'); ?></h2>
     <p class="os-lead"><?php echo hg_lang('Ella AI, AI komunikácia, návrhy odpovedí na recenzie, analytika a automatizácie — vždy s konkrétnou úlohou a výsledkom.', 'Ella AI, AI messaging, review reply drafts, analytics and automations — always with a concrete task and outcome.'); ?></p>
-    <div class="os-revpro-insights" aria-label="<?php echo hg_lang('Ukážka reálnej revenue analýzy', 'Example from a real revenue analysis'); ?>">
-      <div class="os-revpro-metrics">
-        <article><small><?php echo hg_lang('Medzitýždenne', 'Week over week'); ?></small><b>+202</b><span><?php echo hg_lang('izbonocí', 'room nights'); ?></span></article>
-        <article><small><?php echo hg_lang('Výnos', 'Revenue'); ?></small><b>+18 234 €</b><span><?php echo hg_lang('v 18-mesačnom horizonte', 'over an 18-month horizon'); ?></span></article>
-        <article><small><?php echo hg_lang('Posledných 7 dní', 'Last 7 days'); ?></small><b>17</b><span><?php echo hg_lang('rezervácií · priemer 3,2 noci', 'reservations · 3.2 nights average'); ?></span></article>
-      </div>
-      <article class="os-revpro-recommendation">
-        <small><?php echo hg_lang('Konkrétne odporúčanie z analýzy', 'Concrete recommendation from the analysis'); ?></small>
-        <h3><?php echo hg_lang('Zaviesť cielený upsell wellness balíkov pri check-ine a cez SMS', 'Introduce targeted wellness package upsell at check-in and via SMS'); ?></h3>
-        <p><?php echo hg_lang('Ukážka z reálnej revPRO analýzy vytvorenej 21.09.2026. Ellipse nevypisuje iba grafy — formuluje aj konkrétne ďalšie kroky.', 'Example from a real revPRO analysis created on 21 Sep 2026. Ellipse does not only show charts — it also formulates concrete next actions.'); ?></p>
-      </article>
-    </div>
     <?php if ($claudeScene): ?>
     <article class="os-ai-task">
       <p class="os-kicker"><?php echo hg_esc($claudeScene['kicker']); ?></p>
@@ -396,16 +371,6 @@ $fragment = function ($file, $sw, $sh, $x, $y, $w, $h, $alt, $eager = false) {
           <li><b>6</b> <span><?php echo hg_lang('rovnakých voľných izbonocí zostalo na oboch — rozdiel bol v cene, nie v obsadenosti', 'identical free room-nights left on both — the gap was price, not occupancy'); ?></span></li>
         </ul>
         <p class="os-case-note"><?php echo hg_lang('Výsledok konkrétneho klienta z článku, nie prísľub pre každú prevádzku.', 'A specific client result from the article, not a promise for every property.'); ?></p>
-        <div class="os-case-fragments" data-fragment-stage>
-          <figure class="os-fragment os-rev-summary" data-parallax-depth="0.05">
-            <div class="os-fragment-viewport"><img src="<?php echo hg_esc($revImg); ?>" alt="<?php echo hg_lang('Zhrnutie revenue analýzy Ellipse revPRO', 'Summary from Ellipse revPRO revenue analysis'); ?>" width="1200" height="675" loading="lazy" decoding="async"></div>
-            <figcaption><?php echo hg_lang('AI zhrnutie', 'AI summary'); ?></figcaption>
-          </figure>
-          <figure class="os-fragment os-rev-actions" data-parallax-depth="0.11">
-            <div class="os-fragment-viewport"><img src="<?php echo hg_esc($revImg); ?>" alt="<?php echo hg_lang('Odporúčania z revenue analýzy Ellipse revPRO', 'Recommendations from Ellipse revPRO revenue analysis'); ?>" width="1200" height="675" loading="lazy" decoding="async"></div>
-            <figcaption><?php echo hg_lang('Konkrétne odporúčania', 'Concrete recommendations'); ?></figcaption>
-          </figure>
-        </div>
       </div>
     </div>
     <blockquote>
