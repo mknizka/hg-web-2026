@@ -135,10 +135,13 @@
 .homepage > footer .copyright {margin-top:32px;}
 /* Resolve legacy specificity after live visual QA. */
 .os-home .os-stage {padding-block:0!important;min-height:0;}
-body .os-home section > .os-actions {display:flex;flex-wrap:wrap;justify-content:center;}
+body .os-home section > .os-actions {display:flex!important;flex-wrap:wrap;justify-content:center;}
 body .os-home .os-value .os-statement h2 {font-size:30px!important;}
 body .os-home .os-inbox > .os-lead,body .os-home .os-mcp > .os-lead {color:#667086;}
 body .os-home .os-booking-flow > figure {opacity:1!important;filter:none!important;}
+body .os-home .ef-viewport img {aspect-ratio:auto!important;}
+body .os-home .os-booking-flow figcaption {padding:24px 0 0!important;}
+body .os-home .os-booking-flow figcaption b {color:#15223f;}
 body .os-home > section:is(.os-product,.os-team) > h2 {font-size:clamp(36px,4.1vw,58px)!important;max-width:22ch!important;}
 body .os-home .os-review-flow {align-items:start;}
 body .os-home .os-review-flow li {transform:none!important;margin-top:0!important;}
