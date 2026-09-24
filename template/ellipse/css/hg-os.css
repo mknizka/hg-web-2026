@@ -2605,7 +2605,12 @@ html{scroll-behavior:smooth}
   transition:opacity .2s ease, visibility .2s ease, transform .24s var(--os-ease);
   pointer-events:none;
 }
-.homepage .nav-group.is-open > .nav-sub,
+.homepage .nav-group.is-open > .nav-sub{
+  opacity:1;
+  visibility:visible;
+  transform:translate(-50%,0) scale(1);
+  pointer-events:auto;
+}
 @media (hover:hover) and (pointer:fine){
   .homepage .nav-group:hover > .nav-sub{
     opacity:1;
@@ -2613,12 +2618,6 @@ html{scroll-behavior:smooth}
     transform:translate(-50%,0) scale(1);
     pointer-events:auto;
   }
-}
-.homepage .nav-group.is-open > .nav-sub{
-  opacity:1;
-  visibility:visible;
-  transform:translate(-50%,0) scale(1);
-  pointer-events:auto;
 }
 .homepage .nav-sub a{
   display:flex;
@@ -2732,13 +2731,14 @@ html{scroll-behavior:smooth}
   .homepage .nav.is-scrolled .brand img{width:132px}
   .homepage .nav > nav{
     display:none;
-    position:fixed;
-    top:calc(34px + 70px);
+    position:absolute;
+    top:100%;
     left:0;
     right:0;
-    bottom:0;
+    bottom:auto;
     width:100%;
     height:auto;
+    max-height:calc(100vh - 70px);
     padding:24px 22px 34px;
     margin:0;
     align-items:stretch;
@@ -2825,7 +2825,8 @@ html{scroll-behavior:smooth}
     padding-inline:18px;
   }
   .homepage .nav > nav{
-    top:calc(32px + 66px);
+    top:100%;
+    max-height:calc(100vh - 66px);
     padding-inline:18px;
   }
   .homepage footer{
