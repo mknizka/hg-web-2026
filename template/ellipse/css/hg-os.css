@@ -3218,3 +3218,125 @@ html{scroll-behavior:smooth}
   .os-home .os-rev-actions .os-fragment-viewport{height:270px}
 }
 
+
+/* === PREMIUM HOMEPAGE V1 / SCROLL STORYTELLING === */
+
+/* Scroll motion is intentionally subtle: hierarchy first, motion second. */
+.os-home .os-product,
+.os-home .os-booking,
+.os-home .os-team,
+.os-home .os-case{
+  --scene-progress:0;
+}
+
+.os-home .os-product .os-fragment-kpis{
+  rotate:calc((.5 - var(--scene-progress)) * -1.6deg);
+}
+.os-home .os-product .os-fragment-tape{
+  rotate:calc((.5 - var(--scene-progress)) * .8deg);
+}
+.os-home .os-product .os-fragment-revenue{
+  rotate:calc((.5 - var(--scene-progress)) * 1.35deg);
+}
+.os-home .os-fragment-stage .os-fragment{
+  transition:
+    box-shadow .35s ease,
+    border-color .35s ease,
+    rotate .18s linear,
+    scale .35s var(--os-ease);
+}
+.os-home .os-product.is-scene-active .os-fragment-kpis{scale:1.008}
+.os-home .os-product.is-scene-active .os-fragment-revenue{scale:1.012}
+
+/* Booking: focus follows the user's reading position rather than animating everything. */
+.os-home .os-booking-fragments .os-crop-card{
+  opacity:.68;
+  filter:saturate(.82);
+  transition:opacity .42s var(--os-ease),filter .42s ease,translate .42s var(--os-ease);
+}
+.os-home .os-booking-fragments .os-crop-card.is-focus{
+  opacity:1;
+  filter:saturate(1);
+  translate:0 -6px;
+}
+.os-home .os-booking-fragments .os-crop-card.is-focus .os-fragment-viewport{
+  border-color:rgba(8,20,52,.14);
+  box-shadow:0 30px 76px rgba(8,20,52,.145);
+}
+
+/* Team: the full phones stay authentic while the whole device scene breathes slightly. */
+.os-home .os-team-phones{
+  --team-lift:calc((var(--scene-progress) - .5) * -14px);
+  translate:0 var(--team-lift);
+  transition:translate .16s linear;
+}
+.os-home .os-team-widgets{
+  --widget-lift:calc((var(--scene-progress) - .5) * 10px);
+  translate:0 var(--widget-lift);
+  transition:translate .16s linear;
+}
+
+/* Case-study revenue fragments resolve into place as the evidence enters view. */
+.os-home .os-case-fragments .os-rev-summary{
+  rotate:calc((.5 - var(--scene-progress)) * -1deg);
+}
+.os-home .os-case-fragments .os-rev-actions{
+  rotate:calc((.5 - var(--scene-progress)) * 1.5deg);
+}
+
+/* Tiny reading-progress accent on signature dark sections. */
+.os-home .os-inbox::after,
+.os-home .os-mcp::after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:0;
+  width:calc(var(--scene-progress,0) * 100%);
+  height:1px;
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,.45),var(--os-magenta));
+  opacity:.55;
+  pointer-events:none;
+}
+
+/* Give focused interactive objects a crisp keyboard state too. */
+.os-home .os-segment-tabs button:focus-visible,
+.os-home .os-faq summary:focus-visible,
+.homepage .nav-parent:focus-visible{
+  outline:2px solid var(--os-magenta);
+  outline-offset:4px;
+}
+
+@media(max-width:700px){
+  .os-home .os-product .os-fragment,
+  .os-home .os-case-fragments .os-fragment{
+    rotate:0deg!important;
+    scale:1!important;
+  }
+  .os-home .os-booking-fragments .os-crop-card{
+    opacity:1;
+    filter:none;
+    translate:none;
+  }
+  .os-home .os-team-phones,
+  .os-home .os-team-widgets{
+    translate:none!important;
+  }
+}
+
+@media(prefers-reduced-motion:reduce){
+  .os-home .os-product .os-fragment,
+  .os-home .os-case-fragments .os-fragment{
+    rotate:0deg!important;
+    scale:1!important;
+  }
+  .os-home .os-booking-fragments .os-crop-card{
+    opacity:1!important;
+    filter:none!important;
+    translate:none!important;
+  }
+  .os-home .os-team-phones,
+  .os-home .os-team-widgets{
+    translate:none!important;
+  }
+}
+

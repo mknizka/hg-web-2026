@@ -343,3 +343,96 @@
   });
 })();
 
+
+/* === PREMIUM HOMEPAGE V1 / SCENE CONTROLLER === */
+(function () {
+  'use strict';
+
+  function ready(fn) {
+    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', fn);
+    else fn();
+  }
+
+  ready(function () {
+    var home = document.querySelector('main.os-home');
+    if (!home) return;
+
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)');
+    var mobile = window.matchMedia('(max-width: 700px)');
+    var scenes = Array.prototype.slice.call(home.querySelectorAll(
+      '.os-product,.os-booking,.os-team,.os-case,.os-inbox,.os-mcp'
+    ));
+    var bookingCards = Array.prototype.slice.call(home.querySelectorAll('.os-booking-fragments .os-crop-card'));
+    var ticking = false;
+
+    function clamp01(n) {
+      if (n < 0) return 0;
+      if (n > 1) return 1;
+      return n;
+    }
+
+    function sectionProgress(section, vh) {
+      var rect = section.getBoundingClientRect();
+      var total = rect.height + vh;
+      return clamp01((vh - rect.top) / total);
+    }
+
+    function focusBookingCard(vh) {
+      if (!bookingCards.length) return;
+      if (mobile.matches || reduce.matches) {
+        bookingCards.forEach(function (card) { card.classList.add('is-focus'); });
+        return;
+      }
+
+      var targetY = vh * 0.53;
+      var nearest = null;
+      var nearestDistance = Infinity;
+
+      bookingCards.forEach(function (card) {
+        var rect = card.getBoundingClientRect();
+        var center = rect.top + rect.height / 2;
+        var distance = Math.abs(center - targetY);
+        if (distance < nearestDistance) {
+          nearest = card;
+          nearestDistance = distance;
+        }
+      });
+
+      bookingCards.forEach(function (card) {
+        card.classList.toggle('is-focus', card === nearest);
+      });
+    }
+
+    function render() {
+      ticking = false;
+      var vh = window.innerHeight || document.documentElement.clientHeight || 800;
+
+      scenes.forEach(function (section) {
+        var rect = section.getBoundingClientRect();
+        var active = rect.bottom > vh * 0.16 && rect.top < vh * 0.84;
+        section.classList.toggle('is-scene-active', active);
+
+        var progress = (reduce.matches || mobile.matches) ? 0.5 : sectionProgress(section, vh);
+        section.style.setProperty('--scene-progress', progress.toFixed(4));
+      });
+
+      focusBookingCard(vh);
+    }
+
+    function requestRender() {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(render);
+    }
+
+    render();
+    window.addEventListener('scroll', requestRender, { passive: true });
+    window.addEventListener('resize', requestRender);
+
+    if (typeof reduce.addEventListener === 'function') {
+      reduce.addEventListener('change', requestRender);
+      mobile.addEventListener('change', requestRender);
+    }
+  });
+})();
+
