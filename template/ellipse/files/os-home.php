@@ -201,7 +201,7 @@ $fragment = function ($file, $sw, $sh, $x, $y, $w, $h, $alt, $eager = false) {
         <figcaption><small>02</small><b><?php echo hg_lang('Izba a balíček', 'Room and package'); ?></b><span><?php echo hg_lang('Cena, fotografia a podmienky zostávajú čitateľné v jednom bloku.', 'Price, photo and conditions stay readable in one block.'); ?></span></figcaption>
       </figure>
       <figure class="os-ui os-crop-card os-booking-pms" data-parallax-depth="0.12">
-        <?php $fragment('reservation-tape.webp',4438,2292,1895,1687,670,600,hg_lang('Detail rezervácie v Ellipse PMS', 'Reservation detail in Ellipse PMS')); ?>
+        <div class="os-booking-preview"><?php $fragment('reservation-tape.webp',4438,2292,1895,1687,670,600,hg_lang('Detail rezervácie v Ellipse PMS', 'Reservation detail in Ellipse PMS')); ?></div>
         <figcaption><small>03</small><b><?php echo hg_lang('Automaticky v PMS', 'Automatically in PMS'); ?></b><span><?php echo hg_lang('Tá istá rezervácia pokračuje do prevádzky bez ručného prepisovania.', 'The same reservation continues into operations without manual retyping.'); ?></span></figcaption>
       </figure>
     </div>
@@ -434,7 +434,6 @@ $fragment = function ($file, $sw, $sh, $x, $y, $w, $h, $alt, $eager = false) {
       <li><b><?php echo hg_lang('Jedny dáta', 'One data set'); ?></b><span><?php echo hg_lang('Rezervácia, platba, správa aj účet hosťa zostávajú v jednom systéme.', 'The reservation, payment, message and guest folio stay in one system.'); ?></span></li>
       <li><b>350+</b><span><?php echo hg_lang('integrácií s predajnými a prevádzkovými partnermi', 'integrations with sales and operations partners'); ?></span></li>
       <li><b><?php echo hg_lang('MCP s kontrolou', 'MCP with control'); ?></b><span><?php echo hg_lang('AI dostáva anonymizované prevádzkové dáta; rozhodnutie ostáva na vás.', 'AI receives anonymised operational data; the decision stays with you.'); ?></span></li>
-      <li><b>HORECA GROUP</b><span><?php echo hg_esc($nap['street'].', '.$nap['zip'].' '.$nap['city']); ?></span></li>
     </ul>
   </section>
 

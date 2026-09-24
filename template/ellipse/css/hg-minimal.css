@@ -133,6 +133,22 @@
 .os-home .os-final-meta {font-size:12px;margin-top:24px;color:#b1bdd2;}
 .homepage > footer {padding:72px max(24px,calc((100% - 1120px)/2)) 32px;background:#081434;border-top:1px solid #24304a;}
 .homepage > footer .copyright {margin-top:32px;}
+/* Resolve legacy specificity after live visual QA. */
+.os-home .os-stage {padding-block:0!important;min-height:0;}
+body .os-home section > .os-actions {display:flex;flex-wrap:wrap;justify-content:center;}
+body .os-home .os-value .os-statement h2 {font-size:30px!important;}
+body .os-home .os-inbox > .os-lead,body .os-home .os-mcp > .os-lead {color:#667086;}
+body .os-home .os-booking-flow > figure {opacity:1!important;filter:none!important;}
+body .os-home > section:is(.os-product,.os-team) > h2 {font-size:clamp(36px,4.1vw,58px)!important;max-width:22ch!important;}
+body .os-home .os-review-flow {align-items:start;}
+body .os-home .os-review-flow li {transform:none!important;margin-top:0!important;}
+body .os-home .os-final > .os-kicker {color:#ff789e!important;}
+body .os-home .os-final-meta {font-size:12px!important;}
+body .os-home .os-final-meta small {font-size:inherit;}
+.os-home .os-int-cats {display:grid;grid-template-columns:repeat(5,minmax(0,1fr));align-items:center;max-width:none;gap:12px;}
+.os-home .os-int-cats li {padding:10px 0;text-align:center;}
+.os-home .os-booking-preview {height:270px;border:1px solid #e5e9f0;border-radius:20px;background:#f7f8fb;display:flex;justify-content:center;align-items:center;overflow:hidden;}
+.os-home .os-booking-preview > .ef-viewport {width:100%;max-width:301.5px;flex:none;}
 @media(max-width:1000px){
  .os-home .os-hero {gap:36px;padding-inline:28px;min-height:600px;}
  .os-home .ef-hero {height:390px!important;}
@@ -140,10 +156,14 @@
  .os-home .ef-scene,.os-home .ef-scene-reverse {gap:36px;}
  .os-home .ep-features {grid-template-columns:repeat(2,minmax(0,1fr));gap:32px 40px;}
  .os-home .os-booking-flow .os-fragment-viewport,.os-home .os-booking-pms > .ef-viewport {height:220px;}
+ .os-home .os-booking-preview {height:220px;}
+ .os-home .os-booking-preview > .ef-viewport {max-width:245.67px;}
 }
 @media(max-width:800px){
  .os-home > section:not(.os-hero):not(.os-trust):not(.os-canvas) {padding-block:80px!important;}
  .os-home section > h2 {font-size:38px!important;max-width:22ch!important;}
+ body .os-home > section:is(.os-product,.os-team) > h2 {font-size:38px!important;}
+ .os-home .os-int-cats {display:flex;gap:12px 24px;}
  .os-home section > .os-lead {font-size:16px;line-height:1.75;}
  .os-home .os-hero {grid-template-columns:1fr;padding:64px 24px 48px;gap:32px;}
  .os-home .os-hero-copy {text-align:center;max-width:560px;margin:auto;}
@@ -158,6 +178,8 @@
  .os-home .os-value {grid-template-columns:1fr;gap:32px;}
  .os-home .os-booking-flow {grid-template-columns:1fr;max-width:480px;margin-inline:auto;gap:40px;}
  .os-home .os-booking-flow .os-fragment-viewport,.os-home .os-booking-pms > .ef-viewport {height:300px;}
+ .os-home .os-booking-preview {height:300px;}
+ .os-home .os-booking-preview > .ef-viewport {max-width:335px;}
  .os-home .os-journey {grid-template-columns:1fr;}
  .os-home .os-journey > .os-ui,.os-home .os-journey > .os-journey-steps {grid-column:1;margin-top:32px;}
  .os-home .ef-mobile-widgets {grid-template-columns:1fr;max-width:340px;gap:24px;}
@@ -171,6 +193,7 @@
 }
 @media(max-width:480px){
  .os-home section > h2 {font-size:32px!important;}
+ body .os-home > section:is(.os-product,.os-team) > h2 {font-size:32px!important;}
  .os-home .os-hero h1 {font-size:46px;}
  .os-home .ef-hero {height:355px!important;}
  .os-home .ef-hero-calendar,.os-home .ef-hero-target {top:185px;}
