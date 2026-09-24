@@ -131,3 +131,130 @@
     );
   });
 })();
+
+
+/* === PREMIUM HOMEPAGE V1 / MOTION LAYER === */
+(function () {
+  'use strict';
+
+  function ready(fn) {
+    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', fn);
+    else fn();
+  }
+
+  ready(function () {
+    var home = document.querySelector('main.os-home');
+    if (!home) return;
+
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)');
+    home.setAttribute('data-premium-ready', '1');
+
+    /* Section reveal: restrained, progressive and accessibility-safe. */
+    var sections = Array.prototype.slice.call(home.querySelectorAll(':scope > section:not(.os-canvas)'));
+    if ('IntersectionObserver' in window && !reduce.matches) {
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-inview');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { rootMargin: '0px 0px -10% 0px', threshold: 0.08 });
+
+      sections.forEach(function (section) {
+        if (section.classList.contains('os-hero')) section.classList.add('is-inview');
+        else observer.observe(section);
+      });
+    } else {
+      sections.forEach(function (section) { section.classList.add('is-inview'); });
+    }
+
+    /* Draw live connector lines between the Ellipse core and module nodes. */
+    var eco = home.querySelector('.os-eco');
+    var canvas = home.querySelector('[data-os-canvas]');
+    if (eco && canvas) {
+      var ns = 'http://www.w3.org/2000/svg';
+      var svg = document.createElementNS(ns, 'svg');
+      svg.setAttribute('class', 'os-eco-lines');
+      svg.setAttribute('aria-hidden', 'true');
+      eco.insertBefore(svg, eco.firstChild);
+
+      var core = eco.querySelector('.os-core');
+      var nodes = Array.prototype.slice.call(eco.querySelectorAll('.os-node[data-step]:not(.os-core)'));
+      var lines = nodes.map(function (node) {
+        var line = document.createElementNS(ns, 'line');
+        line.setAttribute('data-line-step', node.getAttribute('data-step') || '0');
+        svg.appendChild(line);
+        return { node: node, line: line };
+      });
+
+      function point(el, rootRect) {
+        var rect = el.getBoundingClientRect();
+        return {
+          x: rect.left - rootRect.left + rect.width / 2,
+          y: rect.top - rootRect.top + rect.height / 2
+        };
+      }
+
+      function layoutLines() {
+        if (!core || window.innerWidth <= 800) return;
+        var rootRect = eco.getBoundingClientRect();
+        var c = point(core, rootRect);
+        svg.setAttribute('viewBox', '0 0 ' + Math.max(1, rootRect.width) + ' ' + Math.max(1, rootRect.height));
+        lines.forEach(function (item) {
+          var p = point(item.node, rootRect);
+          item.line.setAttribute('x1', c.x.toFixed(2));
+          item.line.setAttribute('y1', c.y.toFixed(2));
+          item.line.setAttribute('x2', p.x.toFixed(2));
+          item.line.setAttribute('y2', p.y.toFixed(2));
+        });
+      }
+
+      function syncLines() {
+        var step = parseInt(canvas.getAttribute('data-os-step'), 10) || 0;
+        lines.forEach(function (item) {
+          var lineStep = parseInt(item.line.getAttribute('data-line-step'), 10) || 0;
+          item.line.classList.toggle('is-on', lineStep <= step);
+        });
+      }
+
+      var resizeTick = false;
+      function onResize() {
+        if (resizeTick) return;
+        resizeTick = true;
+        requestAnimationFrame(function () {
+          resizeTick = false;
+          layoutLines();
+        });
+      }
+
+      layoutLines();
+      syncLines();
+      window.addEventListener('resize', onResize);
+      new MutationObserver(syncLines).observe(canvas, { attributes: true, attributeFilter: ['data-os-step'] });
+      setTimeout(layoutLines, 250);
+      setTimeout(layoutLines, 900);
+    }
+
+    /* Very light pointer parallax in hero. No fake UI, only real product layers. */
+    var heroVisual = home.querySelector('.os-hero-visual');
+    if (heroVisual && !reduce.matches && window.matchMedia('(pointer:fine)').matches) {
+      var frame = 0;
+      heroVisual.addEventListener('pointermove', function (event) {
+        var rect = heroVisual.getBoundingClientRect();
+        var x = ((event.clientX - rect.left) / rect.width - 0.5) * 2;
+        var y = ((event.clientY - rect.top) / rect.height - 0.5) * 2;
+        cancelAnimationFrame(frame);
+        frame = requestAnimationFrame(function () {
+          heroVisual.style.setProperty('--mx', x.toFixed(3));
+          heroVisual.style.setProperty('--my', y.toFixed(3));
+        });
+      });
+      heroVisual.addEventListener('pointerleave', function () {
+        heroVisual.style.setProperty('--mx', '0');
+        heroVisual.style.setProperty('--my', '0');
+      });
+    }
+  });
+})();
+
