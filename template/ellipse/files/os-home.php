@@ -75,7 +75,7 @@ $teamPhones = array_slice($teamPhones, 0, 5);
     </div>
     <div class="os-hero-visual">
       <figure class="os-ui os-ui-hero">
-        <img src="<?php echo hg_esc($heroImg); ?>" alt="<?php echo hg_lang('Hotelová plachta rezervácií Ellipse PMS', 'Ellipse PMS reservation tape chart'); ?>" width="1200" height="675" loading="eager">
+        <img src="<?php echo hg_esc($heroImg); ?>" alt="<?php echo hg_lang('Hotelová plachta rezervácií Ellipse PMS', 'Ellipse PMS reservation tape chart'); ?>" width="1200" height="675" loading="eager" decoding="async" fetchpriority="high">
       </figure>
       <figure class="os-ui os-ui-layer">
         <img src="<?php echo hg_esc($dayImg); ?>" alt="<?php echo hg_lang('Denný dashboard Ellipse PMS', 'Ellipse PMS daily dashboard'); ?>" width="1200" height="675" loading="lazy">
