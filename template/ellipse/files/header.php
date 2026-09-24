@@ -110,6 +110,7 @@
   <link rel="stylesheet" href="/template/ellipse/css/hg-editorial.css?v=3">
   <link rel="stylesheet" href="/template/ellipse/css/hg-blog.css?v=1">
   <link rel="stylesheet" href="/template/ellipse/css/hg-typography.css?v=1">
+  <link rel="stylesheet" href="/template/ellipse/css/hg-icons.css?v=1">
 </head>
   <body class="<?php echo hg_esc(isset($content['content_type']) ? $content['content_type'] : ''); ?> hg-mkt">
     <?php echo themeSetup('extra_body'); ?>

@@ -186,7 +186,6 @@
     );
   }
 
-  $icons = array('⌘', '◈', 'AI', '↗', '▣');
   $platformCta = array(
     hg_lang('Objaviť PMS', 'Explore PMS'),
     hg_lang('Viac o predaji', 'More about sales'),
@@ -325,7 +324,7 @@
   <script src="/template/ellipse/js/hg-audience.js?v=4" defer></script>
   <script src="/template/ellipse/js/hg-os-premium.js?v=20260924audit2" defer></script>
   <?php if (function_exists('themeSetup')) { echo themeSetup('extra_body_end'); } ?>
-<script src="/template/ellipse/js/hg-mobile-showcase.js?v=1" defer></script>
+<script src="/template/ellipse/js/hg-mobile-showcase.js?v=2" defer></script>
 <script src="/template/ellipse/js/hg-home-refresh.js?v=1" defer></script>
 </body>
 </html>

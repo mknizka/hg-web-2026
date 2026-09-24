@@ -25,7 +25,7 @@ if (!$productImage) {
     <p class="prod-kicker"><?php echo hg_lang('Súčasť platformy Ellipse', 'Part of the Ellipse platform'); ?></p>
     <h1><?php echo hg_esc($productName); ?></h1>
     <?php if ($productLead): ?><p class="ed-lead"><?php echo hg_esc($productLead); ?></p><?php endif; ?>
-    <div class="ed-actions"><a class="ed-button" href="/kontakt/"><?php echo hg_lang('Ukážte mi to v praxi', 'Show me how it works'); ?></a><a href="#product-detail"><?php echo hg_lang('Preskúmať funkcie', 'Explore the features'); ?> ↓</a></div>
+    <div class="ed-actions"><a class="ed-button" href="/kontakt/"><?php echo hg_lang('Ukážte mi to v praxi', 'Show me how it works'); ?></a><a href="#product-detail"><?php echo hg_lang('Preskúmať funkcie', 'Explore the features'); ?> <svg class="hg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 5v14m-6-6 6 6 6-6"/></svg></a></div>
     <?php if ($productImage): ?><figure class="ed-product-visual"><img src="<?php echo hg_esc($productImage); ?>" alt="<?php echo hg_esc($productName); ?>" decoding="async" fetchpriority="high"></figure><?php endif; ?>
   </section>
   <nav class="ed-product-nav" aria-label="<?php echo hg_lang('Na tejto stránke', 'On this page'); ?>"><a href="#product-detail"><?php echo hg_lang('Funkcie a možnosti', 'Features'); ?></a><a href="#product-connected"><?php echo hg_lang('Prepojené moduly', 'Connected modules'); ?></a><a href="/kontakt/"><?php echo hg_lang('Dohodnúť demo', 'Book a demo'); ?></a></nav>
@@ -43,7 +43,7 @@ if (!$productImage) {
   </section>
   <section class="ed-connected" id="product-connected"><p class="hg-kicker"><?php echo hg_lang('Jeden ekosystém', 'One ecosystem'); ?></p><h2><?php echo hg_lang('Viac možností. Stále jeden Ellipse.', 'More possibilities. Still one Ellipse.'); ?></h2><div class="ed-related">
     <?php foreach (hg_editorial_ctas() as $item): if (trim($item[0], '/') === trim((string)($content['sef'] ?? ''), '/')) continue; ?>
-    <a href="<?php echo hg_esc($item[0]); ?>"><span><?php echo hg_esc($item[1]); ?></span><h3><?php echo hg_esc($item[2]); ?></h3><p><?php echo hg_esc($item[3]); ?></p><b><?php echo hg_esc($item[4]); ?> ↗</b></a>
+    <a href="<?php echo hg_esc($item[0]); ?>"><span><?php echo hg_esc($item[1]); ?></span><h3><?php echo hg_esc($item[2]); ?></h3><p><?php echo hg_esc($item[3]); ?></p><b><?php echo hg_esc($item[4]); ?> <svg class="hg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17 17 7M7 7h10v10"/></svg></b></a>
     <?php endforeach; ?>
   </div></section>
 

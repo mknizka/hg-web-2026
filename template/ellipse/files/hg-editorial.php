@@ -10,7 +10,7 @@ if (!function_exists('hg_editorial_ctas')) {
     );
   }
   function hg_editorial_cta($item, $inline = false) {
-    echo '<aside class="ed-cta'.($inline ? ' ed-cta-inline' : '').'"'.($inline ? ' data-editorial-cta' : '').'><p class="hg-kicker">'.hg_esc($item[1]).'</p><p class="ed-cta-title">'.hg_esc($item[2]).'</p><p>'.hg_esc($item[3]).'</p><a class="ed-button" href="'.hg_esc($item[0]).'">'.hg_esc($item[4]).' <span aria-hidden="true">↗</span></a></aside>';
+    echo '<aside class="ed-cta'.($inline ? ' ed-cta-inline' : '').'"'.($inline ? ' data-editorial-cta' : '').'><p class="hg-kicker">'.hg_esc($item[1]).'</p><p class="ed-cta-title">'.hg_esc($item[2]).'</p><p>'.hg_esc($item[3]).'</p><a class="ed-button" href="'.hg_esc($item[0]).'">'.hg_esc($item[4]).' <span aria-hidden="true"><svg class="hg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17 17 7M7 7h10v10"/></svg></span></a></aside>';
   }
 }
 

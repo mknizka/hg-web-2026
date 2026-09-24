@@ -28,7 +28,7 @@ function hg_blog_card($post,$featured=false) {
   ?>
   <article class="eb-card<?php echo $featured?' eb-featured':''; ?>"><a href="<?php echo hg_esc($url); ?>">
     <div class="eb-card-media"><?php if($image): ?><img src="<?php echo hg_esc($image); ?>" data-rs-fallback="<?php echo hg_esc(preg_replace('/\.(\w+)$/','-01.$1',$image)); ?>" alt="" width="960" height="600" loading="<?php echo $featured?'eager':'lazy'; ?>" decoding="async"><?php else: ?><span class="eb-placeholder" aria-hidden="true">e<span>ellipse</span></span><?php endif; ?></div>
-    <div class="eb-card-copy"><span class="eb-label"><?php echo $key?hg_esc($topics[$key]['eyebrow']):hg_lang('Zo sveta Ellipse','From Ellipse'); ?></span><h2><?php echo hg_esc(hg_plain($post['name'] ?? '')); ?></h2><p><?php echo hg_esc(hg_plain($post['parex_text'] ?? $post['description'] ?? '',$featured?240:160)); ?></p><span class="eb-read"><?php echo hg_lang('Prečítať článok','Read article'); ?> <span aria-hidden="true">↗</span></span></div>
+    <div class="eb-card-copy"><span class="eb-label"><?php echo $key?hg_esc($topics[$key]['eyebrow']):hg_lang('Zo sveta Ellipse','From Ellipse'); ?></span><h2><?php echo hg_esc(hg_plain($post['name'] ?? '')); ?></h2><p><?php echo hg_esc(hg_plain($post['parex_text'] ?? $post['description'] ?? '',$featured?240:160)); ?></p><span class="eb-read"><?php echo hg_lang('Prečítať článok','Read article'); ?> <span aria-hidden="true"><svg class="hg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17 17 7M7 7h10v10"/></svg></span></span></div>
   </a></article>
   <?php
 }

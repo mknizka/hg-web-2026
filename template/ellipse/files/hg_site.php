@@ -58,7 +58,7 @@ if (!function_exists('hg_text_reactions')) {
       } else {
         $text = strtr($text, $labels);
       }
-      return '<span class="reaction-label"'.$m[2].'>'.htmlspecialchars($text, ENT_QUOTES, 'UTF-8').'</span>';
+      return '<span class="'.$m[1].' reaction-label"'.$m[2].'>'.htmlspecialchars($text, ENT_QUOTES, 'UTF-8').'</span>';
     }, $html);
   }
 }

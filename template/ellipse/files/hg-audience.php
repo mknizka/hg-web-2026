@@ -6,7 +6,7 @@ $audDescriptions = array('hotel' => hg_lang('Výnimočné pobyty začínajú u v
 <div class="aud-bar" data-audience-lang="<?php echo hg_lang('sk', 'en'); ?>" hidden>
   <span><?php echo hg_lang('Ellipse pre vašu prevádzku', 'Ellipse for your business'); ?></span>
   <div class="aud-options" role="group" aria-label="<?php echo hg_lang('Typ prevádzky', 'Business type'); ?>">
-    <?php foreach ($audLabels as $key => $label): ?><button type="button" data-audience="<?php echo $key; ?>" aria-pressed="false"><img src="<?php echo hg_esc($audImages[$key]); ?>" width="120" height="90" alt=""><span><?php echo $label; ?><small><?php echo $audDescriptions[$key]; ?></small></span><i aria-hidden="true">↗</i></button><?php endforeach; ?>
+    <?php foreach ($audLabels as $key => $label): ?><button type="button" data-audience="<?php echo $key; ?>" aria-pressed="false"><img src="<?php echo hg_esc($audImages[$key]); ?>" width="120" height="90" alt=""><span><?php echo $label; ?><small><?php echo $audDescriptions[$key]; ?></small></span><i aria-hidden="true"><svg class="hg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17 17 7M7 7h10v10"/></svg></i></button><?php endforeach; ?>
   </div>
   <span class="aud-status" role="status" aria-live="polite"></span>
   <button type="button" class="aud-reopen"><?php echo hg_lang('Zmeniť výber', 'Change selection'); ?></button>

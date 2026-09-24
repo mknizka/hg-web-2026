@@ -13,7 +13,7 @@
     sync();
   });
   const dialog = document.createElement('dialog');dialog.className='em-zoom';
-  const close = document.createElement('button');close.type='button';close.textContent='×';close.setAttribute('aria-label',document.documentElement.lang.startsWith('en')?'Close preview':'Zavrieť náhľad');
+  const close = document.createElement('button');close.type='button';close.innerHTML='<svg class="hg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 6 12 12M18 6 6 18"/></svg>';close.setAttribute('aria-label',document.documentElement.lang.startsWith('en')?'Close preview':'Zavrieť náhľad');
   const image = document.createElement('img');dialog.append(close,image);document.body.append(dialog);
   close.addEventListener('click',()=>dialog.close());
   dialog.addEventListener('click',event=>{if(event.target===dialog)dialog.close();});
