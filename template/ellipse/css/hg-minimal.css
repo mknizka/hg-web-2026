@@ -211,3 +211,6 @@ body .os-home .os-final-meta small {font-size:inherit;}
  .os-home .os-mcp-flow span {font-size:12px;padding:10px;}
  .os-home .os-final > h2 {font-size:36px!important;}
 }
+
+/* Readable small section labels. */
+body .os-home .os-kicker,body .os-kicker,body .hg-kicker,body .prod-kicker,body .kicker,body .kicker.light,body .eyebrow,body .ef-index{font-weight:600!important}
