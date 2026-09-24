@@ -225,7 +225,7 @@
   <link rel="preload" as="image" href="<?php echo hg_esc(hg_asset('fragments/occupancy.webp')); ?>" fetchpriority="high">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@1,9..144,500;1,9..144,600&family=Montserrat:wght@300;400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@1,9..144,500;1,9..144,600&family=Montserrat:wght@300..800&display=swap">
   <link rel="stylesheet" href="/template/ellipse/css/hg-ref.css?v=20260923g">
   <link rel="stylesheet" href="/template/ellipse/css/hg-mono.css?v=20260923g">
   <link rel="stylesheet" href="/template/ellipse/css/hg-os.css?v=20260924audit2">
@@ -269,6 +269,8 @@
   ?>
   <base href="<?php echo hg_esc(DOMENA_WEBU); ?>">
   <?php if (function_exists('themeSetup')) { echo themeSetup('extra_header'); } ?>
+<link rel="stylesheet" href="/template/ellipse/css/hg-mobile-showcase.css?v=1">
+<link rel="stylesheet" href="/template/ellipse/css/hg-typography.css?v=1">
 </head>
 <body class="homepage">
   <?php if (function_exists('themeSetup')) { echo themeSetup('extra_body'); } ?>
@@ -322,5 +324,7 @@
   <script src="/template/ellipse/js/hg-audience.js?v=3" defer></script>
   <script src="/template/ellipse/js/hg-os-premium.js?v=20260924audit2" defer></script>
   <?php if (function_exists('themeSetup')) { echo themeSetup('extra_body_end'); } ?>
+<script src="/template/ellipse/js/hg-mobile-showcase.js?v=1" defer></script>
 </body>
 </html>
+
