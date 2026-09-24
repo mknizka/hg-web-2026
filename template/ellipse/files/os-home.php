@@ -78,11 +78,11 @@ $teamPhones = array_slice($teamPhones, 0, 5);
         <img src="<?php echo hg_esc($heroImg); ?>" alt="<?php echo hg_lang('Hotelová plachta rezervácií Ellipse PMS', 'Ellipse PMS reservation tape chart'); ?>" width="1200" height="675" loading="eager" decoding="async" fetchpriority="high">
       </figure>
       <figure class="os-ui os-ui-layer">
-        <img src="<?php echo hg_esc($dayImg); ?>" alt="<?php echo hg_lang('Denný dashboard Ellipse PMS', 'Ellipse PMS daily dashboard'); ?>" width="1200" height="675" loading="lazy">
+        <img src="<?php echo hg_esc($dayImg); ?>" alt="<?php echo hg_lang('Denný dashboard Ellipse PMS', 'Ellipse PMS daily dashboard'); ?>" width="1200" height="675" loading="lazy" decoding="async">
       </figure>
       <?php if (isset($teamPhones[0])): ?>
       <figure class="os-phone os-phone-hero">
-        <img src="<?php echo hg_esc($teamPhones[0]['img']); ?>" alt="<?php echo hg_esc($teamPhones[0]['name']); ?>" loading="lazy">
+        <img src="<?php echo hg_esc($teamPhones[0]['img']); ?>" alt="<?php echo hg_esc($teamPhones[0]['name']); ?>" loading="lazy" decoding="async">
       </figure>
       <?php endif; ?>
     </div>
@@ -91,7 +91,7 @@ $teamPhones = array_slice($teamPhones, 0, 5);
   <section class="os-trust" aria-label="<?php echo hg_lang('Dôvera', 'Trust'); ?>">
     <div class="os-trust-logos">
       <?php foreach ($logos as $logo): if (empty($logo['img'])) continue; ?>
-      <img src="<?php echo hg_esc($logo['img']); ?>" alt="<?php echo hg_esc($logo['name']); ?>" loading="lazy">
+      <img src="<?php echo hg_esc($logo['img']); ?>" alt="<?php echo hg_esc($logo['name']); ?>" loading="lazy" decoding="async">
       <?php endforeach; ?>
     </div>
     <ul class="os-trust-stats">
@@ -155,22 +155,33 @@ $teamPhones = array_slice($teamPhones, 0, 5);
     <div class="os-fragment-stage" data-fragment-stage>
       <figure class="os-fragment os-fragment-kpis" data-parallax-depth="0.06">
         <div class="os-fragment-viewport">
-          <img src="<?php echo hg_esc(hg_asset('hero-day.webp')); ?>" alt="<?php echo hg_lang('KPI prehľad z reálneho dashboardu Ellipse PMS', 'KPI overview from the live Ellipse PMS dashboard'); ?>" width="1400" height="788" loading="lazy">
+          <img src="<?php echo hg_esc(hg_asset('hero-day.webp')); ?>" alt="<?php echo hg_lang('KPI prehľad z reálneho dashboardu Ellipse PMS', 'KPI overview from the live Ellipse PMS dashboard'); ?>" width="1400" height="788" loading="lazy" decoding="async">
         </div>
         <figcaption><span><?php echo hg_lang('Dnes v prevádzke', 'Today in operations'); ?></span><b><?php echo hg_lang('Úlohy, check-out, check-in a stav izieb', 'Tasks, check-out, check-in and room status'); ?></b></figcaption>
       </figure>
       <figure class="os-fragment os-fragment-tape" data-parallax-depth="0.10">
         <div class="os-fragment-viewport">
-          <img src="<?php echo hg_esc(hg_asset('hero-pms.webp')); ?>" alt="<?php echo hg_lang('Detail hotelovej plachty rezervácií Ellipse PMS', 'Detail of the Ellipse PMS reservation tape chart'); ?>" width="1400" height="788" loading="lazy">
+          <img src="<?php echo hg_esc(hg_asset('hero-pms.webp')); ?>" alt="<?php echo hg_lang('Detail hotelovej plachty rezervácií Ellipse PMS', 'Detail of the Ellipse PMS reservation tape chart'); ?>" width="1400" height="788" loading="lazy" decoding="async">
         </div>
         <figcaption><span><?php echo hg_lang('Rezervácie', 'Reservations'); ?></span><b><?php echo hg_lang('Plachta, dostupnosť a pobyt v jednom pohľade', 'Tape chart, availability and stay in one view'); ?></b></figcaption>
       </figure>
       <figure class="os-fragment os-fragment-revenue" data-parallax-depth="0.14">
         <div class="os-fragment-viewport">
-          <img src="<?php echo hg_esc($revImg); ?>" alt="<?php echo hg_lang('Detail revenue analýzy Ellipse revPRO', 'Detail of Ellipse revPRO revenue analysis'); ?>" width="1400" height="788" loading="lazy">
+          <img src="<?php echo hg_esc($revImg); ?>" alt="<?php echo hg_lang('Detail revenue analýzy Ellipse revPRO', 'Detail of Ellipse revPRO revenue analysis'); ?>" width="1400" height="788" loading="lazy" decoding="async">
         </div>
         <figcaption><span>revPRO</span><b><?php echo hg_lang('Dáta premenené na konkrétne odporúčanie', 'Data turned into a concrete recommendation'); ?></b></figcaption>
       </figure>
+      <article class="os-reservation-card" data-parallax-depth="0.18" aria-label="<?php echo hg_lang('Ukážka detailu reálnej rezervácie', 'Example of a real reservation detail'); ?>">
+        <header><small>#9972998</small><b>TestParking Jaro</b></header>
+        <dl>
+          <div><dt><?php echo hg_lang('Pobyt', 'Stay'); ?></dt><dd>17.09.2026 → 25.09.2026 · 8 <?php echo hg_lang('nocí', 'nights'); ?></dd></div>
+          <div><dt><?php echo hg_lang('Osoby', 'Guests'); ?></dt><dd>2</dd></div>
+          <div><dt><?php echo hg_lang('Izba', 'Room'); ?></dt><dd>203</dd></div>
+          <div><dt><?php echo hg_lang('Kanál', 'Channel'); ?></dt><dd><?php echo hg_lang('Priamy predaj · Web booking', 'Direct sale · Web booking'); ?></dd></div>
+          <div><dt><?php echo hg_lang('Účet', 'Account'); ?></dt><dd class="is-good"><?php echo hg_lang('Vyrovnaný', 'Balanced'); ?></dd></div>
+        </dl>
+        <footer><span><?php echo hg_lang('Hodnota pobytu', 'Stay value'); ?></span><strong>678,40 €</strong></footer>
+      </article>
     </div>
     <ul class="os-callouts">
       <li><small><?php echo hg_lang('Prevádzka', 'Operations'); ?></small><b><?php echo hg_lang('Príchody, odchody a stav izieb', 'Arrivals, departures and room status'); ?></b></li>
@@ -201,15 +212,15 @@ $teamPhones = array_slice($teamPhones, 0, 5);
     <p class="os-lead"><?php echo hg_lang('Booking engine, channel manager, cenotvorba, dostupnosť a priame rezervácie ako jeden tok — nie samostatné produkty pospájané logami.', 'Booking engine, channel manager, rates, availability and direct bookings as one flow — not separate products glued together by logos.'); ?></p>
     <div class="os-booking-flow os-booking-fragments" data-fragment-stage>
       <figure class="os-ui os-crop-card os-booking-date" data-parallax-depth="0.04">
-        <div class="os-fragment-viewport"><img src="<?php echo hg_esc(hg_asset('booking-1.webp')); ?>" alt="<?php echo hg_lang('Web booking, kalendár s cenou za noc', 'Web booking calendar with a nightly rate'); ?>" width="1400" height="709" loading="lazy"></div>
+        <div class="os-fragment-viewport"><img src="<?php echo hg_esc(hg_asset('booking-1.webp')); ?>" alt="<?php echo hg_lang('Web booking, kalendár s cenou za noc', 'Web booking calendar with a nightly rate'); ?>" width="1400" height="709" loading="lazy" decoding="async"></div>
         <figcaption><small>01</small><b><?php echo hg_lang('Termín a cena', 'Dates and rate'); ?></b><span><?php echo hg_lang('Hosť vidí dostupnosť a cenu bez zbytočného kroku navyše.', 'The guest sees availability and price without an unnecessary extra step.'); ?></span></figcaption>
       </figure>
       <figure class="os-ui os-crop-card os-booking-room" data-parallax-depth="0.08">
-        <div class="os-fragment-viewport"><img src="<?php echo hg_esc(hg_asset('booking-2.webp')); ?>" alt="<?php echo hg_lang('Výber izby a ponuky vo web bookingu', 'Room and offer selection in the web booking'); ?>" width="1400" height="708" loading="lazy"></div>
+        <div class="os-fragment-viewport"><img src="<?php echo hg_esc(hg_asset('booking-2.webp')); ?>" alt="<?php echo hg_lang('Výber izby a ponuky vo web bookingu', 'Room and offer selection in the web booking'); ?>" width="1400" height="708" loading="lazy" decoding="async"></div>
         <figcaption><small>02</small><b><?php echo hg_lang('Izba a balíček', 'Room and package'); ?></b><span><?php echo hg_lang('Cena, fotografia a podmienky zostávajú čitateľné v jednom bloku.', 'Price, photo and conditions stay readable in one block.'); ?></span></figcaption>
       </figure>
       <figure class="os-ui os-crop-card os-booking-pms" data-parallax-depth="0.12">
-        <div class="os-fragment-viewport"><img src="<?php echo hg_esc(hg_asset('hero-pms.webp')); ?>" alt="<?php echo hg_lang('Rezervácia po zápise do Ellipse PMS', 'Reservation after being written into Ellipse PMS'); ?>" width="1200" height="675" loading="lazy"></div>
+        <div class="os-fragment-viewport"><img src="<?php echo hg_esc(hg_asset('hero-pms.webp')); ?>" alt="<?php echo hg_lang('Rezervácia po zápise do Ellipse PMS', 'Reservation after being written into Ellipse PMS'); ?>" width="1200" height="675" loading="lazy" decoding="async"></div>
         <figcaption><small>03</small><b><?php echo hg_lang('Automaticky v PMS', 'Automatically in PMS'); ?></b><span><?php echo hg_lang('Tá istá rezervácia pokračuje do prevádzky bez ručného prepisovania.', 'The same reservation continues into operations without manual retyping.'); ?></span></figcaption>
       </figure>
     </div>
@@ -233,12 +244,12 @@ $teamPhones = array_slice($teamPhones, 0, 5);
       </article>
       <?php if (isset($teamPhones[2])): ?>
       <figure class="os-phone">
-        <img src="<?php echo hg_esc($teamPhones[2]['img']); ?>" alt="<?php echo hg_lang('Správy v Ellipse Team', 'Messages in Ellipse Team'); ?>" loading="lazy">
+        <img src="<?php echo hg_esc($teamPhones[2]['img']); ?>" alt="<?php echo hg_lang('Správy v Ellipse Team', 'Messages in Ellipse Team'); ?>" loading="lazy" decoding="async">
         <figcaption><?php echo hg_lang('Rovnaká konverzácia v Ellipse Team', 'The same thread in Ellipse Team'); ?></figcaption>
       </figure>
       <?php elseif (isset($teamPhones[0])): ?>
       <figure class="os-phone">
-        <img src="<?php echo hg_esc($teamPhones[0]['img']); ?>" alt="<?php echo hg_lang('Ellipse Team na mobile', 'Ellipse Team on mobile'); ?>" loading="lazy">
+        <img src="<?php echo hg_esc($teamPhones[0]['img']); ?>" alt="<?php echo hg_lang('Ellipse Team na mobile', 'Ellipse Team on mobile'); ?>" loading="lazy" decoding="async">
       </figure>
       <?php endif; ?>
     </div>
@@ -249,7 +260,7 @@ $teamPhones = array_slice($teamPhones, 0, 5);
     <h2><?php echo hg_lang('Hosť vybaví rutinu. Vy sa môžete venovať hosťovi.', 'The guest handles the routine. You can stay with the guest.'); ?></h2>
     <p class="os-lead"><?php echo hg_lang('Predpríchodová komunikácia → online check-in → údaje a dokumenty → doplnkové služby → platba → príchod → pobyt → checkout.', 'Pre-arrival messages → online check-in → details and documents → extras → payment → arrival → stay → checkout.'); ?></p>
     <figure class="os-ui">
-      <img src="<?php echo hg_esc(hg_asset('selfcheckin.webp')); ?>" alt="<?php echo hg_lang('Ellipse Self Check-in na notebooku a mobile', 'Ellipse Self Check-in on a laptop and a phone'); ?>" width="1200" height="800" loading="lazy">
+      <img src="<?php echo hg_esc(hg_asset('selfcheckin.webp')); ?>" alt="<?php echo hg_lang('Ellipse Self Check-in na notebooku a mobile', 'Ellipse Self Check-in on a laptop and a phone'); ?>" width="1200" height="800" loading="lazy" decoding="async">
     </figure>
     <ol class="os-journey-steps">
       <?php foreach (array_slice($checkinPoints, 0, 6) as $i => $point): ?>
@@ -267,11 +278,11 @@ $teamPhones = array_slice($teamPhones, 0, 5);
     <p class="os-lead"><?php echo hg_lang('Hotelové účty, online platby, terminály, gastro POS a finančné dáta zostávajú v tom istom systéme ako rezervácia.', 'Hotel folios, online payments, terminals, F&B POS and financial data stay in the same system as the reservation.'); ?></p>
     <div class="os-pay-grid">
       <figure class="os-ui">
-        <img src="<?php echo hg_esc(hg_asset('booking-3.webp')); ?>" alt="<?php echo hg_lang('Platba vo web bookingu', 'Payment in the web booking'); ?>" width="1400" height="721" loading="lazy">
+        <img src="<?php echo hg_esc(hg_asset('booking-3.webp')); ?>" alt="<?php echo hg_lang('Platba vo web bookingu', 'Payment in the web booking'); ?>" width="1400" height="721" loading="lazy" decoding="async">
         <figcaption><?php echo hg_lang('Online platba pri rezervácii', 'Online payment with the booking'); ?></figcaption>
       </figure>
       <figure class="os-ui">
-        <img src="<?php echo hg_esc(hg_asset('team-pos.webp')); ?>" alt="<?php echo hg_lang('Gastro POS v Ellipse Team', 'F&B POS in Ellipse Team'); ?>" width="800" height="1600" loading="lazy">
+        <img src="<?php echo hg_esc(hg_asset('team-pos.webp')); ?>" alt="<?php echo hg_lang('Gastro POS v Ellipse Team', 'F&B POS in Ellipse Team'); ?>" width="800" height="1600" loading="lazy" decoding="async">
         <figcaption><?php echo hg_lang('Gastro POS a hotelový účet', 'F&B POS and the hotel folio'); ?></figcaption>
       </figure>
     </div>
@@ -300,7 +311,7 @@ $teamPhones = array_slice($teamPhones, 0, 5);
     <div class="os-team-phones">
       <?php foreach ($teamPhones as $i => $screen): ?>
       <figure class="os-phone<?php echo $i === 2 || ($i === 0 && count($teamPhones) < 3) ? ' is-featured' : ''; ?>">
-        <img src="<?php echo hg_esc($screen['img']); ?>" alt="<?php echo hg_esc($screen['name']); ?>" loading="lazy">
+        <img src="<?php echo hg_esc($screen['img']); ?>" alt="<?php echo hg_esc($screen['name']); ?>" loading="lazy" decoding="async">
         <figcaption><?php echo hg_esc($screen['name']); ?></figcaption>
       </figure>
       <?php endforeach; ?>
@@ -409,11 +420,11 @@ $teamPhones = array_slice($teamPhones, 0, 5);
         <p class="os-case-note"><?php echo hg_lang('Výsledok konkrétneho klienta z článku, nie prísľub pre každú prevádzku.', 'A specific client result from the article, not a promise for every property.'); ?></p>
         <div class="os-case-fragments" data-fragment-stage>
           <figure class="os-fragment os-rev-summary" data-parallax-depth="0.05">
-            <div class="os-fragment-viewport"><img src="<?php echo hg_esc($revImg); ?>" alt="<?php echo hg_lang('Zhrnutie revenue analýzy Ellipse revPRO', 'Summary from Ellipse revPRO revenue analysis'); ?>" width="1200" height="675" loading="lazy"></div>
+            <div class="os-fragment-viewport"><img src="<?php echo hg_esc($revImg); ?>" alt="<?php echo hg_lang('Zhrnutie revenue analýzy Ellipse revPRO', 'Summary from Ellipse revPRO revenue analysis'); ?>" width="1200" height="675" loading="lazy" decoding="async"></div>
             <figcaption><?php echo hg_lang('AI zhrnutie', 'AI summary'); ?></figcaption>
           </figure>
           <figure class="os-fragment os-rev-actions" data-parallax-depth="0.11">
-            <div class="os-fragment-viewport"><img src="<?php echo hg_esc($revImg); ?>" alt="<?php echo hg_lang('Odporúčania z revenue analýzy Ellipse revPRO', 'Recommendations from Ellipse revPRO revenue analysis'); ?>" width="1200" height="675" loading="lazy"></div>
+            <div class="os-fragment-viewport"><img src="<?php echo hg_esc($revImg); ?>" alt="<?php echo hg_lang('Odporúčania z revenue analýzy Ellipse revPRO', 'Recommendations from Ellipse revPRO revenue analysis'); ?>" width="1200" height="675" loading="lazy" decoding="async"></div>
             <figcaption><?php echo hg_lang('Konkrétne odporúčania', 'Concrete recommendations'); ?></figcaption>
           </figure>
         </div>
@@ -471,7 +482,7 @@ $teamPhones = array_slice($teamPhones, 0, 5);
     </ul>
     <div class="os-trust-logos">
       <?php foreach (array_slice($logos, 0, 6) as $logo): if (empty($logo['img'])) continue; ?>
-      <img src="<?php echo hg_esc($logo['img']); ?>" alt="<?php echo hg_esc($logo['name']); ?>" loading="lazy">
+      <img src="<?php echo hg_esc($logo['img']); ?>" alt="<?php echo hg_esc($logo['name']); ?>" loading="lazy" decoding="async">
       <?php endforeach; ?>
     </div>
   </section>
