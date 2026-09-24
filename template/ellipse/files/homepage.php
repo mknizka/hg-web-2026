@@ -228,7 +228,8 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@1,9..144,500;1,9..144,600&family=Montserrat:wght@400;500;600;700;800&display=swap">
   <link rel="stylesheet" href="/template/ellipse/css/hg-ref.css?v=20260923g">
   <link rel="stylesheet" href="/template/ellipse/css/hg-mono.css?v=20260923g">
-  <link rel="stylesheet" href="/template/ellipse/css/hg-os.css?v=20260924qa1">
+  <link rel="stylesheet" href="/template/ellipse/css/hg-os.css?v=20260924base">
+  <link rel="stylesheet" href="/template/ellipse/css/hg-os-premium.css?v=20260924qa2">
   <meta property="og:locale" content="<?php echo $hgLang === 'en' ? 'en_US' : 'sk_SK'; ?>">
   <meta property="og:title" content="<?php echo hg_esc($ogTitle); ?>">
   <meta property="og:description" content="<?php echo hg_esc($metaDesc); ?>">
