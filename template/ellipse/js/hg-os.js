@@ -149,6 +149,24 @@
     var reduce = window.matchMedia('(prefers-reduced-motion: reduce)');
     home.setAttribute('data-premium-ready', '1');
 
+    /* Compact glass navigation after the first few pixels of scroll. */
+    var shellNav = document.querySelector('.homepage .nav');
+    if (shellNav) {
+      var navTick = false;
+      function syncNavState() {
+        shellNav.classList.toggle('is-scrolled', (window.scrollY || window.pageYOffset || 0) > 16);
+      }
+      syncNavState();
+      window.addEventListener('scroll', function () {
+        if (navTick) return;
+        navTick = true;
+        requestAnimationFrame(function () {
+          navTick = false;
+          syncNavState();
+        });
+      }, { passive: true });
+    }
+
     /* Section reveal: restrained, progressive and accessibility-safe. */
     var sections = Array.prototype.slice.call(home.querySelectorAll(':scope > section:not(.os-canvas)'));
     if ('IntersectionObserver' in window && !reduce.matches) {
