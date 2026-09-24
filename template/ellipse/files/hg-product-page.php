@@ -20,14 +20,14 @@ if (!$productImage) {
 }
 ?>
 <main class="ed-product">
-  <header class="ed-product-hero">
+  <section class="ed-product-hero">
     <nav class="ed-breadcrumb" aria-label="<?php echo hg_lang('Navigácia stránky', 'Breadcrumb'); ?>"><a href="/">Ellipse</a><span aria-hidden="true">/</span><span><?php echo hg_esc($productName); ?></span></nav>
     <p class="prod-kicker"><?php echo hg_lang('Súčasť platformy Ellipse', 'Part of the Ellipse platform'); ?></p>
     <h1><?php echo hg_esc($productName); ?></h1>
     <?php if ($productLead): ?><p class="ed-lead"><?php echo hg_esc($productLead); ?></p><?php endif; ?>
     <div class="ed-actions"><a class="ed-button" href="/kontakt/"><?php echo hg_lang('Ukážte mi to v praxi', 'Show me how it works'); ?></a><a href="#product-detail"><?php echo hg_lang('Preskúmať funkcie', 'Explore the features'); ?> ↓</a></div>
     <?php if ($productImage): ?><figure class="ed-product-visual"><img src="<?php echo hg_esc($productImage); ?>" alt="<?php echo hg_esc($productName); ?>" decoding="async" fetchpriority="high"></figure><?php endif; ?>
-  </header>
+  </section>
   <nav class="ed-product-nav" aria-label="<?php echo hg_lang('Na tejto stránke', 'On this page'); ?>"><a href="#product-detail"><?php echo hg_lang('Funkcie a možnosti', 'Features'); ?></a><a href="#product-connected"><?php echo hg_lang('Prepojené moduly', 'Connected modules'); ?></a><a href="/kontakt/"><?php echo hg_lang('Dohodnúť demo', 'Book a demo'); ?></a></nav>
   <section class="ed-product-body" id="product-detail">
     <?php if (trim(strip_tags($productBody)) !== '' || strpos($productBody, '<img') !== false): ?>
