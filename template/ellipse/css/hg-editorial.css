@@ -14,7 +14,7 @@
 .ed-product h2{font-size:clamp(30px,3.5vw,48px);line-height:1.15;letter-spacing:-.035em}
 .ed-benefits{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px;margin-top:44px}.ed-benefits span{color:#f2124b;font-weight:600}.ed-benefits h3{font-size:24px;line-height:1.2}.ed-benefits p{font-size:17px;line-height:1.7;color:#667086}
 .ed-related{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:28px;margin-top:40px}.ed-related>a{border-top:1px solid #dce2eb;padding:28px 0;color:#081434;text-decoration:none}.ed-related span{font-size:12px;color:#f2124b;font-weight:600}.ed-related h3{font-size:26px;line-height:1.2}.ed-related p{color:#667086;line-height:1.7}.ed-related b{font-size:14px}
-.ed-cta{padding:40px!important;border-radius:20px;background:#f2f5fa;margin:48px 0;color:#081434}.ed-cta h2{margin:16px 0;font-size:clamp(26px,3vw,38px)!important;line-height:1.15!important;letter-spacing:-.035em}.ed-cta p{font-size:17px;line-height:1.7;color:#59667d}.ed-cta .hg-kicker{font-size:11px;color:#f2124b}.ed-product>.ed-cta{width:min(calc(100% - 48px),1160px);box-sizing:border-box;margin-bottom:80px}
+.ed-cta{padding:40px!important;border-radius:20px;background:#f2f5fa;margin:48px 0;color:#081434}.ed-cta .ed-cta-title{font-weight:650!important;color:#081434;margin:16px 0;font-size:clamp(26px,3vw,38px)!important;line-height:1.15!important;letter-spacing:-.035em}.ed-cta p{font-size:17px;line-height:1.7;color:#59667d}.ed-cta .hg-kicker{font-size:11px;color:#f2124b}.ed-product>.ed-cta{width:min(calc(100% - 48px),1160px);box-sizing:border-box;margin-bottom:80px}
 body.hg-mkt .ed-article #page{padding:64px 24px 80px}body.hg-mkt .ed-article #page>.container-fluid{max-width:1240px;padding:0;margin:auto}
 body.hg-mkt .ed-article .wrapper-30-0{max-width:1100px;flex-basis:100%;padding:0;margin:auto;text-align:center}
 body.hg-mkt .ed-article h1{font-size:clamp(34px,4.5vw,64px);line-height:1.08;letter-spacing:-.045em;max-width:26ch;margin:20px auto 28px}
@@ -28,3 +28,9 @@ body.hg-mkt .ed-article .main-content{font-size:18px;line-height:1.85;padding:0}
 @media(prefers-reduced-motion:reduce){.ed-button{transition:none}}
 
 body.hg-mkt .ed-article #page>.container-fluid>.row>.col-md-10{width:100%;max-width:100%;flex-basis:100%;padding-inline:0}.ed-audio{margin:24px 0}
+
+/* Legacy section reveal and flex ordering must not hide long article pages. */
+body.hg-mkt .ed-article #page,body.hg-mkt .ed-product>section,body.hg-mkt .ed-product>header{opacity:1!important;transform:none!important;visibility:visible!important}
+body.hg-mkt .ed-article .hg-article-main{order:1!important;grid-column:1!important;min-width:0}
+body.hg-mkt .ed-article .sticky-sidebar-col{order:2!important;grid-column:2!important;min-width:0}
+@media(max-width:850px){body.hg-mkt .ed-article .sticky-sidebar-col{grid-column:1!important}}

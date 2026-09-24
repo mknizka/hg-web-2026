@@ -3,7 +3,7 @@
 ## Produkt: page_13.php
 
 Spoločná šablóna `template/ellipse/files/hg-product-page.php`; vstupný súbor `page_13.php`.
-PMS (ID 44, existujúca šablóna 4) ju používa priamo. Ostatné existujúce stránky v šablóne 4 ostávajú bez zmeny.
+PMS používa nový layout podľa SEF `hotelovy-system` v page.php aj podľa pôvodného ID 44 v šablóne 4. Rovnaký routing v page.php a page_4.php je pripravený pre existujúce SEF pos-systemy, web-booking, channel-manager, online-check-in a vynosovy-modul-revpro. Ostatné existujúce stránky v šablóne 4 ostávajú bez zmeny.
 
 ### Layout
 1. Breadcrumb, produktový názov, perex, demo a odkaz na funkcie.

@@ -1,6 +1,7 @@
 <?php
   $all = themeSetupAll();
   require_once __DIR__ . '/hg_site.php';
+  require_once __DIR__ . '/hg-editorial.php';
   $hgLang = sess('lang') ? sess('lang') : 'sk';
   $hgStaging = hg_is_staging_marketing();
   $hgBase = rtrim(DOMENA_WEBU, '/');
@@ -52,7 +53,7 @@
     <script src="/template/js/jquery-1.10.2.js"></script>
     <script src="/template/ellipse/js/ellipse.js?v=20260922s"></script>
     <?php
-      if (isset($content['content_type']) && $content['content_type'] === 'rs' && !empty($content['id']) && (int)($content['rs_template'] ?? 0) !== 13 && (int)$content['id'] !== 44) {
+      if (isset($content['content_type']) && $content['content_type'] === 'rs' && !empty($content['id']) && !hg_is_product_content($content)) {
         $hgArticleUrl = $hgBase.'/'.trim((string)$content['sef'], '/').'/';
         hg_schema(array(
           array(
@@ -104,7 +105,7 @@
           --f: <?php echo themeSetup('farba_footer_pozadie'); ?>;
       }
     </style>
-  <link rel="stylesheet" href="/template/ellipse/css/hg-editorial.css?v=1">
+  <link rel="stylesheet" href="/template/ellipse/css/hg-editorial.css?v=2">
   <link rel="stylesheet" href="/template/ellipse/css/hg-typography.css?v=1">
 </head>
   <body class="<?php echo hg_esc(isset($content['content_type']) ? $content['content_type'] : ''); ?> hg-mkt">

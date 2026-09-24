@@ -4,13 +4,18 @@ $productName = !empty($content['name']) ? hg_plain($content['name']) : 'Ellipse'
 $productLead = hg_plain(isset($content['parex_text']) ? $content['parex_text'] : '');
 if ($productLead === '') $productLead = hg_plain(isset($content['description']) ? $content['description'] : '');
 $productBody = isset($content['text'][0]) ? $content['text'][0] : '';
+$productSlug = trim((string)($content['sef'] ?? ''), '/');
 $productImage = '';
 if (!empty($content['id']) && !empty($content['file_type']) && preg_match('/^(jpe?g|png|webp|avif|gif)$/i', $content['file_type'])) {
   $productImage = '/img/rs/'.(int)$content['id'].'.'.$content['file_type'];
 }
-if ((int)($content['id'] ?? 0) === 44) {
+if ((int)($content['id'] ?? 0) === 44 || $productSlug === 'hotelovy-system') {
   if (!$productImage) $productImage = hg_asset('hero-pms.webp');
   if (!$productLead) $productLead = hg_lang('Rezervácie, pobyty, hostia a účty na jednom mieste. Prehľad, ktorý potrebuje recepcia aj manažment.', 'Reservations, stays, guests and bills in one place. Clarity for your front desk and management.');
+}
+if (!$productImage) {
+  $productMedia = array('pos-systemy'=>'team-pos.webp', 'web-booking'=>'booking-1.webp', 'online-check-in'=>'selfcheckin.webp', 'vynosovy-modul-revpro'=>'hero-rev.webp', 'channel-manager'=>'hero-pms.webp');
+  if (isset($productMedia[$productSlug])) $productImage = hg_asset($productMedia[$productSlug]);
 }
 ?>
 <main class="ed-product">
@@ -26,7 +31,7 @@ if ((int)($content['id'] ?? 0) === 44) {
   <section class="ed-product-body" id="product-detail">
     <?php if (trim(strip_tags($productBody)) !== '' || strpos($productBody, '<img') !== false): ?>
     <div class="ed-rich-content"><?php echo $productBody; /* Trusted RS rich text, preserved as authored. */ ?></div>
-    <?php elseif ((int)($content['id'] ?? 0) === 44): ?>
+    <?php elseif ((int)($content['id'] ?? 0) === 44 || $productSlug === 'hotelovy-system'): ?>
     <h2><?php echo hg_lang('Každý deň prehľadnejšia prevádzka.', 'Clearer operations, every day.'); ?></h2>
     <div class="ed-benefits">
       <article><span>01</span><h3><?php echo hg_lang('Rezervácie a pobyty', 'Reservations and stays'); ?></h3><p><?php echo hg_lang('Hotelová plachta a informácie o pobyte na jednom mieste.', 'Your room calendar and stay information in one place.'); ?></p></article>

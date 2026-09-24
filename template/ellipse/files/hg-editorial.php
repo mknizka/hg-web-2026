@@ -10,6 +10,13 @@ if (!function_exists('hg_editorial_ctas')) {
     );
   }
   function hg_editorial_cta($item, $inline = false) {
-    echo '<aside class="ed-cta'.($inline ? ' ed-cta-inline' : '').'"'.($inline ? ' data-editorial-cta' : '').'><p class="hg-kicker">'.hg_esc($item[1]).'</p><h2>'.hg_esc($item[2]).'</h2><p>'.hg_esc($item[3]).'</p><a class="ed-button" href="'.hg_esc($item[0]).'">'.hg_esc($item[4]).' <span aria-hidden="true">↗</span></a></aside>';
+    echo '<aside class="ed-cta'.($inline ? ' ed-cta-inline' : '').'"'.($inline ? ' data-editorial-cta' : '').'><p class="hg-kicker">'.hg_esc($item[1]).'</p><p class="ed-cta-title">'.hg_esc($item[2]).'</p><p>'.hg_esc($item[3]).'</p><a class="ed-button" href="'.hg_esc($item[0]).'">'.hg_esc($item[4]).' <span aria-hidden="true">↗</span></a></aside>';
+  }
+}
+
+if (!function_exists('hg_is_product_content')) {
+  function hg_is_product_content($content) {
+    $slug = trim((string)($content['sef'] ?? ''), '/');
+    return (int)($content['rs_template'] ?? 0) === 13 || (int)($content['id'] ?? 0) === 44 || in_array($slug, array('hotelovy-system', 'pos-systemy', 'web-booking', 'channel-manager', 'online-check-in', 'vynosovy-modul-revpro'), true);
   }
 }
