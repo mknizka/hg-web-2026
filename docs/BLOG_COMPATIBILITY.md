@@ -19,3 +19,8 @@
 
 ## Kontroly pri prechode na produkciu
 Zachovať existujúce routovanie, obrázky `/img/rs/`, médiá v článkoch, reakčné endpointy a dáta RS. Nový web je téma nad existujúcou DB; nejde o import ani migráciu obsahu. Ukážky starého formátovaného obsahu overiť na rovnakých článkoch na pôvodnom aj novom webe.
+
+Tematické filtre zahŕňajú aj gastro (`problem=gastro`): QR objednávanie, platby pri stole a optimalizácia receptúr. Na homepage je šesť hlavných problémov; apartmánové témy zostávajú v úplnom rozcestníku.
+
+## Médiá homepage
+V `product-originals/` sú štyri presné dodané originály: web booking, klientsky CRM účet a dve ukážky Claude/MCP. Sú vložené do príslušných sekcií. CRM používa CSS výrez okolo celého telefónu; jeho originál sa nemení. Náhľady sa dajú zväčšiť, MCP navyše otvoriť ako originálny súbor. V POS galérii je všetkých 9 súborov zo schváleného priečinka. Pás používa všetkých 14 log v dvoch rovnakých skupinách pre neprerušovaný cyklus, s pauzou a režimom obmedzeného pohybu.

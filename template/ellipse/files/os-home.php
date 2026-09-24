@@ -188,6 +188,7 @@ $fragment = function ($file, $sw, $sh, $x, $y, $w, $h, $alt, $eager = false) {
     <p class="os-kicker"><?php echo hg_lang('Predaj a distribúcia', 'Sales and distribution'); ?></p>
     <h2><?php echo hg_lang('Predávajte izby všade. Riaďte ich na jednom mieste.', 'Sell rooms everywhere. Manage them in one place.'); ?></h2>
     <p class="os-lead"><?php echo hg_lang('Booking engine, channel manager, cenotvorba, dostupnosť a priame rezervácie ako jeden tok — nie samostatné produkty pospájané logami.', 'Booking engine, channel manager, rates, availability and direct bookings as one flow — not separate products glued together by logos.'); ?></p>
+    <figure class="er-booking er-original"><button type="button" data-screen-open aria-label="<?php echo hg_lang('Zväčšiť ukážku web bookingu', 'Enlarge web booking'); ?>"><img src="<?php echo hg_esc(hg_asset('product-originals/web-booking.png')); ?>" width="1900" height="1520" alt="<?php echo hg_lang('Reálny Ellipse web booking: výber izby, pobytové ponuky a rekapitulácia rezervácie v mobile', 'Real Ellipse web booking: mobile room selection, stay offers and booking summary'); ?>" loading="lazy" decoding="async"></button><figcaption><span><?php echo hg_lang('Takto rezervujú vaši hostia.', 'How your guests book.'); ?></span><span><?php echo hg_lang('Kliknite a pozrite si detail ↗', 'Click to explore the details ↗'); ?></span></figcaption></figure>
     <div class="os-booking-flow os-booking-fragments" data-fragment-stage>
       <figure class="os-ui os-crop-card os-booking-date" data-parallax-depth="0.04">
         <div class="os-fragment-viewport"><img src="<?php echo hg_esc(hg_asset('booking-1.webp')); ?>" alt="<?php echo hg_lang('Web booking, kalendár s cenou za noc', 'Web booking calendar with a nightly rate'); ?>" width="1400" height="709" loading="lazy" decoding="async"></div>
@@ -269,12 +270,7 @@ $fragment = function ($file, $sw, $sh, $x, $y, $w, $h, $alt, $eager = false) {
     <h2 id="loyalty-title"><?php echo hg_lang('Z návštevy vzťah. Z hosťa stály klient.', 'Turn a visit into a relationship. A guest into a regular.'); ?></h2>
     <p class="os-lead"><?php echo hg_lang('Vernosť nevzniká náhodou. Budujte ju naprieč celou prevádzkou — od malého bistra po hotelový rezort. Jeden vernostný ekosystém pre všetky moduly Ellipse, online aj osobne.', 'Loyalty does not happen by chance. Build it across your business, from a small bistro to a hotel resort. One loyalty ecosystem for every Ellipse module, online and in person.'); ?></p>
     <div class="loyalty-core">
-      <div class="loyalty-pass">
-        <img src="<?php echo hg_esc(hg_asset('fragments/ellipse-original.svg')); ?>" alt="Ellipse" width="140" height="43" loading="lazy">
-        <p><?php echo hg_lang('Jedna karta. Všetky výhody.', 'One card. Every benefit.'); ?></p>
-        <span>Ellipse Loyalty</span>
-        <small>Apple Wallet · Google Wallet</small>
-      </div>
+      <figure class="er-crm er-original"><button type="button" class="er-crm-viewport" data-screen-open aria-label="<?php echo hg_lang('Zväčšiť klientsky CRM účet', 'Enlarge the customer CRM account'); ?>"><img src="<?php echo hg_esc(hg_asset('product-originals/crm-account.png')); ?>" width="2000" height="1500" alt="<?php echo hg_lang('Klientsky účet Ellipse: kredit, QR kód, správy a e-mailové preferencie hosťa', 'Ellipse customer account: credit, QR code, messages and email preferences'); ?>" loading="lazy" decoding="async"></button><figcaption><?php echo hg_lang('Skutočný klientsky účet. V mobile hosťa.', 'The real customer account. In your guest’s phone.'); ?></figcaption></figure>
       <div class="loyalty-copy">
         <h3><?php echo hg_lang('V mobile hosťa. V srdci vašej prevádzky.', 'In your guest’s phone. At the heart of your business.'); ?></h3>
         <p><?php echo hg_lang('Digitálna vernostná karta je vždy poruke. Jednoduchý scan QR kódu identifikuje zákazníka na kase aj v mobilnom čašníkovi. Bez plastovej či RFID karty.', 'A digital loyalty card is always at hand. A quick QR scan identifies the customer at the till or in the mobile waiter. No plastic or RFID card needed.'); ?></p>
@@ -363,6 +359,10 @@ $fragment = function ($file, $sw, $sh, $x, $y, $w, $h, $alt, $eager = false) {
       <p><?php echo hg_lang('Príklad: spýtate sa Claude na dochádzku housekeepingu. Model načíta príchody a odchody z Ellipse a pripraví rozpis síl po dňoch — na schválenie, nie tichý zápis.', 'Example: you ask Claude for a housekeeping rota. The model loads arrivals and departures from Ellipse and drafts staffing by day — for approval, not a silent write.'); ?></p>
     </article>
     <?php endif; ?>
+    <div class="er-mcp-gallery">
+      <figure class="er-mcp er-original"><figcaption><span>Ellipse × Claude</span><strong><?php echo hg_lang('Od otázky k analýze obsadenosti a predaja.', 'From a question to occupancy and sales analysis.'); ?></strong></figcaption><button type="button" data-screen-open aria-label="<?php echo hg_lang('Zväčšiť ukážku MCP v Claude', 'Enlarge the MCP example in Claude'); ?>"><img src="<?php echo hg_esc(hg_asset('product-originals/claude-analysis.webp')); ?>" width="1920" height="979" alt="<?php echo hg_lang('Od otázky k analýze obsadenosti a predaja.', 'From a question to occupancy and sales analysis.'); ?>" loading="lazy" decoding="async"></button><a href="<?php echo hg_esc(hg_asset('product-originals/claude-analysis.webp')); ?>" target="_blank" rel="noopener"><?php echo hg_lang('Otvoriť originálny screenshot', 'Open the original screenshot'); ?> ↗</a></figure>
+      <figure class="er-mcp er-original"><figcaption><span>Ellipse × Claude</span><strong><?php echo hg_lang('Od analýzy dát k návrhu rozpisu tímu.', 'From data analysis to a proposed team rota.'); ?></strong></figcaption><button type="button" data-screen-open aria-label="<?php echo hg_lang('Zväčšiť ukážku MCP v Claude', 'Enlarge the MCP example in Claude'); ?>"><img src="<?php echo hg_esc(hg_asset('product-originals/claude-workflow.webp')); ?>" width="1920" height="981" alt="<?php echo hg_lang('Od analýzy dát k návrhu rozpisu tímu.', 'From data analysis to a proposed team rota.'); ?>" loading="lazy" decoding="async"></button><a href="<?php echo hg_esc(hg_asset('product-originals/claude-workflow.webp')); ?>" target="_blank" rel="noopener"><?php echo hg_lang('Otvoriť originálny screenshot', 'Open the original screenshot'); ?> ↗</a></figure>
+    </div>
     <p class="os-mcp-note"><?php echo hg_lang('Údaje odchádzajú anonymizované, bez mien hostí. Výstup je odporúčanie. Rozhodnutie ostáva na vás.', 'Data leaves anonymised, without guest names. The output is advice. The decision stays with you.'); ?></p>
     <div class="os-actions">
       <a class="button" href="/virtualna-recepcia-ella-ai/"><?php echo hg_lang('Pozrieť MCP a Ellu', 'See MCP and Ella'); ?></a>
@@ -461,7 +461,7 @@ $fragment = function ($file, $sw, $sh, $x, $y, $w, $h, $alt, $eager = false) {
     <h2><?php echo hg_lang('Čo dnes brzdí vašu prevádzku?', 'What is holding your business back?'); ?></h2>
     <p class="os-lead"><?php echo hg_lang('Konkrétne hotelové a HORECA problémy. Postupy, ktoré vám pomôžu ušetriť čas, získať prehľad a lepšie predávať.', 'Real hospitality challenges. Practical ways to save time, gain clarity and improve sales.'); ?></p>
     <div class="eh-problem-grid">
-    <?php require_once __DIR__.'/hg-blog-data.php'; foreach (hg_problem_topics() as $key => $topic): ?>
+    <?php require_once __DIR__.'/hg-blog-data.php'; foreach (array_slice(hg_problem_topics(),0,6,true) as $key => $topic): ?>
       <a href="/blog/?tema=problemy&amp;problem=<?php echo hg_esc($key); ?>"><span><?php echo hg_esc($topic['eyebrow']); ?></span><h3><?php echo hg_esc($topic['title']); ?></h3><p><?php echo hg_esc($topic['lead']); ?></p><b><?php echo hg_lang('Pozrieť riešenia', 'Explore solutions'); ?> ↗</b></a>
     <?php endforeach; ?></div>
     <div class="os-actions"><a class="button ghost" href="/blog/?tema=problemy"><?php echo hg_lang('Všetky problémy a riešenia', 'All challenges and solutions'); ?></a></div>
