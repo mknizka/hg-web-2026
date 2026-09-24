@@ -276,3 +276,70 @@
   });
 })();
 
+
+/* === PREMIUM HOMEPAGE V1 / FRAGMENT PARALLAX === */
+(function () {
+  'use strict';
+
+  function ready(fn) {
+    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', fn);
+    else fn();
+  }
+
+  ready(function () {
+    var home = document.querySelector('main.os-home');
+    if (!home) return;
+
+    var reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
+    var mobile = window.matchMedia('(max-width: 700px)');
+    var items = Array.prototype.slice.call(home.querySelectorAll('[data-parallax-depth]'));
+    if (!items.length) return;
+
+    var ticking = false;
+
+    function reset() {
+      items.forEach(function (item) {
+        item.style.setProperty('--parallax-y', '0px');
+      });
+    }
+
+    function render() {
+      ticking = false;
+      if (reduced.matches || mobile.matches) {
+        reset();
+        return;
+      }
+
+      var vh = window.innerHeight || document.documentElement.clientHeight || 800;
+      var viewportCenter = vh / 2;
+
+      items.forEach(function (item) {
+        var rect = item.getBoundingClientRect();
+        if (rect.bottom < -160 || rect.top > vh + 160) return;
+        var center = rect.top + rect.height / 2;
+        var normalized = (viewportCenter - center) / vh;
+        if (normalized > 1) normalized = 1;
+        if (normalized < -1) normalized = -1;
+        var depth = parseFloat(item.getAttribute('data-parallax-depth')) || 0;
+        var y = normalized * depth * 190;
+        item.style.setProperty('--parallax-y', y.toFixed(2) + 'px');
+      });
+    }
+
+    function requestRender() {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(render);
+    }
+
+    render();
+    window.addEventListener('scroll', requestRender, { passive: true });
+    window.addEventListener('resize', requestRender);
+
+    if (typeof reduced.addEventListener === 'function') {
+      reduced.addEventListener('change', requestRender);
+      mobile.addEventListener('change', requestRender);
+    }
+  });
+})();
+
