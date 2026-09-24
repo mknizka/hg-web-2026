@@ -225,8 +225,8 @@ $fragment = function ($file, $sw, $sh, $x, $y, $w, $h, $alt, $eager = false) {
       </article>
       <?php if (isset($teamPhones[2])): ?>
       <figure class="os-phone">
-        <img src="<?php echo hg_esc($teamPhones[2]['img']); ?>" alt="<?php echo hg_lang('Správy v Ellipse Team', 'Messages in Ellipse Team'); ?>" loading="lazy" decoding="async">
-        <figcaption><?php echo hg_lang('Rovnaká konverzácia v Ellipse Team', 'The same thread in Ellipse Team'); ?></figcaption>
+        <img src="<?php echo hg_esc($teamPhones[2]['img']); ?>" alt="<?php echo hg_lang('CRM v Ellipse Team', 'CRM in Ellipse Team'); ?>" loading="lazy" decoding="async">
+        <figcaption><?php echo hg_lang('Prehľad o hosťoch aj v Ellipse Team', 'Guest overview in Ellipse Team too'); ?></figcaption>
       </figure>
       <?php elseif (isset($teamPhones[0])): ?>
       <figure class="os-phone">
