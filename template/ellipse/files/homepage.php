@@ -272,55 +272,16 @@
 <link rel="stylesheet" href="/template/ellipse/css/hg-home-refresh.css?v=4">
 <link rel="stylesheet" href="/template/ellipse/css/hg-typography.css?v=1">
 <link rel="stylesheet" href="/template/ellipse/css/hg-icons.css?v=1">
+<link rel="stylesheet" href="/template/ellipse/css/hg-shell.css?v=1">
 </head>
 <body class="homepage">
   <?php if (function_exists('themeSetup')) { echo themeSetup('extra_body'); } ?>
-  <div class="announcement">
-    <?php echo hg_lang('NOVINKA', 'NEW'); ?>
-    <?php if ($news): ?>
-      <span><?php echo hg_esc(hg_plain($news['name'], 90)); ?></span>
-      <?php if (!empty($news['link'])): ?><a href="<?php echo hg_esc($news['link']); ?>"><?php echo hg_lang('Čítať', 'Read'); ?></a><?php endif; ?>
-    <?php else: ?>
-      <span><?php echo hg_lang('Ellipse Team — prevádzku máte pod kontrolou aj z mobilu', 'Ellipse Team — the operation stays in your pocket'); ?></span>
-      <a href="#team"><?php echo hg_lang('Objaviť aplikáciu', 'Discover the app'); ?></a>
-    <?php endif; ?>
-  </div>
+  <?php include __DIR__ . '/hg-announcement.php'; ?>
   <?php $hgNavHome = true; include __DIR__ . '/hg_nav.php'; ?>
   <?php include __DIR__ . '/os-home.php'; ?>
 
-  <footer>
-    <div class="footer-brand">
-      <a class="brand inverse" href="#top"><img src="<?php echo hg_esc($logoSrc); ?>" alt="Ellipse" width="158" height="55"></a>
-      <p><?php echo hg_lang('All-in-one cloudová platforma<br>pre modernú HORECA prevádzku.', 'An all-in-one cloud platform<br>for a modern HORECA operation.'); ?></p>
-    </div>
-    <div>
-      <b><?php echo hg_lang('Platforma', 'Platform'); ?></b>
-      <a href="/hotelovy-system/"><?php echo hg_lang('Hotelový PMS', 'Hotel PMS'); ?></a>
-      <a href="/web-booking/"><?php echo hg_lang('Booking engine', 'Booking engine'); ?></a>
-      <a href="/pos-systemy/"><?php echo hg_lang('Gastro a POS', 'F&B and POS'); ?></a>
-      <a href="#platby"><?php echo hg_lang('Online a POS platby', 'Online and POS payments'); ?></a>
-      <a href="#loyalty">Ellipse Loyalty &amp; CRM</a>
-      <a href="/virtualna-recepcia-ella-ai/">Ella AI</a>
-      <a href="#mcp"><?php echo hg_lang('MCP konektor', 'MCP connector'); ?></a>
-      <a href="/vstupy-a-akvaparky/"><?php echo hg_lang('Aquapark', 'Waterpark'); ?></a>
-    </div>
-    <div>
-      <b><?php echo hg_lang('Spoločnosť', 'Company'); ?></b>
-      <a href="#referencie"><?php echo hg_lang('Referencie', 'References'); ?></a>
-      <a href="/blog/">Blog</a>
-      <a href="/kontakt/"><?php echo hg_lang('Kontakt', 'Contact'); ?></a>
-      <a href="/cennik/"><?php echo hg_lang('Cenník', 'Pricing'); ?></a>
-    </div>
-    <div>
-      <b><?php echo hg_lang('Kontakt', 'Contact'); ?></b>
-      <a href="mailto:<?php echo hg_esc($nap['email']); ?>"><?php echo hg_esc($nap['email']); ?></a>
-      <a href="tel:<?php echo hg_esc($nap['phone']); ?>"><?php echo hg_esc($nap['phone_display']); ?></a>
-      <span><?php echo hg_esc($nap['street'].', '.$nap['city']); ?></span>
-      <span>Slovensko</span>
-    </div>
-    <div class="copyright">© <?php echo date('Y'); ?> <?php echo hg_esc($nap['name']); ?> <span><a href="/gdpr/"><?php echo hg_lang('Ochrana súkromia', 'Privacy'); ?></a> · <a href="/vop/">VOP</a></span></div>
-  </footer>
-  <script src="/template/ellipse/js/hg-ref.js?v=20260923g" defer></script>
+  <?php include __DIR__ . '/hg-footer.php'; ?>
+  <script src="/template/ellipse/js/hg-ref.js?v=20260924shell1" defer></script>
   <script src="/template/ellipse/js/hg-os.js?v=20260924audit2" defer></script>
   <script src="/template/ellipse/js/hg-audience.js?v=4" defer></script>
   <script src="/template/ellipse/js/hg-os-premium.js?v=20260924audit2" defer></script>
@@ -328,6 +289,7 @@
 <script src="/template/ellipse/js/hg-mobile-showcase.js?v=2" defer></script>
 <script src="/template/ellipse/js/hg-home-refresh.js?v=1" defer></script>
 <script src="/template/ellipse/js/hg-icons.js?v=1" defer></script>
+<script src="/template/ellipse/js/hg-navigation.js?v=1" defer></script>
 </body>
 </html>
 

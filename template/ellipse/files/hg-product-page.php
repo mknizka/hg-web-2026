@@ -26,7 +26,7 @@ if (!$productImage) {
     <h1><?php echo hg_esc($productName); ?></h1>
     <?php if ($productLead): ?><p class="ed-lead"><?php echo hg_esc($productLead); ?></p><?php endif; ?>
     <div class="ed-actions"><a class="ed-button" href="/kontakt/"><?php echo hg_lang('Ukážte mi to v praxi', 'Show me how it works'); ?></a><a href="#product-detail"><?php echo hg_lang('Preskúmať funkcie', 'Explore the features'); ?> <svg class="hg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 5v14m-6-6 6 6 6-6"/></svg></a></div>
-    <?php if ($productImage): ?><figure class="ed-product-visual"><img src="<?php echo hg_esc($productImage); ?>" alt="<?php echo hg_esc($productName); ?>" decoding="async" fetchpriority="high"></figure><?php endif; ?>
+    <?php if ($productImage): ?><figure class="ed-product-visual"><img src="<?php echo hg_esc($productImage); ?>" data-rs-fallback="<?php echo hg_esc(preg_replace('/([0-9]+)\.([a-zA-Z]+)$/', '/$1-01.$2', $productImage)); ?>" alt="<?php echo hg_esc($productName); ?>" decoding="async" fetchpriority="high"></figure><?php endif; ?>
   </section>
   <nav class="ed-product-nav" aria-label="<?php echo hg_lang('Na tejto stránke', 'On this page'); ?>"><a href="#product-detail"><?php echo hg_lang('Funkcie a možnosti', 'Features'); ?></a><a href="#product-connected"><?php echo hg_lang('Prepojené moduly', 'Connected modules'); ?></a><a href="/kontakt/"><?php echo hg_lang('Dohodnúť demo', 'Book a demo'); ?></a></nav>
   <section class="ed-product-body" id="product-detail">
