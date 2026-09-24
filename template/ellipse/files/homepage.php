@@ -232,7 +232,7 @@
   <link rel="stylesheet" href="/template/ellipse/css/hg-os-premium.css?v=20260924audit2">
 <link rel="stylesheet" href="/template/ellipse/css/hg-fragments.css?v=20260924audit2">
   <link rel="stylesheet" href="/template/ellipse/css/hg-home-audit.css?v=20260924audit2">
-  <link rel="stylesheet" href="/template/ellipse/css/hg-brand-clean.css?v=20260924brand1">
+  <link rel="stylesheet" href="/template/ellipse/css/hg-brand-clean.css?v=20260924brand2">
   <meta property="og:locale" content="<?php echo $hgLang === 'en' ? 'en_US' : 'sk_SK'; ?>">
   <meta property="og:title" content="<?php echo hg_esc($ogTitle); ?>">
   <meta property="og:description" content="<?php echo hg_esc($metaDesc); ?>">

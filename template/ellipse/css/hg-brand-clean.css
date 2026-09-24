@@ -16,7 +16,7 @@ body .emotions-grid {display:flex;flex-wrap:wrap;gap:10px;}
 body .emotion-btn {width:auto;min-width:0;display:inline-flex;align-items:center;gap:10px;padding:12px 16px;}
 body .reaction-label {font-family:inherit;font-size:13px;line-height:1.5;font-weight:400;}
 /* This is product copy, not a simulated phone UI. */
-.os-home .ep-tap {max-width:1100px;margin:42px auto 0;padding:32px 36px;border:1px solid #e0e6ef;border-radius:24px;background:white;text-align:left;}
+.os-home .ep-tap {display:block;grid-template-columns:none;max-width:1100px;margin:42px auto 0;padding:32px 36px;border:1px solid #e0e6ef;border-radius:24px;background:white;text-align:left;}
 .os-home .ep-tap h3 {font-size:clamp(25px,3vw,36px);line-height:1.2;letter-spacing:-.03em;margin:14px 0;}
 .os-home .ep-tap p:not(.os-kicker) {font-size:16px;line-height:1.75;color:#61718b;max-width:850px;margin:0;}
 .os-home .ep-tap small {display:block;font-size:12px;line-height:1.6;color:#61718b;margin-top:14px;}

@@ -29,7 +29,7 @@
     <link type="text/css" rel="stylesheet" href="/template/ellipse/css/hg-ref.css?v=20260923g" media="screen">
     <link type="text/css" rel="stylesheet" href="/template/ellipse/css/hg-mono.css?v=20260923g" media="screen">
     <link type="text/css" rel="stylesheet" href="/template/ellipse/css/hg.css?v=20260923g" media="screen">
-    <link rel="stylesheet" href="/template/ellipse/css/hg-brand-clean.css?v=20260924brand1">
+    <link rel="stylesheet" href="/template/ellipse/css/hg-brand-clean.css?v=20260924brand2">
     <?php if (!empty($content['rs_template']) && (int)$content['rs_template'] === 12): ?>
     <link rel="stylesheet" href="/template/ellipse/css/hg-product.css?v=20260923g" media="screen">
     <?php endif; ?>
