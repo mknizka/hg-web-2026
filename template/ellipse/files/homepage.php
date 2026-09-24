@@ -229,7 +229,8 @@
   <link rel="stylesheet" href="/template/ellipse/css/hg-ref.css?v=20260923g">
   <link rel="stylesheet" href="/template/ellipse/css/hg-mono.css?v=20260923g">
   <link rel="stylesheet" href="/template/ellipse/css/hg-os.css?v=20260924base">
-  <link rel="stylesheet" href="/template/ellipse/css/hg-os-premium.css?v=20260924auto1">
+  <link rel="stylesheet" href="/template/ellipse/css/hg-os-premium.css?v=20260924fragments1">
+<link rel="stylesheet" href="/template/ellipse/css/hg-fragments.css?v=20260924fragments1">
   <meta property="og:locale" content="<?php echo $hgLang === 'en' ? 'en_US' : 'sk_SK'; ?>">
   <meta property="og:title" content="<?php echo hg_esc($ogTitle); ?>">
   <meta property="og:description" content="<?php echo hg_esc($metaDesc); ?>">
@@ -311,8 +312,8 @@
     <div class="copyright">© <?php echo date('Y'); ?> <?php echo hg_esc($nap['name']); ?> <span><a href="/gdpr/"><?php echo hg_lang('Ochrana súkromia', 'Privacy'); ?></a> · <a href="/vop/">VOP</a></span></div>
   </footer>
   <script src="/template/ellipse/js/hg-ref.js?v=20260923g" defer></script>
-  <script src="/template/ellipse/js/hg-os.js?v=20260924auto1" defer></script>
-  <script src="/template/ellipse/js/hg-os-premium.js?v=20260924auto1" defer></script>
+  <script src="/template/ellipse/js/hg-os.js?v=20260924fragments1" defer></script>
+  <script src="/template/ellipse/js/hg-os-premium.js?v=20260924fragments1" defer></script>
   <?php if (function_exists('themeSetup')) { echo themeSetup('extra_body_end'); } ?>
 </body>
 </html>

@@ -97,7 +97,7 @@
         var step = parseInt(canvas.getAttribute('data-os-step'), 10) || 0;
         lines.forEach(function (item) {
           var lineStep = parseInt(item.line.getAttribute('data-line-step'), 10) || 0;
-          item.line.classList.toggle('is-on', lineStep <= step);
+          item.line.classList.toggle('is-on', item.node.classList.contains('is-on'));
         });
       }
 

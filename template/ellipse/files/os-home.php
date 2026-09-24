@@ -59,6 +59,13 @@ $teamPhones = array_values(array_filter($team, function ($s) {
   return !empty($s['img']);
 }));
 $teamPhones = array_slice($teamPhones, 0, 5);
+
+// Exact, responsive viewports into original Ellipse screenshots. No reconstructed data.
+$fragment = function ($file, $sw, $sh, $x, $y, $w, $h, $alt, $eager = false) {
+  echo '<div class="ef-viewport" style="aspect-ratio:'.$w.' / '.$h.'">';
+  echo '<img src="'.hg_esc(hg_asset('fragments/'.$file)).'" alt="'.hg_esc($alt).'" width="'.$sw.'" height="'.$sh.'" loading="'.($eager ? 'eager' : 'lazy').'" decoding="async"'.($eager ? ' fetchpriority="high"' : '').' style="width:'.round($sw / $w * 100, 5).'%;left:'.round(-$x / $w * 100, 5).'%;top:'.round(-$y / $h * 100, 5).'%;">';
+  echo '</div>';
+};
 ?>
 
 <main id="top" class="os-home">
@@ -73,18 +80,19 @@ $teamPhones = array_slice($teamPhones, 0, 5);
         <a class="button ghost" href="#platforma"><?php echo hg_lang('Objaviť platformu', 'Discover the platform'); ?></a>
       </div>
     </div>
-    <div class="os-hero-visual">
-      <figure class="os-ui os-ui-hero">
-        <img src="<?php echo hg_esc($heroImg); ?>" alt="<?php echo hg_lang('Hotelová plachta rezervácií Ellipse PMS', 'Ellipse PMS reservation tape chart'); ?>" width="1200" height="675" loading="eager" decoding="async" fetchpriority="high">
+    <div class="os-hero-visual ef-hero" aria-label="<?php echo hg_lang('Detaily z Ellipse', 'Details from Ellipse'); ?>">
+      <figure class="ef-card ef-hero-chart">
+        <figcaption><span class="ef-dot"></span><?php echo hg_lang('Vývoj obsadenosti', 'Occupancy trend'); ?><small>2025 / 2026</small></figcaption>
+        <?php $fragment('occupancy.webp',4392,938,0,190,2240,700,hg_lang('Krivkový graf obsadenosti, január až jún', 'Occupancy curves, January to June'),true); ?>
       </figure>
-      <figure class="os-ui os-ui-layer">
-        <img src="<?php echo hg_esc($dayImg); ?>" alt="<?php echo hg_lang('Denný dashboard Ellipse PMS', 'Ellipse PMS daily dashboard'); ?>" width="1200" height="675" loading="lazy" decoding="async">
+      <figure class="ef-card ef-hero-calendar">
+        <?php $fragment('pace-calendar.webp',1830,642,30,60,650,530,hg_lang('Kalendár tempa predaja na september', 'September sales pace calendar')); ?>
+        <figcaption><?php echo hg_lang('Tempo predaja', 'Sales pace'); ?><span>↗</span></figcaption>
       </figure>
-      <?php if (isset($teamPhones[0])): ?>
-      <figure class="os-phone os-phone-hero">
-        <img src="<?php echo hg_esc($teamPhones[0]['img']); ?>" alt="<?php echo hg_esc($teamPhones[0]['name']); ?>" loading="lazy" decoding="async">
+      <figure class="ef-card ef-dark ef-hero-target">
+        <?php $fragment('mobile-target.webp',1179,1189,64,441,1050,725,hg_lang('Ellipse Team: výsledky oproti ročnému cieľu', 'Ellipse Team: performance against the annual target')); ?>
+        <figcaption>Ellipse Team <span>↗</span></figcaption>
       </figure>
-      <?php endif; ?>
     </div>
   </section>
 
@@ -110,7 +118,7 @@ $teamPhones = array_slice($teamPhones, 0, 5);
       </div>
       <div class="os-eco" aria-hidden="false">
         <div class="os-node os-core" data-step="1">
-          <b>ellipse<span aria-hidden="true"></span></b>
+          <img class="ef-core-logo" src="<?php echo hg_esc(hg_asset('fragments/ellipse-original.svg')); ?>" alt="Ellipse" width="210" height="64" loading="lazy" decoding="async">
           <span><?php echo hg_lang('Jadro platformy · jeden zdroj pravdy', 'Core platform · one source of truth'); ?></span>
         </div>
         <div class="os-node" data-step="2">
@@ -142,52 +150,25 @@ $teamPhones = array_slice($teamPhones, 0, 5);
   </section>
 
   <section class="os-product" id="showcase" aria-label="<?php echo hg_lang('Produkt Ellipse', 'Ellipse product'); ?>">
-    <p class="os-kicker"><?php echo hg_lang('Skutočný Ellipse', 'Real Ellipse'); ?></p>
-    <h2><?php echo hg_lang('Toto nie je koncept. Toto je Ellipse.', 'This is not a concept. This is Ellipse.'); ?></h2>
-    <p class="os-lead"><?php echo hg_lang('Reálne obrazovky z prevádzky rozkladáme na to podstatné — čísla, rezervácie a odporúčania, ktoré tím potrebuje práve teraz.', 'Real operational screens are reduced to what matters — numbers, reservations and recommendations the team needs right now.'); ?></p>
-    <div class="os-live-kpi-strip" aria-label="<?php echo hg_lang('Ukážka reálneho denného prehľadu Ellipse', 'Example from a real Ellipse daily overview'); ?>">
-      <article><small><?php echo hg_lang('Úlohy · to do', 'Tasks · to do'); ?></small><b>9</b><span>23</span></article>
-      <article><small>Check-out</small><b>5</b><span>5</span></article>
-      <article><small>Check-in</small><b>3</b><span>3</span></article>
-      <article><small><?php echo hg_lang('Hostia', 'Guests'); ?></small><b>0</b><span>6</span></article>
-      <article><small><?php echo hg_lang('Neuprataných', 'Unclean rooms'); ?></small><b>34</b><span>1</span></article>
-    </div>
-    <div class="os-fragment-stage" data-fragment-stage>
-      <figure class="os-fragment os-fragment-kpis" data-parallax-depth="0.06">
-        <div class="os-fragment-viewport">
-          <img src="<?php echo hg_esc(hg_asset('hero-day.webp')); ?>" alt="<?php echo hg_lang('KPI prehľad z reálneho dashboardu Ellipse PMS', 'KPI overview from the live Ellipse PMS dashboard'); ?>" width="1400" height="788" loading="lazy" decoding="async">
+    <p class="os-kicker"><?php echo hg_lang('Ellipse zblízka', 'Ellipse up close'); ?></p>
+    <h2><?php echo hg_lang('Malé detaily. Veľký prehľad.', 'Small details. The whole picture.'); ?></h2>
+    <p class="os-lead"><?php echo hg_lang('Rezervácie, obsadenosť a tempo predaja. To podstatné máte vždy pred očami.', 'Reservations, occupancy and sales pace. Keep what matters in view.'); ?></p>
+    <div class="ef-scenes">
+      <article class="ef-scene">
+        <div class="ef-scene-copy"><span class="ef-index">01 / PMS</span><h3><?php echo hg_lang('Každá izba. Každý pobyt.', 'Every room. Every stay.'); ?></h3><p><?php echo hg_lang('Voľné kapacity aj detail rezervácie v jednom pohľade. Recepcia vie, čo sa deje dnes a čo ju čaká zajtra.', 'Availability and reservation details in one view. Your front desk knows what is happening today and what comes next.'); ?></p><a href="/hotelovy-system/" class="ef-text-link"><?php echo hg_lang('Objaviť hotelový systém', 'Explore the hotel system'); ?> ↗</a></div>
+        <div class="ef-scene-art ef-tape-scene">
+          <figure class="ef-card ef-tape-grid"><figcaption><?php echo hg_lang('Hotelová plachta', 'Reservation timeline'); ?><small>Ellipse PMS</small></figcaption><?php $fragment('reservation-tape.webp',4438,2292,30,521,1850,665,hg_lang('Priblížená plachta: dátumy a prvé izby', 'Zoomed timeline: dates and the first rooms')); ?></figure>
+          <figure class="ef-card ef-dark ef-tape-detail"><?php $fragment('reservation-tape.webp',4438,2292,1895,1687,670,600,hg_lang('Detail testovacej rezervácie v izbe 203', 'Test reservation detail for room 203')); ?></figure>
         </div>
-        <figcaption><span><?php echo hg_lang('Dnes v prevádzke', 'Today in operations'); ?></span><b><?php echo hg_lang('Úlohy, check-out, check-in a stav izieb', 'Tasks, check-out, check-in and room status'); ?></b></figcaption>
-      </figure>
-      <figure class="os-fragment os-fragment-tape" data-parallax-depth="0.10">
-        <div class="os-fragment-viewport">
-          <img src="<?php echo hg_esc(hg_asset('hero-pms.webp')); ?>" alt="<?php echo hg_lang('Detail hotelovej plachty rezervácií Ellipse PMS', 'Detail of the Ellipse PMS reservation tape chart'); ?>" width="1400" height="788" loading="lazy" decoding="async">
+      </article>
+      <article class="ef-scene ef-scene-reverse">
+        <div class="ef-scene-copy"><span class="ef-index">02 / REVENUE</span><h3><?php echo hg_lang('Viete, ako sa predáva zajtrajšok.', 'Know how tomorrow is selling.'); ?></h3><p><?php echo hg_lang('Kalendár odhalí silné dni. Medziročné porovnanie ukáže tempo rezervácií a výnosov. Rozhodujete sa s kontextom.', 'The calendar highlights strong days. Year-on-year comparisons show booking and revenue pace. Make decisions in context.'); ?></p><a href="/vynosovy-modul-revpro/" class="ef-text-link"><?php echo hg_lang('Spoznajte revPRO', 'Discover revPRO'); ?> ↗</a></div>
+        <div class="ef-scene-art ef-pace-scene">
+          <figure class="ef-card ef-pace-calendar"><?php $fragment('pace-calendar.webp',1830,642,30,60,650,530,hg_lang('Farebný kalendár tempa predaja', 'Colour-coded sales pace calendar')); ?></figure>
+          <figure class="ef-card ef-pace-metrics"><figcaption><?php echo hg_lang('Medziročné porovnanie', 'Year-on-year comparison'); ?></figcaption><?php $fragment('pace-calendar.webp',1830,642,750,302,675,250,hg_lang('Tempo izbonocí a revenue v porovnaní s minulým rokom', 'Room-night and revenue pace compared with last year')); ?></figure>
         </div>
-        <figcaption><span><?php echo hg_lang('Rezervácie', 'Reservations'); ?></span><b><?php echo hg_lang('Plachta, dostupnosť a pobyt v jednom pohľade', 'Tape chart, availability and stay in one view'); ?></b></figcaption>
-      </figure>
-      <figure class="os-fragment os-fragment-revenue" data-parallax-depth="0.14">
-        <div class="os-fragment-viewport">
-          <img src="<?php echo hg_esc($revImg); ?>" alt="<?php echo hg_lang('Detail revenue analýzy Ellipse revPRO', 'Detail of Ellipse revPRO revenue analysis'); ?>" width="1400" height="788" loading="lazy" decoding="async">
-        </div>
-        <figcaption><span>revPRO</span><b><?php echo hg_lang('Dáta premenené na konkrétne odporúčanie', 'Data turned into a concrete recommendation'); ?></b></figcaption>
-      </figure>
-      <article class="os-reservation-card" data-parallax-depth="0.18" aria-label="<?php echo hg_lang('Ukážka detailu reálnej rezervácie', 'Example of a real reservation detail'); ?>">
-        <header><small>#9972998</small><b>TestParking Jaro</b></header>
-        <dl>
-          <div><dt><?php echo hg_lang('Pobyt', 'Stay'); ?></dt><dd>17.09.2026 → 25.09.2026 · 8 <?php echo hg_lang('nocí', 'nights'); ?></dd></div>
-          <div><dt><?php echo hg_lang('Osoby', 'Guests'); ?></dt><dd>2</dd></div>
-          <div><dt><?php echo hg_lang('Izba', 'Room'); ?></dt><dd>203</dd></div>
-          <div><dt><?php echo hg_lang('Kanál', 'Channel'); ?></dt><dd><?php echo hg_lang('Priamy predaj · Web booking', 'Direct sale · Web booking'); ?></dd></div>
-          <div><dt><?php echo hg_lang('Účet', 'Account'); ?></dt><dd class="is-good"><?php echo hg_lang('Vyrovnaný', 'Balanced'); ?></dd></div>
-        </dl>
-        <footer><span><?php echo hg_lang('Hodnota pobytu', 'Stay value'); ?></span><strong>678,40 €</strong></footer>
       </article>
     </div>
-    <ul class="os-callouts">
-      <li><small><?php echo hg_lang('Prevádzka', 'Operations'); ?></small><b><?php echo hg_lang('Príchody, odchody a stav izieb', 'Arrivals, departures and room status'); ?></b></li>
-      <li><small><?php echo hg_lang('Rezervácie', 'Reservations'); ?></small><b><?php echo hg_lang('Hotelová plachta v reálnom čase', 'Live hotel tape chart'); ?></b></li>
-      <li><small>revPRO</small><b><?php echo hg_lang('Revenue odporúčania z dát', 'Revenue recommendations from data'); ?></b></li>
-    </ul>
   </section>
 
   <section class="os-value" aria-label="<?php echo hg_lang('Biznis hodnota', 'Business value'); ?>">
@@ -220,7 +201,7 @@ $teamPhones = array_slice($teamPhones, 0, 5);
         <figcaption><small>02</small><b><?php echo hg_lang('Izba a balíček', 'Room and package'); ?></b><span><?php echo hg_lang('Cena, fotografia a podmienky zostávajú čitateľné v jednom bloku.', 'Price, photo and conditions stay readable in one block.'); ?></span></figcaption>
       </figure>
       <figure class="os-ui os-crop-card os-booking-pms" data-parallax-depth="0.12">
-        <div class="os-fragment-viewport"><img src="<?php echo hg_esc(hg_asset('hero-pms.webp')); ?>" alt="<?php echo hg_lang('Rezervácia po zápise do Ellipse PMS', 'Reservation after being written into Ellipse PMS'); ?>" width="1200" height="675" loading="lazy" decoding="async"></div>
+        <?php $fragment('reservation-tape.webp',4438,2292,1895,1687,670,600,hg_lang('Detail rezervácie v Ellipse PMS', 'Reservation detail in Ellipse PMS')); ?>
         <figcaption><small>03</small><b><?php echo hg_lang('Automaticky v PMS', 'Automatically in PMS'); ?></b><span><?php echo hg_lang('Tá istá rezervácia pokračuje do prevádzky bez ručného prepisovania.', 'The same reservation continues into operations without manual retyping.'); ?></span></figcaption>
       </figure>
     </div>
@@ -295,26 +276,13 @@ $teamPhones = array_slice($teamPhones, 0, 5);
     <p class="os-kicker">Ellipse Team</p>
     <h2><?php echo hg_lang('Vaša prevádzka sa presúva do mobilu.', 'Your operation moves into the phone.'); ?></h2>
     <p class="os-lead"><?php echo hg_lang('Na stretnutí, počas behania aj večer na gauči máte hotel alebo gastro prevádzku pod kontrolou.', 'In a meeting, while running around or on the sofa at night, the hotel or F&B operation stays under control.'); ?></p>
-    <div class="os-team-widgets" aria-label="<?php echo hg_lang('Ukážky živých prevádzkových widgetov', 'Examples of live operational widgets'); ?>" data-fragment-stage>
-      <article class="os-team-widget" data-parallax-depth="0.05">
-        <small><?php echo hg_lang('Najbližšie dni', 'Next days'); ?></small>
-        <div><strong>31</strong><span><?php echo hg_lang('izbonocí', 'room nights'); ?></span></div>
-        <div class="os-mini-bars" aria-hidden="true"><i style="--v:.34"></i><i style="--v:.74"></i><i style="--v:.20"></i><i style="--v:.08"></i><i style="--v:.10"></i></div>
-        <p>17.9&nbsp;&nbsp;18.9&nbsp;&nbsp;19.9&nbsp;&nbsp;20.9&nbsp;&nbsp;21.9</p>
-      </article>
-      <article class="os-team-widget" data-parallax-depth="0.10">
-        <small><?php echo hg_lang('Tím dnes', 'Team today'); ?></small>
-        <div><strong>4</strong><span><?php echo hg_lang('v práci', 'at work'); ?></span></div>
-        <p><?php echo hg_lang('Termín dnes 0 · 0 nových úloh', 'Due today 0 · 0 new tasks'); ?><br><?php echo hg_lang('5 dní bez nových úloh', '5 days without new tasks'); ?></p>
-      </article>
-    </div>
-    <div class="os-team-phones">
-      <?php foreach ($teamPhones as $i => $screen): ?>
-      <figure class="os-phone<?php echo $i === 2 || ($i === 0 && count($teamPhones) < 3) ? ' is-featured' : ''; ?>">
-        <img src="<?php echo hg_esc($screen['img']); ?>" alt="<?php echo hg_esc($screen['name']); ?>" loading="lazy" decoding="async">
-        <figcaption><?php echo hg_esc($screen['name']); ?></figcaption>
+    <div class="ef-mobile-widgets">
+      <figure class="ef-card ef-dark ef-mobile-occupancy">
+        <div class="ef-viewport" style="aspect-ratio:382 / 295"><img src="<?php echo hg_esc(hg_asset('team-2.webp')); ?>" alt="<?php echo hg_lang('Mobilný widget obsadenosti', 'Mobile occupancy widget'); ?>" loading="lazy" decoding="async" style="width:120.42%;left:-6.28%;top:-43.73%;"></div>
+        <figcaption><?php echo hg_lang('Obsadenosť na dosah', 'Occupancy at a glance'); ?></figcaption>
       </figure>
-      <?php endforeach; ?>
+      <figure class="ef-card ef-dark ef-mobile-target"><?php $fragment('mobile-target.webp',1179,1189,64,441,1050,725,hg_lang('Výsledky oproti ročnému cieľu v Ellipse Team', 'Performance against the annual target in Ellipse Team')); ?><figcaption><?php echo hg_lang('Výsledky oproti cieľu', 'Performance against target'); ?></figcaption></figure>
+      <figure class="ef-card ef-dark ef-mobile-forecast"><?php $fragment('mobile-forecast.webp',1179,2556,64,1182,1050,728,hg_lang('Revenue forecast v mobilnej aplikácii', 'Revenue forecast in the mobile app')); ?><figcaption><?php echo hg_lang('Výhľad výnosov', 'Revenue forecast'); ?></figcaption></figure>
     </div>
     <div class="os-actions">
       <a class="button ghost" href="https://apps.apple.com/sk/app/ellipse-team/id6806602365?l=sk" target="_blank" rel="noopener">App Store</a>

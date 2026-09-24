@@ -15,10 +15,31 @@
     );
     if (!nodes.length) return;
 
-    // The ecosystem is a readable overview, independent of scroll position.
-    canvas.setAttribute('data-os-step', String(nodes.length));
-    nodes.forEach(function (node) {
-      node.classList.add('is-on');
+    var reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
+    function showAll() {
+      nodes.forEach(function (node) { node.classList.add('is-on'); });
+      canvas.setAttribute('data-os-step', String(nodes.length));
+      canvas.classList.remove('ef-motion');
+    }
+    if (!('IntersectionObserver' in window) || reduced.matches) { showAll(); return; }
+    canvas.classList.add('ef-motion');
+    // Observe rows independently: a short reveal follows the visitor, not a sticky spacer.
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        var node = entry.target;
+        var step = parseInt(node.getAttribute('data-step'), 10);
+        var delay = node.classList.contains('os-core') ? 0 : (step % 2 ? 210 : 80);
+        setTimeout(function () {
+          node.classList.add('is-on');
+          canvas.setAttribute('data-os-step', String(Math.max(step, parseInt(canvas.getAttribute('data-os-step'), 10) || 0)));
+        }, delay);
+        observer.unobserve(node);
+      });
+    }, { threshold: 0.25, rootMargin: '0px 0px -8% 0px' });
+    nodes.forEach(function (node) { observer.observe(node); });
+    if (reduced.addEventListener) reduced.addEventListener('change', function (event) {
+      if (event.matches) { observer.disconnect(); showAll(); }
     });
   }
 
