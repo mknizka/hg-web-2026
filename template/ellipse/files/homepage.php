@@ -222,12 +222,13 @@
   <link rel="alternate" hreflang="en" href="<?php echo hg_esc($canonical.'lang/en/'); ?>">
   <link rel="alternate" hreflang="x-default" href="<?php echo hg_esc($canonical); ?>">
   <link rel="icon" href="/img/system/favicon.ico">
+  <link rel="preload" as="image" href="<?php echo hg_esc($heroShots[0]['img']); ?>" fetchpriority="high">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@1,9..144,500;1,9..144,600&family=Montserrat:wght@400;500;600;700;800&display=swap">
   <link rel="stylesheet" href="/template/ellipse/css/hg-ref.css?v=20260923g">
   <link rel="stylesheet" href="/template/ellipse/css/hg-mono.css?v=20260923g">
-  <link rel="stylesheet" href="/template/ellipse/css/hg-os.css?v=20260924p2">
+  <link rel="stylesheet" href="/template/ellipse/css/hg-os.css?v=20260924qa1">
   <meta property="og:locale" content="<?php echo $hgLang === 'en' ? 'en_US' : 'sk_SK'; ?>">
   <meta property="og:title" content="<?php echo hg_esc($ogTitle); ?>">
   <meta property="og:description" content="<?php echo hg_esc($metaDesc); ?>">
@@ -309,7 +310,7 @@
     <div class="copyright">© <?php echo date('Y'); ?> <?php echo hg_esc($nap['name']); ?> <span><a href="/gdpr/"><?php echo hg_lang('Ochrana súkromia', 'Privacy'); ?></a> · <a href="/vop/">VOP</a></span></div>
   </footer>
   <script src="/template/ellipse/js/hg-ref.js?v=20260923g" defer></script>
-  <script src="/template/ellipse/js/hg-os.js?v=20260924p2" defer></script>
+  <script src="/template/ellipse/js/hg-os.js?v=20260924qa1" defer></script>
   <?php if (function_exists('themeSetup')) { echo themeSetup('extra_body_end'); } ?>
 </body>
 </html>
