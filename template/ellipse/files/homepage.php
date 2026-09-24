@@ -311,7 +311,8 @@
     <div class="copyright">© <?php echo date('Y'); ?> <?php echo hg_esc($nap['name']); ?> <span><a href="/gdpr/"><?php echo hg_lang('Ochrana súkromia', 'Privacy'); ?></a> · <a href="/vop/">VOP</a></span></div>
   </footer>
   <script src="/template/ellipse/js/hg-ref.js?v=20260923g" defer></script>
-  <script src="/template/ellipse/js/hg-os.js?v=20260924qa1" defer></script>
+  <script src="/template/ellipse/js/hg-os.js?v=20260924base2" defer></script>
+  <script src="/template/ellipse/js/hg-os-premium.js?v=20260924qa2" defer></script>
   <?php if (function_exists('themeSetup')) { echo themeSetup('extra_body_end'); } ?>
 </body>
 </html>
