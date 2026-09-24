@@ -1,0 +1,8 @@
+.DS_Store
+Thumbs.db
+*.log
+.idea/
+.vscode/
+
+# GitHub limit 100 MB — video zostava len na produkcii
+template/ellipse/video/manager-dashboard.mp4

@@ -1,0 +1,5 @@
+@import '/template/css/booking-css/flexboxgrid.min.css' screen;
+@import '/template/css/booking-css/jquery-ui-1.10.4.custom.min.css' screen;
+@import '/template/css/booking-css/magnific-popup.css' screen;
+@import '//fonts.googleapis.com/css?family=Roboto:600,500,400,300,400italic,600&subset=latin,latin-ext' screen;
+@import '../../../temp/hg-base-theme_web_booking.css' screen;

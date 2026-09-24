@@ -1,0 +1,716 @@
+/**
+ * Blog Features Integration pre hg-base-theme
+ * Prispôsobenie blog funkcionalít dizajnu témy
+ */
+
+/**
+ * Blog Features CSS
+ * Štýly pre progress bar, table of contents, voting a comments
+ */
+
+/* ========== 1. PROGRESS BAR - MINIMALISTICKÝ ========== */
+.article-progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: transparent;
+  z-index: 9999;
+  pointer-events: none;
+}
+
+.article-progress-bar .progress-fill {
+  height: 100%;
+  width: 0;
+  background: var(--c1);
+  transition: width 0.2s ease-out;
+  opacity: 0.3;
+}
+
+.article-progress-bar .progress-percent {
+  position: absolute;
+  left: 10px;
+  top: 5px;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--c1);
+  pointer-events: none;
+  font-family: monospace;
+  letter-spacing: 0.5px;
+}
+
+/* Inline progress bar (v placeholder) */
+.article-progress-bar.inline {
+  position: relative;
+  width: 100%;
+  height: auto;
+  top: auto;
+  left: auto;
+}
+
+.article-progress-bar.inline .progress-percent {
+  position: relative;
+  display: block;
+  margin-bottom: 8px;
+  left: 0;
+  top: 0;
+  text-align: left;
+}
+
+.article-progress-bar.inline .progress-fill {
+  height: 2px;
+}
+
+/* ========== 2. TABLE OF CONTENTS - MINIMALISTICKÝ ========== */
+.article-toc {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: none;
+}
+
+.article-toc .toc-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 15px 0;
+  padding: 0;
+  color: var(--c1);
+}
+
+.article-toc .toc-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.article-toc .toc-list li {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 8px 0;
+}
+
+.article-toc .toc-link {
+  display: block;
+  padding: 6px 0;
+  color: var(--c1);
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+  position: relative;
+  opacity: 0.7;
+  font-size: 14px;
+  background: transparent;
+}
+
+.article-toc .toc-link::before {
+  display: none;
+}
+
+.article-toc .toc-link:hover {
+  background: transparent;
+  color: var(--c1);
+  text-decoration: none;
+  opacity: 1;
+}
+
+.article-toc .toc-link.seeme {
+  background: transparent;
+  color: var(--c1);
+  font-weight: 600;
+  opacity: 1;
+}
+
+/* ========== 3. STICKY TABLE OF CONTENTS (VOLITEĽNÉ) ========== */
+@media (min-width: 1200px) {
+  .article-toc.sticky {
+    position: sticky;
+    top: 100px;
+    max-width: 300px;
+    float: right;
+    margin-left: 30px;
+  }
+}
+
+/* ========== 4. H2 ELEMENTI V ČLÁNKU ========== */
+article h2 {
+  scroll-margin-top: 100px;
+  position: relative;
+}
+
+/* ========== 5. RESPONSIVE ========== */
+@media (max-width: 768px) {
+  .article-toc {
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+  .article-toc .toc-title {
+    font-size: 16px;
+  }
+  
+  .article-toc .toc-link {
+    padding: 5px 0;
+    font-size: 13px;
+  }
+}
+
+/* ========== 6. ŠTÝLY PRE REPLY FORM ========== */
+.reply-form-container {
+  margin-top: 15px;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+}
+
+.reply-form .btn-secondary {
+  margin-left: 10px;
+  padding: 12px 30px;
+  background: #6c757d;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.reply-form .btn-secondary:hover {
+  background: #5a6268;
+  transform: translateY(-2px);
+}
+
+/* ========== 7. ANIMÁCIE ========== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.comment-message {
+  animation: fadeIn 0.3s ease-out;
+}
+
+.voting-message {
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* ========== 8. HONEYPOT ANTI-BOT FIELD ========== */
+.comment-verify-honeypot {
+  position: absolute !important;
+  left: -9999px !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  z-index: -1 !important;
+}
+
+.comment-verify-honeypot input {
+  position: absolute !important;
+  left: -9999px !important;
+  width: 1px !important;
+  height: 1px !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+/* ========== 9. PRINT STYLES ========== */
+@media print {
+  .article-progress-bar,
+  .article-toc,
+  .article-voting,
+  .article-comments-section,
+  .comment-verify-honeypot {
+    display: none;
+  }
+}
+
+
+
+
+/* === CSS Premenné pre tému === */
+:root {
+  --blog-primary: var(--c2);      /* Zlatá farba z témy */
+  --blog-secondary: var(--c1);    /* Tmavá farba z témy */
+  --blog-light: var(--w);        /* Svetlá farba pre pozadie */
+  --blog-text: var(--c3);            /* Text farba */
+}
+
+/* === Progress Bar - minimalistický === */
+.article-progress-bar {
+  height: 2px;
+  background: transparent;
+  position: relative;
+}
+
+.article-progress-bar .progress-fill {
+  background: var(--c1);
+  opacity: 0.3;
+}
+
+.article-progress-bar .progress-percent {
+  color: var(--c1);
+  font-size: 11px;
+  font-weight: 600;
+  font-family: 'Jost', sans-serif;
+  letter-spacing: 0.5px;
+}
+
+/* Progress bar v sidebari (inline) */
+#article-progress-placeholder .article-progress-bar {
+  position: relative;
+  width: 100%;
+}
+
+#article-progress-placeholder .article-progress-bar.inline .progress-percent {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+  margin-bottom: 8px;
+  text-align: left;
+  font-size: 12px;
+}
+
+#article-progress-placeholder .article-progress-bar.inline .progress-fill {
+  position: relative;
+  width: 0%;
+  height: 2px;
+  background: var(--c1);
+  opacity: 0.3;
+}
+
+/* === Sticky Sidebar Fix === */
+.layout-pt-lg,
+.layout-pt-lg .container,
+.layout-pt-lg .container > .row {
+  overflow: visible !important;
+}
+
+.layout-pt-lg .container > .row {
+  align-items: flex-start !important;
+  display: flex !important;
+  flex-wrap: wrap;
+}
+
+.sticky-sidebar-col {
+  height: auto;
+  min-height: 1px;
+  position: relative;
+  overflow: visible !important;
+}
+
+.sticky-sidebar {
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  top: 20px !important;
+  align-self: flex-start;
+  max-height: calc(100vh - 40px);
+  overflow-y: auto;
+  overflow-x: visible;
+  will-change: transform;
+  z-index: 10;
+}
+
+.main-content-col {
+  min-height: 100vh;
+  overflow: visible !important;
+}
+
+/* Responsive - disable sticky on smaller screens */
+@media (max-width: 991px) {
+  .sticky-sidebar {
+    position: relative !important;
+    top: auto !important;
+  }
+  
+  .sticky-sidebar-col {
+    display: none;
+  }
+}
+
+/* === Table of Contents - Minimalistický dizajn === */
+.article-toc {
+  background: transparent;
+  border: none;
+  padding: 0;
+  font-family: 'Jost', sans-serif;
+}
+
+.article-toc .toc-title {
+  font-family: 'Cormorant Garamond', serif;
+  color: var(--c1);
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  padding: 0;
+}
+
+.article-toc .toc-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.article-toc .toc-list li {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 8px 0;
+}
+
+.article-toc .toc-link {
+  color: var(--c1);
+  font-size: 14px;
+  text-decoration: none;
+  display: block;
+  padding: 6px 0;
+  transition: opacity 0.3s ease;
+  opacity: 0.7;
+  background: transparent;
+  border: none;
+}
+
+.article-toc .toc-link::before {
+  display: none;
+}
+
+.article-toc .toc-link:hover {
+  color: var(--c1);
+  opacity: 1;
+  text-decoration: none;
+  background: transparent;
+}
+
+.article-toc .toc-link.seeme {
+  background: transparent;
+  color: var(--c1);
+  opacity: 1;
+  font-weight: 600;
+  border: none;
+}
+
+/* === Štatistiky článku === */
+.article-stats {
+  background: var(--blog-light);
+  border: 1px solid #e5e5e5;
+}
+
+.article-stats svg {
+  fill: var(--blog-primary);
+}
+
+.article-stats .stat-value {
+  color: var(--blog-secondary);
+}
+
+.article-stats .stat-label {
+  color: var(--blog-text);
+}
+
+/* === Like/Dislike tlačidlá === */
+.article-voting {
+  background: var(--blog-light);
+  border: 1px solid #e5e5e5;
+}
+
+.voting-question {
+  font-family: 'Cormorant Garamond', serif;
+  color: var(--blog-secondary);
+}
+
+.vote-btn {
+  font-family: 'Jost', sans-serif;
+  border-color: #e0e0e0;
+  background: white;
+}
+
+.vote-btn:hover {
+  border-color: var(--blog-primary);
+  color: var(--blog-primary);
+}
+
+.vote-btn.like-btn.active {
+  background: #4CAF50;
+  border-color: #4CAF50;
+}
+
+.vote-btn.dislike-btn.active {
+  background: #f44336;
+  border-color: #f44336;
+}
+
+.vote-btn svg {
+  fill: currentColor;
+}
+
+/* === Komentáre === */
+.article-comments-section {
+  border-top: 2px solid #e5e5e5;
+}
+
+.comments-title {
+  font-family: 'Cormorant Garamond', serif;
+  color: var(--blog-secondary);
+}
+
+.comment-form-wrapper {
+  background: var(--blog-light);
+  border: 1px solid #e5e5e5;
+}
+
+.comment-form-wrapper h4 {
+  font-family: 'Cormorant Garamond', serif;
+  color: var(--blog-secondary);
+}
+
+.comment-form .form-control {
+  font-family: 'Jost', sans-serif;
+  border: 1px solid #ddd;
+  transition: border-color 0.3s ease;
+}
+
+.comment-form .form-control:focus {
+  outline: none;
+  border-color: var(--blog-primary);
+}
+
+.comment-form .btn {
+  background: var(--blog-primary);
+  font-family: 'Jost', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.comment-form .btn:hover {
+  background: var(--blog-secondary);
+}
+
+/* === Komentár item === */
+.comment-item {
+  background: #f8f9fa;
+  border: 1px solid #e5e5e5;
+}
+
+.comment-item .comment-author {
+  font-family: 'Cormorant Garamond', serif;
+  color: var(--blog-secondary);
+}
+
+.comment-item .comment-body {
+  font-family: 'Jost', sans-serif;
+  color: var(--blog-text);
+  line-height: 1.7;
+}
+
+.comment-item .reply-btn {
+  color: var(--blog-primary);
+  font-family: 'Jost', sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.comment-item .reply-btn:hover {
+  color: var(--blog-secondary);
+}
+
+.comment-replies .comment-item {
+  background: white;
+  border-left: 3px solid var(--blog-primary);
+}
+
+/* === Reply form === */
+.reply-form-container {
+  background: white;
+  border: 1px solid #e5e5e5;
+}
+
+.reply-form .btn-secondary {
+  background: #6c757d;
+  font-family: 'Jost', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.reply-form .btn-secondary:hover {
+  background: #5a6268;
+}
+
+/* === Share Buttons integrácia === */
+.share-wrapper {
+  border-top: 1px solid #e5e5e5;
+  padding-top: 30px;
+  margin-top: 30px;
+}
+
+.share-wrapper .semibold {
+  font-family: 'Jost', sans-serif;
+  color: var(--blog-secondary);
+}
+
+.share-wrapper a {
+  background: var(--blog-light);
+  border: 1px solid #e5e5e5;
+}
+
+.share-wrapper a:hover {
+  background: var(--blog-primary);
+  border-color: var(--blog-primary);
+}
+
+.share-wrapper a:hover svg {
+  fill: white;
+}
+
+/* === Content block styling === */
+article .content-block h2 {
+  font-family: 'Cormorant Garamond', serif;
+  color: var(--blog-secondary);
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+article .content-block h3 {
+  font-family: 'Cormorant Garamond', serif;
+  color: var(--blog-secondary);
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+article .content-block p {
+  font-family: 'Jost', sans-serif;
+  color: var(--blog-text);
+  line-height: 1.8;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+/* === Messages === */
+.comment-message,
+.voting-message {
+  font-family: 'Jost', sans-serif;
+  border-radius: 4px;
+}
+
+.comment-message.success,
+.voting-message.success {
+  background: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.comment-message.error,
+.voting-message.error {
+  background: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+/* === Responsive úpravy === */
+@media (max-width: 991px) {
+  article .content-block h2 {
+    font-size: 28px;
+  }
+  
+  article .content-block h3 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 767px) {
+  .article-stats {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .voting-buttons {
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .article-toc {
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+  .article-toc .toc-title {
+    font-size: 16px;
+  }
+  
+  .article-toc .toc-link {
+    font-size: 13px;
+    padding: 5px 0;
+  }
+  
+  article .content-block h2 {
+    font-size: 24px;
+    margin-top: 30px;
+  }
+  
+  article .content-block h3 {
+    font-size: 20px;
+  }
+  
+  article .content-block p {
+    font-size: 15px;
+  }
+}
+
+/* === Animácie === */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.comment-item {
+  animation: fadeInUp 0.4s ease-out;
+}
+
+/* === Honeypot skrytie === */
+.comment-verify-honeypot {
+  position: absolute !important;
+  left: -9999px !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  z-index: -1 !important;
+}
+
+.comment-verify-honeypot input {
+  position: absolute !important;
+  left: -9999px !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  tabindex: -1;
+}
+
+/* === Smooth transitions === */
+.vote-btn,
+.toc-link,
+.reply-btn,
+.comment-form .btn,
+.share-wrapper a {
+  transition: all 0.3s ease;
+}
+

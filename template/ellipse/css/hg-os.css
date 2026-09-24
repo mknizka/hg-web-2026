@@ -1,0 +1,1647 @@
+/* Ellipse Hospitality OS — homepage visual system
+   White + navy #081434. Magenta #ff0045 only on CTA / focus.
+   Montserrat throughout; Fraunces italic only on .os-case blockquote. */
+
+:root {
+  --os-navy: #081434;
+  --os-ink: #081434;
+  --os-body: #5c6b84;
+  --os-muted: #8290a7;
+  --os-line: #e4eaf3;
+  --os-soft: #f5f8fc;
+  --os-white: #fff;
+  --os-magenta: #ff0045;
+  --os-pad: clamp(20px, 5vw, 64px);
+  --os-max: 1200px;
+  --os-section-y: clamp(72px, 12vw, 140px);
+  --os-radius: 16px;
+  --os-radius-sm: 10px;
+  --os-shadow: 0 24px 64px rgba(8, 20, 52, 0.1);
+  --os-font: Montserrat, sans-serif;
+  --os-serif: Fraunces, Georgia, "Times New Roman", serif;
+}
+
+/* —— Shared shell —— */
+.os-hero,
+.os-trust,
+.os-canvas,
+.os-product,
+.os-value,
+.os-statement,
+.os-booking,
+.os-inbox,
+.os-journey,
+.os-pay,
+.os-team,
+.os-reviews,
+.os-ai,
+.os-mcp,
+.os-case,
+.os-segments,
+.os-integrations,
+.os-security,
+.os-faq,
+.os-final {
+  box-sizing: border-box;
+  max-width: 100%;
+  min-width: 0;
+  overflow-x: clip;
+  font-family: var(--os-font);
+  color: var(--os-ink);
+  background: var(--os-white);
+}
+
+.os-hero *,
+.os-trust *,
+.os-canvas *,
+.os-product *,
+.os-value *,
+.os-statement *,
+.os-booking *,
+.os-inbox *,
+.os-journey *,
+.os-pay *,
+.os-team *,
+.os-reviews *,
+.os-ai *,
+.os-mcp *,
+.os-case *,
+.os-segments *,
+.os-integrations *,
+.os-security *,
+.os-faq *,
+.os-final * {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+.os-hero > *,
+.os-trust > *,
+.os-product > *,
+.os-value > *,
+.os-statement > *,
+.os-booking > *,
+.os-inbox > *,
+.os-journey > *,
+.os-pay > *,
+.os-team > *,
+.os-reviews > *,
+.os-ai > *,
+.os-mcp > *,
+.os-case > *,
+.os-segments > *,
+.os-integrations > *,
+.os-security > *,
+.os-faq > *,
+.os-final > * {
+  width: 100%;
+  max-width: var(--os-max);
+  margin-inline: auto;
+  padding-inline: var(--os-pad);
+  min-width: 0;
+}
+
+.os-hero,
+.os-trust,
+.os-product,
+.os-value,
+.os-statement,
+.os-booking,
+.os-inbox,
+.os-journey,
+.os-pay,
+.os-team,
+.os-reviews,
+.os-ai,
+.os-mcp,
+.os-case,
+.os-segments,
+.os-integrations,
+.os-security,
+.os-faq,
+.os-final {
+  padding-block: var(--os-section-y);
+}
+
+/* —— Typography —— */
+.os-hero h1,
+.os-canvas h2,
+.os-product h2,
+.os-value h2,
+.os-statement h2,
+.os-booking h2,
+.os-inbox h2,
+.os-journey h2,
+.os-pay h2,
+.os-team h2,
+.os-reviews h2,
+.os-ai h2,
+.os-mcp h2,
+.os-case h2,
+.os-segments h2,
+.os-integrations h2,
+.os-security h2,
+.os-faq h2,
+.os-final h2 {
+  margin: 0 0 0.35em;
+  font-family: var(--os-font);
+  font-size: clamp(40px, 6vw, 88px);
+  font-weight: 650;
+  line-height: 0.96;
+  letter-spacing: -0.055em;
+  color: var(--os-navy);
+}
+
+.os-hero h1 em,
+.os-canvas h2 em,
+.os-product h2 em,
+.os-value h2 em,
+.os-statement h2 em,
+.os-booking h2 em,
+.os-inbox h2 em,
+.os-journey h2 em,
+.os-pay h2 em,
+.os-team h2 em,
+.os-reviews h2 em,
+.os-ai h2 em,
+.os-mcp h2 em,
+.os-case h2 em,
+.os-segments h2 em,
+.os-integrations h2 em,
+.os-security h2 em,
+.os-faq h2 em,
+.os-final h2 em {
+  font-style: normal;
+  color: inherit;
+}
+
+.os-hero h3,
+.os-product h3,
+.os-value h3,
+.os-booking h3,
+.os-journey h3,
+.os-pay h3,
+.os-team h3,
+.os-reviews h3,
+.os-ai h3,
+.os-case h3,
+.os-segments h3,
+.os-integrations h3,
+.os-security h3 {
+  margin: 0 0 0.4em;
+  font-size: clamp(22px, 2.4vw, 32px);
+  font-weight: 650;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  color: var(--os-navy);
+}
+
+.os-kicker {
+  margin: 0 0 14px;
+  font-family: var(--os-font);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--os-muted);
+}
+
+.os-lead {
+  margin: 0;
+  max-width: 38em;
+  font-family: var(--os-font);
+  font-size: clamp(17px, 1.35vw, 18px);
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--os-body);
+}
+
+.os-hero p,
+.os-trust p,
+.os-canvas p,
+.os-product p,
+.os-value p,
+.os-statement p,
+.os-booking p,
+.os-inbox p,
+.os-journey p,
+.os-pay p,
+.os-team p,
+.os-reviews p,
+.os-ai p,
+.os-mcp p,
+.os-case p,
+.os-segments p,
+.os-integrations p,
+.os-security p,
+.os-faq p,
+.os-final p {
+  font-size: clamp(17px, 1.35vw, 18px);
+  line-height: 1.6;
+  color: var(--os-body);
+}
+
+/* —— Actions / buttons (magenta only here + focus) —— */
+.os-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px 18px;
+  margin-top: 28px;
+  min-width: 0;
+}
+
+.os-actions .button,
+.os-final .button,
+.os-hero .button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 48px;
+  padding: 0 22px;
+  border: 0;
+  border-radius: 8px;
+  background: var(--os-magenta);
+  color: var(--os-white);
+  font-family: var(--os-font);
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+  box-shadow: none;
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.os-actions .button:hover,
+.os-final .button:hover,
+.os-hero .button:hover {
+  background: #e6003d;
+  color: var(--os-white);
+}
+
+.os-actions .button.ghost,
+.os-final .button.ghost,
+.os-hero .button.ghost,
+.button.ghost {
+  background: transparent;
+  color: var(--os-navy);
+  border: 1px solid var(--os-line);
+  box-shadow: none;
+}
+
+.os-actions .button.ghost:hover,
+.os-final .button.ghost:hover,
+.os-hero .button.ghost:hover,
+.button.ghost:hover {
+  background: var(--os-soft);
+  border-color: #cfd8e8;
+  color: var(--os-navy);
+}
+
+.os-hero :focus-visible,
+.os-trust :focus-visible,
+.os-canvas :focus-visible,
+.os-product :focus-visible,
+.os-value :focus-visible,
+.os-statement :focus-visible,
+.os-booking :focus-visible,
+.os-inbox :focus-visible,
+.os-journey :focus-visible,
+.os-pay :focus-visible,
+.os-team :focus-visible,
+.os-reviews :focus-visible,
+.os-ai :focus-visible,
+.os-mcp :focus-visible,
+.os-case :focus-visible,
+.os-segments :focus-visible,
+.os-integrations :focus-visible,
+.os-security :focus-visible,
+.os-faq :focus-visible,
+.os-final :focus-visible,
+.os-actions .button:focus-visible,
+.button.ghost:focus-visible {
+  outline: 2px solid var(--os-magenta);
+  outline-offset: 3px;
+}
+
+/* —— Product frame & phone —— */
+.os-ui {
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid rgba(8, 20, 52, 0.08);
+  border-radius: var(--os-radius);
+  background: var(--os-white);
+  box-shadow: var(--os-shadow);
+  min-width: 0;
+  max-width: 100%;
+}
+
+.os-ui img,
+.os-case img,
+.os-reviews img,
+.os-booking img,
+.os-product img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.os-ui img {
+  aspect-ratio: 16 / 10;
+  background: var(--os-soft);
+}
+
+.os-phone {
+  position: relative;
+  width: min(280px, 100%);
+  margin: 0 auto;
+  padding: 12px;
+  border-radius: 36px;
+  background: var(--os-navy);
+  box-shadow: var(--os-shadow);
+  min-width: 0;
+}
+
+.os-phone img,
+.os-phone .os-ui {
+  display: block;
+  width: 100%;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: none;
+  border: 0;
+  aspect-ratio: 9 / 19.5;
+  object-fit: cover;
+  object-position: top center;
+  background: #0c1a3a;
+}
+
+/* —— 1. Hero — typographic + product layers —— */
+.os-hero {
+  padding-top: clamp(48px, 8vw, 96px);
+  padding-bottom: clamp(48px, 8vw, 80px);
+  text-align: center;
+}
+
+.os-hero > * {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.os-hero h1 {
+  max-width: 16ch;
+}
+
+.os-hero .os-lead {
+  margin-top: 8px;
+  text-align: center;
+}
+
+.os-hero .os-actions {
+  justify-content: center;
+}
+
+.os-hero .os-ui {
+  width: 100%;
+  max-width: 1080px;
+  margin-top: clamp(40px, 6vw, 72px);
+}
+
+/* —— 2. Trust — quiet metrics, not giant numbers —— */
+.os-trust {
+  padding-block: clamp(32px, 5vw, 56px);
+  border-top: 1px solid var(--os-line);
+  border-bottom: 1px solid var(--os-line);
+  background: var(--os-white);
+}
+
+.os-trust > * {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 12px 40px;
+  text-align: center;
+}
+
+.os-trust b {
+  display: inline;
+  font-family: var(--os-font);
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.45;
+  letter-spacing: -0.01em;
+  color: var(--os-navy);
+}
+
+.os-trust span,
+.os-trust p {
+  margin: 0;
+  font-size: 15px;
+  color: var(--os-muted);
+}
+
+/* —— 3. Canvas — sticky OS reveal —— */
+.os-canvas {
+  height: 280vh;
+  padding: 0;
+  background: var(--os-white);
+}
+
+.os-canvas > * {
+  max-width: none;
+  padding-inline: 0;
+}
+
+.os-stage {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  align-items: center;
+  gap: clamp(16px, 3vh, 32px);
+  padding: clamp(48px, 8vh, 80px) var(--os-pad) clamp(24px, 4vh, 40px);
+  max-width: 100%;
+}
+
+.os-stage > .os-kicker,
+.os-stage > h2,
+.os-stage > .os-lead,
+.os-stage > header {
+  width: 100%;
+  max-width: var(--os-max);
+  margin-inline: auto;
+  text-align: center;
+}
+
+.os-stage .os-lead {
+  margin-inline: auto;
+}
+
+.os-node {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.7s cubic-bezier(0.2, 0.8, 0.2, 1);
+  min-width: 0;
+  max-width: 100%;
+}
+
+.os-node.is-on {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.os-node b {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 16px;
+  font-weight: 650;
+  color: var(--os-navy);
+  letter-spacing: -0.02em;
+}
+
+.os-node span,
+.os-node p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.45;
+  color: var(--os-muted);
+}
+
+/* —— 4. Product proof — full-bleed UI moment —— */
+.os-product {
+  background: var(--os-soft);
+}
+
+.os-product > * {
+  display: grid;
+  gap: clamp(28px, 4vw, 48px);
+  justify-items: center;
+  text-align: center;
+}
+
+.os-product .os-lead {
+  margin-inline: auto;
+}
+
+.os-product .os-ui {
+  width: 100%;
+  max-width: 1100px;
+}
+
+/* —— 5. Value — three typographic statements —— */
+.os-value > * {
+  display: grid;
+  gap: clamp(40px, 6vw, 72px);
+}
+
+.os-value .os-statement,
+.os-statement {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.os-statement {
+  max-width: 22ch;
+}
+
+.os-statement h2,
+.os-value .os-statement h2,
+.os-value h3 {
+  font-size: clamp(36px, 5vw, 64px);
+  line-height: 1.02;
+  letter-spacing: -0.05em;
+}
+
+.os-value > * > .os-kicker + h2,
+.os-value header {
+  max-width: 18ch;
+}
+
+/* —— 6. Booking — product flow —— */
+.os-booking > * {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+  gap: clamp(28px, 5vw, 72px);
+  align-items: center;
+}
+
+.os-booking .os-ui {
+  order: 2;
+}
+
+/* —— 7. Inbox — dark messaging hub —— */
+.os-inbox {
+  background: var(--os-navy);
+  color: var(--os-white);
+}
+
+.os-inbox h2,
+.os-inbox h3,
+.os-inbox .os-kicker,
+.os-inbox em {
+  color: var(--os-white);
+}
+
+.os-inbox .os-lead,
+.os-inbox p {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.os-inbox > * {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.7fr);
+  gap: clamp(28px, 5vw, 64px);
+  align-items: center;
+}
+
+.os-inbox .os-ui {
+  border-color: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 28px 72px rgba(0, 0, 0, 0.28);
+}
+
+.os-inbox .button.ghost {
+  color: var(--os-white);
+  border-color: rgba(255, 255, 255, 0.28);
+}
+
+.os-inbox .button.ghost:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--os-white);
+}
+
+/* —— 8. Journey — mobile flow —— */
+.os-journey {
+  background: var(--os-white);
+}
+
+.os-journey > * {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  gap: clamp(28px, 5vw, 72px);
+  align-items: center;
+}
+
+.os-journey .os-phone {
+  justify-self: center;
+}
+
+/* —— 9. Payments —— */
+.os-pay > * {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  gap: clamp(28px, 5vw, 72px);
+  align-items: center;
+}
+
+.os-pay .os-ui {
+  order: -1;
+}
+
+/* —— 10. Team — phone cluster —— */
+.os-team {
+  text-align: center;
+  background: var(--os-soft);
+}
+
+.os-team > * {
+  display: grid;
+  gap: clamp(32px, 5vw, 56px);
+  justify-items: center;
+}
+
+.os-team .os-lead {
+  margin-inline: auto;
+}
+
+.os-team .os-phones,
+.os-team [class*="phones"] {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: center;
+  gap: clamp(12px, 2vw, 24px);
+  width: 100%;
+  min-width: 0;
+}
+
+.os-team .os-phone {
+  width: min(240px, 42%);
+}
+
+.os-team .os-phone:nth-child(2),
+.os-team .os-phone.is-main {
+  width: min(280px, 48%);
+  z-index: 2;
+}
+
+/* —— 11. Reviews —— */
+.os-reviews > * {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: clamp(28px, 5vw, 64px);
+  align-items: center;
+}
+
+/* —— 12. AI —— */
+.os-ai {
+  background: var(--os-soft);
+}
+
+.os-ai > * {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: clamp(28px, 5vw, 72px);
+  align-items: center;
+}
+
+/* —— 13. MCP — optional dark tech block —— */
+.os-mcp {
+  background: var(--os-navy);
+  color: var(--os-white);
+}
+
+.os-mcp h2,
+.os-mcp h3,
+.os-mcp .os-kicker,
+.os-mcp em {
+  color: var(--os-white);
+}
+
+.os-mcp .os-lead,
+.os-mcp p {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.os-mcp > * {
+  display: grid;
+  gap: clamp(24px, 4vw, 40px);
+  max-width: 48em;
+  text-align: left;
+}
+
+/* —— 14. Case study —— */
+.os-case > * {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  gap: clamp(32px, 5vw, 72px);
+  align-items: start;
+}
+
+.os-case blockquote {
+  margin: 28px 0 0;
+  padding: 0;
+  border: 0;
+  font-family: var(--os-serif);
+  font-size: clamp(22px, 2.8vw, 34px);
+  font-weight: 500;
+  font-style: italic;
+  line-height: 1.35;
+  letter-spacing: -0.02em;
+  color: var(--os-navy);
+}
+
+.os-case cite,
+.os-case figcaption {
+  display: block;
+  margin-top: 14px;
+  font-family: var(--os-font);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  color: var(--os-muted);
+  letter-spacing: 0;
+}
+
+.os-case .os-ui {
+  margin-top: 20px;
+}
+
+/* —— 15. Segments —— */
+.os-segments > * {
+  display: grid;
+  gap: clamp(24px, 4vw, 40px);
+}
+
+.os-segments [role="tablist"],
+.os-segments .os-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  min-width: 0;
+}
+
+.os-segments [role="tab"],
+.os-segments .os-tabs button {
+  min-height: 44px;
+  padding: 8px 16px;
+  border: 1px solid var(--os-line);
+  border-radius: 999px;
+  background: var(--os-white);
+  color: var(--os-body);
+  font-family: var(--os-font);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.os-segments [role="tab"][aria-selected="true"],
+.os-segments [role="tab"].is-on,
+.os-segments .os-tabs button.is-on {
+  background: var(--os-navy);
+  border-color: var(--os-navy);
+  color: var(--os-white);
+}
+
+.os-segments .os-ui {
+  width: 100%;
+}
+
+/* —— 16. Integrations —— */
+.os-integrations {
+  text-align: center;
+}
+
+.os-integrations > * {
+  display: grid;
+  gap: clamp(28px, 4vw, 48px);
+  justify-items: center;
+}
+
+.os-integrations .os-lead {
+  margin-inline: auto;
+}
+
+.os-integrations ul,
+.os-integrations .os-logos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(16px, 3vw, 36px);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+  opacity: 0.7;
+}
+
+.os-integrations img {
+  display: block;
+  height: 28px;
+  width: auto;
+  max-width: 120px;
+  object-fit: contain;
+  filter: grayscale(1);
+}
+
+/* —— 17. Security —— */
+.os-security > * {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  gap: clamp(28px, 5vw, 64px);
+  align-items: start;
+}
+
+.os-security ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.os-security li {
+  padding: 16px 0;
+  border-top: 1px solid var(--os-line);
+  font-size: 17px;
+  line-height: 1.5;
+  color: var(--os-body);
+}
+
+.os-security li:last-child {
+  border-bottom: 1px solid var(--os-line);
+}
+
+.os-security li strong,
+.os-security li b {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: 600;
+  color: var(--os-navy);
+}
+
+/* —— 18. FAQ —— */
+.os-faq > * {
+  display: grid;
+  grid-template-columns: minmax(0, 0.78fr) minmax(0, 1.22fr);
+  gap: clamp(28px, 6vw, 80px);
+  align-items: start;
+}
+
+.os-faq details {
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--os-line);
+}
+
+.os-faq details:last-child {
+  border-bottom: 1px solid var(--os-line);
+}
+
+.os-faq summary {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 18px 0;
+  cursor: pointer;
+  font-family: var(--os-font);
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--os-navy);
+}
+
+.os-faq summary::-webkit-details-marker {
+  display: none;
+}
+
+.os-faq details p {
+  margin: 0 0 20px;
+  max-width: 42em;
+  padding-right: 32px;
+}
+
+/* —— 19. Final CTA —— */
+.os-final {
+  background: var(--os-navy);
+  color: var(--os-white);
+  text-align: center;
+}
+
+.os-final h2,
+.os-final h3,
+.os-final .os-kicker,
+.os-final em {
+  color: var(--os-white);
+}
+
+.os-final .os-lead,
+.os-final p,
+.os-final small {
+  color: rgba(255, 255, 255, 0.7);
+  margin-inline: auto;
+}
+
+.os-final > * {
+  display: grid;
+  gap: 12px;
+  justify-items: center;
+}
+
+.os-final .os-actions {
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.os-final .button.ghost {
+  color: var(--os-white);
+  border-color: rgba(255, 255, 255, 0.28);
+}
+
+.os-final .button.ghost:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--os-white);
+}
+
+/* —— Blog / card images inside OS (cover) —— */
+.os-case a img,
+.os-reviews a img,
+.os-integrations a img:not([src*="logo"]),
+.os-product a img {
+  object-fit: cover;
+}
+
+/* —— Mobile ≤ 800px —— */
+@media (max-width: 800px) {
+  .os-hero,
+  .os-trust,
+  .os-canvas,
+  .os-product,
+  .os-value,
+  .os-statement,
+  .os-booking,
+  .os-inbox,
+  .os-journey,
+  .os-pay,
+  .os-team,
+  .os-reviews,
+  .os-ai,
+  .os-mcp,
+  .os-case,
+  .os-segments,
+  .os-integrations,
+  .os-security,
+  .os-faq,
+  .os-final {
+    max-width: 100%;
+    overflow-x: clip;
+  }
+
+  .os-hero > *,
+  .os-trust > *,
+  .os-product > *,
+  .os-value > *,
+  .os-statement > *,
+  .os-booking > *,
+  .os-inbox > *,
+  .os-journey > *,
+  .os-pay > *,
+  .os-team > *,
+  .os-reviews > *,
+  .os-ai > *,
+  .os-mcp > *,
+  .os-case > *,
+  .os-segments > *,
+  .os-integrations > *,
+  .os-security > *,
+  .os-faq > *,
+  .os-final > * {
+    max-width: 100%;
+    min-width: 0;
+    padding-inline: var(--os-pad);
+  }
+
+  .os-booking > *,
+  .os-inbox > *,
+  .os-journey > *,
+  .os-pay > *,
+  .os-reviews > *,
+  .os-ai > *,
+  .os-case > *,
+  .os-security > *,
+  .os-faq > * {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .os-booking .os-ui,
+  .os-pay .os-ui {
+    order: 0;
+  }
+
+  .os-canvas {
+    height: auto;
+    padding-block: var(--os-section-y);
+  }
+
+  .os-stage {
+    position: static;
+    height: auto;
+    overflow: visible;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    padding: 0 var(--os-pad);
+  }
+
+  .os-node {
+    opacity: 1;
+    pointer-events: auto;
+    width: 100%;
+    padding: 16px 0;
+    border-top: 1px solid var(--os-line);
+  }
+
+  .os-node:last-child {
+    border-bottom: 1px solid var(--os-line);
+  }
+
+  .os-team .os-phone,
+  .os-team .os-phone:nth-child(2),
+  .os-team .os-phone.is-main {
+    width: min(260px, 100%);
+  }
+
+  .os-actions .button,
+  .os-final .button,
+  .os-hero .button,
+  .button.ghost {
+    min-height: 48px;
+    white-space: normal;
+    text-align: center;
+  }
+
+  .os-actions {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .os-actions .button {
+    width: 100%;
+  }
+
+  .os-statement,
+  .os-value .os-statement {
+    max-width: none;
+  }
+
+  .os-faq summary {
+    font-size: 17px;
+    font-weight: 500;
+  }
+}
+
+/* —— Narrow phones —— */
+@media (max-width: 480px) {
+  .os-hero h1,
+  .os-canvas h2,
+  .os-product h2,
+  .os-value h2,
+  .os-statement h2,
+  .os-booking h2,
+  .os-inbox h2,
+  .os-journey h2,
+  .os-pay h2,
+  .os-team h2,
+  .os-reviews h2,
+  .os-ai h2,
+  .os-mcp h2,
+  .os-case h2,
+  .os-segments h2,
+  .os-integrations h2,
+  .os-security h2,
+  .os-faq h2,
+  .os-final h2 {
+    font-size: clamp(36px, 9vw, 48px);
+  }
+
+  .os-phone {
+    width: min(240px, 100%);
+    border-radius: 28px;
+    padding: 10px;
+  }
+}
+
+/* —— Pixel pass: kompozícia namiesto naskladaných plátien —— */
+.os-home .os-trust-logos{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  align-items:center;
+  gap:22px 36px;
+}
+.os-home .os-trust-logos img{
+  height:34px;
+  width:auto;
+  max-width:128px;
+  max-height:34px;
+  object-fit:contain;
+  filter:none;
+  opacity:.8;
+}
+.os-home .os-hero-visual{
+  position:relative;
+  display:block;
+  width:min(1080px,100%);
+  height:680px;
+  margin:48px auto 0;
+  padding:0;
+}
+.os-home .os-ui-hero,
+.os-home .os-ui-layer,
+.os-home .os-phone-hero{
+  position:absolute;
+  margin:0;
+  max-width:none;
+}
+.os-home .os-ui-hero{
+  left:0;
+  right:90px;
+  top:90px;
+  z-index:1;
+}
+.os-home .os-ui-layer{
+  width:42%;
+  right:0;
+  top:0;
+  left:auto;
+  z-index:2;
+}
+.os-home .os-phone-hero{
+  width:200px;
+  right:36px;
+  bottom:0;
+  left:auto;
+  top:auto;
+  z-index:3;
+  margin:0;
+}
+.os-home .os-eco{
+  position:relative;
+  width:min(1080px,100%);
+  height:520px;
+  margin:8px auto 0;
+}
+.os-home .os-eco .os-node{
+  position:absolute;
+  width:230px;
+  margin:0;
+  padding:16px 18px;
+  border:1px solid rgba(8,20,52,.08);
+  border-radius:18px;
+  background:rgba(255,255,255,.92);
+  box-shadow:0 16px 40px rgba(8,20,52,.08);
+  text-align:left;
+}
+.os-home .os-eco .os-core{
+  left:50%;
+  top:50%;
+  width:240px;
+  transform:translate(-50%,-50%);
+  text-align:center;
+  opacity:1;
+  z-index:2;
+}
+.os-home .os-eco .os-node[data-step="2"]{left:0;top:4%}
+.os-home .os-eco .os-node[data-step="3"]{right:0;top:4%}
+.os-home .os-eco .os-node[data-step="4"]{left:0;bottom:10%}
+.os-home .os-eco .os-node[data-step="5"]{right:0;bottom:10%}
+.os-home .os-eco .os-node[data-step="6"]{left:16%;bottom:0}
+.os-home .os-eco .os-node[data-step="7"]{right:16%;bottom:0}
+.os-home .os-booking-flow{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:16px;
+  width:100%;
+}
+.os-home .os-booking > .os-kicker,
+.os-home .os-booking > h2,
+.os-home .os-booking > .os-lead,
+.os-home .os-booking > .os-actions{
+  display:block;
+  grid-template-columns:none;
+}
+.os-home .os-segment-panel{display:none}
+.os-home .os-segment-panel.is-on{display:block}
+.os-home .os-segment-tabs{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  justify-content:flex-start;
+  margin:8px 0 28px;
+}
+.os-home .os-team-phones{
+  display:flex;
+  flex-direction:row;
+  flex-wrap:nowrap;
+  align-items:flex-end;
+  justify-content:center;
+  gap:16px;
+  width:100%;
+  max-width:1100px;
+  padding-inline:0;
+}
+.os-home .os-team-phones .os-phone{
+  width:176px;
+  flex:0 0 176px;
+  margin:0;
+}
+.os-home .os-team-phones .os-phone.is-featured{
+  width:210px;
+  flex-basis:210px;
+}
+.os-home .os-inbox-grid{
+  display:grid;
+  grid-template-columns:minmax(0,1.2fr) minmax(220px,.6fr);
+  gap:28px;
+  align-items:center;
+}
+@media(max-width:800px){
+  .os-home .os-hero-visual{height:auto}
+  .os-home .os-ui-hero,
+  .os-home .os-ui-layer,
+  .os-home .os-phone-hero{
+    position:relative;
+    width:100%;
+    right:auto;
+    left:auto;
+    top:auto;
+    bottom:auto;
+    margin:16px 0 0;
+  }
+  .os-home .os-ui-layer{display:none}
+  .os-home .os-phone-hero{width:168px;margin:-72px 12px 0 auto}
+  .os-home .os-eco{height:auto;display:grid;gap:10px}
+  .os-home .os-eco .os-node,
+  .os-home .os-eco .os-core{
+    position:static;
+    width:auto;
+    transform:none;
+    opacity:1;
+  }
+  .os-home .os-booking-flow,
+  .os-home .os-inbox-grid{grid-template-columns:1fr}
+  .os-home .os-team-phones{flex-wrap:nowrap;overflow:hidden;justify-content:flex-start}
+  .os-home .os-team-phones .os-phone:nth-child(n+4){display:none}
+  .os-home .os-value,
+  .os-home .os-journey,
+  .os-home .os-faq,
+  .os-home .os-security,
+  .os-home .os-review-flow,
+  .os-home .os-pay-grid,
+  .os-home .os-case-grid{
+    grid-template-columns:1fr;
+  }
+  .os-home .os-faq > .os-faq-list,
+  .os-home .os-security > .os-security-facts,
+  .os-home .os-value > .os-kicker,
+  .os-home .os-journey > .os-kicker,
+  .os-home .os-journey > h2,
+  .os-home .os-journey > .os-lead,
+  .os-home .os-journey > .os-actions{
+    grid-column:auto;
+    grid-row:auto;
+  }
+}
+
+/* Nadpisy boli mriežkou s dvoma stĺpcami, text sa lámal do polovice šírky. */
+.os-home .os-kicker,
+.os-home section > h2,
+.os-home .os-lead,
+.os-home .os-actions,
+.os-home .os-callouts,
+.os-home .os-journey-steps,
+.os-home .os-review-flow,
+.os-home .os-security-facts,
+.os-home .os-faq-list,
+.os-home .os-int-cats,
+.os-home .os-statement,
+.os-home .os-ui,
+.os-home .os-ai-task,
+.os-home .os-case > blockquote,
+.os-home .os-mcp-flow,
+.os-home .os-mcp-note{
+  display:block;
+  grid-template-columns:none;
+}
+.os-home section:not(.os-hero):not(.os-canvas) > h2{
+  font-size:clamp(36px,4.2vw,60px);
+  max-width:16em;
+  line-height:1.05;
+}
+.os-home .os-actions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  align-items:center;
+  width:auto;
+}
+.os-home .os-value{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:28px 40px;
+  max-width:1280px;
+  margin-inline:auto;
+  padding-inline:var(--os-pad);
+}
+.os-home .os-value > *{
+  width:auto;
+  max-width:none;
+  margin-inline:0;
+  padding-inline:0;
+}
+.os-home .os-value > .os-kicker{grid-column:1 / -1}
+.os-home .os-statement{max-width:none}
+.os-home .os-statement h2{
+  font-size:clamp(28px,3vw,44px);
+  max-width:none;
+}
+.os-home .os-journey,
+.os-home .os-faq,
+.os-home .os-security{
+  display:grid;
+  grid-template-columns:minmax(240px,.85fr) minmax(0,1.15fr);
+  gap:16px 56px;
+  align-items:start;
+  max-width:1280px;
+  margin-inline:auto;
+  padding-inline:var(--os-pad);
+}
+.os-home .os-journey > *,
+.os-home .os-faq > *,
+.os-home .os-security > *{
+  width:auto;
+  max-width:none;
+  margin-inline:0;
+  padding-inline:0;
+}
+.os-home .os-journey > .os-kicker,
+.os-home .os-journey > h2,
+.os-home .os-journey > .os-lead,
+.os-home .os-journey > .os-actions{
+  grid-column:1 / -1;
+}
+.os-home .os-faq > .os-faq-list,
+.os-home .os-security > .os-security-facts{
+  grid-column:2;
+  grid-row:1 / span 3;
+}
+.os-home .os-review-flow{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:20px;
+}
+.os-home .os-pay-grid,
+.os-home .os-case-grid{
+  display:grid;
+  grid-template-columns:minmax(0,1.35fr) minmax(220px,.65fr);
+  gap:28px;
+  align-items:start;
+}
+.os-home .os-pay-grid .os-ui:last-child,
+.os-home .os-inbox .os-phone{
+  width:min(220px,100%);
+  margin-inline:auto;
+}
+.os-home .os-phone img,
+.os-home .os-ui img{
+  display:block;
+  width:100%;
+  height:auto;
+}
+.os-home .os-journey-steps,
+.os-home .os-review-flow{
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+.os-home .os-journey-steps{
+  display:grid;
+  gap:16px;
+  align-content:center;
+}
+.os-home .os-journey-steps li,
+.os-home .os-review-flow li{
+  display:grid;
+  grid-template-columns:2.4em minmax(0,1fr);
+  gap:8px 12px;
+  align-items:baseline;
+}
+.os-home .os-journey-steps li span,
+.os-home .os-review-flow li small{
+  font-weight:650;
+  color:var(--os-navy);
+}
+.os-home .os-review-flow li{
+  grid-template-columns:1fr;
+  gap:6px;
+  padding:18px 0 0;
+  border-top:1px solid var(--os-line);
+}
+.os-home .os-review-flow li p,
+.os-home .os-journey-steps li{
+  margin:0;
+}
+
+.os-home > section:not(.os-canvas):not(.os-hero):not(.os-trust){
+  padding-block:clamp(56px,7vw,88px);
+}
+.os-home .os-stage{padding-top:72px;padding-bottom:20px;gap:12px}
+.os-home .os-canvas-copy h2{font-size:clamp(36px,4vw,56px);margin-bottom:.15em}
+.os-home .os-eco{height:460px}
+.os-home .os-eco .os-node[data-step="2"]{left:0;top:0;right:auto;bottom:auto}
+.os-home .os-eco .os-node[data-step="3"]{right:0;top:0;left:auto;bottom:auto}
+.os-home .os-eco .os-node[data-step="4"]{left:0;top:158px;right:auto;bottom:auto}
+.os-home .os-eco .os-node[data-step="5"]{right:0;top:158px;left:auto;bottom:auto}
+.os-home .os-eco .os-node[data-step="6"]{left:27%;bottom:0;right:auto;top:auto}
+.os-home .os-eco .os-node[data-step="7"]{right:27%;bottom:0;left:auto;top:auto}
+.os-home .os-security > .os-kicker,
+.os-home .os-security > h2,
+.os-home .os-faq > .os-kicker,
+.os-home .os-faq > h2,
+.os-home .os-security > .os-security-facts,
+.os-home .os-faq > .os-faq-list{
+  grid-column:1 / -1;
+  grid-row:auto;
+  width:100%;
+}
+.os-home .os-security-facts{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:0 40px;
+}
+.os-home .os-callouts{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:18px;
+  list-style:none;
+  margin:4px 0 0;
+  padding:0;
+}
+.os-home .os-callouts li{
+  margin:0;
+  padding:14px 0 0;
+  border-top:1px solid var(--os-line);
+}
+.os-home .os-callouts small{
+  display:block;
+  margin-bottom:6px;
+  font-size:12px;
+  font-weight:600;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  color:var(--os-muted);
+}
+.os-home .os-callouts b{font-size:16px;font-weight:600;line-height:1.35}
+.os-home figure.os-ui:not(.os-phone){
+  border-radius:16px;
+  overflow:hidden;
+  border:1px solid rgba(8,20,52,.08);
+  background:#fff;
+  box-shadow:0 18px 48px rgba(8,20,52,.08);
+}
+.os-home figure.os-ui figcaption{
+  padding:10px 14px 12px;
+  font-size:13px;
+  color:var(--os-muted);
+}
+.os-home .os-inbox-desk{
+  padding:18px 18px 8px;
+  border-radius:18px;
+  background:#101c3d;
+  border:1px solid rgba(255,255,255,.08);
+}
+.os-home .os-inbox-bar{
+  display:flex;
+  justify-content:space-between;
+  gap:12px;
+  margin-bottom:14px;
+  font-size:13px;
+}
+.os-home .os-inbox-guest,
+.os-home .os-inbox-reply{
+  margin:0 0 12px;
+  padding:14px 16px;
+  border-radius:14px;
+}
+.os-home .os-inbox-guest{background:rgba(255,255,255,.06)}
+.os-home .os-inbox-reply{background:rgba(255,0,69,.18)}
+.os-home .os-inbox-desk small{
+  display:block;
+  margin-bottom:6px;
+  font-size:11px;
+  font-weight:600;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+  opacity:.72;
+}
+.os-home .os-case-results{
+  list-style:none;
+  margin:0 0 16px;
+  padding:0;
+  display:grid;
+  gap:12px;
+}
+.os-home .os-case-results li{
+  margin:0;
+  padding-top:12px;
+  border-top:1px solid var(--os-line);
+}
+.os-home .os-case-results b{
+  display:block;
+  font-size:28px;
+  letter-spacing:-.04em;
+  color:var(--os-navy);
+}
+.os-home .os-case blockquote{
+  max-width:20em;
+  background:transparent !important;
+  border:0 !important;
+  border-radius:0 !important;
+  padding:0 !important;
+  width:auto !important;
+  margin:28px 0 0 !important;
+}
+.os-home .os-segment-tabs button{
+  border:1px solid var(--os-line);
+  background:#fff;
+  color:var(--os-navy);
+  border-radius:999px;
+  padding:8px 14px;
+  font-family:var(--os-font);
+  font-size:14px;
+  font-weight:600;
+  cursor:pointer;
+}
+.os-home .os-segment-tabs button.is-on,
+.os-home .os-segment-tabs button[aria-selected="true"]{
+  background:var(--os-navy);
+  border-color:var(--os-navy);
+  color:#fff;
+}
+.os-home .os-int-cats{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+.os-home .os-int-cats li{
+  margin:0;
+  padding:8px 12px;
+  border-radius:999px;
+  border:1px solid var(--os-line);
+  font-size:14px;
+  color:var(--os-navy);
+}
+.os-home .os-mcp-flow{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:10px;
+}
+.os-home .os-mcp-flow span{
+  padding:8px 12px;
+  border-radius:999px;
+  border:1px solid rgba(255,255,255,.22);
+  font-weight:650;
+}
+.os-home .os-ai-task{
+  max-width:720px;
+  padding:22px 24px;
+  border-radius:16px;
+  background:#fff;
+  border:1px solid var(--os-line);
+}
+.os-home .os-mcp .os-ai-task{
+  background:rgba(255,255,255,.06);
+  border-color:rgba(255,255,255,.12);
+}
+@media(max-width:800px){
+  .os-home .os-callouts,
+  .os-home .os-security-facts,
+  .os-home .os-review-flow{grid-template-columns:1fr}
+}
+
+/*
+  Breakpoints:
+  - default / desktop: content max 1200px, pad clamp(20px, 5vw, 64px),
+    .os-canvas 280vh + sticky .os-stage 100vh
+  - max-width 800px: canvas height auto, stage static, nodes stacked visible,
+    grids → 1 col, buttons wrap / full-width, overflow-x clip
+  - max-width 480px: slightly smaller display type, tighter phone shell
+*/

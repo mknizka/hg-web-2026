@@ -1,0 +1,3777 @@
+/* images */
+
+#booking_block  #bf_next {
+	background: url(/template/images/bf_next.png) center center no-repeat #d8d8d8;
+}
+#booking_block  #bf_prev {
+	background: url(/template/images/bf_prev.png) center center no-repeat #d8d8d8;
+}
+#booking_block  #bf_prev:hover {
+	background: url(/template/images/bf_prev.png) center center no-repeat #D0D0D0;
+}
+#booking_block  #bf_next:hover {
+	background: url(/template/images/bf_next.png) center center no-repeat #D0D0D0;
+}
+#nofreerooms:before {
+	background: url("/template/css/images/sad.png") no-repeat center center;
+}
+#error_red::before {
+  background: url("template/css/images/sad.png") no-repeat center center;
+}
+
+/* booking_block */
+html {
+	background: white;
+}
+
+main {
+    margin-top: 120px;
+}
+
+.menu--opener {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    z-index: 999;
+}
+
+@-webkit-keyframes flash {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+@keyframes flash {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+a {
+    outline: none!important
+}
+
+/* Icon 1 */
+
+#nav-icon1 {
+    width: 28px;
+    height: 20px;
+    position: relative;
+    margin: 35px auto;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+    cursor: pointer;
+    z-index: 99999;
+}
+
+#nav-icon1::after {
+    content: '';
+    width: 60px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.68);
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%)translateY(-50%);
+}
+
+#nav-icon1 span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #df174c;
+  border-radius: 2px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+#nav-icon1:hover span {
+  background: #df174c;
+}
+
+.fixed #nav-icon1:hover span, .fixed-down-header #nav-icon1:hover span {
+  background: #df174c;
+}
+
+#nav-icon1 span:nth-child(1) {
+  top: 0px;
+}
+
+#nav-icon1 span:nth-child(2) {
+  top: 8px;
+}
+
+#nav-icon1 span:nth-child(3) {
+  top: 16px;
+}
+
+#nav-icon1.open span:nth-child(1) {
+  top: 10px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+#nav-icon1.open span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+
+#booking-menu {
+    height: 100%;
+    width: 400px;
+    padding: 30px 40px;
+    max-width: 90%;
+    background: #404253;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 9;
+    transform: translateX(100%);
+    box-shadow: none;
+    transition: all 500ms ease-in;
+}
+
+#booking-menu h4 {
+    text-transform: uppercase;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+#booking-menu.open {
+	transform: translateX(0%);
+	box-shadow: 1px 0 20px #404254;
+}
+
+#nav-icon1.open span:nth-child(3) {
+  top: 10px;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
+.rbi_personal a {
+	color: rgb(223, 23, 74) !important;
+	text-decoration: none!important;
+	outline: none
+}
+.rbi_personal a:hover {
+	text-decoration: none!important;
+}
+input {
+	font-size: 15px!important;
+	color: #404254!important
+}
+#header-book {
+    width: 100%;
+    background: white;
+    position: absolute;
+    border-bottom: 1px solid rgba(186, 186, 186, 0.18);
+}
+.logo-small {
+	width: 100%!important;
+	float: none!important;
+	margin: -4px auto!important;
+	max-height: 60px
+}
+
+.logo-small img {
+	opacity: 1;
+	max-height: 96px
+}
+.bookdirect-logo-top {
+	position: relative;
+	bottom: 25px;
+	right: 15px;
+}
+.bookdirect-logo-top img {
+	margin: 0 2px
+}
+#booking_block {
+    display: block;
+    margin: 20px auto;
+    font-size: 12px;
+    left: 0;
+    bottom: 0;
+    z-index: 99;
+    padding: 0;
+}
+.homebook #booking_block {
+	display: block;
+	width: 96%;
+	padding: 2%;
+	background: rgba(0,0,0,0.65);
+	font-size: 12px;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	z-index: 99;
+}
+#booking_block .bf_item {
+	display: block;
+	float: left;
+}
+#booking_block .bf_item:hover,
+#booking_block .bf_item:active,
+#booking_block .bf_item:focus,
+#booking_block .bf_item:visited, input {
+	outline: none;
+	border: 0
+}
+#booking_block .bf_item label, #bf_lastline label {
+
+    text-align: center;
+    background: #D8D8D8;
+    margin: 0;
+    padding: 4px;
+    color: #404254;
+    font-size: 15px;
+    font-weight: 500;
+    border: 1px solid transparent;
+    background: transparent;!important;
+}
+#booking_block .bf_item input {
+	border: solid 1px #404255;
+	height: 36px;
+	text-align: center;
+background: -moz-linear-gradient(top,
+#ffffff 0%,
+	#efefef 100%);
+background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,
+#ffffff), color-stop(100%,
+	#efefef));
+background: -webkit-linear-gradient(top,
+#ffffff 0%,
+	#efefef 100%);
+background: -o-linear-gradient(top,
+#ffffff 0%,
+	#efefef 100%);
+background: -ms-linear-gradient(top,
+#ffffff 0%,
+	#efefef 100%);
+background: linear-gradient(to bottom,
+#ffffff 0%,
+	#efefef 100%);
+	filter: progid: dximagetransform.microsoft.gradient( startcolorstr='#ffffff',endcolorstr='#efefef',gradienttype=0 );
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+.homebook #booking_block .bf_item input {
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+}
+#booking_block #roomsblock {
+	display: none;
+	width: 226px;
+	position: relative;
+	padding: 0;
+	height: 99px;
+}
+#booking_block #curroom {
+	display: block;
+	left: 0;
+	width: 80px;
+	color: #656565;
+	font-size: 14px;
+	margin: 2px 0 3px -10px;
+}
+#booking_block #curroom b {
+	font-weight: normal;
+	font-size: 15px;
+	color: #656565
+}
+#booking_block .roomsblock {
+	width: 200px;
+
+}
+#booking_block .roomsblockact {
+
+	position: absolute;
+	left: 15px;
+}
+.beforeprice {
+	color: rgba(64, 66, 84, 0.5);
+	text-decoration: line-through;
+	padding: 2px;
+	background: transparent;
+	margin-right: 5px;
+}
+.beforeprice_percent {
+	background: #df174a;
+	border-radius: 4px;
+	padding: 2px 5px;
+	margin: 0 5px;
+	color: white;
+}
+#booking_block .roomsblock .bf_item {
+	width: 80px;
+}
+.bfi_beds, .bfi_extrabeds {
+	margin: 10px 10px!important
+}
+#booking_block #roomsblockin {
+	display: block;
+	width: 160px;
+	float: left;
+}
+#booking_block .unactrmb {
+	display: none;
+}
+#booking_block  #curroom,
+#booking_block  #bf_prev,
+#booking_block  #bf_next {
+	text-align: center;
+	position: absolute;
+	opacity: 0.7
+}
+#booking_block  #bf_next {
+	height: 91px;
+	overflow: hidden;
+	text-indent: 50px;
+	cursor: pointer;
+	overflow: hidden;
+	width: 25px;
+	right: -10px;
+	bottom: -3px;
+	-webkit-border-top-right-radius: 10px;
+	-webkit-border-bottom-right-radius: 10px;
+	-moz-border-radius-topright: 10px;
+	-moz-border-radius-bottomright: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+#curroom_text {
+	display: block;
+	position: absolute;
+	top: -20px;
+	right: -90px;
+	width: 100px;
+}
+#booking_form .rbi_selectrom {
+	margin: 0 0 0 10px;
+	position: relative;
+	z-index: 20;
+}
+#booking_block  #bf_prev {
+	height: 91px;
+	overflow: hidden;
+	text-indent: 50px;
+	cursor: pointer;
+	overflow: hidden;
+	width: 25px;
+	left: -4px;
+	bottom: -3px;
+	-webkit-border-top-left-radius: 10px;
+	-webkit-border-bottom-left-radius: 10px;
+	-moz-border-radius-topleft: 10px;
+	-moz-border-radius-bottomleft: 10px;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+#booking_block  #bf_continue {
+	width: 100px;
+	text-align: center;
+	border: 0;
+	height: 38px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background: #d8d8d8;
+	color: #000000;
+	cursor: pointer;
+	float: right;
+	margin-top: 22px;
+}
+.homebook #booking_block  #bf_continue {
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+}
+.homebook #booking_block  #bf_continue:after {
+	content: "\F0DA";
+	font-family: FontAwesome;
+	font-size: 15px;
+	margin: 0 5px 0 2px;
+	color: #d8d8d8;
+}
+#booking_form {
+	display: block;
+	background: whitesmoke;
+	font-size: 12px;
+	position: relative;
+	text-align: left;
+	margin: 20px auto 0;
+}
+
+#booking_form .result_block .result_block_item {
+    padding: 0px;
+    margin: 0px auto;
+    background: #fff;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    border: none;
+    margin-top: 0;
+    border-top: none;
+    position: relative;
+
+}
+
+.flexirate-buttons {
+    position: absolute;
+    top: 20px;
+    right: 16px;
+    cursor: pointer;
+    display: none;
+}
+
+ .flexiterm {
+    background: rgba(64, 66, 83, 0.15);
+    color: #404254;
+    padding: 5px 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    font-weight: 500;
+}
+
+ .fixedterm {
+    background: #404254;
+    color: white;
+    padding: 5px 10px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    font-weight: 500;
+    margin-left: -3px;
+}
+
+.flexirateinfo i {
+    position: relative;
+    background: #df174a;
+    color: white;
+    font-size: 14px!important;
+    border-radius: 50%;
+    padding: 2px 7px;
+    margin: 2px 0 2px 6px;
+}
+
+.booking-form-header {
+    position: absolute;
+    top: 12px;
+    left: 11px;
+    width: calc(100% - 22px);
+    background: #404254;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 37px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+    line-height: 37px;
+}
+
+#booking_form .result_block .chrushow_1 {
+	border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+#booking_form .result_block_room {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    padding: 30px 5px 20px;
+    background: white;
+    margin: 10px 0px;
+    width: calc(100% - 0px);
+    border: 1px solid whitesmoke;
+    border-radius: 6px;
+    color: #404255
+}
+
+.room-head, .service-head {
+	position: absolute;
+    top: 12px;
+    left: 11px;
+    width: calc(100% - 22px);
+    background: #404254;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 37px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+    line-height: 37px;
+}
+
+.result_block_room > .room-head  {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: calc(100% - 0px);
+    background: #404254;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 37px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+    line-height: 37px;
+}
+
+.result_block_final {
+	display: block;
+	margin: 20px auto;
+	background: white;
+	border: 1px solid #EEEDED;
+	border-radius: 4px;
+}
+#booking_form .result_block_room  h3, .result_block_final h3 {
+    background: #FFFFFF;
+    display: block;
+    padding: 35px 10px 0px 20px;
+    color: #404255;
+    float: left;
+    width: 100%;
+    margin: 0 0 10px 0;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    font-weight: normal;
+    font-size: 20px;
+}
+#booking_form .result_block_room small, .result_block_final small {
+	color: #809921;
+	padding: 10px 15px;
+	border: 1px solid #8CA81F;
+	border-radius: 4px;
+	float: right;
+	background: rgba(186, 224, 102, 0.06);
+	margin-top: -5px;
+	font-size: 12px;
+}
+#booking_form .result_block h3,
+#booking_form .rbi_personal h3 {
+    display: block;
+    text-align: left;
+    width: 100%;
+    padding: 4px 18px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    color: #404253;
+    background: #ffffff;
+    font-weight: bold;
+    border-radius: 0;
+    text-transform: none;
+    font-weight: 500;
+    margin-bottom: -5px;
+}
+
+
+#booking_form .result_block h3 small {
+	display: block;
+	margin: 10px;
+	font-weight: 300;
+	text-transform: lowercase;
+	color: black;
+}
+
+#booking_form .result_block h3 {
+    padding: 5px 20px;
+    margin-bottom: 0;
+    background: #404255;
+    color: white;
+    display: inline-block;
+    width: 100%;
+    font-size: 16px;
+    line-height: 26px;
+    border-radius: 4px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border: 1px solid #404255;
+    font-weight: bold;
+    text-transform: none;
+    margin: 11px 0 0 0;
+}
+
+#booking_form .result_block h4 span {
+	display: none;
+	font-family: 'Roboto' , arial;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    padding: 0 0 20px 0;
+    color: #404255;
+
+}
+
+#booking_form .result_block h4 span a {
+	color:#404255;
+	text-decoration: underline;
+}
+
+#booking_form .result_block h4 span a:hover {
+	color:#404255;
+	text-decoration: underline;
+}
+
+#booking_form .result_block h5 {
+	display: block;
+	width: 96%;
+	padding: 1% 2%;
+	background: #3A362C;
+	margin: 0;
+	font-weight: normal;
+	font-size: 15px;
+	color: #d8d8d8;
+}
+#booking_form .result_block .rbi_image {
+    display: block;
+    width: calc(30% - 30px);
+    margin: 18px 15px;
+    float: left;
+    overflow: hidden;
+    border-radius: 4px;
+}
+#booking_form .result_block .rbi_image img {
+	width: 100%;
+	margin: 0;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+#booking_form .result_block .rbi_item {
+    width: 70%;
+    float: right;
+    position: relative;
+    padding: 10px 20px 10px 10px;
+    background: #FFFFFF;
+}
+#booking_form .result_block .rbi_item h4 {
+	width: 100%;
+	line-height: 30px;
+	font-size: 14px;
+	margin-top: 10px;
+}
+.result_block_item h4 {
+    background: rgba(142, 177, 1, 0);
+    text-align: left;
+    padding-left: 10px;
+    padding: 20px 15px 0;
+    font-size: 22px;
+    margin: 0;
+    font-weight: 500;
+    color: #404255;
+    text-transform: none;
+}
+
+
+.result_block_item h4 i {
+    font-size: 13px;
+    padding: 0 5px;
+    color: white;
+    background: #404255;
+    padding: 5px 5px;
+    border-radius: 50%;
+    transform: translateY(-3px);
+    margin-right: 6px;
+}
+
+#booking_form .result_block .rbi_item small {
+	font-size: 12px;
+	font-weight: normal;
+	color: #d8d8d8;
+}
+#booking_form .result_block .rbi_item .rbi_price {
+	display: block;
+	text-align: right;
+	position: relative;
+	line-height: 28px;
+	cursor: pointer;
+	z-index: 0;
+	font-weight: normal;
+	color: #404255;
+	font-size: 15px
+}
+#booking_form .rbi_detail {
+	display: none;
+	text-align: left;
+	margin-bottom: 16px;
+	margin-left: 0px;
+	line-height: 20px;
+	transition: all 1s ease;
+}
+#booking_form .rbi_detail p {
+    margin: 0px 0 10px 0 !important;
+    font-size: 14px !important;
+    line-height: 24px;
+    padding: 14px 24px!important;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    font-style: italic;
+}
+#booking_form .rbi_detail span {
+	margin: 0 !important;
+	font-size: 12px !important;
+	padding: 0 !important;
+	color: #404255 !important;
+}
+#booking_form .rbi_detail ul {
+	list-style-type: circle !important;
+}
+#booking_form .rbi_detail li {
+	float: none !important;
+}
+#booking_form .result_block .rbi_item .rbi_price .rbi_price_span {
+	text-align: left;
+	position: absolute;
+	padding-left: 0;
+	width: 102%;
+	left: 0;
+}
+
+.rbi_price_span img {
+	display: none
+}
+#booking_form  #bf_continue , #bf_continue  {
+    width: 200px;
+    text-align: center;
+    border: 0;
+    line-height: 50px;
+    text-decoration: none;
+    background: #df174c;
+    color: #ffffff;
+    border-radius: 0;
+    cursor: pointer;
+    float: right;
+    margin: 30px 0 20px;
+    padding: 0 20px;
+    vertical-align: middle;
+    font-weight: bold;
+    font-size: 15px!important;
+    text-transform: uppercase;
+    position: relative;
+    letter-spacing: -0.8px;
+}
+#booking_form  #bf_back ,  #bf_back {
+    width: 200px;
+    text-align: center;
+    border: 0;
+    height: 50px;
+    line-height: 50px;
+    text-decoration: none;
+    border-radius: 0px;
+    background: rgba(41, 43, 61, 0.2)!important;
+    color: rgba(64, 66, 84, 0.5)!important;
+    cursor: pointer;
+    float: right;
+    font-weight: 600;
+    margin: 30px 20px 10px 0;
+    vertical-align: middle;
+    font-size: 14px!important;
+    text-transform: uppercase;
+    transition: all 500ms;
+}
+#booking_form  #bf_back:hover,  #bf_back:hover {
+	background: rgba(41, 43, 61, 0.93)!important;
+	color: white!important
+}
+
+#booking_block  #bf_search , #bf_search {
+    width: 100%;
+    text-align: center;
+    border: 0;
+    height: 40px;
+    cursor: pointer;
+    /* float: right; */
+    margin-top: 16px;
+    /* width: 790px; */
+    /* margin: 19px; */
+    background: #df174c;
+    color: white !important;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px!important;
+    padding: 0;
+    letter-spacing: -0.5px;
+    transition: none;
+    -webkit-transition: none;
+    margin: 20px auto;
+    position: relative;
+}
+
+#booking_block  #bf_search::before , #bf_search::before {
+	content: '';
+	display: block;
+	position: absolute;
+	left: 2px;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 20px;
+	height: 20px;
+	background-size: 20px 20px;
+	background: url(/template/css/booking-css/images/search.svg) 50% 50% no-repeat;
+}
+
+#booking_block  #bf_search:hover, #bf_search:hover {
+	background: #8CA81F !important;
+	color: white!important;
+}
+#booking_form .rbi_selectedinfo {
+    display: block;
+    padding: 20px 20px 20px;
+    color: #404255;
+    margin: 0;
+    border-radius: 0;
+    float: left;
+    font-size: 14px;
+    line-height: 20px;
+    font-style: normal;
+    position: relative;
+    width: 100%;
+}
+/* step 2 */
+#booking_form .rbi2_name {
+	display: block;
+	padding: 25px 0 10px 20px;
+	float: left;
+	font-size: 15px;
+	color: #404255;
+	line-height: 22px;
+	width: 100%;
+}
+#booking_form .rbi2_name:before {
+	content: "\f236";
+	font-family: FontAwesome;
+	font-size: 20px;
+	margin: 0 5px 0 2px;
+	color: #404255;
+}
+.content-book {
+	display: block;
+	background: rgba(64, 66, 84, 0.05)!important;
+}
+#booking_form .rbi2_name small,
+#booking_form .rbi2_checkout small,
+#booking_form .rbi2_checkin small,
+#booking_form .rbi2_price small {
+	display: none
+}
+#booking_form .rbi2_checkin,
+#booking_form .rbi2_checkout,
+#booking_form .rbi2_price {
+	display: block;
+	padding: 10px 0 0px 15px;
+	float: left;
+	font-weight: 400;
+	font-size: 15px;
+	color: #404255;
+	background: white;
+}
+#booking_form .rbi2_checkin {
+	padding-left: 20px;
+}
+#booking_form .rbi2_checkin:after {
+	content: "   -";
+	font-family: "Roboto";
+	font-size: 15px;
+	margin: 0 5px 0 2px;
+	color: #404255;
+}
+#booking_form .rbi2_checkout {
+	padding-left: 2px
+}
+#booking_form .rbi2_checkin:before {
+	content: "\f274";
+	font-family: FontAwesome;
+	font-size: 20px;
+	margin: 0 5px 0 2px;
+	color: #404255;
+}
+#booking_form .rbi2_checkout:before {
+	content: "\f273";
+	font-family: FontAwesome;
+	font-size: 20px;
+	margin: 0 5px 0 2px;
+	color: #404255;
+}
+#booking_form .rbi2_price:before {
+	content: "\f02b";
+	font-family: FontAwesome;
+	font-size: 20px;
+	margin: 0 5px 0 2px;
+	color: #404255
+}
+
+#promo li {
+	position: fixed;
+	list-style: none;
+	right: -2px;
+	width: 60px;
+	background: white;
+	border-radius: 4px;
+	border: 1px solid #eaeaea;
+	z-index: 9999;
+}
+#promo li i {
+	padding-left: 10px;
+	padding-top: 10px;
+}
+.verticaltext {
+	width: 12px;
+	word-wrap: break-word;
+	padding-left: 23px;
+}
+#promo li:nth-child(1) {
+	top: 45%;
+}
+#promo li:nth-child(2) {
+	top: 48%;
+}
+#promo li a {
+	color: silver;
+	padding: 5px;
+}
+#top-nav-btn {
+	position: absolute;
+	top: 20px;
+	right: 0;
+}
+#top-nav-btn div {
+	float: right;
+	margin: 5px;
+	background: transparent;
+}
+#top-nav-btn div a {
+	color: white;
+	background: rgba(255, 255, 255, 0.33);
+	padding: 2px 10px;
+	border-radius: 2px;
+	border: 1px solid white;
+}
+#top-nav-btn div a:hover {
+	color: black;
+	background: white;
+}
+#booking_form .rbi2_price {
+	padding-left: 20px;
+}
+.rbi_services_item {
+	width: 105%;
+	padding: 5px 0
+}
+#booking_form .servicecategory {
+	display: block;
+	width: 100%;
+	padding: 10px;
+	cursor: pointer;
+	font-style: normal;
+	font-size: 13px;
+	background: rgba(64, 66, 83, 0.10);
+	margin: 10px;
+	float: none;
+	color: #404253;
+	border-radius: 4px;
+	font-weight: 500;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+#logo-footer {
+	text-align: right;
+	margin: 0;
+}
+#booking_form .rbi_selectedinfo:before {
+	content: "\f0f2";
+	font-family: FontAwesome;
+	font-size: 20px;
+	margin: 0 5px 0 2px;
+	color: #404255;
+}
+#booking_form .servicecategory:before {
+	content: "\f13a";
+	font-family: FontAwesome;
+	font-size: 19px;
+	margin: 0 10px 0 2px;
+	color: #404253;
+	float: left;
+	font-style: normal;
+}
+
+
+#booking_form .input-group {
+    position: absolute;
+    top: 7px;
+    right: 0;
+    transform: translateX(-15%);
+    display: flex;
+}
+
+#bf_lastline .input-group {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateX(-20%)translateY(0%);
+}
+
+.rbi_services_item:nth-child(odd) {
+	display: block;
+	width: 104%;
+	background: #FFFFFF;
+	float: none;
+	margin: 0px 2px;
+	padding: 6px 10px 6px 0;
+	color: #404255;
+	position: relative;
+}
+.rbi_services_item:nth-child(even) {
+    display: block;
+    width: 104%;
+    background: #f9f9f9;
+    border-radius: 0;
+    float: none;
+    margin: 0px 2px;
+    padding: 6px 10px 6px 0;
+    color: #404255;
+    position: relative;
+}
+
+.rbi_services_item:first-child {
+	margin-top: 20px
+}
+
+#nofreerooms {
+	text-align: center;
+	color: #404255;
+	margin: 230px 0 0
+}
+
+#nofreerooms h4 {
+	    font-size: 18px;
+    font-weight: 300;
+}
+
+#nofreerooms:before {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 230px;
+	text-align: center;
+	line-height: 40px;
+	margin: -245px 0;
+}
+#booking_form .rbi_personal_item textarea,
+#booking_form .rbi_personal_item select,
+#booking_form .rbi_personal_item input[type='text'] {
+	font-size: 15px!important;
+	color: #818181;
+}
+#booking_form .servicecontent {
+	display: none;
+	width: 100%;
+	padding: 0 8px;
+	color: #6C6C6C;
+	margin: -10px 0 10px 0;
+}
+#booking_form .rbi_services_price_3 {
+    display: block;
+    position: relative;
+    width: 100%;
+    font-size: 12px;
+    padding: 1% 2%;
+    margin-top: -2px;
+    float: left;
+    font-style: italic;
+}
+.total-price {
+    position: relative;
+    display: block;
+    width: 125%;
+    margin: 15px -25px -20px -25px;
+    text-align: center;
+    color: white;
+    background: #df174b;
+    padding: 10px 5px;
+    font-weight: 600;
+    font-size: 14px;
+    float: left;
+}
+
+#total_price {
+    padding: 0!important
+}
+
+#total_price  .total-price {
+    margin: 0 -25px 0px -25px!important
+}
+
+#booking_menu {
+    list-style: none;
+    color: #404253;
+}
+
+#booking_menu li {
+    margin: 10px 0
+}
+
+#booking_menu li a {
+    color: white;
+    font-size: 16px;
+    line-height: 26px;
+    outline: none;
+}
+
+
+#booking_form .rbi_services_price_2 {
+    display: block;
+    width: 70%;
+    padding: 0% 4%;
+    float: left;
+    line-height: 14px;
+    padding-bottom: 5px;
+}
+#booking_form .rbi_services_count {
+	display: block;
+	width: 14%;
+	padding: 1% 2%;
+	float: right;
+	font-style: italic;
+	text-align: right;
+}
+#booking_form .rbi_services_block .servicecategory:before {
+	content: "\f236";
+	font-family: FontAwesome;
+	font-size: 20px;
+	margin: 0 5px 0 2px;
+	color: #404255;
+}
+#booking_form .rbi_services_item_3 .rbi_services_name {
+    padding: 0;
+    width: 100%;
+    font-size: 14px;
+    font-style: normal;
+    color: #404255;
+}
+#booking_form .rbi_services_item_3 .rbi_services_name b {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+}
+.rbi_services_item_3 {
+    font-size: 14px;
+    color: #404255;
+    padding: 8px 25px 4px;
+    margin: 0 -25px;
+}
+
+#booking_form .rbi_services_name {
+    display: block;
+    width: 75%;
+    line-height: 14px;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 1% 0% 1% 3%;
+    float: left;
+}
+#booking_form .rbi_services_item:hover {
+}
+#booking_form .rbi_services_item:hover input[type="number"] {
+	border: solid 0px #cccccc;
+}
+#booking_form .rbi_services_number {
+	width: 40px;
+	border: solid 0px #d8d8d8;
+	height: 30px;
+	text-align: center;
+	background: #F5F5F5;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	float: right;
+	margin: 0 10px;
+	color: #404255;
+	font-size: 14px;
+	font-weight: 600;
+	outline: none;
+}
+#booking_form .rbi_title {
+	display: block;
+}
+
+#booking_form .rbi_title p {
+    color: #404253;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    padding: 10px;
+}
+
+#booking_form .result_block .rbi_item .rbi_price .rbi_price_span:before {
+	content: "\f13a";
+    font-family: FontAwesome;
+    color: #404255;
+    font-size: 20px!important;
+    float: left;
+    line-height: 30px;
+    display: inline;
+    margin-right: 5px;
+}
+
+#booking_form .rbi_services_block .rbi_title:last-child {
+	border-bottom: 0;
+}
+.result_sub_block {
+    background: white;
+    padding: 10px 0 10px;
+    border-radius: 6px;
+    margin: 10px 1px;
+}
+.result_sub_block .rsb_half {
+	    width: 48%;
+    margin-right: 10px;
+    float: left;
+    padding-top: 30px;
+}
+.result_block_price {
+	margin: 20px 0px;
+	background: white;
+	padding: 0 0px 20px 0px;
+	border-radius: 4px;
+}
+
+.price-info-btn {
+    display: block;
+    position: relative;
+    float: left;
+    background: #404253;
+    color: white;
+    border-radius: 15px;
+    padding: 0px 10px;
+    cursor: pointer;
+    margin: 34px 10px 0px 28px;
+    font-weight: 500;
+    transition: all 300ms;
+}
+
+.price-info-btn:hover {
+	background: #df174c
+}
+
+.result_block_price h3 {
+	text-align: center;
+	background: #df174c!important;
+	padding: 10px 0;
+	text-transform: uppercase;
+	color: white;
+	border-top-right-radius: 4px;
+	border-top-left-radius: 4px;
+	font-size: 16px;
+	font-weight: 700;
+}
+.result_block_price div {
+	font-size: 18px;
+	font-weight: normal;
+	color: #404255;
+	padding: 0 10px 0 25px;
+}
+}
+.result_sub_block {
+	padding: 0 20px 20px 20px!important;
+}
+.result_sub_block h5 {
+	text-align: center;
+	margin: 20px;
+	font-size: 26px;
+	color: #404255;
+	font-weight: 400;
+}
+#booking_form #totalprices_2 div {
+	display: block;
+	width: 96%;
+	padding: 1%;
+}
+#booking_form #totalprices_2 span {
+	float: right;
+	text-align: right;
+}
+#totalprices_3 {
+	margin: 40px auto 10px auto;
+}
+#booking_form #totalprices_3 div {
+    display: block;
+    overflow: hidden;
+    padding: 10px;
+    position: relative;
+    margin: 10px auto;
+    font-size: 20px;
+    color: #404255;
+    background: #FFFFFF;
+    border-radius: 4px;
+    border: 1px solid #EEEDED;
+}
+#booking_form #totalprices_3 span {
+	float: right;
+	text-align: right;
+}
+#booking_form .rbi_personal_item {
+    display: block;
+    width: 50%;
+    padding: 10px 2% 0;
+    float: left;
+}
+#booking_form .rbi_fleft {
+	float: left;
+	margin-right: 10px;
+}
+#booking_form .rbi_personal_item label {
+	display: block;
+	width: 100%;
+	font-weight: 500;
+}
+#booking_form .rbi_personal_item input[type='text'] {
+    border: none;
+    height: 45px;
+    text-indent: 5px;
+    background: #f5f5f6;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+
+}
+#booking_form .rbi_personal_item select {
+	border: none;
+	height: 45px;
+	background: #f5f5f6;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+
+
+}
+#booking_form .rbi_personal_item textarea {
+	padding: 1%;
+	border: none;
+	width: 99%;
+	min-height: 90px;
+	background: #f5f5f6;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+
+}
+#rbi_payment {
+	margin-bottom: 25px
+}
+
+#booking_form .rbi_item .rbi_price .minstay {
+    background: rgb(223, 23, 74);
+    padding: 2px 8px;
+    border-radius: 20px;
+    color: white;
+    -webkit-animation: flash linear 2s infinite;
+    animation: flash linear 2s infinite;
+}
+
+#booking_form .rbi_item .rbi_price .minstay:before {
+    content: "\f071";
+    font-family: 'FontAwesome';
+    color: white;
+    font-size: 14px!important;
+    line-height: 30px;
+    display: inline;
+    margin-right: 5px;
+}
+
+#booking_form .input-number-group .input-number-decrement, #booking_form .input-number-group .input-number-increment {
+    display: inline-block;
+    width: 24px;
+    height: 30px;
+    line-height: 28px!important;
+    background: #404253;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 0px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 0!important;
+    margin-right: 0!important;
+}
+
+.servicecontent >.input-number-group {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#booking_form .rbi_services_number {
+    width: 40px!important;
+    border: solid 0px #d8d8d8;
+    height: 30px;
+    text-align: center;
+    background: #F5F5F5;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    float: none;
+    margin: 0;
+    color: #404255;
+    font-size: 14px!important;
+    font-weight: 600;
+    outline: none;
+    display: block;
+    position: relative;
+}
+
+#booking_form .rbi_personal_item textarea:focus,
+#booking_form .rbi_personal_item textarea:active,
+#booking_form .rbi_personal_item textarea:visited,
+#booking_form .rbi_personal_item select:focus,
+#booking_form .rbi_personal_item select:active,
+#booking_form .rbi_personal_item select:visited,
+#booking_form .rbi_personal_item input:focus,
+#booking_form .rbi_personal_item input:active,
+#booking_form .rbi_personal_item input:visited {
+	outline: none;
+	resize:none
+}
+#booking_form .rbi_red {
+    border: none!important;
+    background: #df174a!important;
+    color: white!important;
+}
+
+#booking_form #rbi_cond_bck,
+#booking_form #rbi_marketing_bck {
+	display: block;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	text-align: center;
+	float: left;
+}
+
+#booking_form .rbi_red_bck input {
+	transform: translateX(0px)translateY(-2px)
+}
+#booking_form .rbipright {
+	width: 100%;
+	font-weight: normal;
+	    padding: 5px 2%;
+}
+
+#booking_form .rbipright::first-child{
+    padding: 10px 2%;
+}
+
+#discountfield {
+	padding: 0px;
+	margin: 10px auto 30px;
+	background: rgb(255, 255, 255);
+	border-radius: 0px;
+	color: #404255;
+	border-radius: 4px;
+	position: relative;
+}
+
+.code-head {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: calc(100% - 0px);
+    background: #404252;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 37px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+    line-height: 37px;
+}
+
+#checkdcode {
+    float: left;
+    width: 72px;
+    position: relative;
+    display: inline-block;
+    background: #404252;
+    padding: 8px;
+    text-align: center;
+    border-radius: 30px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    color: white;
+    font-weight: 500;
+    font-size: 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+#checkdcode:hover {
+	background: #404252;
+}
+#discountfield label {
+	padding: 5px 20px;
+	font-size: 17px;
+	color: #404255;
+	font-weight: 500;
+	margin-bottom: 20px;
+}
+#discountfield input {
+    border: 0;
+    border-radius: 0;
+    padding: 11px;
+    margin-left: 20px;
+    background: #F0F0F0;
+    font-size: 18px;
+    width: 140px;
+    margin: 0 0 0 30px;
+    font-weight: normal;
+    color: #404255;
+    outline: none;
+    position: relative;
+    display: inline-block;
+    float: left;
+    border-bottom-left-radius: 34px;
+    border-top-left-radius: 30px;
+    text-align: center;
+}
+#dcodeintro {
+    padding: 50px 20px 25px;
+    font-size: 13px;
+    line-height: 20px;
+    color: #404255;
+    font-weight: 400;
+}
+
+
+.payment {
+	float: none!important;
+	display: block;
+	position: relative;
+}
+
+#rbi_payment {
+	width: 47%!important;
+	color: #404255;
+}
+
+.rbi_cupon_text {
+	float: left;
+	font-size: 15px;
+	padding: 25px 5px 0 20px;
+	font-weight: normal;
+}
+.rbi_cupon_name {
+	display: none
+}
+.rbi_cupon_value {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    float: left;
+    padding: 15px 0 0;
+    font-size: 15px;
+    font-weight: bold;
+}
+#dcoderesult {
+	margin: 0 0 10px;
+}
+#dcoderesult span {
+    color: #df174b;
+    font-weight: bolder;
+    font-size: larger;
+    margin: 0 0 15px 0;
+    display: block;
+    padding: 12px 20px;
+    background: #FFFFFF;
+    position: relative;
+    float: left;
+    text-align: center;
+    width: 100%;
+}
+
+.code-place {
+    position: relative;
+    margin: 0;
+    float: left;
+    margin-bottom: 20px;
+}
+
+.rbi_cupon_finaltext {
+    font-size: 14px;
+    margin: 20px 0 -20px 0;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    width: 100%;
+    float: left;
+    color: #ffffff;
+    font-weight: 500;
+    background: #404252;
+    padding: 8px 20px;
+    text-align: left;
+}
+.rbi_cupon_finalvalue {
+	font-size: 22px;
+	margin: 20px 0 0 0;
+	width: 40%;
+	float: left;
+	color: #404255;
+	font-weight: normal;
+	background: white;
+	padding: 8px 20px;
+	text-align: right;
+}
+#rbi_pi_form {
+	font-size: 16px;
+	color: #404255;
+	outline: none;
+}
+#booking_form input[type="submit"] {
+    font-size: 25px!important;
+    width: 300px;
+    margin: 0 auto 150px auto;
+    max-width: 90%;
+    background: #df174b;
+    color: white!important;
+    cursor: pointer;
+    border-radius: 0;
+    display: block;
+    padding: 10px 30px;
+    outline: none;
+}
+#booking_form input[type="submit"]:hover {
+	background: #404255;
+}
+#upsell_3 {
+	padding: 10px 0 10px 10px;
+	font-size: 12px;
+	color: #809921;
+	font-weight: normal;
+	background: rgb(225, 232, 214);
+	margin: 20px 0 0;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+.paymenttext {
+	font-size: 18px;
+	background: #f5f5f5;
+	padding: 0 40px 40px 80px;
+	text-align: center;
+	margin: 0;
+	color: #404255;
+}
+#booking_form .rbi_personal {
+	margin: 15px auto;
+}
+
+.form-space {
+    margin: 50px 1px;
+    background: white;
+    border-radius: 6px;
+}
+
+
+/* PREFOOTER GARANCIE A BUTTONS */
+.booking-prefooter {
+	width: 900px;
+	margin: 70px auto;
+	text-align: center;
+	background: white;
+}
+.booking-prefooter-buttons {
+	width: 100%;
+	position: relative;
+	display: block;
+	background: #f3f3f3;
+	padding: 30px;
+	margin-top: 15px
+}
+.booking-buttons {
+	float: none;
+	display: block;
+	position: relative;
+	height: 230px;
+	width: 800px;
+	margin: 10px auto;
+}
+.booking-prefooter h4 {
+	font-family: "Roboto";
+	font-weight: 400;
+	line-height: 25px;
+	color: #404255;
+	font-size: 16px;
+}
+.horeca {
+	width: 400px;
+	margin: 50px auto 0 auto;
+	background: #F9F9F9;
+	padding: 10px 20px;
+	border-radius: 10px;
+	color: #B6B6B6;
+	text-transform: uppercase;
+	font-size: 13px;
+	font-weight: bold;
+}
+.horeca p {
+	margin: 10px 0 8px 0;
+}
+.booking-buttons ul {
+	list-style: none;
+	display: block;
+}
+.booking-buttons ul li {
+	width: 140px;
+	float: left;
+	height: 180px;
+	margin: 10px 20px;
+	padding: 40px 10px 20px;
+	border-bottom: 5px solid #D9534F;
+	text-align: center;
+}
+.booking-buttons ul li a {
+	color: #404255;
+	font-size: 15px;
+}
+.booking-buttons ul li a:hover, .booking-buttons ul li a:focus {
+	outline: none;
+	color: #D9534F;
+}
+.booking-buttons ul li i {
+	margin: 5px 5px 15px;
+	font-size: 3.5em
+}
+/*.paymenttext::before {
+	content: "";
+	background: url("/template/css/images/done.jpg") no-repeat center center;
+	font-size: 32px;
+	font-family: "Roboto";
+	font-weight: bold;
+	display: block;
+	position: absolute;
+	width: 100%;
+	right: 0;
+	top: 0;
+	color: #404255;
+	height: 230px;
+	text-align: center;
+	line-height: 40px;
+	margin: 15px 0
+}
+*/
+#upsel_but_3 {
+	padding: 10px 12px;
+	background: rgba(154, 178, 57, 0.7);
+	color: white;
+	margin: -10px 0px 0;
+	float: right;
+	border-bottom-right-radius: 4px;
+}
+#upsel_but_3:hover {
+	background: rgba(154, 178, 57, 1);
+	text-decoration: none;
+}
+#booking_form .rbi_personal_item input[type='text'],
+#booking_form .rbi_personal_item select {
+	width: 97%;
+	font-weight: 500;
+	padding: 5px 10px;
+	color: #404253
+}
+}
+#booking_form .rbi_personal_item textarea {
+	float: none;
+	width: 95%;
+	font-weight: bold;
+	padding: 5px 10px;
+}
+
+#booking_form .rbi_personal_item #rbi_email,
+#booking_form .rbi_personal_item #rbi_phone,
+#booking_form .rbi_personal_item #rbi_city,
+#booking_form .rbi_personal_item #rbi_zip {
+	max-width: 97%;
+}
+
+
+
+/* rbi_step */
+#rbi_step {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 2px 0 0 0;
+    background: #ffffffde;
+    box-shadow: 0 0 5px rgba(192, 192, 192, 0.5);
+}
+#rbi_step ul {
+	list-style-type: none;
+	display: block;
+	width: 100%;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+#rbi_step li {
+    display: inline-block;
+    width: 220px;
+    height: 50px;
+    background: transparent;
+    color: white;
+    border: none!important;
+    color: #404255;
+    float: none;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    margin: 0 20px;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    font-size: 14px;
+    line-height: 50px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+#rbi_step li::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: url(/template/css/booking-css/images/arrow-right.svg) 50% 50% no-repeat;
+    background-size: 30px 12px;
+    height: 30px;
+    width: 30px;
+}
+
+#rbi_step li:last-child::after {
+	display: none
+}
+
+.result_block_in {
+	display: none
+}
+
+#rbi_step ul li span {
+    background: transparent;
+    position: absolute;
+    top: 50%;
+    left: -25px;
+    margin-left: 0;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    color: #6B6B6B;
+    font-weight: bold;
+    display: block;
+    transform: translateY(-50%);
+    display: none;
+}
+#step-title {
+	width: 1000px;
+	margin: 50px auto 20px;
+	text-align: center;
+	    display: none;
+}
+#step-title h1 {
+	text-transform: uppercase;
+	font-weight: normal;
+	margin-bottom: 6px;
+	color: #404255;
+	font-size: 36px;
+	font-weight: 400;
+	line-height: 46px;
+}
+#step-title small {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 25px;
+	color: #404255
+}
+
+#booking_form h4 small {
+    display: inline-block;
+    margin-left: 12px;
+    background: #df174a;
+    color: white;
+    padding: 0px 8px;
+    border-radius: 20px;
+    font-size: 11px;
+    line-height: 18px;
+    font-weight: 500;
+    transform: translateY(-2px);
+}
+
+.search-ico {
+    color: white;
+    position: absolute;
+    bottom: 40px;
+    z-index: 2;
+    left: 40px;
+}
+
+
+.rbi_tags {
+    width: auto;
+    float: left;
+    background: rgb(255, 255, 255);
+    border-radius: 26px;
+    font-size: 10px;
+    padding: 0px 0px 0px 5px;
+    color: #404254;
+    margin: 0px 5px 0 0;
+}
+.rbi_tags:before {
+	content: "\f02c";
+	font-family: FontAwesome;
+	font-size: 12px;
+	margin: 0 5px 0 2px;
+	color: #404254;
+}
+#booking_form_block {
+	display: block;
+	width: 100%;
+}
+#booking_form_block #booking_block {
+	padding: 15px 0 15px 0;
+	background: rgb(240, 240, 240);
+	width: 100%;
+	margin: auto;
+	max-width: 1630px;
+}
+#booking_block_in {
+    display: block;
+    overflow: hidden;
+    padding: 50px 15px 0px;
+    background: white;
+    margin: 10px;
+    width: calc(100% - 20px);
+    border: 1px solid whitesmoke;
+    border-radius: 6px;
+}
+#booking_block_in input[type='text'],
+#booking_block_in input[type='number'] {
+	background: #b7b7b7;
+	border: solid 1px #d8d8d8;
+}
+#booking_block_in input[type='text']:focus,
+#booking_block_in input[type='number']:focus {
+    border: 1px solid #404254;
+    background: #404254;
+    color: white!important;
+}
+#booking_form {
+	padding: 0;
+}
+#booking_form #bf_continue, #bf_continue {
+	background:  #df174c!important;
+	color: white!important;
+}
+#rbi_step li.rbi_act {
+    background: transparent;
+    color: #df174b;
+}
+#booking_form #bf_continue:hover, #bf_continue:hover {
+	background: rgba(154, 178, 57, 1) !important;
+}
+/* KALENDAR PRI NEDOSTUPNOSTI */
+#nofreerooms_center {
+	width: 575px;
+	margin: 0 auto 120px;
+}
+#left_calendar {
+	display: block;
+	text-align: left;
+	float: left;
+	width: 48% !important;
+	width: 100%;
+	margin-right: 10px;
+	font-size: 14px;
+	padding: 15px 15px;
+	background: #EBEBEB;
+	border-radius: 5px;
+}
+.celdayno {
+	display: inline-block;
+	line-height: 28px;
+	margin: 1px;
+	text-decoration: none;
+	max-width: 33px;
+	width: 100%;
+	text-decoration: none;
+}
+.calday {
+	display: inline-block;
+	text-align: center;
+	line-height: 28px;
+	margin: 1px;
+	text-decoration: none;
+	max-width: 33px;
+	width: 100%;
+	background: #D9534F;
+	color: white;
+}
+.calday s, .calday strike, .calday del {
+	text-decoration: none;
+}
+.caldayname {
+	display: inline-block;
+	text-align: center;
+	line-height: 28px;
+	margin: 1px;
+	text-decoration: none;
+	max-width: 33px;
+	width: 100%;
+	background: #EBEBEB;
+}
+.lc_monthname {
+	text-align: center;
+	font-size: 20px;
+	font-weight: 600;
+	margin: 10px 0;
+}
+.free {
+	display: inline-block;
+	text-align: center;
+	line-height: 28px;
+	margin: 1px;
+	text-decoration: none;
+	max-width: 33px;
+	width: 100%;
+	color: #ffffff;
+	background: #6a8514;
+}
+.sc_info {
+	background: #df174b;
+	padding: 5px 0;
+	margin: 0 2px;
+	text-align: center;
+	/* border-radius: 5px;
+*/
+	color: white;
+	font-size: 12px;
+	font-weight: 600;
+	width: 104%;
+}
+/* Galeria a Info pri izbách  */
+.rbi_image {
+	position: relative;
+	z-index: 0;
+}
+.rbi_image:hover .rbi_image_menu, .rbi_image:hover .rbi_info_menu {
+	display: block;
+}
+.rbi_image .rbi_image_menu:focus, .rbi_image .rbi_image_menu:active, .rbi_image .rbi_image_menu:hover, .rbi_image .rbi_image_menu:visited, .rbi_image .rbi_info_menu:focus, .rbi_image .rbi_info_menu:active, .rbi_image .rbi_info_menu:hover, .rbi_image .rbi_info_menu:visited {
+	border: none;
+	outline: none;
+}
+.rbi_image .rbi_image_menu {
+	display: block;
+	width: 50%;
+	height: 156px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 2;
+	cursor: pointer;
+	/*background: url('/template/css/images/gal-hover.png');
+*/
+}
+.rbi_image .rbi_image_menu a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 2;
+	cursor: pointer;
+}
+.rbi_image .rbi_image_menu::after {
+	content: "Gallery";
+	font-size: 13px;
+	font-weight: bold;
+	display: block;
+	position: absolute;
+	width: 100%;
+	right: 0;
+	bottom: 0;
+	background: white;
+	color: #454545;
+	border-radius: 0px;
+	float: right;
+	background: rgba(64, 66, 84, 0.7);
+	color: white;
+	height: 37px;
+	margin-top: 0px;
+	text-align: center;
+	line-height: 37px;
+	border-bottom-left-radius: 4px;
+	transition: all 0.7s ease;
+}
+.rbi_image .rbi_image_menu:hover:after {
+	background: rgba(64, 66, 84, 1);
+	color: white;
+}
+.rbi_image .rbi_info_menu {
+	display: block;
+	width: 50%;
+	height: 156px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 2;
+	cursor: pointer;
+	/*background: url('/template/css/images/info-hover.png');
+*/
+}
+
+.nextday_percent  {
+    float: right;
+    margin-right: 20px;
+    background: #df174a;
+    color: white;
+    padding: 2px 10px;
+    font-weight: 600;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.rbi_tags_wrapper {
+    display: block;
+    width: 100%;
+    float: left;
+    margin: 5px 15px;
+}
+
+.rbi_image .rbi_info_menu a {
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 2;
+	cursor: pointer;
+}
+.rbi_image .rbi_info_menu::after {
+	content: "Info";
+	font-size: 13px;
+	font-weight: bold;
+	display: block;
+	position: absolute;
+	width: 100%;
+	right: 0;
+	bottom: 0;
+	background: white;
+	color: #454545;
+	/* border: 1px solid #D9534F;
+*/
+	border-radius: 0px;
+	float: right;
+	background: rgba(255,255,255, 0.7);
+	color: rgba(64, 66, 84, 1);
+	height: 37px;
+	margin-top: 0px;
+	text-align: center;
+	line-height: 37px;
+	border-bottom-right-radius: 4px;
+	transition: all 0.7s ease;
+}
+.rbi_image .rbi_info_menu:hover:after {
+	background: rgba(255,255,255, 1);
+	color: rgba(64, 66, 84, 1);
+}
+.rbi_image .rbi_info_menu a:active, .rbi_image .rbi_info_menu a:visited, .rbi_image .rbi_info_menu a:focus, .rbi_image .rbi_image_menu a:visited, .rbi_image .rbi_image_menu a:focus, .rbi_image .rbi_image_menu a:active {
+	outline: none;
+	border: 0
+}
+#error_red {
+	text-align: center;
+	font-size: 18px;
+	background: #df174a;
+	width: 100%;
+	margin: 40px 0 40px 0;
+	padding: 30px 60px;
+	color: white;
+}
+#error_red::before {
+	content: "";
+	font-size: 32px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	display: block;
+	position: absolute;
+	width: 100%;
+	right: 0;
+	top: 0;
+	color: #404255;
+	height: 230px;
+	text-align: center;
+	line-height: 40px;
+	margin: 15px 0
+}
+
+/* Checkbox */
+
+label {
+    position: relative;
+}
+
+.control__indicator {
+  position: absolute;
+    top: 50%!important;
+    left: 0!important;
+    height: 20px;
+    width: 20px;
+    background: #f5f5f6;
+    border-radius: 2px;
+    cursor: pointer;
+    transform: translateY(-45%)
+}
+
+#rbi_cond_bck.rbi_red_bck .control__indicator {
+    background: rgba(223, 23, 76, 0.45)!important;
+}
+
+.calsetcat_item .control__indicator {
+    top: 50%!important;
+    left: 0!important;
+    margin-top: 5px;
+}
+
+.formelement input[type="checkbox"] {
+    position: absolute;
+    z-index: -1;
+    opacity: 0
+}
+
+
+.sortable input[type="checkbox"] {
+    opacity: 0;
+    z-index: 1;
+    position: relative;
+}
+
+.sortable .control__indicator {
+    display: inline;
+    left: 10px!important;
+    height: 14px;
+    width: 14px;
+}
+
+.sortable label.control--checkbox {
+    display: inline
+}
+
+.bloggy .control__indicator {
+    position: absolute;
+    left: 3px!important;
+    height: 14px;
+    width: 14px;
+    background: #eaecfc;
+    border-radius: 2px;
+}
+
+
+.control--radio .control__indicator {
+  border-radius: 50%;
+}
+.control:hover input ~ .control__indicator {
+  background: rgba(223, 23, 76, 0.65);
+}
+.control input:checked ~ .control__indicator {
+  background: #df174c;
+}
+.control:hover input:not([disabled]):checked ~ .control__indicator,
+.control input:checked:focus ~ .control__indicator {
+  background: #df174c;
+}
+.control input:disabled ~ .control__indicator {
+  background: #e6e6e6;
+  opacity: 0.6;
+  pointer-events: none;
+}
+.control__indicator:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+.control input:checked ~ .control__indicator:after {
+  display: block;
+}
+.control--checkbox .control__indicator:after {
+  left: 8px;
+  top: 4px;
+  width: 3px;
+  height: 8px;
+  border: solid #ffffff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+.control--checkbox input:disabled ~ .control__indicator:after {
+  border-color: #eff0ff;
+}
+.control--radio .control__indicator:after {
+  left: 7px;
+  top: 7px;
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  background: #fff;
+}
+.control--radio input:disabled ~ .control__indicator:after {
+  background: #eff0ff;
+}
+.select {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 15px;
+  width: 100%;
+}
+.select select {
+  display: inline-block;
+  width: 100%;
+  cursor: pointer;
+  padding: 10px 15px;
+  outline: 0;
+  border: 0;
+  border-radius: 0;
+  background: #e6e6e6;
+  color: #7b7b7b;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.select select::-ms-expand {
+  display: none;
+}
+.select select:hover,
+.select select:focus {
+  color: #000;
+  background: #ccc;
+}
+.select select:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+.select__arrow {
+  position: absolute;
+  top: 16px;
+  right: 15px;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+  border-style: solid;
+  border-width: 8px 5px 0 5px;
+  border-color: #7b7b7b transparent transparent transparent;
+}
+.select select:hover ~ .select__arrow,
+.select select:focus ~ .select__arrow {
+  border-top-color: #000;
+}
+.select select:disabled ~ .select__arrow {
+  border-top-color: #ccc;
+}
+
+input[type="checkbox"] {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.inbill {
+    left: 14px!important;
+}
+
+.control__indicator.inbill {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    background: #d1d4ec;
+    border-radius: 2px;
+}
+
+.control--checkbox .control__indicator.inbill::after {
+    left: 6px;
+    top: 3px;
+    width: 3px;
+    height: 6px;
+    border: solid #ffffff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+label.control--checkbox {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 20px
+}
+
+.control__indicator.selectall {
+    background: rgb(190, 194, 224);
+    margin-top: 10px
+}
+
+label.check_small {
+    max-width: 25px
+}
+
+label.check_small .control__indicator {
+    position: absolute;
+    top: 50%!important;
+    left: 50%!important;
+    height: 15px;
+    width: 15px;
+    background: #d1d4ec;
+    border-radius: 2px;
+    cursor: pointer;
+    translateY(-50%)translateX(-50%)
+}
+
+label.check_small .control__indicator:after {
+    left: 5px;
+    top: 2px;
+    width: 2px;
+    height: 7px;
+    border: solid #ffffff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.custom-file-upload {
+    border: 1px solid #d1d4ec;
+    border-radius: 3px;
+    display: inline-block;
+    padding: 4px 12px;
+    cursor: pointer;
+    background: #f9f9fd;
+    font-size: 13px;
+    transition: all 1000ms ease-in
+}
+
+.custom-file-upload:hover {
+    background: rgba(218, 220, 236, 0.6);
+    transition: all 300ms linear
+}
+
+input#picture, input#importfile, input[type='file'] {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+label img {
+    vertical-align: middle;
+}
+
+label.custom-file-upload span {
+        padding: 5px 6px;
+    min-width: inherit;
+    line-height: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #404255;
+}
+
+.calsetcat_item {
+    margin: 1% 0 3%
+}
+
+/* Checkbox END */
+
+
+#booking_block .bf_item {
+    width: 100%;
+    margin: 4px 0;
+    height: 35px;
+    line-height: 35px;
+}
+
+#booking_block .bf_item .bfi_beds,
+#booking_block .bf_item .bfi_extrabeds {
+	margin: 10px 10px
+}
+#booking_block .rooms input {
+	width: 100%;
+	border-radius: 0;
+	border: 0;
+	height: 60px;
+	color: white;
+	font-weight: 700;
+	font-size: 18px;
+}
+#booking_block #roomsblock {
+	float: left;
+	margin-left: 30px;
+}
+#booking_block .rooms {
+
+}
+#booking_block #bf_lastline {
+    float: none;
+    width: 100%;
+}
+#booking_block .bf_item input {
+    border-radius: 0;
+    border: 0;
+    height: 35px;
+    color: #6B6B6B;
+    border: 1px solid #ffffff;
+    background: #d9d9dc;
+    width: 120px;
+    outline: none;
+    float: right;
+    border-radius: 35px;
+    color: #404254!important;
+    font-weight: 500;
+    font-size: 14px!important;
+}
+
+#booking_block .bf_item input[type=number]{
+    border-radius: 0;
+    border: 0;
+    height: 40px;
+    width: 50px;
+    text-align: center;
+    color: #6B6B6B;
+    border: 1px solid #ffffff;
+    background: #ffffff;
+    font-weight: 500;
+    font-size: 18px;
+}
+.lasticon {
+    color: #df174a;
+    padding: 5px 15px;
+    border-radius: 4px;
+    float: right;
+    background: rgb(255, 255, 255);
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    position: absolute;
+    right: 0px;
+    top: -32px;
+    border-radius: 0;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+footer {
+	background: whitesmoke;
+    color: black;
+    font-weight: 400;
+    padding: 0;
+    border: none;
+}
+.line {
+	padding: 10px 0;
+}
+#footer-links {
+	list-style: none;
+	color: black;
+	float: left;
+	padding: 0;
+	margin: 0
+}
+#footer-links li {
+	float: left;
+	margin: 5px 10px 5px 5px;
+	list-style: none;
+}
+#footer-links li a {
+    color: #404254;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    outline: none;
+}
+#footer-links li a .fa {
+	color: #404254;
+	font-size: 9px!important;
+	float: left;
+	line-height: 25px;
+	display: inline;
+	margin-right: 5px;
+}
+#footer-links li a:hover,
+#footer-links li a:hover .fa,
+#footer-links li a:hover:before {
+	color: #df174c!important;
+}
+
+#booking_form .paymentdata input[type="submit"] {
+    width: 94%;
+    margin: 20px;
+    float: left;
+    padding: 15px 20px;
+    color: white!important;
+    clear: both;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+#booking_form .proced_payment {
+	width: 200px;
+    padding: 16px 15px;
+    margin: 5px auto 45px;
+    display: block;
+    color: whitesmoke;
+    background: #86c300;
+    text-align: center;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 17px;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    opacity: 0.8
+}
+
+#booking_form .proced_payment:hover {
+	opacity: 1
+}
+
+#booking_form .proced_payment:after {
+	content:' ➤';
+	color: white
+
+
+}
+
+#fixbuttons {
+    text-align: right;
+    float: right;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+input#bf_rooms[type='number'] {
+    background: rgba(64, 66, 83, 0.2);
+    width: 48px;
+    text-align: center;
+    height: 30px;
+    font-weight: 700;
+    border: 1px solid rgb(217, 217, 220);
+}
+
+#booking_form .paymentdata input[type="submit"]:hover {
+	background:rgba(154, 178, 57, 1)!important;
+}
+
+#bf_lastline .input-number-group .input-number-decrement, #bf_lastline .input-number-group .input-number-increment {
+    display: inline-block;
+    width: 34px;
+    height: 30px;
+    line-height: 30px!important;
+    background: #404254;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 0px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    margin-left: 0!important;
+    margin-right: 0!important;
+}
+
+#bf_lastline .input-number-group .input-number-increment {
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+}
+#bf_lastline .input-number-group .input-number-decrement {
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+#bf_lastline .input-number-group {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 12px 3px 5px;
+    /* width: 56%; */
+    float: right;
+    text-align: right;
+}
+
+#bf_lastline label {
+    height: 50px;
+    line-height: 40px;
+    display: block;
+    float: left;
+}
+
+/*=============================================================================================== ================================================================================================= =================================================================================================Mobile and small devices booking =============================================================================================== ================================================================================================= ================================================================================================= */
+@media screen and (max-width: 1050px) {
+#content_in_book {
+
+	width: 100%;
+}
+#rbi_step li {
+	width: 190px;
+}
+.rbi_services_item:nth-child(odd), .rbi_services_item:nth-child(even), .sc_info {
+	width: 432px;
+}
+#booking_form #bf_continue {
+	width: 48%;
+	margin: 10px 30px 20px 0;
+}
+#booking_form .rbi_personal_item input[type='text'],
+#booking_form .rbi_personal_item select {
+	width: 100%;
+}
+#booking_form .rbi_personal_item textarea {
+	width: 100%;
+}
+#booking_form .rbi_personal_item #rbi_email,
+#booking_form .rbi_personal_item #rbi_phone,
+#booking_form .rbi_personal_item #rbi_city,
+#booking_form .rbi_personal_item #rbi_zip {
+	max-width: 100%;
+}
+
+#booking_form .result_block h4 span {
+    display: block;
+    font-family: 'Roboto' , arial;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+    padding: 10px 30px;
+    color: #4e4e4e;
+}
+
+#booking_block {
+    width: 300px;
+    max-width: 100%
+}
+
+.booking-form-header {
+    position: absolute;
+    top: 0px;
+}
+
+.search-ico {
+    bottom: 30px;
+}
+
+.result_block {
+    width: 880px;
+    margin: 20px auto;
+    max-width: 100%;
+}
+
+#rbi_step li {
+    width: 160px;
+    font-size: 12px
+}
+
+}
+@media screen and (max-width: 820px) {
+
+#rbi_step li {
+    width: 140px;
+    font-size: 10px;
+}
+
+#booking_form .result_block .rbi_item .rbi_price {
+    font-size: 13px;
+}
+#step-title {
+	width: 90%;
+}
+#step-title h1 {
+	display: block;
+	font-size: 25px;
+	margin-bottom: 25px;
+	line-height: 35px;
+}
+#booking_block #bf_search {
+	max-width: 100%;
+	margin: 20px 4px;
+}
+.booking-buttons ul li {
+	width: 20%;
+	float: left;
+	height: 190px;
+	margin: 10px 10px;
+	padding: 40px 10px 20px;
+	border-bottom: 5px solid #D9534F;
+	text-align: center;
+}
+
+#fixbuttons {
+    text-align: right;
+    float: none;
+    width: 100%;
+    margin-bottom: 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    background: white;
+    height: 50px;
+}
+
+#booking_block {
+    width: 440px;
+    max-width: 100%;
+}
+.booking-buttons {
+	max-width: 100%;
+}
+.booking-prefooter {
+	max-width: 90%;
+	margin: 70px auto 20px auto;
+}
+ #booking_block .bf_item {
+    width: 120px;
+    margin: 5px;
+    background: transparent;
+}
+#booking_block #bf_lastline {
+	width: 440px;
+}
+
+#top-nav-btn {
+    width: 200px;
+}
+
+#booking_form .result_block .result_block_item {
+	max-width: 100%;
+}
+
+
+.rbi_tags {
+    margin: 2px 5px 0 0;
+}
+.rbi_image .rbi_info_menu, .rbi_image .rbi_image_menu {
+	height: 167px;
+}
+#booking_form .result_block_room {
+	max-width: 100%;
+}
+.result_block_price {
+	max-width: 100%;
+}
+.rbi_services_item:nth-child(odd), .rbi_services_item:nth-child(even), .sc_info {
+	width: 346px;
+}
+#booking_form .rbi_services_price_2 {
+	width: 120px;
+}
+#booking_form #bf_continue {
+	width: 50%;
+	margin: 10px 0;
+}
+#booking_form #bf_back {
+	width: 50%;
+	margin: 10px 0;
+	display: none
+}
+.result_block_final {
+	max-width: 100%;
+}
+#upsell_3 {
+	font-size: 13px;
+}
+#booking_form #totalprices_3 div {
+	max-width: 100%;
+}
+#discountfield {
+	max-width: 100%;
+}
+#checkdcode {
+	margin-right: 255px;
+}
+#dcoderesult span {
+	padding: 12px 298px;
+}
+#booking_form .rbi_personal {
+	width: 100%
+}
+}
+@media screen and (max-width: 670px) {
+#booking_block .rooms {
+	width: 100%;
+}
+#rbi_step li {
+	width: 50% !important;
+	font-size: 12px;
+	margin-top: 10px
+}
+#booking_form .result_block .rbi_item h4 {
+	font-size: 12px!important
+}
+#booking_form .result_block .rbi_item .rbi_price {
+	font-size: 14px!important
+}
+#left_calendar {
+	width: 80% !important;
+	margin-bottom: 30px
+}
+#booking_form .result_block .rbi_image {
+	width: 100%!important;
+}
+#booking_form .result_block .rbi_item {
+	width: 100%!important;
+	padding-top: 60px;
+}
+#booking_form .rbi_detail {
+	font-size: 10px!important;
+	margin-left: 0px;
+}
+#booking_form .rbi_detail p {
+	font-size: 12px!important;
+	padding-top: 65px;
+}
+#booking_form .rbi2_name {
+	width: 100%
+}
+#booking_form .rbi2_checkin,
+#booking_form .rbi2_checkout,
+#booking_form .rbi2_price {
+	width: 45%;
+	float: left;
+	text-align: left
+}
+#booking_form .servicecategory {
+	padding: 4% 2% 4% 10%
+}
+#booking_form .rbi_services_price {
+	font-size: 10px
+}
+#booking_form .rbi_services_price {
+	padding: 4% 0%
+}
+#booking_form .rbi_services_name {
+	width: 40%;
+	padding: 1% 4% 0% 0%;
+	font-style: normal;
+	font-size: 11px;
+}
+#content_in_book {
+	width: 600px;
+	max-width: 100%;
+}
+
+
+ #rbi_step li.rbi_act {
+    background: rgba(97, 97, 97, 0);
+    color: #404253;
+    display: block;
+    height: 50px;
+    margin-top: 0;
+}
+
+#rbi_step li {
+	width: 190px !important;
+	margin: 10px auto 0;
+	display: none;
+}
+#booking_block .bf_item {
+	width: 95px;
+	margin: 10px 5px;
+}
+#booking_block .bf_item input {
+	font-size: 15px;
+}
+#booking_block .rooms {
+	width: 75px;
+}
+#booking_block #bf_search {
+	max-width: 100%;
+	width: 560px;
+	margin: 20px 4px;
+}
+#booking_form .result_block .result_block_item {
+	max-width: 98%;
+	width: 600px;
+	padding: 10px;
+}
+.rbi_image .rbi_info_menu, .rbi_image .rbi_image_menu {
+	height: 341px;
+}
+#booking_form #bf_continue {
+    /* width: 100%; */
+    margin: 0;
+    line-height: 100px;
+    /* position: fixed; */
+    bottom: 0;
+    z-index: 99999;
+    border-radius: 0;
+    background: #99C304!important;
+    font-size: 16px!important;
+}
+
+.booking-buttons ul li a {
+	font-size: 12px;
+}
+.booking-buttons ul li {
+	width: 20%;
+	float: left;
+	height: 175px;
+	margin: 10px 10px 0 0;
+	padding: 20px 10px 8px;
+	border-bottom: 3px solid #D9534F;
+}
+#booking_form .result_block_room {
+	max-width: 100%;
+	width: 95%;
+}
+#booking_form .rbi2_name {
+	width: 40%;
+	padding: 2% 6%;
+	font-size: 13px;
+	line-height: 22px;
+}
+#booking_form .rbi2_checkin,
+#booking_form .rbi2_checkout {
+	width: 18%;
+	float: left;
+	text-align: left;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+#booking_form .rbi2_price {
+	float: right;
+	width: 127px;
+	padding: 10px 0 10px 20px;
+}
+#booking_form .rbi_selectedinfo {
+	font-size: 12px;
+	padding: 10% 2% 2% 7%;
+}
+.result_sub_block .rsb_half {
+	width: 97%;
+}
+#booking_form .servicecategory {
+	padding: 10px;
+}
+#booking_form .servicecontent {
+	width: 540px
+}
+#booking_form .rbi_services_price_2 {
+	width: 190px;
+}
+#booking_form .rbi_services_name {
+	padding: 1% 4% 0% 2%;
+}
+.rbi_services_item:nth-child(odd), .rbi_services_item:nth-child(even), .sc_info {
+	width: 524px;
+}
+.result_block_price {
+	max-width: 95%;
+	width: 540px;
+}
+#upsell_3 {
+	font-size: 10px;
+}
+#booking_form #totalprices_3 div {
+	max-width: 100%;
+	width: 100%;
+}
+#checkdcode {
+	margin-right: 110px;
+}
+#dcoderesult span {
+	padding: 12px 222px;
+}
+.rbi_cupon_text {
+	padding: 28px 5px 0 20px;
+	font-size: 12px;
+}
+.rbi_cupon_finalvalue, .rbi_cupon_finaltext {
+	font-size: 16px;
+}
+.booking-prefooter {
+	max-width: 90%;
+	margin: 30px auto 20px auto;
+}
+}
+@media screen and (max-width: 500px) {
+#booking_block #bf_lastline {
+    width: 100%;
+    float: left;
+    margin: 30px 0 15px;
+    position: relative;
+}
+
+#bf_lastline .input-group {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateX(0%)translateY(15%);
+    float: left;
+}
+
+#bf_lastline label {
+    height: 65px;
+    line-height: 40px;
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+#booking_block .bf_item input {
+    float: left;
+}
+#booking_block #bf_lastline .bf_item {
+	width: 98%;
+	margin: 1%;
+}
+#booking_block .bf_item {
+	width: 48%;
+	margin: 1%;
+}
+#booking_block {
+	width: 100%;
+}
+#booking_block #roomsblock {
+	margin: 30px 6% 0 6%;
+	width: 88%;
+}
+#booking_block #roomsblockin {
+	width: 92%;
+	margin: 0 4%;
+	padding: 0 10%;
+	min-height: 100px;
+}
+#booking_block .roomsblockact {
+	display: block;
+	position: relative;
+	float: left;
+	width: 100%;
+	left: 0;
+}
+
+.beforeprice_percent {
+    font-size: 8px;
+}
+
+.beforeprice {
+    margin-right: 2px;
+    font-size: 8px;
+}
+
+#booking_block #roomsblockin .bf_item {
+	width: 42%;
+	margin: 1%;
+}
+#curroom_text {
+	display: block;
+	top: -20px;
+	right: 0;
+	width: 100%;
+}
+#booking_block #bf_search {
+	width: 100%;
+	margin: 20px 0;
+}
+.rbi_image .rbi_image_menu, .rbi_image .rbi_info_menu {
+	display: none;
+}
+.booking-prefooter-buttons {
+	padding: 0;
+}
+.booking-buttons ul li {
+	width: 75px;
+	height: 175px;
+	margin: 5px 5px 0 0;
+	padding: 20px 0 8px 0;
+	border-bottom: 3px solid #D9534F;
+}
+.booking-prefooter h4 {
+	line-height: 24px;
+	color: #404255;
+	font-size: 14px;
+}
+.payments-pict {
+	margin: 20px auto 20px;
+}
+.payments-pict img {
+	margin: 20px auto!important;
+	width: 300px;
+}
+.payments-pict img:last-child {
+	width: 100px;
+	margin: 0px auto!important;
+}
+#booking_form .result_block .rbi_item .rbi_price .rbi_price_span {
+	text-align: left;
+	position: relative;
+	width: 100%;
+	float: left;
+}
+.horeca {
+	width: 98%;
+	padding: 10px 2%;
+	margin: 10px 0;
+}
+#booking_form .rbi2_price {
+	width: 98%;
+	text-align: right;
+	padding: 0 2% 0 0;
+}
+#booking_form .rbi2_name {
+	width: 50%;
+}
+#booking_form .rbi2_checkin,
+#booking_form .rbi2_checkout {
+	width: 25%;
+}
+#booking_form .rbi2_checkout {
+	text-align: right;
+	padding: 10px 2% 0 0;
+}
+#booking_form .servicecontent {
+	width: 100%;
+}
+.result_sub_block .rsb_half {
+	width: 100%;
+	margin-right: 0;
+}
+
+#booking_form .servicecategory {
+    margin: 5px 0 0px 10px;
+    width: 95%;
+    font-size: 14px;
+}
+
+#booking_form .servicecontent {
+	display: none;
+	width: 100%;
+	padding: 0;
+	color: white;
+	margin: 0 0 0 0;
+}
+.rbi_services_item:nth-child(odd), .rbi_services_item:nth-child(even), .sc_info {
+	width: 96%;
+	margin: 10px;
+}
+.sc_info {
+	padding: 1%;
+}
+#logo-footer {
+	text-align: center;
+	margin: 20px 20px 5px;
+}
+}
+@media screen and (max-width: 500px) {
+.logo-small {
+	width: 135px;
+	float: left;
+}
+#booking_block #roomsblockin .bf_item {
+	width: 40%;
+}
+.booking-buttons ul li {
+	width: 58px;
+}
+.booking-buttons ul li a {
+	font-size: 10px;
+}
+.horeca p {
+	font-size: 10px;
+}
+#booking_form #bf_continue {
+	font-size: 15px;
+	line-height: 50px;
+	background: #99C304;
+}
+#booking_form .result_block_room small, .result_block_final small {
+	float: left;
+	font-size: 11px;
+	margin-top: 20px;
+	display: none
+}
+#booking_form .rbi2_name {
+	width: 100%;
+}
+#booking_form .rbi2_checkin,
+#booking_form .rbi2_checkout {
+	width: 42%;
+	padding: 2% 6%;
+	text-align: left;
+}
+#booking_form .rbi2_price {
+	width: 98%;
+	text-align: left;
+	padding: 0 2% 0 5%;
+}
+#booking_form .rbi2_checkin:after {
+	display: none;
+}
+#step-title small {
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 25px;
+	color: #404255;
+	margin: 0 20px;
+}
+#booking_form .result_sub_block h5 {
+	font-size: 18px;
+	line-height: 25px;
+}
+#booking_form .rbi_services_price_2 {
+	width: 110px;
+}
+#booking_form .result_block_price div {
+	font-size: 14px;
+	font-weight: 600;
+	color: #404255;
+	padding: 0 10px 0 20px;
+}
+#booking_form .rbi_services_item_3 .rbi_services_name {
+	padding: 1% 0% 1% 6%;
+	width: 70%;
+}
+#booking_form .rbi_services_price_3 {
+	display: block;
+	width: 60%;
+	padding: 1% 6%;
+}
+#booking_form .rbi_services_count {
+	display: block;
+	width: 35%;
+}
+#booking_form .rbi_services_item_3 {
+	font-size: 14px;
+	color: #404255;
+	margin: 10px 0;
+	max-width: 95%;
+}
+#upsell_3 {
+	font-size: 13px;
+	padding: 10px;
+	text-align: center;
+	border-radius: 0;
+}
+#upsel_but_3 {
+	padding: 10px 12px;
+	color: white;
+	margin: 20px 0 10px 0;
+	/* float: right;
+*/
+	display: block;
+	width: 100%;
+	text-align: center;
+	border-radius: 4px;
+}
+#discountfield label {
+	padding: 5px 20px;
+	font-size: 15px;
+}
+#booking_form #totalprices_3 div {
+	max-width: 100%;
+	width: 100%;
+	font-size: 14px;
+}
+#discountfield input {
+	font-size: 14px;
+	width: 130px;
+}
+#dcodeintro {
+	padding: 20px 20px 25px;
+	font-size: 15px;
+	color: #404255;
+	text-align: center;
+}
+#checkdcode {
+	width: 95%;
+	display: block;
+	margin: 10px auto 0;
+	float: none;
+	padding: 10px;
+}
+#dcoderesult {
+	margin: 0px 0 10px;
+	text-align: center;
+}
+#dcoderesult span {
+	padding: 10px;
+	width: 100%;
+	display: block;
+	margin: 0;
+	background: transparent;
+}
+.rbi_cupon_value {
+	width: 100%;
+	float: none;
+	padding: 25px 0 0;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+}
+.rbi_cupon_finaltext {
+	font-size: 13px;
+	margin: 20px 0 0 0;
+	width: 60%;
+	float: left;
+	color: #FFFFFF;
+	font-weight: bold;
+	background: #99C304;
+	padding: 8px 20px;
+	text-align: left;
+	height: 52px;
+}
+.rbi_cupon_text {
+	padding: 28px 5px 8px 20px;
+	font-size: 12px;
+}
+.rbi_cupon_finalvalue {
+	font-size: 16px;
+	margin: 0;
+	width: 40%;
+	margin: 20px 0 0 0;
+	float: right;
+	color: #FFFFFF;
+	font-weight: bold;
+	background: #99C304;
+	padding: 14px 20px 0 20px;
+	text-align: right;
+	height: 52px;
+}
+.paymenttext {
+	font-size: 14px;
+}
+.paymenttext h2 {
+	font-size: 20px;
+	line-height: 30px;
+}
+#step-title {
+	margin: 20px auto 0px;
+}
+#booking_form #bf_back {
+	font-size: 15px;
+}
+#booking_form input[type="submit"] {
+	background: #99C304;
+}
+.line {
+	padding: 10px 0;
+	display: block;
+	float: none;
+	clear: both;
+}
+#footer-links {
+	float: none;
+}
+#footer-links li {
+	float: left;
+	margin: 8px auto;
+	list-style: none;
+	width: 100%;
+}
+#footer-links li a .fa,
+#footer-links li a:before {
+	color: #676767;
+	font-size: 9px!important;
+	float: none!important;
+	line-height: 22px;
+	display: block!important;
+	margin-right: 5px;
+}
+ #header-book {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100px;
+    position: relative!important;
+}
+
+.result_block_item h4 {
+    background: white;
+    text-align: left;
+    padding: 10px 10px 0;
+    font-size: x-large;
+
+}
+
+#booking_form h4 small {
+    display: inline-block;
+    float: right;
+    margin-left: 12px;
+    background: transparent;
+    color: #df174a;
+    padding: 0px 10px;
+    margin-left: 30px;
+    border-radius: 20px;
+    font-size: 11px;
+    line-height: 18px;
+    font-weight: 500;
+    transform: translateY(-2px);
+}
+
+.rbi_tags_wrapper {
+    display: block;
+    width: 100%;
+    float: left;
+    margin: 5px;
+}
+
+.rbi_tags {
+    margin: 2px 5px 0 0;
+    line-height: 12px;
+}
+
+#booking_form .result_block .rbi_image {
+    width: 96%!important;
+    margin: 2%;
+    height: 180px;
+}
+
+.rbi_image .rbi_image_menu, .rbi_image .rbi_info_menu {
+    display: block;
+    height: 100%;
+}
+
+#booking_form .result_block .rbi_item {
+    width: 100%!important;
+    padding-top: 0px;
+}
+
+.footerimage {
+	min-height: 400px;
+}
+
+.nextday_percent {
+    float: right;
+    margin-right: 0px;
+    background: #df174a;
+    color: white;
+    padding: 10px 10px;
+    font-weight: 500;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    width: 100%;
+    line-height: 17px;
+}
+
+#booking_form #bf_back, #bf_back {
+    width: 50%;
+    float: left;
+    text-align: center;
+    border: 0;
+    height: 50px;
+    line-height: 50px;
+    text-decoration: none;
+    border-radius: 0px;
+    background: rgba(41, 43, 61, 0.2)!important;
+    color: rgba(64, 66, 84, 0.5)!important;
+    cursor: pointer;
+    float: left;
+    font-weight: 600;
+    margin: 0px;
+    vertical-align: middle;
+    font-size: 14px!important;
+    text-transform: uppercase;
+    transition: all 500ms;
+    display: block!important;
+}
+
+#booking_form #bf_continue, #bf_continue {
+    width: 50%;
+    text-align: center;
+    border: 0;
+    line-height: 50px;
+    text-decoration: none;
+    background: #99C304!important;
+    color: #ffffff;
+    border-radius: 0;
+    cursor: pointer;
+    float: right;
+    margin: 0;
+    padding: 0 20px;
+    vertical-align: middle;
+    font-weight: bold;
+    font-size: 15px!important;
+    text-transform: uppercase;
+    position: relative;
+    letter-spacing: -0.8px;
+}
+
+.logo-small img {
+    opacity: 1;
+    max-height: 80px;
+}
+
+#booking_form .result_block_room {
+    max-width: 100%;
+    width: 92%;
+    margin-left: 4%;
+}
+
+#booking_form .result_block_room {
+    max-width: 100%;
+    width: 92%;
+    margin-left: 4%;
+    padding-top: 50px;
+}
+
+#booking_form .rbi2_price {
+    width: 44%;
+    float: left;
+    text-align: left;
+    padding: 10px 2% 0 6%;
+}
+.result_sub_block {
+    background: white;
+    padding: 45px 0 10px;
+    border-radius: 4px;
+    margin: 10px auto;
+    width: 92%;
+}
+
+.room-head, .service-head {
+    position: absolute;
+    top: 12px;
+    left: 15px;
+    width: calc(98% - 22px);
+    background: #404254;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 37px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+    color: white;
+    line-height: 37px;
+}
+
+.result_sub_block .rsb_half {
+    width: 100%;
+    margin-right: 0;
+    padding-top: 0;
+}
+
+#booking_form .rbi_services_price_2 {
+    width: 80px;
+    font-size: 10px;
+}
+
+#booking_form .result_block_price div, #booking_form .result_block_price div b {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+#discountfield {
+    max-width: 92%;
+}
+
+.code-place {
+    position: relative;
+    margin: 0;
+    float: left;
+    margin-bottom: 20px;
+    width: 96%;
+}
+
+#checkdcode {
+    width: 30%;
+    display: block;
+    margin: 0px auto 0;
+    float: left;
+    padding: 10px;
+    height: 40px;
+    line-height: 20px;
+}
+
+#dcodeintro {
+    padding: 50px 20px 25px;
+    font-size: 15px;
+    color: #404255;
+    text-align: center;
+}
+
+#rbi_pi_form {
+    font-size: 16px;
+    color: #404255;
+    outline: none;
+    padding-top: 50px;
+}
+#booking_form .rbi_personal {
+    width: 92%;
+}
+
+#rbi_pi_form {
+    font-size: 16px;
+    color: #404255;
+    outline: none;
+    padding-top: 50px;
+    width: 100%;
+}
+#booking_form .rbi_personal_item input[type='text'], #booking_form .rbi_personal_item select {
+    width: 100%!important;
+}
+
+#booking_form .result_block h3, #booking_form .rbi_personal h3 {
+    display: block;
+    text-align: left;
+    width: 100%;
+    padding: 4px 5px;
+
+    }
+
+.rbi_personal_item.rbipright.rbi_sml {
+    font-size: 12px
+}
+
+.rbi_personal_item.rbipright.rbi_sml span {
+    padding-left: 30px;
+    font-size: 12px;
+    line-height: 15px;
+    display: block;
+        padding-top: 5px;
+}
+
+main {
+    margin-top: 0px;
+}
+
+}

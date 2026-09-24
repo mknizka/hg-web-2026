@@ -1,0 +1,369 @@
+.wrapper-50-0 {
+  padding: 50px 10px
+}
+
+h1 {
+    color: #404253;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 500;
+}
+
+p {
+    color: #404253;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.toggle-btn {
+    background: #404253;
+    color: white;
+    padding: 5px 19px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    float: left;
+    margin: 20px 0 10px 50px;
+    /* text-transform: unset; */
+}
+
+.voucher_item_block .details {
+    display: block;
+    width: 100%;
+    float: left;
+}
+
+.voucher_item_block { padding: 0px; position: relative; background: white; color: #484848; border-radius: 4px; margin: 5% auto; width: 330px; max-width: 100%;border-bottom: 5px solid transparent;    min-height: 410px;transition: all 600ms ease-in} 
+.voucher_item_block:hover {
+    border-bottom: 5px solid #404253;
+    border-radius: 4px;
+    box-shadow: 0 0 13px silver;
+    background: #fbfbff;
+    cursor: pointer;
+}
+.voucher_item_img {
+    width: 100%;
+    height: 200px;
+    float: none;
+    padding: 0;
+    margin: 0px auto 20px;
+}
+.voucher_item_text p { font-size: 13px!important; padding: 10px 20px; } 
+.voucher_item_text h4  {
+    color: #ffffff;
+    padding: 5px 15px;
+    /* border: 1px solid #8CA81F; */
+    border-radius: 50px;
+    background: white;
+    margin-top: 0px;
+    font-size: 12px;
+    width: 400px;
+    margin: 0 auto;
+    max-width: 75%;
+    font-weight: bold;
+}
+
+.voucher_item_block h2 {
+    font-size: 18px;
+    line-height: 22px;
+    padding: 20px;
+    margin-bottom: 0;
+    color: #404255;
+    font-weight: 500;
+}
+
+.voucher_item_block h2 small {
+    font-weight: 400;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+}
+
+.voucher_item_block .price {
+    position: absolute;
+    right: 0px;
+    top: 130px;
+    background: #99b502;
+    color: white;
+    padding: 10px 12px 10px 16px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+h3.voucher-icon { 
+    padding: 8px 20px!important;
+    margin-bottom: 0;
+    background: #404255;
+    color: white;
+    display: inline-block;
+    width: 100%;
+    font-size: 16px;
+    line-height: 20px!important;
+    border-radius: 4px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border: 1px solid #404255;
+    font-weight: 500!important;
+    text-transform: none;
+    margin: 0!important;
+}
+
+h3.toperson {
+    background: #404254!important;
+    color: white!important;
+    margin: -10px -10px 0px -10px!important;
+    width: 105%!important;
+}
+
+#voucher-form {
+    margin: 15px 10px!important
+}
+
+/* Input  Input  Input  Input */
+
+
+.voucher_item_prices .input-number-group {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 5px;
+    position: absolute;
+    right: 40px;
+}
+
+.input-number-group input[type=number]::-webkit-inner-spin-button,
+.input-number-group input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+          appearance: none;
+}
+
+.input-number-group .input-number {
+  	width: 55px;
+  	height: 40px;
+    padding: 0;
+    vertical-align: top;
+    text-align: center;
+    outline: none;
+    display: block;
+    margin: 0;
+    text-indent: 0;
+    font-size: 17px;
+    color: #404260;
+    border: none;
+}
+
+.input-number-group .input-number,
+.input-number-group .input-number-decrement,
+.input-number-group .input-number-increment {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border-radius: 0;
+}
+
+.input-number-group .input-number-decrement, .input-number-group .input-number-increment {
+    display: inline-block;
+    width: 30px;
+    height: 35px;
+    line-height: 35px;
+    background: #404254;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 0px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 0!important;
+    margin-right: 0!important;
+    border-radius: 0;
+   
+}
+
+.input-number-group .input-number-decrement {
+	line-height: 34px
+}
+
+.input-number-group .input-number-decrement {
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px
+}
+
+.input-number-group .input-number-increment {
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px
+}
+
+#onboard_main select[name=roomid], #onboard_main select[name=selectroomid] {
+	background: #99b502
+    border: none;
+    border-radius: 28px;
+    text-align: center;
+    color: white;
+    font-size: 17px;
+    font-weight: 800;
+    text-indent: 45px;
+    padding: 0;
+    min-width: 125px!important;
+}
+
+/* Input plus minus end   */
+
+.voucher_item_block h3 {
+    padding: 10px;
+}
+
+.rbi_personal h3 { display: block; text-align: center; width: 100%; padding: 4% 2%; font-weight: normal; font-size: 30px; line-height: 40px; color: #616161; font-weight: bold; border-radius: 8px; text-transform: uppercase; font-weight: normal; margin-bottom: 6px; } 
+.voucher_item_prices { padding: 15px; color:#818181; }
+
+.voucher_item_prices input[type="number"] {
+    width: 50px;
+    height: 35px;
+    text-align: center;
+    background: rgba(64, 66, 83, 0.1);
+    border-radius: 0;
+    font-size: 26px;
+    margin: 0px 0px 10px 0;
+}
+
+ .voucher-offer:hover, .booking-offer:hover, .events-offer:hover { background: rgba(0,0,0,0.85); } .voucher-offer:after { content: "\f06b";
+font-family: FontAwesome; color: white; font-size: 28px; } .booking-offer:after { content: "\f073"; font-family: FontAwesome; color: white; font-size: 28px; } .voucher-offer a, .booking-offer a, .events-offer a  { color: white; font-size: 130%; padding: 20px 15px 18px 0px; text-transform: uppercase; font-weight: 200; } .voucher-offer a:hover, .booking-offer a:hover, .events-offer a:hover { color: whitesmoke; } 
+
+#voucher_button {
+    max-width: 100%;
+    text-align: center;
+    border: 0;
+    height: 55px;
+    line-height: 25px;
+    text-decoration: none;
+    background: rgb(223, 23, 75) !important;
+    color: #ffffff!important;
+    border-radius: 0;
+    cursor: pointer;
+    float: right;
+    margin: 5% auto 10%;
+    padding: 10px 30px;
+    vertical-align: middle;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+#voucher_button:hover { background: rgba(154, 178, 57, 1) !important; } 
+
+
+.container-half-slider-right li:before { content: "\f101"; font-family: FontAwesome; color: #6a8514; margin-right: 10px; } .result_block > .voucher_text h3 {
+display: none !important }
+
+.voucher_text {
+    padding: 20px;
+    background: white;
+    margin: 0;
+}
+
+ .voucher_count { margin: 10px 0 25px 0px; padding-left: 20px; max-width:170px; font-size: 20px; color:#666666; float: left; } 
+
+.voucher_price {
+    margin: 0 0 20px 0;
+    /* max-width: 230px; */
+    font-size: 15px;
+    width: 100%;
+    font-weight: 500;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    background: #df174a;
+    float: none;
+    font-weight: 600;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.voucher_count:after { content: " x   " ; color: #404253; font-size: 16px; } 
+.vouchersum {
+    background: whitesmoke;
+    padding: 0px;
+    border-radius: 4px;
+    margin-bottom: 50px;
+    margin: 15px auto;
+}
+
+.slim {
+    padding: 10px 10px!important;
+    overflow: hidden;
+        background: white!important;
+}
+
+.vouchersum p { line-height: 20.8px; font-size: 14px; color: #404253; margin: 0 } .fullwidth { width: 100%!important; } .space { margin: 20px; }  .toperson { font-size: 16px!important; }
+.silverbc input[type='text'] { width: 97%; font-weight: normal; padding: 5px 10px; background: whitesmoke!important; } 
+
+#voucher-form .rbi_personal h3 {
+    display: block;
+    text-align: left;
+    width: 105%;
+    padding: 5px 18px 5px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    color: #ffffff;
+    background: #404254;
+    font-weight: bold;
+    border-radius: 0;
+    text-transform: none;
+    font-weight: 500;
+    margin-bottom: 0px;
+    margin-top: -10px;
+    margin-left: -10px;
+}
+
+#js_voucher_menu {
+    list-style: none;
+    display: block;
+    text-align: center;
+}
+
+#js_voucher_menu li {
+    display: inline-block;
+    background: #df174a;
+    color: white;
+    padding: 2px 12px;
+    font-size: 12px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 500;
+    opacity: 0.7;
+    margin: 5px 2px;
+}
+
+#js_voucher_menu li.act {
+    opacity: 1
+}
+
+#js_voucher_menu li span {
+    color: #ff7799;
+    font-weight: bold;
+    /* font-style: italic; */
+    padding: 5px;
+}
+
+#rbi_pi_form {
+    font-size: 16px;
+    color: #404255;
+    outline: none;
+    background: white;
+}
+
+#voucher-form .buyer {
+    background: #404253!important;
+    color: white!important;
+    margin-bottom: 20px!important;
+} 
+
+#content_in_book.voucher-part h1 {
+    display: block!important;
+}

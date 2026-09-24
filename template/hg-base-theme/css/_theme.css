@@ -1,0 +1,10 @@
+@import '/template/css/animate.css' screen;
+@import '/template/css/flexboxgrid.css' screen;
+@import '/template/css/owl.carousel.css' screen;
+@import '/template/css/swiper.min.css' screen;
+@import '/template/css/owl.theme.default.css' screen;
+@import '/template/css/jquery-ui-1.10.4.custom.min.css' screen;
+@import '/template/css/magnific-popup.css' screen;
+@import '/template/css/aos.css' screen;
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,600,700,800|Montserrat:400,800,900&subset=latin-ext');
+@import '../../../temp/hg-base-theme_core.css' screen;
