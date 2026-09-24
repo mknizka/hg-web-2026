@@ -6,6 +6,7 @@ if ($productLead === '') $productLead = hg_plain(isset($content['description']) 
 $productBody = isset($content['text'][0]) ? $content['text'][0] : '';
 $productSlug = trim((string)($content['sef'] ?? ''), '/');
 $productImage = '';
+if (hg_plain($productBody) === $productLead) $productBody = '';
 if (!empty($content['id']) && !empty($content['file_type']) && preg_match('/^(jpe?g|png|webp|avif|gif)$/i', $content['file_type'])) {
   $productImage = '/img/rs/'.(int)$content['id'].'.'.$content['file_type'];
 }
@@ -45,5 +46,5 @@ if (!$productImage) {
     <a href="<?php echo hg_esc($item[0]); ?>"><span><?php echo hg_esc($item[1]); ?></span><h3><?php echo hg_esc($item[2]); ?></h3><p><?php echo hg_esc($item[3]); ?></p><b><?php echo hg_esc($item[4]); ?> ↗</b></a>
     <?php endforeach; ?>
   </div></section>
-  <?php hg_editorial_cta(array('/kontakt/', hg_lang('Ďalší krok', 'Next step'), hg_lang('Pozrime sa na vašu prevádzku.', 'Let’s look at your operation.'), hg_lang('Ukážeme vám konkrétne funkcie na procesoch, ktoré riešite každý deň.', 'See the features applied to the processes you handle every day.'), hg_lang('Dohodnúť ukážku', 'Book a demo'))); ?>
+
 </main>

@@ -177,11 +177,6 @@
                                 <?php if (function_exists('socialShareButtons')) socialShareButtons($content['name']); ?>
                               </div>
 
-                              <div class="hg-article-cta cta">
-                                <span class="kicker light"><?php echo hg_lang('Pozrite sa, ako funguje Ellipse', 'See how Ellipse works'); ?></span>
-                                <p class="cta-title"><?php echo hg_lang('Nebrzdite svoj biznis starým systémom.', 'Do not let an old system hold your business back.'); ?></p>
-                                <a class="button white" href="<?php echo hg_esc(hg_nap()['demo']); ?>"><?php echo hg_lang('Dohodnúť demo', 'Book a demo'); ?></a>
-                              </div>
                               <?php if(isset($content['id']) && $content['id'] > 0): ?>
                                 <div class="mt-40">
                                   <?php if (function_exists('displayArticleEmotions')) { ob_start(); displayArticleEmotions($content['id']); echo hg_text_reactions(ob_get_clean()); } ?>
