@@ -76,3 +76,11 @@
  .os-home .ef-mobile-widgets .ef-mobile-target {grid-row:1;}
 }
 @media(prefers-reduced-motion:reduce){.os-home .os-canvas.ef-motion .os-node[data-step]{transition:none;transform:none;opacity:1;}}
+/* Keep legacy template container padding and figure widths out of these layouts. */
+.os-home .ef-scenes,.os-home .ef-scene,.os-home .ef-scene-art,.os-home .ef-mobile-widgets {padding:0;}
+.os-home .ef-scenes {width:100%;max-width:1200px;margin-left:auto;margin-right:auto;}
+.os-home .ef-scene {width:100%;max-width:none;}
+.os-home .ef-scene-art {width:100%;max-width:none;}
+.os-home .ef-mobile-widgets > .ef-card {width:100%;}
+.os-home .os-team > .os-actions {justify-content:center;}
+@media(max-width:800px) and (min-width:481px){.os-home .ef-mobile-widgets > .ef-mobile-forecast {width:55%;}}
