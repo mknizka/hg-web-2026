@@ -24,7 +24,7 @@
                 <?php $articleLead = hg_plain($content['parex_text'] ?? ''); $articleWords = preg_split('/\s+/u', hg_plain($content['text'][0] ?? ''), -1, PREG_SPLIT_NO_EMPTY); $readMinutes = max(1, (int)ceil(count($articleWords) / 200)); ?>
                 <?php if ($articleLead): ?><p class="ed-lead"><?php echo hg_esc($articleLead); ?></p><?php endif; ?>
                 <p class="ed-meta">HORECA GROUP <span aria-hidden="true">·</span> <?php echo $readMinutes.' '.hg_lang('min čítania', 'min read'); ?></p>
-                <?php if (!empty($content['file_type']) && preg_match('/^(jpe?g|png|webp|avif|gif)$/i', $content['file_type'])): ?><figure class="ed-article-cover"><img src="/img/rs/<?php echo (int)$content['id']; ?>.<?php echo hg_esc($content['file_type']); ?>" alt="<?php echo hg_esc($content['name']); ?>" decoding="async" fetchpriority="high"></figure><?php endif; ?>
+                <?php if (!empty($content['file_type']) && preg_match('/^(jpe?g|png|webp|avif|gif)$/i', $content['file_type'])): ?><figure class="ed-article-cover"><img src="/img/rs/<?php echo (int)$content['id']; ?>.<?php echo hg_esc($content['file_type']); ?>" data-rs-fallback="/img/rs/<?php echo (int)$content['id']; ?>-01.<?php echo hg_esc($content['file_type']); ?>" alt="<?php echo hg_esc($content['name']); ?>" decoding="async" fetchpriority="high"></figure><?php endif; ?>
             
             
                 <?php if ($content['id'] == 68): ?>

@@ -30,7 +30,7 @@
   const features = document.createElement('ul'); features.className = 'aud-features';
   focus.append(kicker, heading, features);
   document.querySelector('.os-trust').after(focus);
-  const hotelOnly = '#showcase,#booking,#komunikacia,#selfcheckin,#recenzie,#ella,#mcp,#referencie,#segmenty,.ef-mobile-widgets';
+  const hotelOnly = '#showcase,#revenue,#booking,#komunikacia,#selfcheckin,#recenzie,#ella,#mcp,#referencie,#segmenty,.ef-mobile-widgets';
   const ecoNodes = [...document.querySelectorAll('.os-eco .os-node:not(.os-core)')];
   const ecoOriginal = ecoNodes.map(node => [node.querySelector('b').textContent, node.querySelector('span').textContent]);
   const teamLead = document.querySelector('#team > .os-lead');
@@ -61,7 +61,7 @@
     document.querySelectorAll('.os-int-cats li').forEach((li, i) => { li.hidden = specific && (i === 0 || i === 4); });
     const labels = [...bar.querySelectorAll('[data-audience]')];
     labels.forEach(b => b.setAttribute('aria-pressed', String(b.dataset.audience === key)));
-    kicker.textContent = labels.find(b => b.dataset.audience === key).textContent;
+    kicker.textContent = labels.find(b => b.dataset.audience === key).querySelector('span').firstChild.textContent;
     heading.textContent = key === 'gastro' ? t('Od objednávky po zaplatenie.', 'From order to payment.') : t('Prepojte služby aj platby.', 'Connect services and payments.');
     const rows = key === 'gastro' ? [
       [t('Ellipse POS', 'Ellipse POS'), t('Predaj a účty v jednom prostredí pre vašu gastro prevádzku.', 'Sales and bills in one place for your restaurant.')],
@@ -99,5 +99,5 @@
   dialog.addEventListener('close', () => {
     if (!selected) { try { if (!localStorage.getItem('ellipse-audience')) localStorage.setItem('ellipse-audience', 'komplex'); } catch (_) {} }
   });
-  if (!Object.hasOwn(profiles, selected) && typeof dialog.showModal === 'function' && !location.hash) dialog.showModal();
+  // Visitor can explore immediately; the visual selector remains available.
 })();

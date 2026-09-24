@@ -1,12 +1,12 @@
 <?php
-$audLabels = array('hotel' => hg_lang('Hotely, rezorty, aquaparky', 'Hotels, resorts, waterparks'), 'gastro' => hg_lang('Reštaurácie a gastro, predaj', 'Restaurants, dining, retail'), 'wellness' => hg_lang('Wellness a služby', 'Wellness and services'), 'komplex' => hg_lang('Som Herkules', 'I am Hercules'));
+$audLabels = array('hotel' => hg_lang('Hotely, rezorty, aquaparky', 'Hotels, resorts, waterparks'), 'gastro' => hg_lang('Reštaurácie a gastro, predaj', 'Restaurants, dining, retail'), 'wellness' => hg_lang('Wellness a služby', 'Wellness and services'), 'komplex' => hg_lang('Všetko pod jednou strechou', 'Everything under one roof'));
 $audImages = array('hotel' => '/template/ellipse/img/cases/galicia.jpg', 'gastro' => hg_asset('audience/restaurant.webp'), 'wellness' => hg_asset('audience/wellness.webp'), 'komplex' => '/template/ellipse/img/cases/damian.jpg');
 $audDescriptions = array('hotel' => hg_lang('Výnimočné pobyty začínajú u vás.', 'Exceptional stays start with you.'), 'gastro' => hg_lang('Skvelá obsluha. Plné stoly.', 'Great service. Full tables.'), 'wellness' => hg_lang('Hostia oddychujú. Vy máte prehľad.', 'Guests relax. You stay in control.'), 'komplex' => hg_lang('Hotel, gastro, wellness. Zvládam všetko.', 'Hotel, dining, wellness. I handle it all.'));
 ?>
 <div class="aud-bar" data-audience-lang="<?php echo hg_lang('sk', 'en'); ?>" hidden>
   <span><?php echo hg_lang('Ellipse pre vašu prevádzku', 'Ellipse for your business'); ?></span>
   <div class="aud-options" role="group" aria-label="<?php echo hg_lang('Typ prevádzky', 'Business type'); ?>">
-    <?php foreach ($audLabels as $key => $label): ?><button type="button" data-audience="<?php echo $key; ?>" aria-pressed="false"><?php echo $label; ?></button><?php endforeach; ?>
+    <?php foreach ($audLabels as $key => $label): ?><button type="button" data-audience="<?php echo $key; ?>" aria-pressed="false"><img src="<?php echo hg_esc($audImages[$key]); ?>" width="120" height="90" alt=""><span><?php echo $label; ?><small><?php echo $audDescriptions[$key]; ?></small></span><i aria-hidden="true">↗</i></button><?php endforeach; ?>
   </div>
   <span class="aud-status" role="status" aria-live="polite"></span>
   <button type="button" class="aud-reopen"><?php echo hg_lang('Zmeniť výber', 'Change selection'); ?></button>

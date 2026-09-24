@@ -7,13 +7,15 @@
   $hgBase = rtrim(DOMENA_WEBU, '/');
   $hgPath = isset($curpage) ? $curpage : $hgBase.'/';
   $hgPath = preg_replace('/\?.*$/', '', (string)$hgPath);
+  $hgProblemArchive = isset($content['blog']) && isset($_GET['tema']) && $_GET['tema'] === 'problemy';
+  if ($hgProblemArchive) $hgPath = $hgBase.'/blog/?tema=problemy';
 ?>
 <!DOCTYPE html>
 <html lang="<?php echo hg_esc($hgLang); ?>" dir="ltr">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	  <title><?php if(isset($_GET['pa']) && $_GET['pa'] == 'blog'): ?>Novinky a blog<?php endif; echo hg_esc(isset($content['name']) ? $content['name'] : ''); ?> - Ellipse Cloud HORECA GROUP</title>
+	  <title><?php if ($hgProblemArchive) echo hg_lang('Aké problémy rieši Ellipse — ', 'Challenges Ellipse solves — '); if(isset($_GET['pa']) && $_GET['pa'] == 'blog'): ?>Novinky a blog<?php endif; echo hg_esc(isset($content['name']) ? $content['name'] : ''); ?> - Ellipse Cloud HORECA GROUP</title>
     <meta name="keywords" content="<?php echo hg_esc(isset($content['keywords']) ? $content['keywords'] : ''); ?>">
     <link href="/img/system/favicon.ico" rel="shortcut icon">
     <meta name="description" content="<?php echo hg_esc(isset($content['description']) ? $content['description'] : ''); ?>">
@@ -105,7 +107,8 @@
           --f: <?php echo themeSetup('farba_footer_pozadie'); ?>;
       }
     </style>
-  <link rel="stylesheet" href="/template/ellipse/css/hg-editorial.css?v=2">
+  <link rel="stylesheet" href="/template/ellipse/css/hg-editorial.css?v=3">
+  <link rel="stylesheet" href="/template/ellipse/css/hg-blog.css?v=1">
   <link rel="stylesheet" href="/template/ellipse/css/hg-typography.css?v=1">
 </head>
   <body class="<?php echo hg_esc(isset($content['content_type']) ? $content['content_type'] : ''); ?> hg-mkt">

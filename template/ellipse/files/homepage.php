@@ -270,6 +270,7 @@
   <base href="<?php echo hg_esc(DOMENA_WEBU); ?>">
   <?php if (function_exists('themeSetup')) { echo themeSetup('extra_header'); } ?>
 <link rel="stylesheet" href="/template/ellipse/css/hg-mobile-showcase.css?v=1">
+<link rel="stylesheet" href="/template/ellipse/css/hg-home-refresh.css?v=1">
 <link rel="stylesheet" href="/template/ellipse/css/hg-typography.css?v=1">
 </head>
 <body class="homepage">
@@ -321,10 +322,11 @@
   </footer>
   <script src="/template/ellipse/js/hg-ref.js?v=20260923g" defer></script>
   <script src="/template/ellipse/js/hg-os.js?v=20260924audit2" defer></script>
-  <script src="/template/ellipse/js/hg-audience.js?v=3" defer></script>
+  <script src="/template/ellipse/js/hg-audience.js?v=4" defer></script>
   <script src="/template/ellipse/js/hg-os-premium.js?v=20260924audit2" defer></script>
   <?php if (function_exists('themeSetup')) { echo themeSetup('extra_body_end'); } ?>
 <script src="/template/ellipse/js/hg-mobile-showcase.js?v=1" defer></script>
+<script src="/template/ellipse/js/hg-home-refresh.js?v=1" defer></script>
 </body>
 </html>
 
