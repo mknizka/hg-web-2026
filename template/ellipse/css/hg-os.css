@@ -3661,3 +3661,104 @@ html{scroll-behavior:smooth}
 .os-home .os-revpro-metrics{
   font-variant-numeric:tabular-nums;
 }
+
+
+/* === PREMIUM HOMEPAGE V1 / RESERVATION DETAIL FRAGMENT === */
+.os-home .os-reservation-card{
+  position:absolute;
+  left:53%;
+  bottom:0;
+  width:min(360px,34%);
+  z-index:5;
+  padding:19px 20px 18px;
+  border:1px solid rgba(255,255,255,.10);
+  border-radius:20px;
+  background:
+    radial-gradient(240px 120px at 100% 0%,rgba(92,123,201,.18),transparent 68%),
+    #071633;
+  color:#fff;
+  box-shadow:0 28px 72px rgba(8,20,52,.24);
+}
+.os-home .os-reservation-card header{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  gap:4px;
+  margin-bottom:14px;
+  padding:0 0 12px;
+  border:0;
+  border-bottom:1px solid rgba(255,255,255,.10);
+  color:#fff;
+}
+.os-home .os-reservation-card header small{
+  font-size:10px;
+  letter-spacing:.08em;
+  color:rgba(255,255,255,.48);
+}
+.os-home .os-reservation-card header b{
+  font-size:14px;
+  font-weight:600;
+  color:#fff;
+}
+.os-home .os-reservation-card dl{
+  margin:0;
+}
+.os-home .os-reservation-card dl div{
+  display:grid;
+  grid-template-columns:74px minmax(0,1fr);
+  gap:10px;
+  padding:7px 0;
+  border-bottom:1px solid rgba(255,255,255,.075);
+}
+.os-home .os-reservation-card dt{
+  font-size:9px;
+  font-weight:650;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  color:rgba(255,255,255,.43);
+}
+.os-home .os-reservation-card dd{
+  margin:0;
+  font-size:11px;
+  line-height:1.35;
+  color:rgba(255,255,255,.88);
+}
+.os-home .os-reservation-card dd.is-good{color:#a8e8b9}
+.os-home .os-reservation-card footer{
+  display:flex;
+  align-items:flex-end;
+  justify-content:space-between;
+  gap:12px;
+  margin-top:14px;
+  padding:0;
+  border:0;
+  background:transparent;
+}
+.os-home .os-reservation-card footer span{
+  font-size:9px;
+  color:rgba(255,255,255,.46);
+}
+.os-home .os-reservation-card footer strong{
+  font-size:21px;
+  line-height:1;
+  font-weight:600;
+  letter-spacing:-.04em;
+  color:#fff;
+}
+
+@media(max-width:900px){
+  .os-home .os-reservation-card{
+    left:auto;
+    right:2%;
+    width:38%;
+  }
+}
+@media(max-width:700px){
+  .os-home .os-reservation-card{
+    position:relative;
+    inset:auto;
+    width:100%;
+    order:4;
+  }
+}
+
