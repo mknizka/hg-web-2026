@@ -2,7 +2,7 @@
 
 Verejny repozitar obsahuje **iba webove sablony** Ellipse / Horeca Group.
 
-GitHub: https://github.com/mknizka/hg-web-2026
+**GitHub:** https://github.com/mknizka/hg-web-2026
 
 ## Obsah
 
@@ -15,6 +15,11 @@ template/
 ```
 
 Zvysok aplikacie (PHP backend, manager, moduly, config) nie je sucastou tohto repozitara.
+
+## Poznamka k videu
+
+Subor `template/ellipse/video/manager-dashboard.mp4` (~163 MB) nie je v gite kvoli limitu GitHubu (100 MB).
+Na produkcii zostava na serveri v `n.horecagroup.sk/template/`.
 
 ## Aktualizacia z produkcie
 
