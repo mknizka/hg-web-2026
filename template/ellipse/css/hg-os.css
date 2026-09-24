@@ -3646,15 +3646,6 @@ html{scroll-behavior:smooth}
 
 /* Performance: skip paint work below the fold where safe. */
 @supports(content-visibility:auto){
-  .os-home .os-booking,
-  .os-home .os-inbox,
-  .os-home .os-journey,
-  .os-home .os-pay,
-  .os-home .os-team,
-  .os-home .os-reviews,
-  .os-home .os-ai,
-  .os-home .os-mcp,
-  .os-home .os-case,
   .os-home .os-segments,
   .os-home .os-integrations,
   .os-home .os-security,
@@ -3665,3 +3656,8 @@ html{scroll-behavior:smooth}
   }
 }
 
+
+.os-home .os-live-kpi-strip,
+.os-home .os-revpro-metrics{
+  font-variant-numeric:tabular-nums;
+}
