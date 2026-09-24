@@ -234,7 +234,7 @@
   <link rel="stylesheet" href="/template/ellipse/css/hg-home-audit.css?v=20260924audit2">
   <link rel="stylesheet" href="/template/ellipse/css/hg-brand-clean.css?v=20260924brand2">
   <link rel="stylesheet" href="/template/ellipse/css/hg-minimal.css?v=20260924minimal3">
-  <link rel="stylesheet" href="/template/ellipse/css/hg-audience.css?v=1">
+  <link rel="stylesheet" href="/template/ellipse/css/hg-audience.css?v=2">
   <meta property="og:locale" content="<?php echo $hgLang === 'en' ? 'en_US' : 'sk_SK'; ?>">
   <meta property="og:title" content="<?php echo hg_esc($ogTitle); ?>">
   <meta property="og:description" content="<?php echo hg_esc($metaDesc); ?>">
@@ -319,7 +319,7 @@
   </footer>
   <script src="/template/ellipse/js/hg-ref.js?v=20260923g" defer></script>
   <script src="/template/ellipse/js/hg-os.js?v=20260924audit2" defer></script>
-  <script src="/template/ellipse/js/hg-audience.js?v=1" defer></script>
+  <script src="/template/ellipse/js/hg-audience.js?v=2" defer></script>
   <script src="/template/ellipse/js/hg-os-premium.js?v=20260924audit2" defer></script>
   <?php if (function_exists('themeSetup')) { echo themeSetup('extra_body_end'); } ?>
 </body>

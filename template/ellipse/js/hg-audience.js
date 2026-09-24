@@ -91,7 +91,7 @@
   const selected = Object.hasOwn(profiles, requested) ? requested : saved;
   bar.hidden = false;
   apply(selected, false);
-  document.querySelectorAll('[data-audience]').forEach(button => button.addEventListener('click', () => {
+  document.querySelectorAll('.aud-options [data-audience], .aud-choices [data-audience]').forEach(button => button.addEventListener('click', () => {
     apply(button.dataset.audience, true);
     if (dialog.open) { dialog.close(); bar.querySelector(`[data-audience="${button.dataset.audience}"]`).focus({preventScroll:true}); }
   }));
