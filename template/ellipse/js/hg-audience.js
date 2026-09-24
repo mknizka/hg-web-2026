@@ -6,9 +6,9 @@
   const en = bar.dataset.audienceLang === 'en';
   const t = (sk, english) => en ? english : sk;
   const profiles = {
-    hotel: [t('Jeden systém pre celý hotel.', 'One system for the whole hotel.'), t('Od prvej rezervácie po poslednú platbu. Recepcia, predaj a tím pracujú s rovnakými dátami.', 'From first booking to final payment. Your front desk, sales and team work with the same data.')],
+    hotel: [t('Veľké zážitky. Jeden systém.', 'Great experiences. One system.'), t('Hotely, rezorty aj aquaparky. Pobyty, vstupy, predaj, platby a tím v jednej prepojenej prevádzke.', 'Hotels, resorts and waterparks. Stays, admission, sales, payments and your team in one connected operation.')],
     gastro: [t('Viac času pre hostí. Menej pre systém.', 'More time for guests. Less for your system.'), t('Ellipse POS, eKasa a platby v jednom celku. Od obsluhy pri stole až po prehľad o vašej prevádzke.', 'Ellipse POS, eKasa and payments together. From service at the table to an overview of your business.')],
-    wellness: [t('Pokoj pre hostí. Prehľad pre vás.', 'Peace for guests. Clarity for you.'), t('Wellness, služby a platby v prepojenej prevádzke. Vy sa venujete zážitku, Ellipse spája vaše procesy.', 'Wellness, services and payments in a connected operation. Focus on the experience while Ellipse connects your processes.')],
+    wellness: [t('Pokoj pre hostí. Prehľad pre vás.', 'Peace for guests. Clarity for you.'), t('Wellness, masáže a služby v prepojenej prevádzke. Vy sa venujete klientom, Ellipse spája rezervácie a platby.', 'Wellness, massages and services in a connected operation. Focus on your clients while Ellipse connects reservations and payments.')],
     komplex: [t('Celá prevádzka. Jeden systém.', 'Your whole operation. One system.'), t('Hotel, reštaurácia aj wellness. Rezervácie, tím, platby a dáta v jednej prepojenej platforme.', 'Hotel, restaurant and wellness. Reservations, team, payments and data in one connected platform.')]
   };
   const dialog = document.querySelector('.aud-dialog');
@@ -90,6 +90,7 @@
   const requested = new URL(location.href).searchParams.get('prevadzka');
   const selected = Object.hasOwn(profiles, requested) ? requested : saved;
   bar.hidden = false;
+  bar.querySelector('.aud-reopen').addEventListener('click', () => { if (typeof dialog.showModal === 'function') dialog.showModal(); });
   apply(selected, false);
   document.querySelectorAll('.aud-options [data-audience], .aud-choices [data-audience]').forEach(button => button.addEventListener('click', () => {
     apply(button.dataset.audience, true);

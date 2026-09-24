@@ -6,14 +6,37 @@
 .aud-options button[aria-pressed=true]{background:#0a1636;color:white;border-color:#0a1636}
 .aud-options button:hover,.aud-choices button:hover{border-color:#ed0050}
 .aud-options button:focus-visible,.aud-choices button:focus-visible,.aud-close:focus-visible{outline:3px solid #ed0050;outline-offset:4px}
-.aud-dialog{width:min(620px,calc(100% - 32px));box-sizing:border-box;border:1px solid #edf0f4;border-radius:24px;padding:48px;color:#0a1636;box-shadow:0 32px 100px #07132b33;max-height:90dvh;overflow:auto}
+.aud-dialog{width:min(1200px,calc(100% - 48px));box-sizing:border-box;border:1px solid #edf0f4;border-radius:28px;padding:36px 40px 26px;color:#0a1636;background:#fbfcfe;box-shadow:0 32px 100px #07132b55;max-height:94dvh;overflow:auto}
 .aud-dialog::backdrop{background:#07132b88;backdrop-filter:blur(8px)}
 .aud-dialog .os-kicker{color:#ed0050;font-weight:300;margin:16px 0}
-.aud-dialog h2{font-size:36px;line-height:1.12;letter-spacing:-.04em;margin:20px 0}
+.aud-dialog h2{font-size:clamp(36px,4.5vw,62px);font-weight:600;line-height:1.04;letter-spacing:-.05em;margin:12px 0 18px}
 .aud-dialog p,.aud-dialog small{line-height:1.65;color:#687186}
 .aud-close{display:block;margin-left:auto;border:0;background:none;color:#687186;font:inherit;font-size:13px;cursor:pointer}
-.aud-choices{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:28px 0}
-.aud-choices button{padding:24px 12px;text-align:left;font-weight:500}
+.aud-dialog-top{display:flex;align-items:center;justify-content:space-between;gap:24px}
+.aud-dialog-top form{margin:0}
+.aud-logo{width:148px;height:auto;display:block}
+.aud-intro{text-align:center;margin:30px auto 32px;outline:none}
+.aud-intro #aud-description{font-size:15px;margin:0}
+.aud-intro .os-kicker{font-size:10px;letter-spacing:.16em;font-weight:300;margin:0 0 14px}
+.aud-choices{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin:0}
+.aud-choices .aud-choice{position:relative;isolation:isolate;min-width:0;min-height:330px;padding:24px 20px;text-align:left;border:0;border-radius:18px;overflow:hidden;background:#0a1636;color:white;display:flex;align-items:flex-end;transition:transform .3s,box-shadow .3s}
+.aud-choice>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transition:transform .65s cubic-bezier(.2,.7,.2,1)}
+.aud-choice::before{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(6,17,39,.08) 15%,rgba(6,17,39,.3) 40%,rgba(6,17,39,.93) 100%)}
+.aud-choice .aud-choice-top{position:absolute;top:20px;left:20px;right:16px;font-size:10px;letter-spacing:.07em;color:white;text-shadow:0 1px 12px #0008}
+.aud-choice-copy{display:flex;flex-direction:column;align-items:flex-start;width:100%}
+.aud-choice-copy strong{font-size:clamp(20px,2vw,27px);font-weight:600;line-height:1.12;letter-spacing:-.035em;min-height:3.36em;display:flex;align-items:flex-end}
+.aud-choice-copy>span:not(.aud-choice-link){color:#e1e6ef;font-size:12px;line-height:1.6;min-height:3.2em;margin-top:14px}
+.aud-choice-copy .aud-choice-link{font-size:10px;letter-spacing:.02em;border-top:1px solid #ffffff50;width:100%;padding-top:16px;margin-top:20px}
+.aud-choices .aud-choice-komplex{box-shadow:inset 0 0 0 1px #ff467c}
+.aud-choice-komplex::before{background:linear-gradient(160deg,rgba(6,17,39,.2),rgba(22,13,52,.75) 45%,rgba(118,0,57,.96))}
+.aud-choice-komplex .aud-choice-top{font-size:9px;border:1px solid #ffffff60;border-radius:100px;padding:7px 10px;right:auto;background:#15223f33;backdrop-filter:blur(6px)}
+.aud-dialog-bottom{display:flex;justify-content:space-between;gap:16px;margin-top:24px}
+.aud-dialog-bottom small{font-size:10px}
+.aud-reopen{font:inherit;font-size:11px;border:0;background:none;color:#697387;margin-top:12px;text-decoration:underline;text-underline-offset:4px;cursor:pointer}
+@media(hover:hover){.aud-choices .aud-choice:hover{transform:translateY(-6px);box-shadow:0 20px 35px -20px #081434aa}.aud-choice:hover>img{transform:scale(1.055)}}
+@media(prefers-reduced-motion:no-preference){.aud-dialog[open]{animation:aud-enter .45s ease both}.aud-dialog[open] .aud-choice{animation:aud-enter .55s ease both}.aud-dialog[open] .aud-choice:nth-child(2){animation-delay:.06s}.aud-dialog[open] .aud-choice:nth-child(3){animation-delay:.12s}.aud-dialog[open] .aud-choice:nth-child(4){animation-delay:.18s}@keyframes aud-enter{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}}
+@media(prefers-reduced-motion:reduce){.aud-choices .aud-choice,.aud-choice>img{transition:none}}
+@media(max-width:900px){.aud-dialog{padding:24px}.aud-choices{grid-template-columns:repeat(2,minmax(0,1fr))}.aud-choices .aud-choice{min-height:270px}.aud-choice-copy strong{font-size:24px;min-height:2.24em}}
 .aud-status{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
 .aud-art{align-self:center;max-width:100%;padding:32px 0}
 .aud-art img{width:100%;height:auto;display:block}
@@ -50,3 +73,4 @@
 .loyalty-note{font-size:11px;line-height:1.7;color:#687186;max-width:680px;margin:32px auto 0;text-align:center}
 @media(max-width:700px){.loyalty-core,.loyalty-benefits,.loyalty-return{grid-template-columns:1fr;gap:32px}.loyalty-core{margin:40px 0}.loyalty-pass{padding:28px}.loyalty-copy h3,.loyalty-return h3{font-size:26px}}
 @media(max-width:700px){.aud-dialog{padding:24px}.aud-dialog h2{font-size:30px}.aud-choices{grid-template-columns:1fr}.aud-choices button{padding:18px}.aud-posts,.aud-features{grid-template-columns:1fr;gap:32px}.aud-options button{font-size:12px;padding:10px}.aud-bar{padding-top:20px}}
+@media(max-width:700px){.aud-dialog{width:calc(100% - 20px);padding:20px 16px;border-radius:20px;max-height:94dvh}.aud-intro{margin:24px 0}.aud-intro #aud-description{font-size:13px}.aud-logo{width:120px}.aud-close{font-size:11px}.aud-choices{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.aud-choices .aud-choice{min-height:245px;padding:16px 12px}.aud-choice-copy strong{font-size:19px;min-height:3.36em}.aud-choice-copy>span:not(.aud-choice-link){font-size:10px;min-height:4.8em}.aud-choice-copy .aud-choice-link{font-size:9px;margin-top:12px;padding-top:12px}.aud-choice .aud-choice-top{top:12px;left:12px;font-size:9px}.aud-choice-komplex .aud-choice-top{font-size:8px;padding:5px 7px;right:8px}.aud-dialog-bottom{flex-direction:column;gap:4px;margin-top:18px}.aud-dialog-bottom small{font-size:9px}}
