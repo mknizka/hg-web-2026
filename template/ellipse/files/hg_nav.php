@@ -25,6 +25,7 @@ $langLabelLong = $hgLang === 'en' ? 'Slovenčina' : 'English';
         <a href="/vynosovy-modul-revpro/">revPRO</a>
         <a href="/pos-systemy/"><?php echo hg_lang('Gastro a POS', 'F&amp;B and POS'); ?></a>
         <a href="/online-check-in/">Self check-in</a>
+        <a href="<?php echo $hgNavHome ? '#loyalty' : '/#loyalty'; ?>">Ellipse Loyalty &amp; CRM</a>
         <a href="<?php echo hg_esc($mcpHref); ?>">MCP</a>
       </div>
     </div>

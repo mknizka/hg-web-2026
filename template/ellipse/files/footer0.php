@@ -13,7 +13,7 @@
                          <p>99.99% <small>dostupnosť</small></p>
                        </div>
                        <div class="one">
-                         <p>500+ <small>zákazníkov</small></p>
+                         <p>Viac ako 780 <small>klientov</small></p>
                        </div>
                        <div class="one">
                          <p>45% <small>priemerné zvýšenie predaja</small></p>

@@ -23,7 +23,7 @@
  * NAP (jedna adresa na webe, v schéme aj v pätičke):
  *  HORECA GROUP s.r.o., Francisciho 20/B, 058 01 Poprad
  *  info@horecagroup.sk, +421 52 787 1911
- * Čísla dôvery z verejnej homepage: 20 000+ jednotiek, 500+ zákazníkov, 350+ integrácií.
+ * Čísla dôvery: 20 000+ jednotiek, viac ako 780 klientov, 350+ integrácií.
  */
 
 if (!function_exists('hg_lang')) {
@@ -221,7 +221,7 @@ if (!function_exists('hg_trust_fallback')) {
     return array(
       'stats' => array(
         array('name' => '20 000+', 'text' => hg_lang('ubytovacích jednotiek', 'units managed')),
-        array('name' => '500+', 'text' => hg_lang('zákazníkov', 'customers')),
+        array('name' => hg_lang('Viac ako 780', 'More than 780'), 'text' => hg_lang('klientov', 'clients')),
         array('name' => '350+', 'text' => hg_lang('integrácií', 'integrations')),
       ),
       'quote' => hg_lang('Ellipse nám spojil hotel, reštauráciu aj wellness do jedného prehľadu. Tím pracuje rýchlejšie a my sa venujeme hosťom.', 'Ellipse joined our hotel, restaurant and wellness into one view. The team works faster and we stay with the guests.'),
@@ -250,6 +250,10 @@ if (!function_exists('hg_split_trust')) {
         $author = isset($parts[0]) ? $parts[0] : '';
         $place = isset($parts[1]) ? $parts[1] : '';
       } else {
+        if (preg_match('/zákazník|klient|customer|client/ui', $text)) {
+          $name = hg_lang('Viac ako 780', 'More than 780');
+          $text = hg_lang('klientov', 'clients');
+        }
         $stats[] = array('name' => $name, 'text' => $text);
       }
     }
@@ -428,7 +432,7 @@ if (!function_exists('hg_llms_txt')) {
       '',
       '## Fakty, ktoré sa dajú citovať',
       '- 20 000+ ubytovacích jednotiek v správe systému.',
-      '- 500+ zákazníkov.',
+      '- Viac ako 780 klientov.',
       '- 350+ integrácií.',
       '- Jazyky webu: slovenčina (predvolená) a angličtina.',
       '',

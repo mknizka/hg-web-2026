@@ -173,7 +173,7 @@
 
                               <div class="hg-article-cta cta">
                                 <span class="kicker light"><?php echo hg_lang('Pozrite sa, ako funguje Ellipse', 'See how Ellipse works'); ?></span>
-                                <p class="cta-title"><?php echo hg_lang('Každý deň so starým systémom brzdíte biznis. <em>Začnite ešte dnes.</em>', 'Every day on the old system slows the business. <em>Start today.</em>'); ?></p>
+                                <p class="cta-title"><?php echo hg_lang('Nebrzdite svoj biznis starým systémom.', 'Do not let an old system hold your business back.'); ?></p>
                                 <a class="button white" href="<?php echo hg_esc(hg_nap()['demo']); ?>"><?php echo hg_lang('Dohodnúť demo', 'Book a demo'); ?></a>
                               </div>
                               <?php if(isset($content['id']) && $content['id'] > 0): ?>

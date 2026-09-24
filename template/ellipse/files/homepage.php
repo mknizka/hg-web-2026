@@ -234,6 +234,7 @@
   <link rel="stylesheet" href="/template/ellipse/css/hg-home-audit.css?v=20260924audit2">
   <link rel="stylesheet" href="/template/ellipse/css/hg-brand-clean.css?v=20260924brand2">
   <link rel="stylesheet" href="/template/ellipse/css/hg-minimal.css?v=20260924minimal3">
+  <link rel="stylesheet" href="/template/ellipse/css/hg-audience.css?v=1">
   <meta property="og:locale" content="<?php echo $hgLang === 'en' ? 'en_US' : 'sk_SK'; ?>">
   <meta property="og:title" content="<?php echo hg_esc($ogTitle); ?>">
   <meta property="og:description" content="<?php echo hg_esc($metaDesc); ?>">
@@ -295,6 +296,7 @@
       <a href="/web-booking/"><?php echo hg_lang('Booking engine', 'Booking engine'); ?></a>
       <a href="/pos-systemy/"><?php echo hg_lang('Gastro a POS', 'F&B and POS'); ?></a>
       <a href="#platby"><?php echo hg_lang('Online a POS platby', 'Online and POS payments'); ?></a>
+      <a href="#loyalty">Ellipse Loyalty &amp; CRM</a>
       <a href="/virtualna-recepcia-ella-ai/">Ella AI</a>
       <a href="#mcp"><?php echo hg_lang('MCP konektor', 'MCP connector'); ?></a>
       <a href="/vstupy-a-akvaparky/"><?php echo hg_lang('Aquapark', 'Waterpark'); ?></a>
@@ -317,6 +319,7 @@
   </footer>
   <script src="/template/ellipse/js/hg-ref.js?v=20260923g" defer></script>
   <script src="/template/ellipse/js/hg-os.js?v=20260924audit2" defer></script>
+  <script src="/template/ellipse/js/hg-audience.js?v=1" defer></script>
   <script src="/template/ellipse/js/hg-os-premium.js?v=20260924audit2" defer></script>
   <?php if (function_exists('themeSetup')) { echo themeSetup('extra_body_end'); } ?>
 </body>

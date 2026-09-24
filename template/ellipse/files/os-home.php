@@ -69,11 +69,12 @@ $fragment = function ($file, $sw, $sh, $x, $y, $w, $h, $alt, $eager = false) {
 ?>
 
 <main id="top" class="os-home">
+  <?php include __DIR__.'/hg-audience.php'; ?>
 
   <section class="os-hero" aria-label="<?php echo hg_lang('Úvod', 'Intro'); ?>">
     <div class="os-hero-copy">
       <p class="os-kicker"><?php echo hg_lang('Ellipse Hospitality OS', 'Ellipse Hospitality OS'); ?></p>
-      <h1><?php echo hg_lang('Jeden systém pre celý hotel.', 'One system for the whole hotel.'); ?></h1>
+      <h1><?php echo hg_lang('Celá prevádzka. Jeden systém.', 'Your whole operation. One system.'); ?></h1>
       <p class="os-lead"><?php echo hg_lang('Rezervácie, predaj, prevádzka, tím, platby aj komunikácia s hosťami v jednej cloudovej platforme.', 'Reservations, sales, operations, the team, payments and guest messaging in one cloud platform.'); ?></p>
       <div class="os-actions">
         <a class="button" href="<?php echo hg_esc($nap['demo']); ?>"><?php echo hg_lang('Pozrieť Ellipse v akcii', 'See Ellipse in action'); ?></a>
@@ -134,8 +135,8 @@ $fragment = function ($file, $sw, $sh, $x, $y, $w, $h, $alt, $eager = false) {
           <span><?php echo hg_lang('Účty, gastro, terminály a finančné toky.', 'Folios, F&B, terminals and money flows.'); ?></span>
         </div>
         <div class="os-node" data-step="5">
-          <b><?php echo hg_lang('Guest Journey', 'Guest Journey'); ?></b>
-          <span><?php echo hg_lang('Self check-in, messaging a komunikácia s hosťom.', 'Self check-in, messaging and guest communication.'); ?></span>
+          <b>Ellipse Loyalty + CRM</b>
+          <span><?php echo hg_lang('Vernosť, digitálne karty a personalizovaná komunikácia.', 'Loyalty, digital cards and personalised communication.'); ?></span>
         </div>
         <div class="os-node" data-step="6">
           <b>Ellipse Team</b>
@@ -267,6 +268,36 @@ $fragment = function ($file, $sw, $sh, $x, $y, $w, $h, $alt, $eager = false) {
       <article><span class="ep-number">04</span><h3><?php echo hg_lang('Tokenizácia kariet', 'Card tokenization'); ?></h3><p><?php echo hg_lang('Citlivé údaje karty pri ďalších platbách zastupuje bezpečný token. Ochrana údajov je súčasťou celého platobného procesu.', 'A secure token represents sensitive card details for subsequent payments. Data protection is part of the entire payment process.'); ?></p></article>
     </div>
     <div class="os-actions"><a class="button" href="<?php echo hg_esc($nap['demo']); ?>"><?php echo hg_lang('Ukázať platby v Ellipse', 'See payments in Ellipse'); ?></a><a class="button ghost" href="/pos-systemy/"><?php echo hg_lang('Spoznajte Ellipse POS', 'Explore Ellipse POS'); ?></a></div>
+  </section>
+
+  <section class="os-loyalty" id="loyalty" aria-labelledby="loyalty-title">
+    <p class="os-kicker">Ellipse Loyalty &amp; CRM</p>
+    <h2 id="loyalty-title"><?php echo hg_lang('Z návštevy vzťah. Z hosťa stály klient.', 'Turn a visit into a relationship. A guest into a regular.'); ?></h2>
+    <p class="os-lead"><?php echo hg_lang('Vernosť nevzniká náhodou. Budujte ju naprieč celou prevádzkou — od malého bistra po hotelový rezort. Jeden vernostný ekosystém pre všetky moduly Ellipse, online aj osobne.', 'Loyalty does not happen by chance. Build it across your business, from a small bistro to a hotel resort. One loyalty ecosystem for every Ellipse module, online and in person.'); ?></p>
+    <div class="loyalty-core">
+      <div class="loyalty-pass">
+        <img src="<?php echo hg_esc(hg_asset('fragments/ellipse-original.svg')); ?>" alt="Ellipse" width="140" height="43" loading="lazy">
+        <p><?php echo hg_lang('Jedna karta. Všetky výhody.', 'One card. Every benefit.'); ?></p>
+        <span>Ellipse Loyalty</span>
+        <small>Apple Wallet · Google Wallet</small>
+      </div>
+      <div class="loyalty-copy">
+        <h3><?php echo hg_lang('V mobile hosťa. V srdci vašej prevádzky.', 'In your guest’s phone. At the heart of your business.'); ?></h3>
+        <p><?php echo hg_lang('Digitálna vernostná karta je vždy poruke. Jednoduchý scan QR kódu identifikuje zákazníka na kase aj v mobilnom čašníkovi. Bez plastovej či RFID karty.', 'A digital loyalty card is always at hand. A quick QR scan identifies the customer at the till or in the mobile waiter. No plastic or RFID card needed.'); ?></p>
+        <p><?php echo hg_lang('Pobyty, služby, jedlo aj darčekové poukazy. Online rezervácie a nákupy sa prepájajú s platbami na prevádzke do jedného zákazníckeho prehľadu.', 'Stays, services, food and gift vouchers. Online bookings and purchases connect with on-site payments in one customer overview.'); ?></p>
+      </div>
+    </div>
+    <div class="loyalty-benefits">
+      <article><h3><?php echo hg_lang('Odmeny, ktoré vracajú hostí', 'Rewards that bring guests back'); ?></h3><p><?php echo hg_lang('Cashback, vernostné body a zvýhodnenia podľa pravidiel vášho podniku. Dôvod na ďalší pobyt, obed či masáž.', 'Cashback, loyalty points and benefits based on your business rules. A reason for another stay, lunch or massage.'); ?></p></article>
+      <article><h3><?php echo hg_lang('Ponuka pre konkrétneho človeka', 'An offer for the individual'); ?></h3><p><?php echo hg_lang('Personalizované ponuky a priama komunikácia vrátane Wallet notifikácií. Relevantne, podľa nastavení a súhlasov zákazníka.', 'Personalised offers and direct communication, including Wallet notifications. Relevant to the customer and respecting their settings and consent.'); ?></p></article>
+      <article><h3><?php echo hg_lang('Celý vzťah v jednom CRM', 'The whole relationship in one CRM'); ?></h3><p><?php echo hg_lang('Nákupy, využitie výhod aj vyhodnocovanie vernostného programu naprieč modulmi. Prehľad, s ktorým viete ďalej pracovať.', 'Purchases, benefit usage and loyalty programme evaluation across modules. An overview you can put to work.'); ?></p></article>
+    </div>
+    <div class="loyalty-return">
+      <div><p class="os-kicker"><?php echo hg_lang('Dajte hosťom dôvod vrátiť sa', 'Give guests a reason to return'); ?></p><h3><?php echo hg_lang('Vernosť potrebuje ďalší krok.', 'Loyalty needs a next step.'); ?></h3></div>
+      <p><?php echo hg_lang('Nastavte napríklad prepad bodov po 180 dňoch neaktivity. Pred vypršaním pripomeňte hosťovi jeho výhody a pozvite ho späť — na pobyt, večeru, wellness alebo nákup darčekového poukazu. Pravidlá aj motivácia zostávajú vo vašich rukách.', 'Set points to expire after 180 days of inactivity, for example. Before expiry, remind guests of their benefits and invite them back for a stay, dinner, wellness visit or gift voucher purchase. You control the rules and the incentive.'); ?></p>
+    </div>
+    <p class="loyalty-note"><?php echo hg_lang('Dostupnosť notifikácií závisí od platformy a nastavení zariadenia. Pridanie karty do Wallet samo osebe nenahrádza súhlas s marketingovou komunikáciou.', 'Notification availability depends on the platform and device settings. Adding a Wallet card does not itself replace consent to marketing communications.'); ?></p>
+    <div class="os-actions"><a class="button" href="/kontakt/"><?php echo hg_lang('Ukážte mi Ellipse Loyalty', 'Show me Ellipse Loyalty'); ?></a></div>
   </section>
 
   <section class="os-team" id="team" aria-label="Ellipse Team">
@@ -450,9 +481,27 @@ $fragment = function ($file, $sw, $sh, $x, $y, $w, $h, $alt, $eager = false) {
     </div>
   </section>
 
+  <?php if (count($posts)): ?>
+  <section class="os-journal" id="blog">
+    <p class="os-kicker"><?php echo hg_lang('Novinky a blog', 'News and blog'); ?></p>
+    <h2><?php echo hg_lang('Nové nápady pre vašu prevádzku.', 'Fresh ideas for your operation.'); ?></h2>
+    <div class="aud-posts">
+      <?php foreach (array_slice($posts, 0, 3) as $post): ?>
+      <article><a href="/<?php echo hg_esc(trim($post['sef'], '/')); ?>/">
+        <?php if (!empty($post['file_type'])): ?><img src="/img/rs/<?php echo (int)$post['id']; ?>.<?php echo hg_esc($post['file_type']); ?>" alt="" width="640" height="400" loading="lazy"><?php endif; ?>
+        <h3><?php echo hg_esc(hg_plain($post['name'])); ?></h3>
+        <p><?php echo hg_esc(hg_plain(isset($post['parex_text']) ? $post['parex_text'] : '', 150)); ?></p>
+        <span><?php echo hg_lang('Čítať článok', 'Read article'); ?></span>
+      </a></article>
+      <?php endforeach; ?>
+    </div>
+    <div class="os-actions"><a class="button ghost" href="/blog/"><?php echo hg_lang('Všetky články', 'All articles'); ?></a></div>
+  </section>
+  <?php endif; ?>
+
   <section class="os-final" id="demo" aria-label="<?php echo hg_lang('Demo', 'Demo'); ?>">
     <p class="os-kicker"><?php echo hg_lang('Ďalší krok', 'Next step'); ?></p>
-    <h2><?php echo hg_lang('Pozrite sa, ako môže Ellipse fungovať vo vašej prevádzke.', 'See how Ellipse can work in your operation.'); ?></h2>
+    <h2><?php echo hg_lang('Nebrzdite svoj biznis starým systémom.', 'Do not let an old system hold your business back.'); ?></h2>
     <p class="os-lead"><?php echo hg_lang('Ukážeme vám Ellipse na vašich reálnych procesoch. Bez záväzkov, zrozumiteľne a prakticky.', 'We will show Ellipse on your real processes. No commitment, in plain language, hands on.'); ?></p>
     <div class="os-actions">
       <a class="button" href="<?php echo hg_esc($nap['demo']); ?>"><?php echo hg_lang('Dohodnúť ukážku Ellipse', 'Book an Ellipse demo'); ?></a>
