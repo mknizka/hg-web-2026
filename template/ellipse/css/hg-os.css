@@ -2844,3 +2844,377 @@ html{scroll-behavior:smooth}
   }
 }
 
+
+/* === PREMIUM HOMEPAGE V1 / UI FRAGMENTS === */
+
+/*
+  Real Ellipse UI is intentionally shown as focused fragments rather than
+  full admin screenshots. All fragments use existing real product assets.
+*/
+.os-home [data-parallax-depth]{
+  --parallax-y:0px;
+  translate:0 var(--parallax-y);
+  will-change:translate;
+}
+
+/* Product mosaic */
+.os-home .os-fragment-stage{
+  position:relative;
+  width:min(1180px,100%);
+  height:690px;
+  margin:52px auto 6px;
+}
+.os-home .os-fragment{
+  position:absolute;
+  margin:0;
+  border:1px solid rgba(8,20,52,.09);
+  border-radius:22px;
+  overflow:hidden;
+  background:rgba(255,255,255,.92);
+  box-shadow:0 24px 68px rgba(8,20,52,.12);
+  transition:box-shadow .35s ease, border-color .35s ease;
+}
+.os-home .os-fragment:hover{
+  border-color:rgba(8,20,52,.14);
+  box-shadow:0 32px 86px rgba(8,20,52,.16);
+}
+.os-home .os-fragment-viewport{
+  position:relative;
+  overflow:hidden;
+  background:#f4f7fb;
+  isolation:isolate;
+}
+.os-home .os-fragment-viewport::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.88);
+}
+.os-home .os-fragment-viewport img{
+  position:absolute;
+  display:block;
+  max-width:none!important;
+  margin:0!important;
+  border:0!important;
+  border-radius:0!important;
+  box-shadow:none!important;
+}
+.os-home .os-fragment figcaption{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+  min-height:68px;
+  padding:14px 18px 15px;
+  border-top:1px solid rgba(8,20,52,.07);
+  background:rgba(255,255,255,.96);
+}
+.os-home .os-fragment figcaption span{
+  flex:0 0 auto;
+  font-size:10px;
+  line-height:1;
+  font-weight:700;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  color:var(--os-magenta);
+}
+.os-home .os-fragment figcaption b{
+  max-width:31ch;
+  margin-left:auto;
+  text-align:right;
+  font-size:13px;
+  line-height:1.4;
+  font-weight:600;
+  color:var(--os-navy);
+}
+.os-home .os-fragment-kpis{
+  left:5%;
+  top:0;
+  width:64%;
+  z-index:3;
+}
+.os-home .os-fragment-kpis .os-fragment-viewport{height:145px}
+.os-home .os-fragment-kpis img{
+  width:112%;
+  left:-6%;
+  top:0;
+  transform:translateY(-17.7%);
+}
+.os-home .os-fragment-tape{
+  left:0;
+  top:190px;
+  width:72%;
+  z-index:2;
+}
+.os-home .os-fragment-tape .os-fragment-viewport{height:420px}
+.os-home .os-fragment-tape img{
+  width:118%;
+  left:-9%;
+  top:-6%;
+}
+.os-home .os-fragment-revenue{
+  right:0;
+  top:106px;
+  width:37%;
+  z-index:4;
+}
+.os-home .os-fragment-revenue .os-fragment-viewport{height:430px}
+.os-home .os-fragment-revenue img{
+  height:113%;
+  width:auto!important;
+  left:-88%;
+  top:-5%;
+}
+.os-home .os-fragment-stage::after{
+  content:"";
+  position:absolute;
+  right:5%;
+  bottom:18px;
+  width:340px;
+  height:160px;
+  border-radius:50%;
+  background:radial-gradient(circle,rgba(88,127,214,.12),transparent 72%);
+  filter:blur(12px);
+  pointer-events:none;
+  z-index:-1;
+}
+
+/* Booking — cropped real UI steps instead of three entire windows. */
+.os-home .os-booking-fragments{
+  align-items:start;
+}
+.os-home .os-crop-card{
+  overflow:visible!important;
+  border:0!important;
+  border-radius:0!important;
+  background:transparent!important;
+  box-shadow:none!important;
+}
+.os-home .os-crop-card .os-fragment-viewport{
+  height:280px;
+  border:1px solid rgba(8,20,52,.09);
+  border-radius:20px;
+  background:#f5f7fb;
+  box-shadow:0 22px 62px rgba(8,20,52,.10);
+}
+.os-home .os-crop-card figcaption{
+  display:grid;
+  grid-template-columns:auto 1fr;
+  gap:4px 12px;
+  padding:18px 4px 0;
+  color:var(--os-navy);
+}
+.os-home .os-crop-card figcaption small{
+  grid-row:1 / span 2;
+  display:grid;
+  place-items:center;
+  width:31px;
+  height:31px;
+  border-radius:50%;
+  border:1px solid rgba(8,20,52,.12);
+  font-size:10px;
+  font-weight:700;
+  color:var(--os-magenta);
+}
+.os-home .os-crop-card figcaption b{
+  font-size:15px;
+  line-height:1.3;
+}
+.os-home .os-crop-card figcaption span{
+  max-width:34ch;
+  font-size:12px;
+  line-height:1.55;
+  color:var(--os-muted);
+}
+.os-home .os-booking-date .os-fragment-viewport img{
+  width:146%;
+  left:-23%;
+  top:-14%;
+}
+.os-home .os-booking-room .os-fragment-viewport img{
+  width:165%;
+  left:-31%;
+  top:-19%;
+}
+.os-home .os-booking-pms .os-fragment-viewport img{
+  width:156%;
+  left:-31%;
+  top:-12%;
+}
+
+/* Team — reconstructed micro-widgets from real Team/lock-screen information. */
+.os-home .os-team-widgets{
+  display:grid;
+  grid-template-columns:minmax(280px,420px) minmax(260px,360px);
+  gap:16px;
+  align-items:stretch;
+  justify-content:center;
+  width:min(850px,100%);
+  margin:38px auto 8px;
+}
+.os-home .os-team-widget{
+  min-height:164px;
+  padding:22px 24px;
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:24px;
+  background:
+    radial-gradient(220px 120px at 80% 0%,rgba(255,255,255,.07),transparent 72%),
+    #080b12;
+  color:#fff;
+  box-shadow:0 24px 64px rgba(8,20,52,.16);
+}
+.os-home .os-team-widget > small{
+  display:block;
+  margin-bottom:14px;
+  font-size:10px;
+  font-weight:650;
+  letter-spacing:.09em;
+  text-transform:uppercase;
+  color:rgba(255,255,255,.47);
+}
+.os-home .os-team-widget > div:not(.os-mini-bars){
+  display:flex;
+  align-items:baseline;
+  gap:9px;
+}
+.os-home .os-team-widget strong{
+  font-size:44px;
+  line-height:.95;
+  font-weight:500;
+  letter-spacing:-.06em;
+  color:#fff;
+}
+.os-home .os-team-widget span{
+  font-size:17px;
+  font-weight:550;
+  color:#fff;
+}
+.os-home .os-team-widget p{
+  margin:9px 0 0;
+  font-size:12px;
+  line-height:1.55;
+  color:rgba(255,255,255,.62);
+}
+.os-home .os-mini-bars{
+  display:flex;
+  align-items:flex-end;
+  gap:8px;
+  width:190px;
+  height:32px;
+  margin-top:13px;
+}
+.os-home .os-mini-bars i{
+  display:block;
+  flex:1;
+  height:calc(8px + var(--v) * 24px);
+  border-radius:3px 3px 1px 1px;
+  background:rgba(255,255,255,.55);
+}
+.os-home .os-mini-bars i:nth-child(2){background:rgba(255,255,255,.80)}
+.os-home .os-mini-bars i:last-child{background:#fff}
+
+/* revPRO case — one real screenshot, two purposeful crops. */
+.os-home .os-case-fragments{
+  position:relative;
+  min-height:500px;
+  margin-top:30px;
+}
+.os-home .os-case-fragments .os-fragment{
+  border-radius:18px;
+}
+.os-home .os-case-fragments .os-fragment figcaption{
+  min-height:52px;
+  justify-content:flex-start;
+  font-size:11px;
+  font-weight:650;
+  color:var(--os-navy);
+}
+.os-home .os-rev-summary{
+  left:0;
+  top:0;
+  width:88%;
+  z-index:1;
+}
+.os-home .os-rev-summary .os-fragment-viewport{height:300px}
+.os-home .os-rev-summary img{
+  width:175%;
+  left:-36%;
+  top:-20%;
+}
+.os-home .os-rev-actions{
+  right:0;
+  bottom:0;
+  width:43%;
+  z-index:2;
+}
+.os-home .os-rev-actions .os-fragment-viewport{height:300px}
+.os-home .os-rev-actions img{
+  height:135%;
+  width:auto!important;
+  right:-3%;
+  left:auto;
+  top:-12%;
+}
+
+@media (max-width:900px){
+  .os-home .os-fragment-stage{
+    height:610px;
+  }
+  .os-home .os-fragment-kpis{left:0;width:72%}
+  .os-home .os-fragment-tape{width:78%;top:175px}
+  .os-home .os-fragment-revenue{width:41%;top:118px}
+  .os-home .os-fragment-revenue .os-fragment-viewport{height:365px}
+  .os-home .os-team-widgets{grid-template-columns:1fr 1fr}
+}
+@media (max-width:700px){
+  .os-home [data-parallax-depth]{translate:none!important}
+  .os-home .os-fragment-stage{
+    display:grid;
+    height:auto;
+    gap:18px;
+    margin-top:34px;
+  }
+  .os-home .os-fragment-stage .os-fragment{
+    position:relative;
+    inset:auto;
+    width:100%;
+  }
+  .os-home .os-fragment-kpis .os-fragment-viewport{height:112px}
+  .os-home .os-fragment-tape .os-fragment-viewport{height:300px}
+  .os-home .os-fragment-revenue .os-fragment-viewport{height:320px}
+  .os-home .os-fragment figcaption{
+    min-height:0;
+    align-items:flex-start;
+    flex-direction:column;
+    gap:6px;
+  }
+  .os-home .os-fragment figcaption b{
+    margin-left:0;
+    text-align:left;
+  }
+  .os-home .os-booking-fragments{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:32px;
+  }
+  .os-home .os-crop-card .os-fragment-viewport{height:240px}
+  .os-home .os-team-widgets{
+    grid-template-columns:1fr;
+    width:100%;
+  }
+  .os-home .os-team-widget{min-height:146px}
+  .os-home .os-case-fragments{
+    min-height:0;
+    display:grid;
+    gap:16px;
+  }
+  .os-home .os-case-fragments .os-fragment{
+    position:relative;
+    inset:auto;
+    width:100%;
+  }
+  .os-home .os-rev-summary .os-fragment-viewport,
+  .os-home .os-rev-actions .os-fragment-viewport{height:270px}
+}
+
