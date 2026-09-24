@@ -447,13 +447,13 @@ $teamPhones = array_slice($teamPhones, 0, 5);
       <?php foreach ($segmentUi as $i => $seg):
         $tabId = 'seg-'.$i;
       ?>
-      <button type="button" role="tab" data-os-tab="<?php echo hg_esc($tabId); ?>" aria-selected="<?php echo $i === 0 ? 'true' : 'false'; ?>"<?php echo $i === 0 ? ' class="is-on"' : ''; ?>><?php echo hg_esc($seg['tab']); ?></button>
+      <button type="button" role="tab" id="<?php echo hg_esc($tabId.'-tab'); ?>" aria-controls="<?php echo hg_esc($tabId.'-panel'); ?>" data-os-tab="<?php echo hg_esc($tabId); ?>" aria-selected="<?php echo $i === 0 ? 'true' : 'false'; ?>" tabindex="<?php echo $i === 0 ? '0' : '-1'; ?>"<?php echo $i === 0 ? ' class="is-on"' : ''; ?>><?php echo hg_esc($seg['tab']); ?></button>
       <?php endforeach; ?>
     </div>
     <?php foreach ($segmentUi as $i => $seg):
       $tabId = 'seg-'.$i;
     ?>
-    <div class="os-segment-panel<?php echo $i === 0 ? ' is-on' : ''; ?>" data-os-panel="<?php echo hg_esc($tabId); ?>" role="tabpanel">
+    <div class="os-segment-panel<?php echo $i === 0 ? ' is-on' : ''; ?>" id="<?php echo hg_esc($tabId.'-panel'); ?>" data-os-panel="<?php echo hg_esc($tabId); ?>" role="tabpanel" aria-labelledby="<?php echo hg_esc($tabId.'-tab'); ?>">
       <p class="os-kicker"><?php echo hg_esc($seg['kicker']); ?></p>
       <h3><?php echo nl2br(hg_esc($seg['title'])); ?></h3>
       <p class="os-lead"><?php echo hg_esc($seg['lead']); ?></p>
