@@ -253,23 +253,27 @@ $fragment = function ($file, $sw, $sh, $x, $y, $w, $h, $alt, $eager = false) {
     </div>
   </section>
 
-  <section class="os-pay" id="platby" aria-label="<?php echo hg_lang('Platby a POS', 'Payments and POS'); ?>">
-    <p class="os-kicker"><?php echo hg_lang('Payments + POS', 'Payments + POS'); ?></p>
-    <h2><?php echo hg_lang('Platba nie je doplnok. Je súčasť pobytu.', 'Payment is not an add-on. It is part of the stay.'); ?></h2>
-    <p class="os-lead"><?php echo hg_lang('Hotelové účty, online platby, terminály, gastro POS a finančné dáta zostávajú v tom istom systéme ako rezervácia.', 'Hotel folios, online payments, terminals, F&B POS and financial data stay in the same system as the reservation.'); ?></p>
-    <div class="os-pay-grid">
-      <figure class="os-ui">
-        <img src="<?php echo hg_esc(hg_asset('booking-3.webp')); ?>" alt="<?php echo hg_lang('Platba vo web bookingu', 'Payment in the web booking'); ?>" width="1400" height="721" loading="lazy" decoding="async">
-        <figcaption><?php echo hg_lang('Online platba pri rezervácii', 'Online payment with the booking'); ?></figcaption>
-      </figure>
-      <figure class="os-ui">
-        <img src="<?php echo hg_esc(hg_asset('team-pos.webp')); ?>" alt="<?php echo hg_lang('Gastro POS v Ellipse Team', 'F&B POS in Ellipse Team'); ?>" width="800" height="1600" loading="lazy" decoding="async">
-        <figcaption><?php echo hg_lang('Gastro POS a hotelový účet', 'F&B POS and the hotel folio'); ?></figcaption>
-      </figure>
+  <section class="os-pay os-payments" id="platby" aria-label="<?php echo hg_lang('Bezpečné online aj POS platby', 'Secure online and POS payments'); ?>">
+    <p class="os-kicker"><?php echo hg_lang('Ellipse Payments', 'Ellipse Payments'); ?></p>
+    <h2><?php echo hg_lang('Bezpečné online aj POS platby.', 'Secure online and POS payments.'); ?></h2>
+    <p class="os-lead"><?php echo hg_lang('Na webe, na recepcii aj v reštaurácii. Platby prepojené s Ellipse, s kontrolou v reálnom čase a jasným prehľadom o každej transakcii.', 'On your website, at reception and in the restaurant. Payments connected to Ellipse, with real-time monitoring and a clear view of every transaction.'); ?></p>
+    <div class="ep-showcase">
+      <div class="ep-device">
+        <span class="ep-device-label">Ellipse POS <span>× SUNMI</span></span>
+        <img src="<?php echo hg_esc(hg_asset('sunmi-v3-ellipse-pos.webp')); ?>" alt="<?php echo hg_lang('Terminál SUNMI V3 v ruke s aplikáciou Ellipse POS', 'Handheld SUNMI V3 terminal running Ellipse POS'); ?>" width="1185" height="349" loading="lazy" decoding="async">
+        <p><?php echo hg_lang('Vaša POS aplikácia. Priamo v termináli.', 'Your POS application. Right on the terminal.'); ?></p>
+      </div>
+      <div class="ep-connection" aria-label="<?php echo hg_lang('Prepojenie platieb s Ellipse', 'Payments connected to Ellipse'); ?>">
+        <span><?php echo hg_lang('Online platba', 'Online payment'); ?></span><span>POS</span><i aria-hidden="true">→</i><strong>Ellipse</strong><i aria-hidden="true">→</i><span><?php echo hg_lang('Prehľad transakcií', 'Transaction overview'); ?></span>
+      </div>
     </div>
-    <div class="os-actions">
-      <a class="button ghost" href="/pos-systemy/"><?php echo hg_lang('Gastro a POS', 'F&B and POS'); ?></a>
+    <div class="ep-features">
+      <article><span class="ep-number">01</span><h3><?php echo hg_lang('Online aj pri pulte', 'Online and at the counter'); ?></h3><p><?php echo hg_lang('Platby na webe aj cez POS terminály v jednom prepojenom prostredí. Pre hotel, recepciu aj gastro.', 'Website and POS terminal payments in one connected environment. For the hotel, front desk and restaurant.'); ?></p></article>
+      <article><span class="ep-number">02</span><h3><?php echo hg_lang('Kontrola v reálnom čase', 'Real-time control'); ?></h3><p><?php echo hg_lang('API prepojenie priebežne overuje stav platieb. Detail transakcie aj jej aktuálny stav máte priamo v Ellipse.', 'The API connection checks payment status as it changes. See transaction details and current status directly in Ellipse.'); ?></p></article>
+      <article><span class="ep-number">03</span><h3><?php echo hg_lang('Opakované platby', 'Recurring payments'); ?></h3><p><?php echo hg_lang('Spracovanie opakovaných platieb podľa dohodnutých podmienok a súhlasu klienta. Menej manuálnych krokov pre váš tím.', 'Process recurring payments under agreed terms and with customer consent. Fewer manual steps for your team.'); ?></p></article>
+      <article><span class="ep-number">04</span><h3><?php echo hg_lang('Tokenizácia kariet', 'Card tokenization'); ?></h3><p><?php echo hg_lang('Citlivé údaje karty pri ďalších platbách zastupuje bezpečný token. Ochrana údajov je súčasťou celého platobného procesu.', 'A secure token represents sensitive card details for subsequent payments. Data protection is part of the entire payment process.'); ?></p></article>
     </div>
+    <div class="os-actions"><a class="button" href="<?php echo hg_esc($nap['demo']); ?>"><?php echo hg_lang('Ukázať platby v Ellipse', 'See payments in Ellipse'); ?> ↗</a><a class="button ghost" href="/pos-systemy/"><?php echo hg_lang('Spoznajte Ellipse POS', 'Explore Ellipse POS'); ?></a></div>
   </section>
 
   <section class="os-team" id="team" aria-label="Ellipse Team">
@@ -400,7 +404,7 @@ $fragment = function ($file, $sw, $sh, $x, $y, $w, $h, $alt, $eager = false) {
     </div>
     <blockquote>
       <p><?php echo hg_esc($trust['quote']); ?></p>
-      <footer><b><?php echo hg_esc($trust['author']); ?></b><?php if (!empty($trust['place'])): ?> · <span><?php echo hg_esc($trust['place']); ?></span><?php endif; ?></footer>
+      <cite class="os-quote-attribution"><b><?php echo hg_esc($trust['author']); ?></b><?php if (!empty($trust['place'])): ?> · <span><?php echo hg_esc($trust['place']); ?></span><?php endif; ?></cite>
     </blockquote>
     <div class="os-actions">
       <a class="button ghost" href="<?php echo hg_esc($revproCase); ?>"><?php echo hg_lang('Prečítať celý príbeh', 'Read the full story'); ?></a>
@@ -440,7 +444,7 @@ $fragment = function ($file, $sw, $sh, $x, $y, $w, $h, $alt, $eager = false) {
   <section class="os-integrations" id="integracie" aria-label="<?php echo hg_lang('Integrácie', 'Integrations'); ?>">
     <p class="os-kicker"><?php echo hg_lang('Integrácie', 'Integrations'); ?></p>
     <h2><?php echo hg_lang('Ellipse zapadne do vášho sveta. Nemusí ho uzamknúť.', 'Ellipse fits into your world. It does not have to lock it.'); ?></h2>
-    <p class="os-lead"><?php echo hg_lang('350+ integrácií — predajné kanály, platby, zámky, účtovníctvo a partneri. Logá sú sekundárne; pointou je otvorenosť platformy.', '350+ integrations — sales channels, payments, locks, accounting and partners. Logos stay secondary; openness is the point.'); ?></p>
+    <p class="os-lead"><?php echo hg_lang('Prepojte predajné kanály, platby, zámky aj účtovníctvo. Ellipse prepája nástroje, ktoré vaša prevádzka používa každý deň.', 'Connect sales channels, payments, locks and accounting. Ellipse brings together the tools your operation uses every day.'); ?></p>
     <ul class="os-int-cats">
       <li><?php echo hg_lang('OTA a channel manager', 'OTAs and channel manager'); ?></li>
       <li><?php echo hg_lang('Online platby a terminály', 'Online payments and terminals'); ?></li>
@@ -448,16 +452,12 @@ $fragment = function ($file, $sw, $sh, $x, $y, $w, $h, $alt, $eager = false) {
       <li><?php echo hg_lang('Účtovníctvo a ERP', 'Accounting and ERP'); ?></li>
       <li><?php echo hg_lang('Google Hotels a marketing', 'Google Hotels and marketing'); ?></li>
     </ul>
-    <div class="os-trust-logos">
-      <?php foreach (array_slice($logos, 0, 6) as $logo): if (empty($logo['img'])) continue; ?>
-      <img src="<?php echo hg_esc($logo['img']); ?>" alt="<?php echo hg_esc($logo['name']); ?>" loading="lazy" decoding="async">
-      <?php endforeach; ?>
-    </div>
+    <div class="os-actions"><a class="button ghost" href="/kontakt/"><?php echo hg_lang('Overiť konkrétnu integráciu', 'Check a specific integration'); ?> ↗</a></div>
   </section>
 
   <section class="os-security" id="dovera" aria-label="<?php echo hg_lang('Bezpečnosť a dôvera', 'Security and trust'); ?>">
     <p class="os-kicker"><?php echo hg_lang('Dôvera a infraštruktúra', 'Trust and infrastructure'); ?></p>
-    <h2><?php echo hg_lang('Cloud, ktorý drží prevádzku — nie iba prezentáciu.', 'A cloud that carries the operation — not just the pitch.'); ?></h2>
+    <h2><?php echo hg_lang('Spoľahlivé zázemie pre vašu prevádzku.', 'A reliable foundation for your operation.'); ?></h2>
     <ul class="os-security-facts">
       <li><b><?php echo hg_lang('Cloudová platforma', 'Cloud platform'); ?></b><span><?php echo hg_lang('Ellipse beží v prehliadači; tím má aj natívnu mobilnú aplikáciu.', 'Ellipse runs in the browser; the team also has a native mobile app.'); ?></span></li>
       <li><b><?php echo hg_lang('Jedny dáta', 'One data set'); ?></b><span><?php echo hg_lang('Rezervácia, platba, správa aj účet hosťa zostávajú v jednom systéme.', 'The reservation, payment, message and guest folio stay in one system.'); ?></span></li>

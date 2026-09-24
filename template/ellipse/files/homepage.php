@@ -222,15 +222,16 @@
   <link rel="alternate" hreflang="en" href="<?php echo hg_esc($canonical.'lang/en/'); ?>">
   <link rel="alternate" hreflang="x-default" href="<?php echo hg_esc($canonical); ?>">
   <link rel="icon" href="/img/system/favicon.ico">
-  <link rel="preload" as="image" href="<?php echo hg_esc($heroShots[0]['img']); ?>" fetchpriority="high">
+  <link rel="preload" as="image" href="<?php echo hg_esc(hg_asset('fragments/occupancy.webp')); ?>" fetchpriority="high">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@1,9..144,500;1,9..144,600&family=Montserrat:wght@400;500;600;700;800&display=swap">
   <link rel="stylesheet" href="/template/ellipse/css/hg-ref.css?v=20260923g">
   <link rel="stylesheet" href="/template/ellipse/css/hg-mono.css?v=20260923g">
-  <link rel="stylesheet" href="/template/ellipse/css/hg-os.css?v=20260924base">
-  <link rel="stylesheet" href="/template/ellipse/css/hg-os-premium.css?v=20260924fragments2">
-<link rel="stylesheet" href="/template/ellipse/css/hg-fragments.css?v=20260924fragments2">
+  <link rel="stylesheet" href="/template/ellipse/css/hg-os.css?v=20260924audit1">
+  <link rel="stylesheet" href="/template/ellipse/css/hg-os-premium.css?v=20260924audit1">
+<link rel="stylesheet" href="/template/ellipse/css/hg-fragments.css?v=20260924audit1">
+  <link rel="stylesheet" href="/template/ellipse/css/hg-home-audit.css?v=20260924audit1">
   <meta property="og:locale" content="<?php echo $hgLang === 'en' ? 'en_US' : 'sk_SK'; ?>">
   <meta property="og:title" content="<?php echo hg_esc($ogTitle); ?>">
   <meta property="og:description" content="<?php echo hg_esc($metaDesc); ?>">
@@ -291,6 +292,7 @@
       <a href="/hotelovy-system/"><?php echo hg_lang('Hotelový PMS', 'Hotel PMS'); ?></a>
       <a href="/web-booking/"><?php echo hg_lang('Booking engine', 'Booking engine'); ?></a>
       <a href="/pos-systemy/"><?php echo hg_lang('Gastro a POS', 'F&B and POS'); ?></a>
+      <a href="#platby"><?php echo hg_lang('Online a POS platby', 'Online and POS payments'); ?></a>
       <a href="/virtualna-recepcia-ella-ai/">Ella AI</a>
       <a href="#mcp"><?php echo hg_lang('MCP konektor', 'MCP connector'); ?></a>
       <a href="/vstupy-a-akvaparky/"><?php echo hg_lang('Aquapark', 'Waterpark'); ?></a>
@@ -312,8 +314,8 @@
     <div class="copyright">© <?php echo date('Y'); ?> <?php echo hg_esc($nap['name']); ?> <span><a href="/gdpr/"><?php echo hg_lang('Ochrana súkromia', 'Privacy'); ?></a> · <a href="/vop/">VOP</a></span></div>
   </footer>
   <script src="/template/ellipse/js/hg-ref.js?v=20260923g" defer></script>
-  <script src="/template/ellipse/js/hg-os.js?v=20260924fragments2" defer></script>
-  <script src="/template/ellipse/js/hg-os-premium.js?v=20260924fragments2" defer></script>
+  <script src="/template/ellipse/js/hg-os.js?v=20260924audit1" defer></script>
+  <script src="/template/ellipse/js/hg-os-premium.js?v=20260924audit1" defer></script>
   <?php if (function_exists('themeSetup')) { echo themeSetup('extra_body_end'); } ?>
 </body>
 </html>

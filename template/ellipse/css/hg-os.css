@@ -97,7 +97,7 @@
   width: 100%;
   max-width: var(--os-max);
   margin-inline: auto;
-  padding-inline: var(--os-pad);
+  padding-inline: 0;
   min-width: 0;
 }
 
