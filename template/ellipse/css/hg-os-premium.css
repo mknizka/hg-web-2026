@@ -704,21 +704,7 @@ html{scroll-behavior:smooth}
   letter-spacing:-.06em!important;
 }
 
-/* Scroll reveal — enhancement only, content stays visible without JS */
-.os-home[data-premium-ready="1"] > section:not(.os-hero):not(.os-canvas) > *{
-  opacity:0;
-  transform:translateY(22px);
-  transition:opacity .75s var(--os-ease), transform .75s var(--os-ease);
-}
-.os-home[data-premium-ready="1"] > section.is-inview:not(.os-hero):not(.os-canvas) > *{
-  opacity:1;
-  transform:none;
-}
-.os-home[data-premium-ready="1"] > section.is-inview:not(.os-hero):not(.os-canvas) > *:nth-child(2){transition-delay:.05s}
-.os-home[data-premium-ready="1"] > section.is-inview:not(.os-hero):not(.os-canvas) > *:nth-child(3){transition-delay:.10s}
-.os-home[data-premium-ready="1"] > section.is-inview:not(.os-hero):not(.os-canvas) > *:nth-child(4){transition-delay:.15s}
-.os-home[data-premium-ready="1"] > section.is-inview:not(.os-hero):not(.os-canvas) > *:nth-child(5){transition-delay:.20s}
-
+/* Keep content readable immediately, including during fast scrolling. */
 @media (max-width:1100px){
   .os-home .os-hero{
     grid-template-columns:minmax(320px,.9fr) minmax(450px,1.1fr);
@@ -2500,3 +2486,97 @@ html{scroll-behavior:smooth}
   }
 }
 
+
+/* Live browser review — 24 September 2026.
+   Resolve accumulated desktop/mobile overrides and the oversized sticky scene. */
+.os-home .os-hero {
+  min-height: 0;
+  grid-template-columns: minmax(0, .92fr) minmax(0, 1.08fr);
+  gap: clamp(28px, 4vw, 64px);
+  padding-top: clamp(48px, 6vw, 80px);
+  padding-bottom: 56px;
+}
+.os-home .os-hero h1 {
+  max-width: 12ch;
+  font-size: clamp(52px, 5.1vw, 80px);
+  line-height: 1.02;
+}
+.os-home .os-hero-visual { height: clamp(420px, 39vw, 560px); }
+.os-home .os-trust-logos img { opacity: .78; }
+.os-home .os-canvas { height: auto; }
+.os-home .os-stage {
+  position: relative;
+  top: auto;
+  height: auto;
+  overflow: visible;
+  padding: 80px var(--os-pad);
+  gap: 40px;
+}
+.os-home .os-canvas-copy h2 {
+  max-width: 22ch;
+  font-size: clamp(38px, 4.2vw, 60px);
+  line-height: 1.08;
+}
+.os-home .os-eco {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(180px, .9fr) minmax(0, 1fr);
+  grid-template-rows: repeat(3, auto);
+  align-items: center;
+  gap: 24px 64px;
+  height: auto;
+  min-height: 0;
+  margin: 0 auto;
+}
+.os-home .os-eco .os-node[data-step],
+.os-home .os-eco .os-node.is-on {
+  position: relative;
+  inset: auto;
+  width: 100%;
+  opacity: 1;
+  pointer-events: auto;
+  transform: none;
+}
+.os-home .os-eco .os-core[data-step] {
+  grid-column: 2;
+  grid-row: 1 / 4;
+  min-height: 160px;
+  text-align: center;
+}
+.os-home .os-eco .os-node[data-step="2"] { grid-column: 1; grid-row: 1; }
+.os-home .os-eco .os-node[data-step="3"] { grid-column: 3; grid-row: 1; }
+.os-home .os-eco .os-node[data-step="4"] { grid-column: 1; grid-row: 2; }
+.os-home .os-eco .os-node[data-step="5"] { grid-column: 3; grid-row: 2; }
+.os-home .os-eco .os-node[data-step="6"] { grid-column: 1; grid-row: 3; }
+.os-home .os-eco .os-node[data-step="7"] { grid-column: 3; grid-row: 3; }
+.os-home section:not(.os-hero) > h2 {
+  max-width: 23ch !important;
+  line-height: 1.08;
+}
+.os-home .os-inbox > .os-lead,
+.os-home .os-mcp > .os-lead { color: #c4cee0; }
+@media (max-width: 1000px) {
+  .os-home .os-eco { gap: 18px 28px; }
+  .os-home .os-eco .os-node { padding: 16px; }
+}
+@media (max-width: 800px) {
+  .os-home .os-hero {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 36px;
+    padding-top: 42px;
+    padding-bottom: 52px;
+  }
+  .os-home .os-hero h1 { max-width: 14ch; font-size: clamp(42px, 9vw, 64px); }
+  .os-home .os-hero-visual {
+    height: auto;
+    min-height: clamp(300px, 65vw, 470px);
+  }
+  .os-home .os-stage { padding: 64px var(--os-pad); gap: 28px; }
+  .os-home .os-eco { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+  .os-home .os-eco .os-node[data-step] { grid-column: auto; grid-row: auto; }
+  .os-home .os-eco .os-core[data-step] { grid-column: 1 / -1; min-height: 110px; }
+  .os-home .os-canvas-copy h2 { font-size: clamp(34px, 7vw, 48px); }
+}
+@media (max-width: 480px) {
+  .os-home .os-eco { grid-template-columns: minmax(0, 1fr); }
+  .os-home .os-hero-visual { min-height: 300px; }
+}
