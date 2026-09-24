@@ -40,3 +40,19 @@ P1: PMS, booking, gastro, POS, CRM, Team, check-in, revPRO, MCP.
 P2: ostatné produkty podľa `content-pack.sk.json`.
 
 Spustiť všetky stránky v rovnakom vizuálnom systéme. Verejné menu meniť až po existencii cieľových záznamov. Nepublikovať odkazy na neexistujúce koncepty. Pri prechode zo stagingu na produkčnú DB znovu overiť ID — rovnaký názov alebo SEF nemusí znamenať rovnaké ID.
+
+## Potvrdený kontrakt RS FEED API (24. 9. 2026)
+
+Podľa dodanej dokumentácie RS-FEED-API.md:
+- Čítanie: GET `/api/rs/?type=article`, vrátane vyhľadania podľa `sef`.
+- Zápis: POST `/api/rs/?type=article_upsert` alebo `articles_upsert` (max. 50 záznamov).
+- Autentifikácia: `X-RS-Feed-Token` alebo Bearer. Token nepatrí do repozitára.
+- Polia: `id`, `sef`, `name`, `title` (SEO), `parex_text`/`lead`, `text` alebo `sections`, `description`, `keywords`, `status`, `user_name`, kategória.
+- Aktualizácia vyhľadáva ID, potom SEF; existujúci SEF nemení. Menia sa iba poskytnuté polia.
+- **Koncept musí výslovne poslať `status: 0`; nový článok má predvolene `status: 1`.**
+- Nová obsahová kategória: `ako-ellipse-pomaha`, názov „Ako Ellipse pomáha“, cesta `/blog/ako-ellipse-pomaha/`.
+- Obrázky: `stock_search`, `article_cover`, `articles_covers`; dávka max. 50, predvolene `only_missing`. Ukladajú sa varianty `id.webp` a `id-01.webp`.
+- Pri výbere titulného obrázka preferovať jednoznačné `sef` článku a identifikátor poskytovateľa obrázka.
+- API dokumentácia nepotvrdzuje zápis `rs_template` ani upload vlastných obrázkov. Produktové šablóny a vlastné screenshoty nemožno automaticky zameniť za stock cover workflow.
+
+Zápisy zatiaľ neprebehli. Pred prvým zápisom treba nakonfigurovať token a pre produktové záznamy potvrdiť priradenie šablóny. Blogové koncepty môžu používať potvrdený kontrakt vyššie. Po každom zápise nasleduje GET a vizuálna kontrola.
