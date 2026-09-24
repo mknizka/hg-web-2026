@@ -145,6 +145,13 @@ $teamPhones = array_slice($teamPhones, 0, 5);
     <p class="os-kicker"><?php echo hg_lang('Skutočný Ellipse', 'Real Ellipse'); ?></p>
     <h2><?php echo hg_lang('Toto nie je koncept. Toto je Ellipse.', 'This is not a concept. This is Ellipse.'); ?></h2>
     <p class="os-lead"><?php echo hg_lang('Reálne obrazovky z prevádzky rozkladáme na to podstatné — čísla, rezervácie a odporúčania, ktoré tím potrebuje práve teraz.', 'Real operational screens are reduced to what matters — numbers, reservations and recommendations the team needs right now.'); ?></p>
+    <div class="os-live-kpi-strip" aria-label="<?php echo hg_lang('Ukážka reálneho denného prehľadu Ellipse', 'Example from a real Ellipse daily overview'); ?>">
+      <article><small><?php echo hg_lang('Úlohy · to do', 'Tasks · to do'); ?></small><b>9</b><span>23</span></article>
+      <article><small>Check-out</small><b>5</b><span>5</span></article>
+      <article><small>Check-in</small><b>3</b><span>3</span></article>
+      <article><small><?php echo hg_lang('Hostia', 'Guests'); ?></small><b>0</b><span>6</span></article>
+      <article><small><?php echo hg_lang('Neuprataných', 'Unclean rooms'); ?></small><b>34</b><span>1</span></article>
+    </div>
     <div class="os-fragment-stage" data-fragment-stage>
       <figure class="os-fragment os-fragment-kpis" data-parallax-depth="0.06">
         <div class="os-fragment-viewport">
@@ -331,6 +338,18 @@ $teamPhones = array_slice($teamPhones, 0, 5);
     <p class="os-kicker"><?php echo hg_lang('Ellipse Intelligence', 'Ellipse Intelligence'); ?></p>
     <h2><?php echo hg_lang('Dáta, ktoré už iba neležia v systéme. Pracujú pre vás.', 'Data that no longer just sits in the system. It works for you.'); ?></h2>
     <p class="os-lead"><?php echo hg_lang('Ella AI, AI komunikácia, návrhy odpovedí na recenzie, analytika a automatizácie — vždy s konkrétnou úlohou a výsledkom.', 'Ella AI, AI messaging, review reply drafts, analytics and automations — always with a concrete task and outcome.'); ?></p>
+    <div class="os-revpro-insights" aria-label="<?php echo hg_lang('Ukážka reálnej revenue analýzy', 'Example from a real revenue analysis'); ?>">
+      <div class="os-revpro-metrics">
+        <article><small><?php echo hg_lang('Medzitýždenne', 'Week over week'); ?></small><b>+202</b><span><?php echo hg_lang('izbonocí', 'room nights'); ?></span></article>
+        <article><small><?php echo hg_lang('Výnos', 'Revenue'); ?></small><b>+18 234 €</b><span><?php echo hg_lang('v 18-mesačnom horizonte', 'over an 18-month horizon'); ?></span></article>
+        <article><small><?php echo hg_lang('Posledných 7 dní', 'Last 7 days'); ?></small><b>17</b><span><?php echo hg_lang('rezervácií · priemer 3,2 noci', 'reservations · 3.2 nights average'); ?></span></article>
+      </div>
+      <article class="os-revpro-recommendation">
+        <small><?php echo hg_lang('Konkrétne odporúčanie z analýzy', 'Concrete recommendation from the analysis'); ?></small>
+        <h3><?php echo hg_lang('Zaviesť cielený upsell wellness balíkov pri check-ine a cez SMS', 'Introduce targeted wellness package upsell at check-in and via SMS'); ?></h3>
+        <p><?php echo hg_lang('Ukážka z reálnej revPRO analýzy vytvorenej 21.09.2026. Ellipse nevypisuje iba grafy — formuluje aj konkrétne ďalšie kroky.', 'Example from a real revPRO analysis created on 21 Sep 2026. Ellipse does not only show charts — it also formulates concrete next actions.'); ?></p>
+      </article>
+    </div>
     <?php if ($claudeScene): ?>
     <article class="os-ai-task">
       <p class="os-kicker"><?php echo hg_esc($claudeScene['kicker']); ?></p>
