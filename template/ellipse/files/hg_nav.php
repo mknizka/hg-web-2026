@@ -17,7 +17,7 @@ $langLabelLong = $hgLang === 'en' ? 'Slovenčina' : 'English';
   <a class="brand" href="<?php echo hg_esc($brandHref); ?>" aria-label="Ellipse"><img src="<?php echo hg_esc($logoSrc); ?>" alt="Ellipse" width="148" height="52"></a>
   <nav id="site-nav" aria-label="<?php echo hg_lang('Hlavné menu', 'Main menu'); ?>">
     <div class="nav-group">
-      <button type="button" class="nav-parent" aria-expanded="false"><?php echo hg_lang('Platforma', 'Platform'); ?><span class="nav-caret" aria-hidden="true"></span></button>
+      <button type="button" class="nav-parent" aria-expanded="false" aria-haspopup="true"><?php echo hg_lang('Platforma', 'Platform'); ?><span class="nav-caret" aria-hidden="true"></span></button>
       <div class="nav-sub">
         <a href="/hotelovy-system/"><?php echo hg_lang('Hotelový PMS', 'Hotel PMS'); ?></a>
         <a href="/web-booking/"><?php echo hg_lang('Booking engine', 'Booking engine'); ?></a>
