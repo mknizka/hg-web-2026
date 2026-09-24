@@ -76,7 +76,7 @@ $fragment = function ($file, $sw, $sh, $x, $y, $w, $h, $alt, $eager = false) {
       <h1><?php echo hg_lang('Jeden systém pre celý hotel.', 'One system for the whole hotel.'); ?></h1>
       <p class="os-lead"><?php echo hg_lang('Rezervácie, predaj, prevádzka, tím, platby aj komunikácia s hosťami v jednej cloudovej platforme.', 'Reservations, sales, operations, the team, payments and guest messaging in one cloud platform.'); ?></p>
       <div class="os-actions">
-        <a class="button" href="<?php echo hg_esc($nap['demo']); ?>"><?php echo hg_lang('Pozrieť Ellipse v akcii', 'See Ellipse in action'); ?> <span>↗</span></a>
+        <a class="button" href="<?php echo hg_esc($nap['demo']); ?>"><?php echo hg_lang('Pozrieť Ellipse v akcii', 'See Ellipse in action'); ?></a>
         <a class="button ghost" href="#platforma"><?php echo hg_lang('Objaviť platformu', 'Discover the platform'); ?></a>
       </div>
     </div>
@@ -87,11 +87,11 @@ $fragment = function ($file, $sw, $sh, $x, $y, $w, $h, $alt, $eager = false) {
       </figure>
       <figure class="ef-card ef-hero-calendar">
         <?php $fragment('pace-calendar.webp',1830,642,30,60,650,530,hg_lang('Kalendár tempa predaja na september', 'September sales pace calendar')); ?>
-        <figcaption><?php echo hg_lang('Tempo predaja', 'Sales pace'); ?><span>↗</span></figcaption>
+        <figcaption><?php echo hg_lang('Tempo predaja', 'Sales pace'); ?></figcaption>
       </figure>
       <figure class="ef-card ef-dark ef-hero-target">
         <?php $fragment('mobile-target.webp',1179,1189,64,441,1050,725,hg_lang('Ellipse Team: výsledky oproti ročnému cieľu', 'Ellipse Team: performance against the annual target')); ?>
-        <figcaption>Ellipse Team <span>↗</span></figcaption>
+        <figcaption>Ellipse Team</figcaption>
       </figure>
     </div>
   </section>
@@ -155,14 +155,14 @@ $fragment = function ($file, $sw, $sh, $x, $y, $w, $h, $alt, $eager = false) {
     <p class="os-lead"><?php echo hg_lang('Rezervácie, obsadenosť a tempo predaja. To podstatné máte vždy pred očami.', 'Reservations, occupancy and sales pace. Keep what matters in view.'); ?></p>
     <div class="ef-scenes">
       <article class="ef-scene">
-        <div class="ef-scene-copy"><span class="ef-index">01 / PMS</span><h3><?php echo hg_lang('Každá izba. Každý pobyt.', 'Every room. Every stay.'); ?></h3><p><?php echo hg_lang('Voľné kapacity aj detail rezervácie v jednom pohľade. Recepcia vie, čo sa deje dnes a čo ju čaká zajtra.', 'Availability and reservation details in one view. Your front desk knows what is happening today and what comes next.'); ?></p><a href="/hotelovy-system/" class="ef-text-link"><?php echo hg_lang('Objaviť hotelový systém', 'Explore the hotel system'); ?> ↗</a></div>
+        <div class="ef-scene-copy"><span class="ef-index">01 / PMS</span><h3><?php echo hg_lang('Každá izba. Každý pobyt.', 'Every room. Every stay.'); ?></h3><p><?php echo hg_lang('Voľné kapacity aj detail rezervácie v jednom pohľade. Recepcia vie, čo sa deje dnes a čo ju čaká zajtra.', 'Availability and reservation details in one view. Your front desk knows what is happening today and what comes next.'); ?></p><a href="/hotelovy-system/" class="ef-text-link"><?php echo hg_lang('Objaviť hotelový systém', 'Explore the hotel system'); ?></a></div>
         <div class="ef-scene-art ef-tape-scene">
           <figure class="ef-card ef-tape-grid"><figcaption><?php echo hg_lang('Hotelová plachta', 'Reservation timeline'); ?><small>Ellipse PMS</small></figcaption><?php $fragment('reservation-tape.webp',4438,2292,30,521,1850,665,hg_lang('Priblížená plachta: dátumy a prvé izby', 'Zoomed timeline: dates and the first rooms')); ?></figure>
           <figure class="ef-card ef-dark ef-tape-detail"><?php $fragment('reservation-tape.webp',4438,2292,1895,1687,670,600,hg_lang('Detail testovacej rezervácie v izbe 203', 'Test reservation detail for room 203')); ?></figure>
         </div>
       </article>
       <article class="ef-scene ef-scene-reverse">
-        <div class="ef-scene-copy"><span class="ef-index">02 / REVENUE</span><h3><?php echo hg_lang('Viete, ako sa predáva zajtrajšok.', 'Know how tomorrow is selling.'); ?></h3><p><?php echo hg_lang('Kalendár odhalí silné dni. Medziročné porovnanie ukáže tempo rezervácií a výnosov. Rozhodujete sa s kontextom.', 'The calendar highlights strong days. Year-on-year comparisons show booking and revenue pace. Make decisions in context.'); ?></p><a href="/vynosovy-modul-revpro/" class="ef-text-link"><?php echo hg_lang('Spoznajte revPRO', 'Discover revPRO'); ?> ↗</a></div>
+        <div class="ef-scene-copy"><span class="ef-index">02 / REVENUE</span><h3><?php echo hg_lang('Viete, ako sa predáva zajtrajšok.', 'Know how tomorrow is selling.'); ?></h3><p><?php echo hg_lang('Kalendár odhalí silné dni. Medziročné porovnanie ukáže tempo rezervácií a výnosov. Rozhodujete sa s kontextom.', 'The calendar highlights strong days. Year-on-year comparisons show booking and revenue pace. Make decisions in context.'); ?></p><a href="/vynosovy-modul-revpro/" class="ef-text-link"><?php echo hg_lang('Spoznajte revPRO', 'Discover revPRO'); ?></a></div>
         <div class="ef-scene-art ef-pace-scene">
           <figure class="ef-card ef-pace-calendar"><?php $fragment('pace-calendar.webp',1830,642,30,60,650,530,hg_lang('Farebný kalendár tempa predaja', 'Colour-coded sales pace calendar')); ?></figure>
           <figure class="ef-card ef-pace-metrics"><figcaption><?php echo hg_lang('Medziročné porovnanie', 'Year-on-year comparison'); ?></figcaption><?php $fragment('pace-calendar.webp',1830,642,750,302,675,250,hg_lang('Tempo izbonocí a revenue v porovnaní s minulým rokom', 'Room-night and revenue pace compared with last year')); ?></figure>
@@ -239,7 +239,7 @@ $fragment = function ($file, $sw, $sh, $x, $y, $w, $h, $alt, $eager = false) {
   <section class="os-journey" id="selfcheckin" aria-label="<?php echo hg_lang('Guest Journey', 'Guest Journey'); ?>">
     <p class="os-kicker"><?php echo hg_lang('Self Check-in / Guest Journey', 'Self Check-in / Guest Journey'); ?></p>
     <h2><?php echo hg_lang('Hosť vybaví rutinu. Vy sa môžete venovať hosťovi.', 'The guest handles the routine. You can stay with the guest.'); ?></h2>
-    <p class="os-lead"><?php echo hg_lang('Predpríchodová komunikácia → online check-in → údaje a dokumenty → doplnkové služby → platba → príchod → pobyt → checkout.', 'Pre-arrival messages → online check-in → details and documents → extras → payment → arrival → stay → checkout.'); ?></p>
+    <p class="os-lead"><?php echo hg_lang('Predpríchodová komunikácia · online check-in · údaje a dokumenty · doplnkové služby · platba · príchod · pobyt · checkout.', 'Pre-arrival messages · online check-in · details and documents · extras · payment · arrival · stay · checkout.'); ?></p>
     <figure class="os-ui">
       <img src="<?php echo hg_esc(hg_asset('selfcheckin.webp')); ?>" alt="<?php echo hg_lang('Ellipse Self Check-in na notebooku a mobile', 'Ellipse Self Check-in on a laptop and a phone'); ?>" width="1200" height="800" loading="lazy" decoding="async">
     </figure>
@@ -264,16 +264,22 @@ $fragment = function ($file, $sw, $sh, $x, $y, $w, $h, $alt, $eager = false) {
         <p><?php echo hg_lang('Vaša POS aplikácia. Priamo v termináli.', 'Your POS application. Right on the terminal.'); ?></p>
       </div>
       <div class="ep-connection" aria-label="<?php echo hg_lang('Prepojenie platieb s Ellipse', 'Payments connected to Ellipse'); ?>">
-        <span><?php echo hg_lang('Online platba', 'Online payment'); ?></span><span>POS</span><i aria-hidden="true">→</i><strong>Ellipse</strong><i aria-hidden="true">→</i><span><?php echo hg_lang('Prehľad transakcií', 'Transaction overview'); ?></span>
+        <span><?php echo hg_lang('Online platba', 'Online payment'); ?></span><span>POS</span><strong>Ellipse</strong><span><?php echo hg_lang('Prehľad transakcií', 'Transaction overview'); ?></span>
       </div>
     </div>
+    <article class="ep-tap">
+      <p class="os-kicker">Tap to Pay</p>
+      <h3><?php echo hg_lang('Platba kartou, eKasa a Ellipse POS. Priamo v mobile.', 'Card payments, eKasa and Ellipse POS. Right on your phone.'); ?></h3>
+      <p><?php echo hg_lang('Prijímajte bezkontaktné platby kartou alebo digitálnou peňaženkou cez Tap to Pay. Ellipse POS, eKasa a platby v jednom mobilnom pracovnom nástroji — pri stole, na recepcii aj v teréne.', 'Accept contactless card or digital wallet payments with Tap to Pay. Ellipse POS, eKasa and payments in one mobile workspace — at the table, at reception or on the go.'); ?></p>
+      <small><?php echo hg_lang('Dostupnosť Tap to Pay a eKasy závisí od kompatibility zariadenia a aktivovaných služieb.', 'Tap to Pay and eKasa availability depends on device compatibility and enabled services.'); ?></small>
+    </article>
     <div class="ep-features">
       <article><span class="ep-number">01</span><h3><?php echo hg_lang('Online aj pri pulte', 'Online and at the counter'); ?></h3><p><?php echo hg_lang('Platby na webe aj cez POS terminály v jednom prepojenom prostredí. Pre hotel, recepciu aj gastro.', 'Website and POS terminal payments in one connected environment. For the hotel, front desk and restaurant.'); ?></p></article>
       <article><span class="ep-number">02</span><h3><?php echo hg_lang('Kontrola v reálnom čase', 'Real-time control'); ?></h3><p><?php echo hg_lang('API prepojenie priebežne overuje stav platieb. Detail transakcie aj jej aktuálny stav máte priamo v Ellipse.', 'The API connection checks payment status as it changes. See transaction details and current status directly in Ellipse.'); ?></p></article>
       <article><span class="ep-number">03</span><h3><?php echo hg_lang('Opakované platby', 'Recurring payments'); ?></h3><p><?php echo hg_lang('Spracovanie opakovaných platieb podľa dohodnutých podmienok a súhlasu klienta. Menej manuálnych krokov pre váš tím.', 'Process recurring payments under agreed terms and with customer consent. Fewer manual steps for your team.'); ?></p></article>
       <article><span class="ep-number">04</span><h3><?php echo hg_lang('Tokenizácia kariet', 'Card tokenization'); ?></h3><p><?php echo hg_lang('Citlivé údaje karty pri ďalších platbách zastupuje bezpečný token. Ochrana údajov je súčasťou celého platobného procesu.', 'A secure token represents sensitive card details for subsequent payments. Data protection is part of the entire payment process.'); ?></p></article>
     </div>
-    <div class="os-actions"><a class="button" href="<?php echo hg_esc($nap['demo']); ?>"><?php echo hg_lang('Ukázať platby v Ellipse', 'See payments in Ellipse'); ?> ↗</a><a class="button ghost" href="/pos-systemy/"><?php echo hg_lang('Spoznajte Ellipse POS', 'Explore Ellipse POS'); ?></a></div>
+    <div class="os-actions"><a class="button" href="<?php echo hg_esc($nap['demo']); ?>"><?php echo hg_lang('Ukázať platby v Ellipse', 'See payments in Ellipse'); ?></a><a class="button ghost" href="/pos-systemy/"><?php echo hg_lang('Spoznajte Ellipse POS', 'Explore Ellipse POS'); ?></a></div>
   </section>
 
   <section class="os-team" id="team" aria-label="Ellipse Team">
@@ -343,7 +349,7 @@ $fragment = function ($file, $sw, $sh, $x, $y, $w, $h, $alt, $eager = false) {
     </article>
     <?php endif; ?>
     <div class="os-actions">
-      <a class="button" href="/virtualna-recepcia-ella-ai/"><?php echo hg_lang('Pozrieť Ellu AI', 'See Ella AI'); ?> <span>↗</span></a>
+      <a class="button" href="/virtualna-recepcia-ella-ai/"><?php echo hg_lang('Pozrieť Ellu AI', 'See Ella AI'); ?></a>
     </div>
   </section>
 
@@ -353,9 +359,9 @@ $fragment = function ($file, $sw, $sh, $x, $y, $w, $h, $alt, $eager = false) {
     <p class="os-lead"><?php echo hg_lang('Cez MCP môže oprávnený AI nástroj bezpečne pracovať s funkciami a dátami Ellipse bez komplikovaných ručných exportov.', 'Through MCP, an authorised AI tool can work safely with Ellipse functions and data — without awkward manual exports.'); ?></p>
     <div class="os-mcp-flow" aria-hidden="false">
       <span>Ellipse</span>
-      <span aria-hidden="true">→</span>
+
       <span>MCP</span>
-      <span aria-hidden="true">→</span>
+
       <span><?php echo hg_lang('AI agent / analytika', 'AI agent / analytics'); ?></span>
     </div>
     <?php if ($claudeScene): ?>
@@ -365,7 +371,7 @@ $fragment = function ($file, $sw, $sh, $x, $y, $w, $h, $alt, $eager = false) {
     <?php endif; ?>
     <p class="os-mcp-note"><?php echo hg_lang('Údaje odchádzajú anonymizované, bez mien hostí. Výstup je odporúčanie. Rozhodnutie ostáva na vás.', 'Data leaves anonymised, without guest names. The output is advice. The decision stays with you.'); ?></p>
     <div class="os-actions">
-      <a class="button" href="/virtualna-recepcia-ella-ai/"><?php echo hg_lang('Pozrieť MCP a Ellu', 'See MCP and Ella'); ?> <span>↗</span></a>
+      <a class="button" href="/virtualna-recepcia-ella-ai/"><?php echo hg_lang('Pozrieť MCP a Ellu', 'See MCP and Ella'); ?></a>
       <a class="button ghost" href="<?php echo hg_esc($mcpArticle); ?>"><?php echo hg_lang('Návod v článku', 'Guide in the article'); ?></a>
     </div>
   </section>
@@ -435,7 +441,7 @@ $fragment = function ($file, $sw, $sh, $x, $y, $w, $h, $alt, $eager = false) {
       </ul>
       <?php endif; ?>
       <div class="os-actions">
-        <a class="button" href="<?php echo hg_esc($seg['href']); ?>"><?php echo hg_esc($seg['cta']); ?> <span>↗</span></a>
+        <a class="button" href="<?php echo hg_esc($seg['href']); ?>"><?php echo hg_esc($seg['cta']); ?></a>
       </div>
     </div>
     <?php endforeach; ?>
@@ -452,7 +458,7 @@ $fragment = function ($file, $sw, $sh, $x, $y, $w, $h, $alt, $eager = false) {
       <li><?php echo hg_lang('Účtovníctvo a ERP', 'Accounting and ERP'); ?></li>
       <li><?php echo hg_lang('Google Hotels a marketing', 'Google Hotels and marketing'); ?></li>
     </ul>
-    <div class="os-actions"><a class="button ghost" href="/kontakt/"><?php echo hg_lang('Overiť konkrétnu integráciu', 'Check a specific integration'); ?> ↗</a></div>
+    <div class="os-actions"><a class="button ghost" href="/kontakt/"><?php echo hg_lang('Overiť konkrétnu integráciu', 'Check a specific integration'); ?></a></div>
   </section>
 
   <section class="os-security" id="dovera" aria-label="<?php echo hg_lang('Bezpečnosť a dôvera', 'Security and trust'); ?>">
@@ -485,7 +491,7 @@ $fragment = function ($file, $sw, $sh, $x, $y, $w, $h, $alt, $eager = false) {
     <h2><?php echo hg_lang('Pozrite sa, ako môže Ellipse fungovať vo vašej prevádzke.', 'See how Ellipse can work in your operation.'); ?></h2>
     <p class="os-lead"><?php echo hg_lang('Ukážeme vám Ellipse na vašich reálnych procesoch. Bez záväzkov, zrozumiteľne a prakticky.', 'We will show Ellipse on your real processes. No commitment, in plain language, hands on.'); ?></p>
     <div class="os-actions">
-      <a class="button" href="<?php echo hg_esc($nap['demo']); ?>"><?php echo hg_lang('Dohodnúť ukážku Ellipse', 'Book an Ellipse demo'); ?> <span>↗</span></a>
+      <a class="button" href="<?php echo hg_esc($nap['demo']); ?>"><?php echo hg_lang('Dohodnúť ukážku Ellipse', 'Book an Ellipse demo'); ?></a>
       <a class="button ghost" href="/kontakt/"><?php echo hg_lang('Kontaktovať nás', 'Contact us'); ?></a>
     </div>
     <p class="os-final-meta"><small><?php echo hg_lang('Odpovieme spravidla do jedného pracovného dňa.', 'We usually reply within one working day.'); ?> · <?php echo hg_esc($nap['street'].', '.$nap['zip'].' '.$nap['city']); ?></small></p>

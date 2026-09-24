@@ -24,11 +24,12 @@
     <meta name="Generator" content="Ellipse CMS">
     <link type="text/css" rel="stylesheet" href="/template/<?php echo $theme; ?>/css/_theme9.css" media="screen">
     <link type="text/css" rel="stylesheet" href="/template/ellipse/css/ellipse.css?v=20260922s" media="screen">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@1,9..144,500;1,9..144,600&display=swap">
     <link type="text/css" rel="stylesheet" href="/template/ellipse/css/hg-ref.css?v=20260923g" media="screen">
     <link type="text/css" rel="stylesheet" href="/template/ellipse/css/hg-mono.css?v=20260923g" media="screen">
     <link type="text/css" rel="stylesheet" href="/template/ellipse/css/hg.css?v=20260923g" media="screen">
+    <link rel="stylesheet" href="/template/ellipse/css/hg-brand-clean.css?v=20260924brand1">
     <?php if (!empty($content['rs_template']) && (int)$content['rs_template'] === 12): ?>
     <link rel="stylesheet" href="/template/ellipse/css/hg-product.css?v=20260923g" media="screen">
     <?php endif; ?>

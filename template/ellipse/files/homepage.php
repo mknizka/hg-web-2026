@@ -225,13 +225,14 @@
   <link rel="preload" as="image" href="<?php echo hg_esc(hg_asset('fragments/occupancy.webp')); ?>" fetchpriority="high">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@1,9..144,500;1,9..144,600&family=Montserrat:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@1,9..144,500;1,9..144,600&family=Montserrat:wght@300;400;500;600;700;800&display=swap">
   <link rel="stylesheet" href="/template/ellipse/css/hg-ref.css?v=20260923g">
   <link rel="stylesheet" href="/template/ellipse/css/hg-mono.css?v=20260923g">
   <link rel="stylesheet" href="/template/ellipse/css/hg-os.css?v=20260924audit2">
   <link rel="stylesheet" href="/template/ellipse/css/hg-os-premium.css?v=20260924audit2">
 <link rel="stylesheet" href="/template/ellipse/css/hg-fragments.css?v=20260924audit2">
   <link rel="stylesheet" href="/template/ellipse/css/hg-home-audit.css?v=20260924audit2">
+  <link rel="stylesheet" href="/template/ellipse/css/hg-brand-clean.css?v=20260924brand1">
   <meta property="og:locale" content="<?php echo $hgLang === 'en' ? 'en_US' : 'sk_SK'; ?>">
   <meta property="og:title" content="<?php echo hg_esc($ogTitle); ?>">
   <meta property="og:description" content="<?php echo hg_esc($metaDesc); ?>">
@@ -273,10 +274,10 @@
     <?php echo hg_lang('NOVINKA', 'NEW'); ?>
     <?php if ($news): ?>
       <span><?php echo hg_esc(hg_plain($news['name'], 90)); ?></span>
-      <?php if (!empty($news['link'])): ?><a href="<?php echo hg_esc($news['link']); ?>"><?php echo hg_lang('Čítať', 'Read'); ?> →</a><?php endif; ?>
+      <?php if (!empty($news['link'])): ?><a href="<?php echo hg_esc($news['link']); ?>"><?php echo hg_lang('Čítať', 'Read'); ?></a><?php endif; ?>
     <?php else: ?>
       <span><?php echo hg_lang('Ellipse Team — prevádzku máte pod kontrolou aj z mobilu', 'Ellipse Team — the operation stays in your pocket'); ?></span>
-      <a href="#team"><?php echo hg_lang('Objaviť aplikáciu', 'Discover the app'); ?> →</a>
+      <a href="#team"><?php echo hg_lang('Objaviť aplikáciu', 'Discover the app'); ?></a>
     <?php endif; ?>
   </div>
   <?php $hgNavHome = true; include __DIR__ . '/hg_nav.php'; ?>

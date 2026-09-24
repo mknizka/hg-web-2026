@@ -174,11 +174,11 @@
                               <div class="hg-article-cta cta">
                                 <span class="kicker light"><?php echo hg_lang('Pozrite sa, ako funguje Ellipse', 'See how Ellipse works'); ?></span>
                                 <p class="cta-title"><?php echo hg_lang('Každý deň so starým systémom brzdíte biznis. <em>Začnite ešte dnes.</em>', 'Every day on the old system slows the business. <em>Start today.</em>'); ?></p>
-                                <a class="button white" href="<?php echo hg_esc(hg_nap()['demo']); ?>"><?php echo hg_lang('Dohodnúť demo', 'Book a demo'); ?> <span>↗</span></a>
+                                <a class="button white" href="<?php echo hg_esc(hg_nap()['demo']); ?>"><?php echo hg_lang('Dohodnúť demo', 'Book a demo'); ?></a>
                               </div>
                               <?php if(isset($content['id']) && $content['id'] > 0): ?>
                                 <div class="mt-40">
-                                  <?php displayArticleEmotions($content['id']); ?>
+                                  <?php ob_start(); displayArticleEmotions($content['id']); echo hg_text_reactions(ob_get_clean()); ?>
                                 </div>
                               <?php endif; ?>
 
@@ -190,7 +190,7 @@
                       <div id="article-progress-placeholder" style="margin-bottom: 30px;"></div>
                       <div id="article-toc-placeholder"></div>
                       <div class="mt-40">
-                        <?php displayTopArticlesByEmotions(5, true); ?>
+                        <?php ob_start(); displayTopArticlesByEmotions(5, true); echo hg_text_reactions(ob_get_clean()); ?>
                       </div>
                     </div>
                   </div>

@@ -7,7 +7,7 @@ $logoSrc = hg_asset('ellipse-logo.svg');
   <span class="kicker light"><?php echo hg_lang('Pozrite sa, ako funguje Ellipse', 'See how Ellipse works'); ?></span>
   <h2><?php echo hg_lang('Každý deň so starým systémom brzdíte biznis. <em>Začnite ešte dnes.</em>', 'Every day on the old system slows the business. <em>Start today.</em>'); ?></h2>
   <p><?php echo hg_lang('Ukážeme vám Ellipse na vašich reálnych procesoch. Bez záväzkov, zrozumiteľne a prakticky.', 'We will show Ellipse on your real processes. No commitment, in plain language, hands on.'); ?></p>
-  <a class="button white" href="<?php echo hg_esc($nap['demo']); ?>"><?php echo hg_lang('Dohodnúť demo', 'Book a demo'); ?> <span>↗</span></a>
+  <a class="button white" href="<?php echo hg_esc($nap['demo']); ?>"><?php echo hg_lang('Dohodnúť demo', 'Book a demo'); ?></a>
   <small><?php echo hg_lang('Odpovieme spravidla do jedného pracovného dňa.', 'We usually reply within one working day.'); ?></small>
 </section>
 <footer class="hg-site-footer">

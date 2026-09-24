@@ -40,6 +40,29 @@ if (!function_exists('hg_is_staging_marketing')) {
   }
 }
 
+/* Keep the CMS reaction behaviour, but render words instead of emoji. */
+if (!function_exists('hg_text_reactions')) {
+  function hg_text_reactions($html) {
+    $labels = array(
+      '👍' => hg_lang('Páči sa mi', 'Like'),
+      '❤️' => hg_lang('Inšpiratívne', 'Inspiring'),
+      '👏' => hg_lang('Súhlasím', 'Agree'),
+      '🤔' => hg_lang('Na zamyslenie', 'Thought-provoking'),
+      '😮' => hg_lang('Zaujímavé', 'Interesting'),
+      '💡' => hg_lang('Užitočné', 'Useful')
+    );
+    return preg_replace_callback('/<span class="(emotion-emoji|emotion-icon|emotion-preview)"([^>]*)>(.*?)<\/span>/su', function ($m) use ($labels) {
+      $text = html_entity_decode($m[3], ENT_QUOTES, 'UTF-8');
+      if ($m[1] === 'emotion-icon') {
+        $text = strpos($text, '👀') !== false ? hg_lang('Zobrazenia:', 'Views:') : '';
+      } else {
+        $text = strtr($text, $labels);
+      }
+      return '<span class="reaction-label"'.$m[2].'>'.htmlspecialchars($text, ENT_QUOTES, 'UTF-8').'</span>';
+    }, $html);
+  }
+}
+
 if (!function_exists('hg_esc')) {
   function hg_esc($value) {
     return htmlspecialchars((string)$value, ENT_QUOTES, 'UTF-8');

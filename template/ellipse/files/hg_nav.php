@@ -55,13 +55,13 @@ $langLabelLong = $hgLang === 'en' ? 'Slovenčina' : 'English';
       </div>
       <a class="login" href="<?php echo hg_esc($langHref); ?>"><?php echo hg_esc($langLabelLong); ?></a>
       <a class="login" href="<?php echo hg_esc($nap['login']); ?>"><?php echo hg_lang('Prihlásenie', 'Log in'); ?></a>
-      <a class="button small" href="<?php echo hg_esc($nap['demo']); ?>"><?php echo hg_lang('Dohodnúť demo', 'Book a demo'); ?> <span>↗</span></a>
+      <a class="button small" href="<?php echo hg_esc($nap['demo']); ?>"><?php echo hg_lang('Dohodnúť demo', 'Book a demo'); ?></a>
     </div>
   </nav>
   <div class="nav-actions">
     <a class="login" href="<?php echo hg_esc($langHref); ?>"><?php echo hg_esc($langLabel); ?></a>
     <a class="login" href="<?php echo hg_esc($nap['login']); ?>"><?php echo hg_lang('Prihlásenie', 'Log in'); ?></a>
-    <a class="button small" href="<?php echo hg_esc($nap['demo']); ?>"><?php echo hg_lang('Dohodnúť demo', 'Book a demo'); ?> <span>↗</span></a>
+    <a class="button small" href="<?php echo hg_esc($nap['demo']); ?>"><?php echo hg_lang('Dohodnúť demo', 'Book a demo'); ?></a>
   </div>
   <button class="menu" type="button" aria-label="<?php echo hg_lang('Otvoriť menu', 'Open menu'); ?>" aria-expanded="false" aria-controls="site-nav">
     <span></span><span></span><span></span>
