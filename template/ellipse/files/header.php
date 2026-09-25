@@ -1,18 +1,28 @@
 <?php
   $all = themeSetupAll();
   require_once __DIR__ . '/hg_site.php';
+  require_once __DIR__ . '/hg-editorial.php';
   $hgLang = sess('lang') ? sess('lang') : 'sk';
   $hgStaging = hg_is_staging_marketing();
   $hgBase = rtrim(DOMENA_WEBU, '/');
   $hgPath = isset($curpage) ? $curpage : $hgBase.'/';
   $hgPath = preg_replace('/\?.*$/', '', (string)$hgPath);
+  $hgProblemArchive = isset($content['blog']) && isset($_GET['tema']) && $_GET['tema'] === 'problemy';
+  if ($hgProblemArchive) $hgPath = $hgBase.'/blog/?tema=problemy';
+  $hgSolution=null;
+  if (isset($content['blog']) && isset($_GET['riesenie']) && is_string($_GET['riesenie'])) {
+    require_once __DIR__.'/hg-solutions-data.php';
+    foreach(hg_solutions() as $item) if($item['slug']===$_GET['riesenie']) $hgSolution=$item;
+    if($hgSolution) { $hgPath=$hgBase.'/blog/?riesenie='.rawurlencode($hgSolution['slug']); $content['description']=$hgSolution['description']; $content['keywords']=$hgSolution['keywords']; $content['title']=$hgSolution['title']; }
+  }
+
 ?>
 <!DOCTYPE html>
 <html lang="<?php echo hg_esc($hgLang); ?>" dir="ltr">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	  <title><?php if(isset($_GET['pa']) && $_GET['pa'] == 'blog'): ?>Novinky a blog<?php endif; echo hg_esc(isset($content['name']) ? $content['name'] : ''); ?> - Ellipse Cloud HORECA GROUP</title>
+    <title><?php echo hg_esc($hgSolution ? $hgSolution['title'] : ($hgProblemArchive ? 'Aké problémy rieši Ellipse' : ($content['name'] ?? 'Novinky a blog'))); ?> - Ellipse Cloud HORECA GROUP</title>
     <meta name="keywords" content="<?php echo hg_esc(isset($content['keywords']) ? $content['keywords'] : ''); ?>">
     <link href="/img/system/favicon.ico" rel="shortcut icon">
     <meta name="description" content="<?php echo hg_esc(isset($content['description']) ? $content['description'] : ''); ?>">
@@ -24,11 +34,12 @@
     <meta name="Generator" content="Ellipse CMS">
     <link type="text/css" rel="stylesheet" href="/template/<?php echo $theme; ?>/css/_theme9.css" media="screen">
     <link type="text/css" rel="stylesheet" href="/template/ellipse/css/ellipse.css?v=20260922s" media="screen">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300..800&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@1,9..144,500;1,9..144,600&display=swap">
     <link type="text/css" rel="stylesheet" href="/template/ellipse/css/hg-ref.css?v=20260923g" media="screen">
     <link type="text/css" rel="stylesheet" href="/template/ellipse/css/hg-mono.css?v=20260923g" media="screen">
     <link type="text/css" rel="stylesheet" href="/template/ellipse/css/hg.css?v=20260923g" media="screen">
+    <link rel="stylesheet" href="/template/ellipse/css/hg-brand-clean.css?v=20260924brand2">
     <?php if (!empty($content['rs_template']) && (int)$content['rs_template'] === 12): ?>
     <link rel="stylesheet" href="/template/ellipse/css/hg-product.css?v=20260923g" media="screen">
     <?php endif; ?>
@@ -51,7 +62,7 @@
     <script src="/template/js/jquery-1.10.2.js"></script>
     <script src="/template/ellipse/js/ellipse.js?v=20260922s"></script>
     <?php
-      if (isset($content['content_type']) && $content['content_type'] === 'rs' && !empty($content['id'])) {
+      if (isset($content['content_type']) && $content['content_type'] === 'rs' && !empty($content['id']) && !hg_is_product_content($content)) {
         $hgArticleUrl = $hgBase.'/'.trim((string)$content['sef'], '/').'/';
         hg_schema(array(
           array(
@@ -103,7 +114,12 @@
           --f: <?php echo themeSetup('farba_footer_pozadie'); ?>;
       }
     </style>
-  </head>
+  <link rel="stylesheet" href="/template/ellipse/css/hg-editorial.css?v=4">
+  <link rel="stylesheet" href="/template/ellipse/css/hg-blog.css?v=1">
+  <link rel="stylesheet" href="/template/ellipse/css/hg-typography.css?v=1">
+  <link rel="stylesheet" href="/template/ellipse/css/hg-icons.css?v=1">
+<link rel="stylesheet" href="/template/ellipse/css/hg-shell.css?v=9">
+</head>
   <body class="<?php echo hg_esc(isset($content['content_type']) ? $content['content_type'] : ''); ?> hg-mkt">
     <?php echo themeSetup('extra_body'); ?>
     <?php include __DIR__ . '/hg_top.php'; ?>
