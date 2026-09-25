@@ -1,11 +1,10 @@
 (() => {
  'use strict';
  const reduced=matchMedia('(prefers-reduced-motion: reduce)');
- function rotation(root,button,advance,delay,labels){
+ function rotation(root,advance,delay){
   let paused=reduced.matches,visible=false,timer;
   const stop=()=>{clearInterval(timer);timer=null;};
-  const sync=()=>{stop();button.setAttribute('aria-pressed',String(paused));button.textContent=paused?labels[1]:labels[0];if(!paused&&visible&&!document.hidden&&!root.matches(':hover')&&!root.contains(document.activeElement))timer=setInterval(advance,delay);};
-  button.addEventListener('click',()=>{paused=!paused;sync();});
+  const sync=()=>{stop();if(!paused&&visible&&!document.hidden&&!root.matches(':hover')&&!root.contains(document.activeElement))timer=setInterval(advance,delay);};
   root.addEventListener('mouseenter',stop);root.addEventListener('mouseleave',sync);
   root.addEventListener('focusin',stop);root.addEventListener('focusout',()=>setTimeout(sync,0));
   document.addEventListener('visibilitychange',sync);reduced.addEventListener('change',e=>{paused=e.matches;sync();});
@@ -20,13 +19,12 @@
   track.addEventListener('scroll',update,{passive:true});
   track.addEventListener('keydown',e=>{if(e.target!==track)return;if(e.key==='ArrowLeft'||e.key==='ArrowRight'){e.preventDefault();move(e.key==='ArrowLeft'?-1:1);}});
   new ResizeObserver(update).observe(track);update();
-  const button=root.querySelector('[data-solution-pause]');
-  if(button)rotation(root,button,()=>{if(track.scrollLeft+track.clientWidth>=track.scrollWidth-4)track.scrollTo({left:0,behavior:'instant'});else move(1);},5000,['Pozastaviť posúvanie','Spustiť posúvanie']);
+  rotation(root,()=>{if(track.scrollLeft+track.clientWidth>=track.scrollWidth-4)track.scrollTo({left:0,behavior:'instant'});else move(1);},5000);
  });
  document.querySelectorAll('[data-quotes]').forEach(root=>{
   const slides=Array.from(root.querySelectorAll('[data-quote-slide]')),dots=Array.from(root.querySelectorAll('[data-quote-index]'));let index=0;
   const show=i=>{index=i;slides.forEach((slide,j)=>{slide.classList.toggle('is-active',i===j);slide.setAttribute('aria-hidden',String(i!==j));});dots.forEach((dot,j)=>dot.setAttribute('aria-pressed',String(i===j)));};
   dots.forEach((dot,i)=>dot.addEventListener('click',()=>show(i)));
-  const button=root.querySelector('[data-quote-pause]');if(button)rotation(root,button,()=>show((index+1)%slides.length),10000,['Pozastaviť striedanie','Spustiť striedanie']);
+  if(slides.length>1)rotation(root,()=>show((index+1)%slides.length),10000);
  });
 })();

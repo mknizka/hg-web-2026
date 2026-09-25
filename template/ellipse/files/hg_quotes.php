@@ -12,5 +12,5 @@ if(!$hgQuoteSource) return;
 <blockquote><span aria-hidden="true" class="eq-mark">„</span><?php echo hg_esc($quote); ?><span aria-hidden="true" class="eq-mark">“</span></blockquote>
 <figcaption><strong><?php echo hg_esc(trim($parts[0])); ?></strong><?php if(!empty($parts[1])): ?><span><?php echo hg_esc(trim($parts[1])); ?></span><?php endif; ?></figcaption>
 </figure><?php endforeach; ?></div>
-<?php if(count($hgQuoteSource)>1): ?><div class="eq-controls"><div class="eq-dots" aria-label="Výber citátu"><?php foreach($hgQuoteSource as $i=>$ref): ?><button type="button" data-quote-index="<?php echo $i; ?>" aria-label="Citát: <?php echo hg_esc($ref['name']); ?>" aria-pressed="<?php echo $i===0?'true':'false'; ?>"></button><?php endforeach; ?></div><button type="button" class="eq-pause" data-quote-pause aria-pressed="false">Pozastaviť striedanie</button></div><?php endif; ?>
+<?php if(count($hgQuoteSource)>1): ?><div class="eq-controls"><div class="eq-dots" aria-label="Výber citátu"><?php foreach($hgQuoteSource as $i=>$ref): ?><button type="button" data-quote-index="<?php echo $i; ?>" aria-label="Citát: <?php echo hg_esc($ref['name']); ?>" aria-pressed="<?php echo $i===0?'true':'false'; ?>"></button><?php endforeach; ?></div></div><?php endif; ?>
 </section>

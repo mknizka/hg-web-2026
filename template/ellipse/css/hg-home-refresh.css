@@ -150,3 +150,32 @@ body .os-home .eh-module-track .eh-module-media{height:310px!important}
 body .os-home .eh-module-controls button:hover{border-color:#f2124b;color:#f2124b}
 body .os-home .eh-module-controls button:focus-visible,body .os-home .eh-module-track:focus-visible{outline:2px solid #f2124b;outline-offset:3px}
 @media(max-width:760px){body .os-home .eh-module-track{gap:14px}body .os-home .eh-module-track>.eh-module-panel{flex-basis:90%}body .os-home .eh-module-track:after{flex-basis:calc(10% - 14px)}body .os-home .eh-module-track .eh-module-layout{grid-template-columns:1fr;padding:22px;gap:20px;align-content:start}body .os-home .eh-module-track .eh-module-media{height:230px!important}body .os-home .eh-module-controls{margin:16px 0 12px}}
+
+/* Quiet controls, bold proof points and an editorial integration directory. */
+body .os-home .os-trust-stats{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px;max-width:1060px;margin:40px auto 10px;padding:0 24px;text-align:center;list-style:none}
+body .os-home .os-trust-stats li{display:flex;flex-direction:column;gap:10px;padding:12px 0;min-width:0}
+body .os-home .os-trust-stats li+li{border-left:1px solid #e7eaf1}
+body .os-home .os-trust-stats b{font-size:clamp(32px,4.3vw,60px);font-weight:700;letter-spacing:-.045em;line-height:1.1;color:#081434;font-variant-numeric:tabular-nums;white-space:nowrap}
+body .os-home .os-trust-stats li>span{font-size:14px;line-height:1.5;color:#737d91}
+body .os-home .eh-original-screens{margin:0!important;border:0!important;padding:0!important}
+body .os-home .eh-original-screens>summary{font-size:12px!important;line-height:1.5;padding:14px 20px!important;font-weight:500;color:#77819a;letter-spacing:0;list-style:none}
+body .os-home .eh-original-screens>summary::-webkit-details-marker{display:none}
+body .os-home .eh-original-screens>summary:after{content:' +';color:#081434}
+body .os-home .eh-original-screens[open]>summary:after{content:' −'}
+body .os-home>.eh-partners{display:block;width:100%;max-width:none;margin:0;padding:28px 0 40px;background:white;overflow:hidden;text-align:center}
+body .os-home>.eh-partners h3{font-size:14px;font-weight:600;color:#737d91;margin:0 24px 26px}
+body .os-home>.eh-partners .eh-logo-window{width:100%;max-width:none;mask-image:linear-gradient(90deg,transparent,#000 4%,#000 96%,transparent)}
+body .os-home .eh-integration-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:0 36px;margin:40px auto 0;max-width:1200px;border-top:1px solid #e3e7ee}
+body .os-home .eh-integration-grid details{border:0;border-bottom:1px solid #e3e7ee;border-radius:0;padding:0;background:transparent}
+body .os-home .eh-integration-grid summary{position:relative;list-style:none;padding:22px 48px 22px 0;min-height:94px;box-sizing:border-box;transition:color .2s}
+body .os-home .eh-integration-grid summary::-webkit-details-marker{display:none}
+body .os-home .eh-integration-title{font-size:17px;font-weight:650;line-height:1.4;color:#081434;display:block}
+body .os-home .eh-integration-grid small{font-size:12px;line-height:1.6;margin-top:7px;color:#77819a;font-weight:400}
+body .os-home .eh-integration-toggle{position:absolute;right:0;top:24px;display:grid;place-items:center;border:1px solid #e3e7ee;border-radius:50%;width:28px;height:28px;color:#081434;transition:transform .2s,background .2s}
+body .os-home .eh-integration-toggle svg{width:14px;height:14px}
+body .os-home .eh-integration-grid details[open] .eh-integration-toggle{transform:rotate(45deg);background:#081434;color:white;border-color:#081434}
+body .os-home .eh-integration-grid summary:hover .eh-integration-title{color:#f2124b}
+body .os-home .eh-integration-grid ul{margin:0 0 20px;padding:0 20px;background:#f6f7fa;border-radius:12px}
+body .os-home .eh-integration-grid li{padding:15px 0}body .os-home .eh-integration-grid li:first-child{border-top:0}
+body .os-home .eh-integration-grid li strong{font-size:14px;font-weight:650}body .os-home .eh-integration-grid p{font-size:13px}
+@media(max-width:760px){body .os-home .os-trust-stats{gap:12px;padding:0 16px;margin-top:24px}body .os-home .os-trust-stats b{font-size:clamp(22px,6vw,38px)}body .os-home .os-trust-stats li>span{font-size:11px}body .os-home .eh-integration-grid{grid-template-columns:1fr;gap:0}body .os-home .eh-integration-title{font-size:16px}}

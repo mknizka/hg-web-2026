@@ -5,6 +5,6 @@
 <script src="/template/ellipse/js/hg-editorial.js?v=3" defer></script>
 <script src="/template/ellipse/js/hg-icons.js?v=2" defer></script>
 <script src="/template/ellipse/js/hg-navigation.js?v=1" defer></script>
-<script src="/template/ellipse/js/hg-solutions.js?v=2" defer></script>
+<script src="/template/ellipse/js/hg-solutions.js?v=3" defer></script>
 </body>
 </html>

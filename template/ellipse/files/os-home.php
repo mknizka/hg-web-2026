@@ -1,7 +1,7 @@
 <?php
 require_once __DIR__.'/hg-client-logos.php';
 /**
- * Ellipse Hospitality OS — obsah homepage (partial).
+ * Ellipse · All in one. All you need. — obsah homepage (partial).
  * Predpokladá premenné a funkcie pripravené v homepage.php.
  */
 if (!isset($nap) || !is_array($nap)) {
@@ -74,7 +74,7 @@ $fragment = function ($file, $sw, $sh, $x, $y, $w, $h, $alt, $eager = false) {
 
   <section class="os-hero" aria-label="<?php echo hg_lang('Úvod', 'Intro'); ?>">
     <div class="os-hero-copy">
-      <p class="os-kicker"><?php echo hg_lang('Ellipse Hospitality OS', 'Ellipse Hospitality OS'); ?></p>
+      <p class="os-kicker"><?php echo hg_lang('Ellipse · All in one. All you need.', 'Ellipse · All in one. All you need.'); ?></p>
       <h1><?php echo hg_lang('Celá prevádzka. Jeden systém.', 'Your whole operation. One system.'); ?></h1>
       <p class="os-lead"><?php echo hg_lang('Rezervácie, predaj, prevádzka, tím, platby aj komunikácia s hosťami v jednej cloudovej platforme.', 'Reservations, sales, operations, the team, payments and guest messaging in one cloud platform.'); ?></p>
       <div class="os-actions">
@@ -106,10 +106,10 @@ foreach(array_chunk($homeTopics,6,true) as $pageIndex=>$topicPage): ?>
       <?php foreach ($ellipseClientLogos as $logo): ?><img src="<?php echo hg_esc(hg_asset('logos/'.$logo[0])); ?>" alt="<?php echo $copy ? '' : hg_esc($logo[1]); ?>" width="400" height="200" loading="lazy" decoding="async"><?php endforeach; ?>
       </div><?php endfor; ?>
     </div></div>
-    <button class="eh-motion" type="button" data-logo-pause aria-pressed="false"><?php echo hg_lang('Pozastaviť pohyb', 'Pause motion'); ?></button>
+    
     <ul class="os-trust-stats">
       <?php foreach (array_slice($trust['stats'], 0, 3) as $stat): ?>
-      <li><b><?php echo hg_esc($stat['name']); ?></b> <?php echo hg_esc(hg_plain($stat['text'])); ?></li>
+      <li><b data-count-up><?php echo hg_esc(preg_replace('/^Viac ako\s+(\d+)$/ui', '$1+', $stat['name'])); ?></b><span><?php echo hg_esc(hg_plain($stat['text'])); ?></span></li>
       <?php endforeach; ?>
     </ul>
   </section>
