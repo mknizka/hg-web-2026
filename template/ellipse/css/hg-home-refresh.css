@@ -67,3 +67,24 @@ body .os-home>.os-faq>h2{grid-column:1;grid-row:2;text-align:left;font-size:clam
 body .os-home>.os-faq>.os-faq-list{grid-column:2;grid-row:1 / span 3;margin:0;width:100%}
 body .os-home>.os-journal{padding-block:56px;min-height:0}
 @media(max-width:760px){body .os-home>.eh-tour{padding:40px 16px}body .os-home .eh-tour [data-tour-panel]{padding:28px 16px}body .os-home>.os-faq{display:block}body .os-home>.os-faq>.os-faq-list{margin-top:24px}}
+
+body .os-home .eh-tour [data-tour-panel]:not([data-tour-active="true"]){display:none!important}
+body .os-home .eh-tour [data-tour-panel][data-tour-active="true"]{display:block!important}
+body .os-home .eh-tour [data-tour-panel]{padding:32px 28px!important}
+body .os-home .eh-tour [data-tour-panel]>h2{font-size:clamp(28px,3vw,42px)!important}
+body .os-home>.eh-problems-carousel{padding:56px max(24px,calc((100% - 1200px)/2));min-height:0;background:#f6f7fa}
+body .os-home .eh-problems-carousel>h2{text-align:left;font-size:clamp(30px,3.4vw,46px)!important;margin:14px 0 20px;max-width:none}
+body .os-home .eh-problems-carousel>.os-kicker{text-align:left}
+body .os-home .eh-problem-controls{display:flex;align-items:center;justify-content:space-between;gap:24px;margin-bottom:24px}
+body .os-home .eh-problem-controls p{font-size:15px;color:#667086;margin:0;text-align:left}
+body .os-home .eh-problem-controls>div{display:flex;align-items:center;gap:14px;white-space:nowrap;font-size:12px}
+body .os-home .eh-problem-controls button{display:grid;place-items:center;width:40px;height:40px;border:1px solid #dce2ed;border-radius:50%;background:white;color:#081434;cursor:pointer}
+body .os-home .eh-problem-controls svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.8}
+body .os-home .eh-problem-controls button:focus-visible{outline:2px solid #f2124b;outline-offset:3px}
+body .os-home .eh-problems-carousel .eh-problem-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:0}
+body .os-home .eh-problems-carousel [data-problem-panel][hidden]{display:none!important}
+body .os-home .eh-problems-carousel .eh-problem-grid>a{padding:24px;min-height:205px;background:white;display:flex;flex-direction:column}
+body .os-home .eh-problems-carousel .eh-problem-grid h3{font-size:19px;line-height:1.3;font-weight:650;margin:12px 0 10px}
+body .os-home .eh-problems-carousel .eh-problem-grid p{font-size:13px;line-height:1.6;margin:0 0 18px}
+body .os-home .eh-problems-carousel .eh-problem-grid b{margin-top:auto;font-size:12px}
+@media(max-width:760px){body .os-home .eh-problems-carousel .eh-problem-grid{grid-template-columns:1fr}body .os-home .eh-problem-controls{align-items:flex-start}body .os-home .eh-problems-carousel .eh-problem-grid>a{min-height:0;padding:22px}}
