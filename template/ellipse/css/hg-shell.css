@@ -189,3 +189,6 @@ body.hg-mkt .es-footer-carousel :is(a,button,.es-footer-track):focus-visible{out
 body.hg-mkt .es-detail-cover{max-width:1112px;margin:0 auto 36px;padding:0 24px}
 body.hg-mkt .es-detail-cover img{width:100%;height:auto;border-radius:12px}
 @media(max-width:600px){body.hg-mkt .es-footer-carousel{padding:32px 20px!important}body.hg-mkt .es-footer-heading{align-items:end;gap:12px}body.hg-mkt .es-carousel-controls button{width:36px;height:36px}body.hg-mkt .es-footer-card{flex-basis:310px}}
+
+body.hg-mkt .es-solutions .es-intro{position:static!important;display:block!important;height:auto!important;min-height:0!important;width:100%;max-width:1160px;float:none!important;background:#fff!important;border:0!important;box-shadow:none!important;padding:64px 24px 42px!important;margin:0 auto!important;overflow:visible!important}
+body.hg-mkt .es-solutions .kicker:before{display:none!important}
