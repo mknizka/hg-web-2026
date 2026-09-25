@@ -22,7 +22,7 @@
  *
  * NAP (jedna adresa na webe, v schéme aj v pätičke):
  *  HORECA GROUP s.r.o., Francisciho 20/B, 058 01 Poprad
- *  info@horecagroup.sk, +421 52 787 1911
+ *  office@horecagroup.sk, +421 52 787 1911
  * Čísla dôvery: 20 000+ jednotiek, viac ako 780 klientov, 350+ integrácií.
  */
 
@@ -74,7 +74,7 @@ if (!function_exists('hg_nap')) {
     return array(
       'name' => 'HORECA GROUP s.r.o.',
       'brand' => 'Ellipse Cloud',
-      'email' => 'info@horecagroup.sk',
+      'email' => 'office@horecagroup.sk',
       'phone' => '+421527871911',
       'phone_display' => '+421 52 787 1911',
       'street' => 'Francisciho 20/B',
