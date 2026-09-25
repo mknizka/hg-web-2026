@@ -269,7 +269,7 @@
   <base href="<?php echo hg_esc(DOMENA_WEBU); ?>">
   <?php if (function_exists('themeSetup')) { echo themeSetup('extra_header'); } ?>
 <link rel="stylesheet" href="/template/ellipse/css/hg-mobile-showcase.css?v=1">
-<link rel="stylesheet" href="/template/ellipse/css/hg-home-refresh.css?v=10">
+<link rel="stylesheet" href="/template/ellipse/css/hg-home-refresh.css?v=11">
 <link rel="stylesheet" href="/template/ellipse/css/hg-typography.css?v=1">
 <link rel="stylesheet" href="/template/ellipse/css/hg-icons.css?v=1">
 <link rel="stylesheet" href="/template/ellipse/css/hg-shell.css?v=3">
