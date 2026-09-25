@@ -1,0 +1,15 @@
+body .os-home .os-kicker,body .os-kicker,body .hg-kicker,body .prod-kicker,body .kicker,body .kicker.light,body .eyebrow,body .ef-index{font-weight:600!important}
+body .os-home #selfcheckin{display:block}
+body .os-home #selfcheckin .os-journey-steps{display:grid;grid-template-columns:1fr 1fr;gap:0 32px;margin:40px auto 0;max-width:1120px}
+.os-home .em-showcase{width:100%;max-width:1320px;margin:48px auto 0;min-width:0}
+.em-controls{display:flex;align-items:center;gap:12px;margin-bottom:24px;color:#667086;font-size:13px}
+.em-controls span{margin-right:auto}.em-controls button{width:44px;height:44px;border:1px solid #d9dfeb;border-radius:50%;background:white;color:#081434;font-size:22px;cursor:pointer}.em-controls button:disabled{opacity:.3;cursor:default}
+.em-rail{display:flex;gap:32px;overflow-x:auto;scroll-snap-type:x mandatory;padding:12px 12px 38px;scrollbar-width:thin;scrollbar-color:#ccd4e1 transparent}
+.os-home .em-shot{flex:0 0 300px;min-width:0;margin:0;scroll-snap-align:start}
+.em-phone{display:block;width:100%;padding:7px;border:1px solid #4e5668;border-radius:38px;background:#101622;box-shadow:0 18px 30px -20px #08143488;cursor:zoom-in;overflow:hidden}
+.os-home .em-phone img{display:block!important;width:100%!important;height:auto!important;max-width:100%!important;position:static!important;transform:none!important;border-radius:30px;aspect-ratio:885/1920;object-fit:contain;background:#081021}
+.os-home .em-shot figcaption{padding:22px 4px 0;text-align:center;font-size:15px;line-height:1.5;font-weight:600;color:#081434}
+.em-zoom{padding:48px 16px 16px;border:0;border-radius:20px;background:#f4f6fa;max-width:95vw;max-height:95dvh;overflow:auto}.em-zoom::backdrop{background:#061127dd;backdrop-filter:blur(8px)}.em-zoom img{display:block;max-width:min(90vw,885px);height:auto;margin:auto}.em-zoom button{position:fixed;top:20px;right:24px;border:0;border-radius:50%;width:44px;height:44px;font-size:26px;background:white;color:#081434;cursor:pointer}
+.em-phone:focus-visible,.em-controls button:focus-visible,.em-rail:focus-visible{outline:3px solid #ff0045;outline-offset:4px}
+@media(min-width:1100px){.os-home .em-shot:nth-child(even){padding-top:28px}}
+@media(max-width:700px){.os-home .em-shot{flex-basis:min(78vw,320px)}.em-rail{gap:22px;padding-inline:6px}.em-controls span{max-width:180px}.os-home .em-showcase{margin-top:32px}body .os-home #selfcheckin .os-journey-steps{grid-template-columns:1fr}}

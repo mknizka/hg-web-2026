@@ -17,7 +17,7 @@ $langLabelLong = $hgLang === 'en' ? 'Slovenčina' : 'English';
   <a class="brand" href="<?php echo hg_esc($brandHref); ?>" aria-label="Ellipse"><img src="<?php echo hg_esc($logoSrc); ?>" alt="Ellipse" width="148" height="52"></a>
   <nav id="site-nav" aria-label="<?php echo hg_lang('Hlavné menu', 'Main menu'); ?>">
     <div class="nav-group">
-      <button type="button" class="nav-parent" aria-expanded="false"><?php echo hg_lang('Platforma', 'Platform'); ?><span class="nav-caret" aria-hidden="true"></span></button>
+      <button type="button" class="nav-parent" aria-expanded="false" aria-haspopup="true"><?php echo hg_lang('Platforma', 'Platform'); ?><span class="nav-caret" aria-hidden="true"></span></button>
       <div class="nav-sub">
         <a href="/hotelovy-system/"><?php echo hg_lang('Hotelový PMS', 'Hotel PMS'); ?></a>
         <a href="/web-booking/"><?php echo hg_lang('Booking engine', 'Booking engine'); ?></a>
@@ -25,6 +25,7 @@ $langLabelLong = $hgLang === 'en' ? 'Slovenčina' : 'English';
         <a href="/vynosovy-modul-revpro/">revPRO</a>
         <a href="/pos-systemy/"><?php echo hg_lang('Gastro a POS', 'F&amp;B and POS'); ?></a>
         <a href="/online-check-in/">Self check-in</a>
+        <a href="<?php echo $hgNavHome ? '#loyalty' : '/#loyalty'; ?>">Ellipse Loyalty &amp; CRM</a>
         <a href="<?php echo hg_esc($mcpHref); ?>">MCP</a>
       </div>
     </div>
@@ -35,6 +36,7 @@ $langLabelLong = $hgLang === 'en' ? 'Slovenčina' : 'English';
         <a href="/pos-systemy/"><?php echo hg_lang('Reštaurácie', 'Restaurants'); ?></a>
         <a href="/casove-rezervacie/"><?php echo hg_lang('Wellness', 'Wellness'); ?></a>
         <a href="/web-booking/"><?php echo hg_lang('Apartmány', 'Apartments'); ?></a>
+        <a href="/blog/?tema=problemy"><?php echo hg_lang('Aké problémy riešime', 'Challenges we solve'); ?></a>
         <a href="/vstupy-a-akvaparky/"><?php echo hg_lang('Aquapark', 'Waterpark'); ?></a>
       </div>
     </div>
@@ -55,13 +57,13 @@ $langLabelLong = $hgLang === 'en' ? 'Slovenčina' : 'English';
       </div>
       <a class="login" href="<?php echo hg_esc($langHref); ?>"><?php echo hg_esc($langLabelLong); ?></a>
       <a class="login" href="<?php echo hg_esc($nap['login']); ?>"><?php echo hg_lang('Prihlásenie', 'Log in'); ?></a>
-      <a class="button small" href="<?php echo hg_esc($nap['demo']); ?>"><?php echo hg_lang('Dohodnúť demo', 'Book a demo'); ?> <span>↗</span></a>
+      <a class="button small" href="<?php echo hg_esc($nap['demo']); ?>"><?php echo hg_lang('Dohodnúť demo', 'Book a demo'); ?></a>
     </div>
   </nav>
   <div class="nav-actions">
     <a class="login" href="<?php echo hg_esc($langHref); ?>"><?php echo hg_esc($langLabel); ?></a>
     <a class="login" href="<?php echo hg_esc($nap['login']); ?>"><?php echo hg_lang('Prihlásenie', 'Log in'); ?></a>
-    <a class="button small" href="<?php echo hg_esc($nap['demo']); ?>"><?php echo hg_lang('Dohodnúť demo', 'Book a demo'); ?> <span>↗</span></a>
+    <a class="button small" href="<?php echo hg_esc($nap['demo']); ?>"><?php echo hg_lang('Dohodnúť demo', 'Book a demo'); ?></a>
   </div>
   <button class="menu" type="button" aria-label="<?php echo hg_lang('Otvoriť menu', 'Open menu'); ?>" aria-expanded="false" aria-controls="site-nav">
     <span></span><span></span><span></span>

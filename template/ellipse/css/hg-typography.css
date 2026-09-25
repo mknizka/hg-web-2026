@@ -1,0 +1,8 @@
+/* Shared minimum weight for large headings and readable section labels. */
+html body h1,html body h2,html body h3,
+html body main h1,html body main h2,html body main h3,
+html body .os-home h1,html body .os-home section > h2,
+html body .os-home > section:is(.os-product,.os-team) > h2,
+html body .hg-article h1,html body .hg-article h2,html body .hg-article h3,
+html body .prod-hero h1,html body .cta-title{font-weight:650!important}
+body .os-home .os-kicker,body .os-kicker,body .hg-kicker,body .prod-kicker,body .kicker,body .kicker.light,body .eyebrow,body .ef-index{font-weight:600!important}
