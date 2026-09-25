@@ -179,3 +179,5 @@ body .os-home .eh-integration-grid ul{margin:0 0 20px;padding:0 20px;background:
 body .os-home .eh-integration-grid li{padding:15px 0}body .os-home .eh-integration-grid li:first-child{border-top:0}
 body .os-home .eh-integration-grid li strong{font-size:14px;font-weight:650}body .os-home .eh-integration-grid p{font-size:13px}
 @media(max-width:760px){body .os-home .os-trust-stats{gap:12px;padding:0 16px;margin-top:24px}body .os-home .os-trust-stats b{font-size:clamp(22px,6vw,38px)}body .os-home .os-trust-stats li>span{font-size:11px}body .os-home .eh-integration-grid{grid-template-columns:1fr;gap:0}body .os-home .eh-integration-title{font-size:16px}}
+
+body .os-home .os-trust-stats b>span{font:inherit!important;color:inherit!important;letter-spacing:inherit;line-height:inherit}
