@@ -315,6 +315,7 @@ foreach(array_chunk($homeTopics,6,true) as $pageIndex=>$topicPage): ?>
 
   
 
+  <?php include __DIR__.'/hg_quotes.php'; ?>
   <section class="os-faq" id="faq" aria-label="<?php echo hg_lang('Časté otázky', 'FAQ'); ?>">
     <p class="os-kicker"><?php echo hg_lang('Časté otázky', 'Common questions'); ?></p>
     <h2><?php echo hg_lang('Všetko podstatné pred rozhodnutím.', 'What matters before you decide.'); ?></h2>

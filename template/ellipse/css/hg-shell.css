@@ -192,3 +192,35 @@ body.hg-mkt .es-detail-cover img{width:100%;height:auto;border-radius:12px}
 
 body.hg-mkt .es-solutions .es-intro{position:static!important;display:block!important;height:auto!important;min-height:0!important;width:100%;max-width:1160px;float:none!important;background:#fff!important;border:0!important;box-shadow:none!important;padding:64px 24px 42px!important;margin:0 auto!important;overflow:visible!important}
 body.hg-mkt .es-solutions .kicker:before{display:none!important}
+/* Compact cards with hidden native scrollbar; scrolling remains accessible. */
+body.hg-mkt .es-footer-carousel{padding-top:28px!important;padding-bottom:28px!important}
+body.hg-mkt .es-footer-heading{margin-bottom:14px}
+body.hg-mkt .es-footer-heading h2{font-size:clamp(23px,2.3vw,30px)!important}
+body.hg-mkt .es-footer-track{scrollbar-width:none!important;-ms-overflow-style:none;padding-bottom:4px}
+body.hg-mkt .es-footer-track::-webkit-scrollbar{display:none!important;width:0;height:0}
+body.hg-mkt .es-footer-card{padding:14px;min-height:132px;height:132px;grid-template-columns:minmax(0,1fr) 64px;gap:12px}
+body.hg-mkt .es-footer-card h3{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;font-size:14px!important;line-height:1.35;margin:5px 0 8px;max-height:4.05em}
+body.hg-mkt .es-footer-card img,body.hg-mkt .es-cover-placeholder{width:64px!important;height:64px!important}
+body.hg-mkt .es-cover-placeholder{font-size:26px}
+body.hg-mkt .es-rotation{float:right;border:0;background:none;font:inherit;font-size:11px;color:#65738b;padding:0;margin-top:12px;cursor:pointer}
+body .eq-quotes,body .os-home>.eq-quotes{display:block!important;position:relative!important;background:#081434!important;color:#fff!important;padding:56px max(24px,calc((100% - 1120px)/2))!important;margin:0!important;width:100%!important;max-width:none!important;min-height:0!important;height:auto!important;opacity:1!important;transform:none!important;box-sizing:border-box}
+body .eq-quotes .eq-kicker{font-size:11px!important;font-weight:600;letter-spacing:.13em;color:#ff638b!important;text-align:center;margin:0 0 24px!important}
+body .eq-slides{display:grid!important;grid-template-columns:minmax(0,1fr)}
+body .eq-slide{grid-area:1/1;margin:0!important;visibility:hidden;opacity:0;transition:opacity .4s ease;pointer-events:none;min-width:0}
+body .eq-slide.is-active{visibility:visible;opacity:1;pointer-events:auto}
+body .eq-quotes blockquote{display:block!important;position:static!important;font-family:inherit!important;font-size:clamp(22px,2.5vw,34px)!important;font-weight:650!important;line-height:1.45!important;letter-spacing:-.02em;text-align:center!important;color:#fff!important;background:none!important;border:0!important;box-shadow:none!important;margin:0!important;padding:0!important;width:100%!important;max-width:none!important}
+body .eq-quotes .eq-long blockquote{font-size:clamp(19px,2vw,26px)!important}
+body .eq-quotes blockquote:before,body .eq-quotes blockquote:after{display:none!important}
+body .eq-mark{color:#ff386c;font-weight:700}
+body .eq-quotes figcaption{position:static!important;display:flex!important;flex-direction:column;gap:6px;text-align:center!important;background:none!important;margin:24px 0 0!important;padding:0!important;color:#fff!important}
+body .eq-quotes figcaption strong{font-size:16px;font-weight:650;color:#fff!important}
+body .eq-quotes figcaption span{font-size:13px;color:#b6bfd4!important}
+body .eq-controls{display:flex;flex-direction:column;align-items:center;gap:16px;margin-top:26px}
+body .eq-dots{display:flex;justify-content:center;gap:8px;flex-wrap:wrap}
+body .eq-dots button{width:24px;height:24px;padding:7px;border:0;border-radius:50%;background:transparent;cursor:pointer}
+body .eq-dots button:after{content:'';display:block;width:10px;height:10px;border-radius:50%;background:#ffffff40}
+body .eq-dots button[aria-pressed=true]:after{background:#ff386c}
+body .eq-pause{font:inherit;font-size:11px;color:#bbc6db;background:none;border:0;cursor:pointer}
+body .eq-quotes button:focus-visible{outline:2px solid white;outline-offset:3px}
+@media(max-width:600px){body .eq-quotes,body .os-home>.eq-quotes{padding:36px 22px!important}body.hg-mkt .es-footer-card{height:132px}}
+@media(prefers-reduced-motion:reduce){body .eq-slide{transition:none}}

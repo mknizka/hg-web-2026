@@ -1,45 +1,16 @@
 <?php
-  $hgQuoteSource = function_exists('rs_last_articles') ? rs_last_articles('104', 'id', 50, 'ASC') : array();
-  if (!is_array($hgQuoteSource) || empty($hgQuoteSource)) {
-    return;
-  }
+require_once __DIR__.'/hg_site.php';
+$hgQuoteSource=hg_articles('104',50);
+$hgQuoteSource=array_values(array_filter($hgQuoteSource,function($row){return hg_plain($row['parex_text'] ?? '')!=='';}));
+if(!$hgQuoteSource) return;
 ?>
-<section class="hg-quotes-band" aria-label="Citáty hotelierov">
-  <div class="container-fluid">
-    <div class="row center-md">
-      <div class="col-md-12">
-        <div class="claims">
-          <div class="swiper references-swiper">
-            <div class="swiper-wrapper">
-              <?php foreach ($hgQuoteSource as $ref):
-                $name_parts = explode(',', $ref['name'], 2);
-                $client_name = trim($name_parts[0]);
-                $client_company = isset($name_parts[1]) ? trim($name_parts[1]) : '';
-              ?>
-              <div class="swiper-slide">
-                <div class="reference-bubble">
-                  <div class="content">
-                    <div class="reference-quote">
-                      <?php echo nl2br(htmlspecialchars(strip_tags(html_entity_decode($ref['parex_text'], ENT_QUOTES | ENT_HTML5, 'UTF-8')))); ?>
-                    </div>
-                    <div class="reference-author">
-                      <div class="img" style="width: 50px; height: 50px; border-radius: 50px; overflow: hidden;background: url(/img/rs/<?php echo $ref['id']; ?>.<?php echo $ref['file_type']; ?>) no-repeat center center;background-size: cover;"></div>
-                      <div class="namebox">
-                        <strong><?php echo htmlspecialchars($client_name); ?></strong>
-                        <?php if ($client_company): ?>
-                          <span class="reference-company"><?php echo htmlspecialchars($client_company); ?></span>
-                        <?php endif; ?>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <?php endforeach; ?>
-            </div>
-            <div class="pagination"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+<section class="eq-quotes" data-quotes aria-label="Citáty hotelierov">
+<p class="eq-kicker">DÔVERA Z PRAXE</p>
+<div class="eq-slides">
+<?php foreach($hgQuoteSource as $i=>$ref): $parts=explode(',',$ref['name'],2); $quote=hg_plain($ref['parex_text']); ?>
+<figure class="eq-slide<?php echo $i===0?' is-active':''; ?><?php echo strlen($quote)>650?' eq-long':''; ?>" data-quote-slide aria-hidden="<?php echo $i===0?'false':'true'; ?>">
+<blockquote><span aria-hidden="true" class="eq-mark">„</span><?php echo hg_esc($quote); ?><span aria-hidden="true" class="eq-mark">“</span></blockquote>
+<figcaption><strong><?php echo hg_esc(trim($parts[0])); ?></strong><?php if(!empty($parts[1])): ?><span><?php echo hg_esc(trim($parts[1])); ?></span><?php endif; ?></figcaption>
+</figure><?php endforeach; ?></div>
+<?php if(count($hgQuoteSource)>1): ?><div class="eq-controls"><div class="eq-dots" aria-label="Výber citátu"><?php foreach($hgQuoteSource as $i=>$ref): ?><button type="button" data-quote-index="<?php echo $i; ?>" aria-label="Citát: <?php echo hg_esc($ref['name']); ?>" aria-pressed="<?php echo $i===0?'true':'false'; ?>"></button><?php endforeach; ?></div><button type="button" class="eq-pause" data-quote-pause aria-pressed="false">Pozastaviť striedanie</button></div><?php endif; ?>
 </section>
