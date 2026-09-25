@@ -25,25 +25,22 @@
 
 (() => {
  const root=document.querySelector('.eh-module-tour');if(!root)return;
- const tabs=Array.from(root.querySelectorAll('[data-tour-target]'));
- const panels=Array.from(root.querySelectorAll('[data-tour-panel]'));
- const motion=root.querySelector('[data-tour-pause]');
+ const track=root.querySelector('.eh-module-track'),panels=Array.from(track.children);
+ const motion=root.querySelector('[data-tour-pause]'),count=root.querySelector('[data-module-count]');
  const reduced=window.matchMedia('(prefers-reduced-motion: reduce)');
  let index=0,manual=false,paused=reduced.matches,visible=false,timer;
  function stop(){clearInterval(timer);timer=null;}
- function sync(){stop();motion.setAttribute('aria-pressed',String(paused||manual));motion.textContent=manual?'Automatická prehliadka zastavená':paused?'Spustiť prehliadku':'Pozastaviť prehliadku';motion.disabled=manual;if(!manual&&!paused&&visible&&!document.hidden&&!root.matches(':hover')&&!root.contains(document.activeElement))timer=setInterval(()=>select(tabs[(index+1)%tabs.length].dataset.tourTarget,false),6500);}
- function select(id,user){
-  const next=tabs.findIndex(t=>t.dataset.tourTarget===id);if(next<0)return;
-  index=next;if(user)manual=true;
-  tabs.forEach(t=>{const on=t.dataset.tourTarget===id;t.setAttribute('aria-selected',String(on));t.tabIndex=on?0:-1;});
-  panels.forEach(p=>{p.hidden=p.id!==id;p.dataset.tourActive=String(p.id===id);});
-  sync();
- }
- tabs.forEach((t,i)=>{
-  t.addEventListener('click',()=>select(t.dataset.tourTarget,true));
-  t.addEventListener('keydown',e=>{let next;if(e.key==='ArrowRight')next=(i+1)%tabs.length;if(e.key==='ArrowLeft')next=(i+tabs.length-1)%tabs.length;if(e.key==='Home')next=0;if(e.key==='End')next=tabs.length-1;if(next!==undefined){e.preventDefault();select(tabs[next].dataset.tourTarget,true);tabs[next].focus();}});
- });
- motion.addEventListener('click',()=>{paused=!paused;sync();});
+ function sync(){stop();motion.setAttribute('aria-pressed',String(paused||manual));motion.textContent=paused||manual?'Spustiť prehliadku':'Pozastaviť prehliadku';if(!manual&&!paused&&visible&&!document.hidden&&!root.matches(':hover')&&!root.contains(document.activeElement))timer=setInterval(()=>move(1,false),6000);}
+ function select(id,user){const next=panels.findIndex(p=>p.id===id);if(next<0)return;index=next;if(user)manual=true;track.scrollTo({left:panels[index].offsetLeft-panels[0].offsetLeft,behavior:reduced.matches?'instant':'smooth'});sync();}
+ function move(delta,user){select(panels[(index+delta+panels.length)%panels.length].id,user);}
+ root.querySelector('[data-module-prev]').addEventListener('click',()=>move(-1,true));
+ root.querySelector('[data-module-next]').addEventListener('click',()=>move(1,true));
+ track.addEventListener('scroll',()=>{index=panels.reduce((best,p,i)=>Math.abs(p.offsetLeft-panels[0].offsetLeft-track.scrollLeft)<Math.abs(panels[best].offsetLeft-panels[0].offsetLeft-track.scrollLeft)?i:best,0);count.textContent=String(index+1).padStart(2,'0')+' / '+panels.length;},{passive:true});
+ track.addEventListener('pointerdown',()=>{manual=true;sync();});
+ track.addEventListener('wheel',()=>{manual=true;sync();},{passive:true});
+ track.addEventListener('keydown',e=>{if(e.target!==track)return;if(e.key==='ArrowRight'||e.key==='ArrowLeft'){e.preventDefault();move(e.key==='ArrowRight'?1:-1,true);}});
+ track.addEventListener('focusin',e=>{const card=e.target.closest('.eh-module-panel');if(card)select(card.id,true);});
+ motion.addEventListener('click',()=>{if(manual||paused){manual=false;paused=false;}else paused=true;sync();});
  root.addEventListener('mouseenter',stop);root.addEventListener('mouseleave',sync);root.addEventListener('focusin',stop);root.addEventListener('focusout',()=>setTimeout(sync,0));
  document.addEventListener('visibilitychange',sync);reduced.addEventListener('change',e=>{paused=e.matches;sync();});
  new IntersectionObserver(entries=>{visible=entries[0].isIntersecting;sync();},{threshold:0.2}).observe(root);
