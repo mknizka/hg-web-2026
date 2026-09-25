@@ -27,8 +27,8 @@ body.hg-mkt .ed-related a :is(h3,p,span,b){text-align:left!important;margin-left
  body .os-home .os-hero .os-actions{justify-content:flex-start}
  body.hg-mkt .ed-connected>:is(h2,.hg-kicker){text-align:left!important;margin-left:0!important}
  body .es-footer-heading{align-items:flex-end;gap:16px}
- body .eq-quotes blockquote{font-size:22px!important;line-height:1.5!important}
- body .eq-quotes .eq-long blockquote{font-size:20px!important}
+ body .eq-quotes .eq-text{font-size:22px!important;line-height:1.5!important}
+ body .eq-quotes .eq-long .eq-text{font-size:20px!important}
 }
 /* One shared shell for homepage, products and existing RS articles. */
 body:is(.homepage,.hg-mkt){--hg-header-height:82px}
@@ -240,9 +240,9 @@ body .eq-quotes .eq-kicker{font-size:11px!important;font-weight:600;letter-spaci
 body .eq-slides{display:grid!important;grid-template-columns:minmax(0,1fr)}
 body .eq-slide{grid-area:1/1;margin:0!important;visibility:hidden;opacity:0;transition:opacity .4s ease;pointer-events:none;min-width:0}
 body .eq-slide.is-active{visibility:visible;opacity:1;pointer-events:auto}
-body .eq-quotes blockquote{display:block!important;position:static!important;font-family:inherit!important;font-size:clamp(22px,2.5vw,34px)!important;font-weight:650!important;line-height:1.45!important;letter-spacing:-.02em;text-align:center!important;color:#fff!important;background:none!important;border:0!important;box-shadow:none!important;margin:0!important;padding:0!important;width:100%!important;max-width:none!important}
-body .eq-quotes .eq-long blockquote{font-size:clamp(19px,2vw,26px)!important}
-body .eq-quotes blockquote:before,body .eq-quotes blockquote:after{display:none!important}
+body .eq-quotes .eq-text{display:block!important;position:static!important;font-family:inherit!important;font-size:clamp(22px,2.5vw,34px)!important;font-weight:650!important;line-height:1.45!important;letter-spacing:-.02em;text-align:center!important;color:#fff!important;background:none!important;border:0!important;box-shadow:none!important;margin:0!important;padding:0!important;width:100%!important;max-width:none!important}
+body .eq-quotes .eq-long .eq-text{font-size:clamp(19px,2vw,26px)!important}
+body .eq-quotes .eq-text:before,body .eq-quotes .eq-text:after{display:none!important}
 body .eq-mark{color:#ff386c;font-weight:700}
 body .eq-quotes figcaption{position:static!important;display:flex!important;flex-direction:column;gap:6px;text-align:center!important;background:none!important;margin:24px 0 0!important;padding:0!important;color:#fff!important}
 body .eq-quotes figcaption strong{font-size:16px;font-weight:650;color:#fff!important}
@@ -266,3 +266,11 @@ body .eq-quotes button:focus-visible{outline:2px solid white;outline-offset:3px}
  body:is(.homepage,.hg-mkt) header.nav #site-nav>.nav-mobile-only{flex:0 0 auto!important}
  body:is(.homepage,.hg-mkt) header.nav .nav-group.is-open .nav-caret{transform:rotate(225deg)}
 }
+
+/* Scroll fills each quote in reading order; no-JS stays fully readable. */
+body .eq-quotes .eq-text{font-style:normal!important}
+body .eq-quotes .eq-text .eq-word{font:inherit!important;letter-spacing:inherit;color:inherit}
+@supports ((background-clip:text) or (-webkit-background-clip:text)){
+ body .eq-quotes .eq-text.eq-reveal .eq-word{background:linear-gradient(90deg,#fff 0%,#fff var(--eq-fill,0%),rgba(255,255,255,.22) var(--eq-fill,0%),rgba(255,255,255,.22) 100%);background-clip:text;-webkit-background-clip:text;color:transparent!important;-webkit-text-fill-color:transparent}
+}
+@media(prefers-reduced-motion:reduce){body .eq-quotes .eq-text.eq-reveal .eq-word{background:none;color:#fff!important;-webkit-text-fill-color:#fff}}

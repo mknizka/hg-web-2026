@@ -23,8 +23,31 @@
  });
  document.querySelectorAll('[data-quotes]').forEach(root=>{
   const slides=Array.from(root.querySelectorAll('[data-quote-slide]')),dots=Array.from(root.querySelectorAll('[data-quote-index]'));let index=0;
-  const show=i=>{index=i;slides.forEach((slide,j)=>{slide.classList.toggle('is-active',i===j);slide.setAttribute('aria-hidden',String(i!==j));});dots.forEach((dot,j)=>dot.setAttribute('aria-pressed',String(i===j)));};
+  const texts=slides.map(slide=>{
+   const text=slide.querySelector('.eq-text');
+   if(!text)return null;
+   const fragment=document.createDocumentFragment(),words=[];
+   text.textContent.split(/(\s+)/).forEach(part=>{
+    if(!part)return;
+    if(/^\s+$/.test(part)){fragment.append(document.createTextNode(part));return;}
+    const word=document.createElement('span');word.className='eq-word';word.textContent=part;words.push(word);fragment.append(word);
+   });
+   text.replaceChildren(fragment);text.classList.add('eq-reveal');return {text,words};
+  });
+  const paint=()=>{
+   const entry=texts[index];if(!entry)return;
+   const rect=entry.text.getBoundingClientRect(),vh=window.innerHeight;
+   const progress=reduced.matches?1:Math.max(0,Math.min(1,(vh*.85-rect.top)/(vh*.45+rect.height*.5)));
+   entry.words.forEach((word,i)=>word.style.setProperty('--eq-fill',`${Math.max(0,Math.min(1,progress*entry.words.length-i))*100}%`));
+  };
+  let frame=0;
+  const schedule=()=>{if(!frame)frame=requestAnimationFrame(()=>{frame=0;paint();});};
+  window.addEventListener('scroll',schedule,{passive:true});window.addEventListener('resize',schedule);
+  reduced.addEventListener('change',schedule);
+  if(document.fonts)document.fonts.ready.then(schedule);
+  const show=i=>{index=i;slides.forEach((slide,j)=>{slide.classList.toggle('is-active',i===j);slide.setAttribute('aria-hidden',String(i!==j));});dots.forEach((dot,j)=>dot.setAttribute('aria-pressed',String(i===j)));paint();};
   dots.forEach((dot,i)=>dot.addEventListener('click',()=>show(i)));
+  paint();
   if(slides.length>1)rotation(root,()=>show((index+1)%slides.length),10000);
  });
 })();
