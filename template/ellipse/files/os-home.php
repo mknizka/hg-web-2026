@@ -91,7 +91,7 @@ $fragment = function ($file, $sw, $sh, $x, $y, $w, $h, $alt, $eager = false) {
     </div>
   </section>
 
-  <section class="os-trust" aria-label="<?php echo hg_lang('Dôvera', 'Trust'); ?>">
+  <section class="os-trust" id="referencie" aria-label="<?php echo hg_lang('Dôvera', 'Trust'); ?>">
     <p class="eh-trust-label"><?php echo hg_lang('V dobrej spoločnosti. Prevádzky, ktoré používajú Ellipse.', 'In good company. Businesses powered by Ellipse.'); ?></p>
     <div class="eh-logo-window" data-logo-marquee><div class="eh-logo-track">
       <?php for ($copy=0; $copy<2; $copy++): ?><div class="eh-logo-set"<?php if ($copy) echo ' aria-hidden="true"'; ?>>
@@ -106,47 +106,9 @@ $fragment = function ($file, $sw, $sh, $x, $y, $w, $h, $alt, $eager = false) {
     </ul>
   </section>
 
-  <section class="os-canvas" id="platforma" data-os-canvas data-os-step="0" aria-label="<?php echo hg_lang('Ellipse ekosystém', 'Ellipse ecosystem'); ?>">
-    <div class="os-stage">
-      <div class="os-canvas-copy">
-        <p class="os-kicker"><?php echo hg_lang('Ellipse Hospitality OS', 'Ellipse Hospitality OS'); ?></p>
-        <h2><?php echo hg_lang('Jeden systém. Všetko prepojené.', 'One system. Everything connected.'); ?></h2>
-        <p class="os-lead"><?php echo hg_lang('Od prvej rezervácie až po poslednú platbu. Ellipse prepája celý chod prevádzky do jedného ekosystému.', 'From the first booking to the last payment. Ellipse connects the whole operation into one ecosystem.'); ?></p>
-      </div>
-      <div class="os-eco" aria-hidden="false">
-        <div class="os-node os-core" data-step="1">
-          <img class="ef-core-logo" src="<?php echo hg_esc(hg_asset('fragments/ellipse-original.svg')); ?>" alt="Ellipse" width="210" height="64" loading="lazy" decoding="async">
-          <span><?php echo hg_lang('Jadro platformy · jeden zdroj pravdy', 'Core platform · one source of truth'); ?></span>
-        </div>
-        <div class="os-node" data-step="2">
-          <b><?php echo hg_lang('PMS + rezervácie', 'PMS + reservations'); ?></b>
-          <span><?php echo hg_lang('Izby, pobyty, ceny, hostia a hotelová operatíva.', 'Rooms, stays, rates, guests and hotel operations.'); ?></span>
-        </div>
-        <div class="os-node" data-step="3">
-          <b><?php echo hg_lang('Booking + Channel Manager', 'Booking + Channel Manager'); ?></b>
-          <span><?php echo hg_lang('Booking engine, distribúcia a priame rezervácie.', 'Booking engine, distribution and direct bookings.'); ?></span>
-        </div>
-        <div class="os-node" data-step="4">
-          <b><?php echo hg_lang('Platby + POS', 'Payments + POS'); ?></b>
-          <span><?php echo hg_lang('Účty, gastro, terminály a finančné toky.', 'Folios, F&B, terminals and money flows.'); ?></span>
-        </div>
-        <div class="os-node" data-step="5">
-          <b>Ellipse Loyalty + CRM</b>
-          <span><?php echo hg_lang('Vernosť, digitálne karty a personalizovaná komunikácia.', 'Loyalty, digital cards and personalised communication.'); ?></span>
-        </div>
-        <div class="os-node" data-step="6">
-          <b>Ellipse Team</b>
-          <span><?php echo hg_lang('Mobilné riadenie tímu, úloh a prevádzky.', 'Mobile control of the team, tasks and operations.'); ?></span>
-        </div>
-        <div class="os-node" data-step="7">
-          <b><?php echo hg_lang('AI + MCP', 'AI + MCP'); ?></b>
-          <span><?php echo hg_lang('Ella AI, automatizácia, analytika a agent-ready dáta.', 'Ella AI, automation, analytics and agent-ready data.'); ?></span>
-        </div>
-      </div>
-    </div>
-  </section>
+  
 
-  <section class="os-product" id="showcase" aria-label="<?php echo hg_lang('Produkt Ellipse', 'Ellipse product'); ?>">
+  <section class="eh-tour" id="platforma"><p class="os-kicker"><?php echo hg_lang('Prehliadka platformy','Platform tour'); ?></p><h2><?php echo hg_lang('Celá prevádzka. Vyberte si svoj pohľad.','Your whole operation. Choose your view.'); ?></h2><p class="os-lead"><?php echo hg_lang('Jedny dáta pre recepciu, predaj, gastro aj tím. Objavte jednotlivé časti Ellipse na skutočných obrazovkách.','One data set for reception, sales, F&B and your team. Explore Ellipse through real screens.'); ?></p><div class="eh-tour-tabs" role="tablist" aria-label="Ellipse"><button type="button" role="tab" id="tour-tab-showcase" data-tour-target="showcase" aria-controls="showcase" aria-selected="true" tabindex="0"><?php echo hg_lang('PMS a výnosy', 'PMS and revenue'); ?></button><button type="button" role="tab" id="tour-tab-booking" data-tour-target="booking" aria-controls="booking" aria-selected="false" tabindex="-1"><?php echo hg_lang('Rezervácie', 'Reservations'); ?></button><button type="button" role="tab" id="tour-tab-komunikacia" data-tour-target="komunikacia" aria-controls="komunikacia" aria-selected="false" tabindex="-1"><?php echo hg_lang('Komunikácia', 'Messaging'); ?></button><button type="button" role="tab" id="tour-tab-selfcheckin" data-tour-target="selfcheckin" aria-controls="selfcheckin" aria-selected="false" tabindex="-1"><?php echo hg_lang('Cesta hosťa', 'Guest journey'); ?></button><button type="button" role="tab" id="tour-tab-platby" data-tour-target="platby" aria-controls="platby" aria-selected="false" tabindex="-1"><?php echo hg_lang('Platby', 'Payments'); ?></button><button type="button" role="tab" id="tour-tab-loyalty" data-tour-target="loyalty" aria-controls="loyalty" aria-selected="false" tabindex="-1"><?php echo hg_lang('Vernosť a CRM', 'Loyalty and CRM'); ?></button><button type="button" role="tab" id="tour-tab-team" data-tour-target="team" aria-controls="team" aria-selected="false" tabindex="-1"><?php echo hg_lang('Tím v mobile', 'Mobile team'); ?></button><button type="button" role="tab" id="tour-tab-pos" data-tour-target="pos" aria-controls="pos" aria-selected="false" tabindex="-1"><?php echo hg_lang('Gastro a POS', 'F&B and POS'); ?></button><button type="button" role="tab" id="tour-tab-recenzie" data-tour-target="recenzie" aria-controls="recenzie" aria-selected="false" tabindex="-1"><?php echo hg_lang('Recenzie', 'Reviews'); ?></button></div><div class="eh-tour-panels"><section class="os-product" id="showcase" data-tour-panel role="tabpanel" aria-labelledby="tour-tab-showcase" aria-label="<?php echo hg_lang('Produkt Ellipse', 'Ellipse product'); ?>">
     <p class="os-kicker"><?php echo hg_lang('Ellipse zblízka', 'Ellipse up close'); ?></p>
     <h2><?php echo hg_lang('Malé detaily. Veľký prehľad.', 'Small details. The whole picture.'); ?></h2>
     <p class="os-lead"><?php echo hg_lang('Rezervácie, obsadenosť a tempo predaja. To podstatné máte vždy pred očami.', 'Reservations, occupancy and sales pace. Keep what matters in view.'); ?></p>
@@ -168,23 +130,9 @@ $fragment = function ($file, $sw, $sh, $x, $y, $w, $h, $alt, $eager = false) {
     </div>
   </section>
 
-  <section class="os-value" aria-label="<?php echo hg_lang('Biznis hodnota', 'Business value'); ?>">
-    <p class="os-kicker"><?php echo hg_lang('Menej systémov. Viac kontroly.', 'Fewer systems. More control.'); ?></p>
-    <div class="os-statement">
-      <h2><?php echo hg_lang('Jedny dáta.', 'One data set.'); ?></h2>
-      <p><?php echo hg_lang('Žiadne prepisovanie medzi izolovanými systémami.', 'No retyping between isolated systems.'); ?></p>
-    </div>
-    <div class="os-statement">
-      <h2><?php echo hg_lang('Jedna prevádzka.', 'One operation.'); ?></h2>
-      <p><?php echo hg_lang('Recepcia, manažment, gastro aj tím pracujú nad spoločným systémom.', 'Reception, management, F&B and the team work on one shared system.'); ?></p>
-    </div>
-    <div class="os-statement">
-      <h2><?php echo hg_lang('Jeden hosť.', 'One guest.'); ?></h2>
-      <p><?php echo hg_lang('Ellipse pozná cestu hosťa od rezervácie cez pobyt až po ďalšiu návštevu.', 'Ellipse knows the guest journey from booking through the stay to the next visit.'); ?></p>
-    </div>
-  </section>
+  
 
-  <section class="os-booking" id="booking" aria-label="<?php echo hg_lang('Predaj a distribúcia', 'Sales and distribution'); ?>">
+  <section class="os-booking" id="booking" data-tour-panel role="tabpanel" aria-labelledby="tour-tab-booking" hidden aria-label="<?php echo hg_lang('Predaj a distribúcia', 'Sales and distribution'); ?>">
     <p class="os-kicker"><?php echo hg_lang('Predaj a distribúcia', 'Sales and distribution'); ?></p>
     <h2><?php echo hg_lang('Predávajte izby všade. Riaďte ich na jednom mieste.', 'Sell rooms everywhere. Manage them in one place.'); ?></h2>
     <p class="os-lead"><?php echo hg_lang('Booking engine, channel manager, cenotvorba, dostupnosť a priame rezervácie ako jeden tok — nie samostatné produkty pospájané logami.', 'Booking engine, channel manager, rates, availability and direct bookings as one flow — not separate products glued together by logos.'); ?></p>
@@ -209,7 +157,7 @@ $fragment = function ($file, $sw, $sh, $x, $y, $w, $h, $alt, $eager = false) {
     </div>
   </section>
 
-  <section class="os-inbox" id="komunikacia" aria-label="<?php echo hg_lang('Centrálny hub správ', 'Central message hub'); ?>">
+  <section class="os-inbox" id="komunikacia" data-tour-panel role="tabpanel" aria-labelledby="tour-tab-komunikacia" hidden aria-label="<?php echo hg_lang('Centrálny hub správ', 'Central message hub'); ?>">
     <p class="os-kicker"><?php echo hg_lang('Centrálny hub správ', 'Central message hub'); ?></p>
     <h2><?php echo hg_lang('Každá správa hosťa. Jedno miesto.', 'Every guest message. One place.'); ?></h2>
     <p class="os-lead"><?php echo hg_lang('Komunikácia z Booking.com, Expedia, Airbnb, Vrbo a priamych rezervácií sa zbieha do jedného komunikačného centra.', 'Messages from Booking.com, Expedia, Airbnb, Vrbo and direct bookings gather in one inbox.'); ?></p>
@@ -224,7 +172,7 @@ $fragment = function ($file, $sw, $sh, $x, $y, $w, $h, $alt, $eager = false) {
     </div>
   </section>
 
-  <section class="os-journey" id="selfcheckin" aria-label="<?php echo hg_lang('Guest Journey', 'Guest Journey'); ?>">
+  <section class="os-journey" id="selfcheckin" data-tour-panel role="tabpanel" aria-labelledby="tour-tab-selfcheckin" hidden aria-label="<?php echo hg_lang('Guest Journey', 'Guest Journey'); ?>">
     <p class="os-kicker"><?php echo hg_lang('Self Check-in / Guest Journey', 'Self Check-in / Guest Journey'); ?></p>
     <h2><?php echo hg_lang('Hosť vybaví rutinu. Vy sa môžete venovať hosťovi.', 'The guest handles the routine. You can stay with the guest.'); ?></h2>
     <p class="os-lead"><?php echo hg_lang('Predpríchodová komunikácia · online check-in · údaje a dokumenty · doplnkové služby · platba · príchod · pobyt · checkout.', 'Pre-arrival messages · online check-in · details and documents · extras · payment · arrival · stay · checkout.'); ?></p>
@@ -239,7 +187,7 @@ $fragment = function ($file, $sw, $sh, $x, $y, $w, $h, $alt, $eager = false) {
     </div>
   </section>
 
-  <section class="os-pay os-payments" id="platby" aria-label="<?php echo hg_lang('Bezpečné online aj POS platby', 'Secure online and POS payments'); ?>">
+  <section class="os-pay os-payments" id="platby" data-tour-panel role="tabpanel" aria-labelledby="tour-tab-platby" hidden aria-label="<?php echo hg_lang('Bezpečné online aj POS platby', 'Secure online and POS payments'); ?>">
     <p class="os-kicker"><?php echo hg_lang('Ellipse Payments', 'Ellipse Payments'); ?></p>
     <h2><?php echo hg_lang('Bezpečné online aj POS platby.', 'Secure online and POS payments.'); ?></h2>
     <p class="os-lead"><?php echo hg_lang('Na webe, na recepcii aj v reštaurácii. Platby prepojené s Ellipse, s kontrolou v reálnom čase a jasným prehľadom o každej transakcii.', 'On your website, at reception and in the restaurant. Payments connected to Ellipse, with real-time monitoring and a clear view of every transaction.'); ?></p>
@@ -265,7 +213,7 @@ $fragment = function ($file, $sw, $sh, $x, $y, $w, $h, $alt, $eager = false) {
     <div class="os-actions"><a class="button" href="<?php echo hg_esc($nap['demo']); ?>"><?php echo hg_lang('Ukázať platby v Ellipse', 'See payments in Ellipse'); ?></a><a class="button ghost" href="/pos-systemy/"><?php echo hg_lang('Spoznajte Ellipse POS', 'Explore Ellipse POS'); ?></a></div>
   </section>
 
-  <section class="os-loyalty" id="loyalty" aria-labelledby="loyalty-title">
+  <section class="os-loyalty" id="loyalty" data-tour-panel role="tabpanel" aria-labelledby="tour-tab-loyalty" hidden aria-labelledby="loyalty-title">
     <p class="os-kicker">Ellipse Loyalty &amp; CRM</p>
     <h2 id="loyalty-title"><?php echo hg_lang('Z návštevy vzťah. Z hosťa stály klient.', 'Turn a visit into a relationship. A guest into a regular.'); ?></h2>
     <p class="os-lead"><?php echo hg_lang('Vernosť nevzniká náhodou. Budujte ju naprieč celou prevádzkou — od malého bistra po hotelový rezort. Jeden vernostný ekosystém pre všetky moduly Ellipse, online aj osobne.', 'Loyalty does not happen by chance. Build it across your business, from a small bistro to a hotel resort. One loyalty ecosystem for every Ellipse module, online and in person.'); ?></p>
@@ -290,7 +238,7 @@ $fragment = function ($file, $sw, $sh, $x, $y, $w, $h, $alt, $eager = false) {
     <div class="os-actions"><a class="button" href="/kontakt/"><?php echo hg_lang('Ukážte mi Ellipse Loyalty', 'Show me Ellipse Loyalty'); ?></a></div>
   </section>
 
-  <section class="os-team" id="team" aria-label="Ellipse Team">
+  <section class="os-team" id="team" data-tour-panel role="tabpanel" aria-labelledby="tour-tab-team" hidden aria-label="Ellipse Team">
     <p class="os-kicker">Ellipse Team</p>
     <h2><?php echo hg_lang('Vaša prevádzka sa presúva do mobilu.', 'Your operation moves into the phone.'); ?></h2>
     <p class="os-lead"><?php echo hg_lang('Na stretnutí, počas behania aj večer na gauči máte hotel alebo gastro prevádzku pod kontrolou.', 'In a meeting, while running around or on the sofa at night, the hotel or F&B operation stays under control.'); ?></p>
@@ -301,8 +249,8 @@ $fragment = function ($file, $sw, $sh, $x, $y, $w, $h, $alt, $eager = false) {
     </div>
   </section>
 
-<section class="em-pos" id="pos" aria-label="Ellipse POS"><p class="os-kicker">Ellipse POS</p><h2><?php echo hg_lang('Od objednávky po zaplatený účet.', 'From the first order to the final payment.'); ?></h2><p class="os-lead"><?php echo hg_lang('Stoly, objednávky aj uzávierky priamo v ruke. Pozrite si skutočné prostredie Ellipse POS — prehľadne a do detailu.', 'Tables, orders and closing reports in your hand. Explore the real Ellipse POS interface in detail.'); ?></p><div class="em-showcase"><div class="em-controls"><span><?php echo hg_lang('Skutočné obrazovky. Každý detail.', 'Real screens. Every detail.'); ?></span><button type="button" data-mobile-prev aria-label="<?php echo hg_lang('Predchádzajúce obrazovky', 'Previous screens'); ?>"><svg class="hg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M19 12H5m6-6-6 6 6 6"/></svg></button><button type="button" data-mobile-next aria-label="<?php echo hg_lang('Ďalšie obrazovky', 'Next screens'); ?>"><svg class="hg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button></div><div class="em-rail" tabindex="0" aria-label="Ellipse POS"><figure class="em-shot"><button class="em-phone" type="button" data-screen-open aria-label="<?php echo hg_lang('Zväčšiť: Prehľad stolov', 'Enlarge: Table overview'); ?>"><img src="<?php echo hg_esc(hg_asset('pos/pos2.webp')); ?>" width="460" height="996" alt="Ellipse POS — <?php echo hg_lang('Prehľad stolov', 'Table overview'); ?>" loading="lazy" decoding="async"></button><figcaption><?php echo hg_lang('Prehľad stolov', 'Table overview'); ?></figcaption></figure><figure class="em-shot"><button class="em-phone" type="button" data-screen-open aria-label="<?php echo hg_lang('Zväčšiť: Objednávka pri stole', 'Enlarge: Table ordering'); ?>"><img src="<?php echo hg_esc(hg_asset('pos/pos.webp')); ?>" width="460" height="996" alt="Ellipse POS — <?php echo hg_lang('Objednávka pri stole', 'Table ordering'); ?>" loading="lazy" decoding="async"></button><figcaption><?php echo hg_lang('Objednávka pri stole', 'Table ordering'); ?></figcaption></figure><figure class="em-shot"><button class="em-phone" type="button" data-screen-open aria-label="<?php echo hg_lang('Zväčšiť: Správa a rozdelenie účtu', 'Enlarge: Manage and split bills'); ?>"><img src="<?php echo hg_esc(hg_asset('pos/pos14.webp')); ?>" width="885" height="1920" alt="Ellipse POS — <?php echo hg_lang('Správa a rozdelenie účtu', 'Manage and split bills'); ?>" loading="lazy" decoding="async"></button><figcaption><?php echo hg_lang('Správa a rozdelenie účtu', 'Manage and split bills'); ?></figcaption></figure><figure class="em-shot"><button class="em-phone" type="button" data-screen-open aria-label="<?php echo hg_lang('Zväčšiť: Platba na izbu a ďalšie možnosti', 'Enlarge: Room charges and payment options'); ?>"><img src="<?php echo hg_esc(hg_asset('pos/pos13.webp')); ?>" width="885" height="1920" alt="Ellipse POS — <?php echo hg_lang('Platba na izbu a ďalšie možnosti', 'Room charges and payment options'); ?>" loading="lazy" decoding="async"></button><figcaption><?php echo hg_lang('Platba na izbu a ďalšie možnosti', 'Room charges and payment options'); ?></figcaption></figure><figure class="em-shot"><button class="em-phone" type="button" data-screen-open aria-label="<?php echo hg_lang('Zväčšiť: Detail dokladu', 'Enlarge: Receipt detail'); ?>"><img src="<?php echo hg_esc(hg_asset('pos/pos10.webp')); ?>" width="885" height="1920" alt="Ellipse POS — <?php echo hg_lang('Detail dokladu', 'Receipt detail'); ?>" loading="lazy" decoding="async"></button><figcaption><?php echo hg_lang('Detail dokladu', 'Receipt detail'); ?></figcaption></figure><figure class="em-shot"><button class="em-phone" type="button" data-screen-open aria-label="<?php echo hg_lang('Zväčšiť: Úhrada faktúry', 'Enlarge: Invoice payment'); ?>"><img src="<?php echo hg_esc(hg_asset('pos/pos11.webp')); ?>" width="885" height="1920" alt="Ellipse POS — <?php echo hg_lang('Úhrada faktúry', 'Invoice payment'); ?>" loading="lazy" decoding="async"></button><figcaption><?php echo hg_lang('Úhrada faktúry', 'Invoice payment'); ?></figcaption></figure><figure class="em-shot"><button class="em-phone" type="button" data-screen-open aria-label="<?php echo hg_lang('Zväčšiť: Vklad a výber hotovosti', 'Enlarge: Cash deposits and withdrawals'); ?>"><img src="<?php echo hg_esc(hg_asset('pos/pos12.webp')); ?>" width="885" height="1920" alt="Ellipse POS — <?php echo hg_lang('Vklad a výber hotovosti', 'Cash deposits and withdrawals'); ?>" loading="lazy" decoding="async"></button><figcaption><?php echo hg_lang('Vklad a výber hotovosti', 'Cash deposits and withdrawals'); ?></figcaption></figure><figure class="em-shot"><button class="em-phone" type="button" data-screen-open aria-label="<?php echo hg_lang('Zväčšiť: Tržby a uzávierky', 'Enlarge: Sales and closing reports'); ?>"><img src="<?php echo hg_esc(hg_asset('pos/pos3.webp')); ?>" width="460" height="996" alt="Ellipse POS — <?php echo hg_lang('Tržby a uzávierky', 'Sales and closing reports'); ?>" loading="lazy" decoding="async"></button><figcaption><?php echo hg_lang('Tržby a uzávierky', 'Sales and closing reports'); ?></figcaption></figure><figure class="em-shot"><button class="em-phone" type="button" data-screen-open aria-label="<?php echo hg_lang('Zväčšiť: Prihlásenie do Ellipse POS', 'Enlarge: Sign in to Ellipse POS'); ?>"><img src="<?php echo hg_esc(hg_asset('pos/pos-login.png')); ?>" width="1179" height="2556" alt="Ellipse POS — <?php echo hg_lang('Prihlásenie do Ellipse POS', 'Sign in to Ellipse POS'); ?>" loading="lazy" decoding="async"></button><figcaption><?php echo hg_lang('Prihlásenie do Ellipse POS', 'Sign in to Ellipse POS'); ?></figcaption></figure></div></div><div class="os-actions"><a class="button ghost" href="/pos-systemy/"><?php echo hg_lang('Objavte Ellipse POS', 'Discover Ellipse POS'); ?></a></div></section>
-  <section class="os-reviews" id="recenzie" aria-label="<?php echo hg_lang('Recenzie', 'Reviews'); ?>">
+<section class="em-pos" id="pos" data-tour-panel role="tabpanel" aria-labelledby="tour-tab-pos" hidden aria-label="Ellipse POS"><p class="os-kicker">Ellipse POS</p><h2><?php echo hg_lang('Od objednávky po zaplatený účet.', 'From the first order to the final payment.'); ?></h2><p class="os-lead"><?php echo hg_lang('Stoly, objednávky aj uzávierky priamo v ruke. Pozrite si skutočné prostredie Ellipse POS — prehľadne a do detailu.', 'Tables, orders and closing reports in your hand. Explore the real Ellipse POS interface in detail.'); ?></p><div class="em-showcase"><div class="em-controls"><span><?php echo hg_lang('Skutočné obrazovky. Každý detail.', 'Real screens. Every detail.'); ?></span><button type="button" data-mobile-prev aria-label="<?php echo hg_lang('Predchádzajúce obrazovky', 'Previous screens'); ?>"><svg class="hg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M19 12H5m6-6-6 6 6 6"/></svg></button><button type="button" data-mobile-next aria-label="<?php echo hg_lang('Ďalšie obrazovky', 'Next screens'); ?>"><svg class="hg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button></div><div class="em-rail" tabindex="0" aria-label="Ellipse POS"><figure class="em-shot"><button class="em-phone" type="button" data-screen-open aria-label="<?php echo hg_lang('Zväčšiť: Prehľad stolov', 'Enlarge: Table overview'); ?>"><img src="<?php echo hg_esc(hg_asset('pos/pos2.webp')); ?>" width="460" height="996" alt="Ellipse POS — <?php echo hg_lang('Prehľad stolov', 'Table overview'); ?>" loading="lazy" decoding="async"></button><figcaption><?php echo hg_lang('Prehľad stolov', 'Table overview'); ?></figcaption></figure><figure class="em-shot"><button class="em-phone" type="button" data-screen-open aria-label="<?php echo hg_lang('Zväčšiť: Objednávka pri stole', 'Enlarge: Table ordering'); ?>"><img src="<?php echo hg_esc(hg_asset('pos/pos.webp')); ?>" width="460" height="996" alt="Ellipse POS — <?php echo hg_lang('Objednávka pri stole', 'Table ordering'); ?>" loading="lazy" decoding="async"></button><figcaption><?php echo hg_lang('Objednávka pri stole', 'Table ordering'); ?></figcaption></figure><figure class="em-shot"><button class="em-phone" type="button" data-screen-open aria-label="<?php echo hg_lang('Zväčšiť: Správa a rozdelenie účtu', 'Enlarge: Manage and split bills'); ?>"><img src="<?php echo hg_esc(hg_asset('pos/pos14.webp')); ?>" width="885" height="1920" alt="Ellipse POS — <?php echo hg_lang('Správa a rozdelenie účtu', 'Manage and split bills'); ?>" loading="lazy" decoding="async"></button><figcaption><?php echo hg_lang('Správa a rozdelenie účtu', 'Manage and split bills'); ?></figcaption></figure><figure class="em-shot"><button class="em-phone" type="button" data-screen-open aria-label="<?php echo hg_lang('Zväčšiť: Platba na izbu a ďalšie možnosti', 'Enlarge: Room charges and payment options'); ?>"><img src="<?php echo hg_esc(hg_asset('pos/pos13.webp')); ?>" width="885" height="1920" alt="Ellipse POS — <?php echo hg_lang('Platba na izbu a ďalšie možnosti', 'Room charges and payment options'); ?>" loading="lazy" decoding="async"></button><figcaption><?php echo hg_lang('Platba na izbu a ďalšie možnosti', 'Room charges and payment options'); ?></figcaption></figure><figure class="em-shot"><button class="em-phone" type="button" data-screen-open aria-label="<?php echo hg_lang('Zväčšiť: Detail dokladu', 'Enlarge: Receipt detail'); ?>"><img src="<?php echo hg_esc(hg_asset('pos/pos10.webp')); ?>" width="885" height="1920" alt="Ellipse POS — <?php echo hg_lang('Detail dokladu', 'Receipt detail'); ?>" loading="lazy" decoding="async"></button><figcaption><?php echo hg_lang('Detail dokladu', 'Receipt detail'); ?></figcaption></figure><figure class="em-shot"><button class="em-phone" type="button" data-screen-open aria-label="<?php echo hg_lang('Zväčšiť: Úhrada faktúry', 'Enlarge: Invoice payment'); ?>"><img src="<?php echo hg_esc(hg_asset('pos/pos11.webp')); ?>" width="885" height="1920" alt="Ellipse POS — <?php echo hg_lang('Úhrada faktúry', 'Invoice payment'); ?>" loading="lazy" decoding="async"></button><figcaption><?php echo hg_lang('Úhrada faktúry', 'Invoice payment'); ?></figcaption></figure><figure class="em-shot"><button class="em-phone" type="button" data-screen-open aria-label="<?php echo hg_lang('Zväčšiť: Vklad a výber hotovosti', 'Enlarge: Cash deposits and withdrawals'); ?>"><img src="<?php echo hg_esc(hg_asset('pos/pos12.webp')); ?>" width="885" height="1920" alt="Ellipse POS — <?php echo hg_lang('Vklad a výber hotovosti', 'Cash deposits and withdrawals'); ?>" loading="lazy" decoding="async"></button><figcaption><?php echo hg_lang('Vklad a výber hotovosti', 'Cash deposits and withdrawals'); ?></figcaption></figure><figure class="em-shot"><button class="em-phone" type="button" data-screen-open aria-label="<?php echo hg_lang('Zväčšiť: Tržby a uzávierky', 'Enlarge: Sales and closing reports'); ?>"><img src="<?php echo hg_esc(hg_asset('pos/pos3.webp')); ?>" width="460" height="996" alt="Ellipse POS — <?php echo hg_lang('Tržby a uzávierky', 'Sales and closing reports'); ?>" loading="lazy" decoding="async"></button><figcaption><?php echo hg_lang('Tržby a uzávierky', 'Sales and closing reports'); ?></figcaption></figure><figure class="em-shot"><button class="em-phone" type="button" data-screen-open aria-label="<?php echo hg_lang('Zväčšiť: Prihlásenie do Ellipse POS', 'Enlarge: Sign in to Ellipse POS'); ?>"><img src="<?php echo hg_esc(hg_asset('pos/pos-login.png')); ?>" width="1179" height="2556" alt="Ellipse POS — <?php echo hg_lang('Prihlásenie do Ellipse POS', 'Sign in to Ellipse POS'); ?>" loading="lazy" decoding="async"></button><figcaption><?php echo hg_lang('Prihlásenie do Ellipse POS', 'Sign in to Ellipse POS'); ?></figcaption></figure></div></div><div class="os-actions"><a class="button ghost" href="/pos-systemy/"><?php echo hg_lang('Objavte Ellipse POS', 'Discover Ellipse POS'); ?></a></div></section>
+  <section class="os-reviews" id="recenzie" data-tour-panel role="tabpanel" aria-labelledby="tour-tab-recenzie" hidden aria-label="<?php echo hg_lang('Recenzie', 'Reviews'); ?>">
     <p class="os-kicker"><?php echo hg_lang('Online reputácia', 'Online reputation'); ?></p>
     <h2><?php echo hg_lang('Recenzie pod kontrolou z jedného miesta.', 'Reviews under control from one place.'); ?></h2>
     <p class="os-lead"><?php echo hg_lang('Centralizovaná správa online recenzií, AI návrhy odpovedí a odoslanie odpovedí späť na portály.', 'Centralised online review management, AI reply drafts and sending replies back to the portals.'); ?></p>
@@ -325,111 +273,32 @@ $fragment = function ($file, $sw, $sh, $x, $y, $w, $h, $alt, $eager = false) {
     </ol>
   </section>
 
-  <section class="os-ai" id="ella" aria-label="<?php echo hg_lang('Ellipse Intelligence', 'Ellipse Intelligence'); ?>">
-    <p class="os-kicker"><?php echo hg_lang('Ellipse Intelligence', 'Ellipse Intelligence'); ?></p>
-    <h2><?php echo hg_lang('Dáta, ktoré už iba neležia v systéme. Pracujú pre vás.', 'Data that no longer just sits in the system. It works for you.'); ?></h2>
-    <p class="os-lead"><?php echo hg_lang('Ella AI, AI komunikácia, návrhy odpovedí na recenzie, analytika a automatizácie — vždy s konkrétnou úlohou a výsledkom.', 'Ella AI, AI messaging, review reply drafts, analytics and automations — always with a concrete task and outcome.'); ?></p>
-    <?php if ($claudeScene): ?>
-    <article class="os-ai-task">
-      <p class="os-kicker"><?php echo hg_esc($claudeScene['kicker']); ?></p>
-      <h3><?php echo hg_lang('Úloha', 'Task'); ?></h3>
-      <p><?php echo hg_esc($claudeScene['prompt']); ?></p>
-      <h3><?php echo hg_lang('Výsledok', 'Outcome'); ?></h3>
-      <p><?php echo hg_esc($claudeScene['answer']); ?></p>
-    </article>
-    <?php endif; ?>
-    <div class="os-actions">
-      <a class="button" href="/virtualna-recepcia-ella-ai/"><?php echo hg_lang('Pozrieť Ellu AI', 'See Ella AI'); ?></a>
-    </div>
-  </section>
+  </div></section>
 
-  <section class="os-mcp" id="mcp" aria-label="<?php echo hg_lang('MCP', 'MCP'); ?>">
-    <p class="os-kicker"><?php echo hg_lang('MCP — AI-ready platforma', 'MCP — AI-ready platform'); ?></p>
-    <h2><?php echo hg_lang('Vaše hotelové dáta pripravené pre svet AI.', 'Your hotel data ready for the world of AI.'); ?></h2>
+
+  <section class="os-mcp eh-ai-compact" id="mcp" aria-label="<?php echo hg_lang('MCP', 'MCP'); ?>">
+    <span id="ella"></span><p class="os-kicker">ELLA AI + MCP</p>
+    <h2><?php echo hg_lang('Opýtajte sa svojich dát.', 'Ask your data.'); ?></h2>
     <p class="os-lead"><?php echo hg_lang('Cez MCP môže oprávnený AI nástroj bezpečne pracovať s funkciami a dátami Ellipse bez komplikovaných ručných exportov.', 'Through MCP, an authorised AI tool can work safely with Ellipse functions and data — without awkward manual exports.'); ?></p>
-    <div class="os-mcp-flow" aria-hidden="false">
-      <span>Ellipse</span>
 
-      <span>MCP</span>
 
-      <span><?php echo hg_lang('AI agent / analytika', 'AI agent / analytics'); ?></span>
-    </div>
-    <?php if ($claudeScene): ?>
-    <article class="os-ai-task">
-      <p><?php echo hg_lang('Príklad: spýtate sa Claude na dochádzku housekeepingu. Model načíta príchody a odchody z Ellipse a pripraví rozpis síl po dňoch — na schválenie, nie tichý zápis.', 'Example: you ask Claude for a housekeeping rota. The model loads arrivals and departures from Ellipse and drafts staffing by day — for approval, not a silent write.'); ?></p>
-    </article>
-    <?php endif; ?>
-    <div class="er-mcp-gallery">
-      <figure class="er-mcp er-original"><figcaption><span>Ellipse × Claude</span><strong><?php echo hg_lang('Od otázky k analýze obsadenosti a predaja.', 'From a question to occupancy and sales analysis.'); ?></strong></figcaption><button type="button" data-screen-open aria-label="<?php echo hg_lang('Zväčšiť ukážku MCP v Claude', 'Enlarge the MCP example in Claude'); ?>"><img src="<?php echo hg_esc(hg_asset('product-originals/claude-analysis.webp')); ?>" width="1920" height="979" alt="<?php echo hg_lang('Od otázky k analýze obsadenosti a predaja.', 'From a question to occupancy and sales analysis.'); ?>" loading="lazy" decoding="async"></button><a href="<?php echo hg_esc(hg_asset('product-originals/claude-analysis.webp')); ?>" target="_blank" rel="noopener"><?php echo hg_lang('Otvoriť originálny screenshot', 'Open the original screenshot'); ?> <svg class="hg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17 17 7M7 7h10v10"/></svg></a></figure>
-      <figure class="er-mcp er-original"><figcaption><span>Ellipse × Claude</span><strong><?php echo hg_lang('Od analýzy dát k návrhu rozpisu tímu.', 'From data analysis to a proposed team rota.'); ?></strong></figcaption><button type="button" data-screen-open aria-label="<?php echo hg_lang('Zväčšiť ukážku MCP v Claude', 'Enlarge the MCP example in Claude'); ?>"><img src="<?php echo hg_esc(hg_asset('product-originals/claude-workflow.webp')); ?>" width="1920" height="981" alt="<?php echo hg_lang('Od analýzy dát k návrhu rozpisu tímu.', 'From data analysis to a proposed team rota.'); ?>" loading="lazy" decoding="async"></button><a href="<?php echo hg_esc(hg_asset('product-originals/claude-workflow.webp')); ?>" target="_blank" rel="noopener"><?php echo hg_lang('Otvoriť originálny screenshot', 'Open the original screenshot'); ?> <svg class="hg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17 17 7M7 7h10v10"/></svg></a></figure>
+    <div class="er-mcp-switch" role="group" aria-label="<?php echo hg_lang('Ukážky MCP', 'MCP examples'); ?>">
+<button type="button" data-mcp-slide="0" aria-pressed="true" aria-controls="mcp-example-0"><?php echo hg_lang('Analýza obsadenosti', 'Occupancy analysis'); ?></button>
+<button type="button" data-mcp-slide="1" aria-pressed="false" aria-controls="mcp-example-1"><?php echo hg_lang('Plánovanie tímu', 'Team planning'); ?></button>
+</div><div class="er-mcp-gallery">
+      <figure class="er-mcp er-original" id="mcp-example-0"><figcaption><span>Ellipse × Claude</span><strong><?php echo hg_lang('Od otázky k analýze obsadenosti a predaja.', 'From a question to occupancy and sales analysis.'); ?></strong></figcaption><button type="button" data-screen-open aria-label="<?php echo hg_lang('Zväčšiť ukážku MCP v Claude', 'Enlarge the MCP example in Claude'); ?>"><img src="<?php echo hg_esc(hg_asset('product-originals/claude-analysis.webp')); ?>" width="1920" height="979" alt="<?php echo hg_lang('Od otázky k analýze obsadenosti a predaja.', 'From a question to occupancy and sales analysis.'); ?>" loading="lazy" decoding="async"></button><a href="<?php echo hg_esc(hg_asset('product-originals/claude-analysis.webp')); ?>" target="_blank" rel="noopener"><?php echo hg_lang('Otvoriť originálny screenshot', 'Open the original screenshot'); ?> <svg class="hg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17 17 7M7 7h10v10"/></svg></a></figure>
+      <figure class="er-mcp er-original" id="mcp-example-1" hidden><figcaption><span>Ellipse × Claude</span><strong><?php echo hg_lang('Od analýzy dát k návrhu rozpisu tímu.', 'From data analysis to a proposed team rota.'); ?></strong></figcaption><button type="button" data-screen-open aria-label="<?php echo hg_lang('Zväčšiť ukážku MCP v Claude', 'Enlarge the MCP example in Claude'); ?>"><img src="<?php echo hg_esc(hg_asset('product-originals/claude-workflow.webp')); ?>" width="1920" height="981" alt="<?php echo hg_lang('Od analýzy dát k návrhu rozpisu tímu.', 'From data analysis to a proposed team rota.'); ?>" loading="lazy" decoding="async"></button><a href="<?php echo hg_esc(hg_asset('product-originals/claude-workflow.webp')); ?>" target="_blank" rel="noopener"><?php echo hg_lang('Otvoriť originálny screenshot', 'Open the original screenshot'); ?> <svg class="hg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17 17 7M7 7h10v10"/></svg></a></figure>
     </div>
     <p class="os-mcp-note"><?php echo hg_lang('Údaje odchádzajú anonymizované, bez mien hostí. Výstup je odporúčanie. Rozhodnutie ostáva na vás.', 'Data leaves anonymised, without guest names. The output is advice. The decision stays with you.'); ?></p>
-    <div class="os-actions">
+    <div class="os-actions"><a class="button ghost" href="/virtualna-recepcia-ella-ai/">Ella AI</a>
       <a class="button" href="/virtualna-recepcia-ella-ai/"><?php echo hg_lang('Pozrieť MCP a Ellu', 'See MCP and Ella'); ?></a>
       <a class="button ghost" href="<?php echo hg_esc($mcpArticle); ?>"><?php echo hg_lang('Návod v článku', 'Guide in the article'); ?></a>
     </div>
   </section>
 
-  <section class="os-case" id="referencie" aria-label="<?php echo hg_lang('Príbeh z praxe', 'Story from the field'); ?>">
-    <p class="os-kicker"><?php echo hg_lang('Príbeh klienta · revPRO', 'Client story · revPRO'); ?></p>
-    <h2><?php echo hg_lang('Dva rovnaké apartmány. Jeden s revPRO. +600 € za dva týždne.', 'Two identical apartments. One with revPRO. +€600 in two weeks.'); ?></h2>
-    <p class="os-lead"><?php echo hg_lang('Jeden klient otestoval revPRO na jednom z dvoch identických apartmánov. Východiskové podmienky boli rovnaké — výsledok nie.', 'One client tested revPRO on one of two identical apartments. Starting conditions were the same — the outcome was not.'); ?></p>
-    <div class="os-case-grid">
-      <div>
-        <h3><?php echo hg_lang('Prevádzka', 'Property'); ?></h3>
-        <p><?php echo hg_lang('Apartmánový ubytovateľ, dva identické apartmány, test od konca júla.', 'Apartment operator, two identical apartments, test from late July.'); ?></p>
-        <h3><?php echo hg_lang('Problém', 'Problem'); ?></h3>
-        <p><?php echo hg_lang('Predaj cez externý kanál so zľavami plnil kapacitu, ale izby išli často lacnejšie, než trh dovolil.', 'Sales through an external discount channel filled capacity, but rooms often sold cheaper than the market allowed.'); ?></p>
-        <h3><?php echo hg_lang('Nový workflow', 'New workflow'); ?></h3>
-        <p><?php echo hg_lang('Zľavy vypol, nastavil pravidlá v revPRO a denne kontroloval navrhované ceny podľa obsadenosti, sentimentu a sezóny.', 'He turned discounts off, set rules in revPRO and checked proposed rates daily against occupancy, sentiment and season.'); ?></p>
-      </div>
-      <div>
-        <ul class="os-case-results">
-          <li><b>2 000 €</b> <span><?php echo hg_lang('vypredaná kapacita na oboch apartmánoch na začiatku', 'sold capacity on both apartments at the start'); ?></span></li>
-          <li><b>+600 €</b> <span><?php echo hg_lang('vyššie tržby na apartmáne s revPRO po dvoch týždňoch', 'higher revenue on the revPRO apartment after two weeks'); ?></span></li>
-          <li><b>6</b> <span><?php echo hg_lang('rovnakých voľných izbonocí zostalo na oboch — rozdiel bol v cene, nie v obsadenosti', 'identical free room-nights left on both — the gap was price, not occupancy'); ?></span></li>
-        </ul>
-        <p class="os-case-note"><?php echo hg_lang('Výsledok konkrétneho klienta z článku, nie prísľub pre každú prevádzku.', 'A specific client result from the article, not a promise for every property.'); ?></p>
-      </div>
-    </div>
-    <blockquote>
-      <p><?php echo hg_esc($trust['quote']); ?></p>
-      <cite class="os-quote-attribution"><b><?php echo hg_esc($trust['author']); ?></b><?php if (!empty($trust['place'])): ?> · <span><?php echo hg_esc($trust['place']); ?></span><?php endif; ?></cite>
-    </blockquote>
-    <div class="os-actions">
-      <a class="button ghost" href="<?php echo hg_esc($revproCase); ?>"><?php echo hg_lang('Prečítať celý príbeh', 'Read the full story'); ?></a>
-      <a class="button ghost" href="/vynosovy-modul-revpro/">revPRO</a>
-    </div>
-  </section>
+  
 
-  <section class="os-segments" id="segmenty" aria-label="<?php echo hg_lang('Pre koho je Ellipse', 'Who Ellipse is for'); ?>">
-    <p class="os-kicker"><?php echo hg_lang('Pre koho je Ellipse', 'Who Ellipse is for'); ?></p>
-    <h2><?php echo hg_lang('Ellipse sa prispôsobí. Nie naopak.', 'Ellipse adapts. Not the other way around.'); ?></h2>
-    <div class="os-segment-tabs" role="tablist">
-      <?php foreach ($segmentUi as $i => $seg):
-        $tabId = 'seg-'.$i;
-      ?>
-      <button type="button" role="tab" id="<?php echo hg_esc($tabId.'-tab'); ?>" aria-controls="<?php echo hg_esc($tabId.'-panel'); ?>" data-os-tab="<?php echo hg_esc($tabId); ?>" aria-selected="<?php echo $i === 0 ? 'true' : 'false'; ?>" tabindex="<?php echo $i === 0 ? '0' : '-1'; ?>"<?php echo $i === 0 ? ' class="is-on"' : ''; ?>><?php echo hg_esc($seg['tab']); ?></button>
-      <?php endforeach; ?>
-    </div>
-    <?php foreach ($segmentUi as $i => $seg):
-      $tabId = 'seg-'.$i;
-    ?>
-    <div class="os-segment-panel<?php echo $i === 0 ? ' is-on' : ''; ?>" id="<?php echo hg_esc($tabId.'-panel'); ?>" data-os-panel="<?php echo hg_esc($tabId); ?>" role="tabpanel" aria-labelledby="<?php echo hg_esc($tabId.'-tab'); ?>">
-      <p class="os-kicker"><?php echo hg_esc($seg['kicker']); ?></p>
-      <h3><?php echo nl2br(hg_esc($seg['title'])); ?></h3>
-      <p class="os-lead"><?php echo hg_esc($seg['lead']); ?></p>
-      <?php if (!empty($seg['points'])): ?>
-      <ul>
-        <?php foreach ($seg['points'] as $point): ?><li><?php echo hg_esc($point); ?></li><?php endforeach; ?>
-      </ul>
-      <?php endif; ?>
-      <div class="os-actions">
-        <a class="button" href="<?php echo hg_esc($seg['href']); ?>"><?php echo hg_esc($seg['cta']); ?></a>
-      </div>
-    </div>
-    <?php endforeach; ?>
-  </section>
+  
 
   <section class="os-integrations" id="integracie" aria-label="<?php echo hg_lang('Integrácie', 'Integrations'); ?>">
     <p class="os-kicker"><?php echo hg_lang('Integrácie', 'Integrations'); ?></p>
@@ -445,27 +314,9 @@ $fragment = function ($file, $sw, $sh, $x, $y, $w, $h, $alt, $eager = false) {
     <div class="os-actions"><a class="button ghost" href="/kontakt/"><?php echo hg_lang('Overiť konkrétnu integráciu', 'Check a specific integration'); ?></a></div>
   </section>
 
-  <section class="os-security" id="dovera" aria-label="<?php echo hg_lang('Bezpečnosť a dôvera', 'Security and trust'); ?>">
-    <p class="os-kicker"><?php echo hg_lang('Dôvera a infraštruktúra', 'Trust and infrastructure'); ?></p>
-    <h2><?php echo hg_lang('Spoľahlivé zázemie pre vašu prevádzku.', 'A reliable foundation for your operation.'); ?></h2>
-    <ul class="os-security-facts">
-      <li><b><?php echo hg_lang('Cloudová platforma', 'Cloud platform'); ?></b><span><?php echo hg_lang('Ellipse beží v prehliadači; tím má aj natívnu mobilnú aplikáciu.', 'Ellipse runs in the browser; the team also has a native mobile app.'); ?></span></li>
-      <li><b><?php echo hg_lang('Jedny dáta', 'One data set'); ?></b><span><?php echo hg_lang('Rezervácia, platba, správa aj účet hosťa zostávajú v jednom systéme.', 'The reservation, payment, message and guest folio stay in one system.'); ?></span></li>
-      <li><b>350+</b><span><?php echo hg_lang('integrácií s predajnými a prevádzkovými partnermi', 'integrations with sales and operations partners'); ?></span></li>
-      <li><b><?php echo hg_lang('MCP s kontrolou', 'MCP with control'); ?></b><span><?php echo hg_lang('AI dostáva anonymizované prevádzkové dáta; rozhodnutie ostáva na vás.', 'AI receives anonymised operational data; the decision stays with you.'); ?></span></li>
-    </ul>
-  </section>
+  
 
-  <section class="eh-problems" id="problemy">
-    <p class="os-kicker"><?php echo hg_lang('Riešenia z praxe', 'Practical solutions'); ?></p>
-    <h2><?php echo hg_lang('Čo dnes brzdí vašu prevádzku?', 'What is holding your business back?'); ?></h2>
-    <p class="os-lead"><?php echo hg_lang('Konkrétne hotelové a HORECA problémy. Postupy, ktoré vám pomôžu ušetriť čas, získať prehľad a lepšie predávať.', 'Real hospitality challenges. Practical ways to save time, gain clarity and improve sales.'); ?></p>
-    <div class="eh-problem-grid">
-    <?php require_once __DIR__.'/hg-blog-data.php'; foreach (array_slice(hg_problem_topics(),0,6,true) as $key => $topic): ?>
-      <a href="/blog/?tema=problemy&amp;problem=<?php echo hg_esc($key); ?>"><span><?php echo hg_esc($topic['eyebrow']); ?></span><h3><?php echo hg_esc($topic['title']); ?></h3><p><?php echo hg_esc($topic['lead']); ?></p><b><?php echo hg_lang('Pozrieť riešenia', 'Explore solutions'); ?> <svg class="hg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17 17 7M7 7h10v10"/></svg></b></a>
-    <?php endforeach; ?></div>
-    <div class="os-actions"><a class="button ghost" href="/blog/?tema=problemy"><?php echo hg_lang('Všetky problémy a riešenia', 'All challenges and solutions'); ?></a></div>
-  </section>
+  
 
   <section class="os-faq" id="faq" aria-label="<?php echo hg_lang('Časté otázky', 'FAQ'); ?>">
     <p class="os-kicker"><?php echo hg_lang('Časté otázky', 'Common questions'); ?></p>

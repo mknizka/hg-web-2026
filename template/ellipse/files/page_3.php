@@ -1,3 +1,4 @@
+<?php if (isset($content['sef']) && trim($content['sef'], '/') === 'kontakt') { include __DIR__.'/hg-contact.php'; return; } ?>
 <main>
   <section id="page" class="demo">
     <div class="container-fluid wrapper-30-0" id="contact">

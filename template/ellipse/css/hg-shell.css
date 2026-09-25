@@ -65,3 +65,41 @@ body.hg-mkt .article-emotions .emotion-count{font-size:13px;font-weight:650;line
 body.hg-mkt .article-emotions .hg-reaction-svg{width:25px;height:25px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;pointer-events:none}
 body.hg-mkt .article-emotions .emotions-message{margin-top:16px;font-size:14px;font-weight:600}
 @media(max-width:520px){body.hg-mkt .article-emotions{padding:20px 14px}body.hg-mkt .article-emotions .emotions-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+@media(min-width:1081px){body:is(.homepage,.hg-mkt) header.nav{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr)}body:is(.homepage,.hg-mkt) header.nav #site-nav{margin:0;justify-self:center}body:is(.homepage,.hg-mkt) header.nav .nav-actions{margin:0;justify-self:end}}
+body.hg-mkt .ec-contact{background:#fff;color:#081434}
+body.hg-mkt .ec-contact section{opacity:1!important;transform:none!important;min-height:0;animation:none!important;padding:64px max(24px,calc((100% - 1200px)/2));margin:0}
+body.hg-mkt .ec-contact :is(h1,h2,h3,p){text-align:left;width:auto;max-width:none}
+body.hg-mkt .ec-contact h1{font-size:clamp(36px,4.6vw,64px);line-height:1.08;font-weight:650;letter-spacing:-.045em;margin:20px 0 24px}
+body.hg-mkt .ec-contact h2{font-size:clamp(28px,3vw,42px);font-weight:650;line-height:1.15;margin:16px 0 24px}
+body.hg-mkt .ec-contact h3{font-size:21px;font-weight:650;margin:0 0 16px}
+body.hg-mkt .ec-contact p{font-size:16px;line-height:1.75;color:#667086;margin:0 0 22px}
+body.hg-mkt .ec-contact .kicker{font-size:11px;font-weight:600;letter-spacing:.12em;color:#f2124b;line-height:1.5}
+body.hg-mkt .ec-contact .ec-lead{font-size:19px;max-width:640px}
+body.hg-mkt .ec-contact a{color:inherit;text-decoration:none;font-weight:600;overflow-wrap:anywhere}
+body.hg-mkt .ec-contact a:hover{text-decoration:underline;text-underline-offset:5px}
+body.hg-mkt .ec-contact a:focus-visible{outline:2px solid #f2124b;outline-offset:5px}
+body.hg-mkt .ec-contact-intro{display:grid;grid-template-columns:1.35fr 1fr;gap:64px;background:#f6f7fb}
+body.hg-mkt .ec-next{padding:36px;border-radius:24px;background:#081434;color:#fff}
+body.hg-mkt .ec-next h2{color:#fff;font-size:30px}
+body.hg-mkt .ec-next ol{list-style:none;counter-reset:step;padding:0;margin:0 0 28px}
+body.hg-mkt .ec-next li{position:relative;counter-increment:step;padding:18px 0 18px 42px;border-bottom:1px solid #ffffff24;line-height:1.5}
+body.hg-mkt .ec-next li:before{content:'0' counter(step);position:absolute;left:0;color:#ff5580;font-size:12px;font-weight:600}
+body.hg-mkt .ec-next li b,body.hg-mkt .ec-next li span{display:block;font-size:14px}
+body.hg-mkt .ec-next li span{margin-top:6px;color:#c3cadc;font-size:13px}
+body.hg-mkt .ec-direct{display:flex;flex-wrap:wrap;gap:14px 28px;margin:28px 0}
+body.hg-mkt .ec-contact .ec-note{font-size:13px;margin-top:24px}
+body.hg-mkt .ec-contact-body{display:grid;grid-template-columns:1fr 1.2fr;gap:72px;align-items:start}
+body.hg-mkt .ec-form-card{padding:32px;border:1px solid #e3e7ef;border-radius:24px;background:#fff;box-shadow:0 16px 60px #08143408}
+body.hg-mkt .ec-form-card :is(input:not([type=hidden]),textarea,select){box-sizing:border-box;max-width:100%;border:1px solid #dce1ea;border-radius:10px;background:#f8f9fc;padding:14px;font:inherit;color:#081434}
+body.hg-mkt .ec-form-card textarea{min-height:130px}
+body.hg-mkt .ec-form-card :is(input,textarea,select):focus{outline:2px solid #f2124b;outline-offset:2px}
+body.hg-mkt .ec-people{background:#f6f7fb}
+body.hg-mkt .ec-people-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+body.hg-mkt .ec-people article{padding:28px;background:#fff;border:1px solid #e5e9f0;border-radius:18px}
+body.hg-mkt .ec-people article p,body.hg-mkt .ec-people article a{font-size:13px}
+body.hg-mkt .ec-people article a{display:block;margin-top:14px}
+body.hg-mkt .ec-address{display:grid;grid-template-columns:1fr 1fr;gap:60px}
+body.hg-mkt .ec-address dl{display:grid;grid-template-columns:100px 1fr;gap:18px;align-content:center;font-size:14px}
+body.hg-mkt .ec-address dt{color:#667086}body.hg-mkt .ec-address dd{margin:0;overflow-wrap:anywhere}
+@media(max-width:850px){body.hg-mkt .ec-contact section{padding:40px 22px}body.hg-mkt .ec-contact :is(.ec-contact-intro,.ec-contact-body,.ec-address){grid-template-columns:1fr;gap:28px}body.hg-mkt .ec-people-grid{grid-template-columns:1fr}body.hg-mkt .ec-next,body.hg-mkt .ec-form-card{padding:24px}}
