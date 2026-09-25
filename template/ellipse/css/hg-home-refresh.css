@@ -88,3 +88,10 @@ body .os-home .eh-problems-carousel .eh-problem-grid h3{font-size:19px;line-heig
 body .os-home .eh-problems-carousel .eh-problem-grid p{font-size:13px;line-height:1.6;margin:0 0 18px}
 body .os-home .eh-problems-carousel .eh-problem-grid b{margin-top:auto;font-size:12px}
 @media(max-width:760px){body .os-home .eh-problems-carousel .eh-problem-grid{grid-template-columns:1fr}body .os-home .eh-problem-controls{align-items:flex-start}body .os-home .eh-problems-carousel .eh-problem-grid>a{min-height:0;padding:22px}}
+
+/* Intrinsic-width tracks must escape the legacy global max-width:100% rule. */
+body .os-home .eh-logo-track{display:flex!important;width:max-content!important;max-width:none!important;gap:0!important;flex-wrap:nowrap!important;flex-shrink:0;box-sizing:content-box}
+body .os-home .eh-logo-set{display:flex!important;flex:0 0 auto!important;flex-wrap:nowrap!important;width:max-content!important;max-width:none!important;gap:32px!important;padding:0 32px 0 0!important;margin:0!important;box-sizing:content-box}
+body .os-home .eh-logo-set img{display:block!important;flex:0 0 200px!important;width:200px!important;min-width:200px!important;max-width:200px!important;height:100px!important;min-height:100px!important;max-height:100px!important;aspect-ratio:2/1;object-fit:contain!important;margin:0!important;padding:0!important;transform:none!important;border:0!important;border-radius:0!important;box-shadow:none!important}
+@media(max-width:760px){body .os-home .eh-logo-set{gap:20px!important;padding-right:20px!important}body .os-home .eh-logo-set img{flex-basis:160px!important;width:160px!important;min-width:160px!important;max-width:160px!important;height:80px!important;min-height:80px!important;max-height:80px!important}}
+@media(prefers-reduced-motion:reduce){body .os-home .eh-logo-set[aria-hidden=true]{display:none!important}}

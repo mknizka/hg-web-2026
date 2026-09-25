@@ -1,11 +1,18 @@
 <?php
-// Client media supplied by HORECA GROUP; all items from both shared folders.
+// Normalized 400 × 200 partner originals supplied by HORECA GROUP.
 $ellipseClientLogos = [
- ['00.png','Royal Palace'], ['01.svg','Galicia Nueva'],
- ['02.svg','Plaza Beach Resort'], ['03.png','Dubno eat & sleep'],
- ['04.png','Roset Hotel & Residence'], ['05.png','Hrebienok Resort'],
- ['06.png','Pekyho'], ['07.svg','Damián Jasná'],
- ['08.png','Hotel Elizabeth'], ['09.png','Gino Park Palace'],
- ['10.png','Château Gbeľany'], ['11.png','Hotel Björnson Jasná'],
- ['12.png','Grand Vígľaš'], ['13.svg','Hotel Panorama'],
+ ['partners/royal-palace-turcianske-teplice.png','Royal Palace'],
+ ['partners/galicia-nueva.png','Galicia Nueva'],
+ ['partners/plaza-beach-resort.png','Plaza Beach Resort'],
+ ['partners/dubno-eat-sleep.png','Dubno eat & sleep'],
+ ['partners/roset-hotel.png','Roset Hotel & Residence'],
+ ['partners/hrebienok-resort.png','Hrebienok Resort'],
+ ['partners/pekyho.png','Pekyho'],
+ ['partners/swissotel-damian-jasna.png','Swissôtel Damián Jasná'],
+ ['partners/hotel-elizabeth.png','Hotel Elizabeth'],
+ ['partners/hotel-gino-park-palace.png','Gino Park Palace'],
+ ['partners/chateau-gbelany.png','Château Gbeľany'],
+ ['partners/bjornson-hotel-jasna.png','Hotel Björnson Jasná'],
+ ['partners/grand-viglas.png','Grand Vígľaš'],
+ ['partners/hotel-panorama-strbske-pleso.png','Hotel Panorama'],
 ];

@@ -108,7 +108,7 @@ foreach(array_chunk($homeTopics,6,true) as $pageIndex=>$topicPage): ?>
     <p class="eh-trust-label"><?php echo hg_lang('V dobrej spoločnosti. Prevádzky, ktoré používajú Ellipse.', 'In good company. Businesses powered by Ellipse.'); ?></p>
     <div class="eh-logo-window" data-logo-marquee><div class="eh-logo-track">
       <?php for ($copy=0; $copy<2; $copy++): ?><div class="eh-logo-set"<?php if ($copy) echo ' aria-hidden="true"'; ?>>
-      <?php foreach ($ellipseClientLogos as $logo): ?><img src="<?php echo hg_esc(hg_asset('logos/'.$logo[0])); ?>" alt="<?php echo $copy ? '' : hg_esc($logo[1]); ?>" width="170" height="76" loading="lazy" decoding="async"><?php endforeach; ?>
+      <?php foreach ($ellipseClientLogos as $logo): ?><img src="<?php echo hg_esc(hg_asset('logos/'.$logo[0])); ?>" alt="<?php echo $copy ? '' : hg_esc($logo[1]); ?>" width="400" height="200" loading="lazy" decoding="async"><?php endforeach; ?>
       </div><?php endfor; ?>
     </div></div>
     <button class="eh-motion" type="button" data-logo-pause aria-pressed="false"><?php echo hg_lang('Pozastaviť pohyb', 'Pause motion'); ?></button>
