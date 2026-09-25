@@ -58,5 +58,5 @@
  const root=document.querySelector('.eh-problems-carousel');if(!root)return;
  const panels=Array.from(root.querySelectorAll('[data-problem-panel]'));let index=0;
  function show(delta){index=(index+delta+panels.length)%panels.length;panels.forEach((p,i)=>p.hidden=i!==index);root.querySelector('[data-problem-page]').textContent=(index+1)+' / '+panels.length;}
- root.querySelector('[data-problem-prev]').addEventListener('click',()=>show(-1));root.querySelector('[data-problem-next]').addEventListener('click',()=>show(1));
+ root.querySelector('[data-problem-prev]').addEventListener('click',()=>show(-1));root.querySelector('[data-problem-next]').addEventListener('click',()=>show(1));show(0);
 })();

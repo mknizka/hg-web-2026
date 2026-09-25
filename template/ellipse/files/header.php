@@ -9,13 +9,20 @@
   $hgPath = preg_replace('/\?.*$/', '', (string)$hgPath);
   $hgProblemArchive = isset($content['blog']) && isset($_GET['tema']) && $_GET['tema'] === 'problemy';
   if ($hgProblemArchive) $hgPath = $hgBase.'/blog/?tema=problemy';
+  $hgSolution=null;
+  if (isset($content['blog']) && isset($_GET['riesenie']) && is_string($_GET['riesenie'])) {
+    require_once __DIR__.'/hg-solutions-data.php';
+    foreach(hg_solutions() as $item) if($item['slug']===$_GET['riesenie']) $hgSolution=$item;
+    if($hgSolution) { $hgPath=$hgBase.'/blog/?riesenie='.rawurlencode($hgSolution['slug']); $content['description']=$hgSolution['description']; $content['keywords']=$hgSolution['keywords']; $content['title']=$hgSolution['title']; }
+  }
+
 ?>
 <!DOCTYPE html>
 <html lang="<?php echo hg_esc($hgLang); ?>" dir="ltr">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	  <title><?php if ($hgProblemArchive) echo hg_lang('Aké problémy rieši Ellipse — ', 'Challenges Ellipse solves — '); if(isset($_GET['pa']) && $_GET['pa'] == 'blog'): ?>Novinky a blog<?php endif; echo hg_esc(isset($content['name']) ? $content['name'] : ''); ?> - Ellipse Cloud HORECA GROUP</title>
+    <title><?php echo hg_esc($hgSolution ? $hgSolution['title'] : ($hgProblemArchive ? 'Aké problémy rieši Ellipse' : ($content['name'] ?? 'Novinky a blog'))); ?> - Ellipse Cloud HORECA GROUP</title>
     <meta name="keywords" content="<?php echo hg_esc(isset($content['keywords']) ? $content['keywords'] : ''); ?>">
     <link href="/img/system/favicon.ico" rel="shortcut icon">
     <meta name="description" content="<?php echo hg_esc(isset($content['description']) ? $content['description'] : ''); ?>">
@@ -111,7 +118,7 @@
   <link rel="stylesheet" href="/template/ellipse/css/hg-blog.css?v=1">
   <link rel="stylesheet" href="/template/ellipse/css/hg-typography.css?v=1">
   <link rel="stylesheet" href="/template/ellipse/css/hg-icons.css?v=1">
-<link rel="stylesheet" href="/template/ellipse/css/hg-shell.css?v=3">
+<link rel="stylesheet" href="/template/ellipse/css/hg-shell.css?v=4">
 </head>
   <body class="<?php echo hg_esc(isset($content['content_type']) ? $content['content_type'] : ''); ?> hg-mkt">
     <?php echo themeSetup('extra_body'); ?>

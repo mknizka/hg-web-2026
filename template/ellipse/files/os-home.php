@@ -93,14 +93,9 @@ $fragment = function ($file, $sw, $sh, $x, $y, $w, $h, $alt, $eager = false) {
 
   <section class="eh-problems eh-problems-carousel" id="problemy">
 <p class="os-kicker"><?php echo hg_lang('Riešenia z praxe','Practical solutions'); ?></p><h2><?php echo hg_lang('Čo dnes brzdí vašu prevádzku?','What is holding your business back?'); ?></h2>
-<div class="eh-problem-controls"><p><?php echo hg_lang('Vyberte si tému. Ukážeme vám cestu k riešeniu.','Choose a topic. Discover a way forward.'); ?></p><div><button type="button" data-problem-prev aria-label="<?php echo hg_lang('Predchádzajúce témy','Previous topics'); ?>"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14 6-6 6 6 6"/></svg></button><span data-problem-page aria-live="polite">1 / 2</span><button type="button" data-problem-next aria-label="<?php echo hg_lang('Ďalšie témy','Next topics'); ?>"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m10 6 6 6-6 6"/></svg></button></div></div>
-<?php require_once __DIR__.'/hg-blog-data.php'; $homeTopics=hg_problem_topics();
-$homeTopics+=array(
-'platby'=>array('eyebrow'=>'Platby','title'=>'Platby a účty riešite oddelene?','lead'=>'Prepojte online platby, terminály a hotelový účet.','href'=>'/#platby'),
-'tim'=>array('eyebrow'=>'Tím a úlohy','title'=>'Prevádzku riadite cez desiatky správ?','lead'=>'Úlohy, komunikácia a prehľad prevádzky aj v mobile.','href'=>'/#team'),
-'recenzie'=>array('eyebrow'=>'Spätná väzba','title'=>'Recenzie sa strácajú na portáloch?','lead'=>'Spravujte recenzie a návrhy odpovedí z jedného miesta.','href'=>'/#recenzie'),
-'crm'=>array('eyebrow'=>'Vzťah s hosťom','title'=>'Každý pobyt začínate od nuly?','lead'=>'Spoznajte svojich hostí a nadviažte na ich predošlé návštevy.','href'=>'/#loyalty'),
-'prepojenia'=>array('eyebrow'=>'Integrácie','title'=>'Prepisujete údaje medzi systémami?','lead'=>'Prepojte predaj, platby a nástroje, ktoré už používate.','href'=>'/#integracie'));
+<div class="eh-problem-controls"><p><?php echo hg_lang('Vyberte si tému. Ukážeme vám cestu k riešeniu.','Choose a topic. Discover a way forward.'); ?></p><div><button type="button" data-problem-prev aria-label="<?php echo hg_lang('Predchádzajúce témy','Previous topics'); ?>"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14 6-6 6 6 6"/></svg></button><span data-problem-page aria-live="polite">1 / 6</span><button type="button" data-problem-next aria-label="<?php echo hg_lang('Ďalšie témy','Next topics'); ?>"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m10 6 6 6-6 6"/></svg></button></div></div>
+<?php require_once __DIR__.'/hg-solutions-data.php'; $homeTopics=array();
+foreach(hg_solutions() as $solution) $homeTopics[$solution['slug']]=array('eyebrow'=>implode(' · ',array_slice($solution['roles'],0,2)),'title'=>$solution['title'],'lead'=>$solution['description'],'href'=>'/blog/?riesenie='.rawurlencode($solution['slug']));
 foreach(array_chunk($homeTopics,6,true) as $pageIndex=>$topicPage): ?>
 <div class="eh-problem-grid" data-problem-panel<?php echo $pageIndex?' hidden':''; ?>><?php foreach($topicPage as $key=>$topic): ?><a href="<?php echo hg_esc($topic['href'] ?? '/blog/?tema=problemy&problem='.$key); ?>"><span><?php echo hg_esc($topic['eyebrow']); ?></span><h3><?php echo hg_esc($topic['title']); ?></h3><p><?php echo hg_esc($topic['lead']); ?></p><b><?php echo hg_lang('Pozrieť riešenie','Explore solution'); ?> <span aria-hidden="true">→</span></b></a><?php endforeach; ?></div><?php endforeach; ?>
 </section>

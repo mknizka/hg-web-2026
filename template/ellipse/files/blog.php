@@ -1,5 +1,6 @@
 <?php
 require_once __DIR__.'/hg-blog-data.php';
+if ((isset($_GET['riesenie']) && is_string($_GET['riesenie'])) || (isset($_GET['tema']) && $_GET['tema']==='problemy')) { include __DIR__.'/hg-solutions-view.php'; return; }
 $problemView=isset($_GET['tema']) && is_string($_GET['tema']) && $_GET['tema']==='problemy';
 $topics=hg_problem_topics();
 $problemKey=isset($_GET['problem']) && is_string($_GET['problem']) && isset($topics[$_GET['problem']]) ? $_GET['problem'] : '';

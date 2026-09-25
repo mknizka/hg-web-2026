@@ -3,6 +3,7 @@ require_once __DIR__ . '/hg_site.php';
 $nap = hg_nap();
 $logoSrc = hg_asset('ellipse-logo.svg');
 ?>
+<?php if (empty($_GET['pa']) || $_GET['pa'] !== 'homepage') include __DIR__.'/hg-solutions-carousel.php'; ?>
 <section class="cta hg-sub-cta" id="demo">
   <span class="kicker light"><?php echo hg_lang('Pozrite sa, ako funguje Ellipse', 'See how Ellipse works'); ?></span>
   <h2><?php echo hg_lang('Nebrzdite svoj biznis starým systémom.', 'Do not let an old system hold your business back.'); ?></h2>
