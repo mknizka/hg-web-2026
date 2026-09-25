@@ -256,3 +256,13 @@ body .eq-pause{font:inherit;font-size:11px;color:#bbc6db;background:none;border:
 body .eq-quotes button:focus-visible{outline:2px solid white;outline-offset:3px}
 @media(max-width:600px){body .eq-quotes,body .os-home>.eq-quotes{padding:36px 22px!important}body.hg-mkt .es-footer-card{height:132px}}
 @media(prefers-reduced-motion:reduce){body .eq-slide{transition:none}}
+
+/* Mobile accordions must not inherit desktop dropdown transforms or flex sizing. */
+@media(max-width:1080px){
+ body:is(.homepage,.hg-mkt) header.nav #site-nav>.nav-group{display:block!important;flex:0 0 auto!important;width:100%!important;height:auto!important;min-height:0!important;max-height:none!important;overflow:visible!important}
+ body:is(.homepage,.hg-mkt) header.nav #site-nav .nav-sub{display:none!important;position:static!important;inset:auto!important;transform:none!important;translate:none!important;opacity:1!important;visibility:visible!important;pointer-events:auto!important;width:100%!important;min-width:0!important;max-width:none!important;height:auto!important;min-height:0!important;max-height:none!important;margin:0!important;padding:0 0 14px!important;box-sizing:border-box;overflow:visible!important;transition:none!important;box-shadow:none!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
+ body:is(.homepage,.hg-mkt) header.nav #site-nav .nav-group.is-open>.nav-sub{display:flex!important;flex-direction:column!important;align-items:stretch!important;gap:2px!important}
+ body:is(.homepage,.hg-mkt) header.nav #site-nav .nav-sub a{display:flex!important;align-items:center!important;position:static!important;transform:none!important;opacity:1!important;visibility:visible!important;width:100%!important;height:auto!important;min-height:44px!important;margin:0!important;padding:10px 12px!important;box-sizing:border-box;text-align:left!important;white-space:normal!important;color:#34415b!important;background:#f7f8fb!important;font-size:14px!important;line-height:1.5!important}
+ body:is(.homepage,.hg-mkt) header.nav #site-nav>.nav-mobile-only{flex:0 0 auto!important}
+ body:is(.homepage,.hg-mkt) header.nav .nav-group.is-open .nav-caret{transform:rotate(225deg)}
+}
