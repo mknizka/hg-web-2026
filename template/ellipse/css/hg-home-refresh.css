@@ -97,7 +97,7 @@ body .os-home .eh-logo-set img{display:block!important;flex:0 0 200px!important;
 @media(prefers-reduced-motion:reduce){body .os-home .eh-logo-set[aria-hidden=true]{display:none!important}}
 
 /* RS-backed module tour and integration directory. */
-body .os-home .eh-module-tour{padding:64px 0}
+body .os-home .eh-module-tour{padding:64px max(24px,calc((100% - 1200px)/2))}
 body .os-home .eh-module-tour .eh-tour-tabs{display:flex;flex-wrap:wrap;gap:8px;margin:24px 0 12px}
 body .os-home .eh-module-tour .eh-tour-tabs button{white-space:normal;font-size:13px;padding:10px 14px}
 body .os-home .eh-module-layout{display:grid;grid-template-columns:1fr 1.1fr;gap:40px;align-items:center;min-height:410px;padding:36px;background:#f5f6fa;border:1px solid #e2e5ee;border-radius:24px}
@@ -122,3 +122,9 @@ body .os-home .eh-integration-grid p{font-size:14px;line-height:1.6;color:#65708
 body .os-home .eh-partners{margin-top:48px;overflow:hidden}
 body .os-home .eh-partners h3{font-size:24px;font-weight:650}
 @media(max-width:760px){body .os-home .eh-module-layout{grid-template-columns:1fr;padding:24px;gap:20px}body .os-home .eh-module-media{height:280px}body .os-home .eh-integration-grid{grid-template-columns:1fr}body .os-home .eh-module-tour .eh-tour-tabs{max-height:190px;overflow:auto}}
+
+body .os-home .eh-module-tour [data-tour-panel]{padding:0!important}
+body .os-home :is(.eh-module-tour,.eh-partners)>.eh-motion{display:block;width:auto;margin:12px auto 20px;border:0;background:transparent;font:inherit;font-size:12px;color:#65708a;cursor:pointer}
+body .os-home .eh-partners .eh-logo-window{overflow:hidden;width:100%}
+@media(max-width:760px){body .os-home .eh-module-tour{padding:40px 16px}}
+@media(prefers-reduced-motion:reduce){body .os-home .eh-partners .eh-logo-window{overflow-x:auto}}
