@@ -100,7 +100,6 @@ foreach(array_chunk($homeTopics,6,true) as $pageIndex=>$topicPage): ?>
 <div class="eh-problem-grid" data-problem-panel<?php echo $pageIndex?' hidden':''; ?>><?php foreach($topicPage as $key=>$topic): ?><a href="<?php echo hg_esc($topic['href'] ?? '/blog/?tema=problemy&problem='.$key); ?>"><span><?php echo hg_esc($topic['eyebrow']); ?></span><h3><?php echo hg_esc($topic['title']); ?></h3><p><?php echo hg_esc($topic['lead']); ?></p><b><?php echo hg_lang('Pozrieť riešenie','Explore solution'); ?> <span aria-hidden="true">→</span></b></a><?php endforeach; ?></div><?php endforeach; ?>
 </section>
 <section class="os-trust" id="referencie" aria-label="<?php echo hg_lang('Dôvera', 'Trust'); ?>">
-    <p class="eh-trust-label"><?php echo hg_lang('V dobrej spoločnosti. Prevádzky, ktoré používajú Ellipse.', 'In good company. Businesses powered by Ellipse.'); ?></p>
     <div class="eh-logo-window" data-logo-marquee><div class="eh-logo-track">
       <?php for ($copy=0; $copy<2; $copy++): ?><div class="eh-logo-set"<?php if ($copy) echo ' aria-hidden="true"'; ?>>
       <?php foreach ($ellipseClientLogos as $logo): ?><img src="<?php echo hg_esc(hg_asset('logos/'.$logo[0])); ?>" alt="<?php echo $copy ? '' : hg_esc($logo[1]); ?>" width="400" height="200" loading="lazy" decoding="async"><?php endforeach; ?>
@@ -196,31 +195,7 @@ foreach(array_chunk($homeTopics,6,true) as $pageIndex=>$topicPage): ?>
     </div>
   </section>
 
-  <section class="os-pay os-payments" id="platby" aria-label="<?php echo hg_lang('Bezpečné online aj POS platby', 'Secure online and POS payments'); ?>">
-    <p class="os-kicker"><?php echo hg_lang('Ellipse Payments', 'Ellipse Payments'); ?></p>
-    <h2><?php echo hg_lang('Bezpečné online aj POS platby.', 'Secure online and POS payments.'); ?></h2>
-    <p class="os-lead"><?php echo hg_lang('Na webe, na recepcii aj v reštaurácii. Platby prepojené s Ellipse, s kontrolou v reálnom čase a jasným prehľadom o každej transakcii.', 'On your website, at reception and in the restaurant. Payments connected to Ellipse, with real-time monitoring and a clear view of every transaction.'); ?></p>
-    <div class="ep-showcase">
-      <div class="ep-device">
-        <span class="ep-device-label">Ellipse POS <span>× SUNMI</span></span>
-        <img src="<?php echo hg_esc(hg_asset('sunmi-v3-ellipse-pos.webp')); ?>" alt="<?php echo hg_lang('Terminál SUNMI V3 v ruke s aplikáciou Ellipse POS', 'Handheld SUNMI V3 terminal running Ellipse POS'); ?>" width="1185" height="349" loading="lazy" decoding="async">
-        <p><?php echo hg_lang('Vaša POS aplikácia. Priamo v termináli.', 'Your POS application. Right on the terminal.'); ?></p>
-      </div>
-    </div>
-    <article class="ep-tap">
-      <p class="os-kicker">Tap to Pay</p>
-      <h3><?php echo hg_lang('Platba kartou, eKasa a Ellipse POS. Priamo v mobile.', 'Card payments, eKasa and Ellipse POS. Right on your phone.'); ?></h3>
-      <p><?php echo hg_lang('Prijímajte bezkontaktné platby kartou alebo digitálnou peňaženkou cez Tap to Pay. Ellipse POS, eKasa a platby v jednom mobilnom pracovnom nástroji — pri stole, na recepcii aj v teréne.', 'Accept contactless card or digital wallet payments with Tap to Pay. Ellipse POS, eKasa and payments in one mobile workspace — at the table, at reception or on the go.'); ?></p>
-      <small><?php echo hg_lang('Dostupnosť Tap to Pay a eKasy závisí od kompatibility zariadenia a aktivovaných služieb.', 'Tap to Pay and eKasa availability depends on device compatibility and enabled services.'); ?></small>
-    </article>
-    <div class="ep-features">
-      <article><span class="ep-number">01</span><h3><?php echo hg_lang('Online aj pri pulte', 'Online and at the counter'); ?></h3><p><?php echo hg_lang('Platby na webe aj cez POS terminály v jednom prepojenom prostredí. Pre hotel, recepciu aj gastro.', 'Website and POS terminal payments in one connected environment. For the hotel, front desk and restaurant.'); ?></p></article>
-      <article><span class="ep-number">02</span><h3><?php echo hg_lang('Kontrola v reálnom čase', 'Real-time control'); ?></h3><p><?php echo hg_lang('API prepojenie priebežne overuje stav platieb. Detail transakcie aj jej aktuálny stav máte priamo v Ellipse.', 'The API connection checks payment status as it changes. See transaction details and current status directly in Ellipse.'); ?></p></article>
-      <article><span class="ep-number">03</span><h3><?php echo hg_lang('Opakované platby', 'Recurring payments'); ?></h3><p><?php echo hg_lang('Spracovanie opakovaných platieb podľa dohodnutých podmienok a súhlasu klienta. Menej manuálnych krokov pre váš tím.', 'Process recurring payments under agreed terms and with customer consent. Fewer manual steps for your team.'); ?></p></article>
-      <article><span class="ep-number">04</span><h3><?php echo hg_lang('Tokenizácia kariet', 'Card tokenization'); ?></h3><p><?php echo hg_lang('Citlivé údaje karty pri ďalších platbách zastupuje bezpečný token. Ochrana údajov je súčasťou celého platobného procesu.', 'A secure token represents sensitive card details for subsequent payments. Data protection is part of the entire payment process.'); ?></p></article>
-    </div>
-    <div class="os-actions"><a class="button" href="<?php echo hg_esc($nap['demo']); ?>"><?php echo hg_lang('Ukázať platby v Ellipse', 'See payments in Ellipse'); ?></a><a class="button ghost" href="/pos-systemy/"><?php echo hg_lang('Spoznajte Ellipse POS', 'Explore Ellipse POS'); ?></a></div>
-  </section>
+
 
   <section class="os-loyalty" id="loyalty" aria-labelledby="loyalty-title">
     <p class="os-kicker">Ellipse Loyalty &amp; CRM</p>
@@ -327,6 +302,32 @@ foreach(array_chunk($homeTopics,6,true) as $pageIndex=>$topicPage): ?>
       </details>
       <?php endforeach; ?>
     </div>
+  </section>
+
+  <section class="os-pay os-payments" id="platby" aria-label="<?php echo hg_lang('Bezpečné online aj POS platby', 'Secure online and POS payments'); ?>">
+    <p class="os-kicker"><?php echo hg_lang('Ellipse Payments', 'Ellipse Payments'); ?></p>
+    <h2><?php echo hg_lang('Bezpečné online aj POS platby.', 'Secure online and POS payments.'); ?></h2>
+    <p class="os-lead"><?php echo hg_lang('Na webe, na recepcii aj v reštaurácii. Platby prepojené s Ellipse, s kontrolou v reálnom čase a jasným prehľadom o každej transakcii.', 'On your website, at reception and in the restaurant. Payments connected to Ellipse, with real-time monitoring and a clear view of every transaction.'); ?></p>
+    <div class="ep-showcase">
+      <div class="ep-device">
+        <span class="ep-device-label">Ellipse POS <span>× SUNMI</span></span>
+        <img src="<?php echo hg_esc(hg_asset('sunmi-v3-ellipse-pos.webp')); ?>" alt="<?php echo hg_lang('Terminál SUNMI V3 v ruke s aplikáciou Ellipse POS', 'Handheld SUNMI V3 terminal running Ellipse POS'); ?>" width="1185" height="349" loading="lazy" decoding="async">
+        <p><?php echo hg_lang('Vaša POS aplikácia. Priamo v termináli.', 'Your POS application. Right on the terminal.'); ?></p>
+      </div>
+    </div>
+    <article class="ep-tap">
+      <p class="os-kicker">Tap to Pay</p>
+      <h3><?php echo hg_lang('Platba kartou, eKasa a Ellipse POS. Priamo v mobile.', 'Card payments, eKasa and Ellipse POS. Right on your phone.'); ?></h3>
+      <p><?php echo hg_lang('Prijímajte bezkontaktné platby kartou alebo digitálnou peňaženkou cez Tap to Pay. Ellipse POS, eKasa a platby v jednom mobilnom pracovnom nástroji — pri stole, na recepcii aj v teréne.', 'Accept contactless card or digital wallet payments with Tap to Pay. Ellipse POS, eKasa and payments in one mobile workspace — at the table, at reception or on the go.'); ?></p>
+      <small><?php echo hg_lang('Dostupnosť Tap to Pay a eKasy závisí od kompatibility zariadenia a aktivovaných služieb.', 'Tap to Pay and eKasa availability depends on device compatibility and enabled services.'); ?></small>
+    </article>
+    <div class="ep-features">
+      <article><span class="ep-number">01</span><h3><?php echo hg_lang('Online aj pri pulte', 'Online and at the counter'); ?></h3><p><?php echo hg_lang('Platby na webe aj cez POS terminály v jednom prepojenom prostredí. Pre hotel, recepciu aj gastro.', 'Website and POS terminal payments in one connected environment. For the hotel, front desk and restaurant.'); ?></p></article>
+      <article><span class="ep-number">02</span><h3><?php echo hg_lang('Kontrola v reálnom čase', 'Real-time control'); ?></h3><p><?php echo hg_lang('API prepojenie priebežne overuje stav platieb. Detail transakcie aj jej aktuálny stav máte priamo v Ellipse.', 'The API connection checks payment status as it changes. See transaction details and current status directly in Ellipse.'); ?></p></article>
+      <article><span class="ep-number">03</span><h3><?php echo hg_lang('Opakované platby', 'Recurring payments'); ?></h3><p><?php echo hg_lang('Spracovanie opakovaných platieb podľa dohodnutých podmienok a súhlasu klienta. Menej manuálnych krokov pre váš tím.', 'Process recurring payments under agreed terms and with customer consent. Fewer manual steps for your team.'); ?></p></article>
+      <article><span class="ep-number">04</span><h3><?php echo hg_lang('Tokenizácia kariet', 'Card tokenization'); ?></h3><p><?php echo hg_lang('Citlivé údaje karty pri ďalších platbách zastupuje bezpečný token. Ochrana údajov je súčasťou celého platobného procesu.', 'A secure token represents sensitive card details for subsequent payments. Data protection is part of the entire payment process.'); ?></p></article>
+    </div>
+    <div class="os-actions"><a class="button" href="<?php echo hg_esc($nap['demo']); ?>"><?php echo hg_lang('Ukázať platby v Ellipse', 'See payments in Ellipse'); ?></a><a class="button ghost" href="/pos-systemy/"><?php echo hg_lang('Spoznajte Ellipse POS', 'Explore Ellipse POS'); ?></a></div>
   </section>
 
   <?php if (count($posts)): ?>
