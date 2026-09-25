@@ -95,3 +95,30 @@ body .os-home .eh-logo-set{display:flex!important;flex:0 0 auto!important;flex-w
 body .os-home .eh-logo-set img{display:block!important;flex:0 0 200px!important;width:200px!important;min-width:200px!important;max-width:200px!important;height:100px!important;min-height:100px!important;max-height:100px!important;aspect-ratio:2/1;object-fit:contain!important;margin:0!important;padding:0!important;transform:none!important;border:0!important;border-radius:0!important;box-shadow:none!important}
 @media(max-width:760px){body .os-home .eh-logo-set{gap:20px!important;padding-right:20px!important}body .os-home .eh-logo-set img{flex-basis:160px!important;width:160px!important;min-width:160px!important;max-width:160px!important;height:80px!important;min-height:80px!important;max-height:80px!important}}
 @media(prefers-reduced-motion:reduce){body .os-home .eh-logo-set[aria-hidden=true]{display:none!important}}
+
+/* RS-backed module tour and integration directory. */
+body .os-home .eh-module-tour{padding:64px 0}
+body .os-home .eh-module-tour .eh-tour-tabs{display:flex;flex-wrap:wrap;gap:8px;margin:24px 0 12px}
+body .os-home .eh-module-tour .eh-tour-tabs button{white-space:normal;font-size:13px;padding:10px 14px}
+body .os-home .eh-module-layout{display:grid;grid-template-columns:1fr 1.1fr;gap:40px;align-items:center;min-height:410px;padding:36px;background:#f5f6fa;border:1px solid #e2e5ee;border-radius:24px}
+body .os-home .eh-module-copy h3{font-size:clamp(26px,3vw,40px);font-weight:700;line-height:1.12;margin:12px 0 18px;color:#0b1638}
+body .os-home .eh-module-copy>p:not(.os-kicker){font-size:18px;line-height:1.65;color:#65708a;margin-bottom:24px}
+body .os-home .eh-module-media{height:350px;min-width:0;display:grid;place-items:center}
+body .os-home .eh-module-media button{width:100%;height:100%;padding:0;border:0;background:transparent;cursor:zoom-in}
+body .os-home .eh-module-media img{width:100%;height:100%;object-fit:contain;border-radius:12px}
+body .os-home .eh-module-wordmark{display:flex;align-items:center;flex-direction:column;gap:18px;text-align:center;color:#142249}
+body .os-home .eh-module-wordmark strong{font-size:26px;font-weight:650}
+body .os-home .eh-module-wordmark span{color:#65708a}
+body .os-home .eh-original-screens{margin:0 0 44px;border-bottom:1px solid #e2e5ee}
+body .os-home .eh-original-screens>summary{padding:20px;cursor:pointer;font-weight:600;text-align:center}
+body .os-home .eh-original-screens section{opacity:1!important;transform:none!important}
+body .os-home .eh-integration-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:32px 0;text-align:left;align-items:start}
+body .os-home .eh-integration-grid details{border:1px solid #e2e5ee;border-radius:14px;background:#fff;padding:18px}
+body .os-home .eh-integration-grid summary{font-weight:650;cursor:pointer;line-height:1.4}
+body .os-home .eh-integration-grid small{display:block;font-weight:500;color:#77819a;margin-top:6px}
+body .os-home .eh-integration-grid ul{padding:0;list-style:none;margin:16px 0 0}
+body .os-home .eh-integration-grid li{padding:12px 0;border-top:1px solid #eef0f5}
+body .os-home .eh-integration-grid p{font-size:14px;line-height:1.6;color:#65708a;margin:6px 0}
+body .os-home .eh-partners{margin-top:48px;overflow:hidden}
+body .os-home .eh-partners h3{font-size:24px;font-weight:650}
+@media(max-width:760px){body .os-home .eh-module-layout{grid-template-columns:1fr;padding:24px;gap:20px}body .os-home .eh-module-media{height:280px}body .os-home .eh-integration-grid{grid-template-columns:1fr}body .os-home .eh-module-tour .eh-tour-tabs{max-height:190px;overflow:auto}}
