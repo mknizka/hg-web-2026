@@ -128,3 +128,5 @@ body .os-home :is(.eh-module-tour,.eh-partners)>.eh-motion{display:block;width:a
 body .os-home .eh-partners .eh-logo-window{overflow:hidden;width:100%}
 @media(max-width:760px){body .os-home .eh-module-tour{padding:40px 16px}}
 @media(prefers-reduced-motion:reduce){body .os-home .eh-partners .eh-logo-window{overflow-x:auto}}
+
+body .os-home .eh-integration-grid{justify-items:stretch!important}body .os-home .eh-integration-grid details{width:100%;box-sizing:border-box;margin:0!important}
