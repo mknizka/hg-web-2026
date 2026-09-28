@@ -6,6 +6,18 @@
   var menu = header.querySelector('.menu');
   var nav = header.querySelector('nav');
   if (!menu || !nav) return;
+  var languagePickers = header.querySelectorAll('.nav-language-picker');
+  document.addEventListener('click', function(event) {
+    languagePickers.forEach(function(picker) {
+      if (!picker.contains(event.target)) picker.open = false;
+    });
+  });
+  document.addEventListener('keydown', function(event) {
+    if (event.key !== 'Escape') return;
+    languagePickers.forEach(function(picker) {
+      if (picker.open) { picker.open = false; picker.querySelector('summary').focus(); }
+    });
+  });
   var body = document.body;
   var savedScroll = 0;
   var savedTop = '';

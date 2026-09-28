@@ -272,7 +272,7 @@
 <link rel="stylesheet" href="/template/ellipse/css/hg-home-refresh.css?v=15">
 <link rel="stylesheet" href="/template/ellipse/css/hg-typography.css?v=1">
 <link rel="stylesheet" href="/template/ellipse/css/hg-icons.css?v=1">
-<link rel="stylesheet" href="/template/ellipse/css/hg-shell.css?v=22">
+<link rel="stylesheet" href="/template/ellipse/css/hg-shell.css?v=23">
 </head>
 <body class="homepage">
   <?php if (function_exists('themeSetup')) { echo themeSetup('extra_body'); } ?>
@@ -289,7 +289,7 @@
 <script src="/template/ellipse/js/hg-mobile-showcase.js?v=2" defer></script>
 <script src="/template/ellipse/js/hg-home-refresh.js?v=8" defer></script>
 <script src="/template/ellipse/js/hg-icons.js?v=2" defer></script>
-<script src="/template/ellipse/js/hg-navigation.js?v=1" defer></script>
+<script src="/template/ellipse/js/hg-navigation.js?v=2" defer></script>
 <script src="/template/ellipse/js/hg-solutions.js?v=12" defer></script>
 </body>
 </html>

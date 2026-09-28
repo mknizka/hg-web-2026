@@ -4,7 +4,7 @@
 <?php echo themeSetup('extra_body_end'); ?>
 <script src="/template/ellipse/js/hg-editorial.js?v=4" defer></script>
 <script src="/template/ellipse/js/hg-icons.js?v=2" defer></script>
-<script src="/template/ellipse/js/hg-navigation.js?v=1" defer></script>
+<script src="/template/ellipse/js/hg-navigation.js?v=2" defer></script>
 <script src="/template/ellipse/js/hg-solutions.js?v=12" defer></script>
 </body>
 </html>

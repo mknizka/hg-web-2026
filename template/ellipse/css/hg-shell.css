@@ -368,3 +368,14 @@ body:is(.homepage,.hg-mkt) header.nav .nav-language img{display:block;width:24px
 /* Pale blue, monochrome store badges against the navy footer. */
 body .hg-site-footer .footer-store-links img{filter:grayscale(1) invert(1) sepia(1) saturate(1.4) hue-rotate(175deg)!important;opacity:.9;transition:opacity .2s}
 body .hg-site-footer .footer-store-links a:hover img{opacity:1}
+
+/* Click-only language picker; no hover or selected background. */
+body:is(.homepage,.hg-mkt) header.nav .nav-language-picker{position:relative;margin:0;padding:0;border:0;background:none}
+body:is(.homepage,.hg-mkt) header.nav .nav-language-picker summary{display:flex;align-items:center;gap:8px;min-height:44px;padding:0 4px;list-style:none;cursor:pointer;background:transparent!important;border:0}
+body:is(.homepage,.hg-mkt) header.nav .nav-language-picker summary::-webkit-details-marker{display:none}
+body:is(.homepage,.hg-mkt) header.nav .nav-language-picker img{display:block;width:24px;height:16px;border-radius:2px;box-shadow:0 0 0 1px #08143412}
+body:is(.homepage,.hg-mkt) header.nav .nav-language-options{position:absolute;top:calc(100% + 8px);right:0;z-index:1200;min-width:90px;padding:8px;background:white;border:1px solid #e5e9f0;border-radius:12px;box-shadow:0 12px 30px #08143412}
+body:is(.homepage,.hg-mkt) header.nav .nav-language-picker:not([open]) .nav-language-options{display:none}
+body:is(.homepage,.hg-mkt) header.nav .nav-language-options a.nav-language{display:flex;justify-content:flex-start;gap:10px;width:100%;height:40px;padding:0 8px!important;font:600 12px/1.4 Montserrat,sans-serif;color:#45516b;text-decoration:none;border:0;background:transparent!important}
+body:is(.homepage,.hg-mkt) header.nav .nav-language-picker summary:focus-visible{outline:2px solid #fb004b;outline-offset:3px;border-radius:4px}
+@media(max-width:1080px){body:is(.homepage,.hg-mkt) header.nav .nav-language-options{left:0;right:auto}}
