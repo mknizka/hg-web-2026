@@ -55,3 +55,20 @@
   let start;const tick=time=>{if(start===undefined)start=time;const progress=Math.min((time-start)/1600,1);value.textContent=prefix+Math.round(target*(1-Math.pow(1-progress,3))).toLocaleString('sk-SK')+suffix;if(progress<1)requestAnimationFrame(tick);else value.textContent=original;};requestAnimationFrame(tick);
  }),{threshold:0.6});document.querySelectorAll('[data-count-up]').forEach(el=>observer.observe(el));
 })();
+
+(() => {
+ const reduced=matchMedia('(prefers-reduced-motion: reduce)');
+ document.querySelectorAll('[data-phone-carousel]').forEach(root=>{
+  const track=root.querySelector('.eh-phone-track'),shots=Array.from(track.children);
+  let visible=false,timer,index=0;
+  const stop=()=>clearInterval(timer);
+  const move=delta=>{index=(index+delta+shots.length)%shots.length;track.scrollTo({left:shots[index].offsetLeft-shots[0].offsetLeft,behavior:reduced.matches?'instant':'smooth'});};
+  const sync=()=>{stop();if(visible&&!reduced.matches&&!document.hidden&&!root.matches(':hover')&&!root.contains(document.activeElement))timer=setInterval(()=>move(1),3000);};
+  root.querySelector('[data-phone-prev]').addEventListener('click',()=>move(-1));root.querySelector('[data-phone-next]').addEventListener('click',()=>move(1));
+  track.addEventListener('scroll',()=>{index=shots.reduce((best,p,i)=>Math.abs(p.offsetLeft-shots[0].offsetLeft-track.scrollLeft)<Math.abs(shots[best].offsetLeft-shots[0].offsetLeft-track.scrollLeft)?i:best,0);},{passive:true});
+  track.addEventListener('keydown',e=>{if(e.target!==track)return;if(e.key==='ArrowLeft'||e.key==='ArrowRight'){e.preventDefault();move(e.key==='ArrowLeft'?-1:1);}});
+  root.addEventListener('mouseenter',stop);root.addEventListener('mouseleave',sync);root.addEventListener('focusin',stop);root.addEventListener('focusout',()=>setTimeout(sync,0));
+  document.addEventListener('visibilitychange',sync);reduced.addEventListener('change',sync);
+  new IntersectionObserver(entries=>{visible=entries[0].isIntersecting;sync();},{threshold:.6}).observe(root);
+ });
+})();
