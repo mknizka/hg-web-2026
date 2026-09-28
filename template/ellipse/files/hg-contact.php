@@ -28,7 +28,7 @@ echo $form;
 ?>
 <p class="ec-form-privacy">Údaje použijeme na vybavenie vašej požiadavky. <a href="/gdpr/">Ochrana osobných údajov</a></p>
 </div></section>
-<section class="ec-people" id="persons"><p class="kicker">ĽUDIA ZA ELLIPSE</p><h2>Sme tu pre vás.</h2><div class="ec-people-grid">
+<section class="ec-people" id="persons"><p class="kicker">ĽUDIA ZA ELLIPSE</p><h2>Sme tu pre vás.</h2><div class="ec-team-contact" aria-label="Všeobecný kontakt"><a href="tel:+421527871911"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3H4a1 1 0 0 0-1 1c0 9.4 7.6 17 17 17a1 1 0 0 0 1-1v-3l-5-2-2 2a14 14 0 0 1-7-7l2-2-2-5Z"/></svg><span><small>Pevná linka</small>+421 52 787 1911</span></a><a href="mailto:office@horecagroup.sk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m4 7 8 6 8-6"/></svg><span><small>Všeobecný kontakt</small>office@horecagroup.sk</span></a></div><div class="ec-people-grid">
 <?php
 $peopleFallback=array(
  array('name'=>'Petra Štefany','text'=>'<ul><li>Office manager and support</li><li>petra.stefany@horecagroup.sk</li><li>+421 52 787 1911</li></ul>'),
@@ -47,8 +47,8 @@ foreach(hg_rows_or(28,$peopleFallback) as $person):
 <?php if(!empty($person['img'])): ?><img class="ec-person-photo" src="<?php echo hg_esc($person['img']); ?>" alt="" loading="lazy" width="80" height="80"><?php else: ?><span class="ec-person-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="8" r="3.5"/><path d="M5 21v-3a7 7 0 0 1 14 0v3"/></svg></span><?php endif; ?>
 <h3><?php echo hg_esc($person['name']); ?></h3><p class="ec-person-role"><?php echo hg_esc($position); ?></p>
 <div class="ec-person-links">
-<?php if($email): ?><a href="mailto:<?php echo hg_esc($email); ?>"><?php echo hg_esc($email); ?></a><?php endif; ?>
-<?php if($phone): ?><a href="tel:<?php echo hg_esc(preg_replace('/[^+0-9]/','',$phone)); ?>"><?php echo hg_esc($phone); ?></a><?php endif; ?>
+<?php if($email): ?><a href="mailto:<?php echo hg_esc($email); ?>"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m4 7 8 6 8-6"/></svg><span><?php echo hg_esc($email); ?></span></a><?php endif; ?>
+<?php if($phone): ?><a href="tel:<?php echo hg_esc(preg_replace('/[^+0-9]/','',$phone)); ?>"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3H4a1 1 0 0 0-1 1c0 9.4 7.6 17 17 17a1 1 0 0 0 1-1v-3l-5-2-2 2a14 14 0 0 1-7-7l2-2-2-5Z"/></svg><span><?php echo hg_esc($phone); ?></span></a><?php endif; ?>
 </div></article><?php endforeach; ?></div></section>
 <section class="ec-address"><div class="ec-address-intro"><p class="kicker">NÁJDETE NÁS V POPRADE</p><h2>HORECA GROUP s.r.o.</h2><p>Francisciho 20/B<br>058 01 Poprad, Slovensko</p><a href="https://www.google.com/maps/dir/?api=1&amp;destination=Francisciho+20,+058+01+Poprad" target="_blank" rel="noopener">Naplánovať cestu →</a></div><dl aria-label="Fakturačné údaje"><dt>IČO</dt><dd>47912618</dd><dt>DIČ</dt><dd>2024148357</dd><dt>IČ DPH</dt><dd>SK2024148357</dd><dt>IBAN</dt><dd>SK45 8330 0000 0025 0068 1593</dd></dl></section>
 </main>
