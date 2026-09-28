@@ -38,8 +38,11 @@
   let pinTop=0,distance=0,progress=0;
   const measure=()=>{
    if(!pin)return;
-   const height=pin.offsetHeight,vh=window.innerHeight;
-   pinTop=Math.max(84,(vh-height)/2);
+   const vh=window.innerHeight;
+   root.classList.toggle('eq-sticky',!reduced.matches);
+   root.style.setProperty('--eq-viewport',vh+'px');
+   const height=pin.offsetHeight;
+   pinTop=0;
    distance=reduced.matches?0:Math.max(500,vh*.9);
    root.classList.toggle('eq-sticky',!reduced.matches);
    root.style.setProperty('--eq-pin-top',pinTop+'px');

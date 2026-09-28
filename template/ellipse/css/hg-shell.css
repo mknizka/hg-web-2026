@@ -285,3 +285,9 @@ body .eq-quotes.eq-sticky .eq-pin{position:sticky;top:var(--eq-pin-top);transfor
 /* Clip decorative overflow without creating a scrolling ancestor for sticky. */
 body.homepage main.os-home{overflow:clip!important}
 body.homepage main.os-home>section.eq-quotes.eq-sticky,body.hg-mkt section.eq-quotes.eq-sticky{padding:0!important;max-width:none!important;width:100%!important}
+
+/* One viewport-sized pinned scene; the scroll runway has no painted background. */
+body.homepage main.os-home>section.eq-quotes.eq-sticky,body.hg-mkt section.eq-quotes.eq-sticky{background:transparent!important}
+body .eq-quotes.eq-sticky .eq-pin{position:sticky!important;top:0!important;height:var(--eq-viewport,100svh);min-height:0;display:flex;align-items:center;justify-content:center;padding:84px 24px 24px!important;background:#081434;overflow:clip}
+body .eq-quotes .eq-content{width:100%;max-width:1120px;margin:0 auto}
+@media(max-width:600px){body .eq-quotes.eq-sticky .eq-pin{padding:84px 22px 24px!important}body .eq-quotes.eq-sticky .eq-text{font-size:clamp(17px,2.8vh,22px)!important}body .eq-quotes.eq-sticky .eq-long .eq-text{font-size:clamp(15px,2.3vh,19px)!important}}
