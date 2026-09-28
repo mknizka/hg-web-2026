@@ -364,3 +364,7 @@ body:is(.homepage,.hg-mkt) header.nav a.nav-language[aria-current]{border-color:
 body:is(.homepage,.hg-mkt) header.nav .nav-language img{display:block;width:24px;height:16px;object-fit:cover;border-radius:2px;box-shadow:0 0 0 1px #08143412}
 @media(min-width:1081px) and (max-width:1400px){body:is(.homepage,.hg-mkt) header.nav{grid-template-columns:auto 1fr auto;gap:20px;padding-inline:28px}body:is(.homepage,.hg-mkt) header.nav #site-nav{gap:22px}}
 @media(max-width:1080px){body:is(.homepage,.hg-mkt) header.nav .nav-mobile-only .nav-languages{gap:10px}body:is(.homepage,.hg-mkt) header.nav .nav-mobile-only a.nav-language{width:38px;height:38px}}
+
+/* Pale blue, monochrome store badges against the navy footer. */
+body .hg-site-footer .footer-store-links img{filter:grayscale(1) invert(1) sepia(1) saturate(1.4) hue-rotate(175deg)!important;opacity:.9;transition:opacity .2s}
+body .hg-site-footer .footer-store-links a:hover img{opacity:1}
