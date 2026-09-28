@@ -34,7 +34,7 @@
     <meta name="Generator" content="Ellipse CMS">
     <link type="text/css" rel="stylesheet" href="/template/<?php echo $theme; ?>/css/_theme9.css" media="screen">
     <link type="text/css" rel="stylesheet" href="/template/ellipse/css/ellipse.css?v=20260922s" media="screen">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300..800&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300..800&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@1,9..144,500;1,9..144,600&display=swap">
     <link type="text/css" rel="stylesheet" href="/template/ellipse/css/hg-ref.css?v=20260923g" media="screen">
     <link type="text/css" rel="stylesheet" href="/template/ellipse/css/hg-mono.css?v=20260923g" media="screen">
@@ -116,7 +116,7 @@
     </style>
   <link rel="stylesheet" href="/template/ellipse/css/hg-editorial.css?v=7">
   <link rel="stylesheet" href="/template/ellipse/css/hg-blog.css?v=1">
-  <link rel="stylesheet" href="/template/ellipse/css/hg-typography.css?v=2">
+  <link rel="stylesheet" href="/template/ellipse/css/hg-typography.css?v=3">
   <link rel="stylesheet" href="/template/ellipse/css/hg-icons.css?v=1">
 <link rel="stylesheet" href="/template/ellipse/css/hg-shell.css?v=25">
 </head>

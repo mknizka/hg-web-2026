@@ -224,7 +224,7 @@
   <link rel="preload" as="image" href="<?php echo hg_esc(hg_asset('fragments/occupancy.webp')); ?>" fetchpriority="high">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@1,9..144,500;1,9..144,600&family=Montserrat:wght@300..800&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@1,9..144,500;1,9..144,600&family=Plus+Jakarta+Sans:wght@300..800&display=swap">
   <link rel="stylesheet" href="/template/ellipse/css/hg-ref.css?v=20260923g">
   <link rel="stylesheet" href="/template/ellipse/css/hg-mono.css?v=20260923g">
   <link rel="stylesheet" href="/template/ellipse/css/hg-os.css?v=20260924audit2">
@@ -270,7 +270,7 @@
   <?php if (function_exists('themeSetup')) { echo themeSetup('extra_header'); } ?>
 <link rel="stylesheet" href="/template/ellipse/css/hg-mobile-showcase.css?v=1">
 <link rel="stylesheet" href="/template/ellipse/css/hg-home-refresh.css?v=15">
-<link rel="stylesheet" href="/template/ellipse/css/hg-typography.css?v=2">
+<link rel="stylesheet" href="/template/ellipse/css/hg-typography.css?v=3">
 <link rel="stylesheet" href="/template/ellipse/css/hg-icons.css?v=1">
 <link rel="stylesheet" href="/template/ellipse/css/hg-shell.css?v=25">
 <link rel="stylesheet" href="/template/ellipse/css/hg-expanded-details.css?v=2">

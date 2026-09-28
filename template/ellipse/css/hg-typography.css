@@ -9,3 +9,7 @@ body .os-home .os-kicker,body .os-kicker,body .hg-kicker,body .prod-kicker,body 
 
 /* Leave room for Slovak side carons (ľ, ť, ď) at display sizes. */
 html body.homepage .os-home :is(h1,h2,h3),html body.hg-mkt :is(h1,h2,h3){letter-spacing:-.015em!important;font-kerning:normal}
+
+/* Shared brand typeface; retain icon-font classes and existing type scale. */
+html body:is(.homepage,.hg-mkt),
+html body:is(.homepage,.hg-mkt) :is(h1,h2,h3,h4,h5,h6,p,a,button,input,textarea,select,label,summary,small,strong,b,em,li,dt,dd,figcaption,blockquote,th,td,div,span):not(.fa):not(.fas):not(.far):not(.fab):not([class*="fa-"]):not([class*="icon"]){font-family:'Plus Jakarta Sans',sans-serif!important}
