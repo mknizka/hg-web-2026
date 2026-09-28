@@ -36,6 +36,22 @@
   });
   const pin=root.querySelector('.eq-pin');
   let pinTop=0,distance=700,progress=0,lastY=window.scrollY,held=false,heldY=0,correctionY=null;
+  const scroller=document.documentElement;
+  let savedOverflow=null;
+  // Keep the scrollbar's space while locking native wheel/touch movement.
+  scroller.style.scrollbarGutter='stable';
+  const lock=()=>{
+   if(savedOverflow!==null)return;
+   savedOverflow={value:scroller.style.getPropertyValue('overflow'),priority:scroller.style.getPropertyPriority('overflow')};
+   scroller.style.setProperty('overflow','hidden','important');
+  };
+  const unlock=()=>{
+   if(savedOverflow===null)return;
+   if(savedOverflow.value)scroller.style.setProperty('overflow',savedOverflow.value,savedOverflow.priority);
+   else scroller.style.removeProperty('overflow');
+   savedOverflow=null;
+  };
+  window.addEventListener('pagehide',unlock);
   const clamp=value=>Math.max(0,Math.min(1,value));
   const paint=()=>{
    const entry=texts[index];if(!entry)return;
@@ -45,7 +61,7 @@
    root.classList.remove('eq-sticky');
    pinTop=Math.max(84,(window.innerHeight-pin.offsetHeight)/2);
    distance=Math.max(500,window.innerHeight*.8);
-   if(reduced.matches){progress=1;held=false;}
+   if(reduced.matches){progress=1;held=false;unlock();}
    paint();
   };
   // Consume a bounded reading gesture at the natural section position.
@@ -59,10 +75,10 @@
    if((forward&&progress>=1)||(!forward&&progress<=0))return;
    if(!held && Math.abs(offset)>2 && !(forward&&offset>0&&offset<=delta) && !(!forward&&offset<0&&offset>=delta))return;
    event.preventDefault();
-   if(!held){held=true;heldY=target;}
+   if(!held){held=true;heldY=target;lock();}
    if(Math.abs(offset)>1){lastY=heldY;correctionY=heldY;window.scrollTo({top:heldY,behavior:'instant'});}
    progress=clamp(progress+(delta-offset)/distance);
-   if(progress===0||progress===1)held=false;
+   if(progress===0||progress===1){held=false;unlock();}
    paint();
   };
   window.addEventListener('wheel',event=>{
@@ -77,7 +93,7 @@
   },{passive:false});
   window.addEventListener('touchend',()=>{touchY=null;},{passive:true});
   window.addEventListener('keydown',event=>{
-   if(event.key==='Escape'||event.key==='End'){held=false;progress=1;paint();return;}
+   if(event.key==='Escape'||event.key==='End'){held=false;unlock();progress=1;paint();return;}
    if(event.target.closest('a,button,input,textarea,select,[contenteditable="true"]'))return;
    const delta={ArrowDown:60,ArrowUp:-60,PageDown:innerHeight*.7,PageUp:-innerHeight*.7,' ':innerHeight*.7}[event.key];
    if(delta)consume(event.shiftKey?-delta:delta,event);
@@ -86,7 +102,7 @@
   // a cancellable wheel/touch event. Keep the same reading state in that path.
   window.addEventListener('scroll',()=>{
    const y=window.scrollY;
-   if(reduced.matches){lastY=y;progress=1;paint();return;}
+   if(reduced.matches){lastY=y;progress=1;held=false;unlock();paint();return;}
    // Ignore our own rounded scroll correction; it is not reverse user input.
    if(correctionY!==null&&Math.abs(y-correctionY)<=2){lastY=y;correctionY=null;return;}
    const anchor=held?heldY:Math.round(y+root.getBoundingClientRect().top-pinTop);
@@ -95,11 +111,11 @@
    const crossingUp=delta<0 && lastY>=anchor-2 && y<anchor-1 && progress>0;
    if((held&&Math.abs(y-anchor)>2)||crossingDown||crossingUp){
     const consumed=held?y-anchor:crossingDown?y-Math.max(lastY,anchor):y-Math.min(lastY,anchor);
-    heldY=anchor;held=true;
+    heldY=anchor;held=true;lock();
     progress=clamp(progress+Math.max(-120,Math.min(120,consumed))/distance);
     lastY=anchor;correctionY=anchor;
     window.scrollTo({top:anchor,behavior:'instant'});
-    if(progress===0||progress===1)held=false;
+    if(progress===0||progress===1){held=false;unlock();}
    }else{
     lastY=y;
     // Hysteresis: subpixel rounding or viewport changes cannot reset the reveal.
