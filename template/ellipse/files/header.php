@@ -116,7 +116,7 @@
     </style>
   <link rel="stylesheet" href="/template/ellipse/css/hg-editorial.css?v=7">
   <link rel="stylesheet" href="/template/ellipse/css/hg-blog.css?v=1">
-  <link rel="stylesheet" href="/template/ellipse/css/hg-typography.css?v=4">
+  <link rel="stylesheet" href="/template/ellipse/css/hg-typography.css?v=5">
   <link rel="stylesheet" href="/template/ellipse/css/hg-icons.css?v=1">
 <link rel="stylesheet" href="/template/ellipse/css/hg-shell.css?v=26">
 </head>
