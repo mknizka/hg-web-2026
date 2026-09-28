@@ -1,4 +1,5 @@
 <?php require_once __DIR__.'/hg_site.php'; $nap = hg_nap(); $logoSrc = hg_asset('ellipse-logo.svg'); ?>
+  <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute;pointer-events:none"><defs><filter id="hg-store-blue" color-interpolation-filters="sRGB"><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncR type="table" tableValues="0.7804 0.1412"/><feFuncG type="table" tableValues="0.8471 0.2471"/><feFuncB type="table" tableValues="0.9333 0.4078"/></feComponentTransfer></filter></defs></svg>
   <footer class="hg-site-footer">
     <div class="footer-brand">
       <a class="brand inverse" href="/#top"><img src="<?php echo hg_esc($logoSrc); ?>" alt="Ellipse" width="158" height="55"></a>
