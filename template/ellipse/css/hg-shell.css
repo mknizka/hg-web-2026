@@ -291,3 +291,9 @@ body.homepage main.os-home>section.eq-quotes.eq-sticky,body.hg-mkt section.eq-qu
 body .eq-quotes.eq-sticky .eq-pin{position:sticky!important;top:0!important;height:var(--eq-viewport,100svh);min-height:0;display:flex;align-items:center;justify-content:center;padding:84px 24px 24px!important;background:#081434;overflow:clip}
 body .eq-quotes .eq-content{width:100%;max-width:1120px;margin:0 auto}
 @media(max-width:600px){body .eq-quotes.eq-sticky .eq-pin{padding:84px 22px 24px!important}body .eq-quotes.eq-sticky .eq-text{font-size:clamp(17px,2.8vh,22px)!important}body .eq-quotes.eq-sticky .eq-long .eq-text{font-size:clamp(15px,2.3vh,19px)!important}}
+
+/* Size the pinned panel to its tallest quote, not to the viewport. */
+body .eq-quotes.eq-sticky .eq-pin{height:auto!important;min-height:0!important;top:var(--eq-pin-top)!important;padding:48px 24px!important;overflow:visible}
+body .eq-quotes .eq-slides{align-items:center}
+body .eq-quotes .eq-slide{align-self:center}
+@media(max-width:600px){body .eq-quotes.eq-sticky .eq-pin{padding:32px 22px!important}}

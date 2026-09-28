@@ -42,7 +42,7 @@
    root.classList.toggle('eq-sticky',!reduced.matches);
    root.style.setProperty('--eq-viewport',vh+'px');
    const height=pin.offsetHeight;
-   pinTop=0;
+   pinTop=Math.max(84,(vh-height)/2);
    distance=reduced.matches?0:Math.max(500,vh*.9);
    root.classList.toggle('eq-sticky',!reduced.matches);
    root.style.setProperty('--eq-pin-top',pinTop+'px');
