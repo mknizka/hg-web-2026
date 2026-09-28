@@ -6,3 +6,6 @@ html body .os-home > section:is(.os-product,.os-team) > h2,
 html body .hg-article h1,html body .hg-article h2,html body .hg-article h3,
 html body .prod-hero h1,html body .cta-title{font-weight:650!important}
 body .os-home .os-kicker,body .os-kicker,body .hg-kicker,body .prod-kicker,body .kicker,body .kicker.light,body .eyebrow,body .ef-index{font-weight:600!important}
+
+/* Leave room for Slovak side carons (ľ, ť, ď) at display sizes. */
+html body.homepage .os-home :is(h1,h2,h3),html body.hg-mkt :is(h1,h2,h3){letter-spacing:-.015em!important;font-kerning:normal}
