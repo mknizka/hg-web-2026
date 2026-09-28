@@ -48,3 +48,7 @@ body .os-home .eh-original-screens .os-inbox-bar{flex-wrap:wrap;gap:8px}
 body .os-home .eh-original-screens .loyalty-benefits{gap:16px}
 body .os-home .eh-original-screens .os-actions{justify-content:flex-start}
 }
+/* Override the legacy journey grid inherited by its nested gallery. */
+body .os-home .eh-original-screens .em-showcase{display:block!important;padding:0!important}
+body .os-home .eh-original-screens .em-controls{display:flex;justify-content:flex-end!important;align-items:center;gap:10px;width:100%;margin:0 0 16px!important;padding:0!important}
+body .os-home .eh-original-screens .em-rail{width:100%;box-sizing:border-box;margin:0!important;grid-column:auto}

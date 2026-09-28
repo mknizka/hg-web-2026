@@ -273,7 +273,7 @@
 <link rel="stylesheet" href="/template/ellipse/css/hg-typography.css?v=2">
 <link rel="stylesheet" href="/template/ellipse/css/hg-icons.css?v=1">
 <link rel="stylesheet" href="/template/ellipse/css/hg-shell.css?v=25">
-<link rel="stylesheet" href="/template/ellipse/css/hg-expanded-details.css?v=1">
+<link rel="stylesheet" href="/template/ellipse/css/hg-expanded-details.css?v=2">
 </head>
 <body class="homepage">
   <?php if (function_exists('themeSetup')) { echo themeSetup('extra_body'); } ?>
