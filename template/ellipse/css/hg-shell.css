@@ -282,3 +282,5 @@ body .eq-quotes.eq-sticky{height:var(--eq-scroll-height)!important}
 body .eq-quotes.eq-sticky .eq-pin{position:sticky;top:var(--eq-pin-top);transform:none}
 @media(max-width:600px){body .eq-quotes .eq-pin{padding:32px 22px}body .eq-quotes .eq-text{font-size:22px!important}body .eq-quotes .eq-long .eq-text{font-size:19px!important}}
 @media(prefers-reduced-motion:reduce){body .eq-quotes.eq-sticky{height:auto!important}body .eq-quotes .eq-pin{position:static!important}}
+/* Clip decorative overflow without creating a scrolling ancestor for sticky. */
+body.homepage main.os-home{overflow:clip!important}
