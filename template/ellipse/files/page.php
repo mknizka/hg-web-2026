@@ -19,7 +19,7 @@
             <div class="row center-md">
 
               <div class="col-md-10 wrapper-30-0">
-                <header class="ed-article-hero"><div class="ed-article-heading">
+                <div class="ed-article-hero"><div class="ed-article-heading">
                 <p class="hg-kicker"><a class="smallback" href="/blog/"><?php echo hg_lang('Blog', 'Blog'); ?></a></p>
                 <h1><?php echo hg_esc($content['name']); ?></h1>
                 <?php $articleLead = hg_plain($content['parex_text'] ?? ''); $articleWords = preg_split('/\s+/u', hg_plain($content['text'][0] ?? ''), -1, PREG_SPLIT_NO_EMPTY); $readMinutes = max(1, (int)ceil(count($articleWords) / 200)); ?>
@@ -27,7 +27,7 @@
                 <p class="ed-meta">HORECA GROUP <span aria-hidden="true">·</span> <?php echo $readMinutes.' '.hg_lang('min čítania', 'min read'); ?></p>
                 </div>
                 <?php if (!empty($content['file_type']) && preg_match('/^(jpe?g|png|webp|avif|gif)$/i', $content['file_type'])): ?><figure class="ed-article-cover"><img src="/img/rs/<?php echo (int)$content['id']; ?>.<?php echo hg_esc($content['file_type']); ?>" data-rs-fallback="/img/rs/<?php echo (int)$content['id']; ?>-01.<?php echo hg_esc($content['file_type']); ?>" alt="<?php echo hg_esc($content['name']); ?>" decoding="async" fetchpriority="high"></figure><?php endif; ?>
-                </header>
+                </div>
             
             
                 <?php if ($content['id'] == 68): ?>
