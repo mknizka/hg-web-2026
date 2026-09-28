@@ -35,7 +35,7 @@
    text.replaceChildren(fragment);text.classList.add('eq-reveal');return {text,words};
   });
   const pin=root.querySelector('.eq-pin');
-  let pinTop=0,distance=700,progress=0;
+  let pinTop=0,distance=700,progress=0,lastY=window.scrollY;
   const clamp=value=>Math.max(0,Math.min(1,value));
   const paint=()=>{
    const entry=texts[index];if(!entry)return;
@@ -58,7 +58,7 @@
    if((forward&&progress>=1)||(!forward&&progress<=0))return;
    if(Math.abs(offset)>2 && !(forward&&offset>0&&offset<=delta) && !(!forward&&offset<0&&offset>=delta))return;
    event.preventDefault();
-   if(Math.abs(offset)>1)window.scrollBy({top:offset,behavior:'instant'});
+   if(Math.abs(offset)>1){lastY=window.scrollY+offset;window.scrollTo({top:lastY,behavior:'instant'});}
    progress=clamp(progress+(delta-offset)/distance);paint();
   };
   window.addEventListener('wheel',event=>{
@@ -78,11 +78,25 @@
    const delta={ArrowDown:60,ArrowUp:-60,PageDown:innerHeight*.7,PageUp:-innerHeight*.7,' ':innerHeight*.7}[event.key];
    if(delta)consume(event.shiftKey?-delta:delta,event);
   });
-  // Scrollbar dragging, anchor navigation and restored positions never trap the reader.
+  // Touch inertia and browser-native scrolling can cross the threshold without
+  // a cancellable wheel/touch event. Keep the same reading state in that path.
   window.addEventListener('scroll',()=>{
-   const top=root.getBoundingClientRect().top;
-   if(top<pinTop-3)progress=1;
-   else if(top>pinTop+3)progress=0;
+   const y=window.scrollY;
+   if(reduced.matches){lastY=y;progress=1;paint();return;}
+   const anchor=y+root.getBoundingClientRect().top-pinTop;
+   const delta=y-lastY;
+   const crossingDown=delta>0 && lastY<=anchor+2 && y>anchor+1 && progress<1;
+   const crossingUp=delta<0 && lastY>=anchor-2 && y<anchor-1 && progress>0;
+   if(crossingDown||crossingUp){
+    const consumed=crossingDown?y-Math.max(lastY,anchor):y-Math.min(lastY,anchor);
+    progress=clamp(progress+Math.max(-120,Math.min(120,consumed))/distance);
+    lastY=anchor;
+    window.scrollTo({top:anchor,behavior:'instant'});
+   }else{
+    lastY=y;
+    // Reset only after leaving above the panel, never snap the text to white.
+    if(y<anchor-2)progress=0;
+   }
    paint();
   },{passive:true});
   window.addEventListener('resize',measure);reduced.addEventListener('change',measure);
