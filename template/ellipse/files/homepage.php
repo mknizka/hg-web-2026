@@ -272,7 +272,7 @@
 <link rel="stylesheet" href="/template/ellipse/css/hg-home-refresh.css?v=15">
 <link rel="stylesheet" href="/template/ellipse/css/hg-typography.css?v=4">
 <link rel="stylesheet" href="/template/ellipse/css/hg-icons.css?v=1">
-<link rel="stylesheet" href="/template/ellipse/css/hg-shell.css?v=25">
+<link rel="stylesheet" href="/template/ellipse/css/hg-shell.css?v=26">
 <link rel="stylesheet" href="/template/ellipse/css/hg-expanded-details.css?v=2">
 </head>
 <body class="homepage">
