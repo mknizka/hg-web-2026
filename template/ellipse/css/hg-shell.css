@@ -379,3 +379,5 @@ body:is(.homepage,.hg-mkt) header.nav .nav-language-picker:not([open]) .nav-lang
 body:is(.homepage,.hg-mkt) header.nav .nav-language-options a.nav-language{display:flex;justify-content:flex-start;gap:10px;width:100%;height:40px;padding:0 8px!important;font:600 12px/1.4 Montserrat,sans-serif;color:#45516b;text-decoration:none;border:0;background:transparent!important}
 body:is(.homepage,.hg-mkt) header.nav .nav-language-picker summary:focus-visible{outline:2px solid #fb004b;outline-offset:3px;border-radius:4px}
 @media(max-width:1080px){body:is(.homepage,.hg-mkt) header.nav .nav-language-options{left:0;right:auto}}
+
+body:is(.homepage,.hg-mkt) header.nav .nav-language-picker img{position:static!important;inset:auto!important;transform:none!important;margin:0!important;flex:0 0 24px}
