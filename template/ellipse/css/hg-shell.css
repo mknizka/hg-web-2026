@@ -335,3 +335,10 @@ body.hg-mkt #persons .ec-person-links span,body.hg-mkt #persons .ec-team-contact
 body.hg-mkt #persons :is(.ec-team-contact,.ec-person-links) a:hover{color:#e90046}
 @media(max-width:1000px){body.hg-mkt #persons .ec-people-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:600px){body.hg-mkt #persons .ec-people-grid{grid-template-columns:1fr}body.hg-mkt #persons .ec-team-contact{flex-direction:column;gap:10px;margin-bottom:24px}body.hg-mkt #persons .ec-team-contact a{font-size:15px}}
+
+body .hg-site-footer .footer-apps{margin-top:26px;text-align:left}
+body .hg-site-footer .footer-apps-label{display:block;font-size:12px;font-weight:600;color:#fff;margin:0 0 12px}
+body .hg-site-footer .footer-store-links{display:flex;flex-wrap:wrap;align-items:center;gap:12px}
+body .hg-site-footer .footer-store-links a{display:inline-flex;width:auto;flex:0 0 auto;margin:0!important;padding:0!important;opacity:1}
+body .hg-site-footer .footer-store-links img{display:block;height:40px!important;width:auto!important;max-width:none;object-fit:contain;filter:none!important}
+body .hg-site-footer .footer-store-links a:focus-visible{outline:2px solid #fff;outline-offset:5px;border-radius:6px}
