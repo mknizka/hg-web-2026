@@ -192,7 +192,7 @@
                     <div class="col-md-3 sticky-sidebar-col">
                     <div class="sticky-sidebar">
                       <div id="article-progress-placeholder" style="margin-bottom: 30px;"></div>
-                      <div id="article-toc-placeholder"></div>
+                      <?php if (preg_match_all('/<h2\b[^>]*>/i', (string)($content['text'][0] ?? '')) >= 5): ?><div id="article-toc-placeholder"></div><?php endif; ?>
                       <?php if (!empty($content['id']) && function_exists('displayArticleSpeech')): ?><div class="ed-audio"><?php displayArticleSpeech($content['id']); ?></div><?php endif; ?>
                       <div class="mt-40">
                         <?php if (function_exists('displayTopArticlesByEmotions')) { ob_start(); displayTopArticlesByEmotions(5, true); echo hg_text_reactions(ob_get_clean()); } ?>

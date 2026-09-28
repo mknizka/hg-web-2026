@@ -140,3 +140,6 @@ body.hg-mkt .ed-article .article-emotions .emotion-count{font-size:11px!importan
 body.hg-mkt .ed-article .ed-article-more{width:100%;max-width:none;padding:0;margin:0;box-sizing:border-box}
 body.hg-mkt .ed-article .ed-article-more>.ed-cta{width:100%!important;max-width:none!important;margin:0!important;border:0;border-radius:0!important;padding:48px max(24px,calc((100% - 1200px)/2))!important;box-sizing:border-box}
 body.hg-mkt .ed-article .ed-article-more>.ed-cta+.ed-cta{background:#eef1f7}
+
+body.hg-mkt .ed-article .article-emotions .emotions-grid{justify-content:flex-start!important;align-items:center!important;width:100%;margin:0!important;padding:0!important}
+body.hg-mkt .ed-article .article-emotions .emotion-btn{margin:0!important;flex:0 0 auto!important}
