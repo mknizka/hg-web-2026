@@ -321,4 +321,4 @@ body.hg-mkt .ec-address dt{font-size:12px;font-weight:600;color:#69758b}
 body.hg-mkt .ec-address dd{text-align:right;color:#172441;overflow-wrap:anywhere}
 body.hg-mkt .ec-address :is(dt,dd):nth-last-child(-n+2){border:0}
 @media(max-width:850px){body.hg-mkt .ec-people-grid{grid-template-columns:1fr}body.hg-mkt .ec-contact .ec-address{grid-template-columns:1fr;gap:28px}body.hg-mkt .ec-people article.ec-person{padding:24px}body.hg-mkt .ec-address dl{padding:16px 20px}}
-body.hg-mkt .ec-contact .ec-person h3{display:block!important;width:100%!important;text-align:left!important;margin:0 0 8px!important;padding:0!important;color:#081434!important}
+body.hg-mkt .ec-contact #persons .ec-person h3{display:block!important;width:100%!important;text-align:left!important;margin:0 0 8px!important;padding:0!important;color:#081434!important}
