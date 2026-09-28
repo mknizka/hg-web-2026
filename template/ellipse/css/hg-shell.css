@@ -342,3 +342,15 @@ body .hg-site-footer .footer-store-links{display:flex;flex-wrap:wrap;align-items
 body .hg-site-footer .footer-store-links a{display:inline-flex;width:auto;flex:0 0 auto;margin:0!important;padding:0!important;opacity:1}
 body .hg-site-footer .footer-store-links img{display:block;height:40px!important;width:auto!important;max-width:none;object-fit:contain;filter:none!important}
 body .hg-site-footer .footer-store-links a:focus-visible{outline:2px solid #fff;outline-offset:5px;border-radius:6px}
+
+/* Pricing uses the same form component and layout as contact. */
+body.hg-mkt .ec-pricing .ec-sales-copy{padding-top:32px}
+body.hg-mkt .ec-pricing .ec-price{display:flex;flex-wrap:wrap;align-items:baseline;gap:12px;margin:22px 0 28px;color:#081434;line-height:1}
+body.hg-mkt .ec-pricing .ec-price strong{font-size:clamp(72px,7.5vw,104px);font-weight:650;letter-spacing:-.055em;line-height:1}
+body.hg-mkt .ec-pricing .ec-price strong span{font-size:.6em;letter-spacing:-.02em}
+body.hg-mkt .ec-pricing .ec-price-from,body.hg-mkt .ec-pricing .ec-price-period{font-size:18px;color:#69758b;font-weight:400}
+body.hg-mkt .ec-pricing .ec-price-description{max-width:430px;font-size:16px;line-height:1.75;margin:0}
+body.hg-mkt .ec-pricing .ec-price-contact{display:flex;flex-direction:column;align-items:flex-start;gap:9px;margin-top:36px;padding-top:24px;border-top:1px solid #e1e5ed;font-size:14px}
+body.hg-mkt .ec-pricing .ec-price-contact>span{color:#69758b;font-size:12px;margin-bottom:2px}
+body.hg-mkt .ec-pricing .ec-price-contact>a{color:#081434;font-weight:600}
+@media(max-width:850px){body.hg-mkt .ec-pricing .ec-sales-copy{padding-top:0}body.hg-mkt .ec-pricing .ec-price{gap:10px;margin:20px 0 24px}}

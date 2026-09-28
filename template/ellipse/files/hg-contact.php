@@ -5,29 +5,7 @@
 <ul class="ec-sales-benefits"><li>Ukážka systému podľa vašich procesov</li><li>Výber modulov a ponuka pre vašu prevádzku</li><li>Plán prechodu a prepojenia na existujúce nástroje</li></ul>
 <div class="ec-sales-proof"><strong>780+</strong><span>klientov používa Ellipse</span><strong>20 000+</strong><span>ubytovacích jednotiek</span></div>
 <div class="ec-sales-help"><b>Už používate Ellipse?</b><p>Náš tím vám pomôže s podporou.</p><a href="tel:<?php echo hg_esc($nap['phone']); ?>"><?php echo hg_esc($nap['phone_display']); ?></a><a href="mailto:<?php echo hg_esc($nap['email']); ?>"><?php echo hg_esc($nap['email']); ?></a></div></div>
-<div class="ec-form-card ec-sales-form"><p class="kicker">DEMO A CENOVÁ PONUKA</p><h2>Začnime vašou prevádzkou.</h2><p class="ec-form-subtitle">Ozveme sa spravidla do jedného pracovného dňa.</p>
-<?php
-$fields=array('name'=>'Meno','surname'=>'Priezvisko','company'=>'Názov prevádzky alebo firmy','numbers'=>'Počet izieb / jednotiek','email'=>'Pracovný e-mail','tel'=>'Telefón','text'=>'Čo potrebujete vyriešiť?','submit'=>'Dohodnúť konzultáciu');
-ob_start(); contacForm($fields); $form=ob_get_clean();
-$form=preg_replace_callback('~<(input|textarea)\b[^>]*\bid\s*=\s*[\x22\x27]?(cf_[a-z]+)[\x22\x27]?[^>]*>~i',function($m)use($fields){
-$key=substr($m[2],3); if(!isset($fields[$key])) return $m[0];
-$required=in_array($key,array('email','text'),true);
-$tag=preg_replace('~(\w+)=\x27([^\x27]*)\x27~','$1="$2"',$m[0]);
-$examples=array('email'=>'meno@vasafirma.sk','tel'=>'+421','numbers'=>'Napr. 40','text'=>'Napíšte nám o prevádzke, súčasnom systéme alebo o tom, čo chcete zlepšiť.');
-$tag=preg_replace('~placeholder="[^"]*"~','placeholder="'.hg_esc($examples[$key] ?? '').'"',$tag);
-if($key==='email') $tag=str_replace('type="text"','type="email" autocomplete="email"',$tag);
-if($key==='tel') $tag=str_replace('type="text"','type="tel" autocomplete="tel"',$tag);
-$autocomplete=array('name'=>'given-name','surname'=>'family-name','company'=>'organization');
-if(isset($autocomplete[$key])) $tag=str_replace('<input','<input autocomplete="'.$autocomplete[$key].'"',$tag);
-if($required) $tag=str_replace('<'.$m[1],'<'.$m[1].' required aria-required="true"',$tag);
-return '<label for="'.hg_esc($m[2]).'">'.hg_esc($fields[$key]).($required?' <span aria-hidden="true">*</span>':' <small>nepovinné</small>').'</label>'.$tag;
-},$form);
-$form=preg_replace('~<div\b(?=[^>]*\bid\s*=\s*[\x22\x27]?submitform\b)[^>]*>(.*?)</div>~s','<button type="button" class="btn" id="submitform">$1 <span aria-hidden="true">→</span></button>',$form);
-$form=preg_replace('~id\s*=\s*[\x22\x27]?formmessage[\x22\x27]?~','id="formmessage" role="status" aria-live="polite"',$form);
-echo $form;
-?>
-<p class="ec-form-privacy">Údaje použijeme na vybavenie vašej požiadavky. <a href="/gdpr/">Ochrana osobných údajov</a></p>
-</div></section>
+<?php include __DIR__.'/hg-sales-form.php'; ?></section>
 <section class="ec-people" id="persons"><p class="kicker">ĽUDIA ZA ELLIPSE</p><h2>Sme tu pre vás.</h2><div class="ec-team-contact" aria-label="Všeobecný kontakt"><a href="tel:+421527871911"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3H4a1 1 0 0 0-1 1c0 9.4 7.6 17 17 17a1 1 0 0 0 1-1v-3l-5-2-2 2a14 14 0 0 1-7-7l2-2-2-5Z"/></svg><span><small>Pevná linka</small>+421 52 787 1911</span></a><a href="mailto:office@horecagroup.sk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m4 7 8 6 8-6"/></svg><span><small>Všeobecný kontakt</small>office@horecagroup.sk</span></a></div><div class="ec-people-grid">
 <?php
 $peopleFallback=array(

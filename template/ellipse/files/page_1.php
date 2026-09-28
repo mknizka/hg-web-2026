@@ -1,3 +1,4 @@
+<?php include __DIR__.'/hg-pricing.php'; return; ?>
           <main>
             <section id="page" class="pricing">
               <div class="container-fluid">
