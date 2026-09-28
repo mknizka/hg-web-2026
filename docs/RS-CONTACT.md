@@ -1,4 +1,4 @@
-# Kontakt – banner 175
+# Kontakt – banner 28
 
 Každý záznam je jedna osoba. `name` je meno. Obrázok je voliteľný portrét.
 Pole `text` obsahuje zoznam v tomto poradí:

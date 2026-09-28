@@ -35,7 +35,7 @@ $peopleFallback=array(
  array('name'=>'Lenka Bolcárová','text'=>'<ul><li>Office manager and relations</li><li>lenka.bolcarova@horecagroup.sk</li><li>+421 52 787 1911</li></ul>'),
  array('name'=>'Patrícia Chovancová','text'=>'<ul><li>Office manager and websites</li><li>patricia.chovancova@horecagroup.sk</li><li>+421 52 787 1911</li></ul>')
 );
-foreach(hg_rows_or(175,$peopleFallback) as $person):
+foreach(hg_rows_or(28,$peopleFallback) as $person):
  preg_match_all('~<li\b[^>]*>(.*?)</li>~is',$person['text'] ?? '',$items);
  $details=array_map(function($value){return trim(html_entity_decode(strip_tags($value),ENT_QUOTES,'UTF-8'));},$items[1]);
  $position=$details[0] ?? ''; $email=''; $phone='';
