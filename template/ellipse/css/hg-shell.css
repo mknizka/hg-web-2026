@@ -274,3 +274,11 @@ body .eq-quotes .eq-text .eq-word{font:inherit!important;letter-spacing:inherit;
  body .eq-quotes .eq-text.eq-reveal .eq-word{background:linear-gradient(90deg,#fff 0%,#fff var(--eq-fill,0%),rgba(255,255,255,.22) var(--eq-fill,0%),rgba(255,255,255,.22) 100%);background-clip:text;-webkit-background-clip:text;color:transparent!important;-webkit-text-fill-color:transparent}
 }
 @media(prefers-reduced-motion:reduce){body .eq-quotes .eq-text.eq-reveal .eq-word{background:none;color:#fff!important;-webkit-text-fill-color:#fff}}
+
+/* Native sticky reading sequence: scroll advances the fill, then releases. */
+body .eq-quotes,body .os-home>.eq-quotes{padding:0!important;overflow:visible!important}
+body .eq-quotes .eq-pin{box-sizing:border-box;padding:56px max(24px,calc((100% - 1120px)/2));width:100%;background:#081434}
+body .eq-quotes.eq-sticky{height:var(--eq-scroll-height)!important}
+body .eq-quotes.eq-sticky .eq-pin{position:sticky;top:var(--eq-pin-top);transform:none}
+@media(max-width:600px){body .eq-quotes .eq-pin{padding:32px 22px}body .eq-quotes .eq-text{font-size:22px!important}body .eq-quotes .eq-long .eq-text{font-size:19px!important}}
+@media(prefers-reduced-motion:reduce){body .eq-quotes.eq-sticky{height:auto!important}body .eq-quotes .eq-pin{position:static!important}}

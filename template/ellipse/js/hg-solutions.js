@@ -34,20 +34,32 @@
    });
    text.replaceChildren(fragment);text.classList.add('eq-reveal');return {text,words};
   });
+  const pin=root.querySelector('.eq-pin');
+  let pinTop=0,distance=0,progress=0;
+  const measure=()=>{
+   if(!pin)return;
+   const height=pin.offsetHeight,vh=window.innerHeight;
+   pinTop=Math.max(84,(vh-height)/2);
+   distance=reduced.matches?0:Math.max(500,vh*.9);
+   root.classList.toggle('eq-sticky',!reduced.matches);
+   root.style.setProperty('--eq-pin-top',pinTop+'px');
+   root.style.setProperty('--eq-scroll-height',(height+distance)+'px');
+  };
   const paint=()=>{
    const entry=texts[index];if(!entry)return;
-   const rect=entry.text.getBoundingClientRect(),vh=window.innerHeight;
-   const progress=reduced.matches?1:Math.max(0,Math.min(1,(vh*.85-rect.top)/(vh*.45+rect.height*.5)));
+   progress=reduced.matches?1:Math.max(0,Math.min(1,(pinTop-root.getBoundingClientRect().top)/distance));
    entry.words.forEach((word,i)=>word.style.setProperty('--eq-fill',`${Math.max(0,Math.min(1,progress*entry.words.length-i))*100}%`));
   };
   let frame=0;
   const schedule=()=>{if(!frame)frame=requestAnimationFrame(()=>{frame=0;paint();});};
-  window.addEventListener('scroll',schedule,{passive:true});window.addEventListener('resize',schedule);
-  reduced.addEventListener('change',schedule);
-  if(document.fonts)document.fonts.ready.then(schedule);
+  window.addEventListener('scroll',schedule,{passive:true});window.addEventListener('resize',()=>{measure();schedule();});
+  reduced.addEventListener('change',()=>{measure();schedule();});
+  if(document.fonts)document.fonts.ready.then(()=>{measure();schedule();});
+  if(pin)new ResizeObserver(()=>{measure();schedule();}).observe(pin);
   const show=i=>{index=i;slides.forEach((slide,j)=>{slide.classList.toggle('is-active',i===j);slide.setAttribute('aria-hidden',String(i!==j));});dots.forEach((dot,j)=>dot.setAttribute('aria-pressed',String(i===j)));paint();};
   dots.forEach((dot,i)=>dot.addEventListener('click',()=>show(i)));
-  paint();
-  if(slides.length>1)rotation(root,()=>show((index+1)%slides.length),10000);
+  measure();paint();
+  // Never replace the quote midway through its pinned reading sequence.
+  if(slides.length>1)rotation(root,()=>{if(progress>=1)show((index+1)%slides.length);},10000);
  });
 })();

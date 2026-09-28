@@ -5,6 +5,7 @@ $hgQuoteSource=array_values(array_filter($hgQuoteSource,function($row){return hg
 if(!$hgQuoteSource) return;
 ?>
 <section class="eq-quotes" data-quotes aria-label="Citáty hotelierov">
+<div class="eq-pin"><div class="eq-content">
 <p class="eq-kicker">DÔVERA Z PRAXE</p>
 <div class="eq-slides">
 <?php foreach($hgQuoteSource as $i=>$ref): $parts=explode(',',$ref['name'],2); $quote=hg_plain($ref['parex_text']); ?>
@@ -13,4 +14,4 @@ if(!$hgQuoteSource) return;
 <figcaption><strong><?php echo hg_esc(trim($parts[0])); ?></strong><?php if(!empty($parts[1])): ?><span><?php echo hg_esc(trim($parts[1])); ?></span><?php endif; ?></figcaption>
 </figure><?php endforeach; ?></div>
 <?php if(count($hgQuoteSource)>1): ?><div class="eq-controls"><div class="eq-dots" aria-label="Výber citátu"><?php foreach($hgQuoteSource as $i=>$ref): ?><button type="button" data-quote-index="<?php echo $i; ?>" aria-label="Citát: <?php echo hg_esc($ref['name']); ?>" aria-pressed="<?php echo $i===0?'true':'false'; ?>"></button><?php endforeach; ?></div></div><?php endif; ?>
-</section>
+</div></div></section>
