@@ -409,3 +409,7 @@ body:is(.homepage,.hg-mkt) .hg-shared-final .button.ghost{border:1px solid #5360
 body:is(.homepage,.hg-mkt) .hg-shared-final>.os-final-meta{color:#b1bdd2!important;font-size:12px!important;line-height:1.6;margin:24px 0 12px!important;padding:0;text-align:center}
 body:is(.homepage,.hg-mkt) .hg-shared-final .os-final-meta small{font-size:inherit;color:inherit}
 @media(max-width:760px){body:is(.homepage,.hg-mkt) section.hg-shared-final{padding:64px 24px!important;min-height:0}body:is(.homepage,.hg-mkt) .hg-shared-final>h2{font-size:36px!important;line-height:1.1!important}body:is(.homepage,.hg-mkt) .hg-shared-final>.os-lead{font-size:16px!important}}
+
+/* The same subtle footer divider on every page. */
+body:is(.homepage,.hg-mkt) footer.hg-site-footer{position:relative}
+body:is(.homepage,.hg-mkt) footer.hg-site-footer::before{content:"";position:absolute;left:24px;right:24px;top:0;height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.14),transparent);pointer-events:none}
