@@ -59,24 +59,30 @@
   };
   const measure=()=>{
    root.classList.remove('eq-sticky');
-   pinTop=Math.max(84,(window.innerHeight-pin.offsetHeight)/2);
+   pinTop=(window.innerHeight-root.getBoundingClientRect().height)/2;
    distance=Math.max(500,window.innerHeight*.8);
    if(reduced.matches){progress=1;held=false;unlock();}
    paint();
+  };
+  const centeredY=()=>{
+   const rect=root.getBoundingClientRect();
+   const viewport=window.visualViewport;
+   const center=(viewport?viewport.offsetTop:0)+(viewport?viewport.height:window.innerHeight)/2;
+   return Math.round(window.scrollY+rect.top+rect.height/2-center);
   };
   // Consume a bounded reading gesture at the natural section position.
   // No spacer: neighbouring sections remain adjacent and stationary.
   const consume=(delta,event)=>{
    if(reduced.matches||!event.cancelable||!delta)return;
    if(event.target.closest('input,textarea,select,[contenteditable="true"],dialog,[aria-modal="true"],#site-nav'))return;
-   const target=held?heldY:Math.round(window.scrollY+root.getBoundingClientRect().top-pinTop);
+   const target=held?heldY:centeredY();
    const offset=target-window.scrollY;
    const forward=delta>0;
    if((forward&&progress>=1)||(!forward&&progress<=0))return;
    if(!held && Math.abs(offset)>2 && !(forward&&offset>0&&offset<=delta) && !(!forward&&offset<0&&offset>=delta))return;
    event.preventDefault();
-   if(!held){held=true;heldY=target;lock();}
-   if(Math.abs(offset)>1){lastY=heldY;correctionY=heldY;window.scrollTo({top:heldY,behavior:'instant'});}
+   if(!held){held=true;lock();heldY=centeredY();}
+   if(Math.abs(window.scrollY-heldY)>1){lastY=heldY;correctionY=heldY;window.scrollTo({top:heldY,behavior:'instant'});}
    progress=clamp(progress+(delta-offset)/distance);
    if(progress===0||progress===1){held=false;unlock();}
    paint();
@@ -105,16 +111,16 @@
    if(reduced.matches){lastY=y;progress=1;held=false;unlock();paint();return;}
    // Ignore our own rounded scroll correction; it is not reverse user input.
    if(correctionY!==null&&Math.abs(y-correctionY)<=2){lastY=y;correctionY=null;return;}
-   const anchor=held?heldY:Math.round(y+root.getBoundingClientRect().top-pinTop);
+   const anchor=held?heldY:centeredY();
    const delta=y-lastY;
    const crossingDown=delta>0 && lastY<=anchor+2 && y>anchor+1 && progress<1;
    const crossingUp=delta<0 && lastY>=anchor-2 && y<anchor-1 && progress>0;
    if((held&&Math.abs(y-anchor)>2)||crossingDown||crossingUp){
     const consumed=held?y-anchor:crossingDown?y-Math.max(lastY,anchor):y-Math.min(lastY,anchor);
-    heldY=anchor;held=true;lock();
+    held=true;lock();heldY=centeredY();
     progress=clamp(progress+Math.max(-120,Math.min(120,consumed))/distance);
-    lastY=anchor;correctionY=anchor;
-    window.scrollTo({top:anchor,behavior:'instant'});
+    lastY=heldY;correctionY=heldY;
+    window.scrollTo({top:heldY,behavior:'instant'});
     if(progress===0||progress===1){held=false;unlock();}
    }else{
     lastY=y;
