@@ -284,3 +284,4 @@ body .eq-quotes.eq-sticky .eq-pin{position:sticky;top:var(--eq-pin-top);transfor
 @media(prefers-reduced-motion:reduce){body .eq-quotes.eq-sticky{height:auto!important}body .eq-quotes .eq-pin{position:static!important}}
 /* Clip decorative overflow without creating a scrolling ancestor for sticky. */
 body.homepage main.os-home{overflow:clip!important}
+body.homepage main.os-home>section.eq-quotes.eq-sticky,body.hg-mkt section.eq-quotes.eq-sticky{padding:0!important;max-width:none!important;width:100%!important}
