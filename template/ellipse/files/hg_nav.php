@@ -9,9 +9,6 @@ $hgNavHome = !empty($hgNavHome);
 $mcpHref = $hgNavHome ? '#mcp' : '/#mcp';
 $refHref = $hgNavHome ? '#referencie' : '/#referencie';
 $brandHref = $hgNavHome ? '#top' : '/';
-$langHref = '/lang/' . ($hgLang === 'en' ? 'sk' : 'en') . '/';
-$langLabel = $hgLang === 'en' ? 'SK' : 'EN';
-$langLabelLong = $hgLang === 'en' ? 'Slovenčina' : 'English';
 ?>
 <header class="nav">
   <a class="brand" href="<?php echo hg_esc($brandHref); ?>" aria-label="Ellipse"><img src="<?php echo hg_esc($logoSrc); ?>" alt="Ellipse" width="148" height="52"></a>
@@ -55,15 +52,15 @@ $langLabelLong = $hgLang === 'en' ? 'Slovenčina' : 'English';
         <a href="tel:<?php echo hg_esc($nap['phone']); ?>"><?php echo hg_esc($nap['phone_display']); ?></a>
         <span><?php echo hg_esc($nap['street']); ?>, <?php echo hg_esc($nap['zip'].' '.$nap['city']); ?></span>
       </div>
-      <a class="login" href="<?php echo hg_esc($langHref); ?>"><?php echo hg_esc($langLabelLong); ?></a>
-      <a class="login" href="<?php echo hg_esc($nap['login']); ?>"><?php echo hg_lang('Prihlásenie', 'Log in'); ?></a>
-      <a class="button small" href="<?php echo hg_esc($nap['demo']); ?>"><?php echo hg_lang('Dohodnúť demo', 'Book a demo'); ?></a>
+      <?php include __DIR__.'/hg-languages.php'; ?>
+      <a class="login" href="/kontakt/"><?php echo hg_lang('Kontakt', 'Contact'); ?></a>
+      <a class="button small" href="<?php echo hg_esc($nap['demo']); ?>"><?php echo hg_lang('Záujem o demo', 'Request a demo'); ?></a>
     </div>
   </nav>
   <div class="nav-actions">
-    <a class="login" href="<?php echo hg_esc($langHref); ?>"><?php echo hg_esc($langLabel); ?></a>
-    <a class="login" href="<?php echo hg_esc($nap['login']); ?>"><?php echo hg_lang('Prihlásenie', 'Log in'); ?></a>
-    <a class="button small" href="<?php echo hg_esc($nap['demo']); ?>"><?php echo hg_lang('Dohodnúť demo', 'Book a demo'); ?></a>
+    <?php include __DIR__.'/hg-languages.php'; ?>
+    <a class="login" href="/kontakt/"><?php echo hg_lang('Kontakt', 'Contact'); ?></a>
+    <a class="button small" href="<?php echo hg_esc($nap['demo']); ?>"><?php echo hg_lang('Záujem o demo', 'Request a demo'); ?></a>
   </div>
   <button class="menu" type="button" aria-label="<?php echo hg_lang('Otvoriť menu', 'Open menu'); ?>" aria-expanded="false" aria-controls="site-nav">
     <span></span><span></span><span></span>
