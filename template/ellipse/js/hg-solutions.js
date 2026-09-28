@@ -35,7 +35,7 @@
    text.replaceChildren(fragment);text.classList.add('eq-reveal');return {text,words};
   });
   const pin=root.querySelector('.eq-pin');
-  let pinTop=0,distance=700,progress=0,lastY=window.scrollY;
+  let pinTop=0,distance=700,progress=0,lastY=window.scrollY,held=false,heldY=0,correctionY=null;
   const clamp=value=>Math.max(0,Math.min(1,value));
   const paint=()=>{
    const entry=texts[index];if(!entry)return;
@@ -45,7 +45,7 @@
    root.classList.remove('eq-sticky');
    pinTop=Math.max(84,(window.innerHeight-pin.offsetHeight)/2);
    distance=Math.max(500,window.innerHeight*.8);
-   if(reduced.matches)progress=1;
+   if(reduced.matches){progress=1;held=false;}
    paint();
   };
   // Consume a bounded reading gesture at the natural section position.
@@ -53,13 +53,17 @@
   const consume=(delta,event)=>{
    if(reduced.matches||!event.cancelable||!delta)return;
    if(event.target.closest('input,textarea,select,[contenteditable="true"],dialog,[aria-modal="true"],#site-nav'))return;
-   const top=root.getBoundingClientRect().top,offset=top-pinTop;
+   const target=held?heldY:Math.round(window.scrollY+root.getBoundingClientRect().top-pinTop);
+   const offset=target-window.scrollY;
    const forward=delta>0;
    if((forward&&progress>=1)||(!forward&&progress<=0))return;
-   if(Math.abs(offset)>2 && !(forward&&offset>0&&offset<=delta) && !(!forward&&offset<0&&offset>=delta))return;
+   if(!held && Math.abs(offset)>2 && !(forward&&offset>0&&offset<=delta) && !(!forward&&offset<0&&offset>=delta))return;
    event.preventDefault();
-   if(Math.abs(offset)>1){lastY=window.scrollY+offset;window.scrollTo({top:lastY,behavior:'instant'});}
-   progress=clamp(progress+(delta-offset)/distance);paint();
+   if(!held){held=true;heldY=target;}
+   if(Math.abs(offset)>1){lastY=heldY;correctionY=heldY;window.scrollTo({top:heldY,behavior:'instant'});}
+   progress=clamp(progress+(delta-offset)/distance);
+   if(progress===0||progress===1)held=false;
+   paint();
   };
   window.addEventListener('wheel',event=>{
    if(event.ctrlKey||Math.abs(event.deltaX)>Math.abs(event.deltaY))return;
@@ -73,7 +77,7 @@
   },{passive:false});
   window.addEventListener('touchend',()=>{touchY=null;},{passive:true});
   window.addEventListener('keydown',event=>{
-   if(event.key==='Escape'||event.key==='End'){progress=1;paint();return;}
+   if(event.key==='Escape'||event.key==='End'){held=false;progress=1;paint();return;}
    if(event.target.closest('a,button,input,textarea,select,[contenteditable="true"]'))return;
    const delta={ArrowDown:60,ArrowUp:-60,PageDown:innerHeight*.7,PageUp:-innerHeight*.7,' ':innerHeight*.7}[event.key];
    if(delta)consume(event.shiftKey?-delta:delta,event);
@@ -83,19 +87,23 @@
   window.addEventListener('scroll',()=>{
    const y=window.scrollY;
    if(reduced.matches){lastY=y;progress=1;paint();return;}
-   const anchor=y+root.getBoundingClientRect().top-pinTop;
+   // Ignore our own rounded scroll correction; it is not reverse user input.
+   if(correctionY!==null&&Math.abs(y-correctionY)<=2){lastY=y;correctionY=null;return;}
+   const anchor=held?heldY:Math.round(y+root.getBoundingClientRect().top-pinTop);
    const delta=y-lastY;
    const crossingDown=delta>0 && lastY<=anchor+2 && y>anchor+1 && progress<1;
    const crossingUp=delta<0 && lastY>=anchor-2 && y<anchor-1 && progress>0;
-   if(crossingDown||crossingUp){
-    const consumed=crossingDown?y-Math.max(lastY,anchor):y-Math.min(lastY,anchor);
+   if((held&&Math.abs(y-anchor)>2)||crossingDown||crossingUp){
+    const consumed=held?y-anchor:crossingDown?y-Math.max(lastY,anchor):y-Math.min(lastY,anchor);
+    heldY=anchor;held=true;
     progress=clamp(progress+Math.max(-120,Math.min(120,consumed))/distance);
-    lastY=anchor;
+    lastY=anchor;correctionY=anchor;
     window.scrollTo({top:anchor,behavior:'instant'});
+    if(progress===0||progress===1)held=false;
    }else{
     lastY=y;
-    // Reset only after leaving above the panel, never snap the text to white.
-    if(y<anchor-2)progress=0;
+    // Hysteresis: subpixel rounding or viewport changes cannot reset the reveal.
+    if(!held&&y<anchor-48)progress=0;
    }
    paint();
   },{passive:true});
@@ -104,8 +112,17 @@
   if(pin)new ResizeObserver(measure).observe(pin);
   const show=i=>{index=i;slides.forEach((slide,j)=>{slide.classList.toggle('is-active',i===j);slide.setAttribute('aria-hidden',String(i!==j));});dots.forEach((dot,j)=>dot.setAttribute('aria-pressed',String(i===j)));paint();};
   dots.forEach((dot,i)=>dot.addEventListener('click',()=>show(i)));
-  measure();paint();
+  const order=slides.map((_,i)=>i);
+  for(let i=order.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[order[i],order[j]]=[order[j],order[i]];}
+  // Avoid repeating the opening quote on consecutive page loads in this tab.
+  try{
+   const key='ellipse-last-opening-quote',previous=sessionStorage.getItem(key);
+   const identity=i=>slides[i].querySelector('figcaption')?.textContent.trim()||String(i);
+   if(order.length>1&&identity(order[0])===previous)[order[0],order[1]]=[order[1],order[0]];
+   if(order.length)sessionStorage.setItem(key,identity(order[0]));
+  }catch{/* Storage may be unavailable; the shuffled order still works. */}
+  measure();show(order[0]||0);
   // Never replace the quote midway through its pinned reading sequence.
-  if(slides.length>1)rotation(root,()=>{if(progress>=1)show((index+1)%slides.length);},10000);
+  if(slides.length>1)rotation(root,()=>{if(progress>=1)show(order[(order.indexOf(index)+1)%order.length]);},10000);
  });
 })();

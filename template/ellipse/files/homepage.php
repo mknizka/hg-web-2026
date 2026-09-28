@@ -290,6 +290,6 @@
 <script src="/template/ellipse/js/hg-home-refresh.js?v=8" defer></script>
 <script src="/template/ellipse/js/hg-icons.js?v=2" defer></script>
 <script src="/template/ellipse/js/hg-navigation.js?v=1" defer></script>
-<script src="/template/ellipse/js/hg-solutions.js?v=9" defer></script>
+<script src="/template/ellipse/js/hg-solutions.js?v=10" defer></script>
 </body>
 </html>
