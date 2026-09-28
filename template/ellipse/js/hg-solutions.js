@@ -35,30 +35,59 @@
    text.replaceChildren(fragment);text.classList.add('eq-reveal');return {text,words};
   });
   const pin=root.querySelector('.eq-pin');
-  let pinTop=0,distance=0,progress=0;
-  const measure=()=>{
-   if(!pin)return;
-   const vh=window.innerHeight;
-   root.classList.toggle('eq-sticky',!reduced.matches);
-   root.style.setProperty('--eq-viewport',vh+'px');
-   const height=pin.offsetHeight;
-   pinTop=Math.max(84,(vh-height)/2);
-   distance=reduced.matches?0:Math.max(500,vh*.9);
-   root.classList.toggle('eq-sticky',!reduced.matches);
-   root.style.setProperty('--eq-pin-top',pinTop+'px');
-   root.style.setProperty('--eq-scroll-height',(height+distance)+'px');
-  };
+  let pinTop=0,distance=700,progress=0;
+  const clamp=value=>Math.max(0,Math.min(1,value));
   const paint=()=>{
    const entry=texts[index];if(!entry)return;
-   progress=reduced.matches?1:Math.max(0,Math.min(1,(pinTop-root.getBoundingClientRect().top)/distance));
-   entry.words.forEach((word,i)=>word.style.setProperty('--eq-fill',`${Math.max(0,Math.min(1,progress*entry.words.length-i))*100}%`));
+   entry.words.forEach((word,i)=>word.style.setProperty('--eq-fill',`${clamp((reduced.matches?1:progress)*entry.words.length-i)*100}%`));
   };
-  let frame=0;
-  const schedule=()=>{if(!frame)frame=requestAnimationFrame(()=>{frame=0;paint();});};
-  window.addEventListener('scroll',schedule,{passive:true});window.addEventListener('resize',()=>{measure();schedule();});
-  reduced.addEventListener('change',()=>{measure();schedule();});
-  if(document.fonts)document.fonts.ready.then(()=>{measure();schedule();});
-  if(pin)new ResizeObserver(()=>{measure();schedule();}).observe(pin);
+  const measure=()=>{
+   root.classList.remove('eq-sticky');
+   pinTop=Math.max(84,(window.innerHeight-pin.offsetHeight)/2);
+   distance=Math.max(500,window.innerHeight*.8);
+   if(reduced.matches)progress=1;
+   paint();
+  };
+  // Consume a bounded reading gesture at the natural section position.
+  // No spacer: neighbouring sections remain adjacent and stationary.
+  const consume=(delta,event)=>{
+   if(reduced.matches||!event.cancelable||!delta)return;
+   if(event.target.closest('input,textarea,select,[contenteditable="true"],dialog,[aria-modal="true"],#site-nav'))return;
+   const top=root.getBoundingClientRect().top,offset=top-pinTop;
+   const forward=delta>0;
+   if((forward&&progress>=1)||(!forward&&progress<=0))return;
+   if(Math.abs(offset)>2 && !(forward&&offset>0&&offset<=delta) && !(!forward&&offset<0&&offset>=delta))return;
+   event.preventDefault();
+   if(Math.abs(offset)>1)window.scrollBy({top:offset,behavior:'instant'});
+   progress=clamp(progress+(delta-offset)/distance);paint();
+  };
+  window.addEventListener('wheel',event=>{
+   if(event.ctrlKey||Math.abs(event.deltaX)>Math.abs(event.deltaY))return;
+   consume(event.deltaY*(event.deltaMode===1?16:event.deltaMode===2?innerHeight:1),event);
+  },{passive:false});
+  let touchY=null;
+  window.addEventListener('touchstart',event=>{touchY=event.touches.length===1?event.touches[0].clientY:null;},{passive:true});
+  window.addEventListener('touchmove',event=>{
+   if(touchY===null||event.touches.length!==1)return;
+   const next=event.touches[0].clientY,delta=touchY-next;touchY=next;consume(delta,event);
+  },{passive:false});
+  window.addEventListener('touchend',()=>{touchY=null;},{passive:true});
+  window.addEventListener('keydown',event=>{
+   if(event.key==='Escape'||event.key==='End'){progress=1;paint();return;}
+   if(event.target.closest('a,button,input,textarea,select,[contenteditable="true"]'))return;
+   const delta={ArrowDown:60,ArrowUp:-60,PageDown:innerHeight*.7,PageUp:-innerHeight*.7,' ':innerHeight*.7}[event.key];
+   if(delta)consume(event.shiftKey?-delta:delta,event);
+  });
+  // Scrollbar dragging, anchor navigation and restored positions never trap the reader.
+  window.addEventListener('scroll',()=>{
+   const top=root.getBoundingClientRect().top;
+   if(top<pinTop-3)progress=1;
+   else if(top>pinTop+3)progress=0;
+   paint();
+  },{passive:true});
+  window.addEventListener('resize',measure);reduced.addEventListener('change',measure);
+  if(document.fonts)document.fonts.ready.then(measure);
+  if(pin)new ResizeObserver(measure).observe(pin);
   const show=i=>{index=i;slides.forEach((slide,j)=>{slide.classList.toggle('is-active',i===j);slide.setAttribute('aria-hidden',String(i!==j));});dots.forEach((dot,j)=>dot.setAttribute('aria-pressed',String(i===j)));paint();};
   dots.forEach((dot,i)=>dot.addEventListener('click',()=>show(i)));
   measure();paint();
