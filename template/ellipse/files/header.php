@@ -114,7 +114,7 @@
           --f: <?php echo themeSetup('farba_footer_pozadie'); ?>;
       }
     </style>
-  <link rel="stylesheet" href="/template/ellipse/css/hg-editorial.css?v=5">
+  <link rel="stylesheet" href="/template/ellipse/css/hg-editorial.css?v=6">
   <link rel="stylesheet" href="/template/ellipse/css/hg-blog.css?v=1">
   <link rel="stylesheet" href="/template/ellipse/css/hg-typography.css?v=1">
   <link rel="stylesheet" href="/template/ellipse/css/hg-icons.css?v=1">

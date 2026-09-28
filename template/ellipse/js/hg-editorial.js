@@ -29,3 +29,15 @@
     if(img.complete && !img.naturalWidth)recover();
   });
 })();
+
+// Keep sidebar statistics quiet: real view and like counts, icon plus number.
+(() => {
+ document.querySelectorAll('.ed-article .top-article-item').forEach(item=>{
+  const meta=item.querySelector('.article-meta');if(!meta)return;
+  const views=item.querySelector('.meta-item.views')?.textContent.match(/[\d]+/g)?.join('')||'0';
+  const like=[...item.querySelectorAll('.emotion-preview')].find(el=>/Páči sa mi|Like/i.test(el.textContent));
+  const likes=like?.textContent.match(/\d+/)?.[0]||'0';
+  const stat=(label,value,path)=>{const span=document.createElement('span');span.title=label;span.setAttribute('aria-label',label+': '+value);const svg=document.createElementNS('http://www.w3.org/2000/svg','svg');svg.setAttribute('viewBox','0 0 24 24');svg.setAttribute('aria-hidden','true');const shape=document.createElementNS(svg.namespaceURI,'path');shape.setAttribute('d',path);svg.append(shape);span.append(svg,document.createTextNode(value));return span;};
+  meta.replaceChildren(stat('Zobrazenia',views,'M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12Zm13 0a3 3 0 1 0-6 0 3 3 0 0 0 6 0'),stat('Páči sa mi',likes,'M7 10v11H3V10h4Zm0 0 5-8c3 0 2 5 1 7h6a2 2 0 0 1 2 2l-2 8a2 2 0 0 1-2 2H7'));
+ });
+})();

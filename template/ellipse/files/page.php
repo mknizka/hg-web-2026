@@ -83,7 +83,7 @@
                       <article class="main-content">
                         <div class="text-left">
                           <div class="ed-article-content"><?php echo $content['text'][0]; ?></div>
-                          <?php $articleCtas = hg_editorial_ctas(); $ctaKeys = array_rand($articleCtas, 2); hg_editorial_cta($articleCtas[$ctaKeys[0]], true); ?>
+                          <?php $articleCtas = hg_editorial_ctas(); $ctaKeys = array_rand($articleCtas, 2); ?>
 
                                         <?php if ($content['id'] == 84): ?>
 
@@ -211,6 +211,6 @@
           </div>
         </section>
 
-      <div class="ed-article-more"><?php hg_editorial_cta($articleCtas[$ctaKeys[1]]); ?></div>
+      <div class="ed-article-more"><?php hg_editorial_cta($articleCtas[$ctaKeys[0]]); hg_editorial_cta($articleCtas[$ctaKeys[1]]); ?></div>
       </main>
       <?php endif; ?>

@@ -113,3 +113,30 @@ body.hg-mkt .ed-article #page .sticky-sidebar .top-article-item{padding:18px 0!i
 body.hg-mkt .ed-article #page .sticky-sidebar .top-article-item a{font-size:14px;line-height:1.5;display:block;text-align:left}
 body.hg-mkt .ed-article #page .sticky-sidebar .top-article-meta{display:flex;flex-wrap:wrap;gap:6px 12px;font-size:11px;line-height:1.5}
 @media(max-width:850px){body.hg-mkt .ed-article #page .ed-article-hero{grid-template-columns:1fr;gap:28px;margin-bottom:36px;padding-bottom:36px}body.hg-mkt .ed-article #page .hg-article-layout{grid-template-columns:minmax(0,1fr);gap:32px}body.hg-mkt .ed-article #page .sticky-sidebar-col{border-left:0;border-top:1px solid #e6e9f0;padding:28px 0 0}body.hg-mkt .ed-article #page .ed-article-hero .ed-article-cover{max-width:650px;margin:0 auto}}
+
+/* Quiet article chrome and compact, functional reactions. */
+body.hg-mkt .ed-article #page .ed-article-hero,body.hg-mkt .ed-article #page .ed-article-hero .ed-meta,body.hg-mkt .ed-article #page .sticky-sidebar-col{border:0!important}
+body.hg-mkt .ed-article #page .ed-article-hero .hg-kicker,body.hg-mkt .ed-article #page .ed-article-hero .smallback{display:block!important;text-align:left!important;margin:0!important;padding:0!important;width:auto!important}
+body.hg-mkt .ed-article #page .sticky-sidebar :is(h3,h4,.toc-title){font-size:13px!important;line-height:1.5!important;font-weight:600!important;margin:0 0 12px!important}
+body.hg-mkt .ed-article #page .sticky-sidebar :is(.toc-link,.article-title a){font-size:12px!important;line-height:1.65!important;font-weight:400!important}
+body.hg-mkt .ed-article #page .sticky-sidebar .top-article-item{border:0!important;padding:10px 0!important}
+body.hg-mkt .ed-article #page .sticky-sidebar .top-articles-list{gap:10px}
+body.hg-mkt .ed-article #page .sticky-sidebar .article-meta{display:flex;gap:14px;margin:8px 0 0!important;align-items:center}
+body.hg-mkt .ed-article #page .sticky-sidebar .article-meta span{display:inline-flex;align-items:center;gap:5px;font-size:11px;color:#8891a2}
+body.hg-mkt .ed-article #page .sticky-sidebar .article-meta svg{width:13px;height:13px;fill:none;stroke:currentColor;stroke-width:1.6}
+body.hg-mkt .ed-article #page .sticky-sidebar .article-emotions-preview{display:none!important}
+body.hg-mkt .ed-article .ed-audio{margin:16px 0!important}
+body.hg-mkt .ed-article .article-speech-player{margin:0!important;gap:8px}
+body.hg-mkt .ed-article .speech-btn{padding:6px 0!important;min-height:30px;background:transparent!important;color:#727d91!important;font-size:11px!important;border:0!important;border-radius:0;box-shadow:none!important;transform:none!important;gap:7px}
+body.hg-mkt .ed-article .speech-btn svg{width:10px;height:10px}
+body.hg-mkt .ed-article .article-emotions{background:transparent!important;border:0!important;padding:0!important;margin:24px 0!important;border-radius:0;box-shadow:none!important}
+body.hg-mkt .ed-article .article-emotions .emotions-question{font-size:12px!important;font-weight:400!important;color:#788297;margin:0 0 10px!important}
+body.hg-mkt .ed-article .article-emotions .emotions-grid{display:flex!important;flex-wrap:wrap;gap:8px!important}
+body.hg-mkt .ed-article .article-emotions .emotion-btn{display:inline-flex!important;flex-direction:row!important;gap:6px!important;width:auto!important;min-width:40px;min-height:36px!important;height:36px;padding:8px!important;border:0!important;border-radius:8px;background:transparent!important;color:#788297;box-shadow:none!important}
+body.hg-mkt .ed-article .article-emotions .emotion-btn:hover,body.hg-mkt .ed-article .article-emotions .emotion-btn.active{color:#f2124b;background:#fff2f6!important}
+body.hg-mkt .ed-article .article-emotions .hg-reaction-svg{width:16px!important;height:16px!important}
+body.hg-mkt .ed-article .article-emotions .reaction-label{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+body.hg-mkt .ed-article .article-emotions .emotion-count{font-size:11px!important;font-weight:400!important}
+body.hg-mkt .ed-article .ed-article-more{width:100%;max-width:none;padding:0;margin:0;box-sizing:border-box}
+body.hg-mkt .ed-article .ed-article-more>.ed-cta{width:100%!important;max-width:none!important;margin:0!important;border:0;border-radius:0!important;padding:48px max(24px,calc((100% - 1200px)/2))!important;box-sizing:border-box}
+body.hg-mkt .ed-article .ed-article-more>.ed-cta+.ed-cta{background:#eef1f7}
