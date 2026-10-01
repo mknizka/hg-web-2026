@@ -41,10 +41,8 @@ if (!$productImage) {
     </div>
     <?php endif; ?>
   </section>
-  <section class="ed-connected" id="product-connected"><p class="hg-kicker"><?php echo hg_lang('Jeden ekosystém', 'One ecosystem'); ?></p><h2><?php echo hg_lang('Viac možností. Stále jeden Ellipse.', 'More possibilities. Still one Ellipse.'); ?></h2><div class="ed-related">
-    <?php foreach (hg_editorial_ctas() as $item): if (trim($item[0], '/') === trim((string)($content['sef'] ?? ''), '/')) continue; ?>
-    <a href="<?php echo hg_esc($item[0]); ?>"><span><?php echo hg_esc($item[1]); ?></span><h3><?php echo hg_esc($item[2]); ?></h3><p><?php echo hg_esc($item[3]); ?></p><b><?php echo hg_esc($item[4]); ?> <svg class="hg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17 17 7M7 7h10v10"/></svg></b></a>
-    <?php endforeach; ?>
-  </div></section>
+  <link rel="stylesheet" href="/template/ellipse/css/hg-platform-map.css?v=4">
+  <?php include __DIR__.'/hg-platform-explore.php'; ?>
+  <script src="/template/ellipse/js/hg-platform-map.js?v=3" defer></script>
 
 </main>

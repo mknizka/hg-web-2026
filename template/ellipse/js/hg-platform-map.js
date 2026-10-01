@@ -1,7 +1,22 @@
 (() => {
  'use strict';
- const root=document.querySelector('.ep-map'); if(!root)return;
- const network=root.querySelector('.ep-network'), core=root.querySelector('.ep-core'), svg=root.querySelector('svg'), detail=root.querySelector('.ep-description');
+ const sectorButtons=[...document.querySelectorAll('[data-ep-sector]')];
+ const valid=['hotel','gastro','wellness','komplex'];
+ function chooseSector(key,persist){
+  if(!valid.includes(key))key='komplex';
+  document.documentElement.dataset.audience=key;
+  sectorButtons.forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.epSector===key)));
+  if(persist){try{localStorage.setItem('ellipse-audience',key);}catch(_){}const url=new URL(location.href);url.searchParams.set('prevadzka',key);history.replaceState(null,'',url);}
+  window.dispatchEvent(new CustomEvent('ellipse:audience',{detail:key}));
+ }
+ let stored;try{stored=localStorage.getItem('ellipse-audience');}catch(_){}
+ const fromUrl=new URL(location.href).searchParams.get('prevadzka');
+ const initial=valid.includes(fromUrl)?fromUrl:(document.documentElement.dataset.audience||stored);
+ if(valid.includes(fromUrl)){try{localStorage.setItem('ellipse-audience',fromUrl);}catch(_){}}
+ if(sectorButtons.length){chooseSector(initial,false);sectorButtons.forEach(b=>b.addEventListener('click',()=>chooseSector(b.dataset.epSector,true)));}
+ document.querySelectorAll('.ep-map').forEach(root=>{
+ if(root.dataset.epReady)return;root.dataset.epReady='true';
+ const network=root.querySelector('.ep-network'), core=root.querySelector('.ep-core'), svg=root.querySelector('svg'), dialog=root.querySelector('.ep-dialog');
  const tiles=[...root.querySelectorAll('.ep-tile')];
  const hotel=['pms','booking','channel','pay','self','crm','team','pos','reviews','messages','vouchers','aqua'];
  const sets={hotel,komplex:hotel,gastro:['pos','pay','crm','vouchers','tables'],wellness:['booking','channel','pay','pos','crm','vouchers']};
@@ -9,12 +24,18 @@
  const original=new Map(tiles.map(t=>[t.dataset.module,t.dataset.description]));
  function describe(tile){
   active=tile;
-  tiles.forEach(t=>t.setAttribute('aria-expanded',String(t===tile)));
-  detail.querySelector('strong').textContent=tile?tile.textContent:'';
-  detail.querySelector('p').textContent=tile?tile.dataset.description:'Všetko v jednej platforme bez prepájania systémov.';
-  const a=detail.querySelector('a');a.hidden=!tile;if(tile)a.href=tile.dataset.link;
+  tiles.forEach(t=>t.setAttribute('aria-expanded',String(t===tile&&dialog.open)));
   svg.querySelectorAll('path').forEach(p=>p.classList.toggle('is-active',!!tile&&p.dataset.module===tile.dataset.module));
  }
+ function openModule(tile){
+  dialog.querySelector('h2').textContent=tile.textContent;
+  dialog.querySelector('.ep-dialog-copy').textContent=tile.dataset.description;
+  const url=new URL(tile.dataset.link,location.origin);url.searchParams.set('prevadzka',sector);
+  dialog.querySelector('.ep-cta').href=url.pathname+url.search;
+  dialog.showModal();describe(tile);
+ }
+ dialog.addEventListener('close',()=>{const trigger=active;describe(null);trigger?.focus({preventScroll:true});});
+ dialog.addEventListener('click',e=>{if(e.target!==dialog)return;const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)dialog.close();});
  function draw(){
   const rect=network.getBoundingClientRect(), c=core.getBoundingClientRect();if(!rect.width)return;
   svg.setAttribute('viewBox',`0 0 ${rect.width} ${rect.height}`);svg.replaceChildren();
@@ -30,7 +51,7 @@
    p.setAttribute('pathLength','1');p.dataset.module=key;if(active===t)p.classList.add('is-active');svg.append(p);
   });
  }
- function update(key){sector=sets[key]?key:'komplex';describe(null);tiles.forEach(t=>{const i=sets[sector].indexOf(t.dataset.module);t.hidden=i<0;t.style.setProperty('--ep-delay',`${Math.max(0,i)*35}ms`);t.dataset.description=original.get(t.dataset.module);});
+ function update(key){sector=Object.hasOwn(sets,key)?key:'komplex';if(dialog.open)dialog.close();describe(null);tiles.forEach(t=>{const i=sets[sector].indexOf(t.dataset.module);t.hidden=i<0;t.style.setProperty('--ep-delay',`${Math.max(0,i)*35}ms`);t.dataset.description=original.get(t.dataset.module);});
   if(sector==='wellness'){
    tiles.find(t=>t.dataset.module==='booking').dataset.description='Online rezervácie wellness procedúr a služieb.';
    tiles.find(t=>t.dataset.module==='channel').dataset.description='Prepojenie a synchronizácia kalendárov.';
@@ -39,9 +60,11 @@
   network.style.gridTemplateRows=matchMedia('(max-width:600px)').matches?'auto':`repeat(${Math.ceil(sets[sector].length/2)},52px)`;
   requestAnimationFrame(draw);
  }
- tiles.forEach(t=>{t.addEventListener('pointerenter',e=>{if(e.pointerType==='mouse')describe(t)});t.addEventListener('focus',()=>describe(t));t.addEventListener('click',()=>describe(t));});
- root.addEventListener('keydown',e=>{if(e.key==='Escape')describe(null)});
+ tiles.forEach(t=>t.addEventListener('click',()=>openModule(t)));
  window.addEventListener('ellipse:audience',e=>update(e.detail));
  new ResizeObserver(()=>{cancelAnimationFrame(frame);frame=requestAnimationFrame(()=>{network.style.gridTemplateRows=matchMedia('(max-width:600px)').matches?'auto':`repeat(${Math.ceil(sets[sector].length/2)},52px)`;draw()})}).observe(network);
- update(document.documentElement.dataset.audience);document.fonts?.ready.then(draw);
+ let saved;try{saved=localStorage.getItem('ellipse-audience');}catch(_){}
+ const requested=new URL(location.href).searchParams.get('prevadzka');
+ update(Object.hasOwn(sets,requested)?requested:(document.documentElement.dataset.audience||saved));document.fonts?.ready.then(draw);
+ });
 })();

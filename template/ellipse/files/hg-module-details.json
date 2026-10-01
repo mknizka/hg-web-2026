@@ -1,0 +1,171 @@
+{
+  "pms": {
+    "name": "PMS",
+    "summary": "Rezervačný systém a každodenná hotelová prevádzka.",
+    "image": "/template/ellipse/img/hg/hero-pms.webp",
+    "caption": "Hotelová plachta Ellipse PMS",
+    "title": "Rezervácie a každodenná prevádzka na jednom mieste.",
+    "body": "Recepcia aj manažment pracujú s rovnakým prehľadom o dostupnosti, pobytoch a účtoch hostí. Hotelová plachta pomáha zorientovať sa v príchodoch, odchodoch aj obsadenosti.",
+    "points": [
+      "Hotelová plachta a dostupnosť izieb",
+      "Správa rezervácií a pobytov",
+      "Hotelové účty a prehľady pre manažment"
+    ]
+  },
+  "booking": {
+    "name": "Web booking",
+    "summary": "Priame online rezervácie pobytov aj služieb.",
+    "image": "/template/ellipse/img/hg/product-originals/web-booking.png",
+    "caption": "Priame online rezervácie v Ellipse Web booking",
+    "title": "Priamy predaj pobytov aj služieb.",
+    "body": "Hosť si vyberie pobyt alebo službu priamo na vašom webe. Rezervačný proces spája dostupnosť, pobytové balíky a doplnkové služby s prevádzkou v Ellipse.",
+    "points": [
+      "Priame rezervácie z vlastného webu",
+      "Pobytové balíky a doplnkové služby",
+      "Dostupnosť prepojená s prevádzkou"
+    ]
+  },
+  "channel": {
+    "name": "Channel manager",
+    "summary": "Viac ako 250 OTA a GDS portálov. Ceny a dostupnosť na jednom mieste.",
+    "image": "/template/ellipse/img/hg/hero-pms.webp",
+    "caption": "Hotelová plachta Ellipse – spoločný prehľad rezervácií",
+    "title": "Predajné kanály v jednom prehľade.",
+    "body": "Distribuujte ceny a dostupnosť do viac ako 250 OTA a GDS portálov. Rezervácie z predajných kanálov spracúvajte spoločne s rezerváciami z vlastného webu.",
+    "points": [
+      "Distribúcia cien a dostupnosti",
+      "Viac ako 250 OTA a GDS portálov",
+      "Spoločný prehľad priameho aj portálového predaja"
+    ]
+  },
+  "pay": {
+    "name": "Ellipse Pay",
+    "summary": "Platobná brána aj terminálové platby od 0,49 %.",
+    "image": "/template/ellipse/img/hg/sunmi-v3-ellipse-pos.webp",
+    "caption": "Ellipse POS na platobnom termináli SUNMI",
+    "title": "Platby patria priamo do vašej prevádzky.",
+    "body": "Platobná brána aj terminálové platby sú prepojené s Ellipse. Na webe, na recepcii aj v reštaurácii máte transakcie v spoločnom prehľade. Konkrétne podmienky a dostupnosť služieb nastavíme podľa vašej prevádzky.",
+    "points": [
+      "Online platby aj platobné terminály",
+      "Kontrola stavu platby cez API",
+      "Tokenizácia a opakované platby podľa dohodnutých podmienok"
+    ]
+  },
+  "self": {
+    "name": "Selfcheckin app",
+    "summary": "Online check-in, checkout a správa pobytu z pohľadu hosťa.",
+    "image": "/template/ellipse/img/hg/selfcheckin.webp",
+    "caption": "Ellipse Self-checkin – online správa pobytu",
+    "title": "Hosť vybaví svoj pobyt pohodlne online.",
+    "body": "Od registrácie pred príchodom po hotelový účet a online checkout. Hosť môže spravovať rezerváciu, vyberať doplnkové služby a komunikovať s hotelom; váš tím má priestor venovať sa osobnej starostlivosti.",
+    "points": [
+      "Online check-in a údaje hostí",
+      "Doplnkové služby a správa rezervácie",
+      "Hotelový účet a online checkout"
+    ]
+  },
+  "crm": {
+    "name": "Ellipse CRM",
+    "summary": "Komplexná vernosť naprieč predajnými bodmi. Cashback, Google Wallet, Apple Wallet a push notifikácie.",
+    "image": "/template/ellipse/img/hg/product-originals/crm-account.png",
+    "caption": "Klientsky účet v Ellipse CRM",
+    "title": "Dajte hosťom dôvod vrátiť sa.",
+    "body": "Budujte vernosť naprieč predajnými miestami. Klientske účty, cashback a kreditné čerpanie služieb zostávajú súčasťou spoločnej platformy Ellipse.",
+    "points": [
+      "Klientske účty, cashback a vernostné výhody",
+      "Kreditné čerpanie služieb",
+      "Apple Wallet, Google Wallet a push notifikácie"
+    ]
+  },
+  "team": {
+    "name": "Ellipse Team",
+    "summary": "Úlohy, plánovanie, dochádzka. Celý tím v obraze.",
+    "image": "/template/ellipse/img/hg/team-1.webp",
+    "caption": "Hotelová plachta v aplikácii Ellipse Team",
+    "title": "Celý tím zostáva v obraze.",
+    "body": "Úlohy, plánovanie, dochádzka a komunikácia v natívnej mobilnej aplikácii. Dôležité prevádzkové informácie máte poruke na stretnutí aj mimo pracovného počítača.",
+    "points": [
+      "Úlohy, plánovanie a komunikácia",
+      "Dochádzka a prehľady pre tím",
+      "Natívna aplikácia pre iOS aj Android"
+    ]
+  },
+  "pos": {
+    "name": "Ellipse POS",
+    "summary": "Prehľadné jednoduché predaje. Natívne aplikácie pre iOS aj Android.",
+    "image": "/template/ellipse/img/hg/pos/pos.webp",
+    "caption": "Prehľad stolov v aplikácii Ellipse POS",
+    "title": "Od objednávky po zaplatený účet.",
+    "body": "Obsluhujte hostí priamo pri stole. Objednávky, rozdelenie účtu, platby a uzávierky v mobilnej aplikácii pomáhajú udržať predaj prehľadný počas celej smeny.",
+    "points": [
+      "Objednávky a správa stolov",
+      "Rozdelenie účtov a platby",
+      "Tržby, uzávierky a natívne aplikácie iOS aj Android"
+    ]
+  },
+  "reviews": {
+    "name": "Reviews",
+    "summary": "Centrálne spravovanie recenzií a odpovedanie hosťom.",
+    "image": "/template/ellipse/img/hg/../cases/galicia.jpg",
+    "caption": "Galicia Nueva – hotelová prevádzka",
+    "title": "Spätná väzba hostí na jednom mieste.",
+    "body": "Centralizujte online recenzie a odpovedajte hosťom z Ellipse. AI pripraví návrh odpovede, ktorý váš tím skontroluje, upraví a odošle späť na portál.",
+    "points": [
+      "Centrálna správa online recenzií",
+      "AI návrhy odpovedí na kontrolu",
+      "Odoslanie odpovedí hosťom na portály"
+    ]
+  },
+  "messages": {
+    "name": "Messages API",
+    "summary": "Centrálna komunikácia s hosťami aj z rezervačných portálov.",
+    "image": "/template/ellipse/img/hg/../cases/royal.jpg",
+    "caption": "Royal Palace – hotelová prevádzka",
+    "title": "Komunikujte s hosťami z jedného miesta.",
+    "body": "Správy z Booking.com, Expedia, Airbnb, Vrbo aj priamych rezervácií sústreďte do centrálneho chatu v Ellipse. Tím môže zostať v spojení aj cez aplikáciu Ellipse Team.",
+    "points": [
+      "Komunikácia z rezervačných portálov",
+      "Správy z priamych rezervácií",
+      "Centrálny chat v Ellipse a Ellipse Team"
+    ]
+  },
+  "vouchers": {
+    "name": "Gift vouchers",
+    "summary": "Centrálna správa online aj offline poukazov. Uplatnenie na pokladniach aj v hotelových účtoch.",
+    "image": "/template/ellipse/img/hg/audience/wellness.webp",
+    "caption": "Wellness a služby, ktoré môžu byť súčasťou darčekovej ponuky",
+    "title": "Darčekové poukazy prepojené s predajom.",
+    "body": "Spravujte online aj offline poukazy centrálne. Ich uplatnenie na pokladni aj v hotelovom účte je súčasťou prevádzky v Ellipse, s prehľadom o čerpaní.",
+    "points": [
+      "Online aj offline darčekové poukazy",
+      "Centrálna správa a prehľad čerpania",
+      "Uplatnenie na pokladni aj v hotelovom účte"
+    ]
+  },
+  "aqua": {
+    "name": "Aquapark mode",
+    "summary": "Vstupy, prechody turniketmi a platby na RFID náramky.",
+    "image": "/template/ellipse/img/hg/audience/wellness.webp",
+    "caption": "Wellness prevádzka",
+    "title": "Vstupy, služby a platby v jednom areáli.",
+    "body": "Prepojte predaj vstupov, prechody turniketmi a platby na RFID náramky. Aquapark mode je súčasťou platformy, ktorá spája hotelovú, gastro aj wellness prevádzku.",
+    "points": [
+      "Správa vstupov",
+      "Prechody turniketmi",
+      "Platby na RFID náramky"
+    ]
+  },
+  "tables": {
+    "name": "Rezervácia stola",
+    "summary": "Rezervácie stolov a prehľad obsadenosti vašej reštaurácie.",
+    "image": "/template/ellipse/img/hg/audience/restaurant.webp",
+    "caption": "Reštauračná prevádzka",
+    "title": "Prehľad o rezerváciách vašich stolov.",
+    "body": "Udržte rezervácie stolov a obsadenosť reštaurácie prehľadné. Modul dopĺňa predajné a platobné nástroje Ellipse pre gastro prevádzku.",
+    "points": [
+      "Rezervácie stolov",
+      "Prehľad obsadenosti reštaurácie",
+      "Súčasť platformy pre gastro"
+    ]
+  }
+}

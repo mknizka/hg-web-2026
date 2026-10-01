@@ -1,5 +1,10 @@
 <?php
   require_once __DIR__ . '/hg_site.php';
+  $epRequested=isset($_GET['modul']) && is_string($_GET['modul']) ? $_GET['modul'] : '';
+  if ($epRequested !== '') {
+    $epModules=json_decode(file_get_contents(__DIR__.'/hg-module-details.json'),true);
+    if (isset($epModules[$epRequested])) { $epModule=$epModules[$epRequested]; require __DIR__.'/hg-module-page.php'; return; }
+  }
   hg_ensure_banner_categories();
 
   $all = function_exists('themeSetupAll') ? themeSetupAll() : array('flat' => array());
@@ -273,7 +278,7 @@
 <link rel="stylesheet" href="/template/ellipse/css/hg-typography.css?v=5">
 <link rel="stylesheet" href="/template/ellipse/css/hg-icons.css?v=1">
 <link rel="stylesheet" href="/template/ellipse/css/hg-shell.css?v=28">
-<link rel="stylesheet" href="/template/ellipse/css/hg-platform-map.css?v=3">
+<link rel="stylesheet" href="/template/ellipse/css/hg-platform-map.css?v=4">
 <link rel="stylesheet" href="/template/ellipse/css/hg-expanded-details.css?v=2">
 </head>
 <body class="homepage">
@@ -286,7 +291,7 @@
   <script src="/template/ellipse/js/hg-ref.js?v=20260924shell1" defer></script>
   <script src="/template/ellipse/js/hg-os.js?v=20260924audit2" defer></script>
   <script src="/template/ellipse/js/hg-audience.js?v=5" defer></script>
-<script src="/template/ellipse/js/hg-platform-map.js?v=2" defer></script>
+<script src="/template/ellipse/js/hg-platform-map.js?v=3" defer></script>
   <script src="/template/ellipse/js/hg-os-premium.js?v=20260924audit2" defer></script>
   <?php if (function_exists('themeSetup')) { echo themeSetup('extra_body_end'); } ?>
 <script src="/template/ellipse/js/hg-mobile-showcase.js?v=2" defer></script>
