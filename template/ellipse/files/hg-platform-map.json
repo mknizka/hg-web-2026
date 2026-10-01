@@ -57,7 +57,7 @@
     "messages",
     "Messages API",
     "Centrálna komunikácia s hosťami aj z rezervačných portálov.",
-    "/#komunikacia"
+    "/hodnotenia-hosti/"
   ],
   [
     "vouchers",
@@ -69,7 +69,7 @@
     "aqua",
     "Aquapark mode",
     "Vstupy, prechody turniketmi a platby na RFID náramky.",
-    "/#platforma"
+    "/vstupy-a-akvaparky/"
   ],
   [
     "tables",

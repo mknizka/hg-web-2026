@@ -273,7 +273,7 @@
 <link rel="stylesheet" href="/template/ellipse/css/hg-typography.css?v=5">
 <link rel="stylesheet" href="/template/ellipse/css/hg-icons.css?v=1">
 <link rel="stylesheet" href="/template/ellipse/css/hg-shell.css?v=28">
-<link rel="stylesheet" href="/template/ellipse/css/hg-platform-map.css?v=1">
+<link rel="stylesheet" href="/template/ellipse/css/hg-platform-map.css?v=2">
 <link rel="stylesheet" href="/template/ellipse/css/hg-expanded-details.css?v=2">
 </head>
 <body class="homepage">

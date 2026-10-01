@@ -22,3 +22,4 @@ body .os-home .ep-description a{font-size:12px;font-weight:600;color:#254e83;tex
 @media(max-width:1100px){body .os-home .os-hero{grid-template-columns:1fr;gap:40px}body .os-home .os-hero .ep-map{max-width:720px;margin:0 auto}}
 @media(max-width:600px){.ep-network{grid-template-columns:minmax(0,1fr) minmax(0,1fr);grid-template-rows:auto;gap:14px 24px;padding-top:0}.ep-core{grid-column:1/-1;grid-row:1;padding:8px 0 24px}.ep-core img{width:150px!important}body .ep-tile{font-size:12px;height:48px}body .os-home .ep-description{min-height:150px;padding:24px 0 0}}
 @media(prefers-reduced-motion:reduce){body .ep-tile,.ep-lines path{animation:none;transition:none}}
+body .os-home .ep-map::before,body .os-home .ep-map::after{display:none!important;content:none!important}
