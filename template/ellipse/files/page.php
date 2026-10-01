@@ -1,4 +1,17 @@
-<?php require_once __DIR__.'/hg-editorial.php'; if (hg_is_product_content($content)) { require __DIR__.'/hg-product-page.php'; return; } ?>
+<?php require_once __DIR__.'/hg-editorial.php'; if (hg_is_product_content($content)) { require __DIR__.'/hg-product-page.php'; return; }
+require_once __DIR__.'/hg-content.php';
+$hgArticleMeta = hg_article_meta($content);
+if (($hgArticleMeta['type'] ?? '') === 'solution') {
+  $hgSelectedSolution = hg_solution_by_slug($hgArticleMeta['source_key'] ?? ($content['sef'] ?? ''));
+  if (!$hgSelectedSolution && !empty($content['sef'])) {
+    $hgSelectedSolution = hg_solution_by_slug($content['sef']);
+  }
+  if ($hgSelectedSolution) {
+    require __DIR__.'/hg-solutions-view.php';
+    return;
+  }
+}
+?>
      <?php if ($content['id'] == 180): ?>
       
       <?php include 'template/ellipse/files/ella.php'; ?>

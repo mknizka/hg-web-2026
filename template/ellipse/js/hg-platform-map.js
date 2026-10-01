@@ -18,8 +18,8 @@
  if(root.dataset.epReady)return;root.dataset.epReady='true';
  const network=root.querySelector('.ep-network'), core=root.querySelector('.ep-core'), svg=root.querySelector('svg'), dialog=root.querySelector('.ep-dialog');
  const tiles=[...root.querySelectorAll('.ep-tile')];
- const hotel=['pms','booking','channel','pay','self','crm','team','pos','reviews','messages','vouchers','aqua'];
- const sets={hotel,komplex:hotel,gastro:['pos','pay','crm','vouchers','tables'],wellness:['booking','channel','pay','pos','crm','vouchers']};
+ let sets={};
+ try { sets=JSON.parse(root.dataset.sectors || '{}'); } catch (_) { sets={}; }
  let sector='komplex', active=null, frame;
  const original=new Map(tiles.map(t=>[t.dataset.module,t.dataset.description]));
  function describe(tile){
@@ -51,12 +51,7 @@
    p.setAttribute('pathLength','1');p.dataset.module=key;if(active===t)p.classList.add('is-active');svg.append(p);
   });
  }
- function update(key){sector=Object.hasOwn(sets,key)?key:'komplex';if(dialog.open)dialog.close();describe(null);tiles.forEach(t=>{const i=sets[sector].indexOf(t.dataset.module);t.hidden=i<0;t.style.setProperty('--ep-delay',`${Math.max(0,i)*35}ms`);t.dataset.description=original.get(t.dataset.module);});
-  if(sector==='wellness'){
-   tiles.find(t=>t.dataset.module==='booking').dataset.description='Online rezervácie wellness procedúr a služieb.';
-   tiles.find(t=>t.dataset.module==='channel').dataset.description='Prepojenie a synchronizácia kalendárov.';
-   tiles.find(t=>t.dataset.module==='pos').dataset.description='3 v 1: eKasa, platobný terminál a tlač v jednom zariadení.';
-  }
+ function update(key){sector=Object.hasOwn(sets,key)?key:'komplex';if(!sets[sector]) return; if(dialog.open)dialog.close();describe(null);tiles.forEach(t=>{const i=sets[sector].indexOf(t.dataset.module);t.hidden=i<0;t.style.setProperty('--ep-delay',`${Math.max(0,i)*35}ms`);t.dataset.description=sector==='wellness' && t.dataset.wellness ? t.dataset.wellness : original.get(t.dataset.module);});
   network.style.gridTemplateRows=matchMedia('(max-width:600px)').matches?'auto':`repeat(${Math.ceil(sets[sector].length/2)},52px)`;
   requestAnimationFrame(draw);
  }

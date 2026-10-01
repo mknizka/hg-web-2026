@@ -10,10 +10,14 @@
   $hgProblemArchive = isset($content['blog']) && isset($_GET['tema']) && $_GET['tema'] === 'problemy';
   if ($hgProblemArchive) $hgPath = $hgBase.'/blog/?tema=problemy';
   $hgSolution=null;
-  if (isset($content['blog']) && isset($_GET['riesenie']) && is_string($_GET['riesenie'])) {
+  if (isset($_GET['riesenie']) && is_string($_GET['riesenie'])) {
     require_once __DIR__.'/hg-solutions-data.php';
-    foreach(hg_solutions() as $item) if($item['slug']===$_GET['riesenie']) $hgSolution=$item;
-    if($hgSolution) { $hgPath=$hgBase.'/blog/?riesenie='.rawurlencode($hgSolution['slug']); $content['description']=$hgSolution['description']; $content['keywords']=$hgSolution['keywords']; $content['title']=$hgSolution['title']; }
+    $hgSolution = hg_solution_by_slug($_GET['riesenie']);
+    if ($hgSolution && !empty($hgSolution['href'])) {
+      while (ob_get_level() > 0) { ob_end_clean(); }
+      header('Location: '.$hgSolution['href'], true, 301);
+      exit;
+    }
   }
 
 ?>

@@ -43,6 +43,6 @@ if (!$productImage) {
   </section>
   <link rel="stylesheet" href="/template/ellipse/css/hg-platform-map.css?v=4">
   <?php include __DIR__.'/hg-platform-explore.php'; ?>
-  <script src="/template/ellipse/js/hg-platform-map.js?v=3" defer></script>
+  <script src="/template/ellipse/js/hg-platform-map.js?v=4" defer></script>
 
 </main>

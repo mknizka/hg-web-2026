@@ -2,8 +2,17 @@
   require_once __DIR__ . '/hg_site.php';
   $epRequested=isset($_GET['modul']) && is_string($_GET['modul']) ? $_GET['modul'] : '';
   if ($epRequested !== '') {
-    $epModules=json_decode(file_get_contents(__DIR__.'/hg-module-details.json'),true);
-    if (isset($epModules[$epRequested])) { $epModule=$epModules[$epRequested]; require __DIR__.'/hg-module-page.php'; return; }
+    require_once __DIR__.'/hg-content.php';
+    $epFound=hg_module($epRequested);
+    if ($epFound && !empty($epFound['detail']) && !empty($epFound['href'])) {
+      while (ob_get_level() > 0) { ob_end_clean(); }
+      header('Location: '.$epFound['href'], true, 301);
+      exit;
+    }
+    while (ob_get_level() > 0) { ob_end_clean(); }
+    header('HTTP/1.1 404 Not Found');
+    echo 'Modul sa nenašiel.';
+    exit;
   }
   hg_ensure_banner_categories();
 
@@ -291,7 +300,7 @@
   <script src="/template/ellipse/js/hg-ref.js?v=20260924shell1" defer></script>
   <script src="/template/ellipse/js/hg-os.js?v=20260924audit2" defer></script>
   <script src="/template/ellipse/js/hg-audience.js?v=5" defer></script>
-<script src="/template/ellipse/js/hg-platform-map.js?v=3" defer></script>
+<script src="/template/ellipse/js/hg-platform-map.js?v=4" defer></script>
   <script src="/template/ellipse/js/hg-os-premium.js?v=20260924audit2" defer></script>
   <?php if (function_exists('themeSetup')) { echo themeSetup('extra_body_end'); } ?>
 <script src="/template/ellipse/js/hg-mobile-showcase.js?v=2" defer></script>

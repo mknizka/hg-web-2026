@@ -1,7 +1,7 @@
 <?php
 $nap=hg_nap();
 $hgLang=function_exists('sess') && sess('lang') ? sess('lang') : 'sk';
-$epCanonical=rtrim(DOMENA_WEBU,'/').'/?modul='.rawurlencode($epRequested);
+$epCanonical=rtrim(DOMENA_WEBU,'/').(isset($epModule['href']) ? $epModule['href'] : '/?modul='.rawurlencode($epRequested));
 ?>
 <!DOCTYPE html>
 <html lang="<?php echo hg_esc($hgLang); ?>">
@@ -35,7 +35,7 @@ $epCanonical=rtrim(DOMENA_WEBU,'/').'/?modul='.rawurlencode($epRequested);
         <figure><img src="<?php echo hg_esc($epModule['image']); ?>" alt="<?php echo hg_esc($epModule['caption']); ?>" fetchpriority="high"><figcaption><?php echo hg_esc($epModule['caption']); ?></figcaption></figure>
       </div>
     </section>
-    <section class="ep-module-body"><h2><?php echo hg_esc($epModule['title']); ?></h2><p><?php echo hg_esc($epModule['body']); ?></p><ul><?php foreach($epModule['points'] as $point): ?><li><?php echo hg_esc($point); ?></li><?php endforeach; ?></ul></section>
+    <section class="ep-module-body"><h2><?php echo hg_esc($epModule['title']); ?></h2><?php if(!empty($epModule['text'])): ?><div class="ep-module-copy"><?php echo strip_tags($epModule['text'], '<p><ul><ol><li><strong><em><b><br>'); ?></div><?php else: ?><p><?php echo hg_esc($epModule['body']); ?></p><ul><?php foreach($epModule['points'] as $point): ?><li><?php echo hg_esc($point); ?></li><?php endforeach; ?></ul><?php endif; ?></section>
     <?php include __DIR__.'/hg-platform-explore.php'; ?>
     <?php include __DIR__.'/hg-solutions-carousel.php'; ?>
     <?php include __DIR__.'/hg-final-cta.php'; ?>
@@ -43,7 +43,7 @@ $epCanonical=rtrim(DOMENA_WEBU,'/').'/?modul='.rawurlencode($epRequested);
   <?php include __DIR__.'/hg-footer.php'; ?>
   <script src="/template/ellipse/js/hg-ref.js?v=20260924shell1" defer></script>
   <script src="/template/ellipse/js/hg-navigation.js?v=2" defer></script>
-  <script src="/template/ellipse/js/hg-platform-map.js?v=3" defer></script>
+  <script src="/template/ellipse/js/hg-platform-map.js?v=4" defer></script>
   <script src="/template/ellipse/js/hg-solutions.js?v=12" defer></script>
 </body>
 </html>
