@@ -1,0 +1,80 @@
+[
+  [
+    "pms",
+    "PMS",
+    "Rezervačný systém a každodenná hotelová prevádzka.",
+    "/pms-hotelovy-rezervacny-system/"
+  ],
+  [
+    "booking",
+    "Web booking",
+    "Priame online rezervácie pobytov aj služieb.",
+    "/booking-engine/"
+  ],
+  [
+    "channel",
+    "Channel manager",
+    "Viac ako 250 OTA a GDS portálov. Ceny a dostupnosť na jednom mieste.",
+    "/channel-manager/"
+  ],
+  [
+    "pay",
+    "Ellipse Pay",
+    "Platobná brána aj terminálové platby od 0,49 %.",
+    "/online-platby/"
+  ],
+  [
+    "self",
+    "Selfcheckin app",
+    "Online check-in, checkout a správa pobytu z pohľadu hosťa.",
+    "/online-check-in/"
+  ],
+  [
+    "crm",
+    "Ellipse CRM",
+    "Komplexná vernosť naprieč predajnými bodmi. Cashback, Google Wallet, Apple Wallet a push notifikácie.",
+    "/vernostny-system-a-kreditne-cerpanie-sluzieb/"
+  ],
+  [
+    "team",
+    "Ellipse Team",
+    "Úlohy, plánovanie, dochádzka. Celý tím v obraze.",
+    "/majitelsky-modul-a-aplikacie-na-mieru/"
+  ],
+  [
+    "pos",
+    "Ellipse POS",
+    "Prehľadné jednoduché predaje. Natívne aplikácie pre iOS aj Android.",
+    "/pos-systemy/"
+  ],
+  [
+    "reviews",
+    "Reviews",
+    "Centrálne spravovanie recenzií a odpovedanie hosťom.",
+    "/hodnotenia-hosti/"
+  ],
+  [
+    "messages",
+    "Messages API",
+    "Centrálna komunikácia s hosťami aj z rezervačných portálov.",
+    "/#komunikacia"
+  ],
+  [
+    "vouchers",
+    "Gift vouchers",
+    "Centrálna správa online aj offline poukazov. Uplatnenie na pokladniach aj v hotelových účtoch.",
+    "/#platforma"
+  ],
+  [
+    "aqua",
+    "Aquapark mode",
+    "Vstupy, prechody turniketmi a platby na RFID náramky.",
+    "/#platforma"
+  ],
+  [
+    "tables",
+    "Rezervácia stola",
+    "Rezervácie stolov a prehľad obsadenosti vašej reštaurácie.",
+    "/casove-rezervacie-sluzieb/"
+  ]
+]

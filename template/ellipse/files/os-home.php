@@ -82,13 +82,7 @@ $fragment = function ($file, $sw, $sh, $x, $y, $w, $h, $alt, $eager = false) {
         <a class="button ghost" href="#platforma"><?php echo hg_lang('Objaviť platformu', 'Discover the platform'); ?></a>
       </div>
     </div>
-    <div class="os-hero-visual eh-stage" aria-label="Ellipse PMS a mobilná aplikácia Ellipse Team">
-      <div class="eh-orbit" aria-hidden="true"></div>
-      <figure class="eh-desktop"><figcaption><span class="eh-live"></span> Ellipse PMS <small><?php echo hg_lang('Všetko spolu. V reálnom čase.', 'Connected. In real time.'); ?></small></figcaption><img src="<?php echo hg_esc(hg_asset('hero-pms.webp')); ?>" width="1920" height="1080" alt="<?php echo hg_lang('Skutočná hotelová plachta v Ellipse PMS', 'The real Ellipse PMS reservation timeline'); ?>" fetchpriority="high" decoding="async"></figure>
-      <figure class="eh-phone"><button type="button" data-screen-open aria-label="<?php echo hg_lang('Zväčšiť ukážku Ellipse Team', 'Enlarge Ellipse Team'); ?>"><img src="<?php echo hg_esc(hg_asset('mobile/screen-00.webp')); ?>" width="885" height="1920" alt="Ellipse Team — analýza dochádzky a prehľad tímu" decoding="async"></button><figcaption>Ellipse Team <span>iOS + Android</span></figcaption></figure>
-      <a class="eh-note" href="#team"><span class="eh-note-icon" aria-hidden="true"><svg class="hg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17 17 7M7 7h10v10"/></svg></span><span><?php echo hg_lang('Celá prevádzka. Aj vo vrecku.', 'Your whole operation. In your pocket.'); ?><small><?php echo hg_lang('Objavte mobilnú aplikáciu', 'Explore the mobile app'); ?></small></span></a>
-      <div class="eh-pill"><span class="eh-live"></span><?php echo hg_lang('Recepcia · tím · gastro · dáta', 'Front desk · team · dining · data'); ?></div>
-    </div>
+    <?php include __DIR__.'/hg-platform-map.php'; ?>
   </section>
 
   <section class="eh-problems eh-problems-carousel" id="problemy">

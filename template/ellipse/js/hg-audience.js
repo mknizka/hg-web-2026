@@ -45,7 +45,7 @@
     const specific = key === 'gastro' || key === 'wellness';
     hero.querySelector('h1').textContent = profiles[key][0];
     hero.querySelector('.os-lead').textContent = profiles[key][1];
-    visual.hidden = specific; art.hidden = !specific; focus.hidden = !specific;
+    visual.hidden = false; art.hidden = true; focus.hidden = !specific;
     document.querySelectorAll(hotelOnly).forEach(el => { el.hidden = specific; });
     // Prevent in-page navigation from landing in a hidden hotel section.
     hiddenLinks.forEach(([link, href]) => link.setAttribute('href', specific ? '#platforma' : href));
@@ -78,6 +78,7 @@
     }));
     bar.querySelector('.aud-status').textContent = t('Obsah pre: ', 'Content for: ') + kicker.textContent;
     document.documentElement.dataset.audience = key;
+    window.dispatchEvent(new CustomEvent('ellipse:audience',{detail:key}));
     if (persist) {
       try { localStorage.setItem('ellipse-audience', key); } catch (_) { /* Optional storage. */ }
       const url = new URL(location.href); url.searchParams.set('prevadzka', key);
