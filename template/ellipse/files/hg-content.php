@@ -218,9 +218,10 @@ if (!function_exists('hg_modules')) {
     $items = array();
     foreach (hg_ellipse_rows($category, true) as $row) {
       $module = hg_module_from_row($row);
-      if ($module['key'] !== '') {
-        $items[$module['key']] = $module;
+      if ($module['key'] === '') {
+        $module['key'] = (string) $row['sef'];
       }
+      $items[$module['key']] = $module;
     }
     return $items;
   }
