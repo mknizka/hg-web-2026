@@ -21,6 +21,10 @@ jobs:
         env:
           RS_FEED_TOKEN: ${{ secrets.RS_FEED_TOKEN }}
         run: python3 scripts/editorial/publish.py --apply
+      - name: Synchronize short descriptions
+        env:
+          RS_FEED_TOKEN: ${{ secrets.RS_FEED_TOKEN }}
+        run: python3 scripts/editorial/descriptions.py
       - name: Preserve backup and verified progress
         if: always()
         uses: actions/upload-artifact@v4
