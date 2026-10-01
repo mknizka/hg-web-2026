@@ -37,11 +37,13 @@ $epCanonical=rtrim(DOMENA_WEBU,'/').'/?modul='.rawurlencode($epRequested);
     </section>
     <section class="ep-module-body"><h2><?php echo hg_esc($epModule['title']); ?></h2><p><?php echo hg_esc($epModule['body']); ?></p><ul><?php foreach($epModule['points'] as $point): ?><li><?php echo hg_esc($point); ?></li><?php endforeach; ?></ul></section>
     <?php include __DIR__.'/hg-platform-explore.php'; ?>
+    <?php include __DIR__.'/hg-solutions-carousel.php'; ?>
     <?php include __DIR__.'/hg-final-cta.php'; ?>
   </main>
   <?php include __DIR__.'/hg-footer.php'; ?>
   <script src="/template/ellipse/js/hg-ref.js?v=20260924shell1" defer></script>
   <script src="/template/ellipse/js/hg-navigation.js?v=2" defer></script>
   <script src="/template/ellipse/js/hg-platform-map.js?v=3" defer></script>
+  <script src="/template/ellipse/js/hg-solutions.js?v=12" defer></script>
 </body>
 </html>
