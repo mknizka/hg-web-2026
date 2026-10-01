@@ -20,6 +20,10 @@
  const tiles=[...root.querySelectorAll('.ep-tile')];
  let sets={};
  try { sets=JSON.parse(root.dataset.sectors || '{}'); } catch (_) { sets={}; }
+ // RS segments may reference unpublished or removed modules.
+ const available=new Set(tiles.map(t=>t.dataset.module));
+ Object.keys(sets).forEach(key=>{sets[key]=Array.isArray(sets[key])?[...new Set(sets[key])].filter(k=>available.has(k)):[];});
+ if(!Array.isArray(sets.komplex))sets.komplex=[...available];
  let sector='komplex', active=null, frame;
  const original=new Map(tiles.map(t=>[t.dataset.module,t.dataset.description]));
  function describe(tile){

@@ -119,6 +119,7 @@ if (!function_exists('hg_solution_from_row')) {
       'description' => (string) ($row['description'] !== '' ? $row['description'] : $row['parex_text']),
       'keywords' => (string) $row['keywords'],
       'roles' => $roles,
+      'related_modules' => isset($meta['related_modules']) && is_array($meta['related_modules']) ? $meta['related_modules'] : null,
       'cover' => $cover,
       'html' => (string) $row['text'],
       'ordinal' => (int) ($meta['ordinal'] ?? $row['order'] ?? $id),
