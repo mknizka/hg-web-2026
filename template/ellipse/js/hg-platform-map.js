@@ -11,7 +11,7 @@
   active=tile;
   tiles.forEach(t=>t.setAttribute('aria-expanded',String(t===tile)));
   detail.querySelector('strong').textContent=tile?tile.textContent:'';
-  detail.querySelector('p').textContent=tile?tile.dataset.description:'';
+  detail.querySelector('p').textContent=tile?tile.dataset.description:'Všetko v jednej platforme bez prepájania systémov.';
   const a=detail.querySelector('a');a.hidden=!tile;if(tile)a.href=tile.dataset.link;
   svg.querySelectorAll('path').forEach(p=>p.classList.toggle('is-active',!!tile&&p.dataset.module===tile.dataset.module));
  }
