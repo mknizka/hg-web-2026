@@ -13,6 +13,7 @@
   if (isset($content['blog']) && isset($_GET['riesenie']) && is_string($_GET['riesenie'])) {
     require_once __DIR__.'/hg-solutions-data.php';
     foreach(hg_solutions() as $item) if($item['slug']===$_GET['riesenie']) $hgSolution=$item;
+    if ($hgSolution && !empty($hgSolution['href'])) { header('Location: '.$hgSolution['href'], true, 302); exit; }
     if($hgSolution) { $hgPath=$hgBase.'/blog/?riesenie='.rawurlencode($hgSolution['slug']); $content['description']=$hgSolution['description']; $content['keywords']=$hgSolution['keywords']; $content['title']=$hgSolution['title']; }
   }
 
