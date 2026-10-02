@@ -1,0 +1,214 @@
+{
+  "integracie": [
+    {
+      "nazov_integracie": "Booking.com",
+      "oblast": "Channel manager a online rezervácie",
+      "popis": "Priama synchronizácia cien a dostupnosti, import rezervácií, správy s hosťami a sťahovanie recenzií cez Connectivity API Booking.com."
+    },
+    {
+      "nazov_integracie": "Expedia",
+      "oblast": "Channel manager a online rezervácie",
+      "popis": "Odosielanie cien a dostupnosti do Expedia Partner Central a príjem nových aj stornovaných rezervácií."
+    },
+    {
+      "nazov_integracie": "Google Hotels",
+      "oblast": "Channel manager a online rezervácie",
+      "popis": "Export cien a dostupnosti pre Google Hotel Ads a spracovanie rezervácií, ktoré prídu z Google Hotels."
+    },
+    {
+      "nazov_integracie": "GP webpay",
+      "oblast": "Platobné brány",
+      "popis": "Online platby kartou cez Global Payments (GP webpay) pre rezervácie, poukazy, služby a self check-in. Vrátane overenia stavu platby."
+    },
+    {
+      "nazov_integracie": "Viva.com",
+      "oblast": "Platobné brány",
+      "popis": "Online platby cez Viva.com, vrátane platby priamo na stránke, webhookov a napojenia na Ellipse Payments."
+    },
+    {
+      "nazov_integracie": "TatraPay+",
+      "oblast": "Platobné brány",
+      "popis": "Novšia platobná brána Tatra banky (TatraPay+) pre kartové a ďalšie online platby s presmerovaním hosťa na bránu a spätným potvrdením."
+    },
+    {
+      "nazov_integracie": "Besteron",
+      "oblast": "Platobné brány",
+      "popis": "Online platobná brána Besteron. Ellipse presmeruje hosťa na platbu a spracuje návrat s výsledkom."
+    },
+    {
+      "nazov_integracie": "BLIK",
+      "oblast": "Platobné brány",
+      "popis": "Platby cez BLIK v tom istom platobnom toku ako VIAMO, určené pre úhradu online objednávok."
+    },
+    {
+      "nazov_integracie": "Pay by Square",
+      "oblast": "Platobné brány",
+      "popis": "Generovanie platobného QR kódu Pay by Square z IBAN, sumy a variabilného symbolu pre bankový prevod."
+    },
+    {
+      "nazov_integracie": "Global Payments",
+      "oblast": "Platobné terminály",
+      "popis": "Platba kartou na fyzickom termináli cez Global Payments a protokol NEXO. Pokladňa odošle predaj a terminál vráti výsledok."
+    },
+    {
+      "nazov_integracie": "PAX",
+      "oblast": "Platobné terminály",
+      "popis": "Varianta mobilnej pokladne pre zariadenia PAX. Na termináli beží predaj, fiškálny doklad aj platba kartou."
+    },
+    {
+      "nazov_integracie": "Portos",
+      "oblast": "Fiškálne pokladne",
+      "popis": "Registrácia pokladničných dokladov v eKase cez Portos, vrátane PDF dokladu pre e-mail zákazníkovi a režimu, keď pokladňu volá Ellipse alebo lokálna kasa."
+    },
+    {
+      "nazov_integracie": "FiskalPro",
+      "oblast": "Fiškálne pokladne",
+      "popis": "Fiškálna tlačiareň FiskalPro. Ellipse jej posiela doklady, prijíma potvrdenie eKasy a vie na nej spustiť aj platbu kartou a zákaznícky displej."
+    },
+    {
+      "nazov_integracie": "SORP (Llarik)",
+      "oblast": "Fiškálne pokladne",
+      "popis": "Cloudová fiškálna pokladňa. Softvérové certifikované CHDU bez hardvérového úložiska. Doklad ide cez API na Finančnú správu a môže sa vytlačiť na sieťovej tlačiarni."
+    },
+    {
+      "nazov_integracie": "Pohoda",
+      "oblast": "Účtovníctvo a ERP",
+      "popis": "Export faktúr, položiek, DPH a platieb do XML, ktoré sa importuje do Pohody (Stormware)."
+    },
+    {
+      "nazov_integracie": "Money S3",
+      "oblast": "Účtovníctvo a ERP",
+      "popis": "Export faktúr do XML pre import do Money S3, vrátane DPH, platieb a stredísk."
+    },
+    {
+      "nazov_integracie": "Money S4",
+      "oblast": "Účtovníctvo a ERP",
+      "popis": "Samostatný XML export faktúr pre účtovný systém Money S4."
+    },
+    {
+      "nazov_integracie": "Omega (KROS)",
+      "oblast": "Účtovníctvo a ERP",
+      "popis": "Export faktúr a úhrad do formátu EUD pre import do Omega od KROS, vrátane partnerov a mapovania DPH."
+    },
+    {
+      "nazov_integracie": "Helios",
+      "oblast": "Účtovníctvo a ERP",
+      "popis": "Export faktúr do CSV pripraveného na import do Heliosu."
+    },
+    {
+      "nazov_integracie": "Navision",
+      "oblast": "Účtovníctvo a ERP",
+      "popis": "Export faktúr do CSV pre Microsoft Dynamics NAV (Navision)."
+    },
+    {
+      "nazov_integracie": "Oberon",
+      "oblast": "Účtovníctvo a ERP",
+      "popis": "Export faktúr do XML pre účtovný systém Oberon."
+    },
+    {
+      "nazov_integracie": "Tangram",
+      "oblast": "Účtovníctvo a ERP",
+      "popis": "Export faktúr do XML Tangram, vrátane mapovania sadzieb DPH a kódov firiem."
+    },
+    {
+      "nazov_integracie": "Spin",
+      "oblast": "Účtovníctvo a ERP",
+      "popis": "Export faktúr a saldokonta do XML pre účtovný systém Spin, vrátane zálohových faktúr a partnerov."
+    },
+    {
+      "nazov_integracie": "Peppol e-faktúra",
+      "oblast": "Elektronická fakturácia",
+      "popis": "Z hotelovej faktúry vznikne elektronický doklad UBL / Peppol BIS a odošle sa odberateľovi. Späť príde stav, či bol doklad prijatý."
+    },
+    {
+      "nazov_integracie": "ASSA ABLOY Visionline",
+      "oblast": "Zámkové systémy",
+      "popis": "Kódovanie hotelových kariet na enkodéri Visionline podľa izby a dĺžky pobytu, vrátane duplikátu karty a prečítania jej čísla."
+    },
+    {
+      "nazov_integracie": "Dormakaba",
+      "oblast": "Zámkové systémy",
+      "popis": "Vystavenie a duplikovanie kľúča a odhlásenie hosťa cez dormakaba (Saflok, Messenger, ATLAS)."
+    },
+    {
+      "nazov_integracie": "SALTO",
+      "oblast": "Zámkové systémy",
+      "popis": "Kódovanie hosťovských kariet na systéme SALTO podľa izby, s podporou spoločných priestorov a zón."
+    },
+    {
+      "nazov_integracie": "Nuki",
+      "oblast": "Zámkové systémy",
+      "popis": "Dočasný PIN na zámok Nuki cez cloud alebo lokálny bridge, s platnosťou viazanou na pobyt hosťa."
+    },
+    {
+      "nazov_integracie": "TTLock",
+      "oblast": "Zámkové systémy",
+      "popis": "Dočasné PIN kódy na zámky TTLock, vrátane zoznamu zámkov a režimu s bránou aj bez nej."
+    },
+    {
+      "nazov_integracie": "KeyGuru",
+      "oblast": "Zámkové systémy",
+      "popis": "Výdaj kľúča zo skrinky KeyGuru. Ellipse vytvorí PIN s platnosťou a hosť si kľúč vyzdvihne sám."
+    },
+    {
+      "nazov_integracie": "Loxone",
+      "oblast": "Inteligentná budova",
+      "popis": "PIN a časové okno vstupu na klávesnici Loxone Miniserver podľa izby a termínu rezervácie."
+    },
+    {
+      "nazov_integracie": "Seawing",
+      "oblast": "Prístupové systémy a RFID",
+      "popis": "Vytvorenie a zrušenie QR vstupenky alebo ubytovacej karty na systéme Seawing pre hosťa alebo prevádzku."
+    },
+    {
+      "nazov_integracie": "MagicHome",
+      "oblast": "Prístupové systémy a RFID",
+      "popis": "Priradenie RFID alebo QR hosťovi a zapnutie zón vstupu, napríklad wellness alebo aquapark, cez prístupový systém MagicHome."
+    },
+    {
+      "nazov_integracie": "Dahua",
+      "oblast": "Kamerové systémy",
+      "popis": "Zápis ŠPZ hosťa na kamery alebo nahrávač Dahua. Vozidlo má vjazd povolený len počas nastaveného okna pobytu."
+    },
+    {
+      "nazov_integracie": "OCR",
+      "oblast": "OCR sken dokladov",
+      "popis": "Odfotená faktúra alebo dodací list sa prečíta cez OCR a vznikne návrh príjemky na sklad. Do skladu sa zapíše až po potvrdení obsluhou."
+    },
+    {
+      "nazov_integracie": "Dibal",
+      "oblast": "Váhy",
+      "popis": "Pokladňa si cez lokálne prepojenie načíta hmotnosť z váhy Dibal a použije ju pri vážených položkách."
+    },
+    {
+      "nazov_integracie": "Mitto",
+      "oblast": "Komunikácia s hosťami",
+      "popis": "Odosielanie SMS a správ Viber hosťom cez Mitto, viazané na kredit správ hotela."
+    },
+    {
+      "nazov_integracie": "WhatsApp",
+      "oblast": "Komunikácia s hosťami",
+      "popis": "Napojenie na WhatsApp Business. Hotel schvaľuje šablóny a Ellipse posiela hosťom správy, napríklad k príchodu alebo platbe."
+    },
+    {
+      "nazov_integracie": "DeepL",
+      "oblast": "Preklady",
+      "popis": "Automatický preklad textov webu, galérie a prevádzkových checklistov cez DeepL."
+    },
+    {
+      "nazov_integracie": "Apple Wallet",
+      "oblast": "Digitálne peňaženky",
+      "popis": "Vernostná karta ako Apple Pass. Pri zmene bodov sa karta v telefóne hosťa aktualizuje."
+    },
+    {
+      "nazov_integracie": "Google Wallet",
+      "oblast": "Digitálne peňaženky",
+      "popis": "Vernostná karta v Google Wallet s aktualizáciou bodov a údajov hosťa."
+    },
+    {
+      "nazov_integracie": "ORSR, ARES a VIES",
+      "oblast": "Overenie firiem",
+      "popis": "Doplnenie fakturačných údajov firmy podľa IČO alebo IČ DPH z obchodného registra SR, českého ARES, európskeho VIES a registra účtovných závierok."
+    }
+  ]
+}

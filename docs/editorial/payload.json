@@ -1,0 +1,997 @@
+[
+  {
+    "expected": {
+      "id": 260,
+      "sef": "nocny-prichod-bez-recepcie",
+      "name": "Bezobslužný príchod: hosť sa ubytuje, zaplatí a dostane sa na izbu aj bez recepcie",
+      "title": "Bezobslužný príchod: hosť sa ubytuje, zaplatí a dostane sa na izbu aj bez recepcie",
+      "parex_text": "Na prevádzkach, ktoré recepciu zatvárajú, sme stále našli telefón na nočnom stolíku alebo obálku s kľúčom. Bezobslužný príchod vznikol ako náhrada za tri úkony recepčnej: overiť doklad, zobrať peniaze a pustiť hosťa na izbu.",
+      "text": "<p>Keď prídeme do hotela, ktorý recepciu zatvára o desiatej, rozhovor sa skoro vždy začne rovnako. Majiteľ má telefón na nočnom stolíku a čaká, či zavolá niekto z portálu, že stojí pred bránou. Na skle visí ručne napísané číslo. V lepšom prípade zdvihne nočný strážnik, ktorý nevidí do plachty a kľúč hľadá v zásuvke. V horšom čaká na pulte obálka. Toto sme nechceli riešiť ďalším človekom na smene. Chceli sme, aby príchod, ktorý recepcia nestihne, dobehol systém.</p>\n<p>Medzi ubytovateľmi sa preto čoraz častejšie objavuje čiastočná samoobsluha. Niekde je človek na mieste len časť dňa, napríklad od siedmej do druhej. Inde už prevádzka beží ako ubytovanie bez fyzickej recepcie. Oba režimy potrebujú to isté. Hosť musí byť overený, pobyt uhradený a izba otvorená až potom. Kým tieto tri veci nesedia na jednej rezervácii, samoobsluha je len zdvorilostný formulár.</p>\n<h2>Prečo vznikol online check-in</h2>\n<p>Online check-in v Ellipse nevznikol ako marketingový odkaz v e-maili. Vznikol ako náhrada úkonu, ktorý inak musí spraviť recepčná. Hosťa treba stotožniť s dokladom. Formulár, ktorý si sám vypíše, na to nestačí. Pri kontrole vám pomôže nanajvýš ako podklad. Povinnosť overiť, že občiansky preukaz alebo pas sedia s údajmi v evidencii, ostáva.</p>\n<p>Preto sa údaje neprepisujú po pamäti. Hosť odfotí doklad a OCR ich prečíta: meno, platnosť, orgán, ktorý doklad vydal, aj fotografiu. Ak si ubytovateľ zapne kontrolu tváre, systém porovná fotografiu z dokladu so záberom z mobilu. Až keď sa zhoda potvrdí, vznikne záznam v kvalite, akú by ste mali z recepcie, a v rezervácii je vidieť, že osoba prešla plnohodnotným check-inom. Aplikácia Self check-in tento krok drží pri konkrétnom pobyte, nie v samostatnej tabuľke, ktorú ráno niekto prepisuje do PMS.</p>\n<h2>Platba, bez ktorej nemá kľúč komu patriť</h2>\n<p>Druhá diera, ktorú sme na prevádzkach videli, bola táto: hosť bol „ubytovaný“ online a peniaze sa riešili až ráno, ak vôbec. Preto je súčasťou príchodu Ellipse Pay. Zálohu vie hosť zaplatiť ešte pred cestou, s overením v banke. Alebo až na mieste, na kiosku. Je to sklenený tablet s NFC, ktorý prečíta kartu, telefón aj hodinky. Ak rezervácia ešte uhradená nie je, kiosk pýta práve ten zostatok, ktorý vidí hotelový účet. Nie ľubovoľnú sumu, ktorú niekto odhadne.</p>\n<p>Tu sa samoobsluha láme na prepojení. Check-in bez platieb pustí na izbu aj neplatiča. Platba bez PMS nevie, čo sa má doplatiť. PMS bez check-inu ráno nevie, kto v izbe spal. Preto tieto tri moduly musia byť jedna rezervácia. Inak len presuniete nočný telefonát na ráno, keď účtovníčka zisťuje, či záloha vôbec prišla.</p>\n<h2>PIN, ktorý sa odošle až po vašich podmienkach</h2>\n<p>Tretí kus, ktorý recepcia fyzicky odovzdávala, je kľúč. Fyzické kľúče nahradili RFID karty a dnes čoraz častejšie online kľučky. Tie okrem čipu vedia prijať PIN platný len počas pobytu. Ellipse PIN na kľučke pripraví vopred. Hosťovi ho však pošle až vtedy, keď splní podmienky, ktoré ste si sami určili.</p>\n<p>Na prevádzkach sa tieto podmienky líšia a je správne, že sa líšia. Niekde stačí čiastočná úhrada a overenie jednej osoby. Inde vyžadujú celú sumu, miestny poplatok aj check-in všetkých hostí v rezervácii. Best practice, ktorú sme z toho zobrali, nie je „jedno nastavenie pre všetkých“. Je to možnosť povedať systému, čo ešte musí platiť, kým sa dvere otvoria. PIN bez tejto brzdy je len kód nalepený v správe. S brzdou je to recepčná, ktorá kľúč nevydá skôr, ako má.</p>\n<h2>Človek ostáva pri výnimke, nie pri každom príchode</h2>\n<p>Samoobsluha neznamená, že hotel nemá s kým hovoriť. Znamená, že otázka o polnoci, žiadosť o faktúru alebo zmena hlavičky nevisí v piatich extranetoch. Správy z portálov, ktoré ponúkajú Messaging API, vrátane Bookingu, schádzajú do Ellipse Team. Človek, ktorý ubytovanie riadi, ich vidí v mobile, s notifikáciou, aj keď na recepcii nikto nesedí.</p>\n<p>Prevádzka, ktorá chce zatvoriť recepciu aspoň na časť dňa, toto musí mať spolu. Self check-in overí hosťa. Ellipse Pay zoberie peniaze. PMS drží pobyt a účet. Online kľučka dostane PIN až po pravidlách domu. Team podrží komunikáciu, keď automatika narazí na výnimku. Jednotlivo sú to štyri nástroje. Spolu sú náhrada za nočnú smenu, ktorú ste doteraz platili telefónom na stolíku.</p>",
+      "categories": [
+        {
+          "id": 107,
+          "name": "Aké HORECA problémy Ellipse rieši"
+        }
+      ]
+    },
+    "update": {
+      "id": 260,
+      "sef": "nocny-prichod-bez-recepcie",
+      "name": "Nočný príchod bez recepcie: od potvrdenej rezervácie po otvorené dvere",
+      "title": "Nočný príchod bez recepcie: od potvrdenej rezervácie po otvorené dvere",
+      "parex_text": "Bezobslužný príchod potrebuje spoločný stav rezervácie, úhrady a prístupu. Ukazujeme, ako nastaviť celý proces aj pomoc pri výnimke.",
+      "text": "<p><em>Modelová situácia z hotelovej a HORECA prevádzky. Odporúčaný postup na spoločný rozbor s vaším tímom.</em></p>\n<h2>Situácia na prevádzke</h2><p>Predstavme si hotel, v ktorom recepcia končí o 22.00. Hosť príde po polnoci, rezerváciu má potvrdenú, ale záloha sa ešte nespárovala. Správa s pokynmi je v inom systéme než hotelový účet. Otázka na pracovnom stretnutí preto nemá znieť iba „ako pošleme PIN“, ale „podľa čoho bezpečne rozhodneme, že hosť môže vstúpiť“.</p>\n<h2>Čo treba vyriešiť</h2><p>Problém vzniká medzi krokmi. Odoslaný formulár nie je potvrdená úhrada a úspešná platba sama nepotvrdzuje pripravenosť izby. Odporúčame pomenovať podmienky uvoľnenia prístupu a určiť, ktorý systém je zdrojom každého stavu. Hotel si pritom môže nastaviť odlišné pravidlá pre firemnú rezerváciu na faktúru a individuálny pobyt platený vopred.</p>\n<h2>Odporúčaný postup s Ellipse</h2><ol><li>Spojte PMS, Self check-in a Ellipse Pay cez konkrétnu rezerváciu. Recepcia má vidieť splnené aj chýbajúce kroky na jednom pobyte.</li><li>Pred odchodom recepcie skontrolujte neskoré príchody: údaje hostí, požadovanú úhradu, pripravenosť izby a doručenie pokynov.</li><li>S podporovaným prístupovým systémom overte platnosť PIN-u, jeho zrušenie pri storne aj zmenu pri presune izby. Pred ostrým spustením prejdite celý postup ako hosť.</li></ol>\n<h2>Výnimka, na ktorú treba myslieť</h2><p>Zlyhaná platba, nečitateľný doklad, vybitý telefón alebo nedostupná kľučka potrebujú jasnú cestu k človeku. Určite službu, kontaktné číslo a náhradný spôsob odovzdania prístupu. Samoobslužný hotel stále potrebuje zodpovednosť za nočnú pomoc.</p>\n<h2>Ako overiť prínos</h2><p>Sledujte podiel neskorých príchodov dokončených bez zásahu, počet telefonátov na 100 príchodov a čas vyriešenia výnimky. Porovnávajte podobné dni a skladbu hostí. Úsporu času vykazujte spolu so sťažnosťami na príchod.</p>\n<h2>Čo hovorí zahraničný výskum</h2><p>Výskum upozorňuje, že technológia mení vzťah medzi hosťom a personálom; v terénnom experimente hostia ocenili blízkosť dostupného pracovníka pri samoobsluhe.</p><p>Pre tento proces z toho odvodzujeme odporúčanie zachovať dostupnú pomoc. Štúdia nemerala Ellipse ani nočnú prevádzku bez recepcie.</p><p>Zdroj: <a href=\"https://ecommons.cornell.edu/entities/publication/50c34d43-22dd-48f7-9c78-3c16e75c38b3\">Cyborg Service: The Unexpected Effect of Technology in the Employee–Guest Exchange</a> — Cornell University, 2014.</p>\n<p>Konkrétne prepojenia a rozsah funkcií prejdeme podľa konfigurácie vašej prevádzky. V schéme pod článkom nájdete súvisiace súčasti Ellipse.</p>"
+    },
+    "modules": [
+      "pms",
+      "self",
+      "pay",
+      "team"
+    ]
+  },
+  {
+    "expected": {
+      "id": 261,
+      "sef": "hotel-s-aquaparkom-jeden-areal-jeden-cip",
+      "name": "Jeden náramok namiesto troch systémov. Flow akvaparkového rezortu",
+      "title": "Jeden náramok namiesto troch systémov. Flow akvaparkového rezortu",
+      "parex_text": "V rezortoch s bazénom, wellness, reštauráciou a izbami recepcia pri príchode stále vyrába tri až štyri nosiče. Aquapark mode vznikol preto, aby izba, turniket aj účet v reštaurácii patrili jednému čipu.",
+      "text": "<p>Čím je areál väčší, tým by procesy mali byť jednoduchšie. Na obhliadkach vidíme opak. Rezort s bazénom, wellness, reštauráciou, lobby barom a izbami má na každú z týchto vecí iný systém, iný doklad a iný predmet, ktorý musí hosť dostať do ruky. Recepcia pri príprave príchodu často vyrobí tri a viac nosičov. Jeden otvára izbu. Druhý platí v reštaurácii. Tretí púšťa na turniket. Štvrtý, ak je, ešte wellness. Personál to volá štandard. My sme v tom videli daň za to, že systémy vznikli vedľa seba a nikto ich neskôr nezložil.</p>\n<p>Aquapark mode nevznikol ako katalóg atrakcií. Vznikol ako jedna identita hosťa v areáli. Turnikety osadzujeme čítačkami na QR kód aj na RFID čip rôzneho dosahu. Na pokladni, po zaplatení a fiškálnom doklade, obsluha priloží potrebný počet čipov a čip sa neskóduje sám. Ten istý predaj vieme začať online, v aplikácii alebo na webe. Rodina si kúpi zvýhodnený vstup ako QR vstupenku, na pokladni ju vymení za štyri náramky a prejde vstupom. Bonusová zóna, napríklad wellness, vie na ten istý náramok naviazať automatické doúčtovanie. Nestojí pri nej ďalší človek s ďalšou pokladňou a ďalším zoznamom.</p>\n<h2>Prečo izba, reštaurácia a bazén musia byť jeden čip</h2>\n<p>Kým je v areáli aj hotel, ten istý náramok musí otvoriť izbu a prechodové kľučky. Do reštaurácie, medzi zóny, na izbu. Ellipse POS na odbytových miestach zoberie platbu priložením náramku, nie hľadaním inej karty. PMS vie, ktorá izba ku čipu patrí. Aquapark mode vie, ktorým turniketom smie prejsť a do akej sumy sa naň smie načerpať. Strop si nastaví prevádzka. Bez neho je náramok otvorený účet bez brzdy. S ním je to účet, ktorý viete ustrážiť.</p>\n<p>Best practice z rezortov, ktoré sme takto skladali, je prísna. Recepcia pri príchode nabije jeden náramok. Nie tri systémy, nie štyri predmety, nie ráno zisťovanie, ktorý čip je hotelový a ktorý bazénový. Kým PMS, pokladňa a turnikety nesedia na jednej identite, každý ďalší systém znamená ďalšiu chybu pri odchode skupiny, ktorá sa ponáhľa na autobus.</p>\n<h2>Odchod v sezóne je druhá polovica toho istého flow</h2>\n<p>V lete, keď je v areáli plno, sa prevádzka pokazí na odchode, nie na vstupe. Konzum treba vyplatiť rýchlo. Na stenu vieme dať samoobslužný kiosk, tablet s RFID čítačkou, ktorému stačí napájanie a sieť. Hosť priloží čipy, vidí dĺžku vstupu, zostávajúce minúty aj spotrebu, zaplatí telefónom alebo hodinkami a dostane elektronický doklad. Výstupný turniket má zberač. Pustí von vyplatený náramok, alebo hosťa vráti doplatiť zostatok.</p>\n<p>Kto má vernostné konto, vie si ten istý účet pozrieť a vyplatiť z lehátka. Ten krok popisujeme samostatne, lebo pokladňu ani kiosk už k nemu netreba. Podstata je ale jedna. Aquapark, hotelová izba a reštaurácia nie sú tri biznisy vedľa seba. Sú jeden pobyt. Prevádzka, ktorá ich účtuje a púšťa tromi systémami, platí troch ľudí za prácu, ktorú má urobiť jeden náramok.</p>",
+      "categories": [
+        {
+          "id": 107,
+          "name": "Aké HORECA problémy Ellipse rieši"
+        }
+      ]
+    },
+    "update": {
+      "id": 261,
+      "sef": "hotel-s-aquaparkom-jeden-areal-jeden-cip",
+      "name": "Hotel a aquapark: jeden náramok, zrozumiteľný účet a kontrolované oprávnenia",
+      "title": "Hotel a aquapark: jeden náramok, zrozumiteľný účet a kontrolované oprávnenia",
+      "parex_text": "Jeden náramok má hosťovi zjednodušiť pobyt. Prevádzka pritom potrebuje oddeliť prístup do zón, spotrebu a spôsob vyúčtovania.",
+      "text": "<p><em>Modelová situácia z hotelovej a HORECA prevádzky. Odporúčaný postup na spoločný rozbor s vaším tímom.</em></p>\n<h2>Situácia na prevádzke</h2><p>Rodina býva v hoteli, popoludní ide do aquaparku a večer do reštaurácie. Deti majú vlastné náramky, účet však platí rodič. Modelový rezort tu rieši tri otázky: kto smie kam vstúpiť, kto môže čerpať a komu patrí výsledný účet.</p>\n<h2>Čo treba vyriešiť</h2><p>Zjednotenie nosiča nestačí. Ak pokladňa pozná číslo náramku, ale nepozná jeho väzbu na pobyt a limit, recepcia musí rozhodovať pri každej nezrovnalosti. Odporúčaným základom je jedna identita s oddelenými oprávneniami a dohľadateľnými pohybmi.</p>\n<h2>Odporúčaný postup s Ellipse</h2><ol><li>Rozlíšte hotelového hosťa, denný vstup a permanentku. Pre každý režim určte zóny, čas platnosti a účtovanie.</li><li>Pri vydaní spojte náramok s hosťom alebo skupinou; v Aquapark mode nastavte oprávnenia a limity čerpania, v PMS väzbu na pobyt.</li><li>V POS overte pripísanie spotreby aj storno. Pri odchode musí recepcia alebo kiosk pracovať s tým istým zostatkom ako kontrola výstupu.</li></ol>\n<h2>Výnimka, na ktorú treba myslieť</h2><p>Stratený náramok treba zablokovať a zostatok preniesť riadeným postupom. Otestujte oddelený odchod člena rodiny, reklamáciu položky aj výpadok spojenia. Núdzové opustenie areálu musí mať vlastný bezpečnostný postup nezávislý od vyúčtovania.</p>\n<h2>Ako overiť prínos</h2><p>Merajte čas vydania náramkov, počet ručných opráv väzieb a čas čakania pri odchode v špičke. Samostatne sledujte rozdiely medzi účtami POS, aquaparku a hotela.</p>\n<p>Konkrétne prepojenia a rozsah funkcií prejdeme podľa konfigurácie vašej prevádzky. V schéme pod článkom nájdete súvisiace súčasti Ellipse.</p>"
+    },
+    "modules": [
+      "aqua",
+      "pms",
+      "pos",
+      "pay",
+      "crm"
+    ]
+  },
+  {
+    "expected": {
+      "id": 262,
+      "sef": "bezkontaktna-platba-a-doklad-ktory-host-dostane",
+      "name": "Bezkontaktná platba: Koniec papierikov, ktoré končia v koši, a stratených bločkov pre firmy",
+      "title": "Bezkontaktná platba: Koniec papierikov, ktoré končia v koši, a stratených bločkov pre firmy",
+      "parex_text": "Často na prevádzkach vidíme čašníkov, ktorí pobehujú s dvoma terminálmi v ruke, hľadajú rolu papieru do tlačiarne a hosť medzitým odchádza s vetou: „Bloček mi pošlite e-mailom.“",
+      "text": "<article class=\"article-detail\">\n  \n  <p class=\"lead\">Často na prevádzkach vidíme čašníkov, ktorí pobehujú s dvoma terminálmi v ruke, hľadajú rolu papieru do tlačiarne a hosť medzitým odchádza s vetou: <em>„Bloček mi pošlite e-mailom.“</em></p>\n  <h2>Rýchla platba, ale diera v pokladni</h2>\n  <p>Na osobných stretnutiach s manažérmi reštaurácií často riešime situáciu, keď zákazník zaplatí cez mobilný terminál alebo SoftPOS, pípne kartou, no účet v pokladni ostane otvorený. Na konci zmeny čašník zistí, že má peniaze na účte, ale nezúčtované položky v eKase.</p>\n  <h2>Ako to spájame v Ellipse</h2>\n  <p>Pripravili sme plynulý tok: platba na mobile/termináli okamžite uzavrie účet v eKase (Portos, FiskalPRO) a vygeneruje elektronický doklad s QR kódom. Hosť si doklad jednoducho odfotí telefónom alebo mu odíde e-mailom. Žiadne tlačenie zbytočných papierov, ktoré aj tak skončia v koši.</p>\n  <ul>\n    <li>Okamžité uzavretie účtu a fiškalizácia v sekunde úhrady</li>\n    <li>Digitálny doklad cez QR kód alebo e-mail</li>\n    <li>Podpora mobilných čašníkov a SoftPOS terminálov priamo v teréne</li>\n  </ul>\n</article>",
+      "categories": [
+        {
+          "id": 107,
+          "name": "Aké HORECA problémy Ellipse rieši"
+        }
+      ]
+    },
+    "update": {
+      "id": 262,
+      "sef": "bezkontaktna-platba-a-doklad-ktory-host-dostane",
+      "name": "Platba pri stole: ako udržať terminál, pokladňu a doklad v jednom procese",
+      "title": "Platba pri stole: ako udržať terminál, pokladňu a doklad v jednom procese",
+      "parex_text": "Rýchle priloženie karty je iba jeden krok. Dobre nastavená platba musí zanechať správny stav účtu aj dohľadateľný doklad.",
+      "text": "<p><em>Modelová situácia z hotelovej a HORECA prevádzky. Odporúčaný postup na spoločný rozbor s vaším tímom.</em></p>\n<h2>Situácia na prevádzke</h2><p>Počas obeda hosť zaplatí kartou a odíde. Terminál platbu potvrdil, no účet v pokladni zostal otvorený. Obsluha sa pri uzávierke rozhoduje, či ho označiť za hotovosť alebo skúsiť platbu znova. Obe skratky môžu vytvoriť ďalšiu chybu.</p>\n<h2>Čo treba vyriešiť</h2><p>Na procesnom workshope preto rozlišujeme výsledok kartovej transakcie, uzavretie účtu a vytvorenie dokladu. Potrebujeme medzi nimi väzbu a postup obnovy, ak sa odpoveď z terminálu oneskorí.</p>\n<h2>Odporúčaný postup s Ellipse</h2><ol><li>Sumu odosielajte z POS do podporovaného platobného riešenia, aby sa nezadávala druhýkrát.</li><li>Otestujte úspech, zamietnutie aj prerušenie komunikácie. Obsluha musí vedieť overiť poslednú transakciu pred opakovaním.</li><li>Spôsob odovzdania dokladu nastavte podľa používaného fiškálneho riešenia a požiadavky hosťa. Pri elektronickom doručení overte, že hosť doklad skutočne dostane.</li></ol>\n<h2>Výnimka, na ktorú treba myslieť</h2><p>Pri delení účtu, kombinácii hotovosti a karty či vrátení platby zachovajte väzbu na pôvodný predaj. Samotná zelená obrazovka terminálu nesmie nahradiť kontrolu stavu účtu.</p>\n<h2>Ako overiť prínos</h2><p>Porovnajte čas od požiadania o účet po jeho uzavretie, počet otvorených účtov po zmene a rozdiely medzi kartovými platbami a POS. Zisťujte aj to, či hosť rozumel platbe a dostal doklad.</p>\n<h2>Čo hovorí zahraničný výskum</h2><p>Prieskum hodnotil postoje hostí k reštauračným technológiám. Upozorňuje, že pri zavádzaní treba hodnotiť aj zákaznícku skúsenosť, nielen úsporu práce.</p><p>Odporúčame preto sledovať zrozumiteľnosť platobného procesu. Ide o starší výskum princípu prijatia technológie, nie o aktuálny podiel používania mobilných platieb.</p><p>Zdroj: <a href=\"https://ecommons.cornell.edu/entities/publication/1cb2925a-5a54-4791-b21f-a2e5289ce96f\">Customer Preferences for Restaurant Technology Innovations</a> — Cornell University, 2009.</p>\n<p>Konkrétne prepojenia a rozsah funkcií prejdeme podľa konfigurácie vašej prevádzky. V schéme pod článkom nájdete súvisiace súčasti Ellipse.</p>"
+    },
+    "modules": [
+      "pos",
+      "pay"
+    ]
+  },
+  {
+    "expected": {
+      "id": 263,
+      "sef": "firemny-host-a-efaktura",
+      "name": "Firemný hosť a e-faktúra: Prečo už ekonómky nemusia utápať nedeľu v šanónoch",
+      "title": "Firemný hosť a e-faktúra: Prečo už ekonómky nemusia utápať nedeľu v šanónoch",
+      "parex_text": "Často vidíme na prevádzkach plnú kanceláriu ekonómiek a zamestnancov, ktorí dennodenne prekladajú papiere, ručne prepisujú IČO z Booking účteniek do účtovníctva a produkujú nové a nové šanóny pre archív.",
+      "text": "<article class=\"article-detail\">\n  \n  <p class=\"lead\">Často vidíme na prevádzkach plnú kanceláriu ekonómiek a zamestnancov, ktorí dennodenne prekladajú papiere, ručne prepisujú IČO z Booking účteniek do účtovníctva a produkujú nové a nové šanóny pre archív.</p>\n  <h2>Pondelkové ráno na účtovni</h2>\n  <p>Na stretnutí s hlavnou ekonómkou veľkého kongresového hotela nám ukázala svoj stôl: <em>„V piatok odišla firemná akcia na 50 izieb. V pondelok ráno mám v e-maile 30 správ od ich asistentiek. Jedna chce faktúru na inú dcérsku firmu, druhá tvrdí, že zálohu už poslali, a tretia žiada e-faktúru s presným rozpisom DPH.“</em></p>\n  <h2>Čo sme v Ellipse spravili pre zrušenie ručného prepisovania</h2>\n  <p>Povedali sme si, že systém musí prácu ľuďom šetriť, nie ju vyrábať. Preto sme účtovný tok prepojili priamo s hotelovým pobytom a gastro účtom:</p>\n  <ul>\n    <li><strong>Automatické overenie firmy:</strong> Pri vytváraní rezervácie zadá recepčná alebo hosť len IČO – systém si vytiahne presný názov firmy aj IČ DPH z registra. Žiadne preklepy v názvoch s.r.o.</li>\n    <li><strong>Proforma a faktúra viazané na účet:</strong> Proforma odíde ako záloha pred pobytom. Po odchode vznikne vyúčtovacia faktúra automaticky zo všetkého, čo sa reálne vyčerpalo.</li>\n    <li><strong>Priamy export bez papierov:</strong> Jedným klikom vyexportujete celé obdobie priamo do účtovných softvérov ako Omega, Kros, Pohoda či Navision.</li>\n  </ul>\n</article>",
+      "categories": [
+        {
+          "id": 107,
+          "name": "Aké HORECA problémy Ellipse rieši"
+        }
+      ]
+    },
+    "update": {
+      "id": 263,
+      "sef": "firemny-host-a-efaktura",
+      "name": "Firemný pobyt: správny odberateľ a vyúčtovanie už pri odchode",
+      "title": "Firemný pobyt: správny odberateľ a vyúčtovanie už pri odchode",
+      "parex_text": "Firemné faktúry sa zjednodušia, keď sa platiteľ, rozsah služieb a zálohy dohodnú pred pobytom a zostanú spojené s rezerváciou.",
+      "text": "<p><em>Modelová situácia z hotelovej a HORECA prevádzky. Odporúčaný postup na spoločný rozbor s vaším tímom.</em></p>\n<h2>Situácia na prevádzke</h2><p>Firma objedná izby pre tím, ale každý účastník si dopláca minibar. Po odchode sa ozvú dve dcérske spoločnosti, ktoré žiadajú odlišné fakturačné údaje. Recepcia má potvrdenie objednávky, účtovníctvo platbu a obchod poslednú verziu dohody.</p>\n<h2>Čo treba vyriešiť</h2><p>Najväčší prínos neprinesie rýchlejšie vytvorenie PDF. Prinesie ho jednoznačná dohoda, kto objednáva, kto býva a kto platí jednotlivé služby. PDF zaslané e-mailom navyše netreba zamieňať so štruktúrovanou elektronickou faktúrou.</p>\n<h2>Odporúčaný postup s Ellipse</h2><ol><li>Pred príchodom overte odberateľa, fakturačné údaje a rozsah firemného účtu. Priraďte zálohu ku konkrétnej objednávke.</li><li>V PMS oddeľte firemné a individuálne položky. Spotrebu z POS pripájajte k správnemu účtu už pri predaji.</li><li>S účtovníctvom otestujte export faktúry, zálohy, doplatku aj opravy na vzorovom pobyte. Dohodnite osobu, ktorá rieši odmietnutý prenos.</li></ol>\n<h2>Výnimka, na ktorú treba myslieť</h2><p>Zmena odberateľa po vystavení dokladu patrí do schváleného opravného postupu. Neprepisujte ju potichu tak, aby doklad v PMS a účtovníctve znamenal niečo iné.</p>\n<h2>Ako overiť prínos</h2><p>Merajte podiel faktúr opravených po odchode, čas prípravy vyúčtovania a počet nespárovaných záloh. Sledujte aj odmietnuté exporty, nie iba počet odoslaných súborov.</p>\n<p>Konkrétne prepojenia a rozsah funkcií prejdeme podľa konfigurácie vašej prevádzky. V schéme pod článkom nájdete súvisiace súčasti Ellipse.</p>"
+    },
+    "modules": [
+      "pms",
+      "pos",
+      "pay"
+    ]
+  },
+  {
+    "expected": {
+      "id": 355,
+      "sef": "darcekovy-poukaz-ktory-sa-da-predat-uplatnit-aj-najst-riesenie",
+      "name": "Darčekové poukazy bez chaosu. Od eshopu po doplatok na pokladni",
+      "title": "Darčekové poukazy bez chaosu. Od eshopu po doplatok na pokladni",
+      "parex_text": "Trvalo nám roky, kým sme z hotelov a rezortov zložili jeden postup na poukazy. Web ich predával, zošit ich evidoval a pokladňa ich nevedela zobrať bez vedúceho. Centrálna evidencia vznikla ako koniec tejto čiernej diery.",
+      "text": "<p>Darčekový poukaz vyzerá ako jednoduchý predaj. V praxi je to miesto, kde sa hotelom rozpadne evidencia najrýchlejšie. Časť poukazov príde z eshopu, s platbou a grafickým venovaním. Časť sa vypíše na recepcii pre partnera, pre súťaž, pre firmu. Časť leží v obálke a uplatní sa o osem mesiacov, keď už nikto nevie, či bola na masáž, na pobyt, alebo len na sumu. Trvalo nám niekoľko rokov, kým sme z rezortov a hotelov zložili postup, ktorý je dosť prísny na účtovníctvo a dosť voľný na to, aby si ho každá prevádzka nastavila po svojom.</p>\n<p>Výsledok nie je „modul na poukazy“ ako ďalší zoznam. Je to jedna evidencia vydania aj uplatnenia. Webové poukazy aj interné. Jednoúčelové na konkrétnu službu, hodnotové v kredite a kombinované, kde je viac služieb a viac sadzieb DPH v jednom kuse. Interné poukazy sú práve tá čierna diera. Kým nie sú v tom istom zozname ako tie z webu, viete predávať online krásne a popritom strácať prehľad o tom, čo ste dali rukou.</p>\n<h2>Prečo sme predaj oddelili od záloh za pobyt</h2>\n<p>Best practice, ktorú s ekonómami držíme, je analytický účet 324 len na poukazy. Nemiešajú sa so zálohami za pobyt. Inak v závierke neviete, koľko z „záloh“ sú v skutočnosti poukazy, ktoré sa možno nikdy neuplatnia, a koľko sú peniaze za konkrétny termín. Účtovník, manažér aj riaditeľ majú za zvolené obdobie report: koľko sa predalo, akých typov, čo sa uplatnilo, či to bolo na pokladni, vo faktúre, v gastre alebo na ubytovaní, a na ktorý daňový doklad sa viaže nákup aj vyúčtovanie.</p>\n<p>DPH sa neláme jedným pravidlom, lebo poukazy nie sú jedna vec. Poukaz viazaný na konkrétnu službu sa pri predaji zdaní sadzbou tej služby. Hodnotový poukaz je iný. Pri predaji ešte nie je jasné, na čo sa použije, preto ho prevádzky predávajú s nulovou sadzbou a daň zúčtujú až pri poskytnutí služby, podľa jej typu. Systém toto musí vedieť rozlíšiť v momente predaja. Ak to nevie, ekonóm to o rok skladá z účteniek.</p>\n<h2>Uplatnenie nesmie čakať na vedúceho</h2>\n<p>Najdrahšia chyba na prevádzke nie je zlá sadzba. Je to poukaz, ktorý obsluha nevie zobrať. Hostia stoja, čašník hľadá manažéra, účet sa delí na „poukaz“ a „víno navyše“ na dvoch dokladoch. Preto kód naťuká čašník, barista aj recepčný. Doplatok ide na ten istý účet. Wellness poukaz s romantickou večerou a fľašou vína sa neštiepi. Ellipse POS a hotelový účet musia poukaz vidieť rovnako. Inak gastro povie, že poukaz je recepčná agenda, a recepcia povie, že večera je pokladňa.</p>\n<p>To isté platí ešte pri nákupe. Vo web bookingu aj v časovej rezervácii sa poukaz dá uplatniť v bode, kde hosť službu kupuje, nielen tam, kde ju o pol roka čerpá. Darčekové poukazy, pokladňa, PMS a rezervácia sú preto jeden tok. Prevádzka, ktorá ich drží v štyroch zošitoch, bude mať pekný eshop a naďalej chaos v tom, čo už je zaplatené, čo sa dá čerpať a čo účtovníctvo ešte nevidelo.</p>",
+      "categories": [
+        {
+          "id": 107,
+          "name": "Aké HORECA problémy Ellipse rieši"
+        }
+      ]
+    },
+    "update": {
+      "id": 355,
+      "sef": "darcekovy-poukaz-ktory-sa-da-predat-uplatnit-aj-najst-riesenie",
+      "name": "Darčekové poukazy: od predaja po čerpanie bez stratených zostatkov",
+      "title": "Darčekové poukazy: od predaja po čerpanie bez stratených zostatkov",
+      "parex_text": "Web, recepcia a reštaurácia potrebujú spoločnú evidenciu poukazov. Rozhodujúca je dohľadateľnosť vydania, úhrady a každého čerpania.",
+      "text": "<p><em>Modelová situácia z hotelovej a HORECA prevádzky. Odporúčaný postup na spoločný rozbor s vaším tímom.</em></p>\n<h2>Situácia na prevádzke</h2><p>Hosť prinesie darčekový poukaz na pobyt s večerou. Ubytovanie vybaví recepcia, víno navyše reštaurácia. Poukaz vznikol na webe pred niekoľkými mesiacmi a obsluha potrebuje vedieť, čo ešte pokrýva a čo má hosť doplatiť.</p>\n<h2>Čo treba vyriešiť</h2><p>Rozdiel medzi pekným poukazom a spoľahlivým predajom je v jeho životnom cykle. Evidencia musí zahŕňať aj interné a partnerské poukazy. Inak online predaj sedí, ale záväzky a poskytnuté výhody zostávajú neúplné.</p>\n<h2>Odporúčaný postup s Ellipse</h2><ol><li>Pred spustením opíšte jednotlivé typy: rozsah služby alebo hodnotu, platnosť, prenosnosť a pravidlá čiastočného čerpania.</li><li>Zjednoťte vydanie z webu aj recepcie v module poukazov. Každý kód musí mať pôvod a históriu, vrátane bezodplatne vydaných kusov.</li><li>S POS a PMS otestujte uplatnenie, doplatok, storno aj opakované použitie toho istého kódu. Účtovné a daňové nastavenie potvrďte s účtovníkom podľa konkrétneho typu.</li></ol>\n<h2>Výnimka, na ktorú treba myslieť</h2><p>Pri strate potvrdenia vyhľadávajte poukaz podľa evidencie a overeného nákupu. Náhradné vydanie nesmie ponechať dva platné kódy s tým istým nárokom. Pri súbežnom čerpaní na dvoch miestach musí byť rozhodujúci aktuálny zostatok.</p>\n<h2>Ako overiť prínos</h2><p>Kontrolujte počet nevysvetlených zostatkov, čas uplatnenia pri pokladni a súlad evidencie s účtovným podkladom. Predaj poukazov a skutočné čerpanie vyhodnocujte oddelene.</p>\n<p>Konkrétne prepojenia a rozsah funkcií prejdeme podľa konfigurácie vašej prevádzky. V schéme pod článkom nájdete súvisiace súčasti Ellipse.</p>"
+    },
+    "modules": [
+      "vouchers",
+      "pos",
+      "pms",
+      "pay"
+    ]
+  },
+  {
+    "expected": {
+      "id": 356,
+      "sef": "koniec-roka-a-tisice-expirovanych-poukazov-riesenie",
+      "name": "Tisíce expirovaných poukazov na konci roka. Odpis, ktorý účtovníctvo unesie",
+      "title": "Tisíce expirovaných poukazov na konci roka. Odpis, ktorý účtovníctvo unesie",
+      "parex_text": "Neuplatnený poukaz je výnos, ale len keď ho v decembri viete odpísať hromadne a obhájiť. Ručné prepisovanie tisícov kusov sme na hoteloch videli ako každoročný zlom. Hromadný odpis vznikol práve naň.",
+      "text": "<p>Vysoké percento darčekových poukazov sa neuplatní. Na prevádzkach to nie je nehoda. Je to bežný zvyšok predaja, ktorý sa raz do roka zmení na problém, lebo ho nikto priebežne neuzatvára. V hoteloch sú na konci roka tisíce expirovaných kusov. Účtovníctvo ich chce mať dole z evidencie. Recepcia ich má v šanóne, v tabuľke a ešte v systéme, ktorý vie poukaz predať, ale nevie ho hromadne ukončiť. December potom nie je uzávierka. Je to prepisovanie.</p>\n<p>Po expirácii je nevyužitý poukaz dodatočný výnos, nie strata v zásuvke. Podmienka je, aby sa dal odpísať čisto. Ako storno poplatok za nevyužitý poukaz, v plnej hodnote do ostatných prevádzkových výnosov a bez DPH, lebo ide o penále, nie o poskytnutú službu. Ak toto systém nevie, ekonóm buď poukazy nechá visieť, alebo daň nastaví odhadom. Obe cesty sú zlé. Prvá preceňuje záväzok. Druhá sa nedá obhájiť.</p>\n<h2>Prečo odpis musí byť súčasť predaja, nie decemberový projekt</h2>\n<p>Hromadný odpis vznikol preto, že ručne sa také množstvo ukončiť nedá v čase, ktorý účtovníctvo má. V Ellipse označíte nevyužité expirované poukazy a systém ich odpíše naraz. Evidencia ostane v reálnom čase. Neostane „zoznam, ktorý ešte musíme prejsť“. Best practice nie je veľký decembrový víkend. Je to stav, ktorý viete vytiahnuť kedykoľvek: čo je otvorené, čo sa uplatnilo, čo prepadlo.</p>\n<p>Report predaja a čerpania preto patrí k odpisu, nie vedľa neho. Účtovník a ekonóm musia vidieť väzbu na analytický účet 324, oddelene od záloh za pobyt. Priebežná inventarizácia je lepšia ako ročný šok, keď sa decemberové poukazy porovnávajú s účtom až vo chvíli, keď sa zatvára rok. Kto poukazy predáva a expirácie nerieši v tom istom module, bude mať pekný predaj a raz za rok tichý audit, ktorý nikto nechce robiť.</p>\n<p>Na hoteloch, kde odpis ide z tej istej karty ako predaj, december vyzerá ako kontrola, nie ako pátranie. Ekonóm vidí kódy po platnosti, ktoré sa neuplatnili, a ukončí ich jednou operáciou. Recepcia nenosí krabicu obálok. Ak obálka ešte niekde je, porovná sa s kódom, ktorý v evidencii buď žije, alebo už neplatí. Súčet bez zoznamu kódov sa nedá obhájiť. Zoznam áno.</p>\n<h2>Čo z toho prevádzka musí mať spolu</h2>\n<p>Predaj na webe, uplatnenie na pokladni a odpis po expirácii sú jeden život poukazu. Darčekové poukazy bez hromadného odpisu vyriešia január až november a december nechajú na ľuďoch. Účtovníctvo bez reportu dostane súčet bez dokladu. Prevádzka, ktorá poukazy myslí vážne, musí mať oboje v tej istej evidencii. Inak neuplatnená suma nie je výnos. Je to položka, o ktorej viete, že niekde je, a neviete ju v uzávierke ukázať.</p>",
+      "categories": [
+        {
+          "id": 107,
+          "name": "Aké HORECA problémy Ellipse rieši"
+        }
+      ]
+    },
+    "update": {
+      "id": 356,
+      "sef": "koniec-roka-a-tisice-expirovanych-poukazov-riesenie",
+      "name": "Expirované poukazy: uzávierka s históriou a schválenými pravidlami",
+      "title": "Expirované poukazy: uzávierka s históriou a schválenými pravidlami",
+      "parex_text": "Poukazy po platnosti potrebujú pravidelnú kontrolu. Hromadná operácia má vychádzať z overených zostatkov a zachovať auditnú stopu.",
+      "text": "<p><em>Modelová situácia z hotelovej a HORECA prevádzky. Odporúčaný postup na spoločný rozbor s vaším tímom.</em></p>\n<h2>Situácia na prevádzke</h2><p>Pred uzávierkou sa objaví zoznam starších poukazov. Niektoré sú nevyužité, ďalšie čiastočne čerpané a pri niekoľkých recepcia sľúbila predĺženie platnosti. Samotný filter podľa dátumu nedokáže tieto situácie správne uzavrieť.</p>\n<h2>Čo treba vyriešiť</h2><p>Expirácia obchodnej platnosti a účtovné vysporiadanie sú dve odlišné rozhodnutia. Univerzálne tvrdenie, že každý prepadnutý poukaz je storno poplatok bez DPH, nie je vhodným návodom. Konkrétny postup musí vychádzať z typu poukazu, podmienok a posúdenia účtovníctva.</p>\n<h2>Odporúčaný postup s Ellipse</h2><ol><li>Vytvorte prehľad k rozhodnému dátumu: kód, vydanie, úhrada, čerpanie, zostatok, platnosť a prípadné predĺženie.</li><li>Oddeľte reklamácie, dohodnuté výnimky a nejasné záznamy. Tie riešte pred hromadným uzatvorením.</li><li>Schválenú operáciu vykonajte nad identifikovaným zoznamom a uchovajte kontrolný súčet, dátum a zodpovednú osobu. Históriu čerpania nemažte.</li></ol>\n<h2>Výnimka, na ktorú treba myslieť</h2><p>Ak hosť uplatní nárok dodatočne a prevádzka ho uzná, musí existovať dohľadateľná oprava. Nestačí vytvoriť nový poukaz bez odkazu na pôvodný prípad.</p>\n<h2>Ako overiť prínos</h2><p>Merajte počet neobjasnených zostatkov a čas uzávierky. Súčet otvorených poukazov pravidelne porovnajte s účtovnou evidenciou. Úspechom je vysvetliteľný zostatok, nie čo najväčší jednorazový odpis.</p>\n<p>Konkrétne prepojenia a rozsah funkcií prejdeme podľa konfigurácie vašej prevádzky. V schéme pod článkom nájdete súvisiace súčasti Ellipse.</p>"
+    },
+    "modules": [
+      "vouchers",
+      "pms",
+      "pos"
+    ]
+  },
+  {
+    "expected": {
+      "id": 264,
+      "sef": "podujatie-so-stropom",
+      "name": "Podujatie so stropom: Keď tridsiata vstupenka už naozaj nemá stoličku",
+      "title": "Podujatie so stropom: Keď tridsiata vstupenka už naozaj nemá stoličku",
+      "parex_text": "Keď organizujete degustáciu vína, koncert na terase alebo kurz jogy, kapacity sú nekompromisné. Na stretnutiach s prevádzkarmi často počujeme príbehy o tom, ako predali 40 lístkov na akciu pre 30 ľudí.",
+      "text": "<article class=\"article-detail\">\n  \n  <p class=\"lead\">Keď organizujete degustáciu vína, koncert na terase alebo kurz jogy, kapacity sú nekompromisné. Na stretnutiach s prevádzkarmi často počujeme príbehy o tom, ako predali 40 lístkov na akciu pre 30 ľudí, lebo rezervácie prijímali cez Instagram, e-mail aj telefón súčasne.</p>\n  <h2>Chaos v správach a stoličky na chodbe</h2>\n  <p>Prijímať rezervácie na akcie „do zápisníka“ vždy skončí rovnako. Hosť príde na miesto, stôl pre neho neexistuje a večer plný zážitkov začína trapasom.</p>\n  <h2>Vstupy pod kontrolou Ellipse Eventy</h2>\n  <ul>\n    <li><strong>Prepojený kalendár a online predaj:</strong> Vytvoríte akciu, určíte kapacitu (napr. 30 miest) a dáte link na web.</li>\n    <li><strong>Okamžitá platba a garancia:</strong> Hosť si kúpi lístok online. V momente, keď sa predá 30. miesto, systém automaticky zatvorí predaj na všetkých kanáloch.</li>\n    <li><strong>Rýchla kontrola pri vchode:</strong> Obsluha na vstupe naskenuje QR kód z mobilu hosťa pomocou aplikácie v telefóne.</li>\n  </ul>\n</article>",
+      "categories": [
+        {
+          "id": 107,
+          "name": "Aké HORECA problémy Ellipse rieši"
+        }
+      ]
+    },
+    "update": {
+      "id": 264,
+      "sef": "podujatie-so-stropom",
+      "name": "Vypredané podujatie: kapacita musí platiť na webe aj pri telefóne",
+      "title": "Vypredané podujatie: kapacita musí platiť na webe aj pri telefóne",
+      "parex_text": "Predaj vstupeniek potrebuje spoločný limit, pravidlá dočasnej rezervácie a kontrolu vstupu. Až potom možno spoľahlivo oznámiť vypredanie.",
+      "text": "<p><em>Modelová situácia z hotelovej a HORECA prevádzky. Odporúčaný postup na spoločný rozbor s vaším tímom.</em></p>\n<h2>Situácia na prevádzke</h2><p>Reštaurácia pripraví degustáciu pre obmedzený počet hostí. Časť objedná cez web, ďalší telefonujú a obchod rezervuje miesta pre partnerov. Ak každý kanál počíta vlastný zostatok, predaj môže prekročiť skutočnú kapacitu.</p>\n<h2>Čo treba vyriešiť</h2><p>Prvou otázkou je, čo spotrebúva miesto: zaplatená vstupenka, nepotvrdená objednávka alebo interná blokácia. Bez tejto definície môže systém ukazovať voľno, hoci prevádzka už kapacitu prisľúbila.</p>\n<h2>Odporúčaný postup s Ellipse</h2><ol><li>Nastavte predajnú kapacitu po odpočítaní interných miest a potrebnej prevádzkovej rezervy.</li><li>Všetky objednávky zapisujte do jednej evidencie podujatia. Určite, ako dlho nezaplatená objednávka drží miesto a kedy sa uvoľní.</li><li>Otestujte posledné voľné miesto pri súbežnom nákupe, zlyhanú platbu a storno. Pri vstupe musí kontrola rozlíšiť platný a už použitý lístok.</li></ol>\n<h2>Výnimka, na ktorú treba myslieť</h2><p>Počas výpadku online kontroly potrebujete záložný zoznam a následné zosúladenie. Na čakaciu listinu presúvajte záujemcov transparentne; miesto sľúbte až po jeho skutočnom uvoľnení.</p>\n<h2>Ako overiť prínos</h2><p>Sledujte obsadenosť, neúčasť, uvoľnené nezaplatené rezervácie a čas odbavenia vstupu. Kapacitu hodnotíte podľa reálneho usporiadania, nie iba podľa celkového počtu stoličiek v objekte.</p>\n<p>Konkrétne prepojenia a rozsah funkcií prejdeme podľa konfigurácie vašej prevádzky. V schéme pod článkom nájdete súvisiace súčasti Ellipse.</p>"
+    },
+    "modules": [
+      "events",
+      "pay",
+      "pos"
+    ]
+  },
+  {
+    "expected": {
+      "id": 265,
+      "sef": "domova-kniha-bez-osobneho-stretnutia",
+      "name": "Formulár na linku nie je check-in. Doklad sa musí naozaj overiť",
+      "title": "Formulár na linku nie je check-in. Doklad sa musí naozaj overiť",
+      "parex_text": "Na kontrolách sme videli hotely, ktoré „mali online check-in“, a v skutočnosti mali odkaz na formulár. Domová kniha z takého formulára nevznikne. Vznikne až z dokladu, ktorý systém prečíta a vie porovnať s tvárou.",
+      "text": "<p>Keď ubytovateľ povie, že check-in už robí online, prvá otázka, ktorú na mieste kladieme, znie: odkiaľ sa vzalo meno v evidencii. Veľmi často je odpoveď „hosť si to vyplnil“. To nie je check-in. To je poznámka, ktorú by recepčná aj tak musela porovnať s dokladom, keby hosťa videla. A pri samoobsluhe ho neuvidí. Práve preto tento krok nemôže ostať na dobrom slove.</p>\n<p>Povinnosť overiť, že údaje v evidencii sedia s občianskym preukazom alebo pasom, sa nikam nestratí tým, že recepcia zatvorila. Formulár na linku vám pri kontrole pomôže nanajvýš ako koncept. Meno, ktoré si niekto vypísal v aute pred hotelom, do domovej knihy nepatrí.</p>\n<h2>Prečo sme check-in postavili na doklade, nie na políčkach</h2>\n<p>Best practice, ktorú sme z kontrol a z nočných príchodov zobrali, je jednoduchá. Údaj má prečítať doklad, nie hosť. V Self check-in aplikácii hosť odfotí pas alebo občiansky preukaz. OCR rozoberie polia: identifikačné údaje, platnosť, orgán, ktorý doklad vydal, a fotografiu. Nie sú to znaky naťukané na telefóne. Sú prečítané z existujúceho dokladu, aj s tým, čo je na ňom napísané zle čitateľne a čo by človek v jednu v noci preklepol.</p>\n<p>Druhý krok sme nechali ako voľbu ubytovateľa, lebo nie každá prevádzka ho chce hneď. Ak si zapnete kontrolu tváre, systém porovná fotografiu z dokladu so záberom z mobilu. Zhoda povie, že doklad a človek, ktorý ho drží, k sebe patria. V rezervácii potom ostane zaznačené, že osoba prešla plnohodnotným online check-inom. Nie že odoslala formulár.</p>\n<h2>Záznam, ktorý recepcia ráno neprepisuje</h2>\n<p>Samotné odfotenie by bolo málo, keby ráno niekto údaje prepisoval do iného systému. Preto check-in sedí na rezervácii v PMS. Recepčná, ak na smene je, vidí, kto už overením prešiel. Ak na smene nie je, evidencia je hotová aj bez nej. Domová kniha a pobyt sú ten istý hosť, nie dva zoznamy, ktoré sa večer porovnávajú.</p>\n<p>Tento krok je zároveň podmienka pre všetko, čo nasleduje. PIN na kľučku, platba zostatku aj samoobslužný odchod nemajú zmysel nad menom, ktoré sa nedá obhájiť. Na prevádzkach si preto nastavujete, koľko osôb z rezervácie musí byť overených, kým sa príchod považuje za uzavretý. Niekde stačí jedna osoba. Inde všetci, ktorí v izbe spia. To nie je detail nastavenia. To je rozdiel medzi evidenciou a pocitom, že evidenciu máte.</p>\n<h2>Prečo to musí byť súčasť príchodu, nie doplnok</h2>\n<p>Online check-in bez väzby na PMS je pekný formulár vedľa hotela. PMS bez overeného dokladu je plachta, do ktorej ráno dopíšete, čo si hosť zmyslel. Self check-in vznikol preto, aby sa tieto dve veci nestretli až pri kontrole. Prevádzka, ktorá púšťa hostí dovnútra bez človeka na recepcii, ho musí mať. Inak samoobsluha len odloží problém na deň, keď príde niekto a spýta sa, podľa čoho ste toho človeka ubytovali.</p>",
+      "categories": [
+        {
+          "id": 107,
+          "name": "Aké HORECA problémy Ellipse rieši"
+        }
+      ]
+    },
+    "update": {
+      "id": 265,
+      "sef": "domova-kniha-bez-osobneho-stretnutia",
+      "name": "Online check-in: kvalitné údaje a jasný postup overenia hosťa",
+      "title": "Online check-in: kvalitné údaje a jasný postup overenia hosťa",
+      "parex_text": "Digitálny príchod musí rozlišovať medzi vyplnením údajov, ich kontrolou a overením osoby. OCR je pomoc pri čítaní dokladu, nie dôkaz identity.",
+      "text": "<p><em>Modelová situácia z hotelovej a HORECA prevádzky. Odporúčaný postup na spoločný rozbor s vaším tímom.</em></p>\n<h2>Situácia na prevádzke</h2><p>Hosť vyplní formulár, ale meno sa nezhoduje s rezerváciou. Môže ísť o preklep, rezerváciu partnera alebo inú osobu. Recepcia potrebuje vedieť, čo bolo zadané hosťom, čo prečítal systém a čo už niekto skontroloval.</p>\n<h2>Čo treba vyriešiť</h2><p>Odporúčame navrhnúť jednotlivé stavy procesu ešte pred automatickým vydávaním prístupu. Rozpoznanie textu z fotografie nezaručuje pravosť dokladu. Ani voliteľná kontrola tváre sama osebe nedokazuje splnenie všetkých povinností ubytovateľa.</p>\n<h2>Odporúčaný postup s Ellipse</h2><ol><li>Určite údaje potrebné pre konkrétny pobyt a spôsob ich kontroly. Pri OCR dajte hosťovi alebo pracovníkovi možnosť opraviť nesprávne rozpoznaný údaj.</li><li>V Self check-in a PMS udržte väzbu medzi osobou a rezerváciou. Stav „odoslané“ odlíšte od „skontrolované“.</li><li>Pred zavedením práce s dokladmi alebo biometrie posúďte účel, oprávnenia, dobu uchovania a vhodný právny základ. Nastavte aj rovnocenný postup s pomocou človeka.</li></ol>\n<h2>Výnimka, na ktorú treba myslieť</h2><p>Nečitateľný doklad, odlišné písmo či neúspešná kontrola nemajú viesť k opakovanému slepému odosielaniu. Prípad má prevziať určený pracovník bez toho, aby si hosť musel zakladať novú rezerváciu.</p>\n<h2>Ako overiť prínos</h2><p>Sledujte podiel opravených údajov, nedokončených check-inov a zásahov recepcie. Kvalitu hodnotíte podľa správnosti záznamov a zvládnutých výnimiek, nie iba podľa počtu odoslaných formulárov.</p>\n<p>Konkrétne prepojenia a rozsah funkcií prejdeme podľa konfigurácie vašej prevádzky. V schéme pod článkom nájdete súvisiace súčasti Ellipse.</p>"
+    },
+    "modules": [
+      "self",
+      "pms",
+      "team"
+    ]
+  },
+  {
+    "expected": {
+      "id": 266,
+      "sef": "jedna-izba-pat-portalov-ziadna-duplicita",
+      "name": "Jedna izba, päť portálov a koniec nočnej mory zvanej Overbooking",
+      "title": "Jedna izba, päť portálov a koniec nočnej mory zvanej Overbooking",
+      "parex_text": "„Zažil som situáciu, keď o ôsmej večer prišli dvaja hostia na tú istú izbu. Jedna rezervácia bola z Booking.com, druhá z nášho webu. Musel som im platiť taxík a drahší hotel vedľa,“ spomína hoteliér z Tatier.",
+      "text": "<article class=\"article-detail\">\n  \n  <p class=\"lead\"><em>„Zažil som situáciu, keď o ôsmej večer prišli dvaja hostia na tú istú izbu. Jedna rezervácia bola z Booking.com, druhá z nášho webu. Musel som im platiť taxík a drahší hotel vedľa,“</em> spomína hoteliér z Tatier.</p>\n  <h2>Keď manuálne prepisovanie zlyhá</h2>\n  <p>Ak recepčná manuálne upravuje voľné izby na troch portáloch, pri silnom dopyte je len otázkou času, kedy vznikne duplicita. Rozdiel piatich minút vás stojí peniaze aj zlé recenzie.</p>\n  <h2>Jeden riadiaci orgán – Ellipse Channel Manager</h2>\n  <p>Ellipse prepojí Booking.com, Expedia, Airbnb, Google Hotels aj váš vlastný web booking do jedného uzla. Ak sa izba predá kdekoľvek, v sekunde sa zatvorí na všetkých ostatných portáloch súčasne.</p>\n  <ul>\n    <li>Okamžitá synchronizácia v milisekundách</li>\n    <li>Jednotné riadenie cien a minimálnej dĺžky pobytu z jedného miesta</li>\n    <li>Ochrana pred overbookingom počas špičky</li>\n  </ul>\n</article>",
+      "categories": [
+        {
+          "id": 107,
+          "name": "Aké HORECA problémy Ellipse rieši"
+        }
+      ]
+    },
+    "update": {
+      "id": 266,
+      "sef": "jedna-izba-pat-portalov-ziadna-duplicita",
+      "name": "Jedna izba na viacerých portáloch: ako znížiť riziko overbookingu",
+      "title": "Jedna izba na viacerých portáloch: ako znížiť riziko overbookingu",
+      "parex_text": "Channel manager pomáha zosúladiť dostupnosť. Spoľahlivá distribúcia však vyžaduje správne mapovanie izieb a kontrolu odmietnutých aktualizácií.",
+      "text": "<p><em>Modelová situácia z hotelovej a HORECA prevádzky. Odporúčaný postup na spoločný rozbor s vaším tímom.</em></p>\n<h2>Situácia na prevádzke</h2><p>Hotel predáva poslednú izbu na vlastnom webe aj na portáli. Dve objednávky vzniknú tesne po sebe. Manažér pri rozbore potrebuje zistiť, či bola príčinou oneskorená aktualizácia, zlé mapovanie kategórie alebo ručný zásah.</p>\n<h2>Čo treba vyriešiť</h2><p>Synchronizáciu nemožno opisovať ako absolútnu záruku bez duplicít. Závisí aj od externých kanálov a ich potvrdení. Základom je jedna evidencia kapacity a viditeľnosť situácií, v ktorých prenos neprebehol.</p>\n<h2>Odporúčaný postup s Ellipse</h2><ol><li>Zmapujte kategórie izieb, obsadenosti a predajné plány medzi PMS, Channel Managerom a Booking engine.</li><li>Skúšobnou rezerváciou overte zníženie dostupnosti, zmenu termínu a storno na podporovaných kanáloch.</li><li>Určite človeka, ktorý kontroluje chybové hlásenia a nevyriešené rezervácie. Pri citlivých termínoch zvážte primeranú rezervu kapacity.</li></ol>\n<h2>Výnimka, na ktorú treba myslieť</h2><p>Pripravte postup pri skutočnom prekročení kapacity: overenie oboch rezervácií, rozhodnutie o náhradnom ubytovaní a jednotnú komunikáciu s hosťom. Sporné rezervácie nemažte bez stopy.</p>\n<h2>Ako overiť prínos</h2><p>Merajte potvrdené konflikty na 1 000 rezervácií, počet odmietnutých aktualizácií a čas ich vyriešenia. Oddeľte technické zlyhanie od nesprávneho manuálneho nastavenia, aby oprava zasiahla príčinu.</p>\n<p>Konkrétne prepojenia a rozsah funkcií prejdeme podľa konfigurácie vašej prevádzky. V schéme pod článkom nájdete súvisiace súčasti Ellipse.</p>"
+    },
+    "modules": [
+      "channel",
+      "pms",
+      "booking"
+    ]
+  },
+  {
+    "expected": {
+      "id": 357,
+      "sef": "priamy-predaj-ktory-nezaostava-za-portalom-riesenie",
+      "name": "Formulár „ozveme sa“ posiela hostí na portál. Priama rezervácia ich drží u vás",
+      "title": "Formulár „ozveme sa“ posiela hostí na portál. Priama rezervácia ich drží u vás",
+      "parex_text": "Na weboch, kde hosť nechá meno a čaká na telefonát, sme priame rezervácie nenašli. Našli sme ich tam, kde web ukáže voľnú izbu, cenu, platbu a hneď potvrdenie. Booking engine vznikol ako táto náhrada formulára, nie ako ďalší banner.",
+      "text": "<p>Jedna z prvých viet, ktoré na obhliadke počujeme, znie: portál nám berie hostí a z vlastného webu nejde skoro nikto. Potom si ten web otvoríme. Ponuka izieb tam často je. Rezervácia nie. Je tam formulár na meno, priezvisko, dátum príchodu a odchodu, počet osôb a vetu, že sa ozvete. Hosť, ktorý si medzitým na portáli vybral termín, zaplatil a dostal potvrdenie, sa k takému formuláru nevracia. Web ho nepredal. Web ho poslal preč.</p>\n<p>Toto nie je otázka krajšieho dizajnu. Je to otázka, či váš web vie urobiť to, čo portál urobil za vás: ukázať, či izba v daný deň je, za koľko je, a rezerváciu uzavrieť. Web booking v Ellipse vznikol presne na tento úkon. Dá sa vložiť ako skript aj na web, ktorý nesieme my, aj na web, ktorý vám spravuje niekto iný. Programátor ho osadí. Hosť vidí voľné termíny. Vy prestanete vybavovať dopyty, ktoré mali byť objednávkou.</p>\n<h2>Dostupnosť, ktorú nesmie držať formulár</h2>\n<p>Samotné okno s kalendárom by bolo málo, keby žilo vedľa plachty. Best practice, ktorú sme si overili na prevádzkach, je jedna dostupnosť. Web booking číta izby a balíky z PMS. Channel manager tú istú dostupnosť a cenu posiela na portály. Keď sa izba predá na webe, portál ju nesmie predávať ďalej, a naopak. Formulár „ozveme sa“ toto nevie. Človek na recepcii to ráno porovnáva ručne a práve tam vzniká dvojitá rezervácia, ktorú potom hasíte zľavou alebo ospravedlnením.</p>\n<p>Booking je zároveň nástroj výnosu, nie len tlačidlo. Pracuje s obsadenosťou, sezónou a typmi pobytov. V silnom termíne má predať draho. V slabom má pomôcť predať to, čo by inak ostalo prázdne, ponukou, ktorá sa dá napojiť na kampaň. Nastavenie s vami prejdeme v podpore. Ak nechcete cenník posúvať ručne každý týždeň, je na to nadstavba revPRO. Nie je povinná. Je pre prevádzku, ktorá chce, aby sa cena hýbala podľa tempa predaja, nie podľa toho, či si na ňu niekto spomenul.</p>\n<h2>Predaj sa nekončí potvrdením</h2>\n<p>Na portáli sa transakcia často skončí tým, že hosť dostane voucher a hotel dostane províziu. Na vlastnom webe má nasledovať ďalší krok, ktorý portál za vás nespraví. Po rezervácii odíde e-mail alebo SMS s odkazom do Self check-in aplikácie. Hosť v nej pobyt skráti, predĺži, posunie, dokúpi službu, ktorá k jeho termínu sedí, a ak máte voľnú lepšiu izbu, vie dostať ponuku na výmenu. Vyšší výnos tak nevznikne až na recepcii, keď už stojí s kufrom a vy nemáte čas ho predať.</p>\n<p>K tomu patrí platba. Ellipse Pay vezme zálohu s overením v banke, teda s 3D potvrdením. Po úspešnej platbe sa vystaví faktúra prijatej platby s rozpisom sadzieb DPH, hosť si ju stiahne a doklad odíde do účtovníctva. Ak je účtovníctvo napojené cez API, prevezme si ho samo. Počas pobytu hosť vidí hotelový účet. Ak máte zapnutý check-out, odchod si uzavrie sám, s doplatkom alebo bez neho, podľa toho, či záloha pokryla celý účet. Recepcia ráno nehľadá, kto odišiel bez dokladu.</p>\n<h2>Prečo web bez tohto reťazca hostí neudrží</h2>\n<p>Priama rezervácia musí mať štyri veci naraz. PMS, lebo inak web nevie, čo je voľné. Web booking, lebo inak hosť nemá kde kúpiť. Ellipse Pay, lebo bez okamžitej platby a dokladu web pôsobí menej dôveryhodne ako portál. Self check-in, lebo inak sa predaj skončí e-mailom a doplnkové služby ostanú na ochote recepcie. Channel manager k tomu patrí preto, aby priamy predaj a portál nepredávali tú istú izbu dvakrát. Kým toto nie je spojené, krajší web situáciu nezmení. Hosť porovná dva postupy a dokončí ten, ktorý ho pustí do konca.</p>",
+      "categories": [
+        {
+          "id": 107,
+          "name": "Aké HORECA problémy Ellipse rieši"
+        }
+      ]
+    },
+    "update": {
+      "id": 357,
+      "sef": "priamy-predaj-ktory-nezaostava-za-portalom-riesenie",
+      "name": "Priama rezervácia: web musí hosťa doviesť až k potvrdenému pobytu",
+      "title": "Priama rezervácia: web musí hosťa doviesť až k potvrdenému pobytu",
+      "parex_text": "Dostupnosť, cena, podmienky a platba tvoria jeden nákup. Priamy predaj vyhodnocujte podľa dokončených pobytov a nákladov na ich získanie.",
+      "text": "<p><em>Modelová situácia z hotelovej a HORECA prevádzky. Odporúčaný postup na spoločný rozbor s vaším tímom.</em></p>\n<h2>Situácia na prevádzke</h2><p>Hosť si vyberie izbu, otvorí web hotela a nájde dopytový formulár. Odpoveď príde až ráno. Na workshope preto sledujeme celú cestu od výberu termínu po potvrdenie a hľadáme miesto, kde sa rozhodnutie hosťa zastaví.</p>\n<h2>Čo treba vyriešiť</h2><p>Booking engine potrebuje aktuálnu ponuku z PMS a zrozumiteľné podmienky. Priama rezervácia nemusí byť vždy najlacnejšia; jej hodnota môže byť aj v flexibilite alebo vhodnej službe. Každá výhoda však má náklad, ktorý patrí do vyhodnotenia.</p>\n<h2>Odporúčaný postup s Ellipse</h2><ol><li>Na mobile overte dostupnosť izby, celkovú cenu, podmienky storna a dokončenie platby cez Ellipse Pay.</li><li>Zlaďte rezerváciu s PMS a distribúciou cez Channel Manager. Potvrdenie musí prísť až po správnom spracovaní objednávky.</li><li>Po rezervácii nadviažte Self check-inom a relevantnou ponukou služieb. Opakované zadávanie rovnakých údajov odstráňte tam, kde to proces umožňuje.</li></ol>\n<h2>Výnimka, na ktorú treba myslieť</h2><p>Zamietnutá karta alebo prerušený návrat z platobnej brány nesmú hosťovi zanechať dve rezervácie. Ponúknite jasné overenie stavu a pomoc s dokončením.</p>\n<h2>Ako overiť prínos</h2><p>Sledujte dokončenie jednotlivých krokov, platobné zlyhania, storná a čistý príspevok priameho kanála po marketingových a platobných nákladoch. Samotný rast podielu webu ešte nemusí znamenať vyšší zisk.</p>\n<h2>Čo hovorí zahraničný výskum</h2><p>Kvalitatívna štúdia so šestnástimi vedúcimi predstaviteľmi hotelierstva a dodávateľov zdôrazňuje ziskovosť, distribučné náklady a viacero zdrojov výnosu.</p><p>Naše odporúčanie je vyhodnocovať obchod po nákladoch a v kontexte celej prevádzky. Rozhovorová štúdia nedokazuje konkrétny nárast výnosov po zavedení softvéru.</p><p>Zdroj: <a href=\"https://ecommons.cornell.edu/entities/publication/bc445799-c6ce-4168-b86a-d87bbc25f81a\">Total Hotel Revenue Management: A Strategic Profit Perspective</a> — Cornell University, 2017.</p>\n<p>Konkrétne prepojenia a rozsah funkcií prejdeme podľa konfigurácie vašej prevádzky. V schéme pod článkom nájdete súvisiace súčasti Ellipse.</p>"
+    },
+    "modules": [
+      "booking",
+      "pms",
+      "pay",
+      "channel",
+      "self"
+    ]
+  },
+  {
+    "expected": {
+      "id": 267,
+      "sef": "revpro-tempo-predaja-a-dynamicke-ceny",
+      "name": "Zajtrajšok sa predáva pomaly. Cenník o tom ešte nevie.",
+      "title": "Zajtrajšok sa predáva pomaly. Cenník o tom ešte nevie.",
+      "parex_text": "Na porade s manažérom obchodu často vidíme statické cenníky vytlačené v skrini: „Tento cenník sme nastavili v decembri na celú sezónu.“ Lenže trh sa mení každý deň.",
+      "text": "<article class=\"article-detail\">\n  \n  <p class=\"lead\">Na porade s manažérom obchodu často vidíme statické cenníky vytlačené v skrini: <em>„Tento cenník sme nastavili v decembri na celú sezónu.“</em> Lenže trh sa mení každý deň.</p>\n  <h2>Predávať drahé izby lacno a prázdne izby draho</h2>\n  <p>To sú dve najčastejšie chyby. Ak vidíte, že víkend o mesiac sa plní rýchlejšie ako vlani, cena musí stúpnuť. Ak je naopak budúci týždeň prázdny, musíte reagovať skôr, než bude neskoro.</p>\n  <h2>Ellipse revPRO – Automatický strážca tržieb</h2>\n  <p>Náš modul revPRO sleduje tempo predaja (Pick-up rate) 12x denne. Na základe obsadenosti, historických dát a dopytu navrhne alebo automaticky upraví cenu tak, aby ste z každého dňa vyťažili maximálny zisk (RevPAR).</p>\n  <ul>\n    <li>Porovnanie tempa predaja s minulým rokom v reálnom čase</li>\n    <li>Dynamická zmena cien bez nutnosti manuálneho prepisovania</li>\n    <li>Plná kontrola – limity cien si nastavuje hoteliér</li>\n  </ul>\n</article>",
+      "categories": [
+        {
+          "id": 107,
+          "name": "Aké HORECA problémy Ellipse rieši"
+        }
+      ]
+    },
+    "update": {
+      "id": 267,
+      "sef": "revpro-tempo-predaja-a-dynamicke-ceny",
+      "name": "Dynamické ceny: rozhodujte podľa tempa predaja aj hodnoty rezervácie",
+      "title": "Dynamické ceny: rozhodujte podľa tempa predaja aj hodnoty rezervácie",
+      "parex_text": "Obsadenosť ukazuje predané izby. Pre rozhodnutie o cene potrebujete aj predstih rezervácií, storná, náklady kanála a hranice cenovej stratégie.",
+      "text": "<p><em>Modelová situácia z hotelovej a HORECA prevádzky. Odporúčaný postup na spoločný rozbor s vaším tímom.</em></p>\n<h2>Situácia na prevádzke</h2><p>Víkend sa plní rýchlo, ale pracovné dni zostávajú voľné. Hotel používa rovnaký cenník pre celú sezónu. Zmyslom porady nie je automaticky zlacniť slabé dni, ale pochopiť, ktorý dopyt možno ešte získať a za akých podmienok.</p>\n<h2>Čo treba vyriešiť</h2><p>Pri porovnaní tempa predaja treba porovnávať rovnaký predstih pred príchodom a zohľadniť sviatky či miestne podujatia. RevPAR je výnos z izieb na dostupnú izbu; nie je to zisk a nezachytáva všetky náklady predaja.</p>\n<h2>Odporúčaný postup s Ellipse</h2><ol><li>V PMS skontrolujte kvalitu rezervácií, blokácií a storien. Nekvalitné vstupy skreslia aj sofistikované odporúčanie.</li><li>Pre revPRO stanovte minimálne a maximálne ceny, pravidlá zmien a situácie vyžadujúce schválenie manažéra.</li><li>Zmenu ceny vyhodnocujte spolu s dostupnosťou, minimálnou dĺžkou pobytu a distribučnými nákladmi. Sledujte, či sa prijala na jednotlivých kanáloch.</li></ol>\n<h2>Výnimka, na ktorú treba myslieť</h2><p>Jednorazová veľká skupina alebo presunutý sviatok dokáže zmeniť porovnanie s minulým rokom. Takéto udalosti označte a vysvetlite skôr, než podľa nich nastavíte automatické pravidlo.</p>\n<h2>Ako overiť prínos</h2><p>Merajte priemernú cenu, obsadenosť, RevPAR a príspevok po nákladoch kanála. Zapisujte dôvod cenového zásahu a vyhodnoťte ho na porovnateľných termínoch, nie podľa jedného úspešného víkendu.</p>\n<h2>Čo hovorí zahraničný výskum</h2><p>Výskum v kontexte hospodárskeho poklesu rozoberá cielené cenové ponuky aj necenové možnosti, napríklad pridanú hodnotu a ďalšie segmenty dopytu.</p><p>Pre dnešnú prevádzku z toho odvodzujeme potrebu posudzovať aj alternatívy plošného zlacňovania. Výsledok z roku 2009 nie je prognózou súčasného dopytu.</p><p>Zdroj: <a href=\"https://ecommons.cornell.edu/entities/publication/faf6d074-1bc3-4f64-84f6-3eeaf5f65a87\">Hotel Revenue Management in an Economic Downturn: Results from an International Study</a> — Cornell University, 2009.</p>\n<p>Konkrétne prepojenia a rozsah funkcií prejdeme podľa konfigurácie vašej prevádzky. V schéme pod článkom nájdete súvisiace súčasti Ellipse.</p>"
+    },
+    "modules": [
+      "revenue",
+      "pms",
+      "channel",
+      "booking"
+    ]
+  },
+  {
+    "expected": {
+      "id": 268,
+      "sef": "kartu-chcete-pri-rezervacii-peniaze-az-ked-pride",
+      "name": "Kartu chcete pri rezervácii. Peniaze až v momente, keď hosť naozaj príde.",
+      "title": "Kartu chcete pri rezervácii. Peniaze až v momente, keď hosť naozaj príde.",
+      "parex_text": "„Ak žiadam platbu vopred, 50 % hostí rezerváciu nedokončí. Ak nežiadam nič, v piatok večer mám 3 prázdne izby kvôli no-show,“ opisoval dilemu prevádzkar penziónu.",
+      "text": "<article class=\"article-detail\">\n  \n  <p class=\"lead\"><em>„Ak žiadam platbu vopred, 50 % hostí rezerváciu nedokončí. Ak nežiadam nič, v piatok večer mám 3 prázdne izby kvôli no-show,“</em> opisoval dilemu prevádzkar penziónu.</p>\n  <h2>Nájsť rovnováhu medzi dôverou a garanciou</h2>\n  <p>Hosť chce flexibilitu, vy potrebujete istotu, že izba nezostane prázdna. Tradičné zálohové faktúry hostí otravujú a zdržujú.</p>\n  <h2>Predautorizácia a garancia cez Ellipse Pay</h2>\n  <p>Pri rezervácii cez web booking hosť zadá údaje zo svojej karty. Karta sa bezpečne overí a uloží v platobnej bráne (Tokenizácia). Peniaze sa strhnú až v deň príchodu, alebo v prípade stornovania po termíne. Vy máte 100 % garanciu a hosť pocit slobody.</p>\n  <ul>\n    <li>Vyšší konverzný pomer priamych rezervácií</li>\n    <li>Nulové riziko straty tržby pri no-show</li>\n    <li>Súlad s najprísnejšími bezpečnostnými štandardmi PCI-DSS</li>\n  </ul>\n</article>",
+      "categories": [
+        {
+          "id": 107,
+          "name": "Aké HORECA problémy Ellipse rieši"
+        }
+      ]
+    },
+    "update": {
+      "id": 268,
+      "sef": "kartu-chcete-pri-rezervacii-peniaze-az-ked-pride",
+      "name": "Garancia kartou: flexibilita pre hosťa, kontrola rizika pre hotel",
+      "title": "Garancia kartou: flexibilita pre hosťa, kontrola rizika pre hotel",
+      "parex_text": "Uloženie karty, predautorizácia a platba sú rozdielne kroky. Garancia rezervácie potrebuje jasné podmienky aj postup pri neúspešnom inkase.",
+      "text": "<p><em>Modelová situácia z hotelovej a HORECA prevádzky. Odporúčaný postup na spoločný rozbor s vaším tímom.</em></p>\n<h2>Situácia na prevádzke</h2><p>Hotel chce hosťovi umožniť flexibilnú rezerváciu, zároveň potrebuje riešiť nedostavenie sa. Požiadavka na pracovnom stretnutí znie: čo má hosť odsúhlasiť a ako hotel zistí, že dohodnutú sumu možno neskôr skutočne uhradiť?</p>\n<h2>Čo treba vyriešiť</h2><p>Tokenizácia nahrádza citlivé kartové údaje identifikátorom platobného riešenia. Sama nezaručuje budúcu úhradu. Predautorizácia zasa nie je neobmedzená blokácia: jej konkrétne podmienky treba overiť s poskytovateľom platby.</p>\n<h2>Odporúčaný postup s Ellipse</h2><ol><li>Rozlíšte sadzby s platbou vopred, garanciou a úhradou pri príchode. Hosť musí pred potvrdením rozumieť termínu a dôvodu prípadnej platby.</li><li>V Booking engine a Ellipse Pay otestujte úspešné aj neúspešné overenie karty a väzbu na PMS.</li><li>Určite postup pri zamietnutom inkase: upozornenie, možnosť doplniť platbu a rozhodnutie o rezervácii podľa dohodnutých podmienok.</li></ol>\n<h2>Výnimka, na ktorú treba myslieť</h2><p>Neprepisujte údaje karty do poznámok ani e-mailu. Spornú platbu riešte cez evidenciu poskytovateľa a rezerváciu s doloženými podmienkami; neoznačujte samotný token za „100 % garanciu“.</p>\n<h2>Ako overiť prínos</h2><p>Porovnajte dokončenie rezervácií, podiel no-show, úspešnosť oprávnených inkás a náklady na reklamácie. Hľadajte vhodnú rovnováhu podľa segmentu a predstihu rezervácie.</p>\n<p>Konkrétne prepojenia a rozsah funkcií prejdeme podľa konfigurácie vašej prevádzky. V schéme pod článkom nájdete súvisiace súčasti Ellipse.</p>"
+    },
+    "modules": [
+      "pay",
+      "booking",
+      "pms"
+    ]
+  },
+  {
+    "expected": {
+      "id": 269,
+      "sef": "virtualna-karta-z-portalu-bez-prepisovania",
+      "name": "Virtuálne karty z Booking.com: Zúčtovanie na jeden klik bez manuálneho ťukania",
+      "title": "Virtuálne karty z Booking.com: Zúčtovanie na jeden klik bez manuálneho ťukania",
+      "parex_text": "Často vidíme na recepcii papieriky s číslami virtuálnych kariet z Bookingu. Recepčná ich ručne vyťukáva do terminálu, no platba neprejde, lebo karta ešte nie je aktívna.",
+      "text": "<article class=\"article-detail\">\n  \n  <p class=\"lead\">Často vidíme na recepcii papieriky s číslami virtuálnych kariet z Bookingu. Recepčná ich ručne vyťukáva do terminálu, no platba neprejde, lebo karta ešte nie je aktívna.</p>\n  <h2>Stres pri pultíku a nesprávne čiastky</h2>\n  <p>Manuálne prepisovanie 16-miestnych čísel kariet z počítača do terminálu je pomalé a náchylné na chyby. Navyše, virtuálne karty majú presné dátumové okno, kedy sa dajú stiahnuť.</p>\n  <h2>Automatizované VCC spracovanie v Ellipse</h2>\n  <p>Ellipse prijme rezerváciu aj s údajmi o virtuálnej karte. V momente, keď portál kartu sprístupní, Ellipse ju vie na jeden klik zúčtovať cez integrovanú platobnú bránu a naviazať platbu priamo na účet pobytu.</p>\n  <ul>\n    <li>Žiadne ručné prepisovanie čísel kariet do terminálu</li>\n    <li>Automatické strhnutie presnej sumy bez preklepov</li>\n    <li>Okamžité vystavenie daňového dokladu</li>\n  </ul>\n</article>",
+      "categories": [
+        {
+          "id": 107,
+          "name": "Aké HORECA problémy Ellipse rieši"
+        }
+      ]
+    },
+    "update": {
+      "id": 269,
+      "sef": "virtualna-karta-z-portalu-bez-prepisovania",
+      "name": "Virtuálna karta z portálu: platba potrebuje termín, sumu a väzbu na pobyt",
+      "title": "Virtuálna karta z portálu: platba potrebuje termín, sumu a väzbu na pobyt",
+      "parex_text": "VCC spracovanie má byť riadená evidencia pohľadávok. Rozhoduje dostupnosť karty, oprávnená suma a potvrdený výsledok transakcie.",
+      "text": "<p><em>Modelová situácia z hotelovej a HORECA prevádzky. Odporúčaný postup na spoločný rozbor s vaším tímom.</em></p>\n<h2>Situácia na prevádzke</h2><p>Pobyt sa skončil, ale platba z virtuálnej karty ešte neprešla. Recepcia kartu skúsila pred jej sprístupnením a prípad zostal v poznámke. Pri uzávierke sa výnos javí ako zaplatený, hoci potvrdená transakcia chýba.</p>\n<h2>Čo treba vyriešiť</h2><p>Rezervácia, informácia o VCC a potvrdená platba musia zostať odlíšené. Podmienky aktivácie a čerpania sa môžu líšiť podľa portálu a rezervácie. Automatizácia má obsluhe ukázať výnimku, nie ju skryť za stav „karta uložená“.</p>\n<h2>Odporúčaný postup s Ellipse</h2><ol><li>Pri podporovanom prepojení priraďte VCC ku konkrétnemu pobytu a overte sumu, menu a podmienky čerpania.</li><li>Spracovanie cez Ellipse Pay potvrďte výsledkom platby a naviažte ho na účet v PMS.</li><li>Vytvorte pravidelnú kontrolu nevysporiadaných VCC s určeným zodpovedným pracovníkom. Pri opakovaní najprv overte, či predchádzajúci pokus nebol úspešný.</li></ol>\n<h2>Výnimka, na ktorú treba myslieť</h2><p>Storno, zmena rezervácie alebo vrátenie platby sa musia premietnuť do oprávnenej sumy. Hosťovi neúčtujte druhýkrát položku, ktorú podľa dohody hradí portál.</p>\n<h2>Ako overiť prínos</h2><p>Sledujte hodnotu a vek nevysporiadaných VCC, podiel úspešných prvých pokusov a počet ručných opráv. Rýchlosť kliknutia je menej podstatná než úplné vysporiadanie pobytov.</p>\n<p>Konkrétne prepojenia a rozsah funkcií prejdeme podľa konfigurácie vašej prevádzky. V schéme pod článkom nájdete súvisiace súčasti Ellipse.</p>"
+    },
+    "modules": [
+      "pay",
+      "channel",
+      "pms"
+    ]
+  },
+  {
+    "expected": {
+      "id": 270,
+      "sef": "qr-na-stole-objednavka-ucet-doklad-tringelt",
+      "name": "Tringelt na kartu. Nepripavte tím o sprepitné, ktoré hosť chce dať",
+      "title": "Tringelt na kartu. Nepripavte tím o sprepitné, ktoré hosť chce dať",
+      "parex_text": "Stále chodíme do prevádzok, ktoré kartové sprepitné zakázali, lebo ho nevedeli zaevidovať. Tím tým prišiel o peniaze, ktoré hosť chcel nechať. Obrazovka pred platbou a rozdelenie na výplatu vznikli ako náhrada obálky v šuplíku.",
+      "text": "<p>Na prevádzkach, kde sa platí kartou takmer všetko, sme našli zvláštne pravidlo. Tringelt kartou je zakázaný. Nie preto, že by ho hosť nechcel dať. Preto, že prevádzka nevie, ako ho dostať do evidencie, ku konkrétnemu človeku a nakoniec na výplatu. Obálka v šuplíku pri hotovosti ešte ako-tak fungovala. Pri termináli zmizla a s ňou zmizol aj kus príjmu tímu. To nie je účtovná čistota. To je rozhodnutie obrať kolegov o peniaze, ktoré im návšteva chcela nechať za servis.</p>\n<p>Ellipse POS preto pred platbou ukáže obrazovku v dizajne prevádzky. Predvolené percentá, vlastná suma, zaokrúhlenie na celé eurá. Nie je to ozdoba. Je to miesto, kde sa hosť rozhodne. Na prevádzkach, ktoré ju majú zapnutú, ju využije viac ako polovica hostí. Kartové tringelty tam prevyšujú hotovosť, často výrazne. Kto túto obrazovku vypne, nevypne problém s evidenciou. Vypne ponuku.</p>\n<h2>Prečo pokladňa a terminál musia byť jeden krok</h2>\n<p>Best practice, ktorú sme z účtovníctva aj zo smien zobrali, je táto. Pokladňa sumu zaeviduje a na terminál pošle platbu navýšenú o tringelt. Hosť potvrdí jednu sumu, nie platbu a potom hotovosť bokom. Ellipse Pay a Ellipse POS musia tento krok urobiť spolu. Ak terminál o tringelte nevie, čašník ho vypýta ústne a peniaze opäť skončia mimo účtu. Ak ho vie len terminál a pokladňa nie, večer sa súčty nerozídu len o drobné. Rozídu sa o odmeny celého tímu.</p>\n<p>V back office je potom prehľad sprepitného po ľuďoch. Nie poznámka na účtenke, ktorú niekto po záverečke sčítava. To je dôvod, prečo modul vznikol ako súčasť pokladne, nie ako excel vedľa nej.</p>\n<h2>Jeden človek účet uzavrel, tím ho zarobil</h2>\n<p>Častá námietka je férová. Tringelt nemá dostať len ten, kto účet zatvoril, lebo ho zarobil tím. Pri hotovosti to rieši interná smernica a pri karte má platiť to isté, v gastre aj v hoteli. Bežné rozdelenie, ktoré s prevádzkami nastavujeme, vyzerá takto. Časť si dom nechá na krytie rozbitého inventára. Časť ide v dohodnutom pomere kuchyni, aby kuchyňa nebola zanedbaná voči sále. Zvyšok sa podľa kľúča dostane na výplatnú pásku ako odmena.</p>\n<p>Kľúč si určuje prevádzka. Systém má udržať obrat, z ktorého sa ten kľúč počíta, oficiálnou cestou. Prevádzka, ktorá kartové sprepitné stále zakazuje, nemusí meniť kultúru obsluhy. Musí spojiť POS, terminál a smernicu. Inak tím príde o príjem, ktorý hosť už bol ochotný dať, a vy o argument, prečo by mal ostať.</p>\n<h2>Čo sme na smenách videli, keď obrazovka chýbala</h2>\n<p>Tam, kde terminál tringelt neponúkne, hosť kartou zaplatí presnú sumu účtu a hotovosť nechá len ak má drobné. Čoraz častejšie ich nemá. Sprepitné tak nevznikne nie preto, že servis bol slabý, ale preto, že moment rozhodnutia zmizol. Obrazovka ho vracia presne pred potvrdením platby, keď je účet ešte otvorený a hosť ho vidí. Percento, vlastná suma alebo zaokrúhlenie sú tri spôsoby, ako ten moment neprekaziť zbytočnou debate pri stole.</p>\n<p>V back office sa potom nesčítava „nejaké sprepitné za večer“. Sčíta sa obrat po ľuďoch, z ktorého smernica spraví podiel kuchyni, podiel domu na rozbitý inventár a zostatok na výplatnú pásku. Osobitne to platí v hoteli, kde účet často zatvára recepcia alebo čašník v bare, ale prácu okolo neho urobil širší tím. Bez mena pri obrate smernicu neviete uplatniť. Viete len vyplatiť obálku tomu, kto ju drží.</p>\n<p>Ellipse POS a Ellipse Pay preto tento tok musia mať spolu od prvej smeny, nie ako vylepšenie, keď tím začne odchádzať. Tringelt na kartu nie je benefício navyše. Je to časť odmeny, ktorú hosť už schválil, a prevádzka ju buď eviduje, alebo o ňu ľudí pripraví.</p>",
+      "categories": [
+        {
+          "id": 107,
+          "name": "Aké HORECA problémy Ellipse rieši"
+        }
+      ]
+    },
+    "update": {
+      "id": 270,
+      "sef": "qr-na-stole-objednavka-ucet-doklad-tringelt",
+      "name": "Sprepitné kartou: dobrovoľná voľba hosťa a transparentná evidencia",
+      "title": "Sprepitné kartou: dobrovoľná voľba hosťa a transparentná evidencia",
+      "parex_text": "Kartové sprepitné potrebuje zrozumiteľnú voľbu pri platbe a dohodnutý spôsob evidencie a rozdelenia medzi tím.",
+      "text": "<p><em>Modelová situácia z hotelovej a HORECA prevádzky. Odporúčaný postup na spoločný rozbor s vaším tímom.</em></p>\n<h2>Situácia na prevádzke</h2><p>Hosť chce nechať sprepitné, ale nemá hotovosť. Obsluha nevie, či môže navýšiť platbu na termináli. Pri večernej uzávierke by sa totiž suma odlišovala od predaja v POS a nikto nemá dohodnutý spôsob vysporiadania.</p>\n<h2>Čo treba vyriešiť</h2><p>Najskôr treba nastaviť pravidlá, potom obrazovku. Hosť má mať možnosť zvoliť vlastnú sumu aj jednoducho pokračovať bez sprepitného. Zamestnanci potrebujú vedieť, ako sa suma eviduje a podľa čoho sa rozdeľuje.</p>\n<h2>Odporúčaný postup s Ellipse</h2><ol><li>S účtovníctvom a personálnym oddelením schváľte evidenciu, rozdelenie a vyplácanie; nespoliehajte sa na univerzálny percentuálny kľúč.</li><li>Prepojte POS a Ellipse Pay tak, aby predaj a sprepitné zostali rozlíšené a zároveň zodpovedali celkovej transakcii.</li><li>Otestujte čiastočné vrátenie, storno aj delenú platbu. Tímu sprístupnite kontrolovateľný prehľad podľa dohodnutých pravidiel.</li></ol>\n<h2>Výnimka, na ktorú treba myslieť</h2><p>Pri reklamácii hosťa musí byť dohľadateľné, akú sumu potvrdil. Výšku sprepitného nepoužívajte bez kontextu ako jediný ukazovateľ kvality práce jednotlivca.</p>\n<h2>Ako overiť prínos</h2><p>Sledujte rozdiely pri uzávierke, počet opráv a zrozumiteľnosť postupu pre hostí aj tím. Prínos nevyjadrujte nepodloženým tvrdením, koľko percent hostí automaticky pridá odmenu.</p>\n<h2>Čo hovorí zahraničný výskum</h2><p>Prieskum hodnotil postoje hostí k reštauračným technológiám. Upozorňuje, že pri zavádzaní treba hodnotiť aj zákaznícku skúsenosť, nielen úsporu práce.</p><p>Odporúčame preto sledovať zrozumiteľnosť platobného procesu. Ide o starší výskum princípu prijatia technológie, nie o aktuálny podiel používania mobilných platieb.</p><p>Zdroj: <a href=\"https://ecommons.cornell.edu/entities/publication/1cb2925a-5a54-4791-b21f-a2e5289ce96f\">Customer Preferences for Restaurant Technology Innovations</a> — Cornell University, 2009.</p>\n<p>Konkrétne prepojenia a rozsah funkcií prejdeme podľa konfigurácie vašej prevádzky. V schéme pod článkom nájdete súvisiace súčasti Ellipse.</p>"
+    },
+    "modules": [
+      "pos",
+      "pay",
+      "team"
+    ]
+  },
+  {
+    "expected": {
+      "id": 358,
+      "sef": "vecera-na-izbovy-ucet-rano-jeden-odchod-riesenie",
+      "name": "„Napíšte to na izbu 204.“ Ako zabrániť tomu, aby účet z baru ráno chýbal",
+      "title": "„Napíšte to na izbu 204.“ Ako zabrániť tomu, aby účet z baru ráno chýbal",
+      "parex_text": "Klasická ranná scénka na recepcii: Hosť sa odubytováva, recepčná skontroluje systém a pustí ho domov. O hodinu neskôr prinesie čašník z baru papierik s podpisom z včerajšej noci...",
+      "text": "<article class=\"article-detail\">\n  \n  <p class=\"lead\">Klasická ranná scénka na recepcii: Hosť sa odubytováva, recepčná skontroluje systém a pustí ho domov. O hodinu neskôr prinesie čašník z baru papierik s podpisom z včerajšej noci...</p>\n  <h2>Neodborné zapisovanie na papieriky</h2>\n  <p>Keď reštaurácia a recepcia nekomunikujú online, vznikajú straty. Čašník napíše zlú izbu, alebo sa účet \"stratí\" cestou na recepciu. Výsledkom sú nezaplatené konzumácie a zbytočné spory.</p>\n  <h2>Priame prepojenie Ellipse POS a PMS</h2>\n  <p>Keď hosť v reštaurácii povie: <em>„Na izbu 204,“</em> čašník na dotykovej pokladni zvolí izbu 204. Pokladňa sa v sekunde opýta hotelového systému, overí meno ubytovaného hosťa a povolený úverový limit. Účet okamžite pristane na hotelovom účte.</p>\n  <ul>\n    <li>Overenie mena ubytovaného hosťa priamo na pokladni v bare</li>\n    <li>Okamžitý prenos položiek bez ranného dohľadávania</li>\n    <li>Ranný check-out prebehne za 30 sekúnd so všetkými službami</li>\n  </ul>\n</article>",
+      "categories": [
+        {
+          "id": 107,
+          "name": "Aké HORECA problémy Ellipse rieši"
+        }
+      ]
+    },
+    "update": {
+      "id": 358,
+      "sef": "vecera-na-izbovy-ucet-rano-jeden-odchod-riesenie",
+      "name": "Večera na izbu: spotreba musí byť na účte pred odchodom hosťa",
+      "title": "Večera na izbu: spotreba musí byť na účte pred odchodom hosťa",
+      "parex_text": "Preúčtovanie z reštaurácie do PMS má overiť správny pobyt, oprávnenie čerpať a úspešné zaúčtovanie položiek.",
+      "text": "<p><em>Modelová situácia z hotelovej a HORECA prevádzky. Odporúčaný postup na spoločný rozbor s vaším tímom.</em></p>\n<h2>Situácia na prevádzke</h2><p>Hosť pri bare požiada o pripísanie večere na izbu. V izbe však býva viac ľudí a jeden z nich má samostatný účet. Ak obsluha zaznamená iba číslo izby, problém sa prenesie na ranný check-out.</p>\n<h2>Čo treba vyriešiť</h2><p>Číslo izby je miesto, nie jednoznačná identita platiteľa. Odporúčaný postup spája overenie pobytu, určenie účtu a potvrdenie prenosu. Obsluha má vedieť, či operácia prebehla, alebo zostala nevyriešená.</p>\n<h2>Odporúčaný postup s Ellipse</h2><ol><li>V POS vyberte aktuálny pobyt a potvrďte s hosťom správny účet spôsobom, ktorý zbytočne nezverejňuje údaje iných hostí.</li><li>Overte povolenie účtovať na izbu a prípadný limit. Prenos do PMS musí ponechať dohľadateľný pôvod položiek.</li><li>Pred odchodmi skontrolujte neúspešné prenosy a otvorené účty. Rovnaký proces použite pri minibare a ďalších odbytových miestach.</li></ol>\n<h2>Výnimka, na ktorú treba myslieť</h2><p>Pri presune hosťa na inú izbu nesmie zostať účet naviazaný iba na staré číslo. Pri výpadku použite kontrolovaný náhradný záznam a následné doplnenie bez duplicitného zaúčtovania.</p>\n<h2>Ako overiť prínos</h2><p>Merajte počet reklamovaných položiek, neskoro pripísanú spotrebu a čas riešenia rozdielov. Rýchly check-out má zmysel vtedy, keď zahŕňa všetky správne položky.</p>\n<p>Konkrétne prepojenia a rozsah funkcií prejdeme podľa konfigurácie vašej prevádzky. V schéme pod článkom nájdete súvisiace súčasti Ellipse.</p>"
+    },
+    "modules": [
+      "pos",
+      "pms",
+      "pay"
+    ]
+  },
+  {
+    "expected": {
+      "id": 271,
+      "sef": "viete-predajnu-cenu-food-cost-az-po-mesiaci",
+      "name": "Viete predajnú cenu jedla. Zistíte Food Cost až po mesačnej inventúre?",
+      "title": "Viete predajnú cenu jedla. Zistíte Food Cost až po mesačnej inventúre?",
+      "parex_text": "Šéfkuchár nastaví cenu sviečkovej na 18 EUR, lebo „tak to majú aj oproti“. Na konci mesiaca majiteľ zistí, že hoci reštaurácia praskala vo švíkoch, zisk je minimálny.",
+      "text": "<article class=\"article-detail\">\n  \n  <p class=\"lead\">Šéfkuchár nastaví cenu sviečkovej na 18 EUR, lebo <em>„tak to majú aj oproti“</em>. Na konci mesiaca majiteľ zistí, že hoci reštaurácia praskala vo švíkoch, zisk je minimálny.</p>\n  <h2>Ceny surovín rastú, jedálny lístok spí</h2>\n  <p>Dodávatelia zdražujú mäso, maslo aj zeleninu zo dňa na deň. Ak robíte kalkulácie raz za rok v Exceli, predávate jedlá so stratou bez toho, aby ste o tom vedeli.</p>\n  <h2>Živé kalkulácie v Ellipse Sklady</h2>\n  <p>V Ellipse je každé jedlo prepojené s receptúrou a skladovými kartami. Ak vám dodávateľ pripíše na príjemke drahšie mäso, systém vás okamžite upozorní, že Food Cost na danej položke stúpol z 28 % na 38 %.</p>\n  <ul>\n    <li>Automatický prepočet marže pri každej novej príjemke</li>\n    <li>Prehľad o najziskovejších a najstratovejších jedlách</li>\n    <li>Presné odpisovanie surovín po každom predanom jedle</li>\n  </ul>\n</article>",
+      "categories": [
+        {
+          "id": 107,
+          "name": "Aké HORECA problémy Ellipse rieši"
+        }
+      ]
+    },
+    "update": {
+      "id": 271,
+      "sef": "viete-predajnu-cenu-food-cost-az-po-mesiaci",
+      "name": "Food cost: rozdiel medzi receptúrou a skutočnou spotrebou",
+      "title": "Food cost: rozdiel medzi receptúrou a skutočnou spotrebou",
+      "parex_text": "Kalkulácia jedla je začiatok. Manažér potrebuje vidieť aj výťažnosť, odpad, personálnu stravu a rozdiel oproti inventúre.",
+      "text": "<p><em>Modelová situácia z hotelovej a HORECA prevádzky. Odporúčaný postup na spoločný rozbor s vaším tímom.</em></p>\n<h2>Situácia na prevádzke</h2><p>Reštaurácia predáva úspešné jedlo, no marža sa postupne znižuje. Dodávateľ zmenil cenu aj veľkosť balenia, kuchyňa upravila porciu a receptúra zostala pôvodná. Mesačná inventúra odhalí rozdiel, ale nevysvetlí jeho príčinu.</p>\n<h2>Čo treba vyriešiť</h2><p>Teoretická spotreba vychádza z predaných porcií a receptúr. Skutočná spotreba zahŕňa reálne pohyby a inventúrny stav. Ich rozdiel môže ukazovať nesprávnu gramáž, nezaznamenaný výdaj, odpad alebo chybu evidencie. Food cost zároveň nie je úplný náklad jedla: mzdy a réžia zostávajú samostatne.</p>\n<h2>Odporúčaný postup s Ellipse</h2><ol><li>Pre najpredávanejšie jedlá overte gramáže, jednotky, výťažnosť a aktuálne nákupné ceny v skladovej evidencii.</li><li>Spojte predaj v POS s receptúrami. Osobitne evidujte odpad, personálnu stravu, presuny a bezplatné položky.</li><li>Priebežne porovnávajte teoretickú a skutočnú spotrebu. Pri odchýlke skontrolujte proces skôr, než plošne zvýšite ceny.</li></ol>\n<h2>Výnimka, na ktorú treba myslieť</h2><p>Zámena kilogramov a kusov či zmena balenia môže vytvoriť väčšiu odchýlku než samotné zdraženie. Pred hodnotením práce kuchyne preto overte správnosť vstupov.</p>\n<h2>Ako overiť prínos</h2><p>Sledujte náklad surovín na porciu, príspevok jedla po surovinách, hodnotu odpadu a inventúrnu odchýlku. Porovnávajte podobný predajný mix; samotné priemerné percento môže zakryť zmenu skladby objednávok.</p>\n<h2>Čo hovorí zahraničný výskum</h2><p>Analýza 42 hotelových prevádzok v 15 krajinách zistila priemerný pomer prínosov k nákladom znižovania potravinového odpadu takmer 7 : 1. Autori upozorňujú na obmedzenú zovšeobecniteľnosť vzorky.</p><p>Ide o meranie programov znižovania odpadu, nie o univerzitný test Ellipse ani prísľub návratnosti softvéru. Pre vlastnú prevádzku odporúčame osobitne merať odpad a náklady zavedených opatrení.</p><p>Zdroj: <a href=\"https://champions123.org/sites/default/files/2020-08/business-case-reducing-food-loss-and-waste-hotels.pdf\">The Business Case for Reducing Food Loss and Waste: Hotels</a> — WRI / WRAP, Champions 12.3, 2018.</p>\n<p>Konkrétne prepojenia a rozsah funkcií prejdeme podľa konfigurácie vašej prevádzky. V schéme pod článkom nájdete súvisiace súčasti Ellipse.</p>"
+    },
+    "modules": [
+      "pos",
+      "stock",
+      "team"
+    ]
+  },
+  {
+    "expected": {
+      "id": 272,
+      "sef": "nove-jedlo-na-listok-s-ai-kalkulaciou",
+      "name": "Nové sezónne menu za 10 minút: Od nápadu šéfkuchára po kalkuláciu v systéme",
+      "title": "Nové sezónne menu za 10 minút: Od nápadu šéfkuchára po kalkuláciu v systéme",
+      "parex_text": "Sezónne špargľové menu má trvať len tri týždne. Kým šéfkuchár napíše recepty a ekonómka ich po večeroch nahodí do systému, týždeň je preč...",
+      "text": "<article class=\"article-detail\">\n  \n  <p class=\"lead\">Sezónne špargľové menu má trvať len tri týždne. Kým šéfkuchár napíše recepty a ekonómka ich po večeroch nahodí do systému, týždeň je preč...</p>\n  <h2>Uvoľnite ruky kuchyni aj kancelárii</h2>\n  <p>Navrhovanie nových jedál spomaľuje zdĺhavé rozpisovanie ingrediencií, gramáží a alergénov do databáz.</p>\n  <h2>Inteligentný asistent pre receptúry</h2>\n  <p>V Ellipse stačí zadať názov jedla a hlavné ingrediencie. Systém vám navrhne štandardnú receptúru, vytiahne nákupné ceny z vášho skladu, spočíta odporúčanú predajnú cenu pre dodržanie marže a označí alergény.</p>\n  <ul>\n    <li>Vytvorenie novej kalkulácie za pár sekúnd</li>\n    <li>Automatické priradenie alergénov a DPH</li>\n    <li>Okamžité odoslanie položky na dotykové pokladne</li>\n  </ul>\n</article>",
+      "categories": [
+        {
+          "id": 107,
+          "name": "Aké HORECA problémy Ellipse rieši"
+        }
+      ]
+    },
+    "update": {
+      "id": 272,
+      "sef": "nove-jedlo-na-listok-s-ai-kalkulaciou",
+      "name": "Sezónne menu s AI: rýchlejší návrh, zodpovedné schválenie receptúry",
+      "title": "Sezónne menu s AI: rýchlejší návrh, zodpovedné schválenie receptúry",
+      "parex_text": "AI môže pomôcť pripraviť návrh jedla. Gramáže, výťažnosť, alergény a ekonomiku musí pred predajom overiť zodpovedný človek.",
+      "text": "<p><em>Modelová situácia z hotelovej a HORECA prevádzky. Odporúčaný postup na spoločný rozbor s vaším tímom.</em></p>\n<h2>Situácia na prevádzke</h2><p>Kuchyňa chce zaradiť sezónne jedlo ešte počas dostupnosti suroviny. Návrh receptúry vznikne rýchlo, ale predaj sa zdrží na kalkulácii, overení zloženia a prenose do pokladne. Cieľom je skrátiť prípravu bez preskočenia odbornej kontroly.</p>\n<h2>Čo treba vyriešiť</h2><p>AI návrh nie je technologický list. Môže pracovať s nesprávnou gramážou alebo prehliadnuť zložku konkrétneho výrobku. Preto má byť viditeľné, čo je návrh a čo už kuchyňa schválila na reálnu výrobu.</p>\n<h2>Odporúčaný postup s Ellipse</h2><ol><li>Zadajte obmedzenia: dostupné suroviny, cieľovú porciu, spôsob prípravy a požadovaný príspevok jedla.</li><li>Návrh spárujte s konkrétnymi skladovými kartami. Šéfkuchár overí skúšobnú porciu, výťažnosť a zloženie podľa skutočne používaných výrobkov.</li><li>Až schválenú verziu preneste do POS a kalkulácie. Pri zmene dodávateľa alebo receptu zopakujte dotknuté kontroly.</li></ol>\n<h2>Výnimka, na ktorú treba myslieť</h2><p>Automaticky navrhnuté alergény nesmú byť jediným podkladom informácie pre hosťa. Daňové zaradenie ani bezpečnosť jedla nenechávajte na voľnej odpovedi modelu.</p>\n<h2>Ako overiť prínos</h2><p>Merajte čas od nápadu po schválenú položku, počet opráv návrhu a rozdiel kalkulovanej a skutočnej spotreby. Rýchlosť publikovania hodnotíte spolu s kvalitou, nie namiesto nej.</p>\n<h2>Čo hovorí zahraničný výskum</h2><p>Metodika NIST opisuje riziko presvedčivých, ale nepravdivých výstupov generatívnej AI a odporúča testovanie a riadenie rizík pri jej použití.</p><p>Pre tento proces odporúčame kontrolu podkladov, oprávnení a výsledkov človekom. Je to medziodvetvová metodika, nie štúdia výkonu konkrétneho hotelového produktu.</p><p>Zdroj: <a href=\"https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf\">Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile</a> — NIST, 2024.</p>\n<p>Konkrétne prepojenia a rozsah funkcií prejdeme podľa konfigurácie vašej prevádzky. V schéme pod článkom nájdete súvisiace súčasti Ellipse.</p>"
+    },
+    "modules": [
+      "pos",
+      "stock"
+    ]
+  },
+  {
+    "expected": {
+      "id": 359,
+      "sef": "sklad-ktory-sa-hybe-s-tym-co-ste-predali-riesenie",
+      "name": "Inventúru uzatvárate až pred DPH? Sklad má byť hotový oveľa skôr",
+      "title": "Inventúru uzatvárate až pred DPH? Sklad má byť hotový oveľa skôr",
+      "parex_text": "Keď účtovník naháňa skladníka tesne pred priznaním, sklad nie je nástroj. Je to mesačná nočná. Príjem z dokladu, odpis z pokladne a inventúra v mobile vznikli preto, aby sa uzávierka neťahala až k DPH.",
+      "text": "<p>Na stretnutiach so skladom a účtovníctvom počujeme ten istý kalendár. Príjem nestíha. Odpis raňajok a večerí sa robí z hárkov. Inventúra sa dotlačí až k termínu priznania za predchádzajúci mesiac. Účtovník naháňa skladníka, aby úseky pozatváral. Manažér medzitým nevie, čo v sklade reálne je. Vie len, že sa to „robí“. Tento stav nie je nedostatok ľudí. Je to proces, v ktorom sa každá fľaša a každé vajce zapisujú viackrát, zakaždým neskoro.</p>\n<p>Ellipse sklad sme preto skladali od príjmu cez pohyb a výdaj až po inventúru tak, aby sa evidencia nerobila dvakrát. Nie ako ďalší zošit v systéme. Ako tok, ktorý kopíruje to, čo sa v kuchyni a na rampe naozaj deje.</p>\n<h2>Príjem, ktorý nezačína prepisovaním</h2>\n<p>Elektronické dodacie listy a elektronické faktúry sa dajú importovať a postupne na ne naviazať skladové karty. Čím viac položiek je spárovaných, tým menej sa príjemka skladá ručne. Novší krok, ktorý vznikol práve preto, že veľa nákupov stále príde ako bloček z obchodu a nie ako EDI, je v Ellipse Team. Pracovník odfotí doklad. OCR prečíta dodávateľa, položky, ceny a množstvá. Tie dáta spolu so súpisom skladu idú do AI, ktorá riadky dokladu priradí na konkrétne karty. Príjemka je pripravená na potvrdenie. Človek ju skontroluje. Neprepisuje ju.</p>\n<p>Toto je best practice, nie skratka „nejaká umelá inteligencia v sklade“. AI tu nerobí inventúru za vás. Robí priradenie, na ktorom sa inak stráca popoludnie. Potvrdenie ostáva na človeku, lebo zodpovednosť za príjem sa nedá odovzdať modelu.</p>\n<h2>Odpis má vzniknúť tam, kde sa jedlo predalo alebo vydalo</h2>\n<p>Druhá diera sú raňajky, bufet, room service. Papierový hárok pri bufete sa večer prepisuje, a aj tak nesedí s tým, čo odišlo z kuchyne. Výdaj preto vieme naviazať na Ellipse POS alebo na tablet priamo na prevádzke. Návrh odpisu je pripravený podľa toho, čo sa predalo alebo vydalo, a pred potvrdením sa dá upraviť. Papierové limity a raňajkové hárky tým padajú. Pokladňa a sklad musia byť spojené. Inak predaj žije v tržbe a surovina žije v exceli a food cost sa dozviete až vtedy, keď už sa nedá zmeniť zajtrajšie menu.</p>\n<h2>Inventúra v mobile a uzávierka, ktorá nečaká na DPH</h2>\n<p>Ľudia na úsekoch nahadzujú skutočný stav k existujúcim položkám vo svojom telefóne. Záznam sa ukladá po položke. Skladník, ktorý inventúru uzatvára, neprepisuje hárky a nestráca riadok, ktorý niekto na rannej zmene napísal na rub. V Ellipse býva inventúra uzavretá najneskôr desiateho dňa nasledujúceho mesiaca. Nie preto, že by počítanie trvalo tak dlho. Preto, že sa čaká na posledné doklady a zberné faktúry. Ak sklad uzatvárate až pri podaní DPH, mešká proces, nie úrad.</p>\n<p>Sklad, ktorý nie je v reálnom čase, je mzdový náklad bez rozhodnutia. Manažér z neho nezistí, či zajtra má čo variť. Účtovník z neho má podklad, ktorý vznikol v strese. Prevádzka ho musí mať napojený na pokladňu, na príjem a na účtovníctvo naraz. Inak zamestnáva skladníka aj ekonóma tou istou prácou dvakrát a číslo, ktoré z toho vyjde, príde neskoro na to, aby sa podľa neho varilo, nakupovalo alebo cenilo.</p>",
+      "categories": [
+        {
+          "id": 107,
+          "name": "Aké HORECA problémy Ellipse rieši"
+        }
+      ]
+    },
+    "update": {
+      "id": 359,
+      "sef": "sklad-ktory-sa-hybe-s-tym-co-ste-predali-riesenie",
+      "name": "Sklad počas mesiaca: príjem, výdaj a inventúra v jednom rytme",
+      "title": "Sklad počas mesiaca: príjem, výdaj a inventúra v jednom rytme",
+      "parex_text": "Použiteľný skladový prehľad vzniká priebežne. Digitalizácia pomôže, keď pohyby vznikajú včas a každá nezrovnalosť má svojho vlastníka.",
+      "text": "<p><em>Modelová situácia z hotelovej a HORECA prevádzky. Odporúčaný postup na spoločný rozbor s vaším tímom.</em></p>\n<h2>Situácia na prevádzke</h2><p>Dodávka je už v kuchyni, príjemka ešte čaká v kancelárii. Večerný predaj sa odpisuje podľa receptúr, no sklad ukazuje záporné množstvo. Manažér potom objednáva podľa odhadu a inventúra musí spätne vysvetľovať celý mesiac.</p>\n<h2>Čo treba vyriešiť</h2><p>Príčinou nemusí byť zlé počítanie. Často ide o nesúlad času fyzického pohybu a zápisu. Odporúčame dohodnúť uzávierku príjmu, pravidlá prevodov medzi strediskami a evidenciu výdajov, ktoré nevznikli predajom.</p>\n<h2>Odporúčaný postup s Ellipse</h2><ol><li>Pri elektronickom importe alebo OCR príjmu overte dodávateľa, položku, jednotku, množstvo a cenu. Návrh priradenia potvrďte pred zaúčtovaním.</li><li>Prepojte POS a skladové odpisy. Osobitne zaznamenajte bufet, odpad, personálnu stravu a presuny.</li><li>Pri inventúre určte rozhodný čas a pravidlo pre pohyby počas počítania. Mobilný zber cez Team musí nadviazať na kontrolu a schválenie rozdielov.</li></ol>\n<h2>Výnimka, na ktorú treba myslieť</h2><p>Neskoro doručený doklad alebo opravená príjemka nesmú bez upozornenia meniť už schválený výsledok obdobia. Opravu evidujte s dôvodom a zodpovednou osobou.</p>\n<h2>Ako overiť prínos</h2><p>Sledujte oneskorenie príjemiek, záporné stavy, hodnotu nevysvetlených rozdielov a čas uzávierky. Univerzálny deň v mesiaci nenahradí dohodnutý proces s dodávateľmi a účtovníctvom.</p>\n<h2>Čo hovorí zahraničný výskum</h2><p>Analýza 42 hotelových prevádzok v 15 krajinách zistila priemerný pomer prínosov k nákladom znižovania potravinového odpadu takmer 7 : 1. Autori upozorňujú na obmedzenú zovšeobecniteľnosť vzorky.</p><p>Ide o meranie programov znižovania odpadu, nie o univerzitný test Ellipse ani prísľub návratnosti softvéru. Pre vlastnú prevádzku odporúčame osobitne merať odpad a náklady zavedených opatrení.</p><p>Zdroj: <a href=\"https://champions123.org/sites/default/files/2020-08/business-case-reducing-food-loss-and-waste-hotels.pdf\">The Business Case for Reducing Food Loss and Waste: Hotels</a> — WRI / WRAP, Champions 12.3, 2018.</p>\n<p>Konkrétne prepojenia a rozsah funkcií prejdeme podľa konfigurácie vašej prevádzky. V schéme pod článkom nájdete súvisiace súčasti Ellipse.</p>"
+    },
+    "modules": [
+      "stock",
+      "pos",
+      "team"
+    ]
+  },
+  {
+    "expected": {
+      "id": 360,
+      "sef": "wellness-ktore-nejde-rezervovat-cez-recepciu-riesenie",
+      "name": "Wellness a masáže: Ukončite dvoch masérov na jeden čas v papierovom zošite",
+      "title": "Wellness a masáže: Ukončite dvoch masérov na jeden čas v papierovom zošite",
+      "parex_text": "Recepčná sľúbi hosťovi masáž o 16:00 a zapíše to do zošita. O päť minút druhá recepčná zapíše na ten istý čas iného hosťa... Výsledkom je sklamaný zákazník na chodbe.",
+      "text": "<article class=\"article-detail\">\n  \n  <p class=\"lead\">Recepčná sľúbi hosťovi masáž o 16:00 a zapíše to do zošita. O päť minút druhá recepčná zapíše na ten istý čas iného hosťa... Výsledkom je sklamaný zákazník na chodbe.</p>\n  <h2>Plánovanie kapacít terapeutov a miestností</h2>\n  <p>Wellness prevádzka potrebuje strážiť tri veci naraz: voľnú miestnosť, voľného terapeuta a požiadavku hosťa. Papierový kalendár to nezvládne.</p>\n  <h2>Ellipse Timi – Inteligentný rezervačný kalendár</h2>\n  <p>Modul Timi riadi časové sloty pre wellness, masáže, tenisové kurty či jodu. Hosť si vie službu rezervovať z pohodlia izby cez QR kód alebo z domu cez web stránku.</p>\n  <ul>\n    <li>Stráženie kapacít masérov, saunových svetov a miestností bez duplicít</li>\n    <li>SMS a e-mailové pripomienky pre zníženie no-show</li>\n    <li>Preúčtovanie masáže priamo na izbový účet ubytovaného hosťa</li>\n  </ul>\n</article>",
+      "categories": [
+        {
+          "id": 107,
+          "name": "Aké HORECA problémy Ellipse rieši"
+        }
+      ]
+    },
+    "update": {
+      "id": 360,
+      "sef": "wellness-ktore-nejde-rezervovat-cez-recepciu-riesenie",
+      "name": "Wellness rezervácie: dostupný čas znamená aj terapeuta a miestnosť",
+      "title": "Wellness rezervácie: dostupný čas znamená aj terapeuta a miestnosť",
+      "parex_text": "Kalendár služby musí zohľadniť všetky potrebné zdroje, prípravu aj upratanie. Voľná miestnosť sama osebe ešte nie je voľná masáž.",
+      "text": "<p><em>Modelová situácia z hotelovej a HORECA prevádzky. Odporúčaný postup na spoločný rozbor s vaším tímom.</em></p>\n<h2>Situácia na prevádzke</h2><p>Hosť si vyberie masáž o 16.00. Miestnosť je voľná, ale terapeut má v tom čase inú procedúru. Recepcia následne mení rezerváciu a hosť prispôsobuje program chybe, ktorá sa mala vyriešiť už pri ponuke termínu.</p>\n<h2>Čo treba vyriešiť</h2><p>Na plánovanie treba pomenovať zdroje každej služby: kvalifikovaný pracovník, miestnosť, vybavenie a celkový blokovaný čas. Päťdesiatminútová procedúra môže spotrebovať viac kapacity, ak zahŕňa prípravu a výmenu hostí.</p>\n<h2>Odporúčaný postup s Ellipse</h2><ol><li>V časových rezerváciách nastavte trvanie služby aj prestávky a väzby na potrebné zdroje.</li><li>Web a recepcia musia rezervovať z rovnakej dostupnosti. Zmenu či storno premietnite do všetkých dotknutých kalendárov.</li><li>Pre hotelového hosťa overte väzbu na PMS a spôsob úhrady. Pripomienky a storno podmienky nastavte ešte pred predajom.</li></ol>\n<h2>Výnimka, na ktorú treba myslieť</h2><p>Pri výpadku terapeuta potrebujete zoznam dotknutých hostí, náhradné možnosti a zodpovednosť za kontaktovanie. Automatické presunutie času bez súhlasu hosťa nie je vyriešená rezervácia.</p>\n<h2>Ako overiť prínos</h2><p>Merajte využitie predajných hodín, neúčasť a výnos na dostupnú hodinu procedúr. Zohľadnite aj náklady a spokojnosť hostí; zaplnený kalendár nemusí znamenať najlepší výsledok.</p>\n<h2>Čo hovorí zahraničný výskum</h2><p>Práca rozoberá systematické riadenie výnosu wellness prevádzok a ukazovateľ RevPATH, výnos na dostupnú hodinu procedúr.</p><p>Pre plánovanie z toho odvodzujeme potrebu pracovať s časom aj kapacitou služby. Výskum nenahrádza vlastné meranie nákladov a kvality procedúr.</p><p>Zdroj: <a href=\"https://ecommons.cornell.edu/entities/publication/95f66589-de4c-4ce6-87bf-d6ff4d3a0cf4\">Spa Revenue Management</a> — Cornell University, 2009.</p>\n<p>Konkrétne prepojenia a rozsah funkcií prejdeme podľa konfigurácie vašej prevádzky. V schéme pod článkom nájdete súvisiace súčasti Ellipse.</p>"
+    },
+    "modules": [
+      "booking",
+      "pms",
+      "pay",
+      "team"
+    ]
+  },
+  {
+    "expected": {
+      "id": 361,
+      "sef": "permanentka-ktora-sa-neda-pozicat-na-slovo-riesenie",
+      "name": "Permanentky a sezónne lístky: Koniec kartičkám s papierovými pečiatkami",
+      "title": "Permanentky a sezónne lístky: Koniec kartičkám s papierovými pečiatkami",
+      "parex_text": "„Naši stály klienti si požičiavali jednu 10-vstupovú kartičku v celej rodine. Pri pultíku sme nevedeli skontrolovať, komu naozaj patrí,“ hovorí prevádzkar wellness centra.",
+      "text": "<article class=\"article-detail\">\n  \n  <p class=\"lead\"><em>„Naši stály klienti si požičiavali jednu 10-vstupovú kartičku v celej rodine. Pri pultíku sme nevedeli skontrolovať, komu naozaj patrí,“</em> hovorí prevádzkar wellness centra.</p>\n  <h2>Strata kontroly nad opakovanými vstupmi</h2>\n  <p>Papierové permanentky sa strácajú, krčia a umožňujú zneužívanie. Prevádzka tak prichádza o reálne tržby od stálych zákazníkov.</p>\n  <h2>Digitálne permanentky v Ellipse CRM</h2>\n  <p>Permanentka je viazaná na profil klienta v CRM, RFID kartu alebo QR kód v mobile. Pri vstupe systém okamžite odpočíta vstup, ukáže fotku klienta a skontroluje platnosť.</p>\n  <ul>\n    <li>Digitálny prehľad o zostávajúcich vstupoch pre klienta aj recepciu</li>\n    <li>Automatické blokovanie po vypršaní dátumu platnosti</li>\n    <li>Možnosť online dokúpenia ďalších vstupov cez webový profil</li>\n  </ul>\n</article>",
+      "categories": [
+        {
+          "id": 107,
+          "name": "Aké HORECA problémy Ellipse rieši"
+        }
+      ]
+    },
+    "update": {
+      "id": 361,
+      "sef": "permanentka-ktora-sa-neda-pozicat-na-slovo-riesenie",
+      "name": "Permanentky: prehľad o platnosti a čerpaní bez sporov pri vstupe",
+      "title": "Permanentky: prehľad o platnosti a čerpaní bez sporov pri vstupe",
+      "parex_text": "Digitálna permanentka potrebuje jasné pravidlá používania a históriu vstupov. Hosť aj recepcia majú vidieť rovnaký zostatok.",
+      "text": "<p><em>Modelová situácia z hotelovej a HORECA prevádzky. Odporúčaný postup na spoločný rozbor s vaším tímom.</em></p>\n<h2>Situácia na prevádzke</h2><p>Klient je presvedčený, že mu zostávajú dva vstupy, recepcia eviduje jeden. Permanentku medzitým použil ďalší člen rodiny. Skôr než sa začne hovoriť o zneužití, treba overiť, či bola prenosnosť pri predaji vôbec zrozumiteľne určená.</p>\n<h2>Čo treba vyriešiť</h2><p>Digitalizácia neopraví nejasné podmienky. Rozhodnite, či produkt patrí osobe, rodine alebo nositeľovi, čo znamená jeden vstup a ako sa rieši prerušenie či predĺženie platnosti.</p>\n<h2>Odporúčaný postup s Ellipse</h2><ol><li>V CRM naviažte produkt na správny profil a definujte platnosť, rozsah služieb a pravidlá prenosnosti.</li><li>Prepojte kontrolu vstupu s aktuálnym zostatkom. Otestujte opakované načítanie kódu, aby nevznikol neúmyselný dvojitý odpočet.</li><li>Klientovi sprístupnite zrozumiteľnú informáciu o čerpaní a postupe pri reklamácii. Prístup pracovníkov obmedzte na potrebné údaje.</li></ol>\n<h2>Výnimka, na ktorú treba myslieť</h2><p>Pri strate nosiča zablokujte pôvodný identifikátor a zachovajte históriu pri náhrade. Sporný vstup opravujte dohľadateľnou operáciou, nie ručným prepísaním zostatku bez dôvodu.</p>\n<h2>Ako overiť prínos</h2><p>Sledujte reklamácie čerpania, čas kontroly vstupu a obnovovanie permanentiek. Samotný počet vydaných kariet nehovorí, či program klienti využívajú a či sa vracajú.</p>\n<p>Konkrétne prepojenia a rozsah funkcií prejdeme podľa konfigurácie vašej prevádzky. V schéme pod článkom nájdete súvisiace súčasti Ellipse.</p>"
+    },
+    "modules": [
+      "crm",
+      "aqua",
+      "pay"
+    ]
+  },
+  {
+    "expected": {
+      "id": 362,
+      "sef": "kredit-na-cipe-namiesto-hotovosti-v-areali-riesenie",
+      "name": "Konzum z lehátka. Hosť si účet na čipe vyplatí sám",
+      "title": "Konzum z lehátka. Hosť si účet na čipe vyplatí sám",
+      "parex_text": "Fronta na pokladni pri odchode z areálu nie je sezóna. Je to účet, ktorý žije mimo hosťa. Kredit na čipe a vyplatenie z mobilu vznikli preto, aby konzum nečakal na človeka za kasou.",
+      "text": "<p>V areáli, kde sa je, pije a vstupuje na viacerých miestach, hotovosť vyzerá ako detail. V sezóne je z nej fronta. Rodina sa vracia k autu, deti sú mokré, pokladňa sčítava štyri náramky a niekto v rade zistí, že jeden čip ešte nie je vyplatený. Tento obraz sme nechceli zrýchliť ďalším človekom na kase. Chceli sme, aby spotreba žila na čipe a uzavrela sa tam, kde hosť práve je.</p>\n<p>RFID náramok preto nie je vstupenka, ktorú raz pípnete a zahodíte. Je to účet. Na odbytových miestach sa naň pripisuje konzum priložením na čítačku. Prevádzka si nastaví strop, do akej sumy sa smie ísť. Bez stropu je náramok otvorený kredit, ktorý viete ľutovať až pri odchode. So stropom je to dohoda, ktorú areál unesie.</p>\n<h2>Kiosk je skratka, nie druhá pokladňa s personálom</h2>\n<p>Prvý stupeň samoobsluhy, ktorý na prevádzkach osadzujeme, je kiosk. Tablet s RFID čítačkou, napájanie, sieť, kus steny. Hosť priloží čip a vidí, ako dlho je vnútri, koľko minút mu zostáva a čo už má na účte. Rodina priloží náramky postupne. Systém spotrebu sčíta. Platba prejde telefónom alebo hodinkami cez Ellipse Pay. Elektronický doklad odíde hosťovi a náramky sa uvoľnia na výstup.</p>\n<p>Výstupný turniket má zberač. Buď pustí von, alebo vráti hosťa doplatiť zostatok. Personál na pokladni tým nepreberá každú skupinu, ktorá odchádza naraz. Kiosk a turniket musia čítať ten istý účet. Ak kiosk „vyplatí“ niečo, čo turniket nevidí, hosť zaplatil a aj tak stojí pri závore. To nie je samoobsluha. To je druhý konflikt.</p>\n<h2>Prečo účet musí byť aj v mobile, nielen na stene</h2>\n<p>Kiosk stále núti človeka vstať a niekam prísť. Ďalší krok, ktorý sme zobrali z areálov s vernostným kontom, je vyplatenie z lehátka. Ak si hosť vstup kúpil cez svoje CRM konto, má jeden náramok a spotrebu vidí v reálnom čase v účte. Z lehátka účet otvorí, potvrdí platbu cez Google Pay a o pár sekúnd je konzum vyplatený. Fiškálny doklad má ako PDF v konte. Čipy sa uvoľnia. Von prejde bez pokladne aj bez kiosku.</p>\n<p>Ellipse CRM, Aquapark mode a Ellipse Pay tu nesmú byť tri produkty vedľa seba. CRM drží človeka. Náramok drží spotrebu v areáli. Pay ju uzavrie a doklad ostane tam, kde ho účtovníctvo aj hosť nájdu. Prevádzka, ktorá kredit na čipe účtuje na pokladni a vernosť má v inom systéme, bude aj naďalej volať hostí k okienku. Areál, ktorý toto spojí, predáva oddych až do odchodu, nie frontu na jeho konci.</p>\n<h2>Prečo sme vyplatenie nezastavili na kiosku</h2>\n<p>Kiosk na stene je oproti pokladni veľký krok. V plnom areáli aj tak vytvára bod, ku ktorému sa ľudia zlejú. Preto ďalšia best practice nie je „viac kioskov“, ale účet, ktorý hosť už má pri sebe. Vernostné konto nie je vernostná karta na zľavu pri vstupe. Je to miesto, kde vidí spotrebu náramku v reálnom čase, kým ešte leží. Platba cez Google Pay účet uzavrie tam. Fiškálny doklad neostane v tlačiarni pri bazéne. Ostane v konte ako PDF a čip sa uvoľní na zberač výstupného turniketu.</p>\n<p>Ak CRM o náramku nevie, hosť v mobile neuvidí nič, čo by mohol zaplatiť. Ak Pay o účte nevie, mobil ukáže sumu, ktorú turniket nebude považovať za vyplatenú. Ak aquapark drží čip mimo hotelového a vernostného účtu, rodina s izbou aj bazénom znova platí na dvoch miestach. To je stav, z ktorého sme odchádzali na prvých obhliadkach. Spojenie vzniklo preto, aby sa nevracal.</p>\n<p>Areál, ktorý predáva celý deň oddychu, musí mať odchod rovnako samoobslužný ako vstup. Inak posledná skúsenosť hosťa nie je tobogan. Je to rad.</p>",
+      "categories": [
+        {
+          "id": 107,
+          "name": "Aké HORECA problémy Ellipse rieši"
+        }
+      ]
+    },
+    "update": {
+      "id": 362,
+      "sef": "kredit-na-cipe-namiesto-hotovosti-v-areali-riesenie",
+      "name": "Samoobslužné vyúčtovanie v aquaparku: od spotreby po potvrdený odchod",
+      "title": "Samoobslužné vyúčtovanie v aquaparku: od spotreby po potvrdený odchod",
+      "parex_text": "Účet na náramku môže hosť vyrovnať pri kiosku alebo cez podporované mobilné rozhranie. Kľúčový je spoločný stav platby a zostatku.",
+      "text": "<p><em>Modelová situácia z hotelovej a HORECA prevádzky. Odporúčaný postup na spoločný rozbor s vaším tímom.</em></p>\n<h2>Situácia na prevádzke</h2><p>Pred zatvorením odchádza viac rodín naraz. Niektoré náramky majú spotrebu, ďalšie iba časový doplatok. Ak sa všetko zisťuje až pri jednej pokladni, poslednou skúsenosťou návštevy je čakanie.</p>\n<h2>Čo treba vyriešiť</h2><p>Riešenie začína dostupným a zrozumiteľným účtom ešte pred výstupom. Hosť potrebuje vedieť, ktoré náramky platí, aké položky na nich sú a či úspešná platba už zmenila stav účtu.</p>\n<h2>Odporúčaný postup s Ellipse</h2><ol><li>Prepojte spotrebu z POS s účtom v Aquapark mode. Pri skupine overte pravidlá spoločného aj oddeleného vyúčtovania.</li><li>S Ellipse Pay otestujte platbu pri kiosku; mobilnú cestu s CRM používajte tam, kde ju podporuje konkrétne nasadenie.</li><li>Potvrdenie platby, doklad a stav pri výstupe overte v jednom scenári. Zároveň ponechajte jasne označenú pomoc obsluhy.</li></ol>\n<h2>Výnimka, na ktorú treba myslieť</h2><p>Po zaplatení môže pribudnúť ďalšia spotreba alebo časový doplatok. Určite, ako sa účet znovu overí a ako sa hosť dozvie o zostatku. Núdzový odchod nesmie závisieť od dostupnosti platobnej služby.</p>\n<h2>Ako overiť prínos</h2><p>Merajte čakanie pri odchode počas špičky, podiel dokončených samoobslužných platieb a zásahy obsluhy. Priemer za celý deň môže problém záverečnej hodiny úplne zakryť.</p>\n<h2>Čo hovorí zahraničný výskum</h2><p>Výskum upozorňuje, že technológia mení vzťah medzi hosťom a personálom; v terénnom experimente hostia ocenili blízkosť dostupného pracovníka pri samoobsluhe.</p><p>Pre tento proces z toho odvodzujeme odporúčanie zachovať dostupnú pomoc. Štúdia nemerala Ellipse ani nočnú prevádzku bez recepcie.</p><p>Zdroj: <a href=\"https://ecommons.cornell.edu/entities/publication/50c34d43-22dd-48f7-9c78-3c16e75c38b3\">Cyborg Service: The Unexpected Effect of Technology in the Employee–Guest Exchange</a> — Cornell University, 2014.</p>\n<p>Konkrétne prepojenia a rozsah funkcií prejdeme podľa konfigurácie vašej prevádzky. V schéme pod článkom nájdete súvisiace súčasti Ellipse.</p>"
+    },
+    "modules": [
+      "aqua",
+      "pos",
+      "pay",
+      "crm"
+    ]
+  },
+  {
+    "expected": {
+      "id": 363,
+      "sef": "kongres-ktory-obsadi-salu-aj-izby-naraz-riesenie",
+      "name": "Kongres pre 200 ľudí: Ako spojiť prenájom sál, catering a ubytovanie do jednej ponuky",
+      "title": "Kongres pre 200 ľudí: Ako spojiť prenájom sál, catering a ubytovanie do jednej ponuky",
+      "parex_text": "„Sostaviť cenovú ponuku pre veľkú firmu mi trvalo dva dni. Musela som zistiť voľné izby na recepcii, preveriť voľné sály u prevádzkara a ceny obedov u šéfkuchára,“ opisuje event manažérka.",
+      "text": "<article class=\"article-detail\">\n  \n  <p class=\"lead\"><em>„Sostaviť cenovú ponuku pre veľkú firmu mi trvalo dva dni. Musela som zistiť voľné izby na recepcii, preveriť voľné sály u prevádzkara a ceny obedov u šéfkuchára,“</em> opisuje event manažérka.</p>\n  <h2>Množstvo podkladov a riziko zabudnutých položiek</h2>\n  <p>Pri kongresoch ľahko vypadne z rozpočtu prenájom techniky, kávový servis alebo ubytovanie pre spíkrov. Výsledkom sú nepresné ponuky a stratený zisk.</p>\n  <h2>Ellipse Kongresový Modul</h2>\n  <p>Všetko prebieha na jednom mieste. Zadáte požiadavky klienta, systém zablokuje sálu v kalendári, zarezervuje blok izieb v hotelovej plachte a vygeneruje profesionálnu grafickú ponuku v PDF s presnou kalkuláciou.</p>\n  <ul>\n    <li>Blokovanie ubytovacích kapacít a konferenčných priestorov súčasne</li>\n    <li>Harmonogram podujatia (funkčný list) pre kuchyňu a obsluhu</li>\n    <li>Jedna záverečná vyúčtovacia faktúra so všetkými čerpanými službami</li>\n  </ul>\n</article>",
+      "categories": [
+        {
+          "id": 107,
+          "name": "Aké HORECA problémy Ellipse rieši"
+        }
+      ]
+    },
+    "update": {
+      "id": 363,
+      "sef": "kongres-ktory-obsadi-salu-aj-izby-naraz-riesenie",
+      "name": "Kongresová ponuka: izby, sály a catering podľa jednej verzie dohody",
+      "title": "Kongresová ponuka: izby, sály a catering podľa jednej verzie dohody",
+      "parex_text": "Úspešná akcia potrebuje zosúladenú ponuku, kapacity a prevádzkový harmonogram. Každá schválená zmena má mať dopad aj na vyúčtovanie.",
+      "text": "<p><em>Modelová situácia z hotelovej a HORECA prevádzky. Odporúčaný postup na spoločný rozbor s vaším tímom.</em></p>\n<h2>Situácia na prevádzke</h2><p>Klient zvýši počet účastníkov a posunie obed. Obchod zmení ponuku, kuchyňa však pracuje s pôvodným počtom a recepcia s pôvodným blokom izieb. Chyba sa prejaví až počas podujatia, hoci každý úsek mal svoju evidenciu.</p>\n<h2>Čo treba vyriešiť</h2><p>Základom je jedna platná verzia objednávky s odlíšením dopytu, opcie a potvrdenej akcie. Cena má zahŕňať aj prípravu priestorov, techniku a dodatočné služby, ktoré sa ľahko stratia medzi oddeleniami.</p>\n<h2>Odporúčaný postup s Ellipse</h2><ol><li>V kongresovej agende spojte ponuku, termíny a kapacity s PMS. Pri každej opcii stanovte termín potvrdenia alebo uvoľnenia.</li><li>Vytvorte harmonogram pre kuchyňu, obsluhu, recepciu a techniku s určenými vlastníkmi úloh.</li><li>Zmeny po potvrdení zaznamenajte s dopadom na cenu a kapacitu. Po akcii porovnajte objednané a skutočne čerpané služby pred vyúčtovaním.</li></ol>\n<h2>Výnimka, na ktorú treba myslieť</h2><p>Rozšírenie podujatia nemusí byť možné, aj keď je sála voľná: limitom môže byť kuchyňa, technika alebo personál. Obchod preto potrebuje potvrdenie dotknutých úsekov, nie iba voľné políčko v kalendári.</p>\n<h2>Ako overiť prínos</h2><p>Sledujte čas prípravy ponuky, počet dodatočne objavených položiek a príspevok akcie po priamych nákladoch. Výnos z prenájmu sály hodnotíte spolu s ubytovaním, cateringom a obmedzením iného predaja.</p>\n<h2>Čo hovorí zahraničný výskum</h2><p>Kvalitatívna štúdia so šestnástimi vedúcimi predstaviteľmi hotelierstva a dodávateľov zdôrazňuje ziskovosť, distribučné náklady a viacero zdrojov výnosu.</p><p>Naše odporúčanie je vyhodnocovať obchod po nákladoch a v kontexte celej prevádzky. Rozhovorová štúdia nedokazuje konkrétny nárast výnosov po zavedení softvéru.</p><p>Zdroj: <a href=\"https://ecommons.cornell.edu/entities/publication/bc445799-c6ce-4168-b86a-d87bbc25f81a\">Total Hotel Revenue Management: A Strategic Profit Perspective</a> — Cornell University, 2017.</p>\n<p>Konkrétne prepojenia a rozsah funkcií prejdeme podľa konfigurácie vašej prevádzky. V schéme pod článkom nájdete súvisiace súčasti Ellipse.</p>"
+    },
+    "modules": [
+      "events",
+      "pms",
+      "pos",
+      "team"
+    ]
+  },
+  {
+    "expected": {
+      "id": 364,
+      "sef": "dve-rezervacie-na-jednej-posteli-riesenie",
+      "name": "Upozornenie na duplicity: Zachyťte prekryté rezervácie skôr, než hosť vojde do dverí",
+      "title": "Upozornenie na duplicity: Zachyťte prekryté rezervácie skôr, než hosť vojde do dverí",
+      "parex_text": "Lidská chyba sa stane každému. Recepčná priťukne rezerváciu z e-mailu na izbu, ktorú pred desiatimi minutami predal kolega cez telefón...",
+      "text": "<article class=\"article-detail\">\n  \n  <p class=\"lead\">Lidská chyba sa stane každému. Recepčná priťukne rezerváciu z e-mailu na izbu, ktorú pred desiatimi minutami predal kolega cez telefón...</p>\n  <h2>Plachta vás musí chrániť, nie mýliť</h2>\n  <p>Ak ubytovacia plachta neupozorní na kolíziu dvoch rezervácií na tej istej izbe, problém zistíte až vtedy, keď hosť stojí na recepcii s kufrom.</p>\n  <h2>Okamžitá vizuálna kontrola v Ellipse</h2>\n  <p>Ellipse plachta automaticky deteguje akékoľvek prekrytie dátumov alebo izieb a okamžite ho zvýrazní červeným varovaním. Zároveň ponúkne dostupné alternatívne izby rovnakej kategórie na presun na jeden klik.</p>\n  <ul>\n    <li>Automatická detekcia konfliktov pri ručnom aj online zápise</li>\n    <li>Rýchly presun rezervácie na voľnú izbu systémom Drag & Drop</li>\n    <li>História zmien – presne viete, kto a kedy rezerváciu upravil</li>\n  </ul>\n</article>",
+      "categories": [
+        {
+          "id": 107,
+          "name": "Aké HORECA problémy Ellipse rieši"
+        }
+      ]
+    },
+    "update": {
+      "id": 364,
+      "sef": "dve-rezervacie-na-jednej-posteli-riesenie",
+      "name": "Konflikt rezervácií v plachte: od upozornenia k vyriešenému pobytu",
+      "title": "Konflikt rezervácií v plachte: od upozornenia k vyriešenému pobytu",
+      "parex_text": "Upozornenie na prekrytie má viesť ku konkrétnemu rozhodnutiu. Rozlíšte duplicitný zápis, konflikt izby a skutočné prekročenie kapacity.",
+      "text": "<p><em>Modelová situácia z hotelovej a HORECA prevádzky. Odporúčaný postup na spoločný rozbor s vaším tímom.</em></p>\n<h2>Situácia na prevádzke</h2><p>Recepcia vidí dve rezervácie na tej istej izbe. Môže ísť o rovnakú objednávku zadanú dvakrát, o nesprávne pridelenie izby alebo o dve platné rezervácie. Každý prípad vyžaduje iný zásah.</p>\n<h2>Čo treba vyriešiť</h2><p>Presunutie farebného bloku v plachte ešte nemusí vyriešiť záväzok voči hosťovi. Najskôr overte identitu rezervácie, kategóriu, termín, počet osôb a prísľuby, ktoré hosť dostal.</p>\n<h2>Odporúčaný postup s Ellipse</h2><ol><li>Zaveďte kontrolu konfliktov pri zápise aj pred príchodmi. Porovnajte číslo rezervácie, zdroj a históriu zmien.</li><li>Pri presune v PMS overte vhodnosť náhradnej izby vrátane vybavenia a požiadaviek hosťa.</li><li>Zmenu premietnite do housekeepingových úloh, prístupov a prípadne nadväzujúcich služieb. Určite, kto potvrdí definitívne vyriešenie.</li></ol>\n<h2>Výnimka, na ktorú treba myslieť</h2><p>Duplicitný záznam nezrušte skôr, než vylúčite dve samostatné objednávky. Pri skutočnom prekročení kapacity postupujte podľa dohodnutého plánu náhradného ubytovania a komunikácie.</p>\n<h2>Ako overiť prínos</h2><p>Merajte počet konfliktov podľa príčiny, čas od upozornenia po riešenie a počet prípadov zistených až pri príchode. Cieľom je posúvať zistenie chyby dopredu, nie iba rýchlejšie meniť plachtu.</p>\n<p>Konkrétne prepojenia a rozsah funkcií prejdeme podľa konfigurácie vašej prevádzky. V schéme pod článkom nájdete súvisiace súčasti Ellipse.</p>"
+    },
+    "modules": [
+      "pms",
+      "channel",
+      "team"
+    ]
+  },
+  {
+    "expected": {
+      "id": 365,
+      "sef": "upratana-izba-o-ktorej-recepcia-naozaj-vie-riesenie",
+      "name": "Chyžné s vysielačkami. Upratanie aj poruchy patria do telefónu",
+      "title": "Chyžné s vysielačkami. Upratanie aj poruchy patria do telefónu",
+      "parex_text": "Vysielačka nepovie, ktorá izba je pripravená na príchod a kto má opraviť stenu. Ellipse Team pri upratovaní vznikol ako náhrada za telefonáty medzi poschodím, recepciou a údržbou.",
+      "text": "<p>Upratanie izieb sa na prvý pohľad nepodobá na tému, kvôli ktorej sa mení systém. Na prevádzkach sa z neho stane téma v okamihu, keď recepcia tretíkrát volá na poschodie, či je izba hotová, a chyžná tretíkrát hovorí, že áno, len ešte supervízor neprešiel. Vysielačka a telefón toto vedia preniesť. Nevedia to uzavrieť. Porucha na izbe sa posunie ústne, odkladá sa a dohľadáva sa, keď hosť už stojí na recepcii. Housekeeping v Ellipse Team vznikol ako koniec tohto okruhu, nie ako ďalšia aplikácia do zbierky.</p>\n<p>Aplikácia je zámerne prostá. Má ju udržať aj kolega, ktorý nechce študovať systém a potrebuje vedieť, čo je ďalší krok na tejto izbe. Notifikácia príde recepcii aj manažérovi. Stav izby prestane byť vetou vo vysielačke a stane sa stavom, ktorý vidieť v dome.</p>\n<h2>Postup, ktorý nový človek nemusí nosiť v hlave</h2>\n<p>Dvojitá kontrola, keď chyžná izbu uprace a supervízor ju prejde, je na lepších domoch štandard. Do mobilu sme ju preniesli ako tok, nie ako papierový checklist na dverách. Novému človeku viete zapísať, ako má konkrétnu izbu prejsť. Typy sú príchodové, odchodové a priebežné, lebo to nie je tá istá práca. Ku izbe sa dopíšu aj jej zvláštnosti. Strešné okno v podkroví, na ktoré sa nemá zabudnúť. Minibar, ktorý je inde ako v susednej izbe. Best practice nie je jeden univerzálny zoznam na celý hotel. Je to postup, ktorý pozná izbu.</p>\n<p>Chyžná si úlohy odklikne. Meria sa čas výkonu. Cieľ nie je strážiť, kto bol rýchlejší, a takto to na zavádzaní aj hovoríme, lebo inak tím aplikáciu odmietne. Cieľ je vyčísliť, koľko upratanie stojí, a vedieť, ako dlho jednotlivé typy trvajú. Extrém sa na izbu poznačí poznámkou, neschová sa do priemeru, z ktorého potom vznikne zlá norma. Kto čas meria ako dohľad, pokazí nástroj. Kto ho meria ako náklad, vie, koľko ľudí na poschodie naozaj potrebuje.</p>\n<h2>Porucha s fotkou musí prejsť sama, nie cez recepciu</h2>\n<p>Z tej istej obrazovky vznikne závada, na izbe alebo v spoločných priestoroch. Chyžná vidí špinavú stenu, odfotí ju a založí úlohu. Tá prejde úseku údržby. Údržbár má vo telefóne zoznam. Manažér úlohy priradí konkrétnym ľuďom a vidí, koľko vecí je otvorených, koľko vyriešených a na čom sa čaká. Recepcia túto vetu nemá prenášať. Má ju vidieť. Inak je z nej call centrum medzi poschodím a dielňou.</p>\n<p>Preto Team a PMS musia byť na tej istej izbe. Plachta vie, že dnes je príchod. Housekeeping vie, či je izba pripravená a či na nej visí porucha, kvôli ktorej príchod ešte nemôže byť. Bez tejto väzby máte peknú aplikáciu a recepcia aj naďalej zdvíha telefón. S ňou je vysielačka záloha, nie hlavný systém domu. Prevádzka, ktorá predáva izbu na konkrétnu hodinu, toto musí mať. Inak sľub príchodu stojí na tom, či niekto na poschodí práve počul vysielačku.</p>",
+      "categories": [
+        {
+          "id": 107,
+          "name": "Aké HORECA problémy Ellipse rieši"
+        }
+      ]
+    },
+    "update": {
+      "id": 365,
+      "sef": "upratana-izba-o-ktorej-recepcia-naozaj-vie-riesenie",
+      "name": "Izba pripravená na príchod: upratanie, kontrola a porucha v jednom postupe",
+      "title": "Izba pripravená na príchod: upratanie, kontrola a porucha v jednom postupe",
+      "parex_text": "Recepcia potrebuje vedieť, či možno izbu odovzdať hosťovi. Stav upratovania má nadviazať na kontrolu kvality a nevyriešené poruchy.",
+      "text": "<p><em>Modelová situácia z hotelovej a HORECA prevádzky. Odporúčaný postup na spoločný rozbor s vaším tímom.</em></p>\n<h2>Situácia na prevádzke</h2><p>Chyžná dokončí upratovanie, ale kúpeľňu ešte kontroluje supervízor. Recepcia medzitým sľúbi skorý príchod. Vysielačka preniesla informáciu „hotovo“, no každé oddelenie pod tým rozumelo niečo iné.</p>\n<h2>Čo treba vyriešiť</h2><p>Pred digitalizáciou sa dohodnite na významoch stavov: čaká na upratanie, upratuje sa, čaká na kontrolu, pripravená a blokovaná pre poruchu. Odovzdanie izby je rozhodnutie, ktoré musí mať zodpovednú rolu.</p>\n<h2>Odporúčaný postup s Ellipse</h2><ol><li>V PMS a Ellipse Team zjednoťte identifikáciu izby a pracovné postupy pre odchodové, pobytové a príchodové upratovanie.</li><li>Pri zistení poruchy založte úlohu s miestom, popisom a podľa potreby fotografiou. Určite, či bráni predaju alebo odovzdaniu izby.</li><li>Zaškoľte tím na reálnych situáciách a overte, že recepcia vidí výsledný stav bez telefonovania. Nových kolegov neveďte iba k odklikávaniu zoznamu.</li></ol>\n<h2>Výnimka, na ktorú treba myslieť</h2><p>Zmena izby, neskorý odchod a urgentná oprava menia poradie práce. Priority má koordinovať zodpovedný pracovník; notifikácia sama nerieši konflikt dvoch naliehavých úloh.</p>\n<h2>Ako overiť prínos</h2><p>Sledujte čas od odchodu po pripravenosť, opakované kontroly, čakanie hostí a vek porúch. Čas upratovania porovnávajte podľa typu izby a práce, nie ako jednoduchý rebríček zamestnancov.</p>\n<h2>Čo hovorí zahraničný výskum</h2><p>Výskum v hotelierstve spája zmenu správania pracovníkov s kombinovanou formou školenia, nie iba so samostatným technologickým zásahom.</p><p>Pri zavádzaní odporúčame spojiť aplikáciu s praktickým nácvikom. Táto práca nemeria úsporu času housekeepingového modulu.</p><p>Zdroj: <a href=\"https://ecommons.cornell.edu/entities/publication/1d51dc73-0075-4c46-a720-1433dc3fc757\">Changing Behaviors: Improving Customer Service in a Digital-Driven World</a> — Cornell University, diplomová práca Elizabeth M. Martyn, 2018.</p>\n<p>Konkrétne prepojenia a rozsah funkcií prejdeme podľa konfigurácie vašej prevádzky. V schéme pod článkom nájdete súvisiace súčasti Ellipse.</p>"
+    },
+    "modules": [
+      "team",
+      "pms"
+    ]
+  },
+  {
+    "expected": {
+      "id": 366,
+      "sef": "majitel-apartmanu-chce-vytazok-nie-pristup-do-plachty-riesenie",
+      "name": "Správa investičných apartmánov: Prehľadné vyúčtovanie pre majiteľov bez chaosu",
+      "title": "Správa investičných apartmánov: Prehľadné vyúčtovanie pre majiteľov bez chaosu",
+      "parex_text": "„Prevádzkujeme 40 apartmánov, ktoré patria súkromným majiteľom. Každý mesiac sme trávili týždeň výpočtom ich podielov na výnosoch, prani bielizne a províziách,“ rozpráva manažér rezortu.",
+      "text": "<article class=\"article-detail\">\n  \n  <p class=\"lead\"><em>„Prevádzkujeme 40 apartmánov, ktoré patria súkromným majiteľom. Každý mesiac sme trávili týždeň výpočtom ich podielov na výnosoch, prani bielizne a províziách,“</em> rozpráva manažér rezortu.</p>\n  <h2>Dôvera majiteľov stojí na presných číslach</h2>\n  <p>Majitelia apartmánov chcú vedieť, kedy bol ich apartmán obsadený, koľko zarobil a aké náklady na údržbu či upratovanie sa odpočítali. Ručné Excel tabuľky vyvolávajú pochybnosti.</p>\n  <h2>Majiteľský portál v Ellipse</h2>\n  <p>Každý majiteľ dostane prístup do svojho klientskeho rozhrania. Vidí tu kalendár obsadenosti svojho apartmánu, môže si spraviť vlastnú blokáciu pre rodinu a na konci mesiaca si stiahne presný prehľad výnosov a nákladov v PDF.</p>\n  <ul>\n    <li>Automatické rozpočítavanie tržieb podľa zmluvných percent</li>\n    <li>Evidencia nákladov na čistenie a opravy priradených k apartmánu</li>\n    <li>Úplná transparentnosť bez nutnosti sprístupniť celý hotelový systém</li>\n  </ul>\n</article>",
+      "categories": [
+        {
+          "id": 107,
+          "name": "Aké HORECA problémy Ellipse rieši"
+        }
+      ]
+    },
+    "update": {
+      "id": 366,
+      "sef": "majitel-apartmanu-chce-vytazok-nie-pristup-do-plachty-riesenie",
+      "name": "Vyúčtovanie apartmánu majiteľovi: každá suma musí mať vysvetlenie",
+      "title": "Vyúčtovanie apartmánu majiteľovi: každá suma musí mať vysvetlenie",
+      "parex_text": "Majiteľský prehľad potrebuje zmluvné pravidlá, oddelené náklady a dohľadateľné opravy. Dôvera vzniká z vysvetliteľného výpočtu.",
+      "text": "<p><em>Modelová situácia z hotelovej a HORECA prevádzky. Odporúčaný postup na spoločný rozbor s vaším tímom.</em></p>\n<h2>Situácia na prevádzke</h2><p>Správca prevádzkuje apartmány viacerých vlastníkov. Jeden majiteľ sa pýta, prečo mal pri podobnej obsadenosti nižší výnos než minulý mesiac. Rozdiel môže byť v cene, provízii kanála, vlastnom pobyte alebo oprave zariadenia.</p>\n<h2>Čo treba vyriešiť</h2><p>Jeden súčet tržieb nestačí. Treba dohodnúť základ výpočtu podielu, rozdelenie nákladov, zaobchádzanie so stornami a termín uzávierky. Tieto pravidlá vychádzajú zo zmluvy, nie z univerzálneho nastavenia pre všetkých majiteľov.</p>\n<h2>Odporúčaný postup s Ellipse</h2><ol><li>Priraďte apartmány k vlastníkom a overte zmluvný výpočet na vzorovom mesiaci vrátane provízií a vlastných pobytov.</li><li>Náklady na upratovanie či opravy evidujte pri správnej jednotke s podkladom a pravidlom schvaľovania.</li><li>V majiteľskom module sprístupnite len oprávnené údaje. Mesačný výkaz zosúlaďte s PMS a účtovnými podkladmi pred jeho uzavretím.</li></ol>\n<h2>Výnimka, na ktorú treba myslieť</h2><p>Neskoré storno alebo oprava po uzávierke majú byť viditeľné v nasledujúcom vysporiadaní alebo v opravenej verzii. Tiché prepísanie už odoslaného výkazu oslabuje dôveru.</p>\n<h2>Ako overiť prínos</h2><p>Merajte čas prípravy výkazov, počet nevysvetlených rozdielov a reklamácií. Sledujte výnos po dohodnutých nákladoch; obsadenosť sama o sebe nevysvetľuje výsledok majiteľa.</p>\n<p>Konkrétne prepojenia a rozsah funkcií prejdeme podľa konfigurácie vašej prevádzky. V schéme pod článkom nájdete súvisiace súčasti Ellipse.</p>"
+    },
+    "modules": [
+      "owners",
+      "pms",
+      "team"
+    ]
+  },
+  {
+    "expected": {
+      "id": 367,
+      "sef": "host-pise-o-polnoci-recepcia-spi-ella-nie-riesenie",
+      "name": "Hosť píše otázku o polnoci. Recepcia spí. AI recepčná Ella odpovedá v sekunde.",
+      "title": "Hosť píše otázku o polnoci. Recepcia spí. AI recepčná Ella odpovedá v sekunde.",
+      "parex_text": "„Máte voľný parkovací flek pre dodávku? Aké sú otváracie hodiny wellness? Môžem prísť so psom?“ Otázky, ktoré sa opakujú stokrát dokola a zdržujú recepčných od osobnej starostlivosti.",
+      "text": "<article class=\"article-detail\">\n  \n  <p class=\"lead\"><em>„Máte voľný parkovací flek pre dodávku? Aké sú otváracie hodiny wellness? Môžem prísť so psom?“</em> Otázky, ktoré sa opakujú stokrát dokola a zdržujú recepčných od osobnej starostlivosti.</p>\n  <h2>Rýchla odpoveď rozhoduje o rezervácii</h2>\n  <p>Dnešný zákazník nechce čakať do druhého dňa na e-mailovú odpoveď. Ak nedostane informáciu ihneď, odíde ku konkurencii.</p>\n  <h2>Virtuálna AI recepčná Ella</h2>\n  <p>Ella je natívne prepojená s vaším systémom Ellipse. Pozná vaše reálne ceny, voľné izby aj pravidlá hotela. Odpovedá na webe, WhatsAppe či Messengeri plynule v desiatkach jazykov a dokáže hosťa previesť celým procesom rezervácie.</p>\n  <ul>\n    <li>Okamžitá odpoveď na 90 % bežných otázok hostí 24 hodín denne</li>\n    <li>Priamy predaj pobytov cez konverzáciu v chatu</li>\n    <li>Úspora času pre recepciu, ktorá sa môže venovať hostom pri pulte</li>\n  </ul>\n</article>",
+      "categories": [
+        {
+          "id": 107,
+          "name": "Aké HORECA problémy Ellipse rieši"
+        }
+      ]
+    },
+    "update": {
+      "id": 367,
+      "sef": "host-pise-o-polnoci-recepcia-spi-ella-nie-riesenie",
+      "name": "Ella pri otázkach hostí: rýchla odpoveď s jasnou hranicou automatizácie",
+      "title": "Ella pri otázkach hostí: rýchla odpoveď s jasnou hranicou automatizácie",
+      "parex_text": "AI recepčná potrebuje schválené informácie, overené prepojenia a cestu k človeku. Úspech merajte vyriešenou požiadavkou, nie počtom odpovedí.",
+      "text": "<p><em>Modelová situácia z hotelovej a HORECA prevádzky. Odporúčaný postup na spoločný rozbor s vaším tímom.</em></p>\n<h2>Situácia na prevádzke</h2><p>Hosť sa večer pýta na parkovanie dodávky, pobyt so psom a neskorý príchod. Prvé dve odpovede závisia od pravidiel hotela, tretia aj od konkrétnej rezervácie. Jedna všeobecná odpoveď nemusí bezpečne vyriešiť všetky tri otázky.</p>\n<h2>Čo treba vyriešiť</h2><p>Pri zavádzaní oddeľte informácie o prevádzke od transakčných úkonov. Otváracie hodiny možno čerpať zo schválenej znalostnej bázy; potvrdenie izby alebo zmena pobytu vyžaduje aktuálne dáta a príslušné oprávnenie.</p>\n<h2>Odporúčaný postup s Ellipse</h2><ol><li>Pre Ellu pripravte schválené odpovede a vlastníka ich aktualizácie. Otestujte otázky v jazykoch, ktoré hostia používajú.</li><li>Určite, ktoré požiadavky môže systém dokončiť cez podporované prepojenie a ktoré musí odovzdať recepcii.</li><li>Pri odovzdaní do Team alebo dohodnutého kanála zachovajte kontext, aby hosť nezačínal odznova. Kontrolujte vzorku odpovedí aj nevyriešené konverzácie.</li></ol>\n<h2>Výnimka, na ktorú treba myslieť</h2><p>Nejasná cena, reklamácia či nedostupné dáta majú viesť k priznaniu neistoty a pomoci človeka. AI nemá vymýšľať dostupnosť ani sľubovať službu, ktorú hotel nepotvrdil.</p>\n<h2>Ako overiť prínos</h2><p>Merajte správnosť odpovedí na kontrolnej vzorke, dokončené požiadavky, čas prevzatia človekom a spokojnosť hostí. Percento automaticky vyriešených otázok publikujte až z vlastného merania s jasnou definíciou.</p>\n<h2>Čo hovorí zahraničný výskum</h2><p>Metodika NIST opisuje riziko presvedčivých, ale nepravdivých výstupov generatívnej AI a odporúča testovanie a riadenie rizík pri jej použití.</p><p>Pre tento proces odporúčame kontrolu podkladov, oprávnení a výsledkov človekom. Je to medziodvetvová metodika, nie štúdia výkonu konkrétneho hotelového produktu.</p><p>Zdroj: <a href=\"https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf\">Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile</a> — NIST, 2024.</p>\n<p>Konkrétne prepojenia a rozsah funkcií prejdeme podľa konfigurácie vašej prevádzky. V schéme pod článkom nájdete súvisiace súčasti Ellipse.</p>"
+    },
+    "modules": [
+      "ella",
+      "messages",
+      "team",
+      "booking"
+    ]
+  },
+  {
+    "expected": {
+      "id": 273,
+      "sef": "opytate-sa-vlastnych-cisel-cez-mcp",
+      "name": "Opýtajte sa vlastných dát: Keď riaditeľ nepotrebuje analytika na vytvorenie reportu",
+      "title": "Opýtajte sa vlastných dát: Keď riaditeľ nepotrebuje analytika na vytvorenie reportu",
+      "parex_text": "„Pred rannou poradou som potreboval vedieť porovnanie tržieb z gastro stredísk za posledné tri víkendy. Musel som preklikať štyri rôzne výkazy,“ hovorí riaditeľ hotela.",
+      "text": "<article class=\"article-detail\">\n  \n  <p class=\"lead\"><em>„Pred rannou poradou som potreboval vedieť porovnanie tržieb z gastro stredísk za posledné tri víkendy. Musel som preklikať štyri rôzne výkazy,“</em> hovorí riaditeľ hotela.</p>\n  <h2>Dáta máte, ale hľadanie trvá dlho</h2>\n  <p>Tradičné systémy vyžadujú zložité nastavovanie filtrov a exporty do Excelu len na to, aby ste zistili jednu kľúčovú hodnotu.</p>\n  <h2>Ellipse MCP konektor a AI analýza</h2>\n  <p>Vďaka modernému MCP konektoru sa môžete svojho systému opýtať bežnou rečou: <em>„Ktorá kategória izieb mala najvyššiu obsadenosť v júli?“</em> alebo <em>„Ukáž mi porovnanie tržieb za raňajky oproti minulému roku.“</em> Systém okamžite vytiahne presné čísla z databázy.</p>\n  <ul>\n    <li>Rýchle odpovede na manažérske otázky bez študovania tabuliek</li>\n    <li>Bezpečné prepojenie – dáta zostávajú plne pod vaša kontrolou</li>\n    <li>Okamžité podklady pre rozhodovanie o cenách a investíciách</li>\n  </ul>\n</article>",
+      "categories": [
+        {
+          "id": 107,
+          "name": "Aké HORECA problémy Ellipse rieši"
+        }
+      ]
+    },
+    "update": {
+      "id": 273,
+      "sef": "opytate-sa-vlastnych-cisel-cez-mcp",
+      "name": "Otázky nad dátami cez MCP: odpoveď musí mať obdobie, definíciu a zdroj",
+      "title": "Otázky nad dátami cez MCP: odpoveď musí mať obdobie, definíciu a zdroj",
+      "parex_text": "Prirodzený jazyk môže zrýchliť cestu k reportu. Manažér však potrebuje overiť, čo číslo zahŕňa a z akých dát vzniklo.",
+      "text": "<p><em>Modelová situácia z hotelovej a HORECA prevádzky. Odporúčaný postup na spoločný rozbor s vaším tímom.</em></p>\n<h2>Situácia na prevádzke</h2><p>Riaditeľ sa opýta, ako sa vyvíjali tržby reštaurácie oproti minulému roku. Bez ďalšieho upresnenia môže odpoveď porovnávať rozdielne dni v týždni, predaj s DPH a bez DPH alebo iný súbor stredísk.</p>\n<h2>Čo treba vyriešiť</h2><p>MCP je spôsob prepojenia nástrojov a dát s AI, nie záruka správnej interpretácie. Kvalitná odpoveď má uviesť obdobie, filtre, jednotky a definíciu ukazovateľa. Výpočet musí zostať overiteľný v zdrojovom reporte.</p>\n<h2>Odporúčaný postup s Ellipse</h2><ol><li>Začnite konkrétnymi opakovanými otázkami vedenia a ku každej určte schválený report na porovnanie.</li><li>Pre MCP nastavte potrebný rozsah prístupu. Pre analytické otázky začnite čítaním dát; zmeny prevádzky vyžadujú samostatne riadené oprávnenia.</li><li>Porovnajte odpovede AI s PMS a POS na rovnakom období vrátane storien a hraničných dátumov. Nechajte model vysvetliť použité filtre.</li></ol>\n<h2>Výnimka, na ktorú treba myslieť</h2><p>Ak zdroj chýba alebo je neúplný, odpoveď má túto medzeru pomenovať. Presvedčivá veta nesmie nahradiť chýbajúce číslo ani slúžiť ako jediný podklad významného rozhodnutia.</p>\n<h2>Ako overiť prínos</h2><p>Merajte čas získania overenej odpovede, zhodu so zdrojovým reportom a počet potrebných upresnení. Rýchlosť bez správnosti nie je prínos pre riadenie.</p>\n<h2>Čo hovorí zahraničný výskum</h2><p>Metodika NIST opisuje riziko presvedčivých, ale nepravdivých výstupov generatívnej AI a odporúča testovanie a riadenie rizík pri jej použití.</p><p>Pre tento proces odporúčame kontrolu podkladov, oprávnení a výsledkov človekom. Je to medziodvetvová metodika, nie štúdia výkonu konkrétneho hotelového produktu.</p><p>Zdroj: <a href=\"https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf\">Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile</a> — NIST, 2024.</p>\n<p>Konkrétne prepojenia a rozsah funkcií prejdeme podľa konfigurácie vašej prevádzky. V schéme pod článkom nájdete súvisiace súčasti Ellipse.</p>"
+    },
+    "modules": [
+      "mcp",
+      "pms",
+      "pos"
+    ]
+  },
+  {
+    "expected": {
+      "id": 274,
+      "sef": "platba-priide-na-ucet-rezervacia-o-tom-este-nevie",
+      "name": "Párovanie platieb z banky: Koniec rannému prehľadávaniu výpisov v internet bankingu",
+      "title": "Párovanie platieb z banky: Koniec rannému prehľadávaniu výpisov v internet bankingu",
+      "parex_text": "Pani ekonómka každé ráno otvárala internet banking, tlačila výpis a so zvýrazňovačom v ruke hľadala variabilné symboly, aby ručne označila zaplatené zálohy v hotelovom systéme...",
+      "text": "<article class=\"article-detail\">\n  \n  <p class=\"lead\">Pani ekonómka každé ráno otvárala internet banking, tlačila výpis a so zvýrazňovačom v ruke hľadala variabilné symboly, aby ručne označila zaplatené zálohy v hotelovom systéme...</p>\n  <h2>Pomalá identifikácia platieb zdržuje potvrdzovanie pobytov</h2>\n  <p>Kým ekonómka nesparuje platbu ručne, recepcia nevidel, či hosť zálohu poslal. Hosť zatiaľ nervózne čaká na potvrdenie rezervácie.</p>\n  <h2>Automatické FIO / Bankové API párovanie v Ellipse</h2>\n  <p>Ellipse sa bezpečne prepojí s vaším bankovým účtom. Keď prijde platba s variabilným symbolom rezervácie alebo proformy, systém ju okamžite spáruje, zmení stav rezervácie na „Uhradená“ a pošle hosťovi potvrdenie.</p>\n  <ul>\n    <li>Automatické párovanie platieb každú hodinu bez ľudského zásahu</li>\n    <li>Generovanie Pay by Square QR kódov pre bezchybné zadanie platby hosťom</li>\n    <li>Okamžitá identifikácia platieb bez variabilného symbolu pre rýchle vyriešenie</li>\n  </ul>\n</article>",
+      "categories": [
+        {
+          "id": 107,
+          "name": "Aké HORECA problémy Ellipse rieši"
+        }
+      ]
+    },
+    "update": {
+      "id": 274,
+      "sef": "platba-priide-na-ucet-rezervacia-o-tom-este-nevie",
+      "name": "Banková platba a rezervácia: automaticky párovať isté, preveriť nejasné",
+      "title": "Banková platba a rezervácia: automaticky párovať isté, preveriť nejasné",
+      "parex_text": "Bankové prepojenie znižuje prepisovanie. Kvalitný proces pritom oddeľuje jednoznačné úhrady od preplatkov, neúplných platieb a nejasných identifikátorov.",
+      "text": "<p><em>Modelová situácia z hotelovej a HORECA prevádzky. Odporúčaný postup na spoločný rozbor s vaším tímom.</em></p>\n<h2>Situácia na prevádzke</h2><p>Hosť pošle zálohu z účtu partnera, uvedie nesprávny variabilný symbol a zaplatí o niečo menej. Recepcia vidí otvorenú rezerváciu, banka prijatú platbu. Zhodná suma alebo podobné meno nemusia stačiť na bezpečné spárovanie.</p>\n<h2>Čo treba vyriešiť</h2><p>Pravidlá párovania majú určiť, kedy je zhoda dostatočná a kedy sa prípad odovzdá človeku. Čiastočná úhrada pritom nemá automaticky znamenať, že celá rezervácia je zaplatená.</p>\n<h2>Odporúčaný postup s Ellipse</h2><ol><li>Na dokladoch používajte jednoznačný identifikátor a zrozumiteľné platobné pokyny; kde je podporovaný, pomôže predvyplnený QR kód.</li><li>S bankovým prepojením otestujte úplnú úhradu, čiastočnú platbu, preplatok a dve platby na jednu rezerváciu.</li><li>Nejasné transakcie zaraďte do pravidelne kontrolovaného zoznamu. Po priradení overte zostatok v PMS a správne potvrdenie hosťovi.</li></ol>\n<h2>Výnimka, na ktorú treba myslieť</h2><p>Pri opakovanom načítaní výpisu nesmie vzniknúť druhá úhrada. Sledujte čas posledného úspešného načítania; neaktuálny bankový tok môže vyzerať ako neplatiaci hosť.</p>\n<h2>Ako overiť prínos</h2><p>Merajte podiel jednoznačne spárovaných platieb, vek nevysporiadaných transakcií a počet chybných priradení. Frekvenciu aktualizácie uvádzajte podľa konkrétneho bankového prepojenia.</p>\n<p>Konkrétne prepojenia a rozsah funkcií prejdeme podľa konfigurácie vašej prevádzky. V schéme pod článkom nájdete súvisiace súčasti Ellipse.</p>"
+    },
+    "modules": [
+      "pms",
+      "pay"
+    ]
+  },
+  {
+    "expected": {
+      "id": 275,
+      "sef": "domova-kniha-a-statistika-bez-nedelnhost-prepisovania",
+      "name": "Domová kniha a štatistiky: Zrušte nedeľné nočné prepisovanie papiera do Excelu",
+      "title": "Domová kniha a štatistiky: Zrušte nedeľné nočné prepisovanie papiera do Excelu",
+      "parex_text": "„Posledný deň v mesiaci pre mňa znamenal sedieť do polnoci v práci a prepisovať údaje z recepčných kníh do výkazu pre Štatistický úrad,“ spomína hlavná recepčná.",
+      "text": "<article class=\"article-detail\">\n  \n  <p class=\"lead\"><em>„Posledný deň v mesiaci pre mňa znamenal sedieť do polnoci v práci a prepisovať údaje z recepčných kníh do výkazu pre Štatistický úrad,“</em> spomína hlavná recepčná.</p>\n  <h2>Zákonné povinnosti nemajú brať čas vašim hosťom</h2>\n  <p>Ručné prepisovanie štátnych príslušností, dátumov narodení a čísel pasov vytvára množstvo chýb a zbytočný stres pred uzávierkami.</p>\n  <h2>Výkazy na jeden klik v Ellipse</h2>\n  <p>Keďže údaje hostí zbierate priamo pri online check-ine alebo na recepcii, Ellipse má všetky potrebné dáta pripravené. Export pre Cudzineckú políciu aj mesačný výkaz pre Štatistický úrad vytvoríte na jedno stlačenie tlačidla.</p>\n  <ul>\n    <li>Presné exporty vo formátoch požadovaných štátnymi orgánmi</li>\n    <li>Automatická kontrola chýbajúcich údajov pred odoslaním výkazu</li>\n    <li>100 % súlad s platnou legislatívou bez námahy</li>\n  </ul>\n</article>",
+      "categories": [
+        {
+          "id": 107,
+          "name": "Aké HORECA problémy Ellipse rieši"
+        }
+      ]
+    },
+    "update": {
+      "id": 275,
+      "sef": "domova-kniha-a-statistika-bez-nedelnhost-prepisovania",
+      "name": "Domová kniha a štatistiky: kvalita výkazu sa začína pri príchode",
+      "title": "Domová kniha a štatistiky: kvalita výkazu sa začína pri príchode",
+      "parex_text": "Export odstráni prepisovanie iba vtedy, keď sú vstupné údaje úplné a skontrolované. Príprava výkazu a jeho úspešné odovzdanie sú samostatné kroky.",
+      "text": "<p><em>Modelová situácia z hotelovej a HORECA prevádzky. Odporúčaný postup na spoločný rozbor s vaším tímom.</em></p>\n<h2>Situácia na prevádzke</h2><p>Pred mesačnou uzávierkou recepcia zistí, že pri časti pobytov chýbajú údaje a niektoré zmeny odchodov sa nezapísali. Systém dokáže vytvoriť súbor, ale výsledok nepredstavuje spoľahlivý obraz skutočných pobytov.</p>\n<h2>Čo treba vyriešiť</h2><p>Odporúčaný postup presúva kontrolu na okamih vzniku údajov. Self check-in a recepcia majú používať rovnakú evidenciu v PMS; opravy musia mať jasnú zodpovednosť. Žiadny export sám osebe nie je univerzálnou zárukou právneho súladu.</p>\n<h2>Odporúčaný postup s Ellipse</h2><ol><li>Dohodnite povinné údaje a kontroly podľa aktuálnych povinností konkrétnej prevádzky. Použite aktuálne pokyny príslušného úradu.</li><li>Priebežne riešte neúplné záznamy a zmeny pobytov. Pred uzávierkou porovnajte výkaz s obsadenosťou a počtom prenocovaní.</li><li>Overte podporovaný formát exportu a spôsob odovzdania. Uchovajte potvrdenie prijatia alebo evidenciu odmietnutia a opravy.</li></ol>\n<h2>Výnimka, na ktorú treba myslieť</h2><p>Ak portál súbor odmietne, nestačí ho znovu odoslať bez zmeny. Určený pracovník má zistiť príčinu, opraviť zdrojový údaj a vytvoriť dohľadateľnú novú verziu.</p>\n<h2>Ako overiť prínos</h2><p>Sledujte podiel neúplných záznamov, čas prípravy výkazu a počet odmietnutých podaní. Cieľom je správne odovzdaný výkaz, nie iba počet vygenerovaných súborov.</p>\n<p>Konkrétne prepojenia a rozsah funkcií prejdeme podľa konfigurácie vašej prevádzky. V schéme pod článkom nájdete súvisiace súčasti Ellipse.</p>"
+    },
+    "modules": [
+      "pms",
+      "self",
+      "team"
+    ]
+  },
+  {
+    "expected": {
+      "id": 368,
+      "sef": "host-ostava-este-noc-recepcia-o-tom-vie-az-rano-riesenie",
+      "name": "Predĺženie pobytu o ďalšiu noc: Umožnite hosťovi predĺžiť si pobyt priamo z mobilu",
+      "title": "Predĺženie pobytu o ďalšiu noc: Umožnite hosťovi predĺžiť si pobyt priamo z mobilu",
+      "parex_text": "Hosťovi sa v hoteli tak zapáčilo, že sa o desiatej večer rozhodne zostať ešte jednu noc. Recepcia je však zatvorená a on netuší, či je jeho izba na zajtra voľná...",
+      "text": "<article class=\"article-detail\">\n  \n  <p class=\"lead\">Hosťovi sa v hoteli tak zapáčilo, že sa o desiatej večer rozhodne zostať ešte jednu noc. Recepcia je však zatvorená a on netuší, či je jeho izba na zajtra voľná...</p>\n  <h2>Nenechajte voľnú izbu utiecť</h2>\n  <p>Ak hosť nemá jednoduchú možnosť predĺžiť si pobyt, ráno sa zbalí a odíde, hoci izba mohla byť nasledujúcu noc predaná.</p>\n  <h2>Self-service predĺženie pobytu v Ellipse</h2>\n  <p>Hosť dostane vo svojej webovej aplikácii pobytu ponuku: <em>„Páči sa vám u nás? Predĺžte si pobyt o ďalšiu noc so zľavou 10 %.“</em> Ak je izba voľná, hosť klikne, zaplatí kartou a systém automaticky upraví dátum odchodu v plachte.</p>\n  <ul>\n    <li>Predaj dodatočných nocí bez prítomnosti recepčnej</li>\n    <li>Okamžitá aktualizácia ubytovacej plachty a plánu upratovania</li>\n    <li>Vyššia spokojnosť hosťa a vyšší zisk z pobytu</li>\n  </ul>\n</article>",
+      "categories": [
+        {
+          "id": 107,
+          "name": "Aké HORECA problémy Ellipse rieši"
+        }
+      ]
+    },
+    "update": {
+      "id": 368,
+      "sef": "host-ostava-este-noc-recepcia-o-tom-vie-az-rano-riesenie",
+      "name": "Predĺženie pobytu: ďalšia noc musí sedieť v cene, plachte aj upratovaní",
+      "title": "Predĺženie pobytu: ďalšia noc musí sedieť v cene, plachte aj upratovaní",
+      "parex_text": "Ponuka ďalšej noci potrebuje aktuálnu dostupnosť konkrétneho pobytu. Po potvrdení sa musí zmeniť aj plán práce a platnosť prístupu.",
+      "text": "<p><em>Modelová situácia z hotelovej a HORECA prevádzky. Odporúčaný postup na spoločný rozbor s vaším tímom.</em></p>\n<h2>Situácia na prevádzke</h2><p>Hosť sa večer rozhodne zostať dlhšie. Kategória izby má na ďalší deň voľnú kapacitu, jeho konkrétna izba je však pridelená inému príchodu. Sľúbiť pokračovanie bez presťahovania by bolo predčasné.</p>\n<h2>Čo treba vyriešiť</h2><p>Predĺženie nie je iba nový predaj. Mení pôvodný pobyt, účtovanie, housekeeping aj prístup do izby. Najskôr treba overiť, či možno zachovať izbu a za akú cenu, potom potvrdiť zmenu.</p>\n<h2>Odporúčaný postup s Ellipse</h2><ol><li>V PMS overte dostupnosť izby, nadväzujúce rezervácie a cenové podmienky. Automatickú zľavu používajte iba tam, kde dáva obchodný zmysel.</li><li>V podporovanom samoobslužnom procese nechajte hosťa potvrdiť novú cenu a platbu cez Ellipse Pay.</li><li>Po úspešnej zmene aktualizujte odchod, úlohy pre Team a nadväzujúci prístup. Hosť musí dostať jednoznačné potvrdenie.</li></ol>\n<h2>Výnimka, na ktorú treba myslieť</h2><p>Ak treba presťahovanie, povedzte to ešte pred prijatím ponuky. Pri zlyhanej platbe alebo prerušení procesu musí byť jasné, či pôvodný odchod zostáva platný.</p>\n<h2>Ako overiť prínos</h2><p>Merajte prijaté ponuky, skutočne realizované dodatočné noci, príspevok po súvisiacich nákladoch a konflikty spôsobené zmenou. Dodatočný predaj nemá vytlačiť hodnotnejšiu potvrdenú rezerváciu.</p>\n<p>Konkrétne prepojenia a rozsah funkcií prejdeme podľa konfigurácie vašej prevádzky. V schéme pod článkom nájdete súvisiace súčasti Ellipse.</p>"
+    },
+    "modules": [
+      "self",
+      "pms",
+      "pay",
+      "team"
+    ]
+  },
+  {
+    "expected": {
+      "id": 369,
+      "sef": "zaloha-proforma-a-faktura-ktore-o-sebe-vedia-riesenie",
+      "name": "Účtovníctvo nestíha papier. Výnosy majú byť v knihách na druhý deň",
+      "title": "Účtovníctvo nestíha papier. Výnosy majú byť v knihách na druhý deň",
+      "parex_text": "Ekonomické oddelenie nestíha nie preto, že je pomalé. Nestíha preto, že doklady z prevádzky stále chodia ako hromada. Predkontácia, párovanie platieb a ranný report vznikli preto, aby mesiac nezačínal až pred podaním DPH.",
+      "text": "<p>Keď s ekonómom prechádzame mesiac, veta znie skoro vždy rovnako. Nie sme pomalí. Nestíhame to, čo z prevádzky príde. Faktúry, zálohy, uzávierky reštaurácie, inventúry. Hromada je väčšia ako tím a tím sa zväčšuje skôr, ako sa zmenší papier. Pri spúšťaní Ellipse sa preto nezačína školením obrazoviek. Začína sa tým, čo má odísť do účtovníctva samo. Inak ďalší človek na ekonómii len rýchlejšie prepisuje to, čo systém už raz vedel.</p>\n<p>Príliš často počujeme, že mesiac sa v hoteli uzatvára až tesne pred podaním DPH. Daň sa podá. Prevádzka sa „uzavrie“. Manažér medzitým riadil tri týždne bez čísel. To považujeme za zlý štandard, nie za nevyhnutnosť sezóny. Kto má na starosti úsek, potrebuje vedieť v ten deň, nie v priznaní. Keď sa skončia raňajky, do niekoľkých hodín má vedieť, koľko stáli, koľko sa na nich zarobilo a čo spravili s výsledkom dňa.</p>\n<h2>Predkontácia je dohoda pred ostrým chodom, nie oprava po ňom</h2>\n<p>Výnosy skladáme po úrovniach, lebo jeden súčet za hotel sa nedá účtovať ani riadiť. Najprv strediská: ubytovanie, reštaurácia, wellness, doplnkové služby. Pod ne kategórie a položky, až po konkrétny riadok, napríklad ubytovanie a miestny poplatok. Predkontácie výnosov aj skladových nákladov nastavujeme s účtovným oddelením ešte pred štartom. Je to práca, ktorú prevádzky rady odkladajú. Práve ona rozhodne, či ďalší rok niekto prepisuje doklady, alebo ich systém posiela na správne účty.</p>\n<p>Potom sa každý uzavretý predaj, faktúra za pobyt, veľký event aj káva na pokladni, prenesie sám. Výnosy vedia byť zaúčtované na nasledujúci deň. PMS a Ellipse POS musia do toho vstúpiť ako zdroj dokladu, nie ako report, ktorý ekonóm ráno exportuje a večer kontroluje. Ak pokladňa a hotel žijú v inom účtovníctve ako vy, automatizácia sa zastaví na hranici strediska a papier sa vráti presne tam.</p>\n<h2>Má dať, dal: doklad aj to, čím bol zaplatený</h2>\n<p>Samotný výnos účtovníkovi nestačí. Prichádzajú bankové výpisy a zostavy z platobnej brány, často neprehľadné, lebo vznikli v inom svete ako doklad. Ellipse Pay preto viaže úspešnú online platbu aj platbu na termináli na konkrétny doklad. Účtovník spáruje uzávierku reštaurácie alebo faktúru s tým, ako bola uhradená a ktorou kartovou platbou. Prenos ide po položkách, nie ako jeden súčet za deň, v ktorom sa stratí sadzba aj stredisko.</p>\n<p>Toto je dôvod, prečo platby a účtovníctvo nesmú byť dve agendy. Pay bez väzby na doklad je výpis. Doklad bez väzby na Pay je výnos, pri ktorom neviete, či už prišli peniaze. Best practice je mať obe strany naraz: čo sa predalo a čím sa to zaplatilo.</p>\n<h2>Morning Coffee, kým sa s tým ešte dá niečo urobiť</h2>\n<p>Manažér má každé ráno e-mail, ktorý voláme Morning Coffee. Je v ňom, čo sa stalo predchádzajúci deň a v období pred ním. Výnosy po skupinách, rozdiel voči plánu na mesiac, rozdiel oproti minulému roku. Dá sa do neho doplniť dopyt, kontrola flexibilných cien, eventy, aj forecast výnosu a obsadenosti na rok dopredu v porovnaní s tempom predaja vlaňajška. Ráno je buď pokoj, lebo predaj ide, alebo je včas vidieť, kde treba pridať v obchodu. RevPRO a channel manager dávajú zmysel práve tu. Forecast bez tempa predaja je tabuľka. Tempo bez ranného prehľadu je číslo, ktoré nikto nečíta.</p>\n<p>Ak používate úlohy v Ellipse Team, v tom istom prehľade a v mobile je aj to, čo má ktorý úsek dnes robiť, ktoré úlohy meškajú a ktoré pribudli. Účtovníctvo, predaj a tím sa tým stretnú v jednom ráne. Prevádzka, ktorá čísla dodáva až k DPH, medzitým riadi pocitom. Tá, ktorá má predkontáciu, párovanie platieb a ranný report, riadi včerajškom, kým sa z neho ešte dá stať rozhodnutie.</p>",
+      "categories": [
+        {
+          "id": 107,
+          "name": "Aké HORECA problémy Ellipse rieši"
+        }
+      ]
+    },
+    "update": {
+      "id": 369,
+      "sef": "zaloha-proforma-a-faktura-ktore-o-sebe-vedia-riesenie",
+      "name": "Denné čísla pre vedenie: doklad, úhrada a účtovníctvo musia súhlasiť",
+      "title": "Denné čísla pre vedenie: doklad, úhrada a účtovníctvo musia súhlasiť",
+      "parex_text": "Manažérsky prehľad má byť včasný aj vysvetliteľný. Oddeľte predaj, prijaté peniaze a účtovné spracovanie a kontrolujte ich väzby.",
+      "text": "<p><em>Modelová situácia z hotelovej a HORECA prevádzky. Odporúčaný postup na spoločný rozbor s vaším tímom.</em></p>\n<h2>Situácia na prevádzke</h2><p>Ranný report ukazuje silný predaj, banka inú sumu a účtovníctvo čaká na uzávierku. Rozdiel nemusí byť chyba: môžu ho tvoriť zálohy, oneskorené vysporiadanie kariet alebo neuhradené faktúry. Bez rozlíšenia stavov vedenie interpretuje nesprávne číslo.</p>\n<h2>Čo treba vyriešiť</h2><p>Na začiatku projektu dohodnite význam každého ukazovateľa a mapovanie stredísk, položiek a spôsobov úhrady. Prevod dát do účtovníctva nie je dokončený tým, že ich zdrojový systém odoslal; potrebujete aj potvrdenie prijatia a kontrolu rozdielov.</p>\n<h2>Odporúčaný postup s Ellipse</h2><ol><li>S účtovníctvom nastavte prenosy z PMS a POS na reprezentatívnych dokladoch vrátane záloh, storien a kombinovaných úhrad.</li><li>Ellipse Pay spájajte s konkrétnym účtom a transakciou. Poplatky a čas vysporiadania sledujte oddelene od hrubého predaja.</li><li>V rannom prehľade uveďte čas aktualizácie, rozsah dát a otvorené výnimky. Každému rozdielu priraďte človeka a termín riešenia.</li></ol>\n<h2>Výnimka, na ktorú treba myslieť</h2><p>Odmietnutý export alebo neskorá oprava nesmú ostať iba v technickom logu. Vedenie má vedieť, že časť čísiel ešte čaká na kontrolu, a účtovníctvo má dostať vysvetliteľný opravný tok.</p>\n<h2>Ako overiť prínos</h2><p>Merajte oneskorenie údajov, počet odmietnutých prenosov, nevysporiadané rozdiely a čas uzávierky. Výsledok hodnotíte podľa použiteľnosti rozhodnutí, nie podľa počtu automatických e-mailov.</p>\n<p>Konkrétne prepojenia a rozsah funkcií prejdeme podľa konfigurácie vašej prevádzky. V schéme pod článkom nájdete súvisiace súčasti Ellipse.</p>"
+    },
+    "modules": [
+      "pms",
+      "pos",
+      "pay",
+      "team"
+    ]
+  },
+  {
+    "expected": {
+      "id": 370,
+      "sef": "zlava-ktora-nepretecie-na-portal-riesenie",
+      "name": "Portál má väčšinu rezervácií. Verných hostí si musíte vybudovať sami",
+      "title": "Portál má väčšinu rezervácií. Verných hostí si musíte vybudovať sami",
+      "parex_text": "Pri menších domoch býva osem až deväť rezervácií z desiatich z portálu a vedenie to vzdá. Portál vám klientelu nepostaví. CRM, priama cena a check-in, v ktorom hosťa získate na svoju stranu, vznikli práve na tento nepomer.",
+      "text": "<p>V menších ubytovacích zariadeniach je takmer štandard, že podiel rezervácií z OTA, najmä z Bookingu, prekročí 80 až 90 percent. Vedenie to často popíše ako osud trhu. Keď sa pýtame ďalej, nájdeme skôr rezignáciu alebo nevedomosť, čím sa ten pomer dá pohnúť. Distribučný portál vám izbu predá. Zoznam ľudí, ktorí sa vrátia k vám a nie k nemu, vám nedá. A ani vás k tomu nedonúti. Preto vernosť v Ellipse nie je doplnok k newsletteru. Je to odpoveď na prevádzku, ktorá inak celý rok platí províziu za hostí, ktorých už raz mala v dome.</p>\n<h2>Čo sme na weboch našli ako prvú dieru</h2>\n<p>Prvá vec, ktorú vie spraviť každý, a veľa domov ju aj tak nemá dopovedanú, je cena. Priamu rezerváciu treba finančne zvýhodniť. Parita, ktorú portál kedysi tlačil, dnes neplatí. Priamy pobyt naceníte tak, ako uznáte za vhodné. Druhá vec, na ktorú sa zabúda ešte viac, sú storno podmienky. V potvrdení aj v rozhovore často chýbajú. Hosť nevie, dokedy môže rezerváciu zrušiť, a časť ubytovateľov mu tú možnosť ani nedá, lebo sa boja, že o pobyt prídu.</p>\n<p>Z praxe vieme, že samotné storno často ani nepríde. Ide o pocit pri kúpe. Človek skôr dokončí rezerváciu tam, kde vie, že ešte nie je v pasci. Best practice je povedať mu to vopred a dať mu zrušenie na jeden klik v aplikácii, v lehote, ktorú ste si určili vy. Web booking bez tejto vety prehrá s portálom aj vtedy, keď je izba lacnejšia. Hosť nekupuje len cenu. Kupuje aj možnosť vycúvať.</p>\n<h2>Prečo vzniklo CRM a prečo ho portál nenahradí</h2>\n<p>Ellipse CRM vzniklo preto, že spokojný hosť sa vráti skôr, keď má u vás kredit alebo zvýhodnenie na ďalší pobyt, službu alebo darčekový poukaz. Nie keď má u portálu zľavový kód, ktorý nabudúce použije v inom meste. Kredit sa čerpá u vás. Cashback a vernostné výhody ostávajú v jednom klientskom účte, či hosť spí, je v reštaurácii, alebo kupuje poukaz.</p>\n<p>Karta patrí do Apple Wallet a Google Wallet, do mobilu každého, kto do programu vstúpi. Push notifikácia je dôvod, prečo karta nesmie ostať len obrázkom. Viete hosťovi napísať, že na konte má ešte 15 eur, ktoré mu o 30 dní prepadnú. Na prevádzkach vidíme, že kredit na hranici platnosti sa často zmení na darčekovú poukážku pre známeho, len aby neprepadol. Bez tej vety by ten nákup nevznikol. Poukazový modul a CRM tu musia byť spojené. Inak notifikácia sľubuje kredit, ktorý sa nedá minúť na nič konkrétne.</p>\n<h2>Check-in je miesto, kde portálového hosťa získate</h2>\n<p>Do vernosti ho treba najprv dostať. Najslabšie miesto je e-mail po odchode, ktorý neotvorí. Najsilnejšie je online check-in, ktorým prejde väčšina hostí, aj tých z portálu. Viacerí hoteliéri tam dávajú okamžitý kredit za registráciu, použiteľný ešte počas pobytu. Alebo zľavu v reštaurácii, ak sa hosť z Bookingu zapíše. Self check-in a CRM preto musia byť jeden moment, nie dve kampane. Hosť je v procese, ktorý aj tak musí dokončiť. Registrácia tam nestojí extra návštevu webu.</p>\n<p>Booking.com sám uvádza, že takmer traja z piatich hostí, ktorí si na portáli urobia rezerváciu, si predtým pozrú web hotela. To je okno, nie štatistika na prezentáciu. Ak na webe rezervácia chýba, vrátia sa na portál a dokončia ju tam. Ak tam Web booking je, viete im ukázať cenu, ktorá sa odkryje až po registrácii do vernosti, alebo cenu, ktorú uvidia až po prihlásení. Channel manager k tomu patrí preto, aby ste videli, koľko vám naozaj chodí z portálu a koľko z webu. Bez toho sa nepomer len odhaduje.</p>\n<h2>Čo musí mať priama cesta, aby portal nebol jediná cesta</h2>\n<p>Webový booking musí byť krátky. Málo krokov, bezpečná platba cez Ellipse Pay, okamžité potvrdenie, čitateľné storno. K tomu box, ktorý povie, čo hosť priamou rezerváciou získa. Hotely tam dávajú napríklad parkovanie, lepšie pripojenie, upgrade izby alebo skorší príchod, keď je izba voľná. Bez CRM je to jednorazová zľava. Bez check-inu, v ktorom portálového hosťa pozvete do účtu, je to zľava len pre tých, ktorí vás už aj tak našli sami. Prevádzka, ktorej portál valcuje kalendár, musí mať oboje. Inak každý ďalší spokojný pobyt skončí ako ďalšia provízia, nie ako človek, ktorý sa vie vrátiť napriamo.</p>",
+      "categories": [
+        {
+          "id": 107,
+          "name": "Aké HORECA problémy Ellipse rieši"
+        }
+      ]
+    },
+    "update": {
+      "id": 370,
+      "sef": "zlava-ktora-nepretecie-na-portal-riesenie",
+      "name": "Od spokojného hosťa k priamemu návratu: vernosť bez plošného zlacňovania",
+      "title": "Od spokojného hosťa k priamemu návratu: vernosť bez plošného zlacňovania",
+      "parex_text": "Vernostný program potrebuje zmysluplnú výhodu a jednoduchú priamu rezerváciu. Jeho prínos ukáže návrat hostí po započítaní nákladov odmien.",
+      "text": "<p><em>Modelová situácia z hotelovej a HORECA prevádzky. Odporúčaný postup na spoločný rozbor s vaším tímom.</em></p>\n<h2>Situácia na prevádzke</h2><p>Hosť si pobyt užil, ale ďalšiu rezerváciu urobí opäť cez portál. Hotel má jeho pobyt v PMS, no nemá pripravenú zrozumiteľnú priamu cestu ani dôvod, prečo ju hosť má použiť. Samotný newsletter túto medzeru nemusí vyriešiť.</p>\n<h2>Čo treba vyriešiť</h2><p>Začnite hodnotou pre konkrétny segment: flexibilná podmienka, relevantná služba alebo kredit môže byť vhodnejší než plošná zľava. Výhodu treba jasne vysvetliť a zahrnúť jej cenu do ekonomiky programu.</p>\n<h2>Odporúčaný postup s Ellipse</h2><ol><li>V CRM definujte pravidlá členstva, výhod a čerpania. Účasť v programe aj marketingové oslovenie riešte transparentne podľa príslušných pravidiel.</li><li>Prepojte výhodu s Booking engine a podporovaným hosťovským účtom. Skontrolujte, že sa sľúbený benefit dá skutočne uplatniť.</li><li>Po pobyte nadviažte užitočnou komunikáciou a riešením spätnej väzby. Segmentujte podľa reálnej skúsenosti, nie iba podľa veľkosti databázy.</li></ol>\n<h2>Výnimka, na ktorú treba myslieť</h2><p>Členstvo ani kredit samy osebe nedokazujú dodatočný predaj. Časť hostí by sa vrátila aj bez odmeny; bez porovnania môžete iba dotovať existujúci dopyt.</p>\n<h2>Ako overiť prínos</h2><p>Sledujte opakované pobyty, priamy návrat, čerpanie výhod a príspevok po ich nákladoch. Porovnávajte podobné skupiny a sezóny. Počet registrácií je začiatok, nie výsledok programu.</p>\n<h2>Čo hovorí zahraničný výskum</h2><p>Séria štúdií skúma vzťah zapojenia hostí k spokojnosti, vernosti a voľbe rezervačného kanála na dátach hotelového reťazca a poskytovateľa spätnej väzby.</p><p>Odporúčame merať vzťah a návrat hosťa, nielen registráciu. Z výskumu nevyplýva, že samotné zavedenie kreditov zaručí vyšší priamy predaj.</p><p>Zdroj: <a href=\"https://ecommons.cornell.edu/entities/publication/acce6bef-767f-498b-91b6-7d39048f0ff2\">Customer Engagement: The Key to Long-term Loyalty and Impact</a> — Cornell University, 2021.</p>\n<p>Konkrétne prepojenia a rozsah funkcií prejdeme podľa konfigurácie vašej prevádzky. V schéme pod článkom nájdete súvisiace súčasti Ellipse.</p>"
+    },
+    "modules": [
+      "crm",
+      "booking",
+      "self",
+      "vouchers"
+    ]
+  },
+  {
+    "expected": {
+      "id": 371,
+      "sef": "skupina-obsadi-salu-kalendar-musi-povedat-nie-riesenie",
+      "name": "Rezervácia sál a kapacity: Kalendár, ktorý povie STOP druhej rezervácii",
+      "title": "Rezervácia sál a kapacity: Kalendár, ktorý povie STOP druhej rezervácii",
+      "parex_text": "Dve svadby v ten istý deň na jednej terase? Alebo firemné školenie pre 50 ľudí v miestnosti, kde je opravené kúrenie? Keď sa kapacity strážia v hlave prevádzkara, katastrofa je blízko.",
+      "text": "<article class=\"article-detail\">\n  \n  <p class=\"lead\">Dve svadby v ten istý deň na jednej terase? Alebo firemné školenie pre 50 ľudí v miestnosti, kde je opravené kúrenie? Keď sa kapacity strážia v hlave prevádzkara, katastrofa je blízko.</p>\n  <h2>Každý priestor má svoje limity</h2>\n  <p>Sály, terasy, salóniky aj bowlingové dráhy majú svoju maximálnu kapacitu a časové ohraničenie. Rezervovať ich bez prepojenia s cateringom a ubytovaním vedie k chaosu.</p>\n  <h2>Modul Priestory a Sály v Ellipse</h2>\n  <p>Každá miestnosť v systéme má definovanú kapacitu podľa usporiadania (kino, školská, švédske stoly). Pri pokuse o vytvorenie druhej akcie v rovnakom čase systém okamžite odmietne zápis a upozorní na prekrytie.</p>\n  <ul>\n    <li>Vizuálny kalendár obsadenosti všetkých spoločenských priestorov</li>\n    <li>Evidencia požiadaviek na technické vybavenie (projektor, ozvučenie)</li>\n    <li>Prepojenie na kuchyňu pre načasovanie výdaja stravy</li>\n  </ul>\n</article>",
+      "categories": [
+        {
+          "id": 107,
+          "name": "Aké HORECA problémy Ellipse rieši"
+        }
+      ]
+    },
+    "update": {
+      "id": 371,
+      "sef": "skupina-obsadi-salu-kalendar-musi-povedat-nie-riesenie",
+      "name": "Rezervácie sál: kapacita zahŕňa aj prestavbu, techniku a personál",
+      "title": "Rezervácie sál: kapacita zahŕňa aj prestavbu, techniku a personál",
+      "parex_text": "Kalendár priestorov má chrániť celý čas použitia. Dve akcie sa môžu prevádzkovo prekrývať, aj keď ich program začína v rozdielnych hodinách.",
+      "text": "<p><em>Modelová situácia z hotelovej a HORECA prevádzky. Odporúčaný postup na spoločný rozbor s vaším tímom.</em></p>\n<h2>Situácia na prevádzke</h2><p>Konferencia sa končí popoludní a večer má v rovnakej sále začať svadba. V kalendári medzi nimi zostáva medzera, ale nestačí na demontáž techniky, upratanie a prestavbu stolov. Obchod predal čas, ktorý prevádzka potrebuje na prípravu.</p>\n<h2>Čo treba vyriešiť</h2><p>Priestor má viac kapacít podľa usporiadania a závisí od spoločných zdrojov. Projektor, terasa či obsluha môžu byť limitom aj vtedy, keď sa samotné sály neprekrývajú.</p>\n<h2>Odporúčaný postup s Ellipse</h2><ol><li>V evidencii priestorov definujte vhodné usporiadania, kapacity a čas prípravy aj uvoľnenia.</li><li>Oddeľte nezáväzný dopyt, opciu a potvrdenú rezerváciu. Pri opciách určte termín rozhodnutia.</li><li>Spojte rezerváciu s harmonogramom, technikou a úlohami v Team. Pred potvrdením overte spoločné zdroje a súvisiace služby.</li></ol>\n<h2>Výnimka, na ktorú treba myslieť</h2><p>Zmena počtu účastníkov môže vyžadovať nové usporiadanie aj inú miestnosť. Úpravu preto neobmedzte na prepísanie čísla v ponuke; opätovne overte prevádzkovú uskutočniteľnosť.</p>\n<h2>Ako overiť prínos</h2><p>Sledujte konflikty pred potvrdením aj po ňom, oneskorené odovzdanie sály a využitie predajného času. Neoptimalizujte obsadenosť za cenu nereálnej prestavby medzi akciami.</p>\n<p>Konkrétne prepojenia a rozsah funkcií prejdeme podľa konfigurácie vašej prevádzky. V schéme pod článkom nájdete súvisiace súčasti Ellipse.</p>"
+    },
+    "modules": [
+      "events",
+      "team",
+      "pms"
+    ]
+  },
+  {
+    "expected": {
+      "id": 372,
+      "sef": "zmena-ktora-nie-je-pri-pocitaci-riesenie",
+      "name": "Prevádzka v kapse: Keď manažér, chyžná aj údržbár vidia všetko vo svojom mobile",
+      "title": "Prevádzka v kapse: Keď manažér, chyžná aj údržbár vidia všetko vo svojom mobile",
+      "parex_text": "Manažér je na obednom stretnutí mimo hotela, ale potrebuje zistiť dnešnú obsadenosť. Údržbár je v suteréne a nevie, ktorá izba hlásila nefungujúcu klímu. Zase telefónne ústredňa?",
+      "text": "<article class=\"article-detail\">\n  \n  <p class=\"lead\">Manažér je na obednom stretnutí mimo hotela, ale potrebuje zistiť dnešnú obsadenosť. Údržbár je v suteréne a nevie, ktorá izba hlásila nefungujúcu klímu. Zase telefónne ústredňa?</p>\n  <h2>Moderný hotel sa neriadi od recepčného stola</h2>\n  <p>Ľudia v prevádzke musia byť v teréne medzi hosťami, nie prirastení k monitoru v kancelárii.</p>\n  <h2>Aplikácia Ellipse Team pre smartfóny</h2>\n  <p>Ellipse Team prináša kľúčové funkcie systému priamo do mobilov vášho tímu. Manažér vidí tržby a plachtu, chyžná stav upratovania, údržbár svoje pridelené úlohy a všetci zamestnanci tu evidujú svoju dochádzku.</p>\n  <ul>\n    <li>Priraďovanie a kontrola úloh v reálnom čase s notifikáciami</li>\n    <li>Prehľad ubytovacej plachty a príchodov odkiaľkoľvek</li>\n    <li>Pípanie dochádzky zamestnancov cez mobil bez drahých terminálov</li>\n  </ul>\n</article>",
+      "categories": [
+        {
+          "id": 107,
+          "name": "Aké HORECA problémy Ellipse rieši"
+        }
+      ]
+    },
+    "update": {
+      "id": 372,
+      "sef": "zmena-ktora-nie-je-pri-pocitaci-riesenie",
+      "name": "Prevádzka v mobile: úloha potrebuje vlastníka, termín a potvrdenie výsledku",
+      "title": "Prevádzka v mobile: úloha potrebuje vlastníka, termín a potvrdenie výsledku",
+      "parex_text": "Mobilná aplikácia pomáha vtedy, keď nahradí nejasné odovzdávanie práce. Každá úloha má viesť k overiteľnému výsledku.",
+      "text": "<p><em>Modelová situácia z hotelovej a HORECA prevádzky. Odporúčaný postup na spoločný rozbor s vaším tímom.</em></p>\n<h2>Situácia na prevádzke</h2><p>Recepcia nahlási poruchu klimatizácie do skupinového chatu. Správu si prečíta viac ľudí, no nikto nepotvrdí prevzatie. Manažér sa večer dozvie, že hosť stále čaká. Informácia sa rozšírila, zodpovednosť nie.</p>\n<h2>Čo treba vyriešiť</h2><p>Rozdiel medzi správou a úlohou je v dohode: kto koná, dokedy a čo znamená dokončenie. Ellipse Team má podporiť tento spôsob práce v teréne, nie iba presunúť všetky upozornenia z počítača do vrecka.</p>\n<h2>Odporúčaný postup s Ellipse</h2><ol><li>Rozdeľte roly a oprávnenia. Recepcia, housekeeping, údržba a vedenie potrebujú rozdielny rozsah informácií.</li><li>Pri úlohe uveďte miesto, prioritu, vlastníka a termín. Pre kritické prípady dohodnite aj eskaláciu, ak sa úloha neprevezme.</li><li>Zavádzajte po jednom procese a zaškoľte tím na konkrétnych situáciách. Overte, že dokončenie úlohy sa prejaví aj tam, kde podľa neho rozhoduje recepcia.</li></ol>\n<h2>Výnimka, na ktorú treba myslieť</h2><p>Priveľa notifikácií vedie k ich ignorovaniu. Oddeľte naliehavú poruchu od bežného prehľadu a pripravte postup pre slabé pripojenie či nedostupný telefón.</p>\n<h2>Ako overiť prínos</h2><p>Merajte čas prevzatia a vyriešenia, úlohy po termíne a opätovne otvorené prípady. Počet kliknutí ani prihlásení nie je dôkazom lepšej služby hosťovi.</p>\n<h2>Čo hovorí zahraničný výskum</h2><p>Výskum v hotelierstve spája zmenu správania pracovníkov s kombinovanou formou školenia, nie iba so samostatným technologickým zásahom.</p><p>Pri zavádzaní odporúčame spojiť aplikáciu s praktickým nácvikom. Táto práca nemeria úsporu času housekeepingového modulu.</p><p>Zdroj: <a href=\"https://ecommons.cornell.edu/entities/publication/1d51dc73-0075-4c46-a720-1433dc3fc757\">Changing Behaviors: Improving Customer Service in a Digital-Driven World</a> — Cornell University, diplomová práca Elizabeth M. Martyn, 2018.</p>\n<p>Konkrétne prepojenia a rozsah funkcií prejdeme podľa konfigurácie vašej prevádzky. V schéme pod článkom nájdete súvisiace súčasti Ellipse.</p>"
+    },
+    "modules": [
+      "team",
+      "pms"
+    ]
+  }
+]

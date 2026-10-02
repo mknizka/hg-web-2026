@@ -6,3 +6,6 @@ Thumbs.db
 
 # GitHub limit 100 MB — video zostava len na produkcii
 template/ellipse/video/manager-dashboard.mp4
+
+/editorial-backup/
+/scripts/editorial/__pycache__/

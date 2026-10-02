@@ -1,3 +1,4 @@
+<?php require_once __DIR__.'/hg-editorial.php'; if (hg_is_product_content($content)) { require __DIR__.'/hg-product-page.php'; return; } ?>
   <?php if ($content['id'] == 44):  //PMS ?>
 
       <main class="solution-detail">

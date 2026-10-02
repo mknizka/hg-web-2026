@@ -1,0 +1,100 @@
+[
+  {
+    "key": "pms",
+    "name": "PMS rezervačný systém",
+    "text": "Recepcia, rezervácie a prehľad o hoteli na jednom mieste. Sledujte dostupnosť, pobyty aj účty hostí v spoločných dátach.",
+    "link": "/pms-hotelovy-rezervacny-system/",
+    "img": "hero-pms.webp"
+  },
+  {
+    "key": "booking",
+    "name": "Web booking",
+    "text": "Premeňte návštevníka webu na hosťa. Priame rezervácie, pobytové balíky a doplnkové služby vo vašom vlastnom rezervačnom procese.",
+    "link": "/booking-engine/",
+    "img": "product-originals/web-booking.png"
+  },
+  {
+    "key": "channel",
+    "name": "Channel manager 250+ OTAs + GDS",
+    "text": "Distribuujte ceny a dostupnosť do predajných kanálov. Rezervácie z portálov spracúvajte spoločne s priamym predajom.",
+    "link": "/channel-manager/",
+    "img": ""
+  },
+  {
+    "key": "gastro",
+    "name": "Pokladničné a POS systémy",
+    "text": "Prepojte obsluhu, predaj a skladové hospodárstvo. Od objednávky cez pokladňu až po prehľad o výsledkoch prevádzky.",
+    "link": "/restauracia-gastronomia-skladove-hospodarstvo/",
+    "img": "team-pos.webp"
+  },
+  {
+    "key": "crm",
+    "name": "CRM vernostný systém",
+    "text": "Spoznajte svojich hostí a dajte im dôvod vrátiť sa. Klientske účty, vernostné výhody a kreditné čerpanie služieb v jednom systéme.",
+    "link": "/vernostny-system-a-kreditne-cerpanie-sluzieb/",
+    "img": "product-originals/crm-account.png"
+  },
+  {
+    "key": "services",
+    "name": "Časové rezervácie",
+    "text": "Plánujte služby podľa času a dostupných kapacít. Udržte prehľad v termínoch wellness, procedúr aj ďalších služieb.",
+    "link": "/casove-rezervacie-sluzieb/",
+    "img": ""
+  },
+  {
+    "key": "team",
+    "name": "Ellipse Team",
+    "text": "Majte prevádzku pod kontrolou aj z mobilu. Dôležité prehľady a nástroje pre každodennú prácu tímu máte poruke.",
+    "link": "/majitelsky-modul-a-aplikacie-na-mieru/",
+    "img": "team-1.webp"
+  },
+  {
+    "key": "pos",
+    "name": "Ellipse POS",
+    "text": "Obsluhujte hostí priamo pri stole. Objednávky, rozdelenie účtu, platby aj uzávierky v mobilnej aplikácii.",
+    "link": "/pos-systemy/",
+    "img": "pos/pos2.webp"
+  },
+  {
+    "key": "revenue",
+    "name": "revPRO",
+    "text": "Rozhodujte o cenách podľa obsadenosti a tempa predaja. Prehľady výnosov vám pomôžu reagovať na dopyt.",
+    "link": "/sofistikovany-revenue-modul-ellipse-revpro/",
+    "img": "hero-rev.webp"
+  },
+  {
+    "key": "ella",
+    "name": "Ella chatbot AI",
+    "text": "Odpovedajte hosťom aj vtedy, keď sa recepcia venuje príchodom. Virtuálna recepčná pomáha s otázkami a orientáciou v ponuke.",
+    "link": "/virtualna-recepcna-ella/",
+    "img": ""
+  },
+  {
+    "key": "events",
+    "name": "Kongresový modul",
+    "text": "Pripravujte podujatia, školenia a cenové ponuky prehľadne. Zlaďte priestory, termíny a služby pre každú akciu.",
+    "link": "/eventovy-modul-planovanie-skoleni-a-cenove-ponuky/",
+    "img": ""
+  },
+  {
+    "key": "reviews",
+    "name": "Reviews a messages",
+    "text": "Majte komunikáciu a spätnú väzbu od hostí na jednom mieste. Spracujte recenzie a pripravte odpovede s pomocou AI.",
+    "link": "/hodnotenia-hosti/",
+    "img": ""
+  },
+  {
+    "key": "websites",
+    "name": "Webové stránky",
+    "text": "Predstavte svoju prevádzku a prepojte web s priamym predajom. Dizajn, obsah a rezervácie tvoria jednu cestu pre hosťa.",
+    "link": "/moderne-webove-stranky/",
+    "img": ""
+  },
+  {
+    "key": "mcp",
+    "name": "MCP konektor",
+    "text": "Pýtajte sa na dáta z Ellipse vo svojom AI nástroji. Analyzujte výsledky, porovnávajte scenáre a pripravujte ďalšie kroky.",
+    "link": "/napojte-si-ellipse-data-cez-mcp-konektor-do-sveta-ai-a-vytazte-maximum-z-analyz-a-brainstormingu/",
+    "img": "product-originals/claude-analysis.webp"
+  }
+]

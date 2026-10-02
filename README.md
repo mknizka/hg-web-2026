@@ -31,3 +31,27 @@ git -c safe.directory=$(pwd) add -A
 git -c safe.directory=$(pwd) commit -m "Update templates"
 git -c safe.directory=$(pwd) push
 ```
+
+
+## Preview novej homepage
+
+Aktuálna kumulatívna dizajnová branch:
+
+```
+qa/mobile-performance-v1
+```
+
+Bezpečný staging helper je v `scripts/deploy-staging-preview.sh`. Bez parametra robí iba dry-run:
+
+```bash
+cd /var/www/vhosts/horecagroup.sk/ellipse-web
+bash scripts/deploy-staging-preview.sh
+```
+
+Po kontrole zmien:
+
+```bash
+bash scripts/deploy-staging-preview.sh --apply
+```
+
+Cieľ je iba staging `n.horecagroup.sk/template/`. Produkčný web tento helper nemení.

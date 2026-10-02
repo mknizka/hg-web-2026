@@ -32,8 +32,8 @@
       <h1><?php echo hg_lang('Vaše čísla.<br><em>V Claude, ChatGPT a Gemini.</em>', 'Your numbers.<br><em>In Claude, ChatGPT and Gemini.</em>'); ?></h1>
       <p><?php echo hg_lang('Ellipse pošle do AI aktuálne prevádzkové súčty. Model neodpovedá z internetu. Pri každej otázke si načíta dáta a až potom pripraví analýzu, tabuľku alebo návrh.', 'Ellipse sends current operating totals into the AI. The model does not answer from the internet. For each question it loads the data, then prepares the analysis, table or draft.'); ?></p>
       <div class="prod-actions">
-        <a class="prod-btn" href="/kontakt/"><?php echo hg_lang('Dohodnúť demo', 'Book a demo'); ?> <span>↗</span></a>
-        <a class="prod-link" href="https://www.horecagroup.sk/napojte-si-ellipse-data-cez-mcp-konektor-do-sveta-ai-a-vytazte-maximum-z-analyz-a-brainstormingu/"><?php echo hg_lang('Návod krok za krokom', 'Step by step guide'); ?> →</a>
+        <a class="prod-btn" href="/kontakt/"><?php echo hg_lang('Dohodnúť demo', 'Book a demo'); ?></a>
+        <a class="prod-link" href="https://www.horecagroup.sk/napojte-si-ellipse-data-cez-mcp-konektor-do-sveta-ai-a-vytazte-maximum-z-analyz-a-brainstormingu/"><?php echo hg_lang('Návod krok za krokom', 'Step by step guide'); ?></a>
       </div>
     </div>
     <div class="prod-stage" aria-label="<?php echo hg_lang('Ukážky Claude s dátami Ellipse', 'Claude samples with Ellipse data'); ?>">
@@ -75,7 +75,7 @@
       <li><?php echo hg_lang('Konektor viete globálne vypnúť. Dáta prestanú tiecť hneď.', 'You can switch the connector off globally. The data stops at once.'); ?></li>
       <li><?php echo hg_lang('Výstup je odporúčanie. Rozhodnutie ostáva na manažérovi.', 'The output is advice. The decision stays with the manager.'); ?></li>
     </ul>
-    <a class="prod-btn" href="/kontakt/"><?php echo hg_lang('Ukázať na vašich dátach', 'Show it on your data'); ?> <span>↗</span></a>
+    <a class="prod-btn" href="/kontakt/"><?php echo hg_lang('Ukázať na vašich dátach', 'Show it on your data'); ?></a>
   </section>
 </main>
 <script>
