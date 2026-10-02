@@ -1,0 +1,31 @@
+name: Publish field-experience article expansions
+on:
+  push:
+    branches: [qa/mobile-performance-v1]
+    paths: [docs/editorial/voice-payload.json, .github/workflows/editorial-voice.yml]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: ellipse-rs-editorial
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate expanded articles
+        run: python3 scripts/editorial/validate.py --payload docs/editorial/voice-payload.json
+      - name: Back up, update and verify existing articles
+        env:
+          RS_FEED_TOKEN: ${{ secrets.RS_FEED_TOKEN }}
+        run: python3 scripts/editorial/publish.py --payload docs/editorial/voice-payload.json --apply
+      - name: Preserve backup and verified progress
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ellipse-voice-backup-${{ github.run_id }}
+          path: editorial-backup/
+          if-no-files-found: ignore
+          retention-days: 30

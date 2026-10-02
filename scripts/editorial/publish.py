@@ -26,10 +26,10 @@ def equivalent(row,wanted):
  return all(str(row.get(k,''))==str(wanted[k]) for k in FIELDS)
 
 def main():
- parser=argparse.ArgumentParser();parser.add_argument('--apply',action='store_true');args=parser.parse_args()
+ parser=argparse.ArgumentParser();parser.add_argument('--apply',action='store_true');parser.add_argument('--payload',default='docs/editorial/payload.json');args=parser.parse_args()
  if args.apply and not os.environ.get('RS_FEED_TOKEN'): raise SystemExit('Missing RS_FEED_TOKEN; no writes made')
- records=json.loads((ROOT/'docs/editorial/payload.json').read_text())
- assert len(records)==34 and len({r['update']['id'] for r in records})==34
+ records=json.loads((ROOT/args.payload).read_text())
+ assert records and len({r['update']['id'] for r in records})==len(records)
  def fetch(r):return request('article',r['update']['sef'])
  with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool: current=list(pool.map(fetch,records))
  pending=[]
