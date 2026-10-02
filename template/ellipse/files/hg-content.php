@@ -185,6 +185,7 @@ if (!function_exists('hg_module_from_row')) {
       'href' => '/'.trim((string) $row['sef'], '/').'/',
       'name' => (string) $row['name'],
       'summary' => (string) $row['parex_text'],
+      'seo_title' => (string) ($row['title'] ?? ''),
       'title' => (string) ($meta['detail_title'] ?? $row['title']),
       'body' => (string) ($meta['body'] ?? ''),
       'text' => (string) $row['text'],

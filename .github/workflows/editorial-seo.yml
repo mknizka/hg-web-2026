@@ -1,0 +1,42 @@
+name: Audit sitemap and publish reviewed SEO metadata
+on:
+  push:
+    branches: [qa/mobile-performance-v1]
+    paths: [docs/seo/payload.json, .github/workflows/editorial-seo.yml]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: ellipse-rs-editorial
+  cancel-in-progress: false
+jobs:
+  optimize:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate metadata-only changes
+        run: |
+          python3 - <<'PY'
+          import json
+          rows=json.load(open('docs/seo/payload.json'))
+          assert len(rows)==54 and len({r['update']['id'] for r in rows})==54
+          for r in rows:
+            u,b=r['update'],r['expected']
+            assert u['id']==b['id'] and u['sef']==b['sef'] and u['text']==b['text'] and u['name']==b['name']
+            assert 10<len(u['title'])<90 and 20<len(u['parex_text'])<=240
+          print('54 existing records; no URL or article-body changes')
+          PY
+      - name: Back up and publish reviewed metadata
+        env:
+          RS_FEED_TOKEN: ${{ secrets.RS_FEED_TOKEN }}
+        run: python3 scripts/editorial/publish.py --payload docs/seo/payload.json --apply
+      - name: Audit every sitemap URL
+        run: python3 scripts/editorial/seo_audit.py
+      - name: Preserve original records, verified progress and sitemap audit
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ellipse-seo-audit-${{ github.run_id }}
+          path: editorial-backup/
+          retention-days: 30

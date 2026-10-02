@@ -13,7 +13,8 @@ files = ['files/hg-content.php', 'files/hg-solutions-view.php',
          'js/hg-platform-map.js', 'css/hg-platform-map.css',
          'css/hg-typography.css', 'css/hg-icons.css', 'files/header.php',
          'files/homepage.php', 'files/hg-platform-map.php',
-         'files/hg-module-page.php', 'files/hg-product-page.php']
+         'files/hg-module-page.php', 'files/hg-product-page.php',
+         'files/hg-module-related.php', 'files/hg_site.php']
 # Include shared mobile styles and their cache-versioned consumers.
 ssh = ['ssh', '-o', 'BatchMode=yes', '-o', 'ConnectTimeout=15', '-p',
        os.environ.get('DEPLOY_PORT') or '22',

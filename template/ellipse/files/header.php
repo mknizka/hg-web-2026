@@ -4,11 +4,14 @@
   require_once __DIR__ . '/hg-editorial.php';
   $hgLang = sess('lang') ? sess('lang') : 'sk';
   $hgStaging = hg_is_staging_marketing();
+  $hgInternal = in_array((string)($content['sef'] ?? ''), array('hlavne-menu','footer-menu','kontakt-footer','address-footer','claim-klientov','citaty','ellipse-obsah','moduly-ellipse','koncepty-produktov','segmenty-modulov'), true);
   $hgBase = rtrim(DOMENA_WEBU, '/');
   $hgPath = isset($curpage) ? $curpage : $hgBase.'/';
   $hgPath = preg_replace('/\?.*$/', '', (string)$hgPath);
   $hgProblemArchive = isset($content['blog']) && isset($_GET['tema']) && $_GET['tema'] === 'problemy';
   if ($hgProblemArchive) $hgPath = $hgBase.'/blog/?tema=problemy';
+  $hgSeoTitle=trim((string)($content['title'] ?? '')) ?: (string)($content['name'] ?? 'Ellipse Cloud');
+  if ($hgProblemArchive) $hgSeoTitle='Riešenia z praxe pre hotely a gastro | Ellipse';
   $hgSolution=null;
   if (isset($_GET['riesenie']) && is_string($_GET['riesenie'])) {
     require_once __DIR__.'/hg-solutions-data.php';
@@ -26,15 +29,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title><?php echo hg_esc($hgSolution ? $hgSolution['title'] : ($hgProblemArchive ? 'Aké problémy rieši Ellipse' : ($content['name'] ?? 'Novinky a blog'))); ?> - Ellipse Cloud HORECA GROUP</title>
+    <title><?php echo hg_esc($hgSeoTitle); ?></title>
     <meta name="keywords" content="<?php echo hg_esc(isset($content['keywords']) ? $content['keywords'] : ''); ?>">
     <link href="/img/system/favicon.ico" rel="shortcut icon">
     <meta name="description" content="<?php echo hg_esc(isset($content['description']) ? $content['description'] : ''); ?>">
-    <meta name="robots" content="<?php echo $hgStaging ? 'noindex,nofollow' : 'index,follow'; ?>">
+    <meta name="robots" content="<?php echo $hgStaging ? 'noindex,nofollow' : ($hgInternal ? 'noindex,follow' : 'index,follow'); ?>">
     <link rel="canonical" href="<?php echo hg_esc($hgPath); ?>">
-    <link rel="alternate" hreflang="sk" href="<?php echo hg_esc($hgPath); ?>">
-    <link rel="alternate" hreflang="en" href="<?php echo hg_esc($hgBase.'/lang/en/'); ?>">
-    <link rel="alternate" hreflang="x-default" href="<?php echo hg_esc($hgPath); ?>">
+    <?php /* Add hreflang only when the CMS provides verified reciprocal translations. */ ?>
     <meta name="Generator" content="Ellipse CMS">
     <link type="text/css" rel="stylesheet" href="/template/<?php echo $theme; ?>/css/_theme9.css" media="screen">
     <link type="text/css" rel="stylesheet" href="/template/ellipse/css/ellipse.css?v=20260922s" media="screen">
@@ -51,7 +52,7 @@
       <link type="text/css" rel="stylesheet" href="<?php echo  $content['extra_css'];?>" media="screen">
     <?php endif; ?>
     <meta property="og:locale" content="<?php echo sess("lang"); ?>_<?php echo strtoupper(sess("lang")); ?>" />
-    <meta property="og:title" content="<?php echo  $content['title'];?>" />
+    <meta property="og:title" content="<?php echo hg_esc($hgSeoTitle); ?>" />
     <meta property="og:site_name" content="<?php echo DOMENA_WEBU; ?>" />
     <?php if($content['description'] != ''): ?><meta property="og:description" content="<?php echo  $content['description'];?>" /><?php endif; ?>
 	  <?php if($content['id'] == 164): ?>
@@ -62,11 +63,11 @@
     <meta property="og:image:type" content="image/jpeg" />
     <meta property="og:image:width" content="1920" />
     <meta property="og:image:height" content="1100" />
-    <meta property="og:url" content="<?php echo $curpage; ?>">
+    <meta property="og:url" content="<?php echo hg_esc($hgPath); ?>">
     <script src="/template/js/jquery-1.10.2.js"></script>
     <script src="/template/ellipse/js/ellipse.js?v=20260922s"></script>
     <?php
-      if (isset($content['content_type']) && $content['content_type'] === 'rs' && !empty($content['id']) && !hg_is_product_content($content)) {
+      if (!$hgInternal && isset($content['content_type']) && $content['content_type'] === 'rs' && !empty($content['id']) && !hg_is_product_content($content)) {
         $hgArticleUrl = $hgBase.'/'.trim((string)$content['sef'], '/').'/';
         hg_schema(array(
           array(

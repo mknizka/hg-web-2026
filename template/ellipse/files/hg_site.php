@@ -442,6 +442,23 @@ if (!function_exists('hg_llms_txt')) {
       '- Blog je zdroj aktuálnych návodov a noviniek: '.$base.'/blog/',
       '',
     );
+    // Keep discovery links aligned with published RS content, including later SEF migrations.
+    require_once __DIR__.'/hg-content.php';
+    $start = array_search('## Produkty', $lines, true);
+    if ($start !== false) $lines = array_slice($lines, 0, $start);
+    $lines[] = '## Moduly a produkty';
+    foreach (hg_modules() as $module) {
+      if (empty($module['detail'])) continue;
+      $label = trim($module['seo_title'] ?? '') ?: $module['name'];
+      $lines[] = '- ['.str_replace(array('[',']',"\n","\r"), '', $label).']('.$base.$module['href'].'): '.strip_tags($module['summary']);
+    }
+    $lines[] = '';
+    $lines[] = '## Postupy a príklady z praxe';
+    foreach (hg_solutions() as $solution) {
+      $lines[] = '- ['.str_replace(array('[',']',"\n","\r"), '', $solution['title']).']('.$base.hg_solution_url($solution).')';
+    }
+    $lines[] = '';
+    $lines[] = 'Rozsah funkcií závisí od konfigurácie a podporovaných prepojení. Konkrétne ceny a podmienky poskytuje HORECA GROUP.';
     return implode("\n", $lines);
   }
 }

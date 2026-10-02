@@ -35,7 +35,7 @@
   dialog.dataset.input=event.detail===0?'keyboard':'pointer';
   dialog.querySelector('h2').textContent=tile.textContent;
   dialog.querySelector('.ep-dialog-copy').textContent=tile.dataset.description;
-  const url=new URL(tile.dataset.link,location.origin);url.searchParams.set('prevadzka',sector);
+  const url=new URL(tile.dataset.link,location.origin);
   dialog.querySelector('.ep-cta').href=url.pathname+url.search;
   dialog.showModal();describe(tile);
  }
@@ -61,7 +61,11 @@
   requestAnimationFrame(draw);
  }
  dialog.addEventListener('keydown',()=>{dialog.dataset.input='keyboard';});
- tiles.forEach(t=>t.addEventListener('click',event=>openModule(t,event)));
+ tiles.forEach(t=>t.addEventListener('click',event=>{
+  if(event.ctrlKey||event.metaKey||event.shiftKey||event.altKey)return;
+  if(typeof dialog.showModal!=='function')return;
+  event.preventDefault();openModule(t,event);
+ }));
  window.addEventListener('ellipse:audience',e=>update(e.detail));
  new ResizeObserver(()=>{cancelAnimationFrame(frame);frame=requestAnimationFrame(()=>{network.style.gridTemplateRows=matchMedia('(max-width:600px)').matches?'auto':`repeat(${Math.ceil(sets[sector].length/2)},52px)`;draw()})}).observe(network);
  let saved;try{saved=localStorage.getItem('ellipse-audience');}catch(_){}

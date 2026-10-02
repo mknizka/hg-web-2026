@@ -6,6 +6,7 @@ body .os-home .os-hero .ep-map{display:block!important;position:relative;min-wid
 body .ep-core img{display:block;position:static;width:88px!important;height:auto!important;max-width:100%;margin:0 auto;transform:none!important}
 body .ep-tile{position:relative;z-index:1;display:flex;align-items:center;justify-content:center;box-sizing:border-box;width:100%;height:52px;padding:8px 10px;border:1px solid #dfe6ef;border-radius:12px;background:#fff;color:#081434;font:600 13px/1.3 'Plus Jakarta Sans',sans-serif;cursor:pointer;transition:border-color .2s,box-shadow .2s;animation:ep-enter .65s both;animation-delay:var(--ep-delay,0ms)}
 body .ep-tile[hidden]{display:none!important}
+body a.ep-tile{text-decoration:none;text-align:center}
 body .ep-tile:hover,body .ep-tile[aria-expanded=true]{border-color:#849dbc;box-shadow:0 4px 18px #233e6810;background:#fff}
 .ep-tile:focus-visible{outline:2px solid #365d91;outline-offset:4px}
 .ep-lines{position:absolute;inset:0;width:100%;height:100%;overflow:visible;pointer-events:none}

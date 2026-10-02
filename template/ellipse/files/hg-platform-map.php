@@ -11,7 +11,7 @@ $epId = 'ep-module-'.$epInstance;
     <svg class="ep-lines" aria-hidden="true" focusable="false"></svg>
     <div class="ep-core"><img src="/template/ellipse/img/favicon.svg" width="88" height="77" alt="Ellipse"></div>
     <?php foreach ($platformMap as $m): $epHref = !empty($m['detail']) ? $m['href'] : ($m['link'] !== '' ? $m['link'] : $m['href']); ?>
-    <button class="ep-tile" type="button" data-module="<?php echo hg_esc($m['key']); ?>" data-description="<?php echo hg_esc($m['map_text']); ?>"<?php if (!empty($m['schema_overrides']['wellness'])): ?> data-wellness="<?php echo hg_esc($m['schema_overrides']['wellness']); ?>"<?php endif; ?> data-link="<?php echo hg_esc($epHref); ?>" aria-haspopup="dialog" aria-expanded="false" aria-controls="<?php echo $epId; ?>"<?php if (!in_array($m['key'], $epDefault, true)) echo ' hidden'; ?>><?php echo hg_esc($m['map_name']); ?></button>
+    <a class="ep-tile" href="<?php echo hg_esc($epHref); ?>" data-module="<?php echo hg_esc($m['key']); ?>" data-description="<?php echo hg_esc($m['map_text']); ?>"<?php if (!empty($m['schema_overrides']['wellness'])): ?> data-wellness="<?php echo hg_esc($m['schema_overrides']['wellness']); ?>"<?php endif; ?> data-link="<?php echo hg_esc($epHref); ?>" aria-haspopup="dialog" aria-expanded="false" aria-controls="<?php echo $epId; ?>"<?php if (!in_array($m['key'], $epDefault, true)) echo ' hidden'; ?>><?php echo hg_esc($m['map_name']); ?></a>
     <?php endforeach; ?>
   </div>
   <div class="ep-description"><img class="ep-detail-logo" src="<?php echo hg_esc(hg_asset('ellipse-logo.svg')); ?>" width="150" height="49" alt="Ellipse"><p>Všetko v jednej platforme bez prepájania systémov.</p></div>

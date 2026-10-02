@@ -1,0 +1,142 @@
+[
+  {
+    "id": 240,
+    "source": "/modul-pms/",
+    "target": "/hotelovy-system/",
+    "title": "Hotelový rezervačný systém Ellipse PMS",
+    "status": "server_migration_required"
+  },
+  {
+    "id": 241,
+    "source": "/modul-booking/",
+    "target": "/web-booking/",
+    "title": "Rezervačný systém na web hotela | Ellipse Booking",
+    "status": "server_migration_required"
+  },
+  {
+    "id": 242,
+    "source": "/modul-channel/",
+    "target": "/channel-manager/",
+    "title": "Channel manager pre hotely | Ellipse",
+    "status": "server_migration_required"
+  },
+  {
+    "id": 243,
+    "source": "/modul-pay/",
+    "target": "/online-platby/",
+    "title": "Platobná brána a terminály pre hotely | Ellipse Pay",
+    "status": "server_migration_required"
+  },
+  {
+    "id": 244,
+    "source": "/modul-self/",
+    "target": "/online-check-in/",
+    "title": "Online check-in a samoobslužné ubytovanie | Ellipse",
+    "status": "server_migration_required"
+  },
+  {
+    "id": 245,
+    "source": "/modul-crm/",
+    "target": "/crm-a-vernost/",
+    "title": "Vernostný a CRM systém pre hotely a gastro | Ellipse",
+    "status": "server_migration_required"
+  },
+  {
+    "id": 246,
+    "source": "/modul-team/",
+    "target": "/ellipse-team/",
+    "title": "Housekeeping a riadenie tímu hotela | Ellipse Team",
+    "status": "server_migration_required"
+  },
+  {
+    "id": 247,
+    "source": "/modul-pos/",
+    "target": "/pos-systemy/",
+    "title": "Pokladničný POS systém pre gastro | Ellipse POS",
+    "status": "server_migration_required"
+  },
+  {
+    "id": 248,
+    "source": "/modul-reviews/",
+    "target": "/sprava-recenzii-hotela/",
+    "title": "Správa online recenzií hotela | Ellipse Reviews",
+    "status": "server_migration_required"
+  },
+  {
+    "id": 249,
+    "source": "/modul-messages/",
+    "target": "/komunikacia-s-hostami/",
+    "title": "Komunikácia s hosťami z portálov | Ellipse Messages",
+    "status": "server_migration_required"
+  },
+  {
+    "id": 250,
+    "source": "/modul-vouchers/",
+    "target": "/darcekove-poukazy/",
+    "title": "Predaj a evidencia darčekových poukazov | Ellipse",
+    "status": "server_migration_required"
+  },
+  {
+    "id": 251,
+    "source": "/modul-aqua/",
+    "target": "/vstupy-a-akvaparky/",
+    "title": "Systém pre aquaparky a riadenie vstupov | Ellipse",
+    "status": "server_migration_required"
+  },
+  {
+    "id": 252,
+    "source": "/modul-tables/",
+    "target": "/rezervacie-stolov/",
+    "title": "Rezervačný systém pre stoly v reštaurácii | Ellipse",
+    "status": "server_migration_required"
+  },
+  {
+    "id": 253,
+    "source": "/modul-gastro/",
+    "target": "/restauracia-gastronomia-skladove-hospodarstvo/",
+    "title": "Reštauračný a skladový systém | Ellipse Gastro",
+    "status": "server_migration_required"
+  },
+  {
+    "id": 254,
+    "source": "/modul-services/",
+    "target": "/casove-rezervacie/",
+    "title": "Rezervačný systém pre wellness a služby | Ellipse",
+    "status": "server_migration_required"
+  },
+  {
+    "id": 255,
+    "source": "/modul-revenue/",
+    "target": "/vynosovy-modul-revpro/",
+    "title": "Revenue management a cenotvorba hotela | revPRO",
+    "status": "server_migration_required"
+  },
+  {
+    "id": 256,
+    "source": "/modul-ella/",
+    "target": "/virtualna-recepcia-ella-ai/",
+    "title": "AI chatbot a virtuálna recepcia pre hotel | Ella",
+    "status": "server_migration_required"
+  },
+  {
+    "id": 257,
+    "source": "/modul-events/",
+    "target": "/eventovy-modul-planovanie-skoleni-a-cenove-ponuky/",
+    "title": "Kongresový a eventový systém pre hotely | Ellipse",
+    "status": "server_migration_required"
+  },
+  {
+    "id": 258,
+    "source": "/modul-websites/",
+    "target": "/moderne-webove-stranky/",
+    "title": "Webové stránky pre hotely s rezerváciami | Ellipse",
+    "status": "server_migration_required"
+  },
+  {
+    "id": 259,
+    "source": "/modul-mcp/",
+    "target": "/ellipse-mcp/",
+    "title": "MCP konektor: hotelové dáta v AI nástrojoch | Ellipse",
+    "status": "server_migration_required"
+  }
+]
