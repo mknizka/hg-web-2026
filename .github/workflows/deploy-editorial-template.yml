@@ -1,0 +1,51 @@
+name: Deploy reviewed editorial template
+on:
+  workflow_dispatch:
+  push:
+    branches: [qa/mobile-performance-v1]
+    paths: [.github/workflows/deploy-editorial-template.yml]
+permissions:
+  contents: read
+concurrency:
+  group: ellipse-staging-preview
+  cancel-in-progress: false
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: staging
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Check configured SSH connection
+        env:
+          DEPLOY_KEY: ${{ secrets.STAGING_SSH_PRIVATE_KEY }}
+          DEPLOY_HOST: ${{ secrets.STAGING_SSH_HOST }}
+          DEPLOY_PORT: ${{ secrets.STAGING_SSH_PORT }}
+          DEPLOY_USER: ${{ secrets.STAGING_SSH_USER }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -n "$DEPLOY_KEY" && test -n "$DEPLOY_HOST" && test -n "$DEPLOY_USER" || { echo 'Missing configured SSH deployment credentials'; exit 1; }
+          mkdir -p ~/.ssh
+          chmod 700 ~/.ssh
+          printf '%s\n' "$DEPLOY_KEY" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          ssh-keyscan -T 15 -p "${DEPLOY_PORT:-22}" -H "$DEPLOY_HOST" > ~/.ssh/known_hosts || { echo 'Cannot reach configured SSH host; no server files changed'; exit 1; }
+          ssh -o BatchMode=yes -o ConnectTimeout=15 -p "${DEPLOY_PORT:-22}" "$DEPLOY_USER@$DEPLOY_HOST" 'true'
+      - name: Deploy only reviewed files, stopping on local edits
+        env:
+          DEPLOY_HOST: ${{ secrets.STAGING_SSH_HOST }}
+          DEPLOY_PORT: ${{ secrets.STAGING_SSH_PORT }}
+          DEPLOY_USER: ${{ secrets.STAGING_SSH_USER }}
+          DEPLOY_TARGET: ${{ secrets.STAGING_TEMPLATE_PATH }}
+        run: python3 scripts/editorial/deploy_template.py
+      - name: Preserve previous template files
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: editorial-template-backup-${{ github.run_id }}
+          path: template-backup/
+          if-no-files-found: ignore
+          retention-days: 30

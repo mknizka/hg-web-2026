@@ -1,0 +1,47 @@
+/* A quiet, connected platform map. */
+body .os-home .os-hero{grid-template-columns:minmax(280px,.85fr) minmax(560px,1.15fr);gap:48px}
+body .os-home .os-hero .ep-map{display:block!important;position:relative;min-width:0;width:100%;height:auto!important;min-height:0!important;aspect-ratio:auto;transform:none!important;overflow:visible;padding:0;background:none;border:0;box-shadow:none}
+.ep-network{position:relative;display:grid;grid-template-columns:minmax(0,1fr) 170px minmax(0,1fr);grid-template-rows:repeat(6,52px);gap:14px 26px;align-items:center}
+.ep-core{grid-column:2;grid-row:1/-1;z-index:1;justify-self:center;width:108px;background:#fff;text-align:center;padding:10px}
+body .ep-core img{display:block;position:static;width:88px!important;height:auto!important;max-width:100%;margin:0 auto;transform:none!important}
+body .ep-tile{position:relative;z-index:1;display:flex;align-items:center;justify-content:center;box-sizing:border-box;width:100%;height:52px;padding:8px 10px;border:1px solid #dfe6ef;border-radius:12px;background:#fff;color:#081434;font:600 13px/1.3 'Plus Jakarta Sans',sans-serif;cursor:pointer;transition:border-color .2s,box-shadow .2s;animation:ep-enter .65s both;animation-delay:var(--ep-delay,0ms)}
+body .ep-tile[hidden]{display:none!important}
+body a.ep-tile{text-decoration:none;text-align:center}
+body .ep-tile:hover,body .ep-tile[aria-expanded=true]{border-color:#849dbc;box-shadow:0 4px 18px #233e6810;background:#fff}
+.ep-tile:focus-visible{outline:2px solid #365d91;outline-offset:4px}
+.ep-lines{position:absolute;inset:0;width:100%;height:100%;overflow:visible;pointer-events:none}
+.ep-lines path{fill:none;stroke:#d8e2ef;stroke-width:1.2;stroke-dasharray:1;stroke-dashoffset:0;animation:ep-draw 1s ease both}
+.ep-lines path.is-active{stroke:#6486b3;stroke-width:1.8}
+body .ep-map .ep-description{min-height:120px;box-sizing:border-box;padding:22px 12px 0;text-align:center;max-width:540px;margin:0 auto}
+body .ep-map .ep-description .ep-detail-logo{display:block;position:static;width:150px!important;height:auto!important;max-width:100%;margin:0 auto 12px;transform:none!important}
+body .ep-map .ep-description strong{display:block;min-height:18px;font-size:13px;color:#081434}
+body .ep-map .ep-description p{font-size:13px;line-height:1.65;min-height:0;margin:6px 0;color:#667086}
+body .ep-map .ep-description a{font-size:12px;font-weight:600;color:#254e83;text-decoration:none}
+.ep-description a[hidden]{display:none}
+@keyframes ep-enter{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@keyframes ep-draw{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@media(max-width:1100px){body .os-home .os-hero{grid-template-columns:1fr;gap:40px}body .os-home .os-hero .ep-map{max-width:720px;margin:0 auto}}
+@media(max-width:600px){.ep-network{grid-template-columns:minmax(0,1fr) minmax(0,1fr);grid-template-rows:auto;gap:14px 24px;padding-top:0}.ep-core{grid-column:1/-1;grid-row:1;padding:8px 10px 16px}body .ep-core img{width:72px!important}body .ep-tile{font-size:12px;height:48px}body .ep-map .ep-description{min-height:130px;padding:24px 0 0}body .ep-map .ep-description p{min-height:0}}
+@media(prefers-reduced-motion:reduce){body .ep-tile,.ep-lines path{animation:none;transition:none}}
+body .os-home .ep-map::before,body .os-home .ep-map::after{display:none!important;content:none!important}
+
+/* The modal owns the selection; passing over another tile never changes it. */
+body dialog.ep-dialog{box-sizing:border-box;width:min(520px,calc(100vw - 32px));max-height:calc(100dvh - 40px);margin:auto;padding:48px 40px 40px;border:1px solid #28486e;border-radius:24px;background:#0d2850;color:#fff;box-shadow:0 28px 100px #06132955;text-align:left;overflow:auto}
+body dialog.ep-dialog::backdrop{background:#07152e88;backdrop-filter:blur(5px)}
+body .ep-dialog .ep-close{position:absolute;right:14px;top:10px;width:44px;height:44px;padding:0;border:0;background:transparent;color:#fff;font:300 30px/1 sans-serif;cursor:pointer}
+body .ep-dialog .ep-eyebrow{margin:0 0 16px;color:#b8cce7;font:600 11px/1.5 'Plus Jakarta Sans',sans-serif;letter-spacing:.12em;text-transform:uppercase}
+body .ep-dialog h2{margin:0 0 20px;color:#fff;font:650 clamp(26px,5vw,38px)/1.15 'Plus Jakarta Sans',sans-serif;letter-spacing:-.03em}
+body .ep-dialog .ep-dialog-copy{margin:0 0 30px;color:#e2ebf7;font:400 16px/1.7 'Plus Jakarta Sans',sans-serif}
+body .ep-dialog .ep-cta{display:inline-flex;align-items:center;gap:20px;padding:15px 22px;border-radius:30px;background:#ff004e;color:#fff;font:600 14px/1.4 'Plus Jakarta Sans',sans-serif;text-decoration:none}
+body .ep-dialog :focus-visible{outline:2px solid #fff;outline-offset:4px}
+/* Pointer-opened dialogs must not look as if their close button has a border. */
+body .ep-dialog[data-input="pointer"] .ep-close:focus{outline:none;box-shadow:none}
+body .ep-dialog .ep-close{border:0;box-shadow:none;-webkit-appearance:none;appearance:none}
+body:has(.ep-dialog[open]){overflow:hidden}
+.ep-explore{max-width:1040px;margin:80px auto;padding:0 24px;text-align:center}
+.ep-explore h2{font:650 clamp(28px,4vw,44px)/1.15 'Plus Jakarta Sans',sans-serif;color:#081434;letter-spacing:-.035em;margin:0 0 20px}
+.ep-explore .ep-map{max-width:850px;margin:32px auto 0;min-width:0}
+.ep-sectors{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:24px 0 32px}
+body .ep-sectors button{border:1px solid #dfe6ef;border-radius:24px;background:#fff;color:#081434;padding:12px 16px;font:600 12px/1.4 'Plus Jakarta Sans',sans-serif;cursor:pointer}
+body .ep-sectors button[aria-pressed=true]{background:#0d2850;border-color:#0d2850;color:#fff}
+@media(max-width:600px){body dialog.ep-dialog{padding:52px 24px 28px}.ep-explore{margin:56px auto;padding:0 16px}}

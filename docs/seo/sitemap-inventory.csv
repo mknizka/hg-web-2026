@@ -1,0 +1,373 @@
+url,classification,action,basis
+https://n.horecagroup.sk/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/blog/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/kontakt/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/cennik/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/faq/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/zmena-ktora-nie-je-pri-pocitaci-riesenie/,solution,optimize_title; retain_url,verified sitemap; RS content available
+https://n.horecagroup.sk/skupina-obsadi-salu-kalendar-musi-povedat-nie-riesenie/,solution,optimize_title; retain_url,verified sitemap; RS content available
+https://n.horecagroup.sk/zlava-ktora-nepretecie-na-portal-riesenie/,solution,optimize_title; retain_url,verified sitemap; RS content available
+https://n.horecagroup.sk/zaloha-proforma-a-faktura-ktore-o-sebe-vedia-riesenie/,solution,optimize_title; retain_url,verified sitemap; RS content available
+https://n.horecagroup.sk/host-ostava-este-noc-recepcia-o-tom-vie-az-rano-riesenie/,solution,optimize_title; retain_url,verified sitemap; RS content available
+https://n.horecagroup.sk/host-pise-o-polnoci-recepcia-spi-ella-nie-riesenie/,solution,optimize_title; retain_url,verified sitemap; RS content available
+https://n.horecagroup.sk/majitel-apartmanu-chce-vytazok-nie-pristup-do-plachty-riesenie/,solution,optimize_title; retain_url,verified sitemap; RS content available
+https://n.horecagroup.sk/upratana-izba-o-ktorej-recepcia-naozaj-vie-riesenie/,solution,optimize_title; retain_url,verified sitemap; RS content available
+https://n.horecagroup.sk/dve-rezervacie-na-jednej-posteli-riesenie/,solution,optimize_title; retain_url,verified sitemap; RS content available
+https://n.horecagroup.sk/kongres-ktory-obsadi-salu-aj-izby-naraz-riesenie/,solution,optimize_title; retain_url,verified sitemap; RS content available
+https://n.horecagroup.sk/kredit-na-cipe-namiesto-hotovosti-v-areali-riesenie/,solution,optimize_title; retain_url,verified sitemap; RS content available
+https://n.horecagroup.sk/permanentka-ktora-sa-neda-pozicat-na-slovo-riesenie/,solution,optimize_title; retain_url,verified sitemap; RS content available
+https://n.horecagroup.sk/wellness-ktore-nejde-rezervovat-cez-recepciu-riesenie/,solution,optimize_title; retain_url,verified sitemap; RS content available
+https://n.horecagroup.sk/sklad-ktory-sa-hybe-s-tym-co-ste-predali-riesenie/,solution,optimize_title; retain_url,verified sitemap; RS content available
+https://n.horecagroup.sk/vecera-na-izbovy-ucet-rano-jeden-odchod-riesenie/,solution,optimize_title; retain_url,verified sitemap; RS content available
+https://n.horecagroup.sk/priamy-predaj-ktory-nezaostava-za-portalom-riesenie/,solution,optimize_title; retain_url,verified sitemap; RS content available
+https://n.horecagroup.sk/koniec-roka-a-tisice-expirovanych-poukazov-riesenie/,solution,optimize_title; retain_url,verified sitemap; RS content available
+https://n.horecagroup.sk/darcekovy-poukaz-ktory-sa-da-predat-uplatnit-aj-najst-riesenie/,solution,optimize_title; retain_url,verified sitemap; RS content available
+https://n.horecagroup.sk/integracia-orsr-ares-a-vies/,integration,review_content_before_indexing,verified sitemap; not crawled individually
+https://n.horecagroup.sk/integracia-google-wallet/,integration,review_content_before_indexing,verified sitemap; not crawled individually
+https://n.horecagroup.sk/integracia-apple-wallet/,integration,review_content_before_indexing,verified sitemap; not crawled individually
+https://n.horecagroup.sk/integracia-deepl/,integration,review_content_before_indexing,verified sitemap; not crawled individually
+https://n.horecagroup.sk/integracia-whatsapp/,integration,review_content_before_indexing,verified sitemap; not crawled individually
+https://n.horecagroup.sk/integracia-mitto/,integration,review_content_before_indexing,verified sitemap; not crawled individually
+https://n.horecagroup.sk/integracia-dibal/,integration,review_content_before_indexing,verified sitemap; not crawled individually
+https://n.horecagroup.sk/integracia-ocr/,integration,review_content_before_indexing,verified sitemap; not crawled individually
+https://n.horecagroup.sk/integracia-dahua/,integration,review_content_before_indexing,verified sitemap; not crawled individually
+https://n.horecagroup.sk/integracia-magichome/,integration,review_content_before_indexing,verified sitemap; not crawled individually
+https://n.horecagroup.sk/integracia-seawing/,integration,review_content_before_indexing,verified sitemap; not crawled individually
+https://n.horecagroup.sk/integracia-loxone/,integration,review_content_before_indexing,verified sitemap; not crawled individually
+https://n.horecagroup.sk/integracia-keyguru/,integration,review_content_before_indexing,verified sitemap; not crawled individually
+https://n.horecagroup.sk/integracia-ttlock/,integration,review_content_before_indexing,verified sitemap; not crawled individually
+https://n.horecagroup.sk/integracia-nuki/,integration,review_content_before_indexing,verified sitemap; not crawled individually
+https://n.horecagroup.sk/integracia-salto/,integration,review_content_before_indexing,verified sitemap; not crawled individually
+https://n.horecagroup.sk/integracia-dormakaba/,integration,review_content_before_indexing,verified sitemap; not crawled individually
+https://n.horecagroup.sk/integracia-assa-abloy-visionline/,integration,review_content_before_indexing,verified sitemap; not crawled individually
+https://n.horecagroup.sk/integracia-peppol-e-faktura/,integration,review_content_before_indexing,verified sitemap; not crawled individually
+https://n.horecagroup.sk/integracia-spin/,integration,review_content_before_indexing,verified sitemap; not crawled individually
+https://n.horecagroup.sk/integracia-tangram/,integration,review_content_before_indexing,verified sitemap; not crawled individually
+https://n.horecagroup.sk/integracia-oberon/,integration,review_content_before_indexing,verified sitemap; not crawled individually
+https://n.horecagroup.sk/integracia-navision/,integration,review_content_before_indexing,verified sitemap; not crawled individually
+https://n.horecagroup.sk/integracia-helios/,integration,review_content_before_indexing,verified sitemap; not crawled individually
+https://n.horecagroup.sk/integracia-omega-kros/,integration,review_content_before_indexing,verified sitemap; not crawled individually
+https://n.horecagroup.sk/integracia-money-s4/,integration,review_content_before_indexing,verified sitemap; not crawled individually
+https://n.horecagroup.sk/integracia-money-s3/,integration,review_content_before_indexing,verified sitemap; not crawled individually
+https://n.horecagroup.sk/integracia-pohoda/,integration,review_content_before_indexing,verified sitemap; not crawled individually
+https://n.horecagroup.sk/integracia-sorp-llarik/,integration,review_content_before_indexing,verified sitemap; not crawled individually
+https://n.horecagroup.sk/integracia-fiskalpro/,integration,review_content_before_indexing,verified sitemap; not crawled individually
+https://n.horecagroup.sk/integracia-portos/,integration,review_content_before_indexing,verified sitemap; not crawled individually
+https://n.horecagroup.sk/integracia-pax/,integration,review_content_before_indexing,verified sitemap; not crawled individually
+https://n.horecagroup.sk/integracia-global-payments/,integration,review_content_before_indexing,verified sitemap; not crawled individually
+https://n.horecagroup.sk/integracia-pay-by-square/,integration,review_content_before_indexing,verified sitemap; not crawled individually
+https://n.horecagroup.sk/integracia-blik/,integration,review_content_before_indexing,verified sitemap; not crawled individually
+https://n.horecagroup.sk/integracia-besteron/,integration,review_content_before_indexing,verified sitemap; not crawled individually
+https://n.horecagroup.sk/integracia-tatrapay/,integration,review_content_before_indexing,verified sitemap; not crawled individually
+https://n.horecagroup.sk/integracia-viva-com/,integration,review_content_before_indexing,verified sitemap; not crawled individually
+https://n.horecagroup.sk/integracia-gp-webpay/,integration,review_content_before_indexing,verified sitemap; not crawled individually
+https://n.horecagroup.sk/integracia-google-hotels/,integration,review_content_before_indexing,verified sitemap; not crawled individually
+https://n.horecagroup.sk/integracia-expedia/,integration,review_content_before_indexing,verified sitemap; not crawled individually
+https://n.horecagroup.sk/integracia-booking-com/,integration,review_content_before_indexing,verified sitemap; not crawled individually
+https://n.horecagroup.sk/domova-kniha-a-statistika-bez-nedelnhost-prepisovania/,solution,optimize_title; retain_url,verified sitemap; RS content available
+https://n.horecagroup.sk/platba-priide-na-ucet-rezervacia-o-tom-este-nevie/,solution,optimize_title; retain_url,verified sitemap; RS content available
+https://n.horecagroup.sk/opytate-sa-vlastnych-cisel-cez-mcp/,solution,optimize_title; retain_url,verified sitemap; RS content available
+https://n.horecagroup.sk/nove-jedlo-na-listok-s-ai-kalkulaciou/,solution,optimize_title; retain_url,verified sitemap; RS content available
+https://n.horecagroup.sk/viete-predajnu-cenu-food-cost-az-po-mesiaci/,solution,optimize_title; retain_url,verified sitemap; RS content available
+https://n.horecagroup.sk/qr-na-stole-objednavka-ucet-doklad-tringelt/,solution,optimize_title; retain_url,verified sitemap; RS content available
+https://n.horecagroup.sk/virtualna-karta-z-portalu-bez-prepisovania/,solution,optimize_title; retain_url,verified sitemap; RS content available
+https://n.horecagroup.sk/kartu-chcete-pri-rezervacii-peniaze-az-ked-pride/,solution,optimize_title; retain_url,verified sitemap; RS content available
+https://n.horecagroup.sk/revpro-tempo-predaja-a-dynamicke-ceny/,solution,optimize_title; retain_url,verified sitemap; RS content available
+https://n.horecagroup.sk/jedna-izba-pat-portalov-ziadna-duplicita/,solution,optimize_title; retain_url,verified sitemap; RS content available
+https://n.horecagroup.sk/domova-kniha-bez-osobneho-stretnutia/,solution,optimize_title; retain_url,verified sitemap; RS content available
+https://n.horecagroup.sk/podujatie-so-stropom/,solution,optimize_title; retain_url,verified sitemap; RS content available
+https://n.horecagroup.sk/firemny-host-a-efaktura/,solution,optimize_title; retain_url,verified sitemap; RS content available
+https://n.horecagroup.sk/bezkontaktna-platba-a-doklad-ktory-host-dostane/,solution,optimize_title; retain_url,verified sitemap; RS content available
+https://n.horecagroup.sk/hotel-s-aquaparkom-jeden-areal-jeden-cip/,solution,optimize_title; retain_url,verified sitemap; RS content available
+https://n.horecagroup.sk/nocny-prichod-bez-recepcie/,solution,optimize_title; retain_url,verified sitemap; RS content available
+https://n.horecagroup.sk/modul-mcp/,module,optimize_metadata; migrate_with_301,verified sitemap; RS content available
+https://n.horecagroup.sk/modul-websites/,module,optimize_metadata; migrate_with_301,verified sitemap; RS content available
+https://n.horecagroup.sk/modul-events/,module,optimize_metadata; migrate_with_301,verified sitemap; RS content available
+https://n.horecagroup.sk/modul-ella/,module,optimize_metadata; migrate_with_301,verified sitemap; RS content available
+https://n.horecagroup.sk/modul-revenue/,module,optimize_metadata; migrate_with_301,verified sitemap; RS content available
+https://n.horecagroup.sk/modul-services/,module,optimize_metadata; migrate_with_301,verified sitemap; RS content available
+https://n.horecagroup.sk/modul-gastro/,module,optimize_metadata; migrate_with_301,verified sitemap; RS content available
+https://n.horecagroup.sk/modul-tables/,module,optimize_metadata; migrate_with_301,verified sitemap; RS content available
+https://n.horecagroup.sk/modul-aqua/,module,optimize_metadata; migrate_with_301,verified sitemap; RS content available
+https://n.horecagroup.sk/modul-vouchers/,module,optimize_metadata; migrate_with_301,verified sitemap; RS content available
+https://n.horecagroup.sk/modul-messages/,module,optimize_metadata; migrate_with_301,verified sitemap; RS content available
+https://n.horecagroup.sk/modul-reviews/,module,optimize_metadata; migrate_with_301,verified sitemap; RS content available
+https://n.horecagroup.sk/modul-pos/,module,optimize_metadata; migrate_with_301,verified sitemap; RS content available
+https://n.horecagroup.sk/modul-team/,module,optimize_metadata; migrate_with_301,verified sitemap; RS content available
+https://n.horecagroup.sk/modul-crm/,module,optimize_metadata; migrate_with_301,verified sitemap; RS content available
+https://n.horecagroup.sk/modul-self/,module,optimize_metadata; migrate_with_301,verified sitemap; RS content available
+https://n.horecagroup.sk/modul-pay/,module,optimize_metadata; migrate_with_301,verified sitemap; RS content available
+https://n.horecagroup.sk/modul-channel/,module,optimize_metadata; migrate_with_301,verified sitemap; RS content available
+https://n.horecagroup.sk/modul-booking/,module,optimize_metadata; migrate_with_301,verified sitemap; RS content available
+https://n.horecagroup.sk/modul-pms/,module,optimize_metadata; migrate_with_301,verified sitemap; RS content available
+https://n.horecagroup.sk/zmena-ktora-nie-je-pri-pocitaci/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/skupina-obsadi-salu-kalendar-musi-povedat-nie/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/zlava-ktora-nepretecie-na-portal/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/zaloha-proforma-a-faktura-ktore-o-sebe-vedia/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/host-ostava-este-noc-recepcia-o-tom-vie-az-rano/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/domova-kniha-a-statistika-bez-nedelneho-prepisovania/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/platba-pride-na-ucet-rezervacia-o-tom-este-nevie/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/opytate-sa-vlastnych-cisel-nie-vseobecneho-modelu/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/host-pise-o-polnoci-recepcia-spi-ella-nie/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/majitel-apartmanu-chce-vytazok-nie-pristup-do-plachty/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/upratana-izba-o-ktorej-recepcia-naozaj-vie/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/dve-rezervacie-na-jednej-posteli/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/kongres-ktory-obsadi-salu-aj-izby-naraz/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/kredit-na-cipe-namiesto-hotovosti-v-areali/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/permanentka-ktora-sa-neda-pozicat-na-slovo/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/wellness-ktore-nejde-rezervovat-cez-recepciu/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/sklad-ktory-sa-hybe-s-tym-co-ste-predali/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/nove-jedlo-na-listok-bez-vecera-s-kalkulackou/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/viete-predajnu-cenu-food-cost-viete-az-po-mesiaci/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/vecera-na-izbovy-ucet-rano-jeden-odchod/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/qr-na-stole-objednavka-ucet-doklad-aj-tringelt/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/virtualna-karta-z-portalu-ktoru-nemusite-prepisovat-do-terminalu/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/kartu-chcete-pri-rezervacii-peniaze-az-ked-host-pride/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/zajtrajsok-sa-predava-pomaly-cennik-o-tom-este-nevie/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/priamy-predaj-ktory-nezaostava-za-portalom/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/jedna-izba-pat-portalov-a-ziadna-dvojita-rezervacia/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/hosta-nevidite-udaje-do-domovej-knihy-ano/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/podujatie-so-stropom-ked-tridsiata-vstupenka-uz-nema-miesto/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/koniec-roka-a-tisice-expirovanych-poukazov/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/darcekovy-poukaz-ktory-sa-da-predat-uplatnit-aj-najst/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/firemny-host-a-e-faktura-ktora-neostane-v-e-maile-recepcie/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/bezkontaktna-platba-a-doklad-ktory-host-naozaj-dostane/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/hotel-s-aquaparkom-jeden-areal-tri-typy-hosti-jeden-cip/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/nocny-prichod-bez-recepcie-rezervacia-z-portalu-vchod-aj-izba/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/vojtech-lenart-revon-apartments/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/anna-jurinova-galicia-nueva/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/ellipse-cloud/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/adrian-villa-beelvita/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/adam-kasanicky-tatrystay/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/andrej-petras-turcianske-kupele/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/andrej-kolar-damian-jasna/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/tomas-sokologorsky-hotel-grand-viglas/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/janka-lopusekova-hotel-mamut/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/casove-rezervacie/,product_target,merge_relevant_content_before_URL_migration,verified sitemap; not crawled individually
+https://n.horecagroup.sk/skladove-hospodarstvo/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/taskovaci-system/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/kongresovy-modul/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/online-checkin/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/efektivna-komunikacia/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/webove-stranky/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/vstupy-a-akvaparky/,product_target,merge_relevant_content_before_URL_migration,verified sitemap; not crawled individually
+https://n.horecagroup.sk/crm-a-vernost/,product_target,merge_relevant_content_before_URL_migration,verified sitemap; not crawled individually
+https://n.horecagroup.sk/online-platby/,product_target,merge_relevant_content_before_URL_migration,verified sitemap; not crawled individually
+https://n.horecagroup.sk/pos-systemy/,product_target,merge_relevant_content_before_URL_migration,verified sitemap; not crawled individually
+https://n.horecagroup.sk/virtualna-recepcia-ella-ai/,product_target,merge_relevant_content_before_URL_migration,verified sitemap; not crawled individually
+https://n.horecagroup.sk/vynosovy-modul-revpro/,product_target,merge_relevant_content_before_URL_migration,verified sitemap; not crawled individually
+https://n.horecagroup.sk/channel-manager/,product_target,merge_relevant_content_before_URL_migration,verified sitemap; not crawled individually
+https://n.horecagroup.sk/web-booking/,product_target,merge_relevant_content_before_URL_migration,verified sitemap; not crawled individually
+https://n.horecagroup.sk/hotelovy-system/,product_target,merge_relevant_content_before_URL_migration,verified sitemap; not crawled individually
+https://n.horecagroup.sk/virtualna-recepcna-ella/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/prve-vysledky-z-praxe-potvrdzuju-predpoklady-s-revpro-modulom-zarabate-viac-bez-ohladu-na-velkost-ubytovania/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/novinky-a-aktualizacie-v-juni-2025-nove-moznosti-skladu-vyroba-prehladnejsie-inventury-zameny-tovaru-nove-crm-konto-klienta-dobijanie-kreditu-vernostny-system/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/budujeme-silny-vernostny-crm-system-na-co-nezabudnut-a-ako-sa-inspirovat-od-uspesnych-prikladov-vernostnych-systemov-vo-svete/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/niektore-horeca-systemy-vam-umoznia-vytvorit-receptury-v-ellipse-vam-optimalizujeme-receptury-s-umelou-inteligenciou-aby-ste-optimalizovali-zisk-a-setrili-drahocenny-cas/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/analyzujete-si-nakupy-a-ceny/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/qr-kodove-objednavanie-od-stola-s-rychlym-uzatvaranim-dokladov-google-pay-apple-pay-fiskalny-doklad-tringelty-aj-pri-platbe-od-stola/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/cloudove-pms-je-riesenim-buducnosti-pre-hotelierov/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/registracia-na-zasielanie-noviniek/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/ked-tempo-predaja-nie-je-len-cislo-ale-strategia/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/moderny-trend-v-revenue-manazmente-sa-presuva-zo-sledovania-adr-na-ukazovatel-revpag-preco-by-ste-ho-mali-sledovat-aj-vy/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/novinky-a-aktualizacie-v-maji-2025-vylepsenia-taskovaci-system-novinky-revenue-nastroj-ellipse-revpro-foodie-a-qr-objednavky-od-stola-kiosk-ellipse-s-digitalnymi-pinmi-a-platbou-kartou/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/datalayer-v-systeme-ellipse/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/buducnost-horeca-managementu-dostupna-uz-dnes/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/technologie-pre-vsetkych/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/inteligentne-upozornenie-na-duplicitnu-rezervaciu-v-systeme-ellipse/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/sofistikovany-revenue-modul-ellipse-revpro/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/vedeli-ste-ze-v-revenue-module-pro-vyuzivame-pokrocile-analyticke-modely-pri-identifikacii-market-sentimentu/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/umela-inteligencia-meni-hru-v-hotelierstve/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/inovacie-v-cestovnom-ruchu/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/odbornici-napreduju-vdaka-inovaciam/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/novinky-v-systeme-ellipse-pocas-februara-2025-statisticky-vykaz-pre-statisticky-urad-pobytove-poukazy-exporty-prehladov-ekasovych-dokladov-s-rekapitulaciou-dph/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/automatizacia-statistickych-vykazov-a-prehlad-neuplnych-udajov/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/online-konzultacia-zdarma/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/novy-taskovaci-system-priamo-v-hotelovom-systeme-ellipse-majte-svoju-prevadzku-pod-kontrolou/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/menime-sadzby-dph-na-prelome-roka-2025-postup-krok-za-krokom-k-uspesnemu-nastaveniu/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/spojenie-tradicie-a-technologie-moze-viest-az-k-titulu-hotelier-roka/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/ako-nastavit-rozne-cenove-hladiny-v-systeme-ellipse-pre-zlavy-zamestnancov-a-vip-hosti/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/zlepsujete-sluzby-booking-com-upravuje-hodnotenie-podla-veku-recenzii/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/marketingovy-modul-priamo-v-hotelovom-systeme-ellipse-prinasa-unikatnu-vizualizaciu-vasich-dat-z-online-kampani/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/webova-stranka-hotela-ako-nastroj-na-zlepsenie-zakaznickej-skusenosti/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/ake-su-trendy-pre-hotelierov-na-rok-2025-co-sa-meni-v-ubytovani-a-cestovani/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/villa-betula-zavadza-rozne-digitializacie-aj-vdaka-systemu-ellipse/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/ai-v-odvetvi-hotelierstva-bat-sa-ho-vyuzivat-ai-co-ai-dokaze-nahradit-a-kde-sa-bez-manazera-nezaobide/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/automatizovane-sms-pripomienky-pre-casove-rezervacie-sluzieb-minimalizujeme-noshow/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/google-hotel-ads-a-ppc-kampane-sa-navzajom-doplnaju/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/zvyste-efektivitu-svojho-hotela-o-50/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/preco-je-cloudovy-pms-system-klucom-k-uspechu-modernych-hotelov-odpoved-je-neuprosna-digitalizacia-v-horeca-segmente/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/personalizovane-cenove-ponuky-inteligentne-schovavanie-rejtov-automaticke-sms-pri-casovych-rezervaciach/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/majte-nastavene-limity/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/profesionalna-cenova-ponuka-na-mieru-pre-kazdeho-hosta/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/pocas-leta-presiel-system-ellipse-upgradom/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/podporte-predaj-vdaka-moznosti-ktoru-ponuka-priamo-ellipse-cloud/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/vytvorte-si-rychlo-a-lahko-podklady-pre-event-v-kongresovom-module/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/smart-pokladnicne-riesenia-pre-vas-biznis/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/revolucne-riesenie-pre-kazde-hotelove-podujatie/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/plnohodnotny-online-checkin-so-scanom-dokladu-a-verifikaciou-hosta/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/phishingove-utoky-cez-portal-booking-com-uz-aj-na-slovensku-ako-sa-voci-nim-branit/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/novy-online-checkin-nove-casove-rezervacie-interne-splity-v-hotelovom-systeme/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/paymaster-uhrada-na-pokladni-duplikacie-uctov-rozsirene-api-pre-externe-systemy-manazersky-report/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/poznate-dovody-preco-si-vybrat-prave-hotelovy-system-ellipse-cloud/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/umela-inteligencia-v-hotelovom-systeme-ellipse-portalove-riesenia-cez-api-napojenie-na-kiosky-automaticke-spracovanie-push-platieb-v-online-vyzve-na-uhradu-pobytu/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/novy-prehlad-dokladov-hromadne-natazovanie-poloziek-skupinovej-rezervacii-zuctovanie-uhradenej-proforma-faktury-na-klik-celkova-cena-vo-web-bookingu/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/hromadne-presuny-skupinovych-rezervacii-hromadne-zmeny-cien-v-hotelovych-uctoch-permanentky-filter-izieb-v-hotelovej-plachte-podla-stavu-upratania-izby/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/novinky-v-kongresovom-module-novy-mobilny-casnik-nove-pripojene-portaly-do-channel-managera/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/automaticke-natazovanie-povinnych-poplatkov-novy-sposob-vytvarania-rezervacie-hotelovy-ucet-deleny-na-pobytove-dni/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/pravidelne-online-skolenia-a-seminare/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/planovanie-poziadaviek-hosti-a-pripomienky-k-pobytom/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/google-hotels-naozaj-funguje-ukrojte-20-40-z-portalovych-rezervacii-a-privedte-klientov-priamo-na-vas-web-booking-ako-na-to/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/viber-a-sms-notifikacie-ciastocna-uhrada-pobytov-minlos-previazane-s-pobytovymi-balickami/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/gdpr/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/vop/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/automaticke-uctovanie-vynosov-z-hoteloveho-systemu-ellipse-ake-mame-moznosti-co-vsetko-je-mozne-prenasat-ake-typy-prenosov-system-ponuka/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/zariadenia-fiskalpro-su-prepojene-s-hotelovym-a-restauracnym-systemom-ellipse/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/inteligentne-zamkove-a-pristupove-systemy-s-moznostou-pristupu-na-pin-kod/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/uspesna-integracia-zariadeni-fiskalpro-s-hotelovym-a-restauracnym-systemom-ellipse/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/integracia-ekasy-a-zariadeni-fiskalpro-so-systemom-ellipse/,integration,review_content_before_indexing,verified sitemap; not crawled individually
+https://n.horecagroup.sk/integracia-inteligentnych-kluciek-a-ellipse-pre-plne-automatizovane-ubytovavanie/,integration,review_content_before_indexing,verified sitemap; not crawled individually
+https://n.horecagroup.sk/smart-placing-novych-rezervacii-v-hotelovej-plachte/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/zvyraznenie-ponuky-vo-web-bookingu-a-promo-zlavove-kody-vo-web-bookingu/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/predavajte-priamo-na-google-a-zvyste-podiel-priamych-rezervacii/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/aktualizacie-a-novinky-v-systeme/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/automaticke-zaokruhlovanie-v-ekase-prepojene-polozky-pokladne-vratne-obaly/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/modul-na-predaj-vstupeniek-s-generovanim-qr-kodu-a-automatickym-zasielanim/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/predlzenie-a-skratenie-pobytov-v-plachte-affiliate-program-a-odporucania-s-qr-kodom/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/google-hotels-automaticke-vyplnanie-udajov-firiem-overenie-ic-dph-novy-dashboard/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/nove-prehlady-eshopu-a-foodie-prehladnejsi-report-predanych-kalkulacii-a-poloziek/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/novy-typ-zuctovania-sluzby-elektronicke-bony-tajny-pobytovy-balik/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/novy-web-booking-optimalizovany-pre-google-rychle-vyhladavanie-osob-vratne-obaly-na-kase/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/nove-automatizacie-pokladne-nastavenie-preferencii-pouzivatelov-pokladne/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/prepojene-izby-a-jednoduchsia-cenotvorba-cookies-lista-vynosove-strediska/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/automaticke-uctovanie-a-prenos-do-omega-kros-zametnanecky-konzum-a-interna-spotreba/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/permanentky-a-ich-uplatnenie-na-kase/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/komplexny-update-pokladne-zrychlenie-tlace-api-bankove-vypisy/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/ekasa/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/update-pokladne-pri-povinnom-zaokruhlovani-od-01-jula-2022/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/online-predaj-vstupenie-eshop-na-predaj-listkov-s-automatickym-generovanim-a-zasielanim-vstupenie-s-qr-kodom-a-danovym-dokladom/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/automatizacia-uctovnictva-minimalizacia-chyb-a-preklepov-kontrola-platnosti-ic-dph-a-vysmiate-ekonomicke-oddelenie/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/odborne-skolenie-v-oblasti-vynosoveho-manazmentu-ako-spravne-vyuzit-potencial-systemu-ellipse-ako-predavat-ubytovanie-efektivne-a-zarobit-viac/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/e-shopove-riesenie-a-online-obchod-uz-aj-v-hoteli-alebo-restauracii/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/update-pokladne-rychlejsia-praca-menej-klikov-nove-sposoby-platby-a-prepojenie-na-crm-system/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/novy-modul-foodie-room-service-qr-kody-v-restauracii/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/parovanie-banky/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/automaticke-prepojenie-systemu-ellipse-na-bankovy-ucet-a-parovanie-platieb/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/komplexne-vyuzitie-systemu-ellipse-v-ajurvedskom-institute-raj-zdravia/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/vernostny-system-a-kreditne-cerpanie-sluzieb/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/eventovy-modul-planovanie-skoleni-a-cenove-ponuky/,product_target,merge_relevant_content_before_URL_migration,verified sitemap; not crawled individually
+https://n.horecagroup.sk/restauracia-gastronomia-skladove-hospodarstvo/,product_target,merge_relevant_content_before_URL_migration,verified sitemap; not crawled individually
+https://n.horecagroup.sk/rezervacie-kurzov-jogy-podujati-a-skupinovych-cviceni/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/casove-rezervacie-sluzieb/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/podpora/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/novy-septembrovy-update-novy-modul-pre-rezervacie-podujati-a-eventov-nove-funkcionality-a-automatizacie/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/system-ellipse-cloud-vyuzity-ako-cestovny-portal-pre-ubytovania-v-roznych-lokalitach/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/prehladny-chessboard-s-okamzitou-editaciou-cien-vsetkych-typov-izieb/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/skladove-hospodarstvo-a-restauracia/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/umoznite-hostom-doplnat-si-doplnkove-sluzby-aj-po-vytvoreni-online-rezervacie-na-webe-upselling-priamo-v-sprave-rezervacie-zo-strany-hosti/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/novy-update-ellipse-cloud-16-februara-priniesol-mnozstvo-noviniek/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/ako-funguje-channel-manager-preco-by-som-ho-mal-pouzivat/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/sluzba-ellipse-pay-vam-ulahci-spracovanie-platieb-za-pobyty-sluzby-faktury/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/manazersky-dashboard-plny-praktickych-informacii-a-prehladov/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/karta-zakaznika-v-detaile-kazdej-rezervacie-vam-prinasa-lepsi-nahlad-na-stalych-hosti/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/nasi-zakaznici/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/kontakt-pre-partnerov/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/affiliate-program/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/hodnotenia-hosti/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/timi-booking-engine-pre-rezervacie-sluzieb/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/roomie/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/on-board/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/online-check-in/,product_target,merge_relevant_content_before_URL_migration,verified sitemap; not crawled individually
+https://n.horecagroup.sk/automaticky-mailing/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/majitelsky-modul-a-aplikacie-na-mieru/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/pickup-dashboard-a-vynosovy-manazment/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/pms-hotelovy-rezervacny-system/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/room-availability-and-flexi-rates-in-web-booking-calendar/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/prehlad-zakaznickych-kariet-v-kazdom-detaile-rezervacie-vam-prinasa-uzitocne-informacie/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/timi-web-booking-for-your-services/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/get-our-channel-manager-for-free/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/otvorene-api/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/onboard-application/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/roomie-application/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/modern-websites-and-cms/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/crm-system/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/moderne-webove-stranky/,product_target,merge_relevant_content_before_URL_migration,verified sitemap; not crawled individually
+https://n.horecagroup.sk/napojte-sa-na-rezervacnu-platformu-bookio-a-predavajte-na-17-predajnych-kanaloch-sucasne/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/cloud-based-property-management-system/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/booking-engine/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/try-it-for-free/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/ellipse-cloud-all-in-one-riesenie-pre-ubytovatelov-a-restauracie/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/hlavne-menu/,internal_cms,exclude_from_sitemap; noindex_follow,verified sitemap; not crawled individually
+https://n.horecagroup.sk/footer-menu/,internal_cms,exclude_from_sitemap; noindex_follow,verified sitemap; not crawled individually
+https://n.horecagroup.sk/povinne-info/,internal_cms,exclude_from_sitemap; noindex_follow,verified sitemap; not crawled individually
+https://n.horecagroup.sk/cookies/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/terms-and-conditions/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/contact/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/blog-a-novinky/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/kontakt-footer/,internal_cms,exclude_from_sitemap; noindex_follow,verified sitemap; not crawled individually
+https://n.horecagroup.sk/address-footer/,internal_cms,exclude_from_sitemap; noindex_follow,verified sitemap; not crawled individually
+https://n.horecagroup.sk/ellipse-pms/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/booking-engine-web-booking/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/about-us/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/value-added/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/references/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/solutions/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/smart-pms/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/website-builder/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/pricing/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/website-design/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/novinky/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/updates/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/websites-pricing/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/web-booking-pms/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/online-check-in-and-onboard-app/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/online-payments/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/automated-mailing/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/rental-business-and-owner-module/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/open-api/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/info/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/podpora-a-hotline/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/aktualizacie/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/marketingovy-modul/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/novinky-a-blog/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/automatizacie/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/hotelovy-manazment/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/inovacie/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/upsell-a-cross-sell/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/ai-v-hotelierstve/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/typy-podnikov/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/rezorty-a-aquaparky/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/hotely-a-penziony/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/mali-ubytovatelia-a-prenajimanie/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/gastro-a-restauracie/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/wellness-sluzby-fitness/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/riesenia/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/online-ai-recepcia-ella/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/pos-a-restauracie/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/crm-a-komplexna-vernost/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/manazment-vstupov/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/claim-klientov/,internal_cms,exclude_from_sitemap; noindex_follow,verified sitemap; not crawled individually
+https://n.horecagroup.sk/citaty/,internal_cms,exclude_from_sitemap; noindex_follow,verified sitemap; not crawled individually
+https://n.horecagroup.sk/ako-ellipse-pomaha/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/ellipse-obsah/,internal_cms,exclude_from_sitemap; noindex_follow,verified sitemap; not crawled individually
+https://n.horecagroup.sk/ake-horeca-problemy/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/moduly-ellipse/,internal_cms,exclude_from_sitemap; noindex_follow,verified sitemap; not crawled individually
+https://n.horecagroup.sk/integracie/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/koncepty-produktov/,internal_cms,exclude_from_sitemap; noindex_follow,verified sitemap; not crawled individually
+https://n.horecagroup.sk/segmenty-modulov/,internal_cms,exclude_from_sitemap; noindex_follow,verified sitemap; not crawled individually
+https://n.horecagroup.sk/channel-manager-a-online-rezervacie/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/platobne-brany/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/platobne-terminaly/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/fiskalne-pokladne/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/uctovnictvo-a-erp/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/elektronicka-fakturacia/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/zamkove-systemy/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/inteligentna-budova/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/pristupove-systemy-a-rfid/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/kamerove-systemy/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/ocr-sken-dokladov/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/vahy/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/komunikacia-s-hostami/,product_target,merge_relevant_content_before_URL_migration,verified sitemap; not crawled individually
+https://n.horecagroup.sk/preklady/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/digitalne-penazenky/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually
+https://n.horecagroup.sk/overenie-firiem/,existing_page_or_archive,retain_URL; review_language_duplicates_content,verified sitemap; not crawled individually

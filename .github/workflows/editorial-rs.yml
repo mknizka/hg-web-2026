@@ -1,0 +1,35 @@
+name: Publish reviewed Ellipse case articles
+on:
+  push:
+    branches: [qa/mobile-performance-v1]
+    paths: [docs/editorial/payload.json, .github/workflows/editorial-rs.yml]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: ellipse-rs-editorial
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate payload
+        run: python3 scripts/editorial/validate.py
+      - name: Back up and update existing articles
+        env:
+          RS_FEED_TOKEN: ${{ secrets.RS_FEED_TOKEN }}
+        run: python3 scripts/editorial/publish.py --apply
+      - name: Synchronize short descriptions
+        env:
+          RS_FEED_TOKEN: ${{ secrets.RS_FEED_TOKEN }}
+        run: python3 scripts/editorial/descriptions.py
+      - name: Preserve backup and verified progress
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ellipse-editorial-backup-${{ github.run_id }}
+          path: editorial-backup/
+          if-no-files-found: ignore
+          retention-days: 30

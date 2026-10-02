@@ -1,0 +1,480 @@
+[
+  {
+    "id": 1,
+    "slug": "nocny-prichod-bez-recepcie",
+    "title": "Nočný príchod bez recepcie: Keď si hoteliér chce v noci konečne pospať",
+    "lead": "Na jednom zo stretnutí s majiteľom boutique hotela nám povedal vetu, ktorú počúvame od hoteliérov takmer na každej káve: „O desiatej večer recepciu zatvárame, ale ja mám potom celú noc telefón na nočnom stolíku a tŕpnem, kedy zavolá niekto z Bookingu...“",
+    "description": "Ako vyriešiť nočný príchod hosťa z akéhokoľvek kanála bez nočnej smeny, bez obálkového systému a bez drahých investícií do nového hardvéru.",
+    "keywords": "nočná recepcia, self check-in, PIN zámok, kiosk, channel manager, Ellipse",
+    "roles": [
+      "Hoteliér",
+      "Recepčný"
+    ],
+    "html": "<article class=\"article-detail\">\n  <h1>Nočný príchod bez recepcie: Keď si hoteliér chce v noci konečne pospať</h1>\n  <p class=\"lead\">Na jednom zo stretnutí s majiteľom boutique hotela v centre mesta nám povedal vetu, ktorú počúvame od hoteliérov takmer na každej káve: <em>„O desiatej večer recepciu zatvárame, ale ja mám potom celú noc telefón na nočnom stolíku a tŕpnem, kedy zavolá niekto z Bookingu, že stojí pred bránou.“</em></p>\n  <h2>Čo na prevádzkach vidíme dennodenne</h2>\n  <p>Často sa na osobných stretnutiach zamýšľame nad tým, ako funguje noc na slovenskom a českom trhu. Hosť má potvrdenie z portálu, no dvere hotela sú zamknuté. Na sklenených dverách visí ručne napísaný odkaz s telefónnym číslom. V tom lepšom prípade zdvihne nočný strážnik, ktorý však nevidí do plachty, netuší, či je pobyt uhradený, a kľúč hľadá v zásuvke na druhej strane objektu.</p>\n  <p>Ešte častejšie vídame na prevádzkach obálkový systém: recepčná nechá obálku s kľúčom na pultíku alebo v nechránenej schránke. Ráno potom tím na recepcii hodinu dohľadáva, či hosť zaplatil, prečo nesedí hotovosť a do účtovníctva sa dostane len kus papiera s vetou <em>„v noci niekto prišiel“</em>.</p>\n  <h2>Ako sme našli riešenie bez vyhadzovania drahého hardvéru</h2>\n  <p>Snažili sme sa pre našich partnerov nájsť riešenie, pri ktorom by nemuseli búrať vchodové dvere, vyhadzovať existujúce smart kľučky ani platiť drahú nočnú zmenu. Zamysleli sme sa a prepojili celý tok do jedného plynulého systému:</p>\n  <ul>\n    <li><strong>Jedno miesto pre všetky rezervácie:</strong> Je jedno, či rezervácia prišla z Booking.com, vášho webu alebo e-mailu od firemného klienta. Všetky sedia v jednej plachte Ellipse.</li>\n    <li><strong>Podnet pred príchodom:</strong> Hosťovi príde vopred odkaz na online check-in. Vybaví doklady, podpíše sa prstom na displeji a systém mu automaticky pošle platobnú výzvu.</li>\n    <li><strong>Pripojenie na existujúci hardvér:</strong> Keď je pobyt uhradený, Ellipse vygeneruje PIN kód a pošle ho priamo na váš existujúci zámok (Nuki, TTLock, Assa Abloy, Loxone či KeyGuru). Ak máte kiosk, hosť si kód preberie na ňom.</li>\n  </ul>\n  <h2>Ráno bez ranného pátrania pre ekonomický úsek</h2>\n  <p>Keď sa ráno o siedmej otvorí recepcia, ranná smena nezačína telefonátmi a hľadaním obálok. Pobyt je zapísaný, platba je spárovaná a hosť už spí v izbe. Bezobslužná noc u nás nie je žiadna zbytočná externá aplikácia – je to logické poradie krok za krokom.</p>\n</article>",
+    "cover": ""
+  },
+  {
+    "id": 2,
+    "slug": "hotel-s-aquaparkom-jeden-areal-jeden-cip",
+    "title": "Hotel s aquaparkom: Ako sme v jednom areáli zrušili tri rôzne pokladne a tri náramky",
+    "lead": "Keď sme prvýkrát sedeli s prevádzkarom veľkého rezortu s bazénmi, ukázal nám hrubý zväzok plastových kariet a papierových náramkov: „Hoteloví hostia nosia modrý náramok, denných návštevníkov značíme červeným a do reštaurácie im dávame kartičku. Pri pokladniach vznikajú neustále hádky.“",
+    "description": "Spájame ubytovanie, denný vstup do bazénov, gastro a vernostný kredit do jediného RFID čipu.",
+    "keywords": "aquapark, RFID, vernostný kredit, vstupy, hotel, Ellipse",
+    "roles": [
+      "Hoteliér",
+      "Prevádzkar Wellness/Aquaparku",
+      "Manažér reštaurácie"
+    ],
+    "html": "<article class=\"article-detail\">\n  <h1>Hotel s aquaparkom: Ako sme v jednom areáli zrušili tri rôzne pokladne a tri náramky</h1>\n  <p class=\"lead\">Keď sme prvýkrát sedeli s prevádzkarom veľkého rezortu s bazénmi, ukázal nám hrubý zväzok plastových kariet a papierových náramkov: <em>„Hoteloví hostia nosia modrý náramok, denných návštevníkov značíme červeným a do reštaurácie im dávame kartičku. Pri pokladniach vznikajú neustále hádky.“</em></p>\n  <h2>Chaos pri bráne a tri rôzne systémy</h2>\n  <p>Na prevádzkach takýchto rezortov vídame rovnaký scenár: dopoludnia stoja hoteloví hostia v rade s ľuďmi z mesta, lebo recepcia a vstup do aquaparku bežia na dvoch rôznych softvéroch. V lete sa stane, že hosť platí dvakrát, alebo vy neviete, koľko ľudí sa reálne nachádza v bazénovej časti.</p>\n  <p>Najväčšie straty však vznikajú v gastro prevádzkach. Keď hosť v plavkách nemá pri sebe peňaženku, radšej si drink pri bazénovom bare nekúpi, alebo si ho napíše na fiktívne číslo izby, ktoré si obsluha narýchlo zapíše na papierik.</p>\n  <h2>Jeden RFID čip pre celý zážitok</h2>\n  <p>Zamysleli sme sa nad tým, ako zjednotiť prevádzku tak, aby hosť dostal pri príchode len jeden jediný čip (náramok alebo kartu) a vybavené:</p>\n  <ul>\n    <li><strong>Prepojenie turniketu a plachty:</strong> Hotelovému hosťovi sa vstup automaticky aktivuje pri check-ine. Turniket ho pustí bez pýtania.</li>\n    <li><strong>Bezkontaktná konzumácia:</strong> V bufete či reštaurácii pípne čipom. Účet pretečie buď priamo na hotelovú izbu, alebo sa odpočíta z predplateného kreditu.</li>\n    <li><strong>Samoobslužný kiosk pre verejnosť:</strong> Návštevníci z mesta si kúpia lístok na kiosku alebo online cez web. Na vstupe len naskenujú QR kód a dostanú čip.</li>\n  </ul>\n  <h2>Výsledok? Vyššia útrata na hosťa a nulové manká</h2>\n  <p>Keď sme tento model nasadili, obsluha pri bazéne prestala riešiť vetu <em>„Ste z hotela?“</em>. Čítačka vidí všetko za sekundu a hostia míňajú viac, lebo platenie čipom je pohodlné a rýchle.</p>\n</article>",
+    "cover": ""
+  },
+  {
+    "id": 3,
+    "slug": "bezkontaktna-platba-a-doklad-ktory-host-dostane",
+    "title": "Bezkontaktná platba: Koniec papierikov, ktoré končia v koši, a stratených bločkov pre firmy",
+    "lead": "Často na prevádzkach vidíme čašníkov, ktorí pobehujú s dvoma terminálmi v ruke, hľadajú rolu papieru do tlačiarne a hosť medzitým odchádza s vetou: „Bloček mi pošlite e-mailom.“",
+    "description": "Ako bezkontaktnú platbu pri stole okamžite prepojiť s eKasou a doručiť doklad elektronicky.",
+    "keywords": "eKasa, elektronický doklad, bezkontaktná platba, QR doklad, pokladňa, Ellipse",
+    "roles": [
+      "Manažér reštaurácie",
+      "Účtovník"
+    ],
+    "html": "<article class=\"article-detail\">\n  <h1>Bezkontaktná platba: Koniec papierikov, ktoré končia v koši, a stratených bločkov pre firmy</h1>\n  <p class=\"lead\">Často na prevádzkach vidíme čašníkov, ktorí pobehujú s dvoma terminálmi v ruke, hľadajú rolu papieru do tlačiarne a hosť medzitým odchádza s vetou: <em>„Bloček mi pošlite e-mailom.“</em></p>\n  <h2>Rýchla platba, ale diera v pokladni</h2>\n  <p>Na osobných stretnutiach s manažérmi reštaurácií často riešime situáciu, keď zákazník zaplatí cez mobilný terminál alebo SoftPOS, pípne kartou, no účet v pokladni ostane otvorený. Na konci zmeny čašník zistí, že má peniaze na účte, ale nezúčtované položky v eKase.</p>\n  <h2>Ako to spájame v Ellipse</h2>\n  <p>Pripravili sme plynulý tok: platba na mobile/termináli okamžite uzavrie účet v eKase (Portos, FiskalPRO) a vygeneruje elektronický doklad s QR kódom. Hosť si doklad jednoducho odfotí telefónom alebo mu odíde e-mailom. Žiadne tlačenie zbytočných papierov, ktoré aj tak skončia v koši.</p>\n  <ul>\n    <li>Okamžité uzavretie účtu a fiškalizácia v sekunde úhrady</li>\n    <li>Digitálny doklad cez QR kód alebo e-mail</li>\n    <li>Podpora mobilných čašníkov a SoftPOS terminálov priamo v teréne</li>\n  </ul>\n</article>",
+    "cover": ""
+  },
+  {
+    "id": 4,
+    "slug": "firemny-host-a-efaktura",
+    "title": "Firemný hosť a e-faktúra: Prečo už ekonómky nemusia utápať nedeľu v šanónoch",
+    "lead": "Často vidíme na prevádzkach plnú kanceláriu ekonómiek a zamestnancov, ktorí dennodenne prekladajú papiere, ručne prepisujú IČO z Booking účteniek do účtovníctva a produkujú nové a nové šanóny pre archív.",
+    "description": "Prepojenie pobytového účtu s automatickým overením IČ DPH, proformou a priamym exportom do účtovných softvérov.",
+    "keywords": "e-faktúra, IČ DPH, proforma, Omega, Kros, firemný účet, Ellipse",
+    "roles": [
+      "Hoteliér",
+      "Účtovník"
+    ],
+    "html": "<article class=\"article-detail\">\n  <h1>Firemný hosť a e-faktúra: Prečo už ekonómky nemusia utápať nedeľu v šanónoch</h1>\n  <p class=\"lead\">Často vidíme na prevádzkach plnú kanceláriu ekonómiek a zamestnancov, ktorí dennodenne prekladajú papiere, ručne prepisujú IČO z Booking účteniek do účtovníctva a produkujú nové a nové šanóny pre archív.</p>\n  <h2>Pondelkové ráno na účtovni</h2>\n  <p>Na stretnutí s hlavnou ekonómkou veľkého kongresového hotela nám ukázala svoj stôl: <em>„V piatok odišla firemná akcia na 50 izieb. V pondelok ráno mám v e-maile 30 správ od ich asistentiek. Jedna chce faktúru na inú dcérsku firmu, druhá tvrdí, že zálohu už poslali, a tretia žiada e-faktúru s presným rozpisom DPH.“</em></p>\n  <h2>Čo sme v Ellipse spravili pre zrušenie ručného prepisovania</h2>\n  <p>Povedali sme si, že systém musí prácu ľuďom šetriť, nie ju vyrábať. Preto sme účtovný tok prepojili priamo s hotelovým pobytom a gastro účtom:</p>\n  <ul>\n    <li><strong>Automatické overenie firmy:</strong> Pri vytváraní rezervácie zadá recepčná alebo hosť len IČO – systém si vytiahne presný názov firmy aj IČ DPH z registra. Žiadne preklepy v názvoch s.r.o.</li>\n    <li><strong>Proforma a faktúra viazané na účet:</strong> Proforma odíde ako záloha pred pobytom. Po odchode vznikne vyúčtovacia faktúra automaticky zo všetkého, čo sa reálne vyčerpalo.</li>\n    <li><strong>Priamy export bez papierov:</strong> Jedným klikom vyexportujete celé obdobie priamo do účtovných softvérov ako Omega, Kros, Pohoda či Navision.</li>\n  </ul>\n</article>",
+    "cover": ""
+  },
+  {
+    "id": 5,
+    "slug": "darcekovy-poukaz-ktory-sa-da-predat-uplatnit-aj-najst",
+    "title": "Darčekové poukazy: Ako urobiť z papierových obálok funkčný a prehľadný predajný kanál",
+    "lead": "„Predáme stovky poukazov na Vianoce, ale v júni nám hostia nosia pokrčené papiere a my v recepčnej knihe hľadáme, či už boli zaplatené,“ opisoval nám situáciu riaditeľ wellness hotela.",
+    "description": "Automatizácia online predaja poukazov s prehľadným stavom čerpania v CRM a okamžitým uplatnením na recepcii.",
+    "keywords": "darčekový poukaz, voucher, platnosť, CRM, online predaj, Ellipse",
+    "roles": [
+      "Hoteliér",
+      "Recepčný",
+      "Účtovník"
+    ],
+    "html": "<article class=\"article-detail\">\n  <h1>Darčekové poukazy: Ako urobiť z papierových obálok funkčný a prehľadný predajný kanál</h1>\n  <p class=\"lead\"><em>„Predáme stovky poukazov na Vianoce, ale v júni nám hostia nosia pokrčené papiere a my v recepčnej knihe hľadáme, či už boli zaplatené,“</em> opisoval nám situáciu riaditeľ wellness hotela.</p>\n  <h2>Keď darčekový poukaz vyrobí dvojitú tržbu alebo stratu</h2>\n  <p>Problém nastáva pri účtovaní. Často sa poukaz zaúčtuje pri predaji a pri uplatnení ho recepcia odpíše ako zľavu, čím vznikne chaos v eKase aj v daniach. Poukaz nie je len pekná grafika, je to cenina a záväzok.</p>\n  <h2>V Ellipse má každý poukaz jasný životný cyklus</h2>\n  <ul>\n    <li><strong>Predaj online na par klikov:</strong> Hosť si kúpi poukaz na vášom webe, zaplatí kartou a okamžite dostane PDF s jedinečným QR kódom.</li>\n    <li><strong>Prepojenie s CRM a pobytom:</strong> Pri uplatnení na recepcii stačí naskenovať QR kód. Systém ihneď overí platnosť, uhradenú sumu a odpočíta hodnotu z hotelového účtu.</li>\n    <li><strong>Jasné stavy:</strong> Nový, Uhradený, Čiastočne čerpaný, Vyčerpaný alebo Expirovaný. Žiadne dohľadávanie v Exceli.</li>\n  </ul>\n</article>",
+    "cover": ""
+  },
+  {
+    "id": 6,
+    "slug": "koniec-roka-a-tisice-expirovanych-poukazov",
+    "title": "Koniec roka a expirované poukazy: Čo s peniazmi, ktoré ostali v šuplíku?",
+    "lead": "„Každý január riešime rovnakú dilemu. Máme desiatky expirovaných poukazov. Sú to už naše peniaze? Môžeme hosťovi predĺžiť termín, alebo ho máme odmietnuť?“ pýta sa nás často manažment na poradách.",
+    "description": "Prehľadné účtovné a prevádzkové vyrovnanie expirovaných voucherov bez konfliktov s hosťami.",
+    "keywords": "expirovaný poukaz, nevyužitý voucher, uzávierka, CRM, Ellipse",
+    "roles": [
+      "Hoteliér",
+      "Účtovník"
+    ],
+    "html": "<article class=\"article-detail\">\n  <h1>Koniec roka a expirované poukazy: Čo s peniazmi, ktoré ostali v šuplíku?</h1>\n  <p class=\"lead\"><em>„Každý január riešime rovnakú dilemu. Máme desiatky expirovaných poukazov. Sú to už naše peniaze? Môžeme hosťovi predĺžiť termín, alebo ho máme odmietnuť?“</em> pýta sa nás často manažment na poradách.</p>\n  <h2>Pravidlá namisto rozhodnutí pri pultíku</h2>\n  <p>Ak nemá recepcia jasný stav v systéme, každý recepčný rozhodne inak. Jeden hosťovi vyhovie, druhého vyhodí. Vy potom strácate verných zákazníkov aj prehľad v účtovníctve.</p>\n  <h2>Riešenie v Ellipse CRM</h2>\n  <p>V Ellipse vidíte presný výkaz nevyčerpaných poukazov k určitému dátumu. Systém vám umožní automaticky preklopiť expirované poukazy do mimoriadnych výnosov podľa platnej legislatívy, alebo nastaviť schválené predĺženie s doplatkom priamo pri poukaze.</p>\n  <ul>\n    <li>Presný prehľad o nevyčerpaných sumách pre uzávierku</li>\n    <li>Možnosť riadenej výnimky s evidenciou dôvodu</li>\n    <li>Automatické notifikácie hosťom pred vypršaním platnosti</li>\n  </ul>\n</article>",
+    "cover": ""
+  },
+  {
+    "id": 7,
+    "slug": "podujatie-so-stropom",
+    "title": "Podujatie so stropom: Keď tridsiata vstupenka už naozaj nemá stoličku",
+    "lead": "Keď organizujete degustáciu vína, koncert na terase alebo kurz jogy, kapacity sú nekompromisné. Na stretnutiach s prevádzkarmi často počujeme príbehy o tom, ako predali 40 lístkov na akciu pre 30 ľudí.",
+    "description": "Sledovanie kapacity podujatí v reálnom čase s online predajom lístkov a okamžitou stopkou pri naplnení.",
+    "keywords": "podujatie, kapacita, vstupenka, časová rezervácia, Ellipse",
+    "roles": [
+      "Manažér reštaurácie",
+      "Prevádzkar Wellness/Aquaparku"
+    ],
+    "html": "<article class=\"article-detail\">\n  <h1>Podujatie so stropom: Keď tridsiata vstupenka už naozaj nemá stoličku</h1>\n  <p class=\"lead\">Keď organizujete degustáciu vína, koncert na terase alebo kurz jogy, kapacity sú nekompromisné. Na stretnutiach s prevádzkarmi často počujeme príbehy o tom, ako predali 40 lístkov na akciu pre 30 ľudí, lebo rezervácie prijímali cez Instagram, e-mail aj telefón súčasne.</p>\n  <h2>Chaos v správach a stoličky na chodbe</h2>\n  <p>Prijímať rezervácie na akcie „do zápisníka“ vždy skončí rovnako. Hosť príde na miesto, stôl pre neho neexistuje a večer plný zážitkov začína trapasom.</p>\n  <h2>Vstupy pod kontrolou Ellipse Eventy</h2>\n  <ul>\n    <li><strong>Prepojený kalendár a online predaj:</strong> Vytvoríte akciu, určíte kapacitu (napr. 30 miest) a dáte link na web.</li>\n    <li><strong>Okamžitá platba a garancia:</strong> Hosť si kúpi lístok online. V momente, keď sa predá 30. miesto, systém automaticky zatvorí predaj na všetkých kanáloch.</li>\n    <li><strong>Rýchla kontrola pri vchode:</strong> Obsluha na vstupe naskenuje QR kód z mobilu hosťa pomocou aplikácie v telefóne.</li>\n  </ul>\n</article>",
+    "cover": ""
+  },
+  {
+    "id": 8,
+    "slug": "domova-kniha-bez-osobneho-stretnutia",
+    "title": "Hosťa nevidíte, ale údaje v domovej knihe máte na 100 % v poriadku",
+    "lead": "Pri prenajímaní apartmánov alebo bezobslužných penziónov sa nás majitelia pýtajú: „Ako mám dodržať zákony a evidenciu cudzincov, keď kľúč odovzdávam cez schránku a s hosťom sa vôbec nestretnem?“",
+    "description": "Zber dokladov, osobných údajov a podpisov cez online check-in s automatickým generovaním domovej knihy.",
+    "keywords": "online check-in, domová kniha, doklad totožnosti, krátkodobé ubytovanie, Ellipse",
+    "roles": [
+      "Hoteliér",
+      "Recepčný",
+      "Účtovník"
+    ],
+    "html": "<article class=\"article-detail\">\n  <h1>Hosťa nevidíte, ale údaje v domovej knihe máte na 100 % v poriadku</h1>\n  <p class=\"lead\">Pri prenajímaní apartmánov alebo bezobslužných penziónov sa nás majitelia pýtajú: <em>„Ako mám dodržať zákony a evidenciu cudzincov, keď kľúč odovzdávam cez schránku a s hosťom sa vôbec nestretnem?“</em></p>\n  <h2>Riziko pokút a chýbajúce doklady</h2>\n  <p>Nechať hostí vyplniť papierovú prihlášku v izbe nefunguje – polovicu údajov neprečítate, doklady chýbajú a cudzinecká polícia pri kontrole neakceptuje odpoveď <em>„neviem, kto tam spalo“</em>.</p>\n  <h2>Online check-in ako zákonný filter</h2>\n  <p>Pred príchodom dostane hosť odkaz. Cez mobil odfotí doklad totožnosti, skontroluje vytiahnuté údaje, doplní adresu a podpis napíše prstom na obrazovku. Údaje spadnú priamo do Ellipse domovej knihy. Až keď sú údaje kompletné, systém uvoľní PIN kód k izbe.</p>\n  <ul>\n    <li>Kompletné overenie totožnosti pred odovzdaním kľúčov</li>\n    <li>Automatický export pre Cudzineckú políciu a Štatistický úrad</li>\n    <li>Súlad s GDPR a bezpečné uloženie dát</li>\n  </ul>\n</article>",
+    "cover": ""
+  },
+  {
+    "id": 9,
+    "slug": "jedna-izba-pat-portalov-ziadna-duplicita",
+    "title": "Jedna izba, päť portálov a koniec nočnej mory zvanej Overbooking",
+    "lead": "„Zažil som situáciu, keď o ôsmej večer prišli dvaja hostia na tú istú izbu. Jedna rezervácia bola z Booking.com, druhá z nášho webu. Musel som im platiť taxík a drahší hotel vedľa,“ spomína hoteliér z Tatier.",
+    "description": "Obojstranná synchronizácia dostupnosti v reálnom čase cez integratívny Channel Manager.",
+    "keywords": "channel manager, Booking.com, dostupnosť, duplicitná rezervácia, web booking, Ellipse",
+    "roles": [
+      "Hoteliér",
+      "Recepčný"
+    ],
+    "html": "<article class=\"article-detail\">\n  <h1>Jedna izba, päť portálov a koniec nočnej mory zvanej Overbooking</h1>\n  <p class=\"lead\"><em>„Zažil som situáciu, keď o ôsmej večer prišli dvaja hostia na tú istú izbu. Jedna rezervácia bola z Booking.com, druhá z nášho webu. Musel som im platiť taxík a drahší hotel vedľa,“</em> spomína hoteliér z Tatier.</p>\n  <h2>Keď manuálne prepisovanie zlyhá</h2>\n  <p>Ak recepčná manuálne upravuje voľné izby na troch portáloch, pri silnom dopyte je len otázkou času, kedy vznikne duplicita. Rozdiel piatich minút vás stojí peniaze aj zlé recenzie.</p>\n  <h2>Jeden riadiaci orgán – Ellipse Channel Manager</h2>\n  <p>Ellipse prepojí Booking.com, Expedia, Airbnb, Google Hotels aj váš vlastný web booking do jedného uzla. Ak sa izba predá kdekoľvek, v sekunde sa zatvorí na všetkých ostatných portáloch súčasne.</p>\n  <ul>\n    <li>Okamžitá synchronizácia v milisekundách</li>\n    <li>Jednotné riadenie cien a minimálnej dĺžky pobytu z jedného miesta</li>\n    <li>Ochrana pred overbookingom počas špičky</li>\n  </ul>\n</article>",
+    "cover": ""
+  },
+  {
+    "id": 10,
+    "slug": "priamy-predaj-ktory-nezaostava-za-portalom",
+    "title": "Priamy predaj na vlastnom webe: Znížte provízie portálom bez zložitej technológie",
+    "lead": "„Platíme tisíce eur mesačne na províziách pre Booking.com len preto, že náš vlastný webový rezervačný formulár bol zastaralý a hosť na ňom nevedel pohodlne zaplatiť kartou,“ povzdychol si majiteľ rezortu.",
+    "description": "Moderný Booking Engine prepojený s Google Hotels a priamou platobnou bránou pre maximálnu konverziu na vlastnom webe.",
+    "keywords": "web booking, Google Hotels, priamy predaj, Ellipse Pay, provízia",
+    "roles": [
+      "Hoteliér"
+    ],
+    "html": "<article class=\"article-detail\">\n  <h1>Priamy predaj na vlastnom webe: Znížte provízie portálom bez zložitej technológie</h1>\n  <p class=\"lead\"><em>„Platíme tisíce eur mesačne na províziách pre Booking.com len preto, že náš vlastný webový rezervačný formulár bol zastaralý a hosť na ňom nevedel pohodlne zaplatiť kartou,“</em> povzdychol si majiteľ rezortu.</p>\n  <h2>Prečo hostia utekajú na OTA portály?</h2>\n  <p>Lebo je to tam jednoduché. Ak na vašom webe musia posielať dopytový e-mail a čakať na odpoveď do druhého dňa, radšej kliknú na Booking, kde majú izbu potvrdenú za 10 sekúnd.</p>\n  <h2>Vlastný Web Booking od Ellipse</h2>\n  <p>Dáme vám na web nástroj, ktorý funguje rovnako rýchlo ako svetové portály:</p>\n  <ul>\n    <li><strong>Prepojenie na Google Hotels:</strong> Hosť vás nájde priamo v Google Mapách a rezervuje u vás bez sprostredkovateľa.</li>\n    <li><strong>Rýchla platba kartou (Ellipse Pay):</strong> Peniaze máte ihneď na účte s 0% províziou pre sprostredkovateľské portály.</li>\n    <li><strong>Exkluzívne výhody na priamy predaj:</strong> Ponúknite cez váš web zľavový kód, fľašu vína alebo wellness vstup zadarmo.</li>\n  </ul>\n</article>",
+    "cover": ""
+  },
+  {
+    "id": 11,
+    "slug": "revpro-tempo-predaja-a-dynamicke-ceny",
+    "title": "Zajtrajšok sa predáva pomaly. Cenník o tom ešte nevie.",
+    "lead": "Na porade s manažérom obchodu často vidíme statické cenníky vytlačené v skrini: „Tento cenník sme nastavili v decembri na celú sezónu.“ Lenže trh sa mení každý deň.",
+    "description": "Automatizovaný Revenue Management (revPRO) na základe tempa predaja a AI analýzy dopytu.",
+    "keywords": "revPRO, tempo predaja, revenue, cena izby, dopyt, Ellipse",
+    "roles": [
+      "Hoteliér"
+    ],
+    "html": "<article class=\"article-detail\">\n  <h1>Zajtrajšok sa predáva pomaly. Cenník o tom ešte nevie.</h1>\n  <p class=\"lead\">Na porade s manažérom obchodu často vidíme statické cenníky vytlačené v skrini: <em>„Tento cenník sme nastavili v decembri na celú sezónu.“</em> Lenže trh sa mení každý deň.</p>\n  <h2>Predávať drahé izby lacno a prázdne izby draho</h2>\n  <p>To sú dve najčastejšie chyby. Ak vidíte, že víkend o mesiac sa plní rýchlejšie ako vlani, cena musí stúpnuť. Ak je naopak budúci týždeň prázdny, musíte reagovať skôr, než bude neskoro.</p>\n  <h2>Ellipse revPRO – Automatický strážca tržieb</h2>\n  <p>Náš modul revPRO sleduje tempo predaja (Pick-up rate) 12x denne. Na základe obsadenosti, historických dát a dopytu navrhne alebo automaticky upraví cenu tak, aby ste z každého dňa vyťažili maximálny zisk (RevPAR).</p>\n  <ul>\n    <li>Porovnanie tempa predaja s minulým rokom v reálnom čase</li>\n    <li>Dynamická zmena cien bez nutnosti manuálneho prepisovania</li>\n    <li>Plná kontrola – limity cien si nastavuje hoteliér</li>\n  </ul>\n</article>",
+    "cover": ""
+  },
+  {
+    "id": 12,
+    "slug": "kartu-chcete-pri-rezervacii-peniaze-az-ked-pride",
+    "title": "Kartu chcete pri rezervácii. Peniaze až v momente, keď hosť naozaj príde.",
+    "lead": "„Ak žiadam platbu vopred, 50 % hostí rezerváciu nedokončí. Ak nežiadam nič, v piatok večer mám 3 prázdne izby kvôli no-show,“ opisoval dilemu prevádzkar penziónu.",
+    "description": "Bezpečná garancia rezervácie uložením platobnej karty bez okamžitého strhnutia celej sumy.",
+    "keywords": "pay later, garancia kartou, no-show, Ellipse Pay, rezervácia",
+    "roles": [
+      "Hoteliér",
+      "Recepčný"
+    ],
+    "html": "<article class=\"article-detail\">\n  <h1>Kartu chcete pri rezervácii. Peniaze až v momente, keď hosť naozaj príde.</h1>\n  <p class=\"lead\"><em>„Ak žiadam platbu vopred, 50 % hostí rezerváciu nedokončí. Ak nežiadam nič, v piatok večer mám 3 prázdne izby kvôli no-show,“</em> opisoval dilemu prevádzkar penziónu.</p>\n  <h2>Nájsť rovnováhu medzi dôverou a garanciou</h2>\n  <p>Hosť chce flexibilitu, vy potrebujete istotu, že izba nezostane prázdna. Tradičné zálohové faktúry hostí otravujú a zdržujú.</p>\n  <h2>Predautorizácia a garancia cez Ellipse Pay</h2>\n  <p>Pri rezervácii cez web booking hosť zadá údaje zo svojej karty. Karta sa bezpečne overí a uloží v platobnej bráne (Tokenizácia). Peniaze sa strhnú až v deň príchodu, alebo v prípade stornovania po termíne. Vy máte 100 % garanciu a hosť pocit slobody.</p>\n  <ul>\n    <li>Vyšší konverzný pomer priamych rezervácií</li>\n    <li>Nulové riziko straty tržby pri no-show</li>\n    <li>Súlad s najprísnejšími bezpečnostnými štandardmi PCI-DSS</li>\n  </ul>\n</article>",
+    "cover": ""
+  },
+  {
+    "id": 13,
+    "slug": "virtualna-karta-z-portalu-bez-prepisovania",
+    "title": "Virtuálne karty z Booking.com: Zúčtovanie na jeden klik bez manuálneho ťukania",
+    "lead": "Často vidíme na recepcii papieriky s číslami virtuálnych kariet z Bookingu. Recepčná ich ručne vyťukáva do terminálu, no platba neprejde, lebo karta ešte nie je aktívna.",
+    "description": "Automatizované spracovanie virtuálnych platobných kariet (VCC) priamo cez platobný kanál v Ellipse.",
+    "keywords": "virtuálna karta, VCC, Booking.com, channel manager, platba, Ellipse",
+    "roles": [
+      "Recepčný",
+      "Účtovník"
+    ],
+    "html": "<article class=\"article-detail\">\n  <h1>Virtuálne karty z Booking.com: Zúčtovanie na jeden klik bez manuálneho ťukania</h1>\n  <p class=\"lead\">Často vidíme na recepcii papieriky s číslami virtuálnych kariet z Bookingu. Recepčná ich ručne vyťukáva do terminálu, no platba neprejde, lebo karta ešte nie je aktívna.</p>\n  <h2>Stres pri pultíku a nesprávne čiastky</h2>\n  <p>Manuálne prepisovanie 16-miestnych čísel kariet z počítača do terminálu je pomalé a náchylné na chyby. Navyše, virtuálne karty majú presné dátumové okno, kedy sa dajú stiahnuť.</p>\n  <h2>Automatizované VCC spracovanie v Ellipse</h2>\n  <p>Ellipse prijme rezerváciu aj s údajmi o virtuálnej karte. V momente, keď portál kartu sprístupní, Ellipse ju vie na jeden klik zúčtovať cez integrovanú platobnú bránu a naviazať platbu priamo na účet pobytu.</p>\n  <ul>\n    <li>Žiadne ručné prepisovanie čísel kariet do terminálu</li>\n    <li>Automatické strhnutie presnej sumy bez preklepov</li>\n    <li>Okamžité vystavenie daňového dokladu</li>\n  </ul>\n</article>",
+    "cover": ""
+  },
+  {
+    "id": 14,
+    "slug": "qr-na-stole-objednavka-ucet-doklad-tringelt",
+    "title": "QR kód na stole: Keď hosť nechce čakať a čašník nestíha obsluhovať terasu",
+    "lead": "„V lete máme terasu pre 100 ľudí. Dvakrát do dňa sa stane, že hostia odídu bez zaplatenia, lebo čašník nestíhal prísť s účtom,“ rozprával nám majiteľ reštaurácie pri jezere.",
+    "description": "Riešenie Ellipse Foodie pre QR objednávky od stola s možnosťou úhrady, eKasa dokladu a tringeltu.",
+    "keywords": "QR objednávka, Foodie, pokladňa, tringelt, eKasa, room service",
+    "roles": [
+      "Manažér reštaurácie"
+    ],
+    "html": "<article class=\"article-detail\">\n  <h1>QR kód na stole: Keď hosť nechce čakať a čašník nestíha obsluhovať terasu</h1>\n  <p class=\"lead\"><em>„V lete máme terasu pre 100 ľudí. Dvakrát do dňa sa stane, že hostia odídu bez zaplatenia, lebo čašník nestíhal prísť s účtom,“</em> rozprával nám majiteľ reštaurácie pri jazere.</p>\n  <h2>Pomalá obsluha rovnása nižší obrat</h2>\n  <p>Najmä počas obedov a letných špičiek zákazníci nechcú čakať 15 minút na jedálny lístok a ďalších 15 minút na placenie. Každé meškanie znižuje obrátkovosť stola.</p>\n  <h2>Ellipse Foodie – Digitálny čašník do vrecka</h2>\n  <p>Hosť naskenuje QR kód na stole svojím mobilom. Zobrazí sa mu moderný lístok s fotkami, vyberie si, objedná a rovno zaplatí cez Apple Pay / Google Pay vrátane tringeltu pre obsluhu.</p>\n  <ul>\n    <li>Objednávka ide okamžite na bonovačku do kuchyne / na bar</li>\n    <li>Účet sa automaticky zúčtuje v eKase a doklad zobrazí na mobile</li>\n    <li>Zvýšenie tržieb na terasách až o 25 %</li>\n  </ul>\n</article>",
+    "cover": ""
+  },
+  {
+    "id": 15,
+    "slug": "vecera-na-izbovy-ucet-rano-jeden-odchod",
+    "title": "„Napíšte to na izbu 204.“ Ako zabrániť tomu, aby účet z baru ráno chýbal",
+    "lead": "Klasická ranná scénka na recepcii: Hosť sa odubytováva, recepčná skontroluje systém a pustí ho domov. O hodinu neskôr prinesie čašník z baru papierik s podpisom z včerajšej noci...",
+    "description": "Okamžité preúčtovanie gastro konsumpcie na izbový účet v reálnom čase s overením mena hosťa.",
+    "keywords": "úhrada na izbu, reštaurácia, hotelový účet, check-out, Ellipse",
+    "roles": [
+      "Hoteliér",
+      "Manažér reštaurácie",
+      "Recepčný"
+    ],
+    "html": "<article class=\"article-detail\">\n  <h1>„Napíšte to na izbu 204.“ Ako zabrániť tomu, aby účet z baru ráno chýbal</h1>\n  <p class=\"lead\">Klasická ranná scénka na recepcii: Hosť sa odubytováva, recepčná skontroluje systém a pustí ho domov. O hodinu neskôr prinesie čašník z baru papierik s podpisom z včerajšej noci...</p>\n  <h2>Neodborné zapisovanie na papieriky</h2>\n  <p>Keď reštaurácia a recepcia nekomunikujú online, vznikajú straty. Čašník napíše zlú izbu, alebo sa účet \"stratí\" cestou na recepciu. Výsledkom sú nezaplatené konzumácie a zbytočné spory.</p>\n  <h2>Priame prepojenie Ellipse POS a PMS</h2>\n  <p>Keď hosť v reštaurácii povie: <em>„Na izbu 204,“</em> čašník na dotykovej pokladni zvolí izbu 204. Pokladňa sa v sekunde opýta hotelového systému, overí meno ubytovaného hosťa a povolený úverový limit. Účet okamžite pristane na hotelovom účte.</p>\n  <ul>\n    <li>Overenie mena ubytovaného hosťa priamo na pokladni v bare</li>\n    <li>Okamžitý prenos položiek bez ranného dohľadávania</li>\n    <li>Ranný check-out prebehne za 30 sekúnd so všetkými službami</li>\n  </ul>\n</article>",
+    "cover": ""
+  },
+  {
+    "id": 16,
+    "slug": "viete-predajnu-cenu-food-cost-az-po-mesiaci",
+    "title": "Viete predajnú cenu jedla. Zistíte Food Cost až po mesačnej inventúre?",
+    "lead": "Šéfkuchár nastaví cenu sviečkovej na 18 EUR, lebo „tak to majú aj oproti“. Na konci mesiaca majiteľ zistí, že hoci reštaurácia praskala vo švíkoch, zisk je minimálny.",
+    "description": "Presný výpočet kalkulácií a priebežného food costu prepojením receptúr so skladovými nákupnými cenami.",
+    "keywords": "food cost, receptúra, kalkulácia, sklad, pokladňa, Ellipse",
+    "roles": [
+      "Manažér reštaurácie",
+      "Účtovník"
+    ],
+    "html": "<article class=\"article-detail\">\n  <h1>Viete predajnú cenu jedla. Zistíte Food Cost až po mesačnej inventúre?</h1>\n  <p class=\"lead\">Šéfkuchár nastaví cenu sviečkovej na 18 EUR, lebo <em>„tak to majú aj oproti“</em>. Na konci mesiaca majiteľ zistí, že hoci reštaurácia praskala vo švíkoch, zisk je minimálny.</p>\n  <h2>Ceny surovín rastú, jedálny lístok spí</h2>\n  <p>Dodávatelia zdražujú mäso, maslo aj zeleninu zo dňa na deň. Ak robíte kalkulácie raz za rok v Exceli, predávate jedlá so stratou bez toho, aby ste o tom vedeli.</p>\n  <h2>Živé kalkulácie v Ellipse Sklady</h2>\n  <p>V Ellipse je každé jedlo prepojené s receptúrou a skladovými kartami. Ak vám dodávateľ pripíše na príjemke drahšie mäso, systém vás okamžite upozorní, že Food Cost na danej položke stúpol z 28 % na 38 %.</p>\n  <ul>\n    <li>Automatický prepočet marže pri každej novej príjemke</li>\n    <li>Prehľad o najziskovejších a najstratovejších jedlách</li>\n    <li>Presné odpisovanie surovín po každom predanom jedle</li>\n  </ul>\n</article>",
+    "cover": ""
+  },
+  {
+    "id": 17,
+    "slug": "nove-jedlo-na-listok-s-ai-kalkulaciou",
+    "title": "Nové sezónne menu za 10 minút: Od nápadu šéfkuchára po kalkuláciu v systéme",
+    "lead": "Sezónne špargľové menu má trvať len tri týždne. Kým šéfkuchár napíše recepty a ekonómka ich po večeroch nahodí do systému, týždeň je preč...",
+    "description": "Zzrýchlenie tvorby jedálneho lístka pomocou AI návrhu receptúr a okamžitého overenia nákladov.",
+    "keywords": "AI receptúra, kalkulácia, food cost, jedálny lístok, Ellipse",
+    "roles": [
+      "Manažér reštaurácie"
+    ],
+    "html": "<article class=\"article-detail\">\n  <h1>Nové sezónne menu za 10 minút: Od nápadu šéfkuchára po kalkuláciu v systéme</h1>\n  <p class=\"lead\">Sezónne špargľové menu má trvať len tri týždne. Kým šéfkuchár napíše recepty a ekonómka ich po večeroch nahodí do systému, týždeň je preč...</p>\n  <h2>Uvoľnite ruky kuchyni aj kancelárii</h2>\n  <p>Navrhovanie nových jedál spomaľuje zdĺhavé rozpisovanie ingrediencií, gramáží a alergénov do databáz.</p>\n  <h2>Inteligentný asistent pre receptúry</h2>\n  <p>V Ellipse stačí zadať názov jedla a hlavné ingrediencie. Systém vám navrhne štandardnú receptúru, vytiahne nákupné ceny z vášho skladu, spočíta odporúčanú predajnú cenu pre dodržanie marže a označí alergény.</p>\n  <ul>\n    <li>Vytvorenie novej kalkulácie za pár sekúnd</li>\n    <li>Automatické priradenie alergénov a DPH</li>\n    <li>Okamžité odoslanie položky na dotykové pokladne</li>\n  </ul>\n</article>",
+    "cover": ""
+  },
+  {
+    "id": 18,
+    "slug": "sklad-ktory-sa-hybe-s-tym-co-ste-predali",
+    "title": "Skladová inventúra bez slz: Keď skutočnosť naozaj sedí s pokladňou",
+    "lead": "„Každý koniec mesiaca pre nás znamená tri dni zatvorených kancelárií, pochybnosti a hľadanie, kde zmizlo 50 kíl sviečkovice,“ hovorí manažér gastro prevádzky.",
+    "description": "Práca so skladovými kartami v reálnom čase s presným evidovaním odpadu, manka a internej spotreby.",
+    "keywords": "sklad, inventúra, príjemka, receptúra, pokladňa, Ellipse",
+    "roles": [
+      "Manažér reštaurácie",
+      "Účtovník"
+    ],
+    "html": "<article class=\"article-detail\">\n  <h1>Skladová inventúra bez slz: Keď skutočnosť naozaj sedí s pokladňou</h1>\n  <p class=\"lead\"><em>„Každý koniec mesiaca pre nás znamená tri dni zatvorených kancelárií, pochybnosti a hľadanie, kde zmizlo 50 kíl sviečkovice,“</em> hovorí manažér gastro prevádzky.</p>\n  <h2>Inventúra nemá byť detektívka</h2>\n  <p>Ak sa sklad odpisuje len odhadom a neriešia sa zamestnanecké obedy, odpad či rozliate nápoje, inventúra na konci mesiaca bude vždy šokom.</p>\n  <h2>Prehľadná evidencia od príjmu po výdaj</h2>\n  <p>Ellipse Sklady spájajú príjemky, odpisovanie cez receptúry pri predaji a evidenciu odpisov (odpad, reprezentácia, zamestnanecké stravovanie) do jedného funkčného celku.</p>\n  <ul>\n    <li>Rýchla inventúra pomocou mobilnej aplikácie a čítačky EAN kódov</li>\n    <li>Okamžité odhalenie odchýlok medzi teoretickým a reálnym skladom</li>\n    <li>Upozornenie na minimálne zásoby a expiráciu surovín</li>\n  </ul>\n</article>",
+    "cover": ""
+  },
+  {
+    "id": 19,
+    "slug": "wellness-ktore-nejde-rezervovat-cez-recepciu",
+    "title": "Wellness a masáže: Ukončite dvoch masérov na jeden čas v papierovom zošite",
+    "lead": "Recepčná sľúbi hosťovi masáž o 16:00 a zapíše to do zošita. O päť minút druhá recepčná zapíše na ten istý čas iného hosťa... Výsledkom je sklamaný zákazník na chodbe.",
+    "description": "Časové rezervácie služieb, masáží a wellness cez modul Timi prepojený s webom aj recepciou.",
+    "keywords": "wellness, časová rezervácia, Timi, no-show, permanentka, Ellipse",
+    "roles": [
+      "Prevádzkar Wellness/Aquaparku",
+      "Recepčný"
+    ],
+    "html": "<article class=\"article-detail\">\n  <h1>Wellness a masáže: Ukončite dvoch masérov na jeden čas v papierovom zošite</h1>\n  <p class=\"lead\">Recepčná sľúbi hosťovi masáž o 16:00 a zapíše to do zošita. O päť minút druhá recepčná zapíše na ten istý čas iného hosťa... Výsledkom je sklamaný zákazník na chodbe.</p>\n  <h2>Plánovanie kapacít terapeutov a miestností</h2>\n  <p>Wellness prevádzka potrebuje strážiť tri veci naraz: voľnú miestnosť, voľného terapeuta a požiadavku hosťa. Papierový kalendár to nezvládne.</p>\n  <h2>Ellipse Timi – Inteligentný rezervačný kalendár</h2>\n  <p>Modul Timi riadi časové sloty pre wellness, masáže, tenisové kurty či jodu. Hosť si vie službu rezervovať z pohodlia izby cez QR kód alebo z domu cez web stránku.</p>\n  <ul>\n    <li>Stráženie kapacít masérov, saunových svetov a miestností bez duplicít</li>\n    <li>SMS a e-mailové pripomienky pre zníženie no-show</li>\n    <li>Preúčtovanie masáže priamo na izbový účet ubytovaného hosťa</li>\n  </ul>\n</article>",
+    "cover": ""
+  },
+  {
+    "id": 20,
+    "slug": "permanentka-ktora-sa-neda-pozicat-na-slovo",
+    "title": "Permanentky a sezónne lístky: Koniec kartičkám s papierovými pečiatkami",
+    "lead": "„Naši stály klienti si požičiavali jednu 10-vstupovú kartičku v celej rodine. Pri pultíku sme nevedeli skontrolovať, komu naozaj patrí,“ hovorí prevádzkar wellness centra.",
+    "description": "Digitalizácia permanentiek a vstupov viazaných na personálny profil v Ellipse CRM.",
+    "keywords": "permanentka, sezónny lístok, CRM, vstup, RFID, Ellipse",
+    "roles": [
+      "Prevádzkar Wellness/Aquaparku",
+      "Recepčný"
+    ],
+    "html": "<article class=\"article-detail\">\n  <h1>Permanentky a sezónne lístky: Koniec kartičkám s papierovými pečiatkami</h1>\n  <p class=\"lead\"><em>„Naši stály klienti si požičiavali jednu 10-vstupovú kartičku v celej rodine. Pri pultíku sme nevedeli skontrolovať, komu naozaj patrí,“</em> hovorí prevádzkar wellness centra.</p>\n  <h2>Strata kontroly nad opakovanými vstupmi</h2>\n  <p>Papierové permanentky sa strácajú, krčia a umožňujú zneužívanie. Prevádzka tak prichádza o reálne tržby od stálych zákazníkov.</p>\n  <h2>Digitálne permanentky v Ellipse CRM</h2>\n  <p>Permanentka je viazaná na profil klienta v CRM, RFID kartu alebo QR kód v mobile. Pri vstupe systém okamžite odpočíta vstup, ukáže fotku klienta a skontroluje platnosť.</p>\n  <ul>\n    <li>Digitálny prehľad o zostávajúcich vstupoch pre klienta aj recepciu</li>\n    <li>Automatické blokovanie po vypršaní dátumu platnosti</li>\n    <li>Možnosť online dokúpenia ďalších vstupov cez webový profil</li>\n  </ul>\n</article>",
+    "cover": ""
+  },
+  {
+    "id": 21,
+    "slug": "kredit-na-cipe-namiesto-hotovosti-v-areali",
+    "title": "Bezhotovostný areál: Nabite hosťom kredit na čip a nechajte ich užívať si oddych",
+    "lead": "Rodičia chcú pustiť deti do bazéna, ale nechcú im dávať do plaviek papierové peniaze. Na stretnutiach s manažérmi rezortov ukazujeme, ako bezhotovostný kredit zvyšuje útratu.",
+    "description": "Predplatený kredit na RFID náramku s centralizovanou evidenciou čerpania vo všetkých strediskách.",
+    "keywords": "kredit, RFID, vernosť, aquapark, CRM, Ellipse",
+    "roles": [
+      "Hoteliér",
+      "Prevádzkar Wellness/Aquaparku",
+      "Manažér reštaurácie"
+    ],
+    "html": "<article class=\"article-detail\">\n  <h1>Bezhotovostný areál: Nabite hosťom kredit na čip a nechajte ich užívať si oddych</h1>\n  <p class=\"lead\">Rodičia chcú pustiť deti do bazéna, ale nechcú im dávať do plaviek papierové peniaze. Na stretnutiach s manažérmi rezortov ukazujeme, ako bezhotovostný kredit zvyšuje útratu.</p>\n  <h2>Peniaze zamknuté v sk skrinke neprijímajú zisk</h2>\n  <p>Ak hosť nemá ako zaplatiť pri nápojovom bare alebo zmrzlinovom stánku, nákup odloží. Bezhotovostný systém tento problém úplne odburáva.</p>\n  <h2>Kreditný modul Ellipse</h2>\n  <p>Hosť si pri vstupe alebo na recepcii nabije na čipový náramok napr. 50 EUR. Týmto čipom platí v bufete, reštaurácii aj na atrakciách. Zostatok kreditu sa zobrazí na displeji pri každej platbe.</p>\n  <ul>\n    <li>Rýchlejšia obsluha bez vydávania hotovosti</li>\n    <li>Vyššia priemerná spotreba na návštevníka</li>\n    <li>Automatické vyrovnanie nespotrebovaného kreditu pri odchode</li>\n  </ul>\n</article>",
+    "cover": ""
+  },
+  {
+    "id": 22,
+    "slug": "kongres-ktory-obsadi-salu-aj-izby-naraz",
+    "title": "Kongres pre 200 ľudí: Ako spojiť prenájom sál, catering a ubytovanie do jednej ponuky",
+    "lead": "„Sostaviť cenovú ponuku pre veľkú firmu mi trvalo dva dni. Musela som zistiť voľné izby na recepcii, preveriť voľné sály u prevádzkara a ceny obedov u šéfkuchára,“ opisuje event manažérka.",
+    "description": "Komplexná správa kongresov a akcií od cenovej ponuky cez alokáciu izieb až po záverečnú vyúčtovaciu faktúru.",
+    "keywords": "kongres, skupinová rezervácia, sála, záloha, plachta, Ellipse",
+    "roles": [
+      "Hoteliér",
+      "Manažér reštaurácie",
+      "Účtovník"
+    ],
+    "html": "<article class=\"article-detail\">\n  <h1>Kongres pre 200 ľudí: Ako spojiť prenájom sál, catering a ubytovanie do jednej ponuky</h1>\n  <p class=\"lead\"><em>„Sostaviť cenovú ponuku pre veľkú firmu mi trvalo dva dni. Musela som zistiť voľné izby na recepcii, preveriť voľné sály u prevádzkara a ceny obedov u šéfkuchára,“</em> opisuje event manažérka.</p>\n  <h2>Množstvo podkladov a riziko zabudnutých položiek</h2>\n  <p>Pri kongresoch ľahko vypadne z rozpočtu prenájom techniky, kávový servis alebo ubytovanie pre spíkrov. Výsledkom sú nepresné ponuky a stratený zisk.</p>\n  <h2>Ellipse Kongresový Modul</h2>\n  <p>Všetko prebieha na jednom mieste. Zadáte požiadavky klienta, systém zablokuje sálu v kalendári, zarezervuje blok izieb v hotelovej plachte a vygeneruje profesionálnu grafickú ponuku v PDF s presnou kalkuláciou.</p>\n  <ul>\n    <li>Blokovanie ubytovacích kapacít a konferenčných priestorov súčasne</li>\n    <li>Harmonogram podujatia (funkčný list) pre kuchyňu a obsluhu</li>\n    <li>Jedna záverečná vyúčtovacia faktúra so všetkými čerpanými službami</li>\n  </ul>\n</article>",
+    "cover": ""
+  },
+  {
+    "id": 23,
+    "slug": "dve-rezervacie-na-jednej-posteli",
+    "title": "Upozornenie na duplicity: Zachyťte prekryté rezervácie skôr, než hosť vojde do dverí",
+    "lead": "Lidská chyba sa stane každému. Recepčná priťukne rezerváciu z e-mailu na izbu, ktorú pred desiatimi minutami predal kolega cez telefón...",
+    "description": "Vizuálne a systémové indikátory konfliktov v ubytovacej plachte Ellipse.",
+    "keywords": "duplicitná rezervácia, plachta, channel manager, konflikt pobytu, Ellipse",
+    "roles": [
+      "Recepčný",
+      "Hoteliér"
+    ],
+    "html": "<article class=\"article-detail\">\n  <h1>Upozornenie na duplicity: Zachyťte prekryté rezervácie skôr, než hosť vojde do dverí</h1>\n  <p class=\"lead\">Lidská chyba sa stane každému. Recepčná priťukne rezerváciu z e-mailu na izbu, ktorú pred desiatimi minutami predal kolega cez telefón...</p>\n  <h2>Plachta vás musí chrániť, nie mýliť</h2>\n  <p>Ak ubytovacia plachta neupozorní na kolíziu dvoch rezervácií na tej istej izbe, problém zistíte až vtedy, keď hosť stojí na recepcii s kufrom.</p>\n  <h2>Okamžitá vizuálna kontrola v Ellipse</h2>\n  <p>Ellipse plachta automaticky deteguje akékoľvek prekrytie dátumov alebo izieb a okamžite ho zvýrazní červeným varovaním. Zároveň ponúkne dostupné alternatívne izby rovnakej kategórie na presun na jeden klik.</p>\n  <ul>\n    <li>Automatická detekcia konfliktov pri ručnom aj online zápise</li>\n    <li>Rýchly presun rezervácie na voľnú izbu systémom Drag & Drop</li>\n    <li>História zmien – presne viete, kto a kedy rezerváciu upravil</li>\n  </ul>\n</article>",
+    "cover": ""
+  },
+  {
+    "id": 24,
+    "slug": "upratana-izba-o-ktorej-recepcia-naozaj-vie",
+    "title": "Upratané izby v reálnom čase: Ukončite neustále telefonovanie na poschodia",
+    "lead": "„Izba 304 chce skorej check-in. Recepčná volá chytnej, chyžná nezdvíha telefón, lebo práve vysáva... Hosť stojí nervózny na recepcii.“ Známy príbeh?",
+    "description": "Aplikácia Ellipse Roomie pre chytné a housekeeping prepojená priamo s recepčnou plachtou.",
+    "keywords": "Roomie, housekeeping, stav izby, upratovanie, plachta, Ellipse",
+    "roles": [
+      "Hoteliér",
+      "Recepčný"
+    ],
+    "html": "<article class=\"article-detail\">\n  <h1>Upratané izby v reálnom čase: Ukončite neustále telefonovanie na poschodia</h1>\n  <p class=\"lead\"><em>„Izba 304 chce skorej check-in. Recepčná volá chyžnej, chyžná nezdvíha telefón, lebo práve vysáva... Hosť stojí nervózny na recepcii.“</em> Známy príbeh?</p>\n  <h2>Komunikácia na papieri vytvára zbytočné meškania</h2>\n  <p>Ranné tlačenie zoznamov izieb pre housekeeping je prežitok. Stačí jedna zmena v odchodoch a celý papierový zoznam neplatí.</p>\n  <h2>Aplikácia Ellipse Roomie v mobile chyžnej</h2>\n  <p>Chyžná má v svojom mobile aplikáciu Roomie. Vidí v nej presný zoznam izieb na upratanie podľa priority (skorý príchod, pobytové upratovanie, odchod). Keď izbu dosprchuje a prezlečie, klikne na „Upratané“. Na recepčnej plachte sa svieti zelená v tej istej sekunde.</p>\n  <ul>\n    <li>Okamžitý prehľad o stave izieb (Špinavá, Upratuje sa, Čistá, Skontrolovaná)</li>\n    <li>Hlásenie porúch na izbe s fotkou priamo pre údržbára</li>\n    <li>Evidencia minibaru s automatickým zaúčtovaním na účet hosťa</li>\n  </ul>\n</article>",
+    "cover": ""
+  },
+  {
+    "id": 25,
+    "slug": "majitel-apartmanu-chce-vytazok-nie-pristup-do-plachty",
+    "title": "Správa investičných apartmánov: Prehľadné vyúčtovanie pre majiteľov bez chaosu",
+    "lead": "„Prevádzkujeme 40 apartmánov, ktoré patria súkromným majiteľom. Každý mesiac sme trávili týždeň výpočtom ich podielov na výnosoch, prani bielizne a províziách,“ rozpráva manažér rezortu.",
+    "description": "Majiteľský modul pre investičné apartmány s automatickým generovaním mesačných výkazov a vyúčtovaní.",
+    "keywords": "majiteľ apartmánu, vyúčtovanie, owners, prenájom, Ellipse",
+    "roles": [
+      "Hoteliér",
+      "Účtovník"
+    ],
+    "html": "<article class=\"article-detail\">\n  <h1>Správa investičných apartmánov: Prehľadné vyúčtovanie pre majiteľov bez chaosu</h1>\n  <p class=\"lead\"><em>„Prevádzkujeme 40 apartmánov, ktoré patria súkromným majiteľom. Každý mesiac sme trávili týždeň výpočtom ich podielov na výnosoch, prani bielizne a províziách,“</em> rozpráva manažér rezortu.</p>\n  <h2>Dôvera majiteľov stojí na presných číslach</h2>\n  <p>Majitelia apartmánov chcú vedieť, kedy bol ich apartmán obsadený, koľko zarobil a aké náklady na údržbu či upratovanie sa odpočítali. Ručné Excel tabuľky vyvolávajú pochybnosti.</p>\n  <h2>Majiteľský portál v Ellipse</h2>\n  <p>Každý majiteľ dostane prístup do svojho klientskeho rozhrania. Vidí tu kalendár obsadenosti svojho apartmánu, môže si spraviť vlastnú blokáciu pre rodinu a na konci mesiaca si stiahne presný prehľad výnosov a nákladov v PDF.</p>\n  <ul>\n    <li>Automatické rozpočítavanie tržieb podľa zmluvných percent</li>\n    <li>Evidencia nákladov na čistenie a opravy priradených k apartmánu</li>\n    <li>Úplná transparentnosť bez nutnosti sprístupniť celý hotelový systém</li>\n  </ul>\n</article>",
+    "cover": ""
+  },
+  {
+    "id": 26,
+    "slug": "host-pise-o-polnoci-recepcia-spi-ella-nie",
+    "title": "Hosť píše otázku o polnoci. Recepcia spí. AI recepčná Ella odpovedá v sekunde.",
+    "lead": "„Máte voľný parkovací flek pre dodávku? Aké sú otváracie hodiny wellness? Môžem prísť so psom?“ Otázky, ktoré sa opakujú stokrát dokola a zdržujú recepčných od osobnej starostlivosti.",
+    "description": "AI virtuálna recepčná Ella pre automatickú komunikáciu s hosťami 24/7 v ich rodnom jazyku.",
+    "keywords": "Ella, virtuálna recepcia, chatbot, rezervácia, FAQ, Ellipse",
+    "roles": [
+      "Hoteliér",
+      "Recepčný"
+    ],
+    "html": "<article class=\"article-detail\">\n  <h1>Hosť píše otázku o polnoci. Recepcia spí. AI recepčná Ella odpovedá v sekunde.</h1>\n  <p class=\"lead\"><em>„Máte voľný parkovací flek pre dodávku? Aké sú otváracie hodiny wellness? Môžem prísť so psom?“</em> Otázky, ktoré sa opakujú stokrát dokola a zdržujú recepčných od osobnej starostlivosti.</p>\n  <h2>Rýchla odpoveď rozhoduje o rezervácii</h2>\n  <p>Dnešný zákazník nechce čakať do druhého dňa na e-mailovú odpoveď. Ak nedostane informáciu ihneď, odíde ku konkurencii.</p>\n  <h2>Virtuálna AI recepčná Ella</h2>\n  <p>Ella je natívne prepojená s vaším systémom Ellipse. Pozná vaše reálne ceny, voľné izby aj pravidlá hotela. Odpovedá na webe, WhatsAppe či Messengeri plynule v desiatkach jazykov a dokáže hosťa previesť celým procesom rezervácie.</p>\n  <ul>\n    <li>Okamžitá odpoveď na 90 % bežných otázok hostí 24 hodín denne</li>\n    <li>Priamy predaj pobytov cez konverzáciu v chatu</li>\n    <li>Úspora času pre recepciu, ktorá sa môže venovať hostom pri pulte</li>\n  </ul>\n</article>",
+    "cover": ""
+  },
+  {
+    "id": 27,
+    "slug": "opytate-sa-vlastnych-cisel-cez-mcp",
+    "title": "Opýtajte sa vlastných dát: Keď riaditeľ nepotrebuje analytika na vytvorenie reportu",
+    "lead": "„Pred rannou poradou som potreboval vedieť porovnanie tržieb z gastro stredísk za posledné tri víkendy. Musel som preklikať štyri rôzne výkazy,“ hovorí riaditeľ hotela.",
+    "description": "Prepojenie dát z Ellipse s AI modelmi cez MCP konektor pre prirodzené pýtanie sa na prevádzkové výsledky.",
+    "keywords": "MCP, Ella, jazykový model, dostupnosť, report, Ellipse",
+    "roles": [
+      "Hoteliér",
+      "Účtovník"
+    ],
+    "html": "<article class=\"article-detail\">\n  <h1>Opýtajte sa vlastných dát: Keď riaditeľ nepotrebuje analytika na vytvorenie reportu</h1>\n  <p class=\"lead\"><em>„Pred rannou poradou som potreboval vedieť porovnanie tržieb z gastro stredísk za posledné tri víkendy. Musel som preklikať štyri rôzne výkazy,“</em> hovorí riaditeľ hotela.</p>\n  <h2>Dáta máte, ale hľadanie trvá dlho</h2>\n  <p>Tradičné systémy vyžadujú zložité nastavovanie filtrov a exporty do Excelu len na to, aby ste zistili jednu kľúčovú hodnotu.</p>\n  <h2>Ellipse MCP konektor a AI analýza</h2>\n  <p>Vďaka modernému MCP konektoru sa môžete svojho systému opýtať bežnou rečou: <em>„Ktorá kategória izieb mala najvyššiu obsadenosť v júli?“</em> alebo <em>„Ukáž mi porovnanie tržieb za raňajky oproti minulému roku.“</em> Systém okamžite vytiahne presné čísla z databázy.</p>\n  <ul>\n    <li>Rýchle odpovede na manažérske otázky bez študovania tabuliek</li>\n    <li>Bezpečné prepojenie – dáta zostávajú plne pod vaša kontrolou</li>\n    <li>Okamžité podklady pre rozhodovanie o cenách a investíciách</li>\n  </ul>\n</article>",
+    "cover": ""
+  },
+  {
+    "id": 28,
+    "slug": "platba-priide-na-ucet-rezervacia-o-tom-este-nevie",
+    "title": "Párovanie platieb z banky: Koniec rannému prehľadávaniu výpisov v internet bankingu",
+    "lead": "Pani ekonómka každé ráno otvárala internet banking, tlačila výpis a so zvýrazňovačom v ruke hľadala variabilné symboly, aby ručne označila zaplatené zálohy v hotelovom systéme...",
+    "description": "Automatické párovanie prichádzajúcich bankových platieb s rezerváciami a faktúrami cez API prepojenie s bankami.",
+    "keywords": "banka, párovanie platieb, FIO, variabilný symbol, Pay by Square, Ellipse",
+    "roles": [
+      "Účtovník",
+      "Recepčný"
+    ],
+    "html": "<article class=\"article-detail\">\n  <h1>Párovanie platieb z banky: Koniec rannému prehľadávaniu výpisov v internet bankingu</h1>\n  <p class=\"lead\">Pani ekonómka každé ráno otvárala internet banking, tlačila výpis a so zvýrazňovačom v ruke hľadala variabilné symboly, aby ručne označila zaplatené zálohy v hotelovom systéme...</p>\n  <h2>Pomalá identifikácia platieb zdržuje potvrdzovanie pobytov</h2>\n  <p>Kým ekonómka nesparuje platbu ručne, recepcia nevidel, či hosť zálohu poslal. Hosť zatiaľ nervózne čaká na potvrdenie rezervácie.</p>\n  <h2>Automatické FIO / Bankové API párovanie v Ellipse</h2>\n  <p>Ellipse sa bezpečne prepojí s vaším bankovým účtom. Keď prijde platba s variabilným symbolom rezervácie alebo proformy, systém ju okamžite spáruje, zmení stav rezervácie na „Uhradená“ a pošle hosťovi potvrdenie.</p>\n  <ul>\n    <li>Automatické párovanie platieb každú hodinu bez ľudského zásahu</li>\n    <li>Generovanie Pay by Square QR kódov pre bezchybné zadanie platby hosťom</li>\n    <li>Okamžitá identifikácia platieb bez variabilného symbolu pre rýchle vyriešenie</li>\n  </ul>\n</article>",
+    "cover": ""
+  },
+  {
+    "id": 29,
+    "slug": "domova-kniha-a-statistika-bez-nedelnhost-prepisovania",
+    "title": "Domová kniha a štatistiky: Zrušte nedeľné nočné prepisovanie papiera do Excelu",
+    "lead": "„Posledný deň v mesiaci pre mňa znamenal sedieť do polnoci v práci a prepisovať údaje z recepčných kníh do výkazu pre Štatistický úrad,“ spomína hlavná recepčná.",
+    "description": "Automatické generovanie domovej knihy cudzincov a povinných štatistických výkazov priamo z pobytových dát.",
+    "keywords": "domová kniha, štatistický výkaz, check-in, cudzinec, Ellipse",
+    "roles": [
+      "Recepčný",
+      "Účtovník"
+    ],
+    "html": "<article class=\"article-detail\">\n  <h1>Domová kniha a štatistiky: Zrušte nedeľné nočné prepisovanie papiera do Excelu</h1>\n  <p class=\"lead\"><em>„Posledný deň v mesiaci pre mňa znamenal sedieť do polnoci v práci a prepisovať údaje z recepčných kníh do výkazu pre Štatistický úrad,“</em> spomína hlavná recepčná.</p>\n  <h2>Zákonné povinnosti nemajú brať čas vašim hosťom</h2>\n  <p>Ručné prepisovanie štátnych príslušností, dátumov narodení a čísel pasov vytvára množstvo chýb a zbytočný stres pred uzávierkami.</p>\n  <h2>Výkazy na jeden klik v Ellipse</h2>\n  <p>Keďže údaje hostí zbierate priamo pri online check-ine alebo na recepcii, Ellipse má všetky potrebné dáta pripravené. Export pre Cudzineckú políciu aj mesačný výkaz pre Štatistický úrad vytvoríte na jedno stlačenie tlačidla.</p>\n  <ul>\n    <li>Presné exporty vo formátoch požadovaných štátnymi orgánmi</li>\n    <li>Automatická kontrola chýbajúcich údajov pred odoslaním výkazu</li>\n    <li>100 % súlad s platnou legislatívou bez námahy</li>\n  </ul>\n</article>",
+    "cover": ""
+  },
+  {
+    "id": 30,
+    "slug": "host-ostava-este-noc-recepcia-o-tom-vie-az-rano",
+    "title": "Predĺženie pobytu o ďalšiu noc: Umožnite hosťovi predĺžiť si pobyt priamo z mobilu",
+    "lead": "Hosťovi sa v hoteli tak zapáčilo, že sa o desiatej večer rozhodne zostať ešte jednu noc. Recepcia je však zatvorená a on netuší, či je jeho izba na zajtra voľná...",
+    "description": "Samoobslužné predĺženie pobytu cez webové rozhranie pre hosťa s okamžitým overením kapacity v plachte.",
+    "keywords": "predĺženie pobytu, self check-in, dostupnosť, plachta, Ellipse",
+    "roles": [
+      "Hoteliér",
+      "Recepčný"
+    ],
+    "html": "<article class=\"article-detail\">\n  <h1>Predĺženie pobytu o ďalšiu noc: Umožnite hosťovi predĺžiť si pobyt priamo z mobilu</h1>\n  <p class=\"lead\">Hosťovi sa v hoteli tak zapáčilo, že sa o desiatej večer rozhodne zostať ešte jednu noc. Recepcia je však zatvorená a on netuší, či je jeho izba na zajtra voľná...</p>\n  <h2>Nenechajte voľnú izbu utiecť</h2>\n  <p>Ak hosť nemá jednoduchú možnosť predĺžiť si pobyt, ráno sa zbalí a odíde, hoci izba mohla byť nasledujúcu noc predaná.</p>\n  <h2>Self-service predĺženie pobytu v Ellipse</h2>\n  <p>Hosť dostane vo svojej webovej aplikácii pobytu ponuku: <em>„Páči sa vám u nás? Predĺžte si pobyt o ďalšiu noc so zľavou 10 %.“</em> Ak je izba voľná, hosť klikne, zaplatí kartou a systém automaticky upraví dátum odchodu v plachte.</p>\n  <ul>\n    <li>Predaj dodatočných nocí bez prítomnosti recepčnej</li>\n    <li>Okamžitá aktualizácia ubytovacej plachty a plánu upratovania</li>\n    <li>Vyššia spokojnosť hosťa a vyšší zisk z pobytu</li>\n  </ul>\n</article>",
+    "cover": ""
+  },
+  {
+    "id": 31,
+    "slug": "zaloha-proforma-a-faktura-ktore-o-sebe-vedia",
+    "title": "Záloha, proforma a vyúčtovacia faktúra: Čísla, ktoré do seba dokonale zapadajú",
+    "lead": "Firma zaplatila 50 % zálohu v marci. V máji prebehol pobyt. V júni posiela účtovníčka vyúčtovaciu faktúru, ale zabudla odpočítať marcovú zálohu... Klient protestuje a vracia doklad.",
+    "description": "Automatické prepojenie zálohových platieb, daňových dokladov k prijatej platbe a finálnej faktúry.",
+    "keywords": "proforma, záloha, faktúra, vyúčtovanie pobytu, firemný hosť, Ellipse",
+    "roles": [
+      "Účtovník",
+      "Recepčný"
+    ],
+    "html": "<article class=\"article-detail\">\n  <h1>Záloha, proforma a vyúčtovacia faktúra: Čísla, ktoré do seba dokonale zapadajú</h1>\n  <p class=\"lead\">Firma zaplatila 50 % zálohu v marci. V máji prebehol pobyt. V júni posiela účtovníčka vyúčtovaciu faktúru, ale zabudla odpočítať marcovú zálohu... Klient protestuje a vracia doklad.</p>\n  <h2>Rôzne dokumenty musia mať jednu spoločnú pamäť</h2>\n  <p>Udržať prehľad o zálohách pri desiatkach firemných skupín v Exceli je nemožné. Chyby vo vyúčtovaní kazia dobré meno hotela u firemných klientov.</p>\n  <h2>Prepojené účtovné doklady v Ellipse</h2>\n  <p>V Ellipse vznikajú doklady nadväzne na seba. Z proformy sa po úhrade automaticky vytvorí daňový doklad k prijatej platbe. Pri záverečnom vyúčtovaní pobytu systém sám odpočíta všetky uhradené zálohy a vystaví faktúru len na zostávajúci doplatok.</p>\n  <ul>\n    <li>Nulové riziko opomenutia zaplatenej zálohy</li>\n    <li>Presná evidencia DPH pri zálohách aj finálnom vyúčtovaní</li>\n    <li>Spokojní firemní klienti a čisté účtovníctvo</li>\n  </ul>\n</article>",
+    "cover": ""
+  },
+  {
+    "id": 32,
+    "slug": "zlava-ktora-nepretecie-na-portal",
+    "title": "Promo kódy pre verných hostí: Zľava, ktorá patrí len na váš web, nie na Booking",
+    "lead": "Chcete dať zľavu 15 % pre účastníkov vašej konferencie alebo pre verných hostí z pultíku. Ak znížite cenu základného cenníka, Channel Manager pošle túto zľavu aj na Booking.com...",
+    "description": "Správa promo kódov, neverejných cenníkov a cenových hladín určených výhradne pre priamy predaj.",
+    "keywords": "promo kód, zľava, web booking, cenová hladina, portál, Ellipse",
+    "roles": [
+      "Hoteliér"
+    ],
+    "html": "<article class=\"article-detail\">\n  <h1>Promo kódy pre verných hostí: Zľava, ktorá patrí len na váš web, nie na Booking</h1>\n  <p class=\"lead\">Chcete dať zľavu 15 % pre účastníkov vašej konferencie alebo pre verných hostí z pultíku. Ak znížite cenu základného cenníka, Channel Manager pošle túto zľavu aj na Booking.com...</p>\n  <h2>Verejné ceny vs. Exkluzívne ponuky</h2>\n  <p>Cenová parita a zmluvy s OTA portálmi vyžadujú opatrnosť pri práci s cenami. Zľavy pre priamych hostí musia byť chránené neverejnými kanálmi.</p>\n  <h2>Targetované Promo kódy v Ellipse Web Booking</h2>\n  <p>V Ellipse si vytvoríte unikátny promo kód (napr. <code>KONGRES2026</code> alebo <code>VERNYHOST</code>). Tento kód zníži cenu len hosťovi, ktorý ho zadá do rezervačného okna na vašom webe. Základný cenník posielaný na portály zostáva nedotknutý.</p>\n  <ul>\n    <li>Cielené marketingové kampane pre newsletter a stálych klientov</li>\n    <li>Ochrana pred rozdaním zliav sprostredkovateľským portálom</li>\n    <li>Plná štatistika využitia jednotlivých promo kódov</li>\n  </ul>\n</article>",
+    "cover": ""
+  },
+  {
+    "id": 33,
+    "slug": "skupina-obsadi-salu-kalendar-musi-povedat-nie",
+    "title": "Rezervácia sál a kapacity: Kalendár, ktorý povie STOP druhej rezervácii",
+    "lead": "Dve svadby v ten istý deň na jednej terase? Alebo firemné školenie pre 50 ľudí v miestnosti, kde je opravené kúrenie? Keď sa kapacity strážia v hlave prevádzkara, katastrofa je blízko.",
+    "description": "Evidencia priestorov, rokovacích sál a ich technického vybavenia s nekompromisnou blokáciou termínov.",
+    "keywords": "kapacita sály, skupinová rezervácia, podujatie, kalendár, Ellipse",
+    "roles": [
+      "Hoteliér",
+      "Manažér reštaurácie"
+    ],
+    "html": "<article class=\"article-detail\">\n  <h1>Rezervácia sál a kapacity: Kalendár, ktorý povie STOP druhej rezervácii</h1>\n  <p class=\"lead\">Dve svadby v ten istý deň na jednej terase? Alebo firemné školenie pre 50 ľudí v miestnosti, kde je opravené kúrenie? Keď sa kapacity strážia v hlave prevádzkara, katastrofa je blízko.</p>\n  <h2>Každý priestor má svoje limity</h2>\n  <p>Sály, terasy, salóniky aj bowlingové dráhy majú svoju maximálnu kapacitu a časové ohraničenie. Rezervovať ich bez prepojenia s cateringom a ubytovaním vedie k chaosu.</p>\n  <h2>Modul Priestory a Sály v Ellipse</h2>\n  <p>Každá miestnosť v systéme má definovanú kapacitu podľa usporiadania (kino, školská, švédske stoly). Pri pokuse o vytvorenie druhej akcie v rovnakom čase systém okamžite odmietne zápis a upozorní na prekrytie.</p>\n  <ul>\n    <li>Vizuálny kalendár obsadenosti všetkých spoločenských priestorov</li>\n    <li>Evidencia požiadaviek na technické vybavenie (projektor, ozvučenie)</li>\n    <li>Prepojenie na kuchyňu pre načasovanie výdaja stravy</li>\n  </ul>\n</article>",
+    "cover": ""
+  },
+  {
+    "id": 34,
+    "slug": "zmena-ktora-nie-je-pri-pocitaci",
+    "title": "Prevádzka v kapse: Keď manažér, chyžná aj údržbár vidia všetko vo svojom mobile",
+    "lead": "Manažér je na obednom stretnutí mimo hotela, ale potrebuje zistiť dnešnú obsadenosť. Údržbár je v suteréne a nevie, ktorá izba hlásila nefungujúcu klímu. Zase telefónne ústredňa?",
+    "description": "Mobilná aplikácia Ellipse Team pre riadenie úloh, dochádzky a prevádzky priamo z terénu.",
+    "keywords": "Ellipse Team, mobil, plachta, dochádzka, úlohy, prevádzka",
+    "roles": [
+      "Hoteliér",
+      "Recepčný",
+      "Prevádzkar Wellness/Aquaparku"
+    ],
+    "html": "<article class=\"article-detail\">\n  <h1>Prevádzka v kapse: Keď manažér, chyžná aj údržbár vidia všetko vo svojom mobile</h1>\n  <p class=\"lead\">Manažér je na obednom stretnutí mimo hotela, ale potrebuje zistiť dnešnú obsadenosť. Údržbár je v suteréne a nevie, ktorá izba hlásila nefungujúcu klímu. Zase telefónne ústredňa?</p>\n  <h2>Moderný hotel sa neriadi od recepčného stola</h2>\n  <p>Ľudia v prevádzke musia byť v teréne medzi hosťami, nie prirastení k monitoru v kancelárii.</p>\n  <h2>Aplikácia Ellipse Team pre smartfóny</h2>\n  <p>Ellipse Team prináša kľúčové funkcie systému priamo do mobilov vášho tímu. Manažér vidí tržby a plachtu, chyžná stav upratovania, údržbár svoje pridelené úlohy a všetci zamestnanci tu evidujú svoju dochádzku.</p>\n  <ul>\n    <li>Priraďovanie a kontrola úloh v reálnom čase s notifikáciami</li>\n    <li>Prehľad ubytovacej plachty a príchodov odkiaľkoľvek</li>\n    <li>Pípanie dochádzky zamestnancov cez mobil bez drahých terminálov</li>\n  </ul>\n</article>",
+    "cover": ""
+  }
+]
