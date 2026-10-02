@@ -1,5 +1,7 @@
 # SEO migrácia Ellipse — serverové dokončenie
 
+**Aktualizácia po požiadavke používateľa:** najprv vykonať `RS-TEMPLATES.md` — explicitné typy podľa rs_template a čistý archív. Aktuálne výsledky úplného crawlu sú v `AUDIT-RESULTS.md`. Až potom pokračovať konsolidáciou produktových SEF nižšie.
+
 ## Aktuálny stav a hranice
 
 Audit sitemap.xml z 2. 10. 2026: 372 URL. `sitemap-inventory.csv` klasifikuje každú adresu; nejde o predstieranú individuálnu obsahovú revíziu všetkých starších článkov. Workflow `editorial-seo.yml` navyše prejde všetky URL a uloží HTTP stav, presmerovanie, title, description, H1, canonical a robots do artefaktu. Prevádzka n.horecagroup.sk je staging a má zostať noindex. Produkčnú indexáciu riešiť až pri schválenom prechode na horecagroup.sk.

@@ -6,13 +6,14 @@
   if(!valid.includes(key))key='komplex';
   document.documentElement.dataset.audience=key;
   sectorButtons.forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.epSector===key)));
-  if(persist){try{localStorage.setItem('ellipse-audience',key);}catch(_){}const url=new URL(location.href);url.searchParams.set('prevadzka',key);history.replaceState(null,'',url);}
+  if(persist){try{localStorage.setItem('ellipse-audience',key);}catch(_){}}
   window.dispatchEvent(new CustomEvent('ellipse:audience',{detail:key}));
  }
  let stored;try{stored=localStorage.getItem('ellipse-audience');}catch(_){}
  const fromUrl=new URL(location.href).searchParams.get('prevadzka');
  const initial=valid.includes(fromUrl)?fromUrl:(document.documentElement.dataset.audience||stored);
- if(valid.includes(fromUrl)){try{localStorage.setItem('ellipse-audience',fromUrl);}catch(_){}}
+ if(valid.includes(fromUrl)){try{localStorage.setItem('ellipse-audience',fromUrl);}catch(_){}document.documentElement.dataset.audience=fromUrl;}
+ if(fromUrl!==null){const clean=new URL(location.href);clean.searchParams.delete('prevadzka');history.replaceState(null,'',clean.pathname+clean.search+clean.hash);}
  if(sectorButtons.length){chooseSector(initial,false);sectorButtons.forEach(b=>b.addEventListener('click',()=>chooseSector(b.dataset.epSector,true)));}
  document.querySelectorAll('.ep-map').forEach(root=>{
  if(root.dataset.epReady)return;root.dataset.epReady='true';

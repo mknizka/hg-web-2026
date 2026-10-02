@@ -81,8 +81,6 @@
     window.dispatchEvent(new CustomEvent('ellipse:audience',{detail:key}));
     if (persist) {
       try { localStorage.setItem('ellipse-audience', key); } catch (_) { /* Optional storage. */ }
-      const url = new URL(location.href); url.searchParams.set('prevadzka', key);
-      history.replaceState(null, '', url);
     }
     window.dispatchEvent(new Event('resize'));
   }
@@ -90,6 +88,8 @@
   try { saved = localStorage.getItem('ellipse-audience'); } catch (_) { /* Private browsing. */ }
   const requested = new URL(location.href).searchParams.get('prevadzka');
   const selected = Object.hasOwn(profiles, requested) ? requested : saved;
+  if(Object.hasOwn(profiles, requested)){try{localStorage.setItem('ellipse-audience',requested);}catch(_){}}
+  if(requested!==null){const clean=new URL(location.href);clean.searchParams.delete('prevadzka');history.replaceState(null,'',clean.pathname+clean.search+clean.hash);}
   bar.hidden = false;
   bar.querySelector('.aud-reopen').addEventListener('click', () => { if (typeof dialog.showModal === 'function') dialog.showModal(); });
   apply(selected, false);

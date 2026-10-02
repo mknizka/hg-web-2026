@@ -91,7 +91,7 @@ $fragment = function ($file, $sw, $sh, $x, $y, $w, $h, $alt, $eager = false) {
 <?php require_once __DIR__.'/hg-solutions-data.php'; $homeTopics=array();
 foreach(hg_solutions() as $solution) $homeTopics[$solution['slug']]=array('eyebrow'=>implode(' · ',array_slice($solution['roles'],0,2)),'title'=>$solution['title'],'lead'=>$solution['description'],'href'=>hg_solution_url($solution));
 foreach(array_chunk($homeTopics,6,true) as $pageIndex=>$topicPage): ?>
-<div class="eh-problem-grid" data-problem-panel<?php echo $pageIndex?' hidden':''; ?>><?php foreach($topicPage as $key=>$topic): ?><a href="<?php echo hg_esc($topic['href'] ?? '/blog/?tema=problemy&problem='.$key); ?>"><span><?php echo hg_esc($topic['eyebrow']); ?></span><h3><?php echo hg_esc($topic['title']); ?></h3><p><?php echo hg_esc($topic['lead']); ?></p><b><?php echo hg_lang('Pozrieť riešenie','Explore solution'); ?> <span aria-hidden="true">→</span></b></a><?php endforeach; ?></div><?php endforeach; ?>
+<div class="eh-problem-grid" data-problem-panel<?php echo $pageIndex?' hidden':''; ?>><?php foreach($topicPage as $key=>$topic): ?><a href="<?php echo hg_esc($topic['href'] ?? '/problemy-a-riesenia/'); ?>"><span><?php echo hg_esc($topic['eyebrow']); ?></span><h3><?php echo hg_esc($topic['title']); ?></h3><p><?php echo hg_esc($topic['lead']); ?></p><b><?php echo hg_lang('Pozrieť riešenie','Explore solution'); ?> <span aria-hidden="true">→</span></b></a><?php endforeach; ?></div><?php endforeach; ?>
 </section>
 <section class="os-trust" id="referencie" aria-label="<?php echo hg_lang('Dôvera', 'Trust'); ?>">
     <div class="eh-logo-window" data-logo-marquee><div class="eh-logo-track">
@@ -345,4 +345,3 @@ foreach(array_chunk($homeTopics,6,true) as $pageIndex=>$topicPage): ?>
   <?php include __DIR__.'/hg-final-cta.php'; ?>
 
 </main>
-

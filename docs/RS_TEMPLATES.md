@@ -1,5 +1,9 @@
 # Produktové a blogové podstránky
 
+## Aktualizácia 2. 10. 2026
+
+Nové explicitné typy podľa selectu `rs_template` sú pripravené ako page_14.php (Problémy a riešenia), page_15.php (Modul – podstránka), page_16.php (Blog – bežný) a page_17.php (Prehľad problémov a riešení). Serverová registrácia ID a priradenie záznamov ešte neprebehli. Presný migračný postup a podmienky nasadenia sú v [docs/seo/RS-TEMPLATES.md](seo/RS-TEMPLATES.md). Nasledujúce informácie o detekcii podľa SEF/ID sú iba staršia kompatibilita, ktorú nové explicitné typy prebijú.
+
 ## Produkt: page_13.php
 
 Spoločná šablóna `template/ellipse/files/hg-product-page.php`; vstupný súbor `page_13.php`.

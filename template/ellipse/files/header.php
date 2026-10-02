@@ -9,9 +9,22 @@
   $hgPath = isset($curpage) ? $curpage : $hgBase.'/';
   $hgPath = preg_replace('/\?.*$/', '', (string)$hgPath);
   $hgProblemArchive = isset($content['blog']) && isset($_GET['tema']) && $_GET['tema'] === 'problemy';
-  if ($hgProblemArchive) $hgPath = $hgBase.'/blog/?tema=problemy';
+  if ($hgProblemArchive) $hgPath = $hgBase.'/problemy-a-riesenia/';
   $hgSeoTitle=trim((string)($content['title'] ?? '')) ?: (string)($content['name'] ?? 'Ellipse Cloud');
   if ($hgProblemArchive) $hgSeoTitle='Riešenia z praxe pre hotely a gastro | Ellipse';
+  $hgSeoDescription=trim((string)($content['description'] ?? ''));
+  if ((int)($content['rs_template'] ?? 0) === 15) $hgSeoDescription=trim((string)($content['parex_text'] ?? $hgSeoDescription));
+  if (isset($content['blog'])) {
+    $hgSeoTitle=hg_lang('Blog pre hotelierov a gastro prevádzky | Ellipse','Hospitality and restaurant management blog | Ellipse');
+    $hgSeoDescription=hg_lang('Skúsenosti z hotelov a gastro prevádzok, praktické návody a novinky Ellipse. Rezervácie, platby, prevádzka, marketing a riadenie tímu.','Hospitality insights, practical guides and Ellipse news on reservations, payments, operations, marketing and team management.');
+  }
+  if ($hgSeoDescription === '') {
+    $hgFallbackText=$content['parex_text'] ?? '';
+    if (trim((string)$hgFallbackText) === '') $hgFallbackText=is_array($content['text'] ?? null)?implode(' ', $content['text']):($content['text'] ?? '');
+    $hgFallbackText=preg_replace('/\s+/u',' ',html_entity_decode(strip_tags((string)$hgFallbackText),ENT_QUOTES,'UTF-8'));
+    if (function_exists('mb_substr')) $hgSeoDescription=mb_substr(trim($hgFallbackText),0,160,'UTF-8');
+    else $hgSeoDescription=trim($hgFallbackText);
+  }
   $hgSolution=null;
   if (isset($_GET['riesenie']) && is_string($_GET['riesenie'])) {
     require_once __DIR__.'/hg-solutions-data.php';
@@ -23,6 +36,11 @@
     }
   }
 
+  if ($hgProblemArchive) {
+    while (ob_get_level() > 0) { ob_end_clean(); }
+    header('Location: /problemy-a-riesenia/', true, 301);
+    exit;
+  }
 ?>
 <!DOCTYPE html>
 <html lang="<?php echo hg_esc($hgLang); ?>" dir="ltr">
@@ -32,7 +50,7 @@
     <title><?php echo hg_esc($hgSeoTitle); ?></title>
     <meta name="keywords" content="<?php echo hg_esc(isset($content['keywords']) ? $content['keywords'] : ''); ?>">
     <link href="/img/system/favicon.ico" rel="shortcut icon">
-    <meta name="description" content="<?php echo hg_esc(isset($content['description']) ? $content['description'] : ''); ?>">
+    <meta name="description" content="<?php echo hg_esc($hgSeoDescription); ?>">
     <meta name="robots" content="<?php echo $hgStaging ? 'noindex,nofollow' : ($hgInternal ? 'noindex,follow' : 'index,follow'); ?>">
     <link rel="canonical" href="<?php echo hg_esc($hgPath); ?>">
     <?php /* Add hreflang only when the CMS provides verified reciprocal translations. */ ?>
@@ -54,7 +72,7 @@
     <meta property="og:locale" content="<?php echo sess("lang"); ?>_<?php echo strtoupper(sess("lang")); ?>" />
     <meta property="og:title" content="<?php echo hg_esc($hgSeoTitle); ?>" />
     <meta property="og:site_name" content="<?php echo DOMENA_WEBU; ?>" />
-    <?php if($content['description'] != ''): ?><meta property="og:description" content="<?php echo  $content['description'];?>" /><?php endif; ?>
+    <?php if($hgSeoDescription !== ''): ?><meta property="og:description" content="<?php echo hg_esc($hgSeoDescription); ?>" /><?php endif; ?>
 	  <?php if($content['id'] == 164): ?>
     <meta property="og:image" content="https://www.horecagroup.sk/img/rs/164.jpg" />
 	  <?php else: ?>
@@ -67,7 +85,7 @@
     <script src="/template/js/jquery-1.10.2.js"></script>
     <script src="/template/ellipse/js/ellipse.js?v=20260922s"></script>
     <?php
-      if (!$hgInternal && isset($content['content_type']) && $content['content_type'] === 'rs' && !empty($content['id']) && !hg_is_product_content($content)) {
+      if (!$hgInternal && (int)($content['rs_template'] ?? 0) !== 17 && isset($content['content_type']) && $content['content_type'] === 'rs' && !empty($content['id']) && !hg_is_product_content($content)) {
         $hgArticleUrl = $hgBase.'/'.trim((string)$content['sef'], '/').'/';
         hg_schema(array(
           array(
@@ -122,7 +140,11 @@
   <link rel="stylesheet" href="/template/ellipse/css/hg-editorial.css?v=7">
   <link rel="stylesheet" href="/template/ellipse/css/hg-blog.css?v=1">
   <link rel="stylesheet" href="/template/ellipse/css/hg-typography.css?v=6">
-  <link rel="stylesheet" href="/template/ellipse/css/hg-icons.css?v=2">
+    <link rel="stylesheet" href="/template/ellipse/css/hg-icons.css?v=2">
+    <?php if ((int)($content['rs_template'] ?? 0) === 15): ?>
+    <link rel="stylesheet" href="/template/ellipse/css/hg-module-page.css?v=1">
+    <link rel="stylesheet" href="/template/ellipse/css/hg-platform-map.css?v=8">
+    <?php endif; ?>
 <link rel="stylesheet" href="/template/ellipse/css/hg-shell.css?v=28">
 </head>
   <body class="<?php echo hg_esc(isset($content['content_type']) ? $content['content_type'] : ''); ?> hg-mkt">

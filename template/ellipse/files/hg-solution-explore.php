@@ -8,7 +8,7 @@ foreach ($hgRelatedKeys as $hgKey) {
   if ($hgRelatedModule) $hgRelatedModules[$hgRelatedModule['id']] = $hgRelatedModule;
 }
 ?>
-<link rel="stylesheet" href="/template/ellipse/css/hg-platform-map.css?v=6">
+<link rel="stylesheet" href="/template/ellipse/css/hg-platform-map.css?v=8">
 <link rel="stylesheet" href="/template/ellipse/css/hg-solution-explore.css?v=1">
 <section class="es-module-context" id="solution-modules" aria-labelledby="solution-modules-title">
   <p class="kicker">OD POSTUPU K MODULOM</p>
@@ -23,4 +23,4 @@ foreach ($hgRelatedKeys as $hgKey) {
   <?php endif; ?>
 </section>
 <?php include __DIR__.'/hg-platform-explore.php'; ?>
-<script src="/template/ellipse/js/hg-platform-map.js?v=6" defer></script>
+<script src="/template/ellipse/js/hg-platform-map.js?v=8" defer></script>

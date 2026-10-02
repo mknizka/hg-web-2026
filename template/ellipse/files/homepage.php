@@ -287,7 +287,7 @@
 <link rel="stylesheet" href="/template/ellipse/css/hg-typography.css?v=6">
 <link rel="stylesheet" href="/template/ellipse/css/hg-icons.css?v=2">
 <link rel="stylesheet" href="/template/ellipse/css/hg-shell.css?v=28">
-<link rel="stylesheet" href="/template/ellipse/css/hg-platform-map.css?v=6">
+<link rel="stylesheet" href="/template/ellipse/css/hg-platform-map.css?v=8">
 <link rel="stylesheet" href="/template/ellipse/css/hg-expanded-details.css?v=2">
 </head>
 <body class="homepage">
@@ -299,8 +299,8 @@
   <?php include __DIR__ . '/hg-footer.php'; ?>
   <script src="/template/ellipse/js/hg-ref.js?v=20260924shell1" defer></script>
   <script src="/template/ellipse/js/hg-os.js?v=20260924audit2" defer></script>
-  <script src="/template/ellipse/js/hg-audience.js?v=5" defer></script>
-<script src="/template/ellipse/js/hg-platform-map.js?v=6" defer></script>
+  <script src="/template/ellipse/js/hg-audience.js?v=6" defer></script>
+<script src="/template/ellipse/js/hg-platform-map.js?v=8" defer></script>
   <script src="/template/ellipse/js/hg-os-premium.js?v=20260924audit2" defer></script>
   <?php if (function_exists('themeSetup')) { echo themeSetup('extra_body_end'); } ?>
 <script src="/template/ellipse/js/hg-mobile-showcase.js?v=2" defer></script>

@@ -33,7 +33,7 @@ $brandHref = $hgNavHome ? '#top' : '/';
         <a href="/pos-systemy/"><?php echo hg_lang('Reštaurácie', 'Restaurants'); ?></a>
         <a href="/casove-rezervacie/"><?php echo hg_lang('Wellness', 'Wellness'); ?></a>
         <a href="/web-booking/"><?php echo hg_lang('Apartmány', 'Apartments'); ?></a>
-        <a href="/blog/?tema=problemy"><?php echo hg_lang('Aké problémy riešime', 'Challenges we solve'); ?></a>
+        <a href="/problemy-a-riesenia/"><?php echo hg_lang('Aké problémy riešime', 'Challenges we solve'); ?></a>
         <a href="/vstupy-a-akvaparky/"><?php echo hg_lang('Aquapark', 'Waterpark'); ?></a>
       </div>
     </div>

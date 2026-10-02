@@ -156,7 +156,7 @@ if (!function_exists('hg_solution_by_slug')) {
 
 if (!function_exists('hg_solution_url')) {
   function hg_solution_url($item) {
-    return isset($item['href']) ? $item['href'] : '/blog/?riesenie='.rawurlencode($item['slug']);
+    return isset($item['href']) ? $item['href'] : '/'.trim((string)($item['sef'] ?? $item['slug']), '/').'/';
   }
 }
 

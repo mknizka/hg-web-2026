@@ -16,6 +16,7 @@ files = ['files/hg-content.php', 'files/hg-solutions-view.php',
          'files/hg-module-page.php', 'files/hg-product-page.php',
          'files/hg-module-related.php', 'files/hg_site.php']
 # Include shared mobile styles and their cache-versioned consumers.
+raise SystemExit('Template migration now requires RS templates 14-17 and the clean archive route. Follow docs/seo/SERVER-MIGRATION.md on the server; no files changed.')
 ssh = ['ssh', '-o', 'BatchMode=yes', '-o', 'ConnectTimeout=15', '-p',
        os.environ.get('DEPLOY_PORT') or '22',
        os.environ['DEPLOY_USER'] + '@' + os.environ['DEPLOY_HOST']]

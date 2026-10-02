@@ -16,6 +16,9 @@ if (!function_exists('hg_editorial_ctas')) {
 
 if (!function_exists('hg_is_product_content')) {
   function hg_is_product_content($content) {
+    $template = (int)($content['rs_template'] ?? 0);
+    if (in_array($template, array(14,16,17), true)) return false;
+    if ($template === 15) return true;
     $slug = trim((string)($content['sef'] ?? ''), '/');
     return (int)($content['rs_template'] ?? 0) === 13 || (int)($content['id'] ?? 0) === 44 || in_array($slug, array('hotelovy-system', 'pos-systemy', 'web-booking', 'channel-manager', 'online-check-in', 'vynosovy-modul-revpro'), true);
   }
