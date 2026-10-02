@@ -10,8 +10,11 @@ if configured and configured != TARGET:
 files = ['files/hg-content.php', 'files/hg-solutions-view.php',
          'files/hg-solution-body.php', 'files/hg-solution-explore.php',
          'files/hg-solution-modules.php', 'css/hg-solution-explore.css',
-         'js/hg-platform-map.js']
-# Seven files: three existing files and four new helpers/styles.
+         'js/hg-platform-map.js', 'css/hg-platform-map.css',
+         'css/hg-typography.css', 'css/hg-icons.css', 'files/header.php',
+         'files/homepage.php', 'files/hg-platform-map.php',
+         'files/hg-module-page.php', 'files/hg-product-page.php']
+# Include shared mobile styles and their cache-versioned consumers.
 ssh = ['ssh', '-o', 'BatchMode=yes', '-o', 'ConnectTimeout=15', '-p',
        os.environ.get('DEPLOY_PORT') or '22',
        os.environ['DEPLOY_USER'] + '@' + os.environ['DEPLOY_HOST']]

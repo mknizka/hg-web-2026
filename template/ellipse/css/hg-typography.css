@@ -19,3 +19,12 @@ html body:is(.homepage,.hg-mkt) :is(h1,h2,h3,h4,h5,h6,p,a,button,input,textarea,
   body :is(h1,h2,h3){font-weight:900!important;letter-spacing:0!important}
   body :is(h1,h2,h3) :is(strong,b,span,a,em){font-weight:inherit!important;letter-spacing:inherit!important}
 }
+
+/* Keep the same display weight on phones; no expanded mobile tracking. */
+@layer hg-heading-standard {
+  @media(max-width:767px){
+    body :is(h1,h2,h3,h4,h5,h6){font-weight:900!important;letter-spacing:0!important}
+    body :is(.homepage,.hg-mkt),
+    body:is(.homepage,.hg-mkt) :is(p,a,button,label,summary,small,strong,b,em,li,dt,dd,figcaption,blockquote,th,td,span){letter-spacing:0!important}
+  }
+}

@@ -20,6 +20,6 @@ $epId = 'ep-module-'.$epInstance;
     <p class="ep-eyebrow">Súčasť platformy Ellipse</p>
     <h2 id="<?php echo $epId; ?>-title"></h2>
     <p class="ep-dialog-copy" id="<?php echo $epId; ?>-copy"></p>
-    <a class="ep-cta" href="/#platforma">Preskúmať modul <span aria-hidden="true">↗</span></a>
+    <a class="ep-cta" href="/#platforma">Preskúmať modul <svg class="hg-arrow" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M6 18 18 6M6 6h12v12"/></svg></a>
   </dialog>
 </div>

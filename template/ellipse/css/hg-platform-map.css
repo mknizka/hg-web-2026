@@ -33,6 +33,9 @@ body .ep-dialog h2{margin:0 0 20px;color:#fff;font:650 clamp(26px,5vw,38px)/1.15
 body .ep-dialog .ep-dialog-copy{margin:0 0 30px;color:#e2ebf7;font:400 16px/1.7 'Plus Jakarta Sans',sans-serif}
 body .ep-dialog .ep-cta{display:inline-flex;align-items:center;gap:20px;padding:15px 22px;border-radius:30px;background:#ff004e;color:#fff;font:600 14px/1.4 'Plus Jakarta Sans',sans-serif;text-decoration:none}
 body .ep-dialog :focus-visible{outline:2px solid #fff;outline-offset:4px}
+/* Pointer-opened dialogs must not look as if their close button has a border. */
+body .ep-dialog[data-input="pointer"] .ep-close:focus{outline:none;box-shadow:none}
+body .ep-dialog .ep-close{border:0;box-shadow:none;-webkit-appearance:none;appearance:none}
 body:has(.ep-dialog[open]){overflow:hidden}
 .ep-explore{max-width:1040px;margin:80px auto;padding:0 24px;text-align:center}
 .ep-explore h2{font:650 clamp(28px,4vw,44px)/1.15 'Plus Jakarta Sans',sans-serif;color:#081434;letter-spacing:-.035em;margin:0 0 20px}

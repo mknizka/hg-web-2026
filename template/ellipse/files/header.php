@@ -120,8 +120,8 @@
     </style>
   <link rel="stylesheet" href="/template/ellipse/css/hg-editorial.css?v=7">
   <link rel="stylesheet" href="/template/ellipse/css/hg-blog.css?v=1">
-  <link rel="stylesheet" href="/template/ellipse/css/hg-typography.css?v=5">
-  <link rel="stylesheet" href="/template/ellipse/css/hg-icons.css?v=1">
+  <link rel="stylesheet" href="/template/ellipse/css/hg-typography.css?v=6">
+  <link rel="stylesheet" href="/template/ellipse/css/hg-icons.css?v=2">
 <link rel="stylesheet" href="/template/ellipse/css/hg-shell.css?v=28">
 </head>
   <body class="<?php echo hg_esc(isset($content['content_type']) ? $content['content_type'] : ''); ?> hg-mkt">
